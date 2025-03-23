@@ -1,0 +1,29 @@
+{
+	"display": {
+		"icon": {
+			"item": "fossils:pelecanimimus_fossil"
+		},
+		"title": {
+			"translate": "advancements.fossils.root.title"
+		},
+		"description": {
+			"translate": "advancements.fossils.root.description"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": true,
+		"background": "minecraft:textures/block/stone.png"
+	},
+	"criteria": {
+		"tick": {
+			"trigger": "minecraft:tick",
+			"conditions": {}
+		}
+	},
+	"requirements": [
+		[
+			"tick"
+		]
+	]
+}

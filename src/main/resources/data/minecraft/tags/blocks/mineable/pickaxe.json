@@ -1,0 +1,11 @@
+{
+	"replace": false,
+	"values": [
+		"fossils:tropaeum_fossil",
+		"fossils:eunotosaurus_fossil",
+		"fossils:pelecanimimus_fossil",
+		"fossils:kentrosaurus_fossil",
+		"fossils:wuerhosaurus_fossil",
+		"fossils:utahraptor_fossil"
+	]
+}

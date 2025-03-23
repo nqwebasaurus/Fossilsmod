@@ -1,0 +1,14 @@
+{
+	"required": true,
+	"minVersion": "0.8.4",
+	"package": "fossils.fossils.mixin",
+	"compatibilityLevel": "JAVA_17",
+	"refmap": "fossils.refmap.json",
+	"mixins": [
+	],
+	"client": [
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

@@ -1,0 +1,54 @@
+{
+  "parent": "fossils:fossils/general/root",
+  "criteria": {
+    "finish_pelecanimimus": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:pelecanimimus_fossil"
+                ],
+                "state": {
+                  "fossil_level": "4"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:pelecanimimus_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.pelecanimimus.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:pelecanimimus_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.pelecanimimus.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_pelecanimimus"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

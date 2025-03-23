@@ -1,0 +1,24 @@
+modLoader="javafml"
+loaderVersion="${loader_version_range}"
+license="All Rights Reserved"
+[[mods]]
+modId="fossils"
+version="1.0.0"
+displayName="Fossils Mod"
+credits="${mod_authors}"
+description='''
+${mod_description}
+'''
+[[dependencies.fossils]]
+    modId="forge"
+    mandatory=true
+    versionRange="${neo_version_range}" #mandatory
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.fossils]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="${minecraft_version_range}"
+    ordering="NONE"
+    side="BOTH"
+    

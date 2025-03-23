@@ -1,0 +1,13 @@
+{
+	"block.fossils.tropaeum_fossil": "Tropaeum Fossil Slab",
+	"block.fossils.pelecanimimus_fossil": "Pelecanimimus Displayable Fossil",
+	"block.fossils.eunotosaurus_fossil": "Eunotosaurus Displayable Fossil",
+	"block.fossils.kentrosaurus_fossil": "Kentrosaurus Displayable Fossil",
+	"block.fossils.wuerhosaurus_fossil": "Wuerhosaurus Displayable Fossil",
+	"block.fossils.utahraptor_fossil": "Utahraptor Displayable Fossil",
+	
+	"itemGroup.fossil_slab_tab": "Fossil Tab",
+	
+	"advancements.fossils.pelecanimimus.title": "Pelican Mimic",
+	"advancements.fossils.pelecanimimus.description": "Complete a Pelecanimimus skeleton"
+}
