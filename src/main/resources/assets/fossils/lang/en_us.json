@@ -1,10 +1,10 @@
 {
 	"block.fossils.tropaeum_fossil": "Tropaeum Fossil Slab",
-	"block.fossils.pelecanimimus_fossil": "Pelecanimimus Displayable Fossil",
-	"block.fossils.eunotosaurus_fossil": "Eunotosaurus Displayable Fossil",
-	"block.fossils.kentrosaurus_fossil": "Kentrosaurus Displayable Fossil",
-	"block.fossils.wuerhosaurus_fossil": "Wuerhosaurus Displayable Fossil",
-	"block.fossils.utahraptor_fossil": "Utahraptor Displayable Fossil",
+	"block.fossils.pelecanimimus_fossil": "Pelecanimimus Fossil",
+	"block.fossils.eunotosaurus_fossil": "Eunotosaurus Fossil",
+	"block.fossils.kentrosaurus_fossil": "Kentrosaurus Fossil",
+	"block.fossils.wuerhosaurus_fossil": "Wuerhosaurus Fossil",
+	"block.fossils.utahraptor_fossil": "Utahraptor Fossil",
 	
 	"itemGroup.fossil_slab_tab": "Fossil Tab",
 	
