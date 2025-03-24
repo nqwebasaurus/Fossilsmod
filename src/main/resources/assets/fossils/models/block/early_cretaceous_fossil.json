@@ -1,0 +1,6 @@
+{
+    "parent": "block/cube_all",
+    "textures": {
+        "all": "fossils:block/early_cretaceous_fossil"
+    }
+}

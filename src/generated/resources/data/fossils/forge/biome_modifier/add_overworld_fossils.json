@@ -1,0 +1,21 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#minecraft:is_overworld",
+  "features": [
+    "fossils:placed_precambrian_fossils",
+    "fossils:placed_cambrian_fossils",
+    "fossils:placed_ordovician_fossils",
+    "fossils:placed_silurian_fossils",
+    "fossils:placed_devonian_fossils",
+    "fossils:placed_carboniferous_fossils",
+    "fossils:placed_permian_fossils",
+    "fossils:placed_triassic_fossils",
+    "fossils:placed_juassic_fossils",
+    "fossils:placed_early_cretaceous_fossils",
+    "fossils:placed_late_cretaceous_fossils",
+    "fossils:placed_paleogene_fossils",
+    "fossils:placed_neogene_fossils",
+    "fossils:placed_quaternary_fossils"
+  ],
+  "step": "underground_ores"
+}

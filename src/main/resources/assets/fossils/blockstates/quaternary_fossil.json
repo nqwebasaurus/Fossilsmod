@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "fossils:block/quaternary_fossil"
+    }
+  }
+}

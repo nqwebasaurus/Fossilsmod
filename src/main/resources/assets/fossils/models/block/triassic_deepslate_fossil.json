@@ -1,0 +1,6 @@
+{
+    "parent": "block/cube_all",
+    "textures": {
+        "all": "fossils:block/triassic_deepslate_fossil"
+    }
+}
