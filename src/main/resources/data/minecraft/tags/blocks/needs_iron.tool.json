@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "fossils:precambrian_fossil_ore",
+    "fossils:cambrian_fossil_ore",
+    "fossils:ordovician_fossil_ore",
+    "fossils:silurian_fossil_ore",
+    "fossils:devonian_fossil_ore",
+    "fossils:carboniferous_fossil_ore",
+    "fossils:permian_fossil_ore",
+    "fossils:permian_deepslate_fossil_ore",
+    "fossils:triassic_fossil_ore",
+    "fossils:triassic_deepslate_fossil_ore",
+    "fossils:jurassic_fossil_ore",
+    "fossils:early_cretaceous_fossil_ore",
+    "fossils:late_cretaceous_fossil_ore",
+    "fossils:paleogene_fossil_ore",
+    "fossils:neogene_fossil_ore",
+    "fossils:quaternary_fossil_ore"
+  ]
+}
