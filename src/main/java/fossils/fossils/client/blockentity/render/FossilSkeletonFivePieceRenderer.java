@@ -9,10 +9,20 @@ import com.mojang.blaze3d.vertex.VertexConsumer;
 
 import fossils.fossils.FossilMod;
 import fossils.fossils.client.ClientEvents;
+import fossils.fossils.client.blockentity.model.acanthostega.AcanthostegaFossilFrameModel;
+import fossils.fossils.client.blockentity.model.acanthostega.AcanthostegaFossilModel;
 import fossils.fossils.client.blockentity.model.eunotosaurus.EunotosaurusFossilFrameModel;
 import fossils.fossils.client.blockentity.model.eunotosaurus.EunotosaurusFossilModel;
+import fossils.fossils.client.blockentity.model.henodus.HenodusFossilFrameModel;
+import fossils.fossils.client.blockentity.model.henodus.HenodusFossilModel;
 import fossils.fossils.client.blockentity.model.pelecanimimus.PelecanimimusFossilFrameModel;
 import fossils.fossils.client.blockentity.model.pelecanimimus.PelecanimimusFossilModel;
+import fossils.fossils.client.blockentity.model.protoceras.ProtocerasFossilFrameModel;
+import fossils.fossils.client.blockentity.model.protoceras.ProtocerasFossilModel;
+import fossils.fossils.client.blockentity.model.stenokranio.StenokranioFossilFrameModel;
+import fossils.fossils.client.blockentity.model.stenokranio.StenokranioFossilModel;
+import fossils.fossils.client.blockentity.model.synthetoceras.SynthetocerasFossilFrameModel;
+import fossils.fossils.client.blockentity.model.synthetoceras.SynthetocerasFossilModel;
 import fossils.fossils.common.block.FossilSkeletonFivePieceBlock;
 import fossils.fossils.common.entity.block.FossilSkeletonFivePieceBlockEntity;
 import net.minecraft.Util;
@@ -36,22 +46,38 @@ public class FossilSkeletonFivePieceRenderer implements BlockEntityRenderer<Foss
 	public static final Map<FossilSkeletonFivePieceBlock.Type, ResourceLocation> SKIN_BY_TYPE = Util.make(Maps.newHashMap(), (type) -> {
 		type.put(FossilSkeletonFivePieceBlock.Types.EUNOTOSAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/eunotosaurus/stage_0.png"));
 		type.put(FossilSkeletonFivePieceBlock.Types.PELECANIMIMUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/pelecanimimus/stage_0.png"));
+		type.put(FossilSkeletonFivePieceBlock.Types.ACANTHOSTEGA, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/acanthostega/stage_0.png"));
+		type.put(FossilSkeletonFivePieceBlock.Types.STENOKRANIO, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/stenokranio/stage_0.png"));
+		type.put(FossilSkeletonFivePieceBlock.Types.HENODUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/henodus/stage_0.png"));
+		type.put(FossilSkeletonFivePieceBlock.Types.PROTOCERAS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/protoceras/stage_0.png"));
 	});
 	public static final Map<FossilSkeletonFivePieceBlock.Type, ResourceLocation> FRAME_BY_TYPE = Util.make(Maps.newHashMap(), (type) -> {
 		type.put(FossilSkeletonFivePieceBlock.Types.EUNOTOSAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/eunotosaurus/frame.png"));
 		type.put(FossilSkeletonFivePieceBlock.Types.PELECANIMIMUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/pelecanimimus/frame.png"));
+		type.put(FossilSkeletonFivePieceBlock.Types.ACANTHOSTEGA, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/acanthostega/frame.png"));
+		type.put(FossilSkeletonFivePieceBlock.Types.STENOKRANIO, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/stenokranio/frame.png"));
+		type.put(FossilSkeletonFivePieceBlock.Types.HENODUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/henodus/frame.png"));
+		type.put(FossilSkeletonFivePieceBlock.Types.PROTOCERAS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/protoceras/frame.png"));
 	});
 	public static Map<FossilSkeletonFivePieceBlock.Type, SkullModelBase> createFossilRenderers(EntityModelSet p_173662_) {
 		ImmutableMap.Builder<FossilSkeletonFivePieceBlock.Type, SkullModelBase> builder = ImmutableMap.builder();
 		builder.put(FossilSkeletonFivePieceBlock.Types.PELECANIMIMUS, new PelecanimimusFossilModel(p_173662_.bakeLayer(ClientEvents.PELECANIMIMUS)));
+		builder.put(FossilSkeletonFivePieceBlock.Types.ACANTHOSTEGA, new AcanthostegaFossilModel(p_173662_.bakeLayer(ClientEvents.ACANTHOSTEGA)));
 		builder.put(FossilSkeletonFivePieceBlock.Types.EUNOTOSAURUS, new EunotosaurusFossilModel(p_173662_.bakeLayer(ClientEvents.EUNOTOSAURUS)));
+		builder.put(FossilSkeletonFivePieceBlock.Types.STENOKRANIO, new StenokranioFossilModel(p_173662_.bakeLayer(ClientEvents.STENOKRANIO)));
+		builder.put(FossilSkeletonFivePieceBlock.Types.HENODUS, new HenodusFossilModel(p_173662_.bakeLayer(ClientEvents.HENODUS)));
+		builder.put(FossilSkeletonFivePieceBlock.Types.PROTOCERAS, new ProtocerasFossilModel(p_173662_.bakeLayer(ClientEvents.PROTOCERAS)));
 		return builder.build();
 	}
 
 	public static Map<FossilSkeletonFivePieceBlock.Type, SkullModelBase> createFossilFrameRenderers(EntityModelSet p_173662_) {
 		ImmutableMap.Builder<FossilSkeletonFivePieceBlock.Type, SkullModelBase> builder = ImmutableMap.builder();
 		builder.put(FossilSkeletonFivePieceBlock.Types.PELECANIMIMUS, new PelecanimimusFossilFrameModel(p_173662_.bakeLayer(ClientEvents.PELECANIMIMUS_FRAME)));
+		builder.put(FossilSkeletonFivePieceBlock.Types.ACANTHOSTEGA, new AcanthostegaFossilFrameModel(p_173662_.bakeLayer(ClientEvents.ACANTHOSTEGA_FRAME)));
 		builder.put(FossilSkeletonFivePieceBlock.Types.EUNOTOSAURUS, new EunotosaurusFossilFrameModel(p_173662_.bakeLayer(ClientEvents.EUNOTOSAURUS_FRAME)));
+		builder.put(FossilSkeletonFivePieceBlock.Types.STENOKRANIO, new StenokranioFossilFrameModel(p_173662_.bakeLayer(ClientEvents.STENOKRANIO_FRAME)));
+		builder.put(FossilSkeletonFivePieceBlock.Types.HENODUS, new HenodusFossilFrameModel(p_173662_.bakeLayer(ClientEvents.HENODUS_FRAME)));
+		builder.put(FossilSkeletonFivePieceBlock.Types.PROTOCERAS, new ProtocerasFossilFrameModel(p_173662_.bakeLayer(ClientEvents.PROTOCERAS_FRAME)));
 		return builder.build();
 	}
 
@@ -87,6 +113,18 @@ public class FossilSkeletonFivePieceRenderer implements BlockEntityRenderer<Foss
 		} else if (FossilSkeletonFivePieceBlock$type == FossilSkeletonFivePieceBlock.Types.PELECANIMIMUS) {
 			p_173667_.scale(-0.62F, -0.62F, 0.62F);
 			p_173667_.translate(0F, 0.1F, 0F);
+		} else if (FossilSkeletonFivePieceBlock$type == FossilSkeletonFivePieceBlock.Types.ACANTHOSTEGA) {
+			p_173667_.scale(-0.22F, -0.22F, 0.22F);
+			p_173667_.translate(0F, 3.1F, 0F);
+		} else if (FossilSkeletonFivePieceBlock$type == FossilSkeletonFivePieceBlock.Types.STENOKRANIO) {
+			p_173667_.scale(-0.6F, -0.6F, 0.6F);
+			p_173667_.translate(0F, 0.18F, 0F);
+		} else if (FossilSkeletonFivePieceBlock$type == FossilSkeletonFivePieceBlock.Types.HENODUS) {
+			p_173667_.scale(-0.45F, -0.45F, 0.45F);
+			p_173667_.translate(0F, -0.18F, 0F);
+		} else if (FossilSkeletonFivePieceBlock$type == FossilSkeletonFivePieceBlock.Types.PROTOCERAS) {
+			p_173667_.scale(-0.34F, -0.34F, 0.34F);
+			p_173667_.translate(0F, 1.43F, 0F);
 		} else p_173667_.scale(-1.0F, -1.0F, 1.0F);
 		VertexConsumer vertexconsumer = p_173668_.getBuffer(p_173671_);
 		p_173670_.setupAnim(p_173666_, p_173665_, 0.0F);
@@ -100,7 +138,15 @@ public class FossilSkeletonFivePieceRenderer implements BlockEntityRenderer<Foss
 			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/eunotosaurus/stage_" + fossilLevel + ".png");
 		} else if (type == FossilSkeletonFivePieceBlock.Types.PELECANIMIMUS) {
 			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/pelecanimimus/stage_" + fossilLevel + ".png");
-		} else resourceLocation = SKIN_BY_TYPE.get(type);
+		} else if (type == FossilSkeletonFivePieceBlock.Types.ACANTHOSTEGA) {
+			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/acanthostega/stage_" + fossilLevel + ".png");
+		} else if (type == FossilSkeletonFivePieceBlock.Types.STENOKRANIO) {
+			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/stenokranio/stage_" + fossilLevel + ".png");
+		} else if (type == FossilSkeletonFivePieceBlock.Types.HENODUS) {
+			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/henodus/stage_" + fossilLevel + ".png");
+		} else if (type == FossilSkeletonFivePieceBlock.Types.PROTOCERAS) {
+			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/protoceras/stage_" + fossilLevel + ".png");
+		}else resourceLocation = SKIN_BY_TYPE.get(type);
 		return RenderType.entityCutoutNoCullZOffset(resourceLocation);
 	}
 

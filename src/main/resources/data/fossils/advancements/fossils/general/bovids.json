@@ -1,0 +1,24 @@
+{
+  "parent": "fossils:fossils/general/artiodactyla",
+  "criteria": {
+    "finish_bovids": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "description": {
+      "translate": "advancements.fossils.bovids.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:eunotosaurus_fossil"
+    },
+    "show_toast": false,
+    "title": {
+      "translate": "advancements.fossils.bovids.title"
+    }
+  },
+  "sends_telemetry_event": true
+}

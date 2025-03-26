@@ -1,0 +1,24 @@
+{
+  "parent": "fossils:fossils/general/ornithischians",
+  "criteria": {
+    "finish_ceratopsia": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "description": {
+      "translate": "advancements.fossils.ceratopsia.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:eunotosaurus_fossil"
+    },
+    "show_toast": false,
+    "title": {
+      "translate": "advancements.fossils.ceratopsia.title"
+    }
+  },
+  "sends_telemetry_event": true
+}

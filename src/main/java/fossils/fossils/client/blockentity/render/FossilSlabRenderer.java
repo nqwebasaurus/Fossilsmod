@@ -9,7 +9,9 @@ import com.mojang.blaze3d.vertex.VertexConsumer;
 
 import fossils.fossils.FossilMod;
 import fossils.fossils.client.ClientEvents;
+import fossils.fossils.client.blockentity.model.AlienumFossilSlabModel;
 import fossils.fossils.client.blockentity.model.TropaeumFossilSlabModel;
+import fossils.fossils.common.block.FossilSkeletonFivePieceBlock;
 import fossils.fossils.common.block.FossilSlabBlock;
 import fossils.fossils.common.entity.block.FossilSlabBlockEntity;
 import net.minecraft.Util;
@@ -31,10 +33,12 @@ public class FossilSlabRenderer implements BlockEntityRenderer<FossilSlabBlockEn
 	private final Map<FossilSlabBlock.Type, SkullModelBase> modelByType;
 	public static final Map<FossilSlabBlock.Type, ResourceLocation> SKIN_BY_TYPE = Util.make(Maps.newHashMap(), (type) -> {
 		type.put(FossilSlabBlock.Types.TROPAEUM, new ResourceLocation(FossilMod.MOD_ID, "textures/block/slabs/tropaeum.png"));
+		type.put(FossilSlabBlock.Types.ALIENUM, new ResourceLocation(FossilMod.MOD_ID, "textures/block/slabs/alienum.png"));
 	});
 	public static Map<FossilSlabBlock.Type, SkullModelBase> createFossilRenderers(EntityModelSet p_173662_) {
 		ImmutableMap.Builder<FossilSlabBlock.Type, SkullModelBase> builder = ImmutableMap.builder();
 		builder.put(FossilSlabBlock.Types.TROPAEUM, new TropaeumFossilSlabModel(p_173662_.bakeLayer(ClientEvents.TROPAEUM)));
+		builder.put(FossilSlabBlock.Types.ALIENUM, new AlienumFossilSlabModel(p_173662_.bakeLayer(ClientEvents.ALIENUM)));
 		return builder.build();
 	}
 
@@ -60,6 +64,10 @@ public class FossilSlabRenderer implements BlockEntityRenderer<FossilSlabBlockEn
 		p_173667_.translate(0.5F, 1.0F, 0.5F);
 		if (fossilslabblock$type == FossilSlabBlock.Types.TROPAEUM) {
 			p_173667_.scale(-0.68F, -0.68F, 0.68F);
+
+		} else if (fossilslabblock$type == FossilSlabBlock.Types.ALIENUM) {
+			p_173667_.scale(-0.2F, -0.2F, 0.2F);
+			p_173667_.translate(0F, 3.51F, 0F);
 
 		} else p_173667_.scale(-1.0F, -1.0F, 1.0F);
 		VertexConsumer vertexconsumer = p_173668_.getBuffer(p_173671_);

@@ -1,0 +1,54 @@
+{
+  "parent": "fossils:fossils/general/hiseven",
+  "criteria": {
+    "finish_acanthostega": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:acanthostega_fossil"
+                ],
+                "state": {
+                  "fossil_level": "4"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:acanthostega_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.acanthostega.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:acanthostega_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.acanthostega.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_acanthostega"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

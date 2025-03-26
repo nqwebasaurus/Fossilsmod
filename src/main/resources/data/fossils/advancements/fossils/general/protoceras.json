@@ -1,0 +1,54 @@
+{
+  "parent": "fossils:fossils/general/protoceratids",
+  "criteria": {
+    "finish_protoceras": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:protoceras_fossil"
+                ],
+                "state": {
+                  "fossil_level": "4"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:protoceras_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.protoceras.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:protoceras_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.protoceras.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_protoceras"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

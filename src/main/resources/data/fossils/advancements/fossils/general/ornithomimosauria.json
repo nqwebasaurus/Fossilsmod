@@ -1,0 +1,24 @@
+{
+  "parent": "fossils:fossils/general/maniraptoriformes",
+  "criteria": {
+    "finish_ornithomimosauria": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "description": {
+      "translate": "advancements.fossils.ornithomimosauria.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:eunotosaurus_fossil"
+    },
+    "show_toast": false,
+    "title": {
+      "translate": "advancements.fossils.ornithomimosauria.title"
+    }
+  },
+  "sends_telemetry_event": true
+}

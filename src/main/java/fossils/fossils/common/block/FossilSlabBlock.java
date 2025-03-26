@@ -99,7 +99,8 @@ public class FossilSlabBlock extends BaseEntityBlock {
 	public interface Type{}
 
 	public static enum Types implements Type {
-		TROPAEUM;
+		TROPAEUM,
+		ALIENUM;
 	}
 
 	public FossilSlabBlock.Type getType() {

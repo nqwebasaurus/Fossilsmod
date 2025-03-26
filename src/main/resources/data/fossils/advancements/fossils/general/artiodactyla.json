@@ -1,0 +1,24 @@
+{
+  "parent": "fossils:fossils/general/ferungulata",
+  "criteria": {
+    "finish_artiodactyla": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "description": {
+      "translate": "advancements.fossils.artiodactyla.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:eunotosaurus_fossil"
+    },
+    "show_toast": false,
+    "title": {
+      "translate": "advancements.fossils.artiodactyla.title"
+    }
+  },
+  "sends_telemetry_event": true
+}

@@ -1,5 +1,5 @@
 {
-  "parent": "fossils:fossils/general/root",
+  "parent": "fossils:fossils/general/ornithomimosauria",
   "criteria": {
     "finish_pelecanimimus": {
       "conditions": {

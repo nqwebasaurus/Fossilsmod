@@ -144,6 +144,34 @@ public class FossilSkeletonFivePieceBlock extends BaseEntityBlock implements Sim
 				stack.shrink(1);
 			}
 			return InteractionResult.sidedSuccess(world.isClientSide);
+		} else if (item == FossilItems.ACANTHOSTEGA.get() && state.getValue(FOSSIL_LEVEL) != 4 && type == Types.ACANTHOSTEGA) {
+			fossilLevel = state.getValue(FOSSIL_LEVEL);
+			world.setBlockAndUpdate(pos, state.setValue(FOSSIL_LEVEL, fossilLevel + 1));
+			if (!player.isCreative()) {
+				stack.shrink(1);
+			}
+			return InteractionResult.sidedSuccess(world.isClientSide);
+		} else if (item == FossilItems.STENOKRANIO.get() && state.getValue(FOSSIL_LEVEL) != 4 && type == Types.STENOKRANIO) {
+			fossilLevel = state.getValue(FOSSIL_LEVEL);
+			world.setBlockAndUpdate(pos, state.setValue(FOSSIL_LEVEL, fossilLevel + 1));
+			if (!player.isCreative()) {
+				stack.shrink(1);
+			}
+			return InteractionResult.sidedSuccess(world.isClientSide);
+		} else if (item == FossilItems.HENODUS.get() && state.getValue(FOSSIL_LEVEL) != 4 && type == Types.HENODUS) {
+			fossilLevel = state.getValue(FOSSIL_LEVEL);
+			world.setBlockAndUpdate(pos, state.setValue(FOSSIL_LEVEL, fossilLevel + 1));
+			if (!player.isCreative()) {
+				stack.shrink(1);
+			}
+			return InteractionResult.sidedSuccess(world.isClientSide);
+		} else if (item == FossilItems.PROTOCERAS.get() && state.getValue(FOSSIL_LEVEL) != 4 && type == Types.PROTOCERAS) {
+			fossilLevel = state.getValue(FOSSIL_LEVEL);
+			world.setBlockAndUpdate(pos, state.setValue(FOSSIL_LEVEL, fossilLevel + 1));
+			if (!player.isCreative()) {
+				stack.shrink(1);
+			}
+			return InteractionResult.sidedSuccess(world.isClientSide);
 		} else return super.use(state, world, pos, player, hand, hit);
 	}
 
@@ -155,6 +183,10 @@ public class FossilSkeletonFivePieceBlock extends BaseEntityBlock implements Sim
 
 	public static enum Types implements Type {
 		EUNOTOSAURUS,
+		ACANTHOSTEGA,
+		STENOKRANIO,
+		HENODUS,
+		PROTOCERAS,
 		PELECANIMIMUS;
 	}
 

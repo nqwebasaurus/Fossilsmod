@@ -1,0 +1,24 @@
+{
+  "parent": "fossils:fossils/general/amphibians",
+  "criteria": {
+    "finish_fishapods": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "description": {
+      "translate": "advancements.fossils.fishapods.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:eunotosaurus_fossil"
+    },
+    "show_toast": false,
+    "title": {
+      "translate": "advancements.fossils.fishapods.title"
+    }
+  },
+  "sends_telemetry_event": true
+}

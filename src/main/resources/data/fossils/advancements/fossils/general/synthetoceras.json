@@ -1,0 +1,54 @@
+{
+  "parent": "fossils:fossils/general/protoceratids",
+  "criteria": {
+    "finish_synthetoceras": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:synthetoceras_fossil"
+                ],
+                "state": {
+                  "fossil_level": "9"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:synthetoceras_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.synthetoceras.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:synthetoceras_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.synthetoceras.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_synthetoceras"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

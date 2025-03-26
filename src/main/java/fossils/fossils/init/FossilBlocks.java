@@ -19,16 +19,24 @@ public class FossilBlocks {
 
 	//Slabs
 	public static final RegistryObject<FossilSlabBlock> TROPAEUM = REGISTER.register("tropaeum_fossil", () -> new FossilSlabBlock(FossilSlabBlock.Types.TROPAEUM, Properties.of().strength(2.0F, 3.0F).sound(SoundType.METAL).requiresCorrectToolForDrops().noCollission().noOcclusion()));
+	public static final RegistryObject<FossilSlabBlock> ALIENUM = REGISTER.register("alienum_fossil", () -> new FossilSlabBlock(FossilSlabBlock.Types.ALIENUM, Properties.of().strength(2.0F, 3.0F).sound(SoundType.METAL).requiresCorrectToolForDrops().noCollission().noOcclusion()));
 	
 	//Five
 	public static final RegistryObject<FossilSkeletonFivePieceBlock> EUNOTOSAURUS = REGISTER.register("eunotosaurus_fossil", () -> new FossilSkeletonFivePieceBlock(FossilSkeletonFivePieceBlock.Types.EUNOTOSAURUS, Properties.of().strength(2.0F, 3.0F).sound(SoundType.METAL).requiresCorrectToolForDrops().noOcclusion().noCollission()));
 	public static final RegistryObject<FossilSkeletonFivePieceBlock> PELECANIMIMUS = REGISTER.register("pelecanimimus_fossil", () -> new FossilSkeletonFivePieceBlock(FossilSkeletonFivePieceBlock.Types.PELECANIMIMUS, Properties.of().strength(2.0F, 3.0F).sound(SoundType.METAL).requiresCorrectToolForDrops().noOcclusion().noCollission()));
+	public static final RegistryObject<FossilSkeletonFivePieceBlock> ACANTHOSTEGA = REGISTER.register("acanthostega_fossil", () -> new FossilSkeletonFivePieceBlock(FossilSkeletonFivePieceBlock.Types.ACANTHOSTEGA, Properties.of().strength(2.0F, 3.0F).sound(SoundType.METAL).requiresCorrectToolForDrops().noOcclusion().noCollission()));
+	public static final RegistryObject<FossilSkeletonFivePieceBlock> STENOKRANIO = REGISTER.register("stenokranio_fossil", () -> new FossilSkeletonFivePieceBlock(FossilSkeletonFivePieceBlock.Types.STENOKRANIO, Properties.of().strength(2.0F, 3.0F).sound(SoundType.METAL).requiresCorrectToolForDrops().noOcclusion().noCollission()));
+	public static final RegistryObject<FossilSkeletonFivePieceBlock> HENODUS = REGISTER.register("henodus_fossil", () -> new FossilSkeletonFivePieceBlock(FossilSkeletonFivePieceBlock.Types.HENODUS, Properties.of().strength(2.0F, 3.0F).sound(SoundType.METAL).requiresCorrectToolForDrops().noOcclusion().noCollission()));
+	public static final RegistryObject<FossilSkeletonFivePieceBlock> PROTOCERAS = REGISTER.register("protoceras_fossil", () -> new FossilSkeletonFivePieceBlock(FossilSkeletonFivePieceBlock.Types.PROTOCERAS, Properties.of().strength(2.0F, 3.0F).sound(SoundType.METAL).requiresCorrectToolForDrops().noOcclusion().noCollission()));
 	
 	//Ten
 	public static final RegistryObject<FossilSkeletonTenPieceBlock> KENTROSAURUS = REGISTER.register("kentrosaurus_fossil", () -> new FossilSkeletonTenPieceBlock(FossilSkeletonTenPieceBlock.Types.KENTROSAURUS, Properties.of().strength(2.0F, 3.0F).sound(SoundType.METAL).requiresCorrectToolForDrops().noOcclusion().noCollission()));
+	public static final RegistryObject<FossilSkeletonTenPieceBlock> NASUTOCERATOPS = REGISTER.register("nasutoceratops_fossil", () -> new FossilSkeletonTenPieceBlock(FossilSkeletonTenPieceBlock.Types.NASUTOCERATOPS, Properties.of().strength(2.0F, 3.0F).sound(SoundType.METAL).requiresCorrectToolForDrops().noOcclusion().noCollission()));
+	public static final RegistryObject<FossilSkeletonTenPieceBlock> SYNTHETOCERAS = REGISTER.register("synthetoceras_fossil", () -> new FossilSkeletonTenPieceBlock(FossilSkeletonTenPieceBlock.Types.SYNTHETOCERAS, Properties.of().strength(2.0F, 3.0F).sound(SoundType.METAL).requiresCorrectToolForDrops().noOcclusion().noCollission()));
 
 	//Fifteen
 	public static final RegistryObject<FossilSkeletonFifteenPieceBlock> WUERHOSAURUS = REGISTER.register("wuerhosaurus_fossil", () -> new FossilSkeletonFifteenPieceBlock(FossilSkeletonFifteenPieceBlock.Types.WUERHOSAURUS, Properties.of().strength(2.0F, 3.0F).sound(SoundType.METAL).requiresCorrectToolForDrops().noOcclusion().noCollission()));
+	public static final RegistryObject<FossilSkeletonFifteenPieceBlock> BISONLATIFRONS = REGISTER.register("bisonlatifrons_fossil", () -> new FossilSkeletonFifteenPieceBlock(FossilSkeletonFifteenPieceBlock.Types.BISONLATIFRONS, Properties.of().strength(2.0F, 3.0F).sound(SoundType.METAL).requiresCorrectToolForDrops().noOcclusion().noCollission()));
 	
 	//Twenty
 	public static final RegistryObject<FossilSkeletonTwentyPieceBlock> UTAHRAPTOR = REGISTER.register("utahraptor_fossil", () -> new FossilSkeletonTwentyPieceBlock(FossilSkeletonTwentyPieceBlock.Types.UTAHRAPTOR, Properties.of().strength(2.0F, 3.0F).sound(SoundType.METAL).requiresCorrectToolForDrops().noOcclusion().noCollission()));

@@ -1,0 +1,54 @@
+{
+  "parent": "fossils:fossils/general/eryopoidea",
+  "criteria": {
+    "finish_stenokranio": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:stenokranio_fossil"
+                ],
+                "state": {
+                  "fossil_level": "4"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:stenokranio_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.stenokranio.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:stenokranio_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.stenokranio.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_stenokranio"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

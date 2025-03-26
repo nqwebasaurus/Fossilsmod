@@ -1,0 +1,24 @@
+{
+  "parent": "fossils:fossils/general/temnospondyli",
+  "criteria": {
+    "finish_eryopoidea": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "description": {
+      "translate": "advancements.fossils.eryopoidea.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:eunotosaurus_fossil"
+    },
+    "show_toast": false,
+    "title": {
+      "translate": "advancements.fossils.eryopoidea.title"
+    }
+  },
+  "sends_telemetry_event": true
+}
