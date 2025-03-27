@@ -1,0 +1,54 @@
+{
+  "parent": "fossils:fossils/general/dicynodontiabig",
+  "criteria": {
+    "finish_stahleckeria": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:stahleckeria_fossil"
+                ],
+                "state": {
+                  "fossil_level": "9"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:stahleckeria_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.stahleckeria.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:stahleckeria_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.stahleckeria.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_stahleckeria"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

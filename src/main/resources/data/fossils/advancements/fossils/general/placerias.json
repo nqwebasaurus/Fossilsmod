@@ -1,0 +1,54 @@
+{
+  "parent": "fossils:fossils/general/dicynodontiabig",
+  "criteria": {
+    "finish_placerias": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:placerias_fossil"
+                ],
+                "state": {
+                  "fossil_level": "9"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:placerias_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.placerias.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:placerias_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.placerias.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_placerias"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

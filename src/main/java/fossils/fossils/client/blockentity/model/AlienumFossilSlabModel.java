@@ -66,6 +66,6 @@ public class AlienumFossilSlabModel extends SkullModelBase {
 
 	@Override
 	public void setupAnim(float p_170950_, float p_170951_, float p_170952_) {		
-		this.fossil.yRot = p_170951_ * ((float)Math.PI / 180F) + 1.5708F;
+		this.fossil.xRot = p_170951_ * ((float)Math.PI / 180F) + 1.5708F;
 	}
 }

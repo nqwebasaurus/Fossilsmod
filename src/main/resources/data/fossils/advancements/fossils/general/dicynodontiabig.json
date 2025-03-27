@@ -1,0 +1,24 @@
+{
+  "parent": "fossils:fossils/general/anomodontia",
+  "criteria": {
+    "finish_dicynodontiabig": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "description": {
+      "translate": "advancements.fossils.dicynodontiabig.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:eunotosaurus_fossil"
+    },
+    "show_toast": false,
+    "title": {
+      "translate": "advancements.fossils.dicynodontiabig.title"
+    }
+  },
+  "sends_telemetry_event": true
+}

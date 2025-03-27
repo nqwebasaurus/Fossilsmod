@@ -1,0 +1,24 @@
+{
+  "parent": "fossils:fossils/general/sauropsids",
+  "criteria": {
+    "finish_archosauromorpha": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "description": {
+      "translate": "advancements.fossils.archosauromorpha.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:eunotosaurus_fossil"
+    },
+    "show_toast": false,
+    "title": {
+      "translate": "advancements.fossils.archosauromorpha.title"
+    }
+  },
+  "sends_telemetry_event": true
+}

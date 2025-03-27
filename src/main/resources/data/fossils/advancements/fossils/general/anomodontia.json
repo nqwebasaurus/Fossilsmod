@@ -1,0 +1,24 @@
+{
+  "parent": "fossils:fossils/general/synapsids",
+  "criteria": {
+    "finish_anomodontia": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "description": {
+      "translate": "advancements.fossils.anomodontia.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:eunotosaurus_fossil"
+    },
+    "show_toast": false,
+    "title": {
+      "translate": "advancements.fossils.anomodontia.title"
+    }
+  },
+  "sends_telemetry_event": true
+}

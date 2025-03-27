@@ -1,0 +1,24 @@
+{
+  "parent": "fossils:fossils/general/rauisuchians_aetosaurs",
+  "criteria": {
+    "finish_aetosaurs": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "description": {
+      "translate": "advancements.fossils.aetosaurs.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:eunotosaurus_fossil"
+    },
+    "show_toast": false,
+    "title": {
+      "translate": "advancements.fossils.aetosaurs.title"
+    }
+  },
+  "sends_telemetry_event": true
+}

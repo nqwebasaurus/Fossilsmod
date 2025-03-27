@@ -172,6 +172,55 @@ public class FossilSkeletonFivePieceBlock extends BaseEntityBlock implements Sim
 				stack.shrink(1);
 			}
 			return InteractionResult.sidedSuccess(world.isClientSide);
+		} else if (item == FossilItems.DIPLOCAULUSMAGNICORNIS.get() && state.getValue(FOSSIL_LEVEL) != 4 && type == Types.DIPLOCAULUSMAGNICORNIS) {
+			fossilLevel = state.getValue(FOSSIL_LEVEL);
+			world.setBlockAndUpdate(pos, state.setValue(FOSSIL_LEVEL, fossilLevel + 1));
+			if (!player.isCreative()) {
+				stack.shrink(1);
+			}
+			return InteractionResult.sidedSuccess(world.isClientSide);
+		} else if (item == FossilItems.TIKTAALIK.get() && state.getValue(FOSSIL_LEVEL) != 4 && type == Types.TIKTAALIK) {
+			fossilLevel = state.getValue(FOSSIL_LEVEL);
+			world.setBlockAndUpdate(pos, state.setValue(FOSSIL_LEVEL, fossilLevel + 1));
+			if (!player.isCreative()) {
+				stack.shrink(1);
+			}
+			return InteractionResult.sidedSuccess(world.isClientSide);
+		} else if (item == FossilItems.SUMINIA.get() && state.getValue(FOSSIL_LEVEL) != 4 && type == Types.SUMINIA) {
+			fossilLevel = state.getValue(FOSSIL_LEVEL);
+			world.setBlockAndUpdate(pos, state.setValue(FOSSIL_LEVEL, fossilLevel + 1));
+			if (!player.isCreative()) {
+				stack.shrink(1);
+			}
+			return InteractionResult.sidedSuccess(world.isClientSide);
+		} else if (item == FossilItems.MEGALANCOSAURUS.get() && state.getValue(FOSSIL_LEVEL) != 4 && type == Types.MEGALANCOSAURUS) {
+			fossilLevel = state.getValue(FOSSIL_LEVEL);
+			world.setBlockAndUpdate(pos, state.setValue(FOSSIL_LEVEL, fossilLevel + 1));
+			if (!player.isCreative()) {
+				stack.shrink(1);
+			}
+			return InteractionResult.sidedSuccess(world.isClientSide);
+		} else if (item == FossilItems.RIOJASUCHUS.get() && state.getValue(FOSSIL_LEVEL) != 4 && type == Types.RIOJASUCHUS) {
+			fossilLevel = state.getValue(FOSSIL_LEVEL);
+			world.setBlockAndUpdate(pos, state.setValue(FOSSIL_LEVEL, fossilLevel + 1));
+			if (!player.isCreative()) {
+				stack.shrink(1);
+			}
+			return InteractionResult.sidedSuccess(world.isClientSide);
+		} else if (item == FossilItems.DREPANOSAURUS.get() && state.getValue(FOSSIL_LEVEL) != 4 && type == Types.DREPANOSAURUS) {
+			fossilLevel = state.getValue(FOSSIL_LEVEL);
+			world.setBlockAndUpdate(pos, state.setValue(FOSSIL_LEVEL, fossilLevel + 1));
+			if (!player.isCreative()) {
+				stack.shrink(1);
+			}
+			return InteractionResult.sidedSuccess(world.isClientSide);
+		} else if (item == FossilItems.MANIDENS.get() && state.getValue(FOSSIL_LEVEL) != 4 && type == Types.MANIDENS) {
+			fossilLevel = state.getValue(FOSSIL_LEVEL);
+			world.setBlockAndUpdate(pos, state.setValue(FOSSIL_LEVEL, fossilLevel + 1));
+			if (!player.isCreative()) {
+				stack.shrink(1);
+			}
+			return InteractionResult.sidedSuccess(world.isClientSide);
 		} else return super.use(state, world, pos, player, hand, hit);
 	}
 
@@ -186,7 +235,14 @@ public class FossilSkeletonFivePieceBlock extends BaseEntityBlock implements Sim
 		ACANTHOSTEGA,
 		STENOKRANIO,
 		HENODUS,
+		TIKTAALIK,
+		SUMINIA,
+		MANIDENS,
+		MEGALANCOSAURUS,
+		DREPANOSAURUS,
 		PROTOCERAS,
+		RIOJASUCHUS,
+		DIPLOCAULUSMAGNICORNIS,
 		PELECANIMIMUS;
 	}
 

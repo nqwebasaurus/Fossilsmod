@@ -9,6 +9,11 @@
           "type": "minecraft:item",
           "name": "fossils:stenokranio_fossil",
           "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:diplocaulusmagnicornis_fossil",
+          "weight": 2
         }
       ],
       "rolls": 1

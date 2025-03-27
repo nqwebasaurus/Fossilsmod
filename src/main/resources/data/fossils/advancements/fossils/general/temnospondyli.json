@@ -1,5 +1,5 @@
 {
-  "parent": "fossils:fossils/general/fishapods",
+  "parent": "fossils:fossils/general/amphibians",
   "criteria": {
     "finish_temnospondyli": {
       "trigger": "minecraft:tick"

@@ -1,0 +1,54 @@
+{
+  "parent": "fossils:fossils/general/eupelycosaurs",
+  "criteria": {
+    "finish_dimetrodongrandis": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:dimetrodongrandis_fossil"
+                ],
+                "state": {
+                  "fossil_level": "9"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:dimetrodongrandis_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.dimetrodongrandis.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:dimetrodongrandis_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.dimetrodongrandis.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_dimetrodongrandis"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

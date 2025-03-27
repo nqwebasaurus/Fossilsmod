@@ -151,7 +151,84 @@ public class FossilSkeletonTenPieceBlock extends BaseEntityBlock implements Simp
 				stack.shrink(1);
 			}
 			return InteractionResult.sidedSuccess(world.isClientSide);
-		}else return super.use(state, world, pos, player, hand, hit);
+		} else if (item == FossilItems.DIMETRODONGRANDIS.get() && state.getValue(FOSSIL_LEVEL) != 9 && type == Types.DIMETRODONGRANDIS) {
+			fossilLevel = state.getValue(FOSSIL_LEVEL);
+			world.setBlockAndUpdate(pos, state.setValue(FOSSIL_LEVEL, fossilLevel + 1));
+			if (!player.isCreative()) {
+				stack.shrink(1);
+			}
+			return InteractionResult.sidedSuccess(world.isClientSide);
+		} else if (item == FossilItems.ENDOTHIODONBATHYSTOMA.get() && state.getValue(FOSSIL_LEVEL) != 9 && type == Types.ENDOTHIODONBATHYSTOMA) {
+			fossilLevel = state.getValue(FOSSIL_LEVEL);
+			world.setBlockAndUpdate(pos, state.setValue(FOSSIL_LEVEL, fossilLevel + 1));
+			if (!player.isCreative()) {
+				stack.shrink(1);
+			}
+			return InteractionResult.sidedSuccess(world.isClientSide);
+		} else if (item == FossilItems.NIGERPETON.get() && state.getValue(FOSSIL_LEVEL) != 9 && type == Types.NIGERPETON) {
+			fossilLevel = state.getValue(FOSSIL_LEVEL);
+			world.setBlockAndUpdate(pos, state.setValue(FOSSIL_LEVEL, fossilLevel + 1));
+			if (!player.isCreative()) {
+				stack.shrink(1);
+			}
+			return InteractionResult.sidedSuccess(world.isClientSide);
+		} else if (item == FossilItems.PLACERIAS.get() && state.getValue(FOSSIL_LEVEL) != 9 && type == Types.PLACERIAS) {
+			fossilLevel = state.getValue(FOSSIL_LEVEL);
+			world.setBlockAndUpdate(pos, state.setValue(FOSSIL_LEVEL, fossilLevel + 1));
+			if (!player.isCreative()) {
+				stack.shrink(1);
+			}
+			return InteractionResult.sidedSuccess(world.isClientSide);
+		} else if (item == FossilItems.ARIZONASAURUS.get() && state.getValue(FOSSIL_LEVEL) != 9 && type == Types.ARIZONASAURUS) {
+			fossilLevel = state.getValue(FOSSIL_LEVEL);
+			world.setBlockAndUpdate(pos, state.setValue(FOSSIL_LEVEL, fossilLevel + 1));
+			if (!player.isCreative()) {
+				stack.shrink(1);
+			}
+			return InteractionResult.sidedSuccess(world.isClientSide);
+		} else if (item == FossilItems.POPOSAURUS.get() && state.getValue(FOSSIL_LEVEL) != 9 && type == Types.POPOSAURUS) {
+			fossilLevel = state.getValue(FOSSIL_LEVEL);
+			world.setBlockAndUpdate(pos, state.setValue(FOSSIL_LEVEL, fossilLevel + 1));
+			if (!player.isCreative()) {
+				stack.shrink(1);
+			}
+			return InteractionResult.sidedSuccess(world.isClientSide);
+		} else if (item == FossilItems.STAHLECKERIA.get() && state.getValue(FOSSIL_LEVEL) != 9 && type == Types.STAHLECKERIA) {
+			fossilLevel = state.getValue(FOSSIL_LEVEL);
+			world.setBlockAndUpdate(pos, state.setValue(FOSSIL_LEVEL, fossilLevel + 1));
+			if (!player.isCreative()) {
+				stack.shrink(1);
+			}
+			return InteractionResult.sidedSuccess(world.isClientSide);
+		} else if (item == FossilItems.STAGONOLEPIS.get() && state.getValue(FOSSIL_LEVEL) != 9 && type == Types.STAGONOLEPIS) {
+			fossilLevel = state.getValue(FOSSIL_LEVEL);
+			world.setBlockAndUpdate(pos, state.setValue(FOSSIL_LEVEL, fossilLevel + 1));
+			if (!player.isCreative()) {
+				stack.shrink(1);
+			}
+			return InteractionResult.sidedSuccess(world.isClientSide);
+		} else if (item == FossilItems.GUANLONG.get() && state.getValue(FOSSIL_LEVEL) != 9 && type == Types.GUANLONG) {
+			fossilLevel = state.getValue(FOSSIL_LEVEL);
+			world.setBlockAndUpdate(pos, state.setValue(FOSSIL_LEVEL, fossilLevel + 1));
+			if (!player.isCreative()) {
+				stack.shrink(1);
+			}
+			return InteractionResult.sidedSuccess(world.isClientSide);
+		} else if (item == FossilItems.ICHTHYOSAURUS.get() && state.getValue(FOSSIL_LEVEL) != 9 && type == Types.ICHTHYOSAURUS) {
+			fossilLevel = state.getValue(FOSSIL_LEVEL);
+			world.setBlockAndUpdate(pos, state.setValue(FOSSIL_LEVEL, fossilLevel + 1));
+			if (!player.isCreative()) {
+				stack.shrink(1);
+			}
+			return InteractionResult.sidedSuccess(world.isClientSide);
+		} else if (item == FossilItems.SCELIDOSAURUS.get() && state.getValue(FOSSIL_LEVEL) != 9 && type == Types.SCELIDOSAURUS) {
+			fossilLevel = state.getValue(FOSSIL_LEVEL);
+			world.setBlockAndUpdate(pos, state.setValue(FOSSIL_LEVEL, fossilLevel + 1));
+			if (!player.isCreative()) {
+				stack.shrink(1);
+			}
+			return InteractionResult.sidedSuccess(world.isClientSide);
+		} else return super.use(state, world, pos, player, hand, hit);
 	}
 
 	public FossilSkeletonTenPieceBlock.Type getType() {
@@ -163,6 +240,17 @@ public class FossilSkeletonTenPieceBlock extends BaseEntityBlock implements Simp
 	public static enum Types implements Type {
 		KENTROSAURUS,
 		SYNTHETOCERAS,
+		DIMETRODONGRANDIS,
+		ENDOTHIODONBATHYSTOMA,
+		NIGERPETON,
+		ARIZONASAURUS,
+		POPOSAURUS,
+		PLACERIAS,
+		STAHLECKERIA,
+		STAGONOLEPIS,
+		GUANLONG,
+		ICHTHYOSAURUS,
+		SCELIDOSAURUS,
 		NASUTOCERATOPS;
 	}
 

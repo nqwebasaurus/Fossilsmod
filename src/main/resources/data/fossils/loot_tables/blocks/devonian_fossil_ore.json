@@ -9,6 +9,11 @@
           "type": "minecraft:item",
           "name": "fossils:acanthostega_fossil",
           "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:tiktaalik_fossil",
+          "weight": 2
         }
       ],
       "rolls": 1

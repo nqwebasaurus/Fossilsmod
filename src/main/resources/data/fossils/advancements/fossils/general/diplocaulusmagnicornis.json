@@ -1,0 +1,54 @@
+{
+  "parent": "fossils:fossils/general/lepospondyli",
+  "criteria": {
+    "finish_diplocaulusmagnicornis": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:diplocaulusmagnicornis_fossil"
+                ],
+                "state": {
+                  "fossil_level": "4"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:diplocaulusmagnicornis_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.diplocaulusmagnicornis.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:diplocaulusmagnicornis_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.diplocaulusmagnicornis.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_diplocaulusmagnicornis"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

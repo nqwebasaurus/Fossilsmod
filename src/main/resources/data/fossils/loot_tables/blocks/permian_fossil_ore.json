@@ -9,6 +9,31 @@
           "type": "minecraft:item",
           "name": "fossils:eunotosaurus_fossil",
           "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:diplocaulusmagnicornis_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:dimetrodongrandis_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:endothiodonbathystoma_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:suminia_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:nigerpeton_fossil",
+          "weight": 2
         }
       ],
       "rolls": 1

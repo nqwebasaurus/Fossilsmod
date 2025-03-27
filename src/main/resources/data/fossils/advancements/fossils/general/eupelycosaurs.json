@@ -1,0 +1,24 @@
+{
+  "parent": "fossils:fossils/general/earlysynapsids",
+  "criteria": {
+    "finish_eupelycosaurs": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "description": {
+      "translate": "advancements.fossils.eupelycosaurs.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:eunotosaurus_fossil"
+    },
+    "show_toast": false,
+    "title": {
+      "translate": "advancements.fossils.eupelycosaurs.title"
+    }
+  },
+  "sends_telemetry_event": true
+}

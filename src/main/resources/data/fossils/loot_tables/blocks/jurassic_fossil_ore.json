@@ -9,6 +9,26 @@
           "type": "minecraft:item",
           "name": "fossils:kentrosaurus_fossil",
           "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:manidens_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:guanlong_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:ichthyosaurus_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:scelidosaurus_fossil",
+          "weight": 2
         }
       ],
       "rolls": 1

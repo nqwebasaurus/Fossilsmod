@@ -1,0 +1,54 @@
+{
+  "parent": "fossils:fossils/general/neornithischians",
+  "criteria": {
+    "finish_manidens": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:manidens_fossil"
+                ],
+                "state": {
+                  "fossil_level": "4"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:manidens_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.manidens.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:manidens_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.manidens.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_manidens"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

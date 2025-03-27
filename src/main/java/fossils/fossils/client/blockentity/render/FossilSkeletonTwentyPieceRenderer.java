@@ -9,6 +9,8 @@ import com.mojang.blaze3d.vertex.VertexConsumer;
 
 import fossils.fossils.FossilMod;
 import fossils.fossils.client.ClientEvents;
+import fossils.fossils.client.blockentity.model.shonisaurus.ShonisaurusFossilFrameModel;
+import fossils.fossils.client.blockentity.model.shonisaurus.ShonisaurusFossilModel;
 import fossils.fossils.client.blockentity.model.utahraptor.UtahraptorFossilFrameModel;
 import fossils.fossils.client.blockentity.model.utahraptor.UtahraptorFossilModel;
 import fossils.fossils.common.block.FossilSkeletonTwentyPieceBlock;
@@ -33,19 +35,23 @@ public class FossilSkeletonTwentyPieceRenderer implements BlockEntityRenderer<Fo
 	private final Map<FossilSkeletonTwentyPieceBlock.Type, SkullModelBase> frameModelByType;
 	public static final Map<FossilSkeletonTwentyPieceBlock.Type, ResourceLocation> SKIN_BY_TYPE = Util.make(Maps.newHashMap(), (type) -> {
 		type.put(FossilSkeletonTwentyPieceBlock.Types.UTAHRAPTOR, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/utahraptor/stage_0.png"));
+		type.put(FossilSkeletonTwentyPieceBlock.Types.SHONISAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/shonisaurus/stage_0.png"));
 	});
 	public static final Map<FossilSkeletonTwentyPieceBlock.Type, ResourceLocation> FRAME_BY_TYPE = Util.make(Maps.newHashMap(), (type) -> {
 		type.put(FossilSkeletonTwentyPieceBlock.Types.UTAHRAPTOR, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/utahraptor/frame.png"));
+		type.put(FossilSkeletonTwentyPieceBlock.Types.SHONISAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/shonisaurus/frame.png"));
 	});
 	public static Map<FossilSkeletonTwentyPieceBlock.Type, SkullModelBase> createFossilRenderers(EntityModelSet p_173662_) {
 		ImmutableMap.Builder<FossilSkeletonTwentyPieceBlock.Type, SkullModelBase> builder = ImmutableMap.builder();
 		builder.put(FossilSkeletonTwentyPieceBlock.Types.UTAHRAPTOR, new UtahraptorFossilModel(p_173662_.bakeLayer(ClientEvents.UTAHRAPTOR)));
+		builder.put(FossilSkeletonTwentyPieceBlock.Types.SHONISAURUS, new ShonisaurusFossilModel(p_173662_.bakeLayer(ClientEvents.SHONISAURUS)));
 		return builder.build();
 	}
 
 	public static Map<FossilSkeletonTwentyPieceBlock.Type, SkullModelBase> createFossilFrameRenderers(EntityModelSet p_173662_) {
 		ImmutableMap.Builder<FossilSkeletonTwentyPieceBlock.Type, SkullModelBase> builder = ImmutableMap.builder();
 		builder.put(FossilSkeletonTwentyPieceBlock.Types.UTAHRAPTOR, new UtahraptorFossilFrameModel(p_173662_.bakeLayer(ClientEvents.UTAHRAPTOR_FRAME)));
+		builder.put(FossilSkeletonTwentyPieceBlock.Types.SHONISAURUS, new ShonisaurusFossilFrameModel(p_173662_.bakeLayer(ClientEvents.SHONISAURUS_FRAME)));
 		return builder.build();
 	}
 
@@ -78,6 +84,9 @@ public class FossilSkeletonTwentyPieceRenderer implements BlockEntityRenderer<Fo
 		if (FossilSkeletonTwentyPieceBlock$type == FossilSkeletonTwentyPieceBlock.Types.UTAHRAPTOR) {
 			p_173667_.scale(-1F, -1F, 1F);
 			p_173667_.translate(0F, -0.5F, 0F);
+		} else if (FossilSkeletonTwentyPieceBlock$type == FossilSkeletonTwentyPieceBlock.Types.SHONISAURUS) {
+			p_173667_.scale(-1.24F, -1.24F, 1.24F);
+			p_173667_.translate(0F, -2.F, 0F);
 		} else p_173667_.scale(-1.0F, -1.0F, 1.0F);
 		VertexConsumer vertexconsumer = p_173668_.getBuffer(p_173671_);
 		p_173670_.setupAnim(p_173666_, p_173665_, 0.0F);
@@ -89,6 +98,8 @@ public class FossilSkeletonTwentyPieceRenderer implements BlockEntityRenderer<Fo
 		ResourceLocation resourceLocation;
 		if (type == FossilSkeletonTwentyPieceBlock.Types.UTAHRAPTOR) {
 			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/utahraptor/stage_" + fossilLevel + ".png");
+		} else if (type == FossilSkeletonTwentyPieceBlock.Types.SHONISAURUS) {
+			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/shonisaurus/stage_" + fossilLevel + ".png");
 		} else resourceLocation = SKIN_BY_TYPE.get(type);
 		return RenderType.entityCutoutNoCullZOffset(resourceLocation);
 	}
