@@ -56,6 +56,34 @@
         ]
       },
       "trigger": "minecraft:item_used_on_block"
+    },
+    "finish_yingshanosaurus": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:yingshanosaurus_fossil"
+                ],
+                "state": {
+                  "fossil_level": "14"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:yingshanosaurus_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
     }
   },
   "display": {
@@ -66,7 +94,7 @@
     "frame": "task",
     "hidden": false,
     "icon": {
-      "item": "fossils:eunotosaurus_fossil"
+      "item": "fossils:advancement_line"
     },
     "show_toast": false,
     "title": {
@@ -79,6 +107,9 @@
     ],
     [
       "finish_kentrosaurus"
+    ],
+    [
+      "finish_yingshanosaurus"
     ]
   ],
   "sends_telemetry_event": true

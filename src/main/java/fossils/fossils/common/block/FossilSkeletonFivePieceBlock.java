@@ -4,6 +4,8 @@ import fossils.fossils.common.entity.block.FossilSkeletonFivePieceBlockEntity;
 import fossils.fossils.init.FossilItems;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
+import net.minecraft.sounds.SoundEvents;
+import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
@@ -133,6 +135,7 @@ public class FossilSkeletonFivePieceBlock extends BaseEntityBlock implements Sim
 		} else if (item == FossilItems.EUNOTOSAURUS.get() && state.getValue(FOSSIL_LEVEL) != 4 && type == Types.EUNOTOSAURUS) {
 			fossilLevel = state.getValue(FOSSIL_LEVEL);
 			world.setBlockAndUpdate(pos, state.setValue(FOSSIL_LEVEL, fossilLevel + 1));
+			world.playSound(player, pos, SoundEvents.BONE_BLOCK_PLACE, SoundSource.BLOCKS);
 			if (!player.isCreative()) {
 				stack.shrink(1);
 			}
@@ -140,6 +143,7 @@ public class FossilSkeletonFivePieceBlock extends BaseEntityBlock implements Sim
 		} else if (item == FossilItems.PELECANIMIMUS.get() && state.getValue(FOSSIL_LEVEL) != 4 && type == Types.PELECANIMIMUS) {
 			fossilLevel = state.getValue(FOSSIL_LEVEL);
 			world.setBlockAndUpdate(pos, state.setValue(FOSSIL_LEVEL, fossilLevel + 1));
+			world.playSound(player, pos, SoundEvents.BONE_BLOCK_PLACE, SoundSource.BLOCKS);
 			if (!player.isCreative()) {
 				stack.shrink(1);
 			}
@@ -147,6 +151,7 @@ public class FossilSkeletonFivePieceBlock extends BaseEntityBlock implements Sim
 		} else if (item == FossilItems.ACANTHOSTEGA.get() && state.getValue(FOSSIL_LEVEL) != 4 && type == Types.ACANTHOSTEGA) {
 			fossilLevel = state.getValue(FOSSIL_LEVEL);
 			world.setBlockAndUpdate(pos, state.setValue(FOSSIL_LEVEL, fossilLevel + 1));
+			world.playSound(player, pos, SoundEvents.BONE_BLOCK_PLACE, SoundSource.BLOCKS);
 			if (!player.isCreative()) {
 				stack.shrink(1);
 			}
@@ -154,6 +159,7 @@ public class FossilSkeletonFivePieceBlock extends BaseEntityBlock implements Sim
 		} else if (item == FossilItems.STENOKRANIO.get() && state.getValue(FOSSIL_LEVEL) != 4 && type == Types.STENOKRANIO) {
 			fossilLevel = state.getValue(FOSSIL_LEVEL);
 			world.setBlockAndUpdate(pos, state.setValue(FOSSIL_LEVEL, fossilLevel + 1));
+			world.playSound(player, pos, SoundEvents.BONE_BLOCK_PLACE, SoundSource.BLOCKS);
 			if (!player.isCreative()) {
 				stack.shrink(1);
 			}
@@ -161,6 +167,7 @@ public class FossilSkeletonFivePieceBlock extends BaseEntityBlock implements Sim
 		} else if (item == FossilItems.HENODUS.get() && state.getValue(FOSSIL_LEVEL) != 4 && type == Types.HENODUS) {
 			fossilLevel = state.getValue(FOSSIL_LEVEL);
 			world.setBlockAndUpdate(pos, state.setValue(FOSSIL_LEVEL, fossilLevel + 1));
+			world.playSound(player, pos, SoundEvents.BONE_BLOCK_PLACE, SoundSource.BLOCKS);
 			if (!player.isCreative()) {
 				stack.shrink(1);
 			}
@@ -168,6 +175,7 @@ public class FossilSkeletonFivePieceBlock extends BaseEntityBlock implements Sim
 		} else if (item == FossilItems.PROTOCERAS.get() && state.getValue(FOSSIL_LEVEL) != 4 && type == Types.PROTOCERAS) {
 			fossilLevel = state.getValue(FOSSIL_LEVEL);
 			world.setBlockAndUpdate(pos, state.setValue(FOSSIL_LEVEL, fossilLevel + 1));
+			world.playSound(player, pos, SoundEvents.BONE_BLOCK_PLACE, SoundSource.BLOCKS);
 			if (!player.isCreative()) {
 				stack.shrink(1);
 			}
@@ -175,6 +183,7 @@ public class FossilSkeletonFivePieceBlock extends BaseEntityBlock implements Sim
 		} else if (item == FossilItems.DIPLOCAULUSMAGNICORNIS.get() && state.getValue(FOSSIL_LEVEL) != 4 && type == Types.DIPLOCAULUSMAGNICORNIS) {
 			fossilLevel = state.getValue(FOSSIL_LEVEL);
 			world.setBlockAndUpdate(pos, state.setValue(FOSSIL_LEVEL, fossilLevel + 1));
+			world.playSound(player, pos, SoundEvents.BONE_BLOCK_PLACE, SoundSource.BLOCKS);
 			if (!player.isCreative()) {
 				stack.shrink(1);
 			}
@@ -182,6 +191,7 @@ public class FossilSkeletonFivePieceBlock extends BaseEntityBlock implements Sim
 		} else if (item == FossilItems.TIKTAALIK.get() && state.getValue(FOSSIL_LEVEL) != 4 && type == Types.TIKTAALIK) {
 			fossilLevel = state.getValue(FOSSIL_LEVEL);
 			world.setBlockAndUpdate(pos, state.setValue(FOSSIL_LEVEL, fossilLevel + 1));
+			world.playSound(player, pos, SoundEvents.BONE_BLOCK_PLACE, SoundSource.BLOCKS);
 			if (!player.isCreative()) {
 				stack.shrink(1);
 			}
@@ -189,6 +199,7 @@ public class FossilSkeletonFivePieceBlock extends BaseEntityBlock implements Sim
 		} else if (item == FossilItems.SUMINIA.get() && state.getValue(FOSSIL_LEVEL) != 4 && type == Types.SUMINIA) {
 			fossilLevel = state.getValue(FOSSIL_LEVEL);
 			world.setBlockAndUpdate(pos, state.setValue(FOSSIL_LEVEL, fossilLevel + 1));
+			world.playSound(player, pos, SoundEvents.BONE_BLOCK_PLACE, SoundSource.BLOCKS);
 			if (!player.isCreative()) {
 				stack.shrink(1);
 			}
@@ -196,6 +207,7 @@ public class FossilSkeletonFivePieceBlock extends BaseEntityBlock implements Sim
 		} else if (item == FossilItems.MEGALANCOSAURUS.get() && state.getValue(FOSSIL_LEVEL) != 4 && type == Types.MEGALANCOSAURUS) {
 			fossilLevel = state.getValue(FOSSIL_LEVEL);
 			world.setBlockAndUpdate(pos, state.setValue(FOSSIL_LEVEL, fossilLevel + 1));
+			world.playSound(player, pos, SoundEvents.BONE_BLOCK_PLACE, SoundSource.BLOCKS);
 			if (!player.isCreative()) {
 				stack.shrink(1);
 			}
@@ -203,6 +215,7 @@ public class FossilSkeletonFivePieceBlock extends BaseEntityBlock implements Sim
 		} else if (item == FossilItems.RIOJASUCHUS.get() && state.getValue(FOSSIL_LEVEL) != 4 && type == Types.RIOJASUCHUS) {
 			fossilLevel = state.getValue(FOSSIL_LEVEL);
 			world.setBlockAndUpdate(pos, state.setValue(FOSSIL_LEVEL, fossilLevel + 1));
+			world.playSound(player, pos, SoundEvents.BONE_BLOCK_PLACE, SoundSource.BLOCKS);
 			if (!player.isCreative()) {
 				stack.shrink(1);
 			}
@@ -210,6 +223,7 @@ public class FossilSkeletonFivePieceBlock extends BaseEntityBlock implements Sim
 		} else if (item == FossilItems.DREPANOSAURUS.get() && state.getValue(FOSSIL_LEVEL) != 4 && type == Types.DREPANOSAURUS) {
 			fossilLevel = state.getValue(FOSSIL_LEVEL);
 			world.setBlockAndUpdate(pos, state.setValue(FOSSIL_LEVEL, fossilLevel + 1));
+			world.playSound(player, pos, SoundEvents.BONE_BLOCK_PLACE, SoundSource.BLOCKS);
 			if (!player.isCreative()) {
 				stack.shrink(1);
 			}
@@ -217,6 +231,15 @@ public class FossilSkeletonFivePieceBlock extends BaseEntityBlock implements Sim
 		} else if (item == FossilItems.MANIDENS.get() && state.getValue(FOSSIL_LEVEL) != 4 && type == Types.MANIDENS) {
 			fossilLevel = state.getValue(FOSSIL_LEVEL);
 			world.setBlockAndUpdate(pos, state.setValue(FOSSIL_LEVEL, fossilLevel + 1));
+			world.playSound(player, pos, SoundEvents.BONE_BLOCK_PLACE, SoundSource.BLOCKS);
+			if (!player.isCreative()) {
+				stack.shrink(1);
+			}
+			return InteractionResult.sidedSuccess(world.isClientSide);
+		} else if (item == FossilItems.DASYCEPS.get() && state.getValue(FOSSIL_LEVEL) != 4 && type == Types.DASYCEPS) {
+			fossilLevel = state.getValue(FOSSIL_LEVEL);
+			world.setBlockAndUpdate(pos, state.setValue(FOSSIL_LEVEL, fossilLevel + 1));
+			world.playSound(player, pos, SoundEvents.BONE_BLOCK_PLACE, SoundSource.BLOCKS);
 			if (!player.isCreative()) {
 				stack.shrink(1);
 			}
@@ -243,6 +266,7 @@ public class FossilSkeletonFivePieceBlock extends BaseEntityBlock implements Sim
 		PROTOCERAS,
 		RIOJASUCHUS,
 		DIPLOCAULUSMAGNICORNIS,
+		DASYCEPS,
 		PELECANIMIMUS;
 	}
 

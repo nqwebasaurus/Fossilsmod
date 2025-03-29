@@ -1,7 +1,7 @@
 {
 	"display": {
 		"icon": {
-			"item": "fossils:pelecanimimus_fossil"
+			"item": "fossils:acanthostega_fossil"
 		},
 		"title": {
 			"translate": "advancements.fossils.root.title"

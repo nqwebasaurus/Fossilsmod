@@ -4,6 +4,8 @@ import fossils.fossils.common.entity.block.FossilSkeletonTwentyPieceBlockEntity;
 import fossils.fossils.init.FossilItems;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
+import net.minecraft.sounds.SoundEvents;
+import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
@@ -133,6 +135,7 @@ public class FossilSkeletonTwentyPieceBlock extends BaseEntityBlock implements S
 		} else if (item == FossilItems.UTAHRAPTOR.get() && state.getValue(FOSSIL_LEVEL) != 19 && type == Types.UTAHRAPTOR) {
 			fossilLevel = state.getValue(FOSSIL_LEVEL);
 			world.setBlockAndUpdate(pos, state.setValue(FOSSIL_LEVEL, fossilLevel + 1));
+			world.playSound(player, pos, SoundEvents.BONE_BLOCK_PLACE, SoundSource.BLOCKS);
 			if (!player.isCreative()) {
 				stack.shrink(1);
 			}
@@ -140,6 +143,23 @@ public class FossilSkeletonTwentyPieceBlock extends BaseEntityBlock implements S
 		} else if (item == FossilItems.SHONISAURUS.get() && state.getValue(FOSSIL_LEVEL) != 19 && type == Types.SHONISAURUS) {
 			fossilLevel = state.getValue(FOSSIL_LEVEL);
 			world.setBlockAndUpdate(pos, state.setValue(FOSSIL_LEVEL, fossilLevel + 1));
+			world.playSound(player, pos, SoundEvents.BONE_BLOCK_PLACE, SoundSource.BLOCKS);
+			if (!player.isCreative()) {
+				stack.shrink(1);
+			}
+			return InteractionResult.sidedSuccess(world.isClientSide);
+		} else if (item == FossilItems.APATOSAURUS.get() && state.getValue(FOSSIL_LEVEL) != 19 && type == Types.APATOSAURUS) {
+			fossilLevel = state.getValue(FOSSIL_LEVEL);
+			world.setBlockAndUpdate(pos, state.setValue(FOSSIL_LEVEL, fossilLevel + 1));
+			world.playSound(player, pos, SoundEvents.BONE_BLOCK_PLACE, SoundSource.BLOCKS);
+			if (!player.isCreative()) {
+				stack.shrink(1);
+			}
+			return InteractionResult.sidedSuccess(world.isClientSide);
+		} else if (item == FossilItems.BRACHIOSAURUS.get() && state.getValue(FOSSIL_LEVEL) != 19 && type == Types.BRACHIOSAURUS) {
+			fossilLevel = state.getValue(FOSSIL_LEVEL);
+			world.setBlockAndUpdate(pos, state.setValue(FOSSIL_LEVEL, fossilLevel + 1));
+			world.playSound(player, pos, SoundEvents.BONE_BLOCK_PLACE, SoundSource.BLOCKS);
 			if (!player.isCreative()) {
 				stack.shrink(1);
 			}
@@ -155,6 +175,8 @@ public class FossilSkeletonTwentyPieceBlock extends BaseEntityBlock implements S
 
 	public static enum Types implements Type {
 		SHONISAURUS,
+		APATOSAURUS,
+		BRACHIOSAURUS,
 		UTAHRAPTOR;
 	}
 

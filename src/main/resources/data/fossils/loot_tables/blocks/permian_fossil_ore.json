@@ -34,6 +34,11 @@
           "type": "minecraft:item",
           "name": "fossils:nigerpeton_fossil",
           "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:dasyceps_fossil",
+          "weight": 2
         }
       ],
       "rolls": 1

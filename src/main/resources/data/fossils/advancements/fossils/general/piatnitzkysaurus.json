@@ -1,0 +1,54 @@
+{
+  "parent": "fossils:fossils/general/theropods",
+  "criteria": {
+    "finish_piatnitzkysaurus": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:piatnitzkysaurus_fossil"
+                ],
+                "state": {
+                  "fossil_level": "9"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:piatnitzkysaurus_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.piatnitzkysaurus.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:piatnitzkysaurus_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.piatnitzkysaurus.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_piatnitzkysaurus"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

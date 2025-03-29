@@ -4,6 +4,8 @@ import fossils.fossils.common.entity.block.FossilSkeletonFifteenPieceBlockEntity
 import fossils.fossils.init.FossilItems;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
+import net.minecraft.sounds.SoundEvents;
+import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
@@ -133,6 +135,7 @@ public class FossilSkeletonFifteenPieceBlock extends BaseEntityBlock implements 
 		} else if (item == FossilItems.WUERHOSAURUS.get() && state.getValue(FOSSIL_LEVEL) != 14 && type == Types.WUERHOSAURUS) {
 			fossilLevel = state.getValue(FOSSIL_LEVEL);
 			world.setBlockAndUpdate(pos, state.setValue(FOSSIL_LEVEL, fossilLevel + 1));
+			world.playSound(player, pos, SoundEvents.BONE_BLOCK_PLACE, SoundSource.BLOCKS);
 			if (!player.isCreative()) {
 				stack.shrink(1);
 			}
@@ -140,6 +143,7 @@ public class FossilSkeletonFifteenPieceBlock extends BaseEntityBlock implements 
 		} else if (item == FossilItems.BISONLATIFRONS.get() && state.getValue(FOSSIL_LEVEL) != 14 && type == Types.BISONLATIFRONS) {
 			fossilLevel = state.getValue(FOSSIL_LEVEL);
 			world.setBlockAndUpdate(pos, state.setValue(FOSSIL_LEVEL, fossilLevel + 1));
+			world.playSound(player, pos, SoundEvents.BONE_BLOCK_PLACE, SoundSource.BLOCKS);
 			if (!player.isCreative()) {
 				stack.shrink(1);
 			}
@@ -147,6 +151,63 @@ public class FossilSkeletonFifteenPieceBlock extends BaseEntityBlock implements 
 		} else if (item == FossilItems.SMILOSUCHUS.get() && state.getValue(FOSSIL_LEVEL) != 14 && type == Types.SMILOSUCHUS) {
 			fossilLevel = state.getValue(FOSSIL_LEVEL);
 			world.setBlockAndUpdate(pos, state.setValue(FOSSIL_LEVEL, fossilLevel + 1));
+			world.playSound(player, pos, SoundEvents.BONE_BLOCK_PLACE, SoundSource.BLOCKS);
+			if (!player.isCreative()) {
+				stack.shrink(1);
+			}
+			return InteractionResult.sidedSuccess(world.isClientSide);
+		} else if (item == FossilItems.CRYOLOPHOSAURUS.get() && state.getValue(FOSSIL_LEVEL) != 14 && type == Types.CRYOLOPHOSAURUS) {
+			fossilLevel = state.getValue(FOSSIL_LEVEL);
+			world.setBlockAndUpdate(pos, state.setValue(FOSSIL_LEVEL, fossilLevel + 1));
+			world.playSound(player, pos, SoundEvents.BONE_BLOCK_PLACE, SoundSource.BLOCKS);
+			if (!player.isCreative()) {
+				stack.shrink(1);
+			}
+			return InteractionResult.sidedSuccess(world.isClientSide);
+		} else if (item == FossilItems.DILOPHOSAURUS.get() && state.getValue(FOSSIL_LEVEL) != 14 && type == Types.DILOPHOSAURUS) {
+			fossilLevel = state.getValue(FOSSIL_LEVEL);
+			world.setBlockAndUpdate(pos, state.setValue(FOSSIL_LEVEL, fossilLevel + 1));
+			world.playSound(player, pos, SoundEvents.BONE_BLOCK_PLACE, SoundSource.BLOCKS);
+			if (!player.isCreative()) {
+				stack.shrink(1);
+			}
+			return InteractionResult.sidedSuccess(world.isClientSide);
+		} else if (item == FossilItems.CERATOSAURUSDENTISULCATUS.get() && state.getValue(FOSSIL_LEVEL) != 14 && type == Types.CERATOSAURUSDENTISULCATUS) {
+			fossilLevel = state.getValue(FOSSIL_LEVEL);
+			world.setBlockAndUpdate(pos, state.setValue(FOSSIL_LEVEL, fossilLevel + 1));
+			world.playSound(player, pos, SoundEvents.BONE_BLOCK_PLACE, SoundSource.BLOCKS);
+			if (!player.isCreative()) {
+				stack.shrink(1);
+			}
+			return InteractionResult.sidedSuccess(world.isClientSide);
+		} else if (item == FossilItems.YINGSHANOSAURUS.get() && state.getValue(FOSSIL_LEVEL) != 14 && type == Types.YINGSHANOSAURUS) {
+			fossilLevel = state.getValue(FOSSIL_LEVEL);
+			world.setBlockAndUpdate(pos, state.setValue(FOSSIL_LEVEL, fossilLevel + 1));
+			world.playSound(player, pos, SoundEvents.BONE_BLOCK_PLACE, SoundSource.BLOCKS);
+			if (!player.isCreative()) {
+				stack.shrink(1);
+			}
+			return InteractionResult.sidedSuccess(world.isClientSide);
+		} else if (item == FossilItems.PATAGOSAURUS.get() && state.getValue(FOSSIL_LEVEL) != 14 && type == Types.PATAGOSAURUS) {
+			fossilLevel = state.getValue(FOSSIL_LEVEL);
+			world.setBlockAndUpdate(pos, state.setValue(FOSSIL_LEVEL, fossilLevel + 1));
+			world.playSound(player, pos, SoundEvents.BONE_BLOCK_PLACE, SoundSource.BLOCKS);
+			if (!player.isCreative()) {
+				stack.shrink(1);
+			}
+			return InteractionResult.sidedSuccess(world.isClientSide);
+		} else if (item == FossilItems.EOABELISAURUS.get() && state.getValue(FOSSIL_LEVEL) != 14 && type == Types.EOABELISAURUS) {
+			fossilLevel = state.getValue(FOSSIL_LEVEL);
+			world.setBlockAndUpdate(pos, state.setValue(FOSSIL_LEVEL, fossilLevel + 1));
+			world.playSound(player, pos, SoundEvents.BONE_BLOCK_PLACE, SoundSource.BLOCKS);
+			if (!player.isCreative()) {
+				stack.shrink(1);
+			}
+			return InteractionResult.sidedSuccess(world.isClientSide);
+		} else if (item == FossilItems.CAMPTOSAURUS.get() && state.getValue(FOSSIL_LEVEL) != 14 && type == Types.CAMPTOSAURUS) {
+			fossilLevel = state.getValue(FOSSIL_LEVEL);
+			world.setBlockAndUpdate(pos, state.setValue(FOSSIL_LEVEL, fossilLevel + 1));
+			world.playSound(player, pos, SoundEvents.BONE_BLOCK_PLACE, SoundSource.BLOCKS);
 			if (!player.isCreative()) {
 				stack.shrink(1);
 			}
@@ -163,6 +224,13 @@ public class FossilSkeletonFifteenPieceBlock extends BaseEntityBlock implements 
 	public static enum Types implements Type {
 		BISONLATIFRONS,
 		SMILOSUCHUS,
+		CRYOLOPHOSAURUS,
+		DILOPHOSAURUS,
+		CERATOSAURUSDENTISULCATUS,
+		YINGSHANOSAURUS,
+		PATAGOSAURUS,
+		EOABELISAURUS,
+		CAMPTOSAURUS,
 		WUERHOSAURUS;
 	}
 

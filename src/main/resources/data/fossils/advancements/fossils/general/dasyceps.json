@@ -1,0 +1,54 @@
+{
+  "parent": "fossils:fossils/general/eryopoidea",
+  "criteria": {
+    "finish_dasyceps": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:dasyceps_fossil"
+                ],
+                "state": {
+                  "fossil_level": "4"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:dasyceps_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.dasyceps.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:dasyceps_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.dasyceps.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_dasyceps"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

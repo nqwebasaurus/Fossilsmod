@@ -1,0 +1,54 @@
+{
+  "parent": "fossils:fossils/general/rhamphorhynchidae",
+  "criteria": {
+    "finish_dearc": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:dearc_fossil"
+                ],
+                "state": {
+                  "fossil_level": "9"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:dearc_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.dearc.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:dearc_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.dearc.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_dearc"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

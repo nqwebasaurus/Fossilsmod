@@ -4,6 +4,8 @@ import fossils.fossils.common.entity.block.FossilSkeletonTenPieceBlockEntity;
 import fossils.fossils.init.FossilItems;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
+import net.minecraft.sounds.SoundEvents;
+import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
@@ -133,6 +135,7 @@ public class FossilSkeletonTenPieceBlock extends BaseEntityBlock implements Simp
 		} else if (item == FossilItems.KENTROSAURUS.get() && state.getValue(FOSSIL_LEVEL) != 9 && type == Types.KENTROSAURUS) {
 			fossilLevel = state.getValue(FOSSIL_LEVEL);
 			world.setBlockAndUpdate(pos, state.setValue(FOSSIL_LEVEL, fossilLevel + 1));
+			world.playSound(player, pos, SoundEvents.BONE_BLOCK_PLACE, SoundSource.BLOCKS);
 			if (!player.isCreative()) {
 				stack.shrink(1);
 			}
@@ -140,6 +143,7 @@ public class FossilSkeletonTenPieceBlock extends BaseEntityBlock implements Simp
 		} else if (item == FossilItems.NASUTOCERATOPS.get() && state.getValue(FOSSIL_LEVEL) != 9 && type == Types.NASUTOCERATOPS) {
 			fossilLevel = state.getValue(FOSSIL_LEVEL);
 			world.setBlockAndUpdate(pos, state.setValue(FOSSIL_LEVEL, fossilLevel + 1));
+			world.playSound(player, pos, SoundEvents.BONE_BLOCK_PLACE, SoundSource.BLOCKS);
 			if (!player.isCreative()) {
 				stack.shrink(1);
 			}
@@ -147,6 +151,7 @@ public class FossilSkeletonTenPieceBlock extends BaseEntityBlock implements Simp
 		} else if (item == FossilItems.SYNTHETOCERAS.get() && state.getValue(FOSSIL_LEVEL) != 9 && type == Types.SYNTHETOCERAS) {
 			fossilLevel = state.getValue(FOSSIL_LEVEL);
 			world.setBlockAndUpdate(pos, state.setValue(FOSSIL_LEVEL, fossilLevel + 1));
+			world.playSound(player, pos, SoundEvents.BONE_BLOCK_PLACE, SoundSource.BLOCKS);
 			if (!player.isCreative()) {
 				stack.shrink(1);
 			}
@@ -154,6 +159,7 @@ public class FossilSkeletonTenPieceBlock extends BaseEntityBlock implements Simp
 		} else if (item == FossilItems.DIMETRODONGRANDIS.get() && state.getValue(FOSSIL_LEVEL) != 9 && type == Types.DIMETRODONGRANDIS) {
 			fossilLevel = state.getValue(FOSSIL_LEVEL);
 			world.setBlockAndUpdate(pos, state.setValue(FOSSIL_LEVEL, fossilLevel + 1));
+			world.playSound(player, pos, SoundEvents.BONE_BLOCK_PLACE, SoundSource.BLOCKS);
 			if (!player.isCreative()) {
 				stack.shrink(1);
 			}
@@ -161,6 +167,7 @@ public class FossilSkeletonTenPieceBlock extends BaseEntityBlock implements Simp
 		} else if (item == FossilItems.ENDOTHIODONBATHYSTOMA.get() && state.getValue(FOSSIL_LEVEL) != 9 && type == Types.ENDOTHIODONBATHYSTOMA) {
 			fossilLevel = state.getValue(FOSSIL_LEVEL);
 			world.setBlockAndUpdate(pos, state.setValue(FOSSIL_LEVEL, fossilLevel + 1));
+			world.playSound(player, pos, SoundEvents.BONE_BLOCK_PLACE, SoundSource.BLOCKS);
 			if (!player.isCreative()) {
 				stack.shrink(1);
 			}
@@ -168,6 +175,7 @@ public class FossilSkeletonTenPieceBlock extends BaseEntityBlock implements Simp
 		} else if (item == FossilItems.NIGERPETON.get() && state.getValue(FOSSIL_LEVEL) != 9 && type == Types.NIGERPETON) {
 			fossilLevel = state.getValue(FOSSIL_LEVEL);
 			world.setBlockAndUpdate(pos, state.setValue(FOSSIL_LEVEL, fossilLevel + 1));
+			world.playSound(player, pos, SoundEvents.BONE_BLOCK_PLACE, SoundSource.BLOCKS);
 			if (!player.isCreative()) {
 				stack.shrink(1);
 			}
@@ -175,6 +183,7 @@ public class FossilSkeletonTenPieceBlock extends BaseEntityBlock implements Simp
 		} else if (item == FossilItems.PLACERIAS.get() && state.getValue(FOSSIL_LEVEL) != 9 && type == Types.PLACERIAS) {
 			fossilLevel = state.getValue(FOSSIL_LEVEL);
 			world.setBlockAndUpdate(pos, state.setValue(FOSSIL_LEVEL, fossilLevel + 1));
+			world.playSound(player, pos, SoundEvents.BONE_BLOCK_PLACE, SoundSource.BLOCKS);
 			if (!player.isCreative()) {
 				stack.shrink(1);
 			}
@@ -182,6 +191,7 @@ public class FossilSkeletonTenPieceBlock extends BaseEntityBlock implements Simp
 		} else if (item == FossilItems.ARIZONASAURUS.get() && state.getValue(FOSSIL_LEVEL) != 9 && type == Types.ARIZONASAURUS) {
 			fossilLevel = state.getValue(FOSSIL_LEVEL);
 			world.setBlockAndUpdate(pos, state.setValue(FOSSIL_LEVEL, fossilLevel + 1));
+			world.playSound(player, pos, SoundEvents.BONE_BLOCK_PLACE, SoundSource.BLOCKS);
 			if (!player.isCreative()) {
 				stack.shrink(1);
 			}
@@ -189,6 +199,7 @@ public class FossilSkeletonTenPieceBlock extends BaseEntityBlock implements Simp
 		} else if (item == FossilItems.POPOSAURUS.get() && state.getValue(FOSSIL_LEVEL) != 9 && type == Types.POPOSAURUS) {
 			fossilLevel = state.getValue(FOSSIL_LEVEL);
 			world.setBlockAndUpdate(pos, state.setValue(FOSSIL_LEVEL, fossilLevel + 1));
+			world.playSound(player, pos, SoundEvents.BONE_BLOCK_PLACE, SoundSource.BLOCKS);
 			if (!player.isCreative()) {
 				stack.shrink(1);
 			}
@@ -196,6 +207,7 @@ public class FossilSkeletonTenPieceBlock extends BaseEntityBlock implements Simp
 		} else if (item == FossilItems.STAHLECKERIA.get() && state.getValue(FOSSIL_LEVEL) != 9 && type == Types.STAHLECKERIA) {
 			fossilLevel = state.getValue(FOSSIL_LEVEL);
 			world.setBlockAndUpdate(pos, state.setValue(FOSSIL_LEVEL, fossilLevel + 1));
+			world.playSound(player, pos, SoundEvents.BONE_BLOCK_PLACE, SoundSource.BLOCKS);
 			if (!player.isCreative()) {
 				stack.shrink(1);
 			}
@@ -203,6 +215,7 @@ public class FossilSkeletonTenPieceBlock extends BaseEntityBlock implements Simp
 		} else if (item == FossilItems.STAGONOLEPIS.get() && state.getValue(FOSSIL_LEVEL) != 9 && type == Types.STAGONOLEPIS) {
 			fossilLevel = state.getValue(FOSSIL_LEVEL);
 			world.setBlockAndUpdate(pos, state.setValue(FOSSIL_LEVEL, fossilLevel + 1));
+			world.playSound(player, pos, SoundEvents.BONE_BLOCK_PLACE, SoundSource.BLOCKS);
 			if (!player.isCreative()) {
 				stack.shrink(1);
 			}
@@ -210,6 +223,7 @@ public class FossilSkeletonTenPieceBlock extends BaseEntityBlock implements Simp
 		} else if (item == FossilItems.GUANLONG.get() && state.getValue(FOSSIL_LEVEL) != 9 && type == Types.GUANLONG) {
 			fossilLevel = state.getValue(FOSSIL_LEVEL);
 			world.setBlockAndUpdate(pos, state.setValue(FOSSIL_LEVEL, fossilLevel + 1));
+			world.playSound(player, pos, SoundEvents.BONE_BLOCK_PLACE, SoundSource.BLOCKS);
 			if (!player.isCreative()) {
 				stack.shrink(1);
 			}
@@ -217,6 +231,7 @@ public class FossilSkeletonTenPieceBlock extends BaseEntityBlock implements Simp
 		} else if (item == FossilItems.ICHTHYOSAURUS.get() && state.getValue(FOSSIL_LEVEL) != 9 && type == Types.ICHTHYOSAURUS) {
 			fossilLevel = state.getValue(FOSSIL_LEVEL);
 			world.setBlockAndUpdate(pos, state.setValue(FOSSIL_LEVEL, fossilLevel + 1));
+			world.playSound(player, pos, SoundEvents.BONE_BLOCK_PLACE, SoundSource.BLOCKS);
 			if (!player.isCreative()) {
 				stack.shrink(1);
 			}
@@ -224,6 +239,23 @@ public class FossilSkeletonTenPieceBlock extends BaseEntityBlock implements Simp
 		} else if (item == FossilItems.SCELIDOSAURUS.get() && state.getValue(FOSSIL_LEVEL) != 9 && type == Types.SCELIDOSAURUS) {
 			fossilLevel = state.getValue(FOSSIL_LEVEL);
 			world.setBlockAndUpdate(pos, state.setValue(FOSSIL_LEVEL, fossilLevel + 1));
+			world.playSound(player, pos, SoundEvents.BONE_BLOCK_PLACE, SoundSource.BLOCKS);
+			if (!player.isCreative()) {
+				stack.shrink(1);
+			}
+			return InteractionResult.sidedSuccess(world.isClientSide);
+		} else if (item == FossilItems.PIATNITZKYSAURUS.get() && state.getValue(FOSSIL_LEVEL) != 9 && type == Types.PIATNITZKYSAURUS) {
+			fossilLevel = state.getValue(FOSSIL_LEVEL);
+			world.setBlockAndUpdate(pos, state.setValue(FOSSIL_LEVEL, fossilLevel + 1));
+			world.playSound(player, pos, SoundEvents.BONE_BLOCK_PLACE, SoundSource.BLOCKS);
+			if (!player.isCreative()) {
+				stack.shrink(1);
+			}
+			return InteractionResult.sidedSuccess(world.isClientSide);
+		} else if (item == FossilItems.DEARC.get() && state.getValue(FOSSIL_LEVEL) != 9 && type == Types.DEARC) {
+			fossilLevel = state.getValue(FOSSIL_LEVEL);
+			world.setBlockAndUpdate(pos, state.setValue(FOSSIL_LEVEL, fossilLevel + 1));
+			world.playSound(player, pos, SoundEvents.BONE_BLOCK_PLACE, SoundSource.BLOCKS);
 			if (!player.isCreative()) {
 				stack.shrink(1);
 			}
@@ -251,6 +283,8 @@ public class FossilSkeletonTenPieceBlock extends BaseEntityBlock implements Simp
 		GUANLONG,
 		ICHTHYOSAURUS,
 		SCELIDOSAURUS,
+		PIATNITZKYSAURUS,
+		DEARC,
 		NASUTOCERATOPS;
 	}
 

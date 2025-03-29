@@ -30,6 +30,10 @@ public class FossilMod {
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 		FossilBlocks.REGISTER.register(bus);
 		FossilItems.REGISTER.register(bus);
+		FossilItems.SLAB_REGISTER.register(bus);
+		FossilItems.BLOCK_REGISTER.register(bus);
+		FossilItems.ADVREGISTER.register(bus);
+		FossilItems.SKELETON_REGISTER.register(bus);
 		FossilBlockEntities.REGISTER.register(bus);
 		FossilCreativeTabs.REGISTER.register(bus);
 		MinecraftForge.EVENT_BUS.register(this);
