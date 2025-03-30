@@ -33,6 +33,10 @@
 	"block.fossils.megalancosaurus_fossil": "Megalancosaurus Fossil",
 	"block.fossils.drepanosaurus_fossil": "Drepanosaurus Fossil",
 	"block.fossils.dasyceps_fossil": "Dasyceps Fossil",
+	"block.fossils.aquilops_fossil": "Aquilops Fossil",
+	"block.fossils.bannykus_fossil": "Bannykus Fossil",
+	"block.fossils.yuanyanglong_fossil": "Yuanyanglong Fossil",
+	"block.fossils.mei_fossil": "Mei Fossil",
 	"block.fossils.kentrosaurus_fossil": "Kentrosaurus Fossil",
 	"block.fossils.endothiodonbathystoma_fossil": "Endothiodon bathystoma Fossil",
 	"block.fossils.dimetrodongrandis_fossil": "Dimetrodon grandis Fossil",
@@ -203,6 +207,12 @@
 	"advancements.fossils.diplodocoidea.description": "Diplodocoids",
 	"advancements.fossils.macronaria.title": "JW killed me",
 	"advancements.fossils.macronaria.description": "Macronarians",
+	"advancements.fossils.alvarezsauria.title": "Flipping the bird",
+	"advancements.fossils.alvarezsauria.description": "Alvarezsaurians",
+	"advancements.fossils.oviraptorosaurs.title": "Misunderstood Mothers",
+	"advancements.fossils.oviraptorosaurs.description": "Oviraptorosaurs",
+	"advancements.fossils.troodontids.title": "Doe Eyed, Big Brained & Nibbly",
+	"advancements.fossils.troodontids.description": "Troodontids",
 
 
 	"advancements.fossils.pelecanimimus.title": "Pelican Mimic",
@@ -292,5 +302,13 @@
 	"advancements.fossils.brachiosaurus.title": "Arm Lizard",
 	"advancements.fossils.brachiosaurus.description": "Complete a Brachiosaurus skeleton",
 	"advancements.fossils.dasyceps.title": "Hairy Head",
-	"advancements.fossils.dasyceps.description": "Complete a Dasyceps skeleton"
+	"advancements.fossils.dasyceps.description": "Complete a Dasyceps skeleton",
+	"advancements.fossils.aquilops.title": "Eagle Face",
+	"advancements.fossils.aquilops.description": "Complete an Aquilops skeleton",
+	"advancements.fossils.bannykus.title": "Half Claw",
+	"advancements.fossils.bannykus.description": "Complete a Bannykus skeleton",
+	"advancements.fossils.yuanyanglong.title": "Lovebird Dragon",
+	"advancements.fossils.yuanyanglong.description": "Complete a Yuanyanglong skeleton",
+	"advancements.fossils.mei.title": "Sleeping [Dragon]",
+	"advancements.fossils.mei.description": "Complete a Mei skeleton"
 }

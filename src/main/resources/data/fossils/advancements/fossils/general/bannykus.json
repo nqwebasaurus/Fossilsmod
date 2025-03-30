@@ -1,0 +1,54 @@
+{
+  "parent": "fossils:fossils/general/alvarezsauria",
+  "criteria": {
+    "finish_bannykus": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:bannykus_fossil"
+                ],
+                "state": {
+                  "fossil_level": "4"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:bannykus_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.bannykus.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:bannykus_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.bannykus.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_bannykus"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

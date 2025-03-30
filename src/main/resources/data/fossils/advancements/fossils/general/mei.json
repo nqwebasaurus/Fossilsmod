@@ -1,0 +1,54 @@
+{
+  "parent": "fossils:fossils/general/troodontids",
+  "criteria": {
+    "finish_mei": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:mei_fossil"
+                ],
+                "state": {
+                  "fossil_level": "4"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:mei_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.mei.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:mei_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.mei.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_mei"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

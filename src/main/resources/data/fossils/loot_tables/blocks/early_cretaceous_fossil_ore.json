@@ -24,6 +24,26 @@
           "type": "minecraft:item",
           "name": "fossils:tropaeum_fossil",
           "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:aquilops_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:bannykus_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:yuanyanglong_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:mei_fossil",
+          "weight": 2
         }
       ],
       "rolls": 1

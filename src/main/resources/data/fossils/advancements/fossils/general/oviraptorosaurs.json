@@ -1,0 +1,24 @@
+{
+  "parent": "fossils:fossils/general/maniraptoriformes",
+  "criteria": {
+    "finish_oviraptorosaurs": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "description": {
+      "translate": "advancements.fossils.oviraptorosaurs.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:advancement_line"
+    },
+    "show_toast": false,
+    "title": {
+      "translate": "advancements.fossils.oviraptorosaurs.title"
+    }
+  },
+  "sends_telemetry_event": true
+}
