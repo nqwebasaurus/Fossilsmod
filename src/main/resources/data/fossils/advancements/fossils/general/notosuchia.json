@@ -1,0 +1,24 @@
+{
+  "parent": "fossils:fossils/general/pseudosuchians",
+  "criteria": {
+    "finish_notosuchia": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "description": {
+      "translate": "advancements.fossils.notosuchia.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:advancement_line"
+    },
+    "show_toast": false,
+    "title": {
+      "translate": "advancements.fossils.notosuchia.title"
+    }
+  },
+  "sends_telemetry_event": true
+}

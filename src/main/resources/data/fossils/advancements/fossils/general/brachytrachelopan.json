@@ -1,0 +1,57 @@
+{
+  "parent": "fossils:fossils/general/dicraeosaurids",
+  "criteria": {
+    "finish_brachytrachelopan": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:brachytrachelopan_fossil"
+                ],
+                "state": {
+                  "fossil_level": "14"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:brachytrachelopan_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.brachytrachelopan.description"
+    },
+    "frame": "goal",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:brachytrachelopan_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.brachytrachelopan.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_brachytrachelopan"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  },
+  "sends_telemetry_event": true
+}

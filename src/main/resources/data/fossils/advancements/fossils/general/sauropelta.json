@@ -1,0 +1,57 @@
+{
+  "parent": "fossils:fossils/general/nodosauridae",
+  "criteria": {
+    "finish_sauropelta": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:sauropelta_fossil"
+                ],
+                "state": {
+                  "fossil_level": "14"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:sauropelta_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.sauropelta.description"
+    },
+    "frame": "goal",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:sauropelta_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.sauropelta.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_sauropelta"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  },
+  "sends_telemetry_event": true
+}

@@ -1,0 +1,24 @@
+{
+  "parent": "fossils:fossils/general/dryomorphs",
+  "criteria": {
+    "finish_iguanodontids": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "description": {
+      "translate": "advancements.fossils.iguanodontids.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:advancement_line"
+    },
+    "show_toast": false,
+    "title": {
+      "translate": "advancements.fossils.iguanodontids.title"
+    }
+  },
+  "sends_telemetry_event": true
+}

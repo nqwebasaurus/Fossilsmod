@@ -1,0 +1,24 @@
+{
+  "parent": "fossils:fossils/general/pistosauroidea",
+  "criteria": {
+    "finish_pliosauroidea": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "description": {
+      "translate": "advancements.fossils.pliosauroidea.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:advancement_line"
+    },
+    "show_toast": false,
+    "title": {
+      "translate": "advancements.fossils.pliosauroidea.title"
+    }
+  },
+  "sends_telemetry_event": true
+}

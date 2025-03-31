@@ -84,6 +84,16 @@
           "type": "minecraft:item",
           "name": "fossils:brachiosaurus_fossil",
           "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:brachytrachelopan_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:pliosaurus_fossil",
+          "weight": 2
         }
       ],
       "rolls": 1

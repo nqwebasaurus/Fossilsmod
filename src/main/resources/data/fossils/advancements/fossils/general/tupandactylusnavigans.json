@@ -1,0 +1,54 @@
+{
+  "parent": "fossils:fossils/general/tapejaridae",
+  "criteria": {
+    "finish_tupandactylusnavigans": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:tupandactylusnavigans_fossil"
+                ],
+                "state": {
+                  "fossil_level": "9"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:tupandactylusnavigans_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.tupandactylusnavigans.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:tupandactylusnavigans_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.tupandactylusnavigans.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_tupandactylusnavigans"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

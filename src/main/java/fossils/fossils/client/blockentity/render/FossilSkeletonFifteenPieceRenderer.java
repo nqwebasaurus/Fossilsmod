@@ -9,20 +9,32 @@ import com.mojang.blaze3d.vertex.VertexConsumer;
 
 import fossils.fossils.FossilMod;
 import fossils.fossils.client.ClientEvents;
+import fossils.fossils.client.blockentity.model.abyssosaurus.AbyssosaurusFossilFrameModel;
+import fossils.fossils.client.blockentity.model.abyssosaurus.AbyssosaurusFossilModel;
 import fossils.fossils.client.blockentity.model.bisonlatifrons.BisonlatifronsFossilFrameModel;
 import fossils.fossils.client.blockentity.model.bisonlatifrons.BisonlatifronsFossilModel;
+import fossils.fossils.client.blockentity.model.brachytrachelopan.BrachytrachelopanFossilFrameModel;
+import fossils.fossils.client.blockentity.model.brachytrachelopan.BrachytrachelopanFossilModel;
 import fossils.fossils.client.blockentity.model.camptosaurus.CamptosaurusFossilFrameModel;
 import fossils.fossils.client.blockentity.model.camptosaurus.CamptosaurusFossilModel;
 import fossils.fossils.client.blockentity.model.ceratosaurusdentisulcatus.CeratosaurusdentisulcatusFossilFrameModel;
 import fossils.fossils.client.blockentity.model.ceratosaurusdentisulcatus.CeratosaurusdentisulcatusFossilModel;
 import fossils.fossils.client.blockentity.model.cryolophosaurus.CryolophosaurusFossilFrameModel;
 import fossils.fossils.client.blockentity.model.cryolophosaurus.CryolophosaurusFossilModel;
+import fossils.fossils.client.blockentity.model.deinonychus.DeinonychusFossilFrameModel;
+import fossils.fossils.client.blockentity.model.deinonychus.DeinonychusFossilModel;
 import fossils.fossils.client.blockentity.model.dilophosaurus.DilophosaurusFossilFrameModel;
 import fossils.fossils.client.blockentity.model.dilophosaurus.DilophosaurusFossilModel;
 import fossils.fossils.client.blockentity.model.eoabelisaurus.EoabelisaurusFossilFrameModel;
 import fossils.fossils.client.blockentity.model.eoabelisaurus.EoabelisaurusFossilModel;
+import fossils.fossils.client.blockentity.model.koolasuchus.KoolasuchusFossilFrameModel;
+import fossils.fossils.client.blockentity.model.koolasuchus.KoolasuchusFossilModel;
+import fossils.fossils.client.blockentity.model.muttaburrasaurus.MuttaburrasaurusFossilFrameModel;
+import fossils.fossils.client.blockentity.model.muttaburrasaurus.MuttaburrasaurusFossilModel;
 import fossils.fossils.client.blockentity.model.patagosaurus.PatagosaurusFossilFrameModel;
 import fossils.fossils.client.blockentity.model.patagosaurus.PatagosaurusFossilModel;
+import fossils.fossils.client.blockentity.model.sauropelta.SauropeltaFossilFrameModel;
+import fossils.fossils.client.blockentity.model.sauropelta.SauropeltaFossilModel;
 import fossils.fossils.client.blockentity.model.smilosuchus.SmilosuchusFossilFrameModel;
 import fossils.fossils.client.blockentity.model.smilosuchus.SmilosuchusFossilModel;
 import fossils.fossils.client.blockentity.model.wuerhosaurus.WuerhosaurusFossilFrameModel;
@@ -60,6 +72,12 @@ public class FossilSkeletonFifteenPieceRenderer implements BlockEntityRenderer<F
 		type.put(FossilSkeletonFifteenPieceBlock.Types.PATAGOSAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/patagosaurus/stage_0.png"));
 		type.put(FossilSkeletonFifteenPieceBlock.Types.EOABELISAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/eoabelisaurus/stage_0.png"));
 		type.put(FossilSkeletonFifteenPieceBlock.Types.CAMPTOSAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/camptosaurus/stage_0.png"));
+		type.put(FossilSkeletonFifteenPieceBlock.Types.KOOLASUCHUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/koolasuchus/stage_0.png"));
+		type.put(FossilSkeletonFifteenPieceBlock.Types.SAUROPELTA, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/sauropelta/stage_0.png"));
+		type.put(FossilSkeletonFifteenPieceBlock.Types.ABYSSOSAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/abyssosaurus/stage_0.png"));
+		type.put(FossilSkeletonFifteenPieceBlock.Types.MUTTABURRASAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/muttaburrasaurus/stage_0.png"));
+		type.put(FossilSkeletonFifteenPieceBlock.Types.DEINONYCHUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/deinonychus/stage_0.png"));
+		type.put(FossilSkeletonFifteenPieceBlock.Types.BRACHYTRACHELOPAN, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/brachytrachelopan/stage_0.png"));
 	});
 	public static final Map<FossilSkeletonFifteenPieceBlock.Type, ResourceLocation> FRAME_BY_TYPE = Util.make(Maps.newHashMap(), (type) -> {
 		type.put(FossilSkeletonFifteenPieceBlock.Types.WUERHOSAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/wuerhosaurus/frame.png"));
@@ -72,6 +90,12 @@ public class FossilSkeletonFifteenPieceRenderer implements BlockEntityRenderer<F
 		type.put(FossilSkeletonFifteenPieceBlock.Types.PATAGOSAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/patagosaurus/frame.png"));
 		type.put(FossilSkeletonFifteenPieceBlock.Types.EOABELISAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/eoabelisaurus/frame.png"));
 		type.put(FossilSkeletonFifteenPieceBlock.Types.CAMPTOSAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/camptosaurus/frame.png"));
+		type.put(FossilSkeletonFifteenPieceBlock.Types.KOOLASUCHUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/koolasuchus/frame.png"));
+		type.put(FossilSkeletonFifteenPieceBlock.Types.SAUROPELTA, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/sauropelta/frame.png"));
+		type.put(FossilSkeletonFifteenPieceBlock.Types.ABYSSOSAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/abyssosaurus/frame.png"));
+		type.put(FossilSkeletonFifteenPieceBlock.Types.MUTTABURRASAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/muttaburrasaurus/frame.png"));
+		type.put(FossilSkeletonFifteenPieceBlock.Types.DEINONYCHUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/deinonychus/frame.png"));
+		type.put(FossilSkeletonFifteenPieceBlock.Types.BRACHYTRACHELOPAN, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/brachytrachelopan/frame.png"));
 	});
 	public static Map<FossilSkeletonFifteenPieceBlock.Type, SkullModelBase> createFossilRenderers(EntityModelSet p_173662_) {
 		ImmutableMap.Builder<FossilSkeletonFifteenPieceBlock.Type, SkullModelBase> builder = ImmutableMap.builder();
@@ -85,6 +109,12 @@ public class FossilSkeletonFifteenPieceRenderer implements BlockEntityRenderer<F
 		builder.put(FossilSkeletonFifteenPieceBlock.Types.PATAGOSAURUS, new PatagosaurusFossilModel(p_173662_.bakeLayer(ClientEvents.PATAGOSAURUS)));
 		builder.put(FossilSkeletonFifteenPieceBlock.Types.EOABELISAURUS, new EoabelisaurusFossilModel(p_173662_.bakeLayer(ClientEvents.EOABELISAURUS)));
 		builder.put(FossilSkeletonFifteenPieceBlock.Types.CAMPTOSAURUS, new CamptosaurusFossilModel(p_173662_.bakeLayer(ClientEvents.CAMPTOSAURUS)));
+		builder.put(FossilSkeletonFifteenPieceBlock.Types.KOOLASUCHUS, new KoolasuchusFossilModel(p_173662_.bakeLayer(ClientEvents.KOOLASUCHUS)));
+		builder.put(FossilSkeletonFifteenPieceBlock.Types.SAUROPELTA, new SauropeltaFossilModel(p_173662_.bakeLayer(ClientEvents.SAUROPELTA)));
+		builder.put(FossilSkeletonFifteenPieceBlock.Types.ABYSSOSAURUS, new AbyssosaurusFossilModel(p_173662_.bakeLayer(ClientEvents.ABYSSOSAURUS)));
+		builder.put(FossilSkeletonFifteenPieceBlock.Types.MUTTABURRASAURUS, new MuttaburrasaurusFossilModel(p_173662_.bakeLayer(ClientEvents.MUTTABURRASAURUS)));
+		builder.put(FossilSkeletonFifteenPieceBlock.Types.DEINONYCHUS, new DeinonychusFossilModel(p_173662_.bakeLayer(ClientEvents.DEINONYCHUS)));
+		builder.put(FossilSkeletonFifteenPieceBlock.Types.BRACHYTRACHELOPAN, new BrachytrachelopanFossilModel(p_173662_.bakeLayer(ClientEvents.BRACHYTRACHELOPAN)));
 		return builder.build();
 	}
 
@@ -100,6 +130,12 @@ public class FossilSkeletonFifteenPieceRenderer implements BlockEntityRenderer<F
 		builder.put(FossilSkeletonFifteenPieceBlock.Types.PATAGOSAURUS, new PatagosaurusFossilFrameModel(p_173662_.bakeLayer(ClientEvents.PATAGOSAURUS_FRAME)));
 		builder.put(FossilSkeletonFifteenPieceBlock.Types.EOABELISAURUS, new EoabelisaurusFossilFrameModel(p_173662_.bakeLayer(ClientEvents.EOABELISAURUS_FRAME)));
 		builder.put(FossilSkeletonFifteenPieceBlock.Types.CAMPTOSAURUS, new CamptosaurusFossilFrameModel(p_173662_.bakeLayer(ClientEvents.CAMPTOSAURUS_FRAME)));
+		builder.put(FossilSkeletonFifteenPieceBlock.Types.KOOLASUCHUS, new KoolasuchusFossilFrameModel(p_173662_.bakeLayer(ClientEvents.KOOLASUCHUS_FRAME)));
+		builder.put(FossilSkeletonFifteenPieceBlock.Types.SAUROPELTA, new SauropeltaFossilFrameModel(p_173662_.bakeLayer(ClientEvents.SAUROPELTA_FRAME)));
+		builder.put(FossilSkeletonFifteenPieceBlock.Types.ABYSSOSAURUS, new AbyssosaurusFossilFrameModel(p_173662_.bakeLayer(ClientEvents.ABYSSOSAURUS_FRAME)));
+		builder.put(FossilSkeletonFifteenPieceBlock.Types.MUTTABURRASAURUS, new MuttaburrasaurusFossilFrameModel(p_173662_.bakeLayer(ClientEvents.MUTTABURRASAURUS_FRAME)));
+		builder.put(FossilSkeletonFifteenPieceBlock.Types.DEINONYCHUS, new DeinonychusFossilFrameModel(p_173662_.bakeLayer(ClientEvents.DEINONYCHUS_FRAME)));
+		builder.put(FossilSkeletonFifteenPieceBlock.Types.BRACHYTRACHELOPAN, new BrachytrachelopanFossilFrameModel(p_173662_.bakeLayer(ClientEvents.BRACHYTRACHELOPAN_FRAME)));
 		return builder.build();
 	}
 
@@ -159,6 +195,24 @@ public class FossilSkeletonFifteenPieceRenderer implements BlockEntityRenderer<F
 		} else if (FossilSkeletonFifteenPieceBlock$type == FossilSkeletonFifteenPieceBlock.Types.CAMPTOSAURUS) {
 			p_173667_.scale(-0.65F, -0.65F, 0.65F);
 			p_173667_.translate(0F, 0.045F, 0F);
+		}  else if (FossilSkeletonFifteenPieceBlock$type == FossilSkeletonFifteenPieceBlock.Types.KOOLASUCHUS) {
+			p_173667_.scale(-1F, -1F, 1F);
+			p_173667_.translate(0F, -0.6F, 0F);
+		}  else if (FossilSkeletonFifteenPieceBlock$type == FossilSkeletonFifteenPieceBlock.Types.SAUROPELTA) {
+			p_173667_.scale(-1F, -1F, 1F);
+			p_173667_.translate(0F, -0.5F, 0F);
+		}  else if (FossilSkeletonFifteenPieceBlock$type == FossilSkeletonFifteenPieceBlock.Types.ABYSSOSAURUS) {
+			p_173667_.scale(-1F, -1F, 1F);
+			p_173667_.translate(0F, -0.5F, 0F);
+		}  else if (FossilSkeletonFifteenPieceBlock$type == FossilSkeletonFifteenPieceBlock.Types.MUTTABURRASAURUS) {
+			p_173667_.scale(-1F, -1F, 1F);
+			p_173667_.translate(0F, -0.5F, 0F);
+		}  else if (FossilSkeletonFifteenPieceBlock$type == FossilSkeletonFifteenPieceBlock.Types.DEINONYCHUS) {
+			p_173667_.scale(-0.6F, -0.6F, 0.6F);
+			p_173667_.translate(0F, 0.18F, 0F);
+		}  else if (FossilSkeletonFifteenPieceBlock$type == FossilSkeletonFifteenPieceBlock.Types.BRACHYTRACHELOPAN) {
+			p_173667_.scale(-1F, -1F, 1F);
+			p_173667_.translate(0F, -0.5F, 0F);
 		} else p_173667_.scale(-1.0F, -1.0F, 1.0F);
 		VertexConsumer vertexconsumer = p_173668_.getBuffer(p_173671_);
 		p_173670_.setupAnim(p_173666_, p_173665_, 0.0F);
@@ -188,6 +242,18 @@ public class FossilSkeletonFifteenPieceRenderer implements BlockEntityRenderer<F
 			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/eoabelisaurus/stage_" + fossilLevel + ".png");
 		} else if (type == FossilSkeletonFifteenPieceBlock.Types.CAMPTOSAURUS) {
 			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/camptosaurus/stage_" + fossilLevel + ".png");
+		} else if (type == FossilSkeletonFifteenPieceBlock.Types.KOOLASUCHUS) {
+			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/koolasuchus/stage_" + fossilLevel + ".png");
+		} else if (type == FossilSkeletonFifteenPieceBlock.Types.SAUROPELTA) {
+			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/sauropelta/stage_" + fossilLevel + ".png");
+		} else if (type == FossilSkeletonFifteenPieceBlock.Types.ABYSSOSAURUS) {
+			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/abyssosaurus/stage_" + fossilLevel + ".png");
+		} else if (type == FossilSkeletonFifteenPieceBlock.Types.MUTTABURRASAURUS) {
+			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/muttaburrasaurus/stage_" + fossilLevel + ".png");
+		} else if (type == FossilSkeletonFifteenPieceBlock.Types.DEINONYCHUS) {
+			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/deinonychus/stage_" + fossilLevel + ".png");
+		} else if (type == FossilSkeletonFifteenPieceBlock.Types.BRACHYTRACHELOPAN) {
+			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/brachytrachelopan/stage_" + fossilLevel + ".png");
 		} else resourceLocation = SKIN_BY_TYPE.get(type);
 		return RenderType.entityCutoutNoCullZOffset(resourceLocation);
 	}
