@@ -1,5 +1,5 @@
 {
-  "parent": "fossils:fossils/general/ornithischians",
+  "parent": "fossils:fossils/general/marginocephalia",
   "criteria": {
     "finish_ceratopsia": {
       "trigger": "minecraft:tick"

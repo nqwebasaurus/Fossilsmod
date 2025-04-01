@@ -1,0 +1,57 @@
+{
+  "parent": "fossils:fossils/general/chasmosaurinae",
+  "criteria": {
+    "finish_regaliceratops": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:regaliceratops_fossil"
+                ],
+                "state": {
+                  "fossil_level": "14"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:regaliceratops_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.regaliceratops.description"
+    },
+    "frame": "goal",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:regaliceratops_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.regaliceratops.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_regaliceratops"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  },
+  "sends_telemetry_event": true
+}

@@ -1,5 +1,5 @@
 {
-  "parent": "fossils:fossils/general/eupelycosaurs",
+  "parent": "fossils:fossils/general/sphenacodontidae",
   "criteria": {
     "finish_dimetrodongrandis": {
       "conditions": {

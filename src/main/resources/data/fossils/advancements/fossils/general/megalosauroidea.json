@@ -1,0 +1,24 @@
+{
+  "parent": "fossils:fossils/general/theropods",
+  "criteria": {
+    "finish_megalosauroidea": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "description": {
+      "translate": "advancements.fossils.megalosauroidea.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:advancement_line"
+    },
+    "show_toast": false,
+    "title": {
+      "translate": "advancements.fossils.megalosauroidea.title"
+    }
+  },
+  "sends_telemetry_event": true
+}

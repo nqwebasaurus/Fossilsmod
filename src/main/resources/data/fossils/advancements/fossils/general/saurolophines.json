@@ -1,0 +1,24 @@
+{
+  "parent": "fossils:fossils/general/hadrosauromorpha",
+  "criteria": {
+    "finish_saurolophines": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "description": {
+      "translate": "advancements.fossils.saurolophines.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:advancement_line"
+    },
+    "show_toast": false,
+    "title": {
+      "translate": "advancements.fossils.saurolophines.title"
+    }
+  },
+  "sends_telemetry_event": true
+}

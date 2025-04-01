@@ -1,0 +1,57 @@
+{
+  "parent": "fossils:fossils/general/dromaeosauridae",
+  "criteria": {
+    "finish_velociraptor": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:velociraptor_fossil"
+                ],
+                "state": {
+                  "fossil_level": "14"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:velociraptor_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.velociraptor.description"
+    },
+    "frame": "goal",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:velociraptor_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.velociraptor.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_velociraptor"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  },
+  "sends_telemetry_event": true
+}

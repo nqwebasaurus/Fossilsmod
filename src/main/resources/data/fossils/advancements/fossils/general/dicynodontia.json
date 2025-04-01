@@ -1,0 +1,24 @@
+{
+  "parent": "fossils:fossils/general/anomodontia",
+  "criteria": {
+    "finish_dicynodontia": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "description": {
+      "translate": "advancements.fossils.dicynodontia.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:advancement_line"
+    },
+    "show_toast": false,
+    "title": {
+      "translate": "advancements.fossils.dicynodontia.title"
+    }
+  },
+  "sends_telemetry_event": true
+}

@@ -1,5 +1,5 @@
 {
-  "parent": "fossils:fossils/general/dicynodontiabig",
+  "parent": "fossils:fossils/general/stahleckeriidae",
   "criteria": {
     "finish_placerias": {
       "conditions": {

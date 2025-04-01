@@ -1,5 +1,5 @@
 {
-  "parent": "fossils:fossils/general/maniraptoriformes",
+  "parent": "fossils:fossils/general/pennaraptora",
   "criteria": {
     "finish_troodontids": {
       "trigger": "minecraft:tick"

@@ -1,0 +1,24 @@
+{
+  "parent": "fossils:fossils/general/eupelycosaurs",
+  "criteria": {
+    "finish_sphenacodontidae": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "description": {
+      "translate": "advancements.fossils.sphenacodontidae.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:advancement_line"
+    },
+    "show_toast": false,
+    "title": {
+      "translate": "advancements.fossils.sphenacodontidae.title"
+    }
+  },
+  "sends_telemetry_event": true
+}

@@ -41,6 +41,8 @@ import fossils.fossils.client.blockentity.model.protoceras.ProtocerasFossilFrame
 import fossils.fossils.client.blockentity.model.protoceras.ProtocerasFossilModel;
 import fossils.fossils.client.blockentity.model.riojasuchus.RiojasuchusFossilFrameModel;
 import fossils.fossils.client.blockentity.model.riojasuchus.RiojasuchusFossilModel;
+import fossils.fossils.client.blockentity.model.shuvuuia.ShuvuuiaFossilFrameModel;
+import fossils.fossils.client.blockentity.model.shuvuuia.ShuvuuiaFossilModel;
 import fossils.fossils.client.blockentity.model.stenokranio.StenokranioFossilFrameModel;
 import fossils.fossils.client.blockentity.model.stenokranio.StenokranioFossilModel;
 import fossils.fossils.client.blockentity.model.suminia.SuminiaFossilFrameModel;
@@ -92,6 +94,7 @@ public class FossilSkeletonFivePieceRenderer implements BlockEntityRenderer<Foss
 		type.put(FossilSkeletonFivePieceBlock.Types.MEI, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/mei/stage_0.png"));
 		type.put(FossilSkeletonFivePieceBlock.Types.ANATOSUCHUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/anatosuchus/stage_0.png"));
 		type.put(FossilSkeletonFivePieceBlock.Types.NQWEBASAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/nqwebasaurus/stage_0.png"));
+		type.put(FossilSkeletonFivePieceBlock.Types.SHUVUUIA, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/shuvuuia/stage_0.png"));
 	});
 	public static final Map<FossilSkeletonFivePieceBlock.Type, ResourceLocation> FRAME_BY_TYPE = Util.make(Maps.newHashMap(), (type) -> {
 		type.put(FossilSkeletonFivePieceBlock.Types.EUNOTOSAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/eunotosaurus/frame.png"));
@@ -114,6 +117,7 @@ public class FossilSkeletonFivePieceRenderer implements BlockEntityRenderer<Foss
 		type.put(FossilSkeletonFivePieceBlock.Types.MEI, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/mei/frame.png"));
 		type.put(FossilSkeletonFivePieceBlock.Types.ANATOSUCHUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/anatosuchus/frame.png"));
 		type.put(FossilSkeletonFivePieceBlock.Types.NQWEBASAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/nqwebasaurus/frame.png"));
+		type.put(FossilSkeletonFivePieceBlock.Types.SHUVUUIA, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/shuvuuia/frame.png"));
 	});
 	public static Map<FossilSkeletonFivePieceBlock.Type, SkullModelBase> createFossilRenderers(EntityModelSet p_173662_) {
 		ImmutableMap.Builder<FossilSkeletonFivePieceBlock.Type, SkullModelBase> builder = ImmutableMap.builder();
@@ -137,6 +141,7 @@ public class FossilSkeletonFivePieceRenderer implements BlockEntityRenderer<Foss
 		builder.put(FossilSkeletonFivePieceBlock.Types.MEI, new MeiFossilModel(p_173662_.bakeLayer(ClientEvents.MEI)));
 		builder.put(FossilSkeletonFivePieceBlock.Types.ANATOSUCHUS, new AnatosuchusFossilModel(p_173662_.bakeLayer(ClientEvents.ANATOSUCHUS)));
 		builder.put(FossilSkeletonFivePieceBlock.Types.NQWEBASAURUS, new NqwebasaurusFossilModel(p_173662_.bakeLayer(ClientEvents.NQWEBASAURUS)));
+		builder.put(FossilSkeletonFivePieceBlock.Types.SHUVUUIA, new ShuvuuiaFossilModel(p_173662_.bakeLayer(ClientEvents.SHUVUUIA)));
 		return builder.build();
 	}
 
@@ -162,6 +167,7 @@ public class FossilSkeletonFivePieceRenderer implements BlockEntityRenderer<Foss
 		builder.put(FossilSkeletonFivePieceBlock.Types.MEI, new MeiFossilFrameModel(p_173662_.bakeLayer(ClientEvents.MEI_FRAME)));
 		builder.put(FossilSkeletonFivePieceBlock.Types.ANATOSUCHUS, new AnatosuchusFossilFrameModel(p_173662_.bakeLayer(ClientEvents.ANATOSUCHUS_FRAME)));
 		builder.put(FossilSkeletonFivePieceBlock.Types.NQWEBASAURUS, new NqwebasaurusFossilFrameModel(p_173662_.bakeLayer(ClientEvents.NQWEBASAURUS_FRAME)));
+		builder.put(FossilSkeletonFivePieceBlock.Types.SHUVUUIA, new ShuvuuiaFossilFrameModel(p_173662_.bakeLayer(ClientEvents.SHUVUUIA_FRAME)));
 		return builder.build();
 	}
 
@@ -251,6 +257,9 @@ public class FossilSkeletonFivePieceRenderer implements BlockEntityRenderer<Foss
 		} else if (FossilSkeletonFivePieceBlock$type == FossilSkeletonFivePieceBlock.Types.NQWEBASAURUS) {
 			p_173667_.scale(-0.28F, -0.28F, 0.28F);
 			p_173667_.translate(0F, 2.1F, 0F);
+		} else if (FossilSkeletonFivePieceBlock$type == FossilSkeletonFivePieceBlock.Types.SHUVUUIA) {
+			p_173667_.scale(-0.32F, -0.32F, 0.32F);
+			p_173667_.translate(0F, 1.63F, 0F);
 		} else p_173667_.scale(-1.0F, -1.0F, 1.0F);
 		VertexConsumer vertexconsumer = p_173668_.getBuffer(p_173671_);
 		p_173670_.setupAnim(p_173666_, p_173665_, 0.0F);
@@ -300,6 +309,8 @@ public class FossilSkeletonFivePieceRenderer implements BlockEntityRenderer<Foss
 			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/anatosuchus/stage_" + fossilLevel + ".png");
 		} else if (type == FossilSkeletonFivePieceBlock.Types.NQWEBASAURUS) {
 			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/nqwebasaurus/stage_" + fossilLevel + ".png");
+		} else if (type == FossilSkeletonFivePieceBlock.Types.SHUVUUIA) {
+			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/shuvuuia/stage_" + fossilLevel + ".png");
 		} else resourceLocation = SKIN_BY_TYPE.get(type);
 		return RenderType.entityCutoutNoCullZOffset(resourceLocation);
 	}

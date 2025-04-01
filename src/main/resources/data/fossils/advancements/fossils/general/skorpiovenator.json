@@ -1,0 +1,54 @@
+{
+  "parent": "fossils:fossils/general/abelisauria",
+  "criteria": {
+    "finish_skorpiovenator": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:skorpiovenator_fossil"
+                ],
+                "state": {
+                  "fossil_level": "9"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:skorpiovenator_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.skorpiovenator.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:skorpiovenator_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.skorpiovenator.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_skorpiovenator"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

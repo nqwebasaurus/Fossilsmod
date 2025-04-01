@@ -268,6 +268,38 @@ public class FossilSkeletonTenPieceBlock extends BaseEntityBlock implements Simp
 				stack.shrink(1);
 			}
 			return InteractionResult.sidedSuccess(world.isClientSide);
+		} else if (item == FossilItems.SKORPIOVENATOR.get() && state.getValue(FOSSIL_LEVEL) != 9 && type == Types.SKORPIOVENATOR) {
+			fossilLevel = state.getValue(FOSSIL_LEVEL);
+			world.setBlockAndUpdate(pos, state.setValue(FOSSIL_LEVEL, fossilLevel + 1));
+			world.playSound(player, pos, SoundEvents.BONE_BLOCK_PLACE, SoundSource.BLOCKS);
+			if (!player.isCreative()) {
+				stack.shrink(1);
+			}
+			return InteractionResult.sidedSuccess(world.isClientSide);
+		} else if (item == FossilItems.PROTOCERATOPSANDREWSI.get() && state.getValue(FOSSIL_LEVEL) != 9 && type == Types.PROTOCERATOPSANDREWSI) {
+			fossilLevel = state.getValue(FOSSIL_LEVEL);
+			world.setBlockAndUpdate(pos, state.setValue(FOSSIL_LEVEL, fossilLevel + 1));
+			world.playSound(player, pos, SoundEvents.BONE_BLOCK_PLACE, SoundSource.BLOCKS);
+			if (!player.isCreative()) {
+				stack.shrink(1);
+			}
+			return InteractionResult.sidedSuccess(world.isClientSide);
+		} else if (item == FossilItems.STRUTHIOMIMUS.get() && state.getValue(FOSSIL_LEVEL) != 9 && type == Types.STRUTHIOMIMUS) {
+			fossilLevel = state.getValue(FOSSIL_LEVEL);
+			world.setBlockAndUpdate(pos, state.setValue(FOSSIL_LEVEL, fossilLevel + 1));
+			world.playSound(player, pos, SoundEvents.BONE_BLOCK_PLACE, SoundSource.BLOCKS);
+			if (!player.isCreative()) {
+				stack.shrink(1);
+			}
+			return InteractionResult.sidedSuccess(world.isClientSide);
+		} else if (item == FossilItems.MONTANOCERATOPS.get() && state.getValue(FOSSIL_LEVEL) != 9 && type == Types.MONTANOCERATOPS) {
+			fossilLevel = state.getValue(FOSSIL_LEVEL);
+			world.setBlockAndUpdate(pos, state.setValue(FOSSIL_LEVEL, fossilLevel + 1));
+			world.playSound(player, pos, SoundEvents.BONE_BLOCK_PLACE, SoundSource.BLOCKS);
+			if (!player.isCreative()) {
+				stack.shrink(1);
+			}
+			return InteractionResult.sidedSuccess(world.isClientSide);
 		} else return super.use(state, world, pos, player, hand, hit);
 	}
 
@@ -294,6 +326,10 @@ public class FossilSkeletonTenPieceBlock extends BaseEntityBlock implements Simp
 		PIATNITZKYSAURUS,
 		DEARC,
 		TUPANDACTYLUSNAVIGANS,
+		SKORPIOVENATOR,
+		PROTOCERATOPSANDREWSI,
+		STRUTHIOMIMUS,
+		MONTANOCERATOPS,
 		NASUTOCERATOPS;
 	}
 

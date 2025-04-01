@@ -1,0 +1,54 @@
+{
+  "parent": "fossils:fossils/general/leptoceratopsia",
+  "criteria": {
+    "finish_montanoceratops": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:montanoceratops_fossil"
+                ],
+                "state": {
+                  "fossil_level": "9"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:montanoceratops_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.montanoceratops.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:montanoceratops_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.montanoceratops.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_montanoceratops"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

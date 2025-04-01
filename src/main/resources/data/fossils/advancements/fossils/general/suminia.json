@@ -1,5 +1,5 @@
 {
-  "parent": "fossils:fossils/general/dicynodontiasmall",
+  "parent": "fossils:fossils/general/anomodontia",
   "criteria": {
     "finish_suminia": {
       "conditions": {

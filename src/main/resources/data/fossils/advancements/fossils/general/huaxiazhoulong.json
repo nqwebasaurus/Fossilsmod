@@ -1,0 +1,57 @@
+{
+  "parent": "fossils:fossils/general/ankylosauridae",
+  "criteria": {
+    "finish_huaxiazhoulong": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:huaxiazhoulong_fossil"
+                ],
+                "state": {
+                  "fossil_level": "14"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:huaxiazhoulong_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.huaxiazhoulong.description"
+    },
+    "frame": "goal",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:huaxiazhoulong_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.huaxiazhoulong.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_huaxiazhoulong"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  },
+  "sends_telemetry_event": true
+}

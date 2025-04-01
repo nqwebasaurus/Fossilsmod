@@ -1,0 +1,24 @@
+{
+  "parent": "fossils:fossils/general/sphenacodontidae",
+  "criteria": {
+    "finish_therapsida": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "description": {
+      "translate": "advancements.fossils.therapsida.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:advancement_line"
+    },
+    "show_toast": false,
+    "title": {
+      "translate": "advancements.fossils.therapsida.title"
+    }
+  },
+  "sends_telemetry_event": true
+}

@@ -1,5 +1,5 @@
 {
-  "parent": "fossils:fossils/general/earlysynapsids",
+  "parent": "fossils:fossils/general/synapsids",
   "criteria": {
     "finish_eupelycosaurs": {
       "trigger": "minecraft:tick"

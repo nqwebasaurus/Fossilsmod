@@ -1,0 +1,24 @@
+{
+  "parent": "fossils:fossils/general/megalosauroidea",
+  "criteria": {
+    "finish_spinosauridae": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "description": {
+      "translate": "advancements.fossils.spinosauridae.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:advancement_line"
+    },
+    "show_toast": false,
+    "title": {
+      "translate": "advancements.fossils.spinosauridae.title"
+    }
+  },
+  "sends_telemetry_event": true
+}

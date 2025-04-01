@@ -1,0 +1,24 @@
+{
+  "parent": "fossils:fossils/general/coronosauria",
+  "criteria": {
+    "finish_chasmosaurinae": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "description": {
+      "translate": "advancements.fossils.chasmosaurinae.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:advancement_line"
+    },
+    "show_toast": false,
+    "title": {
+      "translate": "advancements.fossils.chasmosaurinae.title"
+    }
+  },
+  "sends_telemetry_event": true
+}

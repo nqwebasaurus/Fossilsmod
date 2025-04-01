@@ -1,5 +1,5 @@
 {
-  "parent": "fossils:fossils/general/synapsids",
+  "parent": "fossils:fossils/general/therapsida",
   "criteria": {
     "finish_anomodontia": {
       "trigger": "minecraft:tick"
