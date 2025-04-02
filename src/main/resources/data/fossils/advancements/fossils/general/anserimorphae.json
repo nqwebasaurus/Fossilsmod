@@ -1,0 +1,24 @@
+{
+  "parent": "fossils:fossils/general/odontoanserae",
+  "criteria": {
+    "finish_anserimorphae": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "description": {
+      "translate": "advancements.fossils.anserimorphae.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:advancement_line"
+    },
+    "show_toast": false,
+    "title": {
+      "translate": "advancements.fossils.anserimorphae.title"
+    }
+  },
+  "sends_telemetry_event": true
+}

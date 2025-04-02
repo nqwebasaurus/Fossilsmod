@@ -1,0 +1,57 @@
+{
+  "parent": "fossils:fossils/general/giraffoidea",
+  "criteria": {
+    "finish_decennatherium": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:decennatherium_fossil"
+                ],
+                "state": {
+                  "fossil_level": "14"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:decennatherium_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.decennatherium.description"
+    },
+    "frame": "goal",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:decennatherium_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.decennatherium.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_decennatherium"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  },
+  "sends_telemetry_event": true
+}

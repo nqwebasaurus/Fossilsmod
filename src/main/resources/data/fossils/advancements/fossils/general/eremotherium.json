@@ -1,0 +1,57 @@
+{
+  "parent": "fossils:fossils/general/folivora",
+  "criteria": {
+    "finish_eremotherium": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:eremotherium_fossil"
+                ],
+                "state": {
+                  "fossil_level": "19"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:eremotherium_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.eremotherium.description"
+    },
+    "frame": "challenge",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:eremotherium_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.eremotherium.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_eremotherium"
+    ]
+  ],
+  "rewards": {
+    "experience": 500
+  },
+  "sends_telemetry_event": true
+}

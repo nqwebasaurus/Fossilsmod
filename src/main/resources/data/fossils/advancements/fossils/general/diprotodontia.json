@@ -1,0 +1,24 @@
+{
+  "parent": "fossils:fossils/general/marsupialia",
+  "criteria": {
+    "finish_diprotodontia": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "description": {
+      "translate": "advancements.fossils.diprotodontia.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:advancement_line"
+    },
+    "show_toast": false,
+    "title": {
+      "translate": "advancements.fossils.diprotodontia.title"
+    }
+  },
+  "sends_telemetry_event": true
+}

@@ -9,6 +9,21 @@
           "type": "minecraft:item",
           "name": "fossils:bisonlatifrons_fossil",
           "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:thylacoleo_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:eremotherium_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:pantheratigris_fossil",
+          "weight": 2
         }
       ],
       "rolls": 1

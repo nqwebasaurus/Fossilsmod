@@ -1,0 +1,24 @@
+{
+  "parent": "fossils:fossils/general/placentalia",
+  "criteria": {
+    "finish_xenarthra": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "description": {
+      "translate": "advancements.fossils.xenarthra.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:advancement_line"
+    },
+    "show_toast": false,
+    "title": {
+      "translate": "advancements.fossils.xenarthra.title"
+    }
+  },
+  "sends_telemetry_event": true
+}

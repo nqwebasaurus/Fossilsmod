@@ -1,0 +1,54 @@
+{
+  "parent": "fossils:fossils/general/anserimorphae",
+  "criteria": {
+    "finish_gastornis": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:gastornis_fossil"
+                ],
+                "state": {
+                  "fossil_level": "9"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:gastornis_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.gastornis.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:gastornis_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.gastornis.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_gastornis"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

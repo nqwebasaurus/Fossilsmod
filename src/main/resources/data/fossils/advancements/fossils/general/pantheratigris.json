@@ -1,0 +1,57 @@
+{
+  "parent": "fossils:fossils/general/felidae",
+  "criteria": {
+    "finish_pantheratigris": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:pantheratigris_fossil"
+                ],
+                "state": {
+                  "fossil_level": "19"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:pantheratigris_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.pantheratigris.description"
+    },
+    "frame": "challenge",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:pantheratigris_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.pantheratigris.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_pantheratigris"
+    ]
+  ],
+  "rewards": {
+    "experience": 500
+  },
+  "sends_telemetry_event": true
+}

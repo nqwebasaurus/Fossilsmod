@@ -1,0 +1,54 @@
+{
+  "parent": "fossils:fossils/general/dromomerycidae",
+  "criteria": {
+    "finish_sinclairomeryx": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:sinclairomeryx_fossil"
+                ],
+                "state": {
+                  "fossil_level": "9"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:sinclairomeryx_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.sinclairomeryx.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:sinclairomeryx_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.sinclairomeryx.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_sinclairomeryx"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

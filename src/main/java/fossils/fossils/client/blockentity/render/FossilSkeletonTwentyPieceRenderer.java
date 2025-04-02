@@ -19,12 +19,18 @@ import fossils.fossils.client.blockentity.model.carcharodontosaurus.Carcharodont
 import fossils.fossils.client.blockentity.model.carcharodontosaurus.CarcharodontosaurusFossilModel;
 import fossils.fossils.client.blockentity.model.edmontosaurusannectens.EdmontosaurusannectensFossilFrameModel;
 import fossils.fossils.client.blockentity.model.edmontosaurusannectens.EdmontosaurusannectensFossilModel;
+import fossils.fossils.client.blockentity.model.eremotherium.EremotheriumFossilFrameModel;
+import fossils.fossils.client.blockentity.model.eremotherium.EremotheriumFossilModel;
 import fossils.fossils.client.blockentity.model.hatzegopteryx.HatzegopteryxFossilFrameModel;
 import fossils.fossils.client.blockentity.model.hatzegopteryx.HatzegopteryxFossilModel;
 import fossils.fossils.client.blockentity.model.iguanodon.IguanodonFossilFrameModel;
 import fossils.fossils.client.blockentity.model.iguanodon.IguanodonFossilModel;
+import fossils.fossils.client.blockentity.model.megacerops.MegaceropsFossilFrameModel;
+import fossils.fossils.client.blockentity.model.megacerops.MegaceropsFossilModel;
 import fossils.fossils.client.blockentity.model.nigersaurus.NigersaurusFossilFrameModel;
 import fossils.fossils.client.blockentity.model.nigersaurus.NigersaurusFossilModel;
+import fossils.fossils.client.blockentity.model.pantheratigris.PantheratigrisFossilFrameModel;
+import fossils.fossils.client.blockentity.model.pantheratigris.PantheratigrisFossilModel;
 import fossils.fossils.client.blockentity.model.pliosaurus.PliosaurusFossilFrameModel;
 import fossils.fossils.client.blockentity.model.pliosaurus.PliosaurusFossilModel;
 import fossils.fossils.client.blockentity.model.sarcosuchus.SarcosuchusFossilFrameModel;
@@ -72,6 +78,9 @@ public class FossilSkeletonTwentyPieceRenderer implements BlockEntityRenderer<Fo
 		type.put(FossilSkeletonTwentyPieceBlock.Types.EDMONTOSAURUSANNECTENS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/edmontosaurusannectens/stage_0.png"));
 		type.put(FossilSkeletonTwentyPieceBlock.Types.TYRANNOSAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/tyrannosaurus/stage_0.png"));
 		type.put(FossilSkeletonTwentyPieceBlock.Types.SPINOSAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/spinosaurus/stage_0.png"));
+		type.put(FossilSkeletonTwentyPieceBlock.Types.MEGACEROPS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/megacerops/stage_0.png"));
+		type.put(FossilSkeletonTwentyPieceBlock.Types.EREMOTHERIUM, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/eremotherium/stage_0.png"));
+		type.put(FossilSkeletonTwentyPieceBlock.Types.PANTHERATIGRIS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/pantheratigris/stage_0.png"));
 	});
 	public static final Map<FossilSkeletonTwentyPieceBlock.Type, ResourceLocation> FRAME_BY_TYPE = Util.make(Maps.newHashMap(), (type) -> {
 		type.put(FossilSkeletonTwentyPieceBlock.Types.UTAHRAPTOR, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/utahraptor/frame.png"));
@@ -88,6 +97,9 @@ public class FossilSkeletonTwentyPieceRenderer implements BlockEntityRenderer<Fo
 		type.put(FossilSkeletonTwentyPieceBlock.Types.EDMONTOSAURUSANNECTENS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/edmontosaurusannectens/frame.png"));
 		type.put(FossilSkeletonTwentyPieceBlock.Types.TYRANNOSAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/tyrannosaurus/frame.png"));
 		type.put(FossilSkeletonTwentyPieceBlock.Types.SPINOSAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/spinosaurus/frame.png"));
+		type.put(FossilSkeletonTwentyPieceBlock.Types.MEGACEROPS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/megacerops/frame.png"));
+		type.put(FossilSkeletonTwentyPieceBlock.Types.EREMOTHERIUM, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/eremotherium/frame.png"));
+		type.put(FossilSkeletonTwentyPieceBlock.Types.PANTHERATIGRIS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/pantheratigris/frame.png"));
 	});
 	public static Map<FossilSkeletonTwentyPieceBlock.Type, SkullModelBase> createFossilRenderers(EntityModelSet p_173662_) {
 		ImmutableMap.Builder<FossilSkeletonTwentyPieceBlock.Type, SkullModelBase> builder = ImmutableMap.builder();
@@ -105,6 +117,9 @@ public class FossilSkeletonTwentyPieceRenderer implements BlockEntityRenderer<Fo
 		builder.put(FossilSkeletonTwentyPieceBlock.Types.EDMONTOSAURUSANNECTENS, new EdmontosaurusannectensFossilModel(p_173662_.bakeLayer(ClientEvents.EDMONTOSAURUSANNECTENS)));
 		builder.put(FossilSkeletonTwentyPieceBlock.Types.TYRANNOSAURUS, new TyrannosaurusFossilModel(p_173662_.bakeLayer(ClientEvents.TYRANNOSAURUS)));
 		builder.put(FossilSkeletonTwentyPieceBlock.Types.SPINOSAURUS, new SpinosaurusFossilModel(p_173662_.bakeLayer(ClientEvents.SPINOSAURUS)));
+		builder.put(FossilSkeletonTwentyPieceBlock.Types.MEGACEROPS, new MegaceropsFossilModel(p_173662_.bakeLayer(ClientEvents.MEGACEROPS)));
+		builder.put(FossilSkeletonTwentyPieceBlock.Types.EREMOTHERIUM, new EremotheriumFossilModel(p_173662_.bakeLayer(ClientEvents.EREMOTHERIUM)));
+		builder.put(FossilSkeletonTwentyPieceBlock.Types.PANTHERATIGRIS, new PantheratigrisFossilModel(p_173662_.bakeLayer(ClientEvents.PANTHERATIGRIS)));
 		return builder.build();
 	}
 
@@ -124,6 +139,9 @@ public class FossilSkeletonTwentyPieceRenderer implements BlockEntityRenderer<Fo
 		builder.put(FossilSkeletonTwentyPieceBlock.Types.EDMONTOSAURUSANNECTENS, new EdmontosaurusannectensFossilFrameModel(p_173662_.bakeLayer(ClientEvents.EDMONTOSAURUSANNECTENS_FRAME)));
 		builder.put(FossilSkeletonTwentyPieceBlock.Types.TYRANNOSAURUS, new TyrannosaurusFossilFrameModel(p_173662_.bakeLayer(ClientEvents.TYRANNOSAURUS_FRAME)));
 		builder.put(FossilSkeletonTwentyPieceBlock.Types.SPINOSAURUS, new SpinosaurusFossilFrameModel(p_173662_.bakeLayer(ClientEvents.SPINOSAURUS_FRAME)));
+		builder.put(FossilSkeletonTwentyPieceBlock.Types.MEGACEROPS, new MegaceropsFossilFrameModel(p_173662_.bakeLayer(ClientEvents.MEGACEROPS_FRAME)));
+		builder.put(FossilSkeletonTwentyPieceBlock.Types.EREMOTHERIUM, new EremotheriumFossilFrameModel(p_173662_.bakeLayer(ClientEvents.EREMOTHERIUM_FRAME)));
+		builder.put(FossilSkeletonTwentyPieceBlock.Types.PANTHERATIGRIS, new PantheratigrisFossilFrameModel(p_173662_.bakeLayer(ClientEvents.PANTHERATIGRIS_FRAME)));
 		return builder.build();
 	}
 
@@ -195,6 +213,15 @@ public class FossilSkeletonTwentyPieceRenderer implements BlockEntityRenderer<Fo
 		} else if (FossilSkeletonTwentyPieceBlock$type == FossilSkeletonTwentyPieceBlock.Types.SPINOSAURUS) {
 			p_173667_.scale(-1F, -1F, 1F);
 			p_173667_.translate(0F, -0.5F, 0F);
+		} else if (FossilSkeletonTwentyPieceBlock$type == FossilSkeletonTwentyPieceBlock.Types.MEGACEROPS) {
+			p_173667_.scale(-1F, -1F, 1F);
+			p_173667_.translate(0F, -0.5F, 0F);
+		} else if (FossilSkeletonTwentyPieceBlock$type == FossilSkeletonTwentyPieceBlock.Types.EREMOTHERIUM) {
+			p_173667_.scale(-0.89F, -0.89F, 0.89F);
+			p_173667_.translate(0F, -0.4F, 0F);
+		} else if (FossilSkeletonTwentyPieceBlock$type == FossilSkeletonTwentyPieceBlock.Types.PANTHERATIGRIS) {
+			p_173667_.scale(-1F, -1F, 1F);
+			p_173667_.translate(0F, -0.4F, 0F);
 		} else p_173667_.scale(-1.0F, -1.0F, 1.0F);
 		VertexConsumer vertexconsumer = p_173668_.getBuffer(p_173671_);
 		p_173670_.setupAnim(p_173666_, p_173665_, 0.0F);
@@ -232,6 +259,12 @@ public class FossilSkeletonTwentyPieceRenderer implements BlockEntityRenderer<Fo
 			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/tyrannosaurus/stage_" + fossilLevel + ".png");
 		} else if (type == FossilSkeletonTwentyPieceBlock.Types.SPINOSAURUS) {
 			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/spinosaurus/stage_" + fossilLevel + ".png");
+		} else if (type == FossilSkeletonTwentyPieceBlock.Types.MEGACEROPS) {
+			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/megacerops/stage_" + fossilLevel + ".png");
+		} else if (type == FossilSkeletonTwentyPieceBlock.Types.EREMOTHERIUM) {
+			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/eremotherium/stage_" + fossilLevel + ".png");
+		} else if (type == FossilSkeletonTwentyPieceBlock.Types.PANTHERATIGRIS) {
+			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/pantheratigris/stage_" + fossilLevel + ".png");
 		} else resourceLocation = SKIN_BY_TYPE.get(type);
 		return RenderType.entityCutoutNoCullZOffset(resourceLocation);
 	}

@@ -1,0 +1,24 @@
+{
+  "parent": "fossils:fossils/general/pilosa",
+  "criteria": {
+    "finish_folivora": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "description": {
+      "translate": "advancements.fossils.folivora.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:advancement_line"
+    },
+    "show_toast": false,
+    "title": {
+      "translate": "advancements.fossils.folivora.title"
+    }
+  },
+  "sends_telemetry_event": true
+}

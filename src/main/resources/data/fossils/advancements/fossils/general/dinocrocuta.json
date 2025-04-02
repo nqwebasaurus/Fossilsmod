@@ -1,0 +1,54 @@
+{
+  "parent": "fossils:fossils/general/hyaenidae",
+  "criteria": {
+    "finish_dinocrocuta": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:dinocrocuta_fossil"
+                ],
+                "state": {
+                  "fossil_level": "9"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:dinocrocuta_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.dinocrocuta.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:dinocrocuta_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.dinocrocuta.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_dinocrocuta"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

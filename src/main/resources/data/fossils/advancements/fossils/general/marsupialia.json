@@ -1,0 +1,24 @@
+{
+  "parent": "fossils:fossils/general/mammals",
+  "criteria": {
+    "finish_marsupialia": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "description": {
+      "translate": "advancements.fossils.marsupialia.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:advancement_line"
+    },
+    "show_toast": false,
+    "title": {
+      "translate": "advancements.fossils.marsupialia.title"
+    }
+  },
+  "sends_telemetry_event": true
+}

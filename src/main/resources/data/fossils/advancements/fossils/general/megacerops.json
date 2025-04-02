@@ -1,0 +1,57 @@
+{
+  "parent": "fossils:fossils/general/brontotheriidae",
+  "criteria": {
+    "finish_megacerops": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:megacerops_fossil"
+                ],
+                "state": {
+                  "fossil_level": "19"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:megacerops_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.megacerops.description"
+    },
+    "frame": "challenge",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:megacerops_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.megacerops.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_megacerops"
+    ]
+  ],
+  "rewards": {
+    "experience": 500
+  },
+  "sends_telemetry_event": true
+}
