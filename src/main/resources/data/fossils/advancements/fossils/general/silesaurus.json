@@ -1,7 +1,7 @@
 {
-  "parent": "fossils:fossils/general/stahleckeriidae",
+  "parent": "fossils:fossils/general/ornithischians",
   "criteria": {
-    "finish_stahleckeria": {
+    "finish_silesaurus": {
       "conditions": {
         "location": [
           {
@@ -9,10 +9,10 @@
             "predicate": {
               "block": {
                 "blocks": [
-                  "fossils:stahleckeria_fossil"
+                  "fossils:silesaurus_fossil"
                 ],
                 "state": {
-                  "fossil_level": "9"
+                  "fossil_level": "4"
                 }
               }
             }
@@ -21,7 +21,7 @@
             "condition": "minecraft:match_tool",
             "predicate": {
               "items": [
-                "fossils:stahleckeria_fossil"
+                "fossils:silesaurus_fossil"
               ]
             }
           }
@@ -33,21 +33,21 @@
   "display": {
     "announce_to_chat": true,
     "description": {
-      "translate": "advancements.fossils.stahleckeria.description"
+      "translate": "advancements.fossils.silesaurus.description"
     },
     "frame": "task",
     "hidden": false,
     "icon": {
-      "item": "fossils:stahleckeria_fossil"
+      "item": "fossils:silesaurus_fossil"
     },
     "show_toast": true,
     "title": {
-      "translate": "advancements.fossils.stahleckeria.title"
+      "translate": "advancements.fossils.silesaurus.title"
     }
   },
   "requirements": [
     [
-      "finish_stahleckeria"
+      "finish_silesaurus"
     ]
   ],
   "sends_telemetry_event": true

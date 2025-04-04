@@ -59,6 +59,11 @@
           "type": "minecraft:item",
           "name": "fossils:shonisaurus_fossil",
           "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:silesaurus_fossil",
+          "weight": 2
         }
       ],
       "rolls": 1

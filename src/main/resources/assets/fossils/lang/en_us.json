@@ -40,6 +40,7 @@
 	"block.fossils.anatosuchus_fossil": "Anatosuchus Fossil",
 	"block.fossils.nqwebasaurus_fossil": "Nqwebasaurus Fossil",
 	"block.fossils.shuvuuia_fossil": "Shuvuuia Fossil",
+	"block.fossils.silesaurus_fossil": "Silesaurus Fossil",
 	"block.fossils.kentrosaurus_fossil": "Kentrosaurus Fossil",
 	"block.fossils.endothiodonbathystoma_fossil": "Endothiodon bathystoma Fossil",
 	"block.fossils.dimetrodongrandis_fossil": "Dimetrodon grandis Fossil",
@@ -106,6 +107,7 @@
 	"block.fossils.megacerops_fossil": "Megacerops Fossil",
 	"block.fossils.eremotherium_fossil": "Eremotherium Fossil",
 	"block.fossils.pantheratigris_fossil": "Panthera tigris Fossil",
+	"block.fossils.cotylorhynchus_fossil": "Cotylorhynchus Fossil",
 	
 	"itemGroup.fossil_slab_tab": "Fossils Slabs",
 	"itemGroup.fossil_blocks_tab": "Fossils Blocks",
@@ -365,6 +367,8 @@
 	"advancements.fossils.folivora.description": "Folivorans (Sloths)",
 	"advancements.fossils.felidae.title": "Puss in boots",
 	"advancements.fossils.felidae.description": "Felidae",
+	"advancements.fossils.caseasauria.title": "Head Empty",
+	"advancements.fossils.caseasauria.description": "Caseasaurian Synapsids",
 
 
 "advancements.fossils.pelecanimimus.title": "Pelican Mimic",
@@ -542,5 +546,9 @@
 	"advancements.fossils.eremotherium.title": "Steppe Beast",
 	"advancements.fossils.eremotherium.description": "Complete an Eremotherium skeleton",
 	"advancements.fossils.pantheratigris.title": "Tiger",
-	"advancements.fossils.pantheratigris.description": "Complete an Panthera tigris skeleton"
+	"advancements.fossils.pantheratigris.description": "Complete a Panthera tigris skeleton",
+	"advancements.fossils.cotylorhynchus.title": "Cup Snout",
+	"advancements.fossils.cotylorhynchus.description": "Complete a Cotylorhynchus skeleton",
+	"advancements.fossils.silesaurus.title": "Silesian Lizard",
+	"advancements.fossils.silesaurus.description": "Complete a Silesaurus skeleton"
 }

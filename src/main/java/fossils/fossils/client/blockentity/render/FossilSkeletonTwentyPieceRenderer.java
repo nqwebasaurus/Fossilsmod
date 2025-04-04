@@ -17,6 +17,8 @@ import fossils.fossils.client.blockentity.model.brachiosaurus.BrachiosaurusFossi
 import fossils.fossils.client.blockentity.model.brachiosaurus.BrachiosaurusFossilModel;
 import fossils.fossils.client.blockentity.model.carcharodontosaurus.CarcharodontosaurusFossilFrameModel;
 import fossils.fossils.client.blockentity.model.carcharodontosaurus.CarcharodontosaurusFossilModel;
+import fossils.fossils.client.blockentity.model.cotylorhynchus.CotylorhynchusFossilFrameModel;
+import fossils.fossils.client.blockentity.model.cotylorhynchus.CotylorhynchusFossilModel;
 import fossils.fossils.client.blockentity.model.edmontosaurusannectens.EdmontosaurusannectensFossilFrameModel;
 import fossils.fossils.client.blockentity.model.edmontosaurusannectens.EdmontosaurusannectensFossilModel;
 import fossils.fossils.client.blockentity.model.eremotherium.EremotheriumFossilFrameModel;
@@ -81,6 +83,7 @@ public class FossilSkeletonTwentyPieceRenderer implements BlockEntityRenderer<Fo
 		type.put(FossilSkeletonTwentyPieceBlock.Types.MEGACEROPS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/megacerops/stage_0.png"));
 		type.put(FossilSkeletonTwentyPieceBlock.Types.EREMOTHERIUM, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/eremotherium/stage_0.png"));
 		type.put(FossilSkeletonTwentyPieceBlock.Types.PANTHERATIGRIS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/pantheratigris/stage_0.png"));
+		type.put(FossilSkeletonTwentyPieceBlock.Types.COTYLORHYNCHUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/cotylorhynchus/stage_0.png"));
 	});
 	public static final Map<FossilSkeletonTwentyPieceBlock.Type, ResourceLocation> FRAME_BY_TYPE = Util.make(Maps.newHashMap(), (type) -> {
 		type.put(FossilSkeletonTwentyPieceBlock.Types.UTAHRAPTOR, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/utahraptor/frame.png"));
@@ -100,6 +103,7 @@ public class FossilSkeletonTwentyPieceRenderer implements BlockEntityRenderer<Fo
 		type.put(FossilSkeletonTwentyPieceBlock.Types.MEGACEROPS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/megacerops/frame.png"));
 		type.put(FossilSkeletonTwentyPieceBlock.Types.EREMOTHERIUM, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/eremotherium/frame.png"));
 		type.put(FossilSkeletonTwentyPieceBlock.Types.PANTHERATIGRIS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/pantheratigris/frame.png"));
+		type.put(FossilSkeletonTwentyPieceBlock.Types.COTYLORHYNCHUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/cotylorhynchus/frame.png"));
 	});
 	public static Map<FossilSkeletonTwentyPieceBlock.Type, SkullModelBase> createFossilRenderers(EntityModelSet p_173662_) {
 		ImmutableMap.Builder<FossilSkeletonTwentyPieceBlock.Type, SkullModelBase> builder = ImmutableMap.builder();
@@ -120,6 +124,7 @@ public class FossilSkeletonTwentyPieceRenderer implements BlockEntityRenderer<Fo
 		builder.put(FossilSkeletonTwentyPieceBlock.Types.MEGACEROPS, new MegaceropsFossilModel(p_173662_.bakeLayer(ClientEvents.MEGACEROPS)));
 		builder.put(FossilSkeletonTwentyPieceBlock.Types.EREMOTHERIUM, new EremotheriumFossilModel(p_173662_.bakeLayer(ClientEvents.EREMOTHERIUM)));
 		builder.put(FossilSkeletonTwentyPieceBlock.Types.PANTHERATIGRIS, new PantheratigrisFossilModel(p_173662_.bakeLayer(ClientEvents.PANTHERATIGRIS)));
+		builder.put(FossilSkeletonTwentyPieceBlock.Types.COTYLORHYNCHUS, new CotylorhynchusFossilModel(p_173662_.bakeLayer(ClientEvents.COTYLORHYNCHUS)));
 		return builder.build();
 	}
 
@@ -142,6 +147,7 @@ public class FossilSkeletonTwentyPieceRenderer implements BlockEntityRenderer<Fo
 		builder.put(FossilSkeletonTwentyPieceBlock.Types.MEGACEROPS, new MegaceropsFossilFrameModel(p_173662_.bakeLayer(ClientEvents.MEGACEROPS_FRAME)));
 		builder.put(FossilSkeletonTwentyPieceBlock.Types.EREMOTHERIUM, new EremotheriumFossilFrameModel(p_173662_.bakeLayer(ClientEvents.EREMOTHERIUM_FRAME)));
 		builder.put(FossilSkeletonTwentyPieceBlock.Types.PANTHERATIGRIS, new PantheratigrisFossilFrameModel(p_173662_.bakeLayer(ClientEvents.PANTHERATIGRIS_FRAME)));
+		builder.put(FossilSkeletonTwentyPieceBlock.Types.COTYLORHYNCHUS, new CotylorhynchusFossilFrameModel(p_173662_.bakeLayer(ClientEvents.COTYLORHYNCHUS_FRAME)));
 		return builder.build();
 	}
 
@@ -222,6 +228,9 @@ public class FossilSkeletonTwentyPieceRenderer implements BlockEntityRenderer<Fo
 		} else if (FossilSkeletonTwentyPieceBlock$type == FossilSkeletonTwentyPieceBlock.Types.PANTHERATIGRIS) {
 			p_173667_.scale(-1F, -1F, 1F);
 			p_173667_.translate(0F, -0.4F, 0F);
+		} else if (FossilSkeletonTwentyPieceBlock$type == FossilSkeletonTwentyPieceBlock.Types.COTYLORHYNCHUS) {
+			p_173667_.scale(-1.041F, -1.041F, 1.041F);
+			p_173667_.translate(0F, -0.56F, 0F);
 		} else p_173667_.scale(-1.0F, -1.0F, 1.0F);
 		VertexConsumer vertexconsumer = p_173668_.getBuffer(p_173671_);
 		p_173670_.setupAnim(p_173666_, p_173665_, 0.0F);
@@ -265,6 +274,8 @@ public class FossilSkeletonTwentyPieceRenderer implements BlockEntityRenderer<Fo
 			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/eremotherium/stage_" + fossilLevel + ".png");
 		} else if (type == FossilSkeletonTwentyPieceBlock.Types.PANTHERATIGRIS) {
 			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/pantheratigris/stage_" + fossilLevel + ".png");
+		} else if (type == FossilSkeletonTwentyPieceBlock.Types.COTYLORHYNCHUS) {
+			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/cotylorhynchus/stage_" + fossilLevel + ".png");
 		} else resourceLocation = SKIN_BY_TYPE.get(type);
 		return RenderType.entityCutoutNoCullZOffset(resourceLocation);
 	}
