@@ -11,6 +11,8 @@ import fossils.fossils.FossilMod;
 import fossils.fossils.client.ClientEvents;
 import fossils.fossils.client.blockentity.model.arizonasaurus.ArizonasaurusFossilFrameModel;
 import fossils.fossils.client.blockentity.model.arizonasaurus.ArizonasaurusFossilModel;
+import fossils.fossils.client.blockentity.model.coelophysis.CoelophysisFossilFrameModel;
+import fossils.fossils.client.blockentity.model.coelophysis.CoelophysisFossilModel;
 import fossils.fossils.client.blockentity.model.dearc.DearcFossilFrameModel;
 import fossils.fossils.client.blockentity.model.dearc.DearcFossilModel;
 import fossils.fossils.client.blockentity.model.dimetrodongrandis.DimetrodonFossilFrameModel;
@@ -115,6 +117,7 @@ public class FossilSkeletonTenPieceRenderer implements BlockEntityRenderer<Fossi
 		type.put(FossilSkeletonTenPieceBlock.Types.THYLACOLEO, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/thylacoleo/stage_0.png"));
 		type.put(FossilSkeletonTenPieceBlock.Types.SINCLAIROMERYX, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/sinclairomeryx/stage_0.png"));
 		type.put(FossilSkeletonTenPieceBlock.Types.DINOCROCUTA, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/dinocrocuta/stage_0.png"));
+		type.put(FossilSkeletonTenPieceBlock.Types.COELOPHYSIS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/coelophysis/stage_0.png"));
 
 	});
 	public static final Map<FossilSkeletonTenPieceBlock.Type, ResourceLocation> FRAME_BY_TYPE = Util.make(Maps.newHashMap(), (type) -> {
@@ -146,6 +149,7 @@ public class FossilSkeletonTenPieceRenderer implements BlockEntityRenderer<Fossi
 		type.put(FossilSkeletonTenPieceBlock.Types.THYLACOLEO, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/thylacoleo/frame.png"));
 		type.put(FossilSkeletonTenPieceBlock.Types.SINCLAIROMERYX, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/sinclairomeryx/frame.png"));
 		type.put(FossilSkeletonTenPieceBlock.Types.DINOCROCUTA, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/dinocrocuta/frame.png"));
+		type.put(FossilSkeletonTenPieceBlock.Types.COELOPHYSIS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/coelophysis/frame.png"));
 
 
 	});
@@ -179,6 +183,7 @@ public class FossilSkeletonTenPieceRenderer implements BlockEntityRenderer<Fossi
 		builder.put(FossilSkeletonTenPieceBlock.Types.THYLACOLEO, new ThylacoleoFossilModel(p_173662_.bakeLayer(ClientEvents.THYLACOLEO)));
 		builder.put(FossilSkeletonTenPieceBlock.Types.SINCLAIROMERYX, new SinclairomeryxFossilModel(p_173662_.bakeLayer(ClientEvents.SINCLAIROMERYX)));
 		builder.put(FossilSkeletonTenPieceBlock.Types.DINOCROCUTA, new DinocrocutaFossilModel(p_173662_.bakeLayer(ClientEvents.DINOCROCUTA)));
+		builder.put(FossilSkeletonTenPieceBlock.Types.COELOPHYSIS, new CoelophysisFossilModel(p_173662_.bakeLayer(ClientEvents.COELOPHYSIS)));
 		return builder.build();
 	}
 
@@ -212,6 +217,7 @@ public class FossilSkeletonTenPieceRenderer implements BlockEntityRenderer<Fossi
 		builder.put(FossilSkeletonTenPieceBlock.Types.THYLACOLEO, new ThylacoleoFossilFrameModel(p_173662_.bakeLayer(ClientEvents.THYLACOLEO_FRAME)));
 		builder.put(FossilSkeletonTenPieceBlock.Types.SINCLAIROMERYX, new SinclairomeryxFossilFrameModel(p_173662_.bakeLayer(ClientEvents.SINCLAIROMERYX_FRAME)));
 		builder.put(FossilSkeletonTenPieceBlock.Types.DINOCROCUTA, new DinocrocutaFossilFrameModel(p_173662_.bakeLayer(ClientEvents.DINOCROCUTA_FRAME)));
+		builder.put(FossilSkeletonTenPieceBlock.Types.COELOPHYSIS, new CoelophysisFossilFrameModel(p_173662_.bakeLayer(ClientEvents.COELOPHYSIS_FRAME)));
 		return builder.build();
 	}
 
@@ -325,6 +331,9 @@ public class FossilSkeletonTenPieceRenderer implements BlockEntityRenderer<Fossi
 		} else if (FossilSkeletonTenPieceBlock$type == FossilSkeletonTenPieceBlock.Types.DINOCROCUTA) {
 			p_173667_.scale(-0.64F, -0.64F, 0.64F);
 			p_173667_.translate(0F, 0.05F, 0F);
+		} else if (FossilSkeletonTenPieceBlock$type == FossilSkeletonTenPieceBlock.Types.COELOPHYSIS) {
+			p_173667_.scale(-0.495F, -0.495F, 0.495F);
+			p_173667_.translate(0F, 0.5F, 0F);
 		} else p_173667_.scale(-1.0F, -1.0F, 1.0F);
 		VertexConsumer vertexconsumer = p_173668_.getBuffer(p_173671_);
 		p_173670_.setupAnim(p_173666_, p_173665_, 0.0F);
@@ -390,6 +399,8 @@ public class FossilSkeletonTenPieceRenderer implements BlockEntityRenderer<Fossi
 			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/sinclairomeryx/stage_" + fossilLevel + ".png");
 		} else if (type == FossilSkeletonTenPieceBlock.Types.DINOCROCUTA) {
 			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/dinocrocuta/stage_" + fossilLevel + ".png");
+		} else if (type == FossilSkeletonTenPieceBlock.Types.COELOPHYSIS) {
+			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/coelophysis/stage_" + fossilLevel + ".png");
 		} else resourceLocation = SKIN_BY_TYPE.get(type);
 		return RenderType.entityCutoutNoCullZOffset(resourceLocation);
 	}

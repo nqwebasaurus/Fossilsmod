@@ -75,6 +75,7 @@ public class FossilBlocks {
 	public static final RegistryObject<FossilSkeletonTenPieceBlock> THYLACOLEO = REGISTER.register("thylacoleo_fossil", () -> new FossilSkeletonTenPieceBlock(FossilSkeletonTenPieceBlock.Types.THYLACOLEO, Properties.of().strength(2.0F, 3.0F).sound(SoundType.BONE_BLOCK).requiresCorrectToolForDrops().noOcclusion().noCollission()));
 	public static final RegistryObject<FossilSkeletonTenPieceBlock> SINCLAIROMERYX = REGISTER.register("sinclairomeryx_fossil", () -> new FossilSkeletonTenPieceBlock(FossilSkeletonTenPieceBlock.Types.SINCLAIROMERYX, Properties.of().strength(2.0F, 3.0F).sound(SoundType.BONE_BLOCK).requiresCorrectToolForDrops().noOcclusion().noCollission()));
 	public static final RegistryObject<FossilSkeletonTenPieceBlock> DINOCROCUTA = REGISTER.register("dinocrocuta_fossil", () -> new FossilSkeletonTenPieceBlock(FossilSkeletonTenPieceBlock.Types.DINOCROCUTA, Properties.of().strength(2.0F, 3.0F).sound(SoundType.BONE_BLOCK).requiresCorrectToolForDrops().noOcclusion().noCollission()));
+	public static final RegistryObject<FossilSkeletonTenPieceBlock> COELOPHYSIS = REGISTER.register("coelophysis_fossil", () -> new FossilSkeletonTenPieceBlock(FossilSkeletonTenPieceBlock.Types.COELOPHYSIS, Properties.of().strength(2.0F, 3.0F).sound(SoundType.BONE_BLOCK).requiresCorrectToolForDrops().noOcclusion().noCollission()));
 
 
 	//Fifteen
@@ -120,6 +121,7 @@ public class FossilBlocks {
 	public static final RegistryObject<FossilSkeletonTwentyPieceBlock> EREMOTHERIUM = REGISTER.register("eremotherium_fossil", () -> new FossilSkeletonTwentyPieceBlock(FossilSkeletonTwentyPieceBlock.Types.EREMOTHERIUM, Properties.of().strength(2.0F, 3.0F).sound(SoundType.BONE_BLOCK).requiresCorrectToolForDrops().noOcclusion().noCollission()));
 	public static final RegistryObject<FossilSkeletonTwentyPieceBlock> PANTHERATIGRIS = REGISTER.register("pantheratigris_fossil", () -> new FossilSkeletonTwentyPieceBlock(FossilSkeletonTwentyPieceBlock.Types.PANTHERATIGRIS, Properties.of().strength(2.0F, 3.0F).sound(SoundType.BONE_BLOCK).requiresCorrectToolForDrops().noOcclusion().noCollission()));
 	public static final RegistryObject<FossilSkeletonTwentyPieceBlock> COTYLORHYNCHUS = REGISTER.register("cotylorhynchus_fossil", () -> new FossilSkeletonTwentyPieceBlock(FossilSkeletonTwentyPieceBlock.Types.COTYLORHYNCHUS, Properties.of().strength(2.0F, 3.0F).sound(SoundType.BONE_BLOCK).requiresCorrectToolForDrops().noOcclusion().noCollission()));
+	public static final RegistryObject<FossilSkeletonTwentyPieceBlock> ALLOSAURUS = REGISTER.register("allosaurus_fossil", () -> new FossilSkeletonTwentyPieceBlock(FossilSkeletonTwentyPieceBlock.Types.ALLOSAURUS, Properties.of().strength(2.0F, 3.0F).sound(SoundType.BONE_BLOCK).requiresCorrectToolForDrops().noOcclusion().noCollission()));
 
 	public static final RegistryObject<Block> PRECAMBRIAN_FOSSIL_ORE = REGISTER.register("precambrian_fossil_ore", () -> new Block(Properties.copy(Blocks.STONE)));
 	public static final RegistryObject<Block> CAMBRIAN_FOSSIL_ORE = REGISTER.register("cambrian_fossil_ore", () -> new Block(Properties.copy(Blocks.STONE)));

@@ -94,6 +94,11 @@
           "type": "minecraft:item",
           "name": "fossils:pliosaurus_fossil",
           "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:allosaurus_fossil",
+          "weight": 2
         }
       ],
       "rolls": 1
