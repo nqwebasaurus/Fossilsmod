@@ -1,0 +1,54 @@
+{
+  "parent": "fossils:fossils/general/haplorhines",
+  "criteria": {
+    "finish_theropithecus": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:theropithecus_fossil"
+                ],
+                "state": {
+                  "fossil_level": "9"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:theropithecus_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.theropithecus.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:theropithecus_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.theropithecus.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_theropithecus"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

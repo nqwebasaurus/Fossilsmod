@@ -43,6 +43,8 @@ public class FossilItems {
 	public static final RegistryObject<BlockItem> NQWEBASAURUS = SKELETON_REGISTER.register("nqwebasaurus_fossil", () -> new BlockItem(FossilBlocks.NQWEBASAURUS.get(), new Item.Properties().rarity(FossilRarities.FIVE_PIECE_FOSSIL)));
 	public static final RegistryObject<BlockItem> SHUVUUIA = SKELETON_REGISTER.register("shuvuuia_fossil", () -> new BlockItem(FossilBlocks.SHUVUUIA.get(), new Item.Properties().rarity(FossilRarities.FIVE_PIECE_FOSSIL)));
 	public static final RegistryObject<BlockItem> SILESAURUS = SKELETON_REGISTER.register("silesaurus_fossil", () -> new BlockItem(FossilBlocks.SILESAURUS.get(), new Item.Properties().rarity(FossilRarities.FIVE_PIECE_FOSSIL)));
+	public static final RegistryObject<BlockItem> BUITRERAPTOR = SKELETON_REGISTER.register("buitreraptor_fossil", () -> new BlockItem(FossilBlocks.BUITRERAPTOR.get(), new Item.Properties().rarity(FossilRarities.FIVE_PIECE_FOSSIL)));
+	public static final RegistryObject<BlockItem> SYLVIORNIS = SKELETON_REGISTER.register("sylviornis_fossil", () -> new BlockItem(FossilBlocks.SYLVIORNIS.get(), new Item.Properties().rarity(FossilRarities.FIVE_PIECE_FOSSIL)));
 
 	//Ten
 	public static final RegistryObject<BlockItem> KENTROSAURUS = SKELETON_REGISTER.register("kentrosaurus_fossil", () -> new BlockItem(FossilBlocks.KENTROSAURUS.get(), new Item.Properties().rarity(FossilRarities.TEN_PIECE_FOSSIL)));
@@ -74,6 +76,9 @@ public class FossilItems {
 	public static final RegistryObject<BlockItem> SINCLAIROMERYX = SKELETON_REGISTER.register("sinclairomeryx_fossil", () -> new BlockItem(FossilBlocks.SINCLAIROMERYX.get(), new Item.Properties().rarity(FossilRarities.TEN_PIECE_FOSSIL)));
 	public static final RegistryObject<BlockItem> DINOCROCUTA = SKELETON_REGISTER.register("dinocrocuta_fossil", () -> new BlockItem(FossilBlocks.DINOCROCUTA.get(), new Item.Properties().rarity(FossilRarities.TEN_PIECE_FOSSIL)));
 	public static final RegistryObject<BlockItem> COELOPHYSIS = SKELETON_REGISTER.register("coelophysis_fossil", () -> new BlockItem(FossilBlocks.COELOPHYSIS.get(), new Item.Properties().rarity(FossilRarities.TEN_PIECE_FOSSIL)));
+	public static final RegistryObject<BlockItem> LITOCRANIUS = SKELETON_REGISTER.register("litocranius_fossil", () -> new BlockItem(FossilBlocks.LITOCRANIUS.get(), new Item.Properties().rarity(FossilRarities.TEN_PIECE_FOSSIL)));
+	public static final RegistryObject<BlockItem> THEROPITHECUS = SKELETON_REGISTER.register("theropithecus_fossil", () -> new BlockItem(FossilBlocks.THEROPITHECUS.get(), new Item.Properties().rarity(FossilRarities.TEN_PIECE_FOSSIL)));
+	public static final RegistryObject<BlockItem> DODO = SKELETON_REGISTER.register("dodo_fossil", () -> new BlockItem(FossilBlocks.DODO.get(), new Item.Properties().rarity(FossilRarities.TEN_PIECE_FOSSIL)));
 
 
 	//Fifteen
@@ -99,6 +104,9 @@ public class FossilItems {
 	public static final RegistryObject<BlockItem> VELOCIRAPTOR = SKELETON_REGISTER.register("velociraptor_fossil", () -> new BlockItem(FossilBlocks.VELOCIRAPTOR.get(), new Item.Properties().rarity(FossilRarities.FIFTEEN_PIECE_FOSSIL)));
 	public static final RegistryObject<BlockItem> KUBANOCHOERUS = SKELETON_REGISTER.register("kubanochoerus_fossil", () -> new BlockItem(FossilBlocks.KUBANOCHOERUS.get(), new Item.Properties().rarity(FossilRarities.FIFTEEN_PIECE_FOSSIL)));
 	public static final RegistryObject<BlockItem> DECENNATHERIUM = SKELETON_REGISTER.register("decennatherium_fossil", () -> new BlockItem(FossilBlocks.DECENNATHERIUM.get(), new Item.Properties().rarity(FossilRarities.FIFTEEN_PIECE_FOSSIL)));
+	public static final RegistryObject<BlockItem> PLATECARPUS = SKELETON_REGISTER.register("platecarpus_fossil", () -> new BlockItem(FossilBlocks.PLATECARPUS.get(), new Item.Properties().rarity(FossilRarities.FIFTEEN_PIECE_FOSSIL)));
+	public static final RegistryObject<BlockItem> OVIRAPTOR = SKELETON_REGISTER.register("oviraptor_fossil", () -> new BlockItem(FossilBlocks.OVIRAPTOR.get(), new Item.Properties().rarity(FossilRarities.FIFTEEN_PIECE_FOSSIL)));
+	public static final RegistryObject<BlockItem> RAJASAURUS = SKELETON_REGISTER.register("rajasaurus_fossil", () -> new BlockItem(FossilBlocks.RAJASAURUS.get(), new Item.Properties().rarity(FossilRarities.FIFTEEN_PIECE_FOSSIL)));
 
 	//Twenty
 	public static final RegistryObject<BlockItem> UTAHRAPTOR = SKELETON_REGISTER.register("utahraptor_fossil", () -> new BlockItem(FossilBlocks.UTAHRAPTOR.get(), new Item.Properties().rarity(FossilRarities.TWENTY_PIECE_FOSSIL)));
@@ -120,6 +128,8 @@ public class FossilItems {
 	public static final RegistryObject<BlockItem> PANTHERATIGRIS = SKELETON_REGISTER.register("pantheratigris_fossil", () -> new BlockItem(FossilBlocks.PANTHERATIGRIS.get(), new Item.Properties().rarity(FossilRarities.TWENTY_PIECE_FOSSIL)));
 	public static final RegistryObject<BlockItem> COTYLORHYNCHUS = SKELETON_REGISTER.register("cotylorhynchus_fossil", () -> new BlockItem(FossilBlocks.COTYLORHYNCHUS.get(), new Item.Properties().rarity(FossilRarities.TWENTY_PIECE_FOSSIL)));
 	public static final RegistryObject<BlockItem> ALLOSAURUS = SKELETON_REGISTER.register("allosaurus_fossil", () -> new BlockItem(FossilBlocks.ALLOSAURUS.get(), new Item.Properties().rarity(FossilRarities.TWENTY_PIECE_FOSSIL)));
+	public static final RegistryObject<BlockItem> LIVYATAN = SKELETON_REGISTER.register("livyatan_fossil", () -> new BlockItem(FossilBlocks.LIVYATAN.get(), new Item.Properties().rarity(FossilRarities.TWENTY_PIECE_FOSSIL)));
+	public static final RegistryObject<BlockItem> THERIZINOSAURUS = SKELETON_REGISTER.register("therizinosaurus_fossil", () -> new BlockItem(FossilBlocks.THERIZINOSAURUS.get(), new Item.Properties().rarity(FossilRarities.TWENTY_PIECE_FOSSIL)));
 		
 	public static final RegistryObject<BlockItem> PRECAMBRIAN_FOSSIL_ORE = BLOCK_REGISTER.register("precambrian_fossil_ore", () -> new BlockItem(FossilBlocks.PRECAMBRIAN_FOSSIL_ORE.get(), new Item.Properties()));
 	public static final RegistryObject<BlockItem> CAMBRIAN_FOSSIL_ORE = BLOCK_REGISTER.register("cambrian_fossil_ore", () -> new BlockItem(FossilBlocks.CAMBRIAN_FOSSIL_ORE.get(), new Item.Properties()));

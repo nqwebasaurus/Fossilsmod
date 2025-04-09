@@ -24,6 +24,26 @@
           "type": "minecraft:item",
           "name": "fossils:pantheratigris_fossil",
           "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:litocranius_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:theropithecus_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:dodo_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:sylviornis_fossil",
+          "weight": 2
         }
       ],
       "rolls": 1

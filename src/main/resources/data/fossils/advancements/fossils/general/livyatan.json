@@ -1,0 +1,57 @@
+{
+  "parent": "fossils:fossils/general/physeteroidea",
+  "criteria": {
+    "finish_livyatan": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:livyatan_fossil"
+                ],
+                "state": {
+                  "fossil_level": "19"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:livyatan_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.livyatan.description"
+    },
+    "frame": "challenge",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:livyatan_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.livyatan.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_livyatan"
+    ]
+  ],
+  "rewards": {
+    "experience": 500
+  },
+  "sends_telemetry_event": true
+}

@@ -39,6 +39,16 @@
           "type": "minecraft:item",
           "name": "fossils:decennatherium_fossil",
           "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:livyatan_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:theropithecus_fossil",
+          "weight": 2
         }
       ],
       "rolls": 1

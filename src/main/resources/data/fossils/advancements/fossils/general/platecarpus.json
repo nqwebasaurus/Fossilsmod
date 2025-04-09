@@ -1,0 +1,57 @@
+{
+  "parent": "fossils:fossils/general/mosasauridae",
+  "criteria": {
+    "finish_platecarpus": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:platecarpus_fossil"
+                ],
+                "state": {
+                  "fossil_level": "14"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:platecarpus_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.platecarpus.description"
+    },
+    "frame": "goal",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:platecarpus_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.platecarpus.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_platecarpus"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  },
+  "sends_telemetry_event": true
+}

@@ -1,0 +1,54 @@
+{
+  "parent": "fossils:fossils/general/antilopinae",
+  "criteria": {
+    "finish_litocranius": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:litocranius_fossil"
+                ],
+                "state": {
+                  "fossil_level": "9"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:litocranius_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.litocranius.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:litocranius_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.litocranius.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_litocranius"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

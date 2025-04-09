@@ -1,0 +1,57 @@
+{
+  "parent": "fossils:fossils/general/oviraptorosaurs",
+  "criteria": {
+    "finish_oviraptor": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:oviraptor_fossil"
+                ],
+                "state": {
+                  "fossil_level": "14"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:oviraptor_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.oviraptor.description"
+    },
+    "frame": "goal",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:oviraptor_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.oviraptor.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_oviraptor"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  },
+  "sends_telemetry_event": true
+}

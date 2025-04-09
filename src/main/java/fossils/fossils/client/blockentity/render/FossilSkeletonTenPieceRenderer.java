@@ -19,6 +19,8 @@ import fossils.fossils.client.blockentity.model.dimetrodongrandis.DimetrodonFoss
 import fossils.fossils.client.blockentity.model.dimetrodongrandis.DimetrodonFossilModel;
 import fossils.fossils.client.blockentity.model.dinocrocuta.DinocrocutaFossilFrameModel;
 import fossils.fossils.client.blockentity.model.dinocrocuta.DinocrocutaFossilModel;
+import fossils.fossils.client.blockentity.model.dodo.DodoFossilFrameModel;
+import fossils.fossils.client.blockentity.model.dodo.DodoFossilModel;
 import fossils.fossils.client.blockentity.model.dorudon.DorudonFossilFrameModel;
 import fossils.fossils.client.blockentity.model.dorudon.DorudonFossilModel;
 import fossils.fossils.client.blockentity.model.endothiodonbathystoma.EndothiodonbathystomaFossilFrameModel;
@@ -33,6 +35,8 @@ import fossils.fossils.client.blockentity.model.kentrosaurus.KentrosaurusFossilF
 import fossils.fossils.client.blockentity.model.kentrosaurus.KentrosaurusFossilModel;
 import fossils.fossils.client.blockentity.model.kutchicetus.KutchicetusFossilFrameModel;
 import fossils.fossils.client.blockentity.model.kutchicetus.KutchicetusFossilModel;
+import fossils.fossils.client.blockentity.model.litocranius.LitocraniusFossilFrameModel;
+import fossils.fossils.client.blockentity.model.litocranius.LitocraniusFossilModel;
 import fossils.fossils.client.blockentity.model.montanoceratops.MontanoceratopsFossilFrameModel;
 import fossils.fossils.client.blockentity.model.montanoceratops.MontanoceratopsFossilModel;
 import fossils.fossils.client.blockentity.model.nasutoceratops.NasutoceratopsFossilFrameModel;
@@ -63,6 +67,8 @@ import fossils.fossils.client.blockentity.model.struthiomimus.StruthiomimusFossi
 import fossils.fossils.client.blockentity.model.struthiomimus.StruthiomimusFossilModel;
 import fossils.fossils.client.blockentity.model.synthetoceras.SynthetocerasFossilFrameModel;
 import fossils.fossils.client.blockentity.model.synthetoceras.SynthetocerasFossilModel;
+import fossils.fossils.client.blockentity.model.theropithecus.TheropithecusFossilFrameModel;
+import fossils.fossils.client.blockentity.model.theropithecus.TheropithecusFossilModel;
 import fossils.fossils.client.blockentity.model.thylacoleo.ThylacoleoFossilFrameModel;
 import fossils.fossils.client.blockentity.model.thylacoleo.ThylacoleoFossilModel;
 import fossils.fossils.client.blockentity.model.tupandactylusnavigans.TupandactylusnavigansFossilFrameModel;
@@ -118,6 +124,9 @@ public class FossilSkeletonTenPieceRenderer implements BlockEntityRenderer<Fossi
 		type.put(FossilSkeletonTenPieceBlock.Types.SINCLAIROMERYX, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/sinclairomeryx/stage_0.png"));
 		type.put(FossilSkeletonTenPieceBlock.Types.DINOCROCUTA, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/dinocrocuta/stage_0.png"));
 		type.put(FossilSkeletonTenPieceBlock.Types.COELOPHYSIS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/coelophysis/stage_0.png"));
+		type.put(FossilSkeletonTenPieceBlock.Types.LITOCRANIUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/litocranius/stage_0.png"));
+		type.put(FossilSkeletonTenPieceBlock.Types.THEROPITHECUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/theropithecus/stage_0.png"));
+		type.put(FossilSkeletonTenPieceBlock.Types.DODO, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/dodo/stage_0.png"));
 
 	});
 	public static final Map<FossilSkeletonTenPieceBlock.Type, ResourceLocation> FRAME_BY_TYPE = Util.make(Maps.newHashMap(), (type) -> {
@@ -150,6 +159,9 @@ public class FossilSkeletonTenPieceRenderer implements BlockEntityRenderer<Fossi
 		type.put(FossilSkeletonTenPieceBlock.Types.SINCLAIROMERYX, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/sinclairomeryx/frame.png"));
 		type.put(FossilSkeletonTenPieceBlock.Types.DINOCROCUTA, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/dinocrocuta/frame.png"));
 		type.put(FossilSkeletonTenPieceBlock.Types.COELOPHYSIS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/coelophysis/frame.png"));
+		type.put(FossilSkeletonTenPieceBlock.Types.LITOCRANIUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/litocranius/frame.png"));
+		type.put(FossilSkeletonTenPieceBlock.Types.THEROPITHECUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/theropithecus/frame.png"));
+		type.put(FossilSkeletonTenPieceBlock.Types.DODO, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/dodo/frame.png"));
 
 
 	});
@@ -184,6 +196,9 @@ public class FossilSkeletonTenPieceRenderer implements BlockEntityRenderer<Fossi
 		builder.put(FossilSkeletonTenPieceBlock.Types.SINCLAIROMERYX, new SinclairomeryxFossilModel(p_173662_.bakeLayer(ClientEvents.SINCLAIROMERYX)));
 		builder.put(FossilSkeletonTenPieceBlock.Types.DINOCROCUTA, new DinocrocutaFossilModel(p_173662_.bakeLayer(ClientEvents.DINOCROCUTA)));
 		builder.put(FossilSkeletonTenPieceBlock.Types.COELOPHYSIS, new CoelophysisFossilModel(p_173662_.bakeLayer(ClientEvents.COELOPHYSIS)));
+		builder.put(FossilSkeletonTenPieceBlock.Types.LITOCRANIUS, new LitocraniusFossilModel(p_173662_.bakeLayer(ClientEvents.LITOCRANIUS)));
+		builder.put(FossilSkeletonTenPieceBlock.Types.THEROPITHECUS, new TheropithecusFossilModel(p_173662_.bakeLayer(ClientEvents.THEROPITHECUS)));
+		builder.put(FossilSkeletonTenPieceBlock.Types.DODO, new DodoFossilModel(p_173662_.bakeLayer(ClientEvents.DODO)));
 		return builder.build();
 	}
 
@@ -218,6 +233,9 @@ public class FossilSkeletonTenPieceRenderer implements BlockEntityRenderer<Fossi
 		builder.put(FossilSkeletonTenPieceBlock.Types.SINCLAIROMERYX, new SinclairomeryxFossilFrameModel(p_173662_.bakeLayer(ClientEvents.SINCLAIROMERYX_FRAME)));
 		builder.put(FossilSkeletonTenPieceBlock.Types.DINOCROCUTA, new DinocrocutaFossilFrameModel(p_173662_.bakeLayer(ClientEvents.DINOCROCUTA_FRAME)));
 		builder.put(FossilSkeletonTenPieceBlock.Types.COELOPHYSIS, new CoelophysisFossilFrameModel(p_173662_.bakeLayer(ClientEvents.COELOPHYSIS_FRAME)));
+		builder.put(FossilSkeletonTenPieceBlock.Types.LITOCRANIUS, new LitocraniusFossilFrameModel(p_173662_.bakeLayer(ClientEvents.LITOCRANIUS_FRAME)));
+		builder.put(FossilSkeletonTenPieceBlock.Types.THEROPITHECUS, new TheropithecusFossilFrameModel(p_173662_.bakeLayer(ClientEvents.THEROPITHECUS_FRAME)));
+		builder.put(FossilSkeletonTenPieceBlock.Types.DODO, new DodoFossilFrameModel(p_173662_.bakeLayer(ClientEvents.DODO_FRAME)));
 		return builder.build();
 	}
 
@@ -334,6 +352,15 @@ public class FossilSkeletonTenPieceRenderer implements BlockEntityRenderer<Fossi
 		} else if (FossilSkeletonTenPieceBlock$type == FossilSkeletonTenPieceBlock.Types.COELOPHYSIS) {
 			p_173667_.scale(-0.495F, -0.495F, 0.495F);
 			p_173667_.translate(0F, 0.5F, 0F);
+		} else if (FossilSkeletonTenPieceBlock$type == FossilSkeletonTenPieceBlock.Types.LITOCRANIUS) {
+			p_173667_.scale(-0.512F, -0.512F, 0.512F);
+			p_173667_.translate(0F, 0.5F, 0F);
+		} else if (FossilSkeletonTenPieceBlock$type == FossilSkeletonTenPieceBlock.Types.THEROPITHECUS) {
+			p_173667_.scale(-0.36F, -0.36F, 0.36F);
+			p_173667_.translate(0F, 1.27F, 0F);
+		} else if (FossilSkeletonTenPieceBlock$type == FossilSkeletonTenPieceBlock.Types.DODO) {
+			p_173667_.scale(-0.21F, -0.21F, 0.21F);
+			p_173667_.translate(0F, 3.27F, 0F);
 		} else p_173667_.scale(-1.0F, -1.0F, 1.0F);
 		VertexConsumer vertexconsumer = p_173668_.getBuffer(p_173671_);
 		p_173670_.setupAnim(p_173666_, p_173665_, 0.0F);
@@ -401,6 +428,12 @@ public class FossilSkeletonTenPieceRenderer implements BlockEntityRenderer<Fossi
 			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/dinocrocuta/stage_" + fossilLevel + ".png");
 		} else if (type == FossilSkeletonTenPieceBlock.Types.COELOPHYSIS) {
 			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/coelophysis/stage_" + fossilLevel + ".png");
+		} else if (type == FossilSkeletonTenPieceBlock.Types.LITOCRANIUS) {
+			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/litocranius/stage_" + fossilLevel + ".png");
+		} else if (type == FossilSkeletonTenPieceBlock.Types.THEROPITHECUS) {
+			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/theropithecus/stage_" + fossilLevel + ".png");
+		} else if (type == FossilSkeletonTenPieceBlock.Types.DODO) {
+			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/dodo/stage_" + fossilLevel + ".png");
 		} else resourceLocation = SKIN_BY_TYPE.get(type);
 		return RenderType.entityCutoutNoCullZOffset(resourceLocation);
 	}
