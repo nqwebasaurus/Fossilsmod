@@ -104,6 +104,26 @@
           "type": "minecraft:item",
           "name": "fossils:rajasaurus_fossil",
           "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:zarafasaura_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:aristonectes_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:oksoko_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:parasaurolophuswalkeri_fossil",
+          "weight": 2
         }
       ],
       "rolls": 1

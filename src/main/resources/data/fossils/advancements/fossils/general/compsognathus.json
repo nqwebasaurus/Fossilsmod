@@ -1,0 +1,54 @@
+{
+  "parent": "fossils:fossils/general/megalosauroidea",
+  "criteria": {
+    "finish_compsognathus": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:compsognathus_fossil"
+                ],
+                "state": {
+                  "fossil_level": "4"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:compsognathus_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.compsognathus.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:compsognathus_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.compsognathus.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_compsognathus"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

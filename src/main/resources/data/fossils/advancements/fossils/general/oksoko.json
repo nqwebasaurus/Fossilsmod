@@ -1,0 +1,54 @@
+{
+  "parent": "fossils:fossils/general/oviraptorosaurs",
+  "criteria": {
+    "finish_oksoko": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:oksoko_fossil"
+                ],
+                "state": {
+                  "fossil_level": "4"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:oksoko_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.oksoko.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:oksoko_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.oksoko.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_oksoko"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

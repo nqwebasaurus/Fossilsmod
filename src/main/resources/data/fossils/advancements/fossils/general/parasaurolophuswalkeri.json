@@ -1,0 +1,57 @@
+{
+  "parent": "fossils:fossils/general/lambeosaurines",
+  "criteria": {
+    "finish_parasaurolophuswalkeri": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:parasaurolophuswalkeri_fossil"
+                ],
+                "state": {
+                  "fossil_level": "19"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:parasaurolophuswalkeri_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.parasaurolophuswalkeri.description"
+    },
+    "frame": "challenge",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:parasaurolophuswalkeri_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.parasaurolophuswalkeri.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_parasaurolophuswalkeri"
+    ]
+  ],
+  "rewards": {
+    "experience": 500
+  },
+  "sends_telemetry_event": true
+}

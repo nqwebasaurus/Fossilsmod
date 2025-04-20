@@ -1,0 +1,54 @@
+{
+  "parent": "fossils:fossils/general/novialoidea",
+  "criteria": {
+    "finish_anurognathus": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:anurognathus_fossil"
+                ],
+                "state": {
+                  "fossil_level": "4"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:anurognathus_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.anurognathus.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:anurognathus_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.anurognathus.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_anurognathus"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

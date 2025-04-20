@@ -1,5 +1,5 @@
 {
-  "parent": "fossils:fossils/general/archosauromorpha",
+  "parent": "fossils:fossils/general/pterosauromorpha",
   "criteria": {
     "finish_pterosauria": {
       "trigger": "minecraft:tick"

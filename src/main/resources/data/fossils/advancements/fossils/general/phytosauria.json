@@ -1,5 +1,5 @@
 {
-  "parent": "fossils:fossils/general/archosauromorpha",
+  "parent": "fossils:fossils/general/eucrocopoda",
   "criteria": {
     "finish_phytosauria": {
       "trigger": "minecraft:tick"
