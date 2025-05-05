@@ -2,52 +2,19 @@
   "type": "minecraft:block",
   "pools": [
     {
-      "bonus_rolls": 0,
-      "conditions": [],
+      "rolls": 1,
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "fossils:bisonlatifrons_fossil",
-          "weight": 2
+          "name": "fossils:junk_fossil",
+          "weight": 3
         },
         {
-          "type": "minecraft:item",
-          "name": "fossils:thylacoleo_fossil",
-          "weight": 2
-        },
-        {
-          "type": "minecraft:item",
-          "name": "fossils:eremotherium_fossil",
-          "weight": 2
-        },
-        {
-          "type": "minecraft:item",
-          "name": "fossils:pantheratigris_fossil",
-          "weight": 2
-        },
-        {
-          "type": "minecraft:item",
-          "name": "fossils:litocranius_fossil",
-          "weight": 2
-        },
-        {
-          "type": "minecraft:item",
-          "name": "fossils:theropithecus_fossil",
-          "weight": 2
-        },
-        {
-          "type": "minecraft:item",
-          "name": "fossils:dodo_fossil",
-          "weight": 2
-        },
-        {
-          "type": "minecraft:item",
-          "name": "fossils:sylviornis_fossil",
+          "type": "minecraft:loot_table",
+          "name": "fossils:blocks/quaternary_fossil_items",
           "weight": 2
         }
-      ],
-      "rolls": 1
+      ]
     }
-  ],
-  "random_sequence": "fossils:block/quaternary_fossil_ore"
+  ]
 }

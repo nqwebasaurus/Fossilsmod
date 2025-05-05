@@ -1,0 +1,54 @@
+{
+  "parent": "fossils:fossils/general/olsoniformes",
+  "criteria": {
+    "finish_platyhystrix": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:platyhystrix_fossil"
+                ],
+                "state": {
+                  "fossil_level": "4"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:platyhystrix_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.platyhystrix.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:platyhystrix_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.platyhystrix.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_platyhystrix"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

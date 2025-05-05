@@ -1,14 +1,14 @@
 {
-  "parent": "fossils:fossils/general/pterosauria",
+  "parent": "fossils:fossils/general/dinocephalia",
   "criteria": {
-    "finish_novialoidea": {
+    "finish_anteosauria": {
       "trigger": "minecraft:tick"
     }
   },
   "display": {
     "announce_to_chat": false,
     "description": {
-      "translate": "advancements.fossils.novialoidea.description"
+      "translate": "advancements.fossils.anteosauria.description"
     },
     "frame": "task",
     "hidden": false,
@@ -17,7 +17,7 @@
     },
     "show_toast": false,
     "title": {
-      "translate": "advancements.fossils.novialoidea.title"
+      "translate": "advancements.fossils.anteosauria.title"
     }
   },
   "sends_telemetry_event": true

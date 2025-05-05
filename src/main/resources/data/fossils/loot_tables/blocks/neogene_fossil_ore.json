@@ -2,57 +2,19 @@
   "type": "minecraft:block",
   "pools": [
     {
-      "bonus_rolls": 0,
-      "conditions": [],
+      "rolls": 1,
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "fossils:synthetoceras_fossil",
-          "weight": 2
+          "name": "fossils:junk_fossil",
+          "weight": 3
         },
         {
-          "type": "minecraft:item",
-          "name": "fossils:protoceras_fossil",
-          "weight": 2
-        },
-        {
-          "type": "minecraft:item",
-          "name": "fossils:thylacoleo_fossil",
-          "weight": 2
-        },
-        {
-          "type": "minecraft:item",
-          "name": "fossils:sinclairomeryx_fossil",
-          "weight": 2
-        },
-        {
-          "type": "minecraft:item",
-          "name": "fossils:dinocrocuta_fossil",
-          "weight": 2
-        },
-        {
-          "type": "minecraft:item",
-          "name": "fossils:kubanochoerus_fossil",
-          "weight": 2
-        },
-        {
-          "type": "minecraft:item",
-          "name": "fossils:decennatherium_fossil",
-          "weight": 2
-        },
-        {
-          "type": "minecraft:item",
-          "name": "fossils:livyatan_fossil",
-          "weight": 2
-        },
-        {
-          "type": "minecraft:item",
-          "name": "fossils:theropithecus_fossil",
+          "type": "minecraft:loot_table",
+          "name": "fossils:blocks/neogene_fossil_items",
           "weight": 2
         }
-      ],
-      "rolls": 1
+      ]
     }
-  ],
-  "random_sequence": "fossils:block/neogene_fossil_ore"
+  ]
 }

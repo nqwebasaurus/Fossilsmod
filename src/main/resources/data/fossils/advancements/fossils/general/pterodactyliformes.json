@@ -1,0 +1,24 @@
+{
+  "parent": "fossils:fossils/general/breviquartossa",
+  "criteria": {
+    "finish_pterodactyliformes": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "description": {
+      "translate": "advancements.fossils.pterodactyliformes.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:advancement_line"
+    },
+    "show_toast": false,
+    "title": {
+      "translate": "advancements.fossils.pterodactyliformes.title"
+    }
+  },
+  "sends_telemetry_event": true
+}

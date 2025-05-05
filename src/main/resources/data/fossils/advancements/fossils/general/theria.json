@@ -1,0 +1,24 @@
+{
+  "parent": "fossils:fossils/general/mammals",
+  "criteria": {
+    "finish_theria": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "description": {
+      "translate": "advancements.fossils.theria.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:advancement_line"
+    },
+    "show_toast": false,
+    "title": {
+      "translate": "advancements.fossils.theria.title"
+    }
+  },
+  "sends_telemetry_event": true
+}

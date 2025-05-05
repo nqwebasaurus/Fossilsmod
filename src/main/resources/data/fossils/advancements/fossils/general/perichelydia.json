@@ -1,0 +1,24 @@
+{
+  "parent": "fossils:fossils/general/pantestudines",
+  "criteria": {
+    "finish_perichelydia": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "description": {
+      "translate": "advancements.fossils.perichelydia.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:advancement_line"
+    },
+    "show_toast": false,
+    "title": {
+      "translate": "advancements.fossils.perichelydia.title"
+    }
+  },
+  "sends_telemetry_event": true
+}

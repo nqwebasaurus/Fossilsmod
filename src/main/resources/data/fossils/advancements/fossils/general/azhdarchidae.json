@@ -1,5 +1,5 @@
 {
-  "parent": "fossils:fossils/general/tapejaridae",
+  "parent": "fossils:fossils/general/azhdarchoidea",
   "criteria": {
     "finish_azhdarchidae": {
       "trigger": "minecraft:tick"

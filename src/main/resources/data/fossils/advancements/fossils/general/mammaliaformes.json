@@ -1,5 +1,5 @@
 {
-  "parent": "fossils:fossils/general/eutheriodontia",
+  "parent": "fossils:fossils/general/probainognathia",
   "criteria": {
     "finish_mammaliaformes": {
       "trigger": "minecraft:tick"

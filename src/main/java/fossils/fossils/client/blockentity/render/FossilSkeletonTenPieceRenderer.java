@@ -11,10 +11,14 @@ import fossils.fossils.FossilMod;
 import fossils.fossils.client.ClientEvents;
 import fossils.fossils.client.blockentity.model.arizonasaurus.ArizonasaurusFossilFrameModel;
 import fossils.fossils.client.blockentity.model.arizonasaurus.ArizonasaurusFossilModel;
+import fossils.fossils.client.blockentity.model.barylambda.BarylambdaFossilFrameModel;
+import fossils.fossils.client.blockentity.model.barylambda.BarylambdaFossilModel;
 import fossils.fossils.client.blockentity.model.coelophysis.CoelophysisFossilFrameModel;
 import fossils.fossils.client.blockentity.model.coelophysis.CoelophysisFossilModel;
 import fossils.fossils.client.blockentity.model.dearc.DearcFossilFrameModel;
 import fossils.fossils.client.blockentity.model.dearc.DearcFossilModel;
+import fossils.fossils.client.blockentity.model.diabloceratops.DiabloceratopsFossilFrameModel;
+import fossils.fossils.client.blockentity.model.diabloceratops.DiabloceratopsFossilModel;
 import fossils.fossils.client.blockentity.model.dimetrodongrandis.DimetrodonFossilFrameModel;
 import fossils.fossils.client.blockentity.model.dimetrodongrandis.DimetrodonFossilModel;
 import fossils.fossils.client.blockentity.model.dinocrocuta.DinocrocutaFossilFrameModel;
@@ -39,6 +43,8 @@ import fossils.fossils.client.blockentity.model.litocranius.LitocraniusFossilFra
 import fossils.fossils.client.blockentity.model.litocranius.LitocraniusFossilModel;
 import fossils.fossils.client.blockentity.model.montanoceratops.MontanoceratopsFossilFrameModel;
 import fossils.fossils.client.blockentity.model.montanoceratops.MontanoceratopsFossilModel;
+import fossils.fossils.client.blockentity.model.moschops.MoschopsFossilFrameModel;
+import fossils.fossils.client.blockentity.model.moschops.MoschopsFossilModel;
 import fossils.fossils.client.blockentity.model.nasutoceratops.NasutoceratopsFossilFrameModel;
 import fossils.fossils.client.blockentity.model.nasutoceratops.NasutoceratopsFossilModel;
 import fossils.fossils.client.blockentity.model.nigerpeton.NigerpetonFossilFrameModel;
@@ -127,6 +133,9 @@ public class FossilSkeletonTenPieceRenderer implements BlockEntityRenderer<Fossi
 		type.put(FossilSkeletonTenPieceBlock.Types.LITOCRANIUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/litocranius/stage_0.png"));
 		type.put(FossilSkeletonTenPieceBlock.Types.THEROPITHECUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/theropithecus/stage_0.png"));
 		type.put(FossilSkeletonTenPieceBlock.Types.DODO, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/dodo/stage_0.png"));
+		type.put(FossilSkeletonTenPieceBlock.Types.DIABLOCERATOPS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/diabloceratops/stage_0.png"));
+		type.put(FossilSkeletonTenPieceBlock.Types.MOSCHOPS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/moschops/stage_0.png"));
+		type.put(FossilSkeletonTenPieceBlock.Types.BARYLAMBDA, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/barylambda/stage_0.png"));
 
 	});
 	public static final Map<FossilSkeletonTenPieceBlock.Type, ResourceLocation> FRAME_BY_TYPE = Util.make(Maps.newHashMap(), (type) -> {
@@ -162,6 +171,9 @@ public class FossilSkeletonTenPieceRenderer implements BlockEntityRenderer<Fossi
 		type.put(FossilSkeletonTenPieceBlock.Types.LITOCRANIUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/litocranius/frame.png"));
 		type.put(FossilSkeletonTenPieceBlock.Types.THEROPITHECUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/theropithecus/frame.png"));
 		type.put(FossilSkeletonTenPieceBlock.Types.DODO, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/dodo/frame.png"));
+		type.put(FossilSkeletonTenPieceBlock.Types.DIABLOCERATOPS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/diabloceratops/frame.png"));
+		type.put(FossilSkeletonTenPieceBlock.Types.MOSCHOPS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/moschops/frame.png"));
+		type.put(FossilSkeletonTenPieceBlock.Types.BARYLAMBDA, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/barylambda/frame.png"));
 
 
 	});
@@ -199,6 +211,9 @@ public class FossilSkeletonTenPieceRenderer implements BlockEntityRenderer<Fossi
 		builder.put(FossilSkeletonTenPieceBlock.Types.LITOCRANIUS, new LitocraniusFossilModel(p_173662_.bakeLayer(ClientEvents.LITOCRANIUS)));
 		builder.put(FossilSkeletonTenPieceBlock.Types.THEROPITHECUS, new TheropithecusFossilModel(p_173662_.bakeLayer(ClientEvents.THEROPITHECUS)));
 		builder.put(FossilSkeletonTenPieceBlock.Types.DODO, new DodoFossilModel(p_173662_.bakeLayer(ClientEvents.DODO)));
+		builder.put(FossilSkeletonTenPieceBlock.Types.DIABLOCERATOPS, new DiabloceratopsFossilModel(p_173662_.bakeLayer(ClientEvents.DIABLOCERATOPS)));
+		builder.put(FossilSkeletonTenPieceBlock.Types.MOSCHOPS, new MoschopsFossilModel(p_173662_.bakeLayer(ClientEvents.MOSCHOPS)));
+		builder.put(FossilSkeletonTenPieceBlock.Types.BARYLAMBDA, new BarylambdaFossilModel(p_173662_.bakeLayer(ClientEvents.BARYLAMBDA)));
 		return builder.build();
 	}
 
@@ -236,6 +251,9 @@ public class FossilSkeletonTenPieceRenderer implements BlockEntityRenderer<Fossi
 		builder.put(FossilSkeletonTenPieceBlock.Types.LITOCRANIUS, new LitocraniusFossilFrameModel(p_173662_.bakeLayer(ClientEvents.LITOCRANIUS_FRAME)));
 		builder.put(FossilSkeletonTenPieceBlock.Types.THEROPITHECUS, new TheropithecusFossilFrameModel(p_173662_.bakeLayer(ClientEvents.THEROPITHECUS_FRAME)));
 		builder.put(FossilSkeletonTenPieceBlock.Types.DODO, new DodoFossilFrameModel(p_173662_.bakeLayer(ClientEvents.DODO_FRAME)));
+		builder.put(FossilSkeletonTenPieceBlock.Types.DIABLOCERATOPS, new DiabloceratopsFossilFrameModel(p_173662_.bakeLayer(ClientEvents.DIABLOCERATOPS_FRAME)));
+		builder.put(FossilSkeletonTenPieceBlock.Types.MOSCHOPS, new MoschopsFossilFrameModel(p_173662_.bakeLayer(ClientEvents.MOSCHOPS_FRAME)));
+		builder.put(FossilSkeletonTenPieceBlock.Types.BARYLAMBDA, new BarylambdaFossilFrameModel(p_173662_.bakeLayer(ClientEvents.BARYLAMBDA_FRAME)));
 		return builder.build();
 	}
 
@@ -361,6 +379,15 @@ public class FossilSkeletonTenPieceRenderer implements BlockEntityRenderer<Fossi
 		} else if (FossilSkeletonTenPieceBlock$type == FossilSkeletonTenPieceBlock.Types.DODO) {
 			p_173667_.scale(-0.21F, -0.21F, 0.21F);
 			p_173667_.translate(0F, 3.27F, 0F);
+		} else if (FossilSkeletonTenPieceBlock$type == FossilSkeletonTenPieceBlock.Types.DIABLOCERATOPS) {
+			p_173667_.scale(-0.81F, -0.81F, 0.81F);
+			p_173667_.translate(0F, -0.27F, 0F);
+		} else if (FossilSkeletonTenPieceBlock$type == FossilSkeletonTenPieceBlock.Types.MOSCHOPS) {
+			p_173667_.scale(-0.9F, -0.9F, 0.9F);
+			p_173667_.translate(0F, -0.38F, 0F);
+		} else if (FossilSkeletonTenPieceBlock$type == FossilSkeletonTenPieceBlock.Types.BARYLAMBDA) {
+			p_173667_.scale(-0.88F, -0.88F, 0.88F);
+			p_173667_.translate(0F, -0.36F, 0F);
 		} else p_173667_.scale(-1.0F, -1.0F, 1.0F);
 		VertexConsumer vertexconsumer = p_173668_.getBuffer(p_173671_);
 		p_173670_.setupAnim(p_173666_, p_173665_, 0.0F);
@@ -434,6 +461,12 @@ public class FossilSkeletonTenPieceRenderer implements BlockEntityRenderer<Fossi
 			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/theropithecus/stage_" + fossilLevel + ".png");
 		} else if (type == FossilSkeletonTenPieceBlock.Types.DODO) {
 			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/dodo/stage_" + fossilLevel + ".png");
+		} else if (type == FossilSkeletonTenPieceBlock.Types.DIABLOCERATOPS) {
+			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/diabloceratops/stage_" + fossilLevel + ".png");
+		} else if (type == FossilSkeletonTenPieceBlock.Types.MOSCHOPS) {
+			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/moschops/stage_" + fossilLevel + ".png");
+		} else if (type == FossilSkeletonTenPieceBlock.Types.BARYLAMBDA) {
+			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/barylambda/stage_" + fossilLevel + ".png");
 		} else resourceLocation = SKIN_BY_TYPE.get(type);
 		return RenderType.entityCutoutNoCullZOffset(resourceLocation);
 	}

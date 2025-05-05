@@ -2,22 +2,19 @@
   "type": "minecraft:block",
   "pools": [
     {
-      "bonus_rolls": 0,
-      "conditions": [],
+      "rolls": 1,
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "fossils:stenokranio_fossil",
-          "weight": 2
+          "name": "fossils:junk_fossil",
+          "weight": 3
         },
         {
-          "type": "minecraft:item",
-          "name": "fossils:diplocaulusmagnicornis_fossil",
+          "type": "minecraft:loot_table",
+          "name": "fossils:blocks/carboniferous_fossil_items",
           "weight": 2
         }
-      ],
-      "rolls": 1
+      ]
     }
-  ],
-  "random_sequence": "fossils:block/carboniferous_fossil_ore"
+  ]
 }

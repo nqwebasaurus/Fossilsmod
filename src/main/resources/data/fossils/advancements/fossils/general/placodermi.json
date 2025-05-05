@@ -1,0 +1,24 @@
+{
+  "parent": "fossils:fossils/general/root",
+  "criteria": {
+    "finish_placodermi": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "description": {
+      "translate": "advancements.fossils.placodermi.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:advancement_line"
+    },
+    "show_toast": false,
+    "title": {
+      "translate": "advancements.fossils.placodermi.title"
+    }
+  },
+  "sends_telemetry_event": true
+}

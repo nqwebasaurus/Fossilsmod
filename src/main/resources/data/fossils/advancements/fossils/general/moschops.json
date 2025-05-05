@@ -1,0 +1,54 @@
+{
+  "parent": "fossils:fossils/general/tapinocephalia",
+  "criteria": {
+    "finish_moschops": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:moschops_fossil"
+                ],
+                "state": {
+                  "fossil_level": "9"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:moschops_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.moschops.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:moschops_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.moschops.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_moschops"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

@@ -1,0 +1,24 @@
+{
+  "parent": "fossils:fossils/general/theria",
+  "criteria": {
+    "finish_metatheria": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "description": {
+      "translate": "advancements.fossils.metatheria.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:advancement_line"
+    },
+    "show_toast": false,
+    "title": {
+      "translate": "advancements.fossils.metatheria.title"
+    }
+  },
+  "sends_telemetry_event": true
+}

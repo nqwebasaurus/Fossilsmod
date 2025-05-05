@@ -9,12 +9,18 @@ import com.mojang.blaze3d.vertex.VertexConsumer;
 
 import fossils.fossils.FossilMod;
 import fossils.fossils.client.ClientEvents;
+import fossils.fossils.client.blockentity.model.Deinotherium.DeinotheriumFossilFrameModel;
+import fossils.fossils.client.blockentity.model.Deinotherium.DeinotheriumFossilModel;
 import fossils.fossils.client.blockentity.model.allosaurus.AllosaurusFossilFrameModel;
 import fossils.fossils.client.blockentity.model.allosaurus.AllosaurusFossilModel;
 import fossils.fossils.client.blockentity.model.amargasaurus.AmargasaurusFossilFrameModel;
 import fossils.fossils.client.blockentity.model.amargasaurus.AmargasaurusFossilModel;
+import fossils.fossils.client.blockentity.model.anteosaurus.AnteosaurusFossilFrameModel;
+import fossils.fossils.client.blockentity.model.anteosaurus.AnteosaurusFossilModel;
 import fossils.fossils.client.blockentity.model.apatosaurus.ApatosaurusFossilFrameModel;
 import fossils.fossils.client.blockentity.model.apatosaurus.ApatosaurusFossilModel;
+import fossils.fossils.client.blockentity.model.archelon.ArchelonFossilFrameModel;
+import fossils.fossils.client.blockentity.model.archelon.ArchelonFossilModel;
 import fossils.fossils.client.blockentity.model.aristonectes.AristonectesFossilFrameModel;
 import fossils.fossils.client.blockentity.model.aristonectes.AristonectesFossilModel;
 import fossils.fossils.client.blockentity.model.brachiosaurus.BrachiosaurusFossilFrameModel;
@@ -23,6 +29,8 @@ import fossils.fossils.client.blockentity.model.carcharodontosaurus.Carcharodont
 import fossils.fossils.client.blockentity.model.carcharodontosaurus.CarcharodontosaurusFossilModel;
 import fossils.fossils.client.blockentity.model.cotylorhynchus.CotylorhynchusFossilFrameModel;
 import fossils.fossils.client.blockentity.model.cotylorhynchus.CotylorhynchusFossilModel;
+import fossils.fossils.client.blockentity.model.doedicurus.DoedicurusFossilFrameModel;
+import fossils.fossils.client.blockentity.model.doedicurus.DoedicurusFossilModel;
 import fossils.fossils.client.blockentity.model.edmontosaurusannectens.EdmontosaurusannectensFossilFrameModel;
 import fossils.fossils.client.blockentity.model.edmontosaurusannectens.EdmontosaurusannectensFossilModel;
 import fossils.fossils.client.blockentity.model.eremotherium.EremotheriumFossilFrameModel;
@@ -102,6 +110,10 @@ public class FossilSkeletonTwentyPieceRenderer implements BlockEntityRenderer<Fo
 		type.put(FossilSkeletonTwentyPieceBlock.Types.ARISTONECTES, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/aristonectes/stage_0.png"));
 		type.put(FossilSkeletonTwentyPieceBlock.Types.STEGOSAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/stegosaurus/stage_0.png"));
 		type.put(FossilSkeletonTwentyPieceBlock.Types.PARASAUROLOPHUSWALKERI, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/parasaurolophuswalkeri/stage_0.png"));
+		type.put(FossilSkeletonTwentyPieceBlock.Types.ARCHELON, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/archelon/stage_0.png"));
+		type.put(FossilSkeletonTwentyPieceBlock.Types.DEINOTHERIUM, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/deinotherium/stage_0.png"));
+		type.put(FossilSkeletonTwentyPieceBlock.Types.ANTEOSAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/anteosaurus/stage_0.png"));
+		type.put(FossilSkeletonTwentyPieceBlock.Types.DOEDICURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/doedicurus/stage_0.png"));
 	});
 	public static final Map<FossilSkeletonTwentyPieceBlock.Type, ResourceLocation> FRAME_BY_TYPE = Util.make(Maps.newHashMap(), (type) -> {
 		type.put(FossilSkeletonTwentyPieceBlock.Types.UTAHRAPTOR, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/utahraptor/frame.png"));
@@ -128,6 +140,10 @@ public class FossilSkeletonTwentyPieceRenderer implements BlockEntityRenderer<Fo
 		type.put(FossilSkeletonTwentyPieceBlock.Types.ARISTONECTES, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/aristonectes/frame.png"));
 		type.put(FossilSkeletonTwentyPieceBlock.Types.STEGOSAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/stegosaurus/frame.png"));
 		type.put(FossilSkeletonTwentyPieceBlock.Types.PARASAUROLOPHUSWALKERI, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/parasaurolophuswalkeri/frame.png"));
+		type.put(FossilSkeletonTwentyPieceBlock.Types.ARCHELON, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/archelon/frame.png"));
+		type.put(FossilSkeletonTwentyPieceBlock.Types.DEINOTHERIUM, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/deinotherium/frame.png"));
+		type.put(FossilSkeletonTwentyPieceBlock.Types.ANTEOSAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/anteosaurus/frame.png"));
+		type.put(FossilSkeletonTwentyPieceBlock.Types.DOEDICURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/doedicurus/frame.png"));
 	});
 	public static Map<FossilSkeletonTwentyPieceBlock.Type, SkullModelBase> createFossilRenderers(EntityModelSet p_173662_) {
 		ImmutableMap.Builder<FossilSkeletonTwentyPieceBlock.Type, SkullModelBase> builder = ImmutableMap.builder();
@@ -155,6 +171,10 @@ public class FossilSkeletonTwentyPieceRenderer implements BlockEntityRenderer<Fo
 		builder.put(FossilSkeletonTwentyPieceBlock.Types.ARISTONECTES, new AristonectesFossilModel(p_173662_.bakeLayer(ClientEvents.ARISTONECTES)));
 		builder.put(FossilSkeletonTwentyPieceBlock.Types.STEGOSAURUS, new StegosaurusFossilModel(p_173662_.bakeLayer(ClientEvents.STEGOSAURUS)));
 		builder.put(FossilSkeletonTwentyPieceBlock.Types.PARASAUROLOPHUSWALKERI, new ParasaurolophuswalkeriFossilModel(p_173662_.bakeLayer(ClientEvents.PARASAUROLOPHUSWALKERI)));
+		builder.put(FossilSkeletonTwentyPieceBlock.Types.ARCHELON, new ArchelonFossilModel(p_173662_.bakeLayer(ClientEvents.ARCHELON)));
+		builder.put(FossilSkeletonTwentyPieceBlock.Types.DEINOTHERIUM, new DeinotheriumFossilModel(p_173662_.bakeLayer(ClientEvents.DEINOTHERIUM)));
+		builder.put(FossilSkeletonTwentyPieceBlock.Types.ANTEOSAURUS, new AnteosaurusFossilModel(p_173662_.bakeLayer(ClientEvents.ANTEOSAURUS)));
+		builder.put(FossilSkeletonTwentyPieceBlock.Types.DOEDICURUS, new DoedicurusFossilModel(p_173662_.bakeLayer(ClientEvents.DOEDICURUS)));
 		return builder.build();
 	}
 
@@ -184,6 +204,10 @@ public class FossilSkeletonTwentyPieceRenderer implements BlockEntityRenderer<Fo
 		builder.put(FossilSkeletonTwentyPieceBlock.Types.ARISTONECTES, new AristonectesFossilFrameModel(p_173662_.bakeLayer(ClientEvents.ARISTONECTES_FRAME)));
 		builder.put(FossilSkeletonTwentyPieceBlock.Types.STEGOSAURUS, new StegosaurusFossilFrameModel(p_173662_.bakeLayer(ClientEvents.STEGOSAURUS_FRAME)));
 		builder.put(FossilSkeletonTwentyPieceBlock.Types.PARASAUROLOPHUSWALKERI, new ParasaurolophuswalkeriFossilFrameModel(p_173662_.bakeLayer(ClientEvents.PARASAUROLOPHUSWALKERI_FRAME)));
+		builder.put(FossilSkeletonTwentyPieceBlock.Types.ARCHELON, new ArchelonFossilFrameModel(p_173662_.bakeLayer(ClientEvents.ARCHELON_FRAME)));
+		builder.put(FossilSkeletonTwentyPieceBlock.Types.DEINOTHERIUM, new DeinotheriumFossilFrameModel(p_173662_.bakeLayer(ClientEvents.DEINOTHERIUM_FRAME)));
+		builder.put(FossilSkeletonTwentyPieceBlock.Types.ANTEOSAURUS, new AnteosaurusFossilFrameModel(p_173662_.bakeLayer(ClientEvents.ANTEOSAURUS_FRAME)));
+		builder.put(FossilSkeletonTwentyPieceBlock.Types.DOEDICURUS, new DoedicurusFossilFrameModel(p_173662_.bakeLayer(ClientEvents.DOEDICURUS_FRAME)));
 		return builder.build();
 	}
 
@@ -285,6 +309,18 @@ public class FossilSkeletonTwentyPieceRenderer implements BlockEntityRenderer<Fo
 		} else if (FossilSkeletonTwentyPieceBlock$type == FossilSkeletonTwentyPieceBlock.Types.PARASAUROLOPHUSWALKERI) {
 			p_173667_.scale(-1F, -1F, 1F);
 			p_173667_.translate(0F, -0.5F, 0F);
+		} else if (FossilSkeletonTwentyPieceBlock$type == FossilSkeletonTwentyPieceBlock.Types.ARCHELON) {
+			p_173667_.scale(-1F, -1F, 1F);
+			p_173667_.translate(0F, -2.1F, 0F);
+		} else if (FossilSkeletonTwentyPieceBlock$type == FossilSkeletonTwentyPieceBlock.Types.DEINOTHERIUM) {
+			p_173667_.scale(-1F, -1F, 1F);
+			p_173667_.translate(0F, -0.5F, 0F);
+		} else if (FossilSkeletonTwentyPieceBlock$type == FossilSkeletonTwentyPieceBlock.Types.ANTEOSAURUS) {
+			p_173667_.scale(-0.86F, -0.86F, 0.86F);
+			p_173667_.translate(0F, -0.35F, 0F);
+		} else if (FossilSkeletonTwentyPieceBlock$type == FossilSkeletonTwentyPieceBlock.Types.DOEDICURUS) {
+			p_173667_.scale(-0.82F, -0.82F, 0.82F);
+			p_173667_.translate(0F, -0.27F, 0F);
 		} else p_173667_.scale(-1.0F, -1.0F, 1.0F);
 		VertexConsumer vertexconsumer = p_173668_.getBuffer(p_173671_);
 		p_173670_.setupAnim(p_173666_, p_173665_, 0.0F);
@@ -342,6 +378,14 @@ public class FossilSkeletonTwentyPieceRenderer implements BlockEntityRenderer<Fo
 			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/stegosaurus/stage_" + fossilLevel + ".png");
 		} else if (type == FossilSkeletonTwentyPieceBlock.Types.PARASAUROLOPHUSWALKERI) {
 			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/parasaurolophuswalkeri/stage_" + fossilLevel + ".png");
+		} else if (type == FossilSkeletonTwentyPieceBlock.Types.ARCHELON) {
+			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/archelon/stage_" + fossilLevel + ".png");
+		} else if (type == FossilSkeletonTwentyPieceBlock.Types.DEINOTHERIUM) {
+			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/deinotherium/stage_" + fossilLevel + ".png");
+		} else if (type == FossilSkeletonTwentyPieceBlock.Types.ANTEOSAURUS) {
+			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/anteosaurus/stage_" + fossilLevel + ".png");
+		} else if (type == FossilSkeletonTwentyPieceBlock.Types.DOEDICURUS) {
+			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/doedicurus/stage_" + fossilLevel + ".png");
 		} else resourceLocation = SKIN_BY_TYPE.get(type);
 		return RenderType.entityCutoutNoCullZOffset(resourceLocation);
 	}

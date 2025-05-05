@@ -2,132 +2,19 @@
   "type": "minecraft:block",
   "pools": [
     {
-      "bonus_rolls": 0,
-      "conditions": [],
+      "rolls": 1,
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "fossils:nasutoceratops_fossil",
-          "weight": 2
+          "name": "fossils:junk_fossil",
+          "weight": 3
         },
         {
-          "type": "minecraft:item",
-          "name": "fossils:shuvuuia_fossil",
-          "weight": 2
-        },
-        {
-          "type": "minecraft:item",
-          "name": "fossils:skorpiovenator_fossil",
-          "weight": 2
-        },
-        {
-          "type": "minecraft:item",
-          "name": "fossils:protoceratopsandrewsi_fossil",
-          "weight": 2
-        },
-        {
-          "type": "minecraft:item",
-          "name": "fossils:struthiomimus_fossil",
-          "weight": 2
-        },
-        {
-          "type": "minecraft:item",
-          "name": "fossils:montanoceratops_fossil",
-          "weight": 2
-        },
-        {
-          "type": "minecraft:item",
-          "name": "fossils:tethyshadros_fossil",
-          "weight": 2
-        },
-        {
-          "type": "minecraft:item",
-          "name": "fossils:regaliceratops_fossil",
-          "weight": 2
-        },
-        {
-          "type": "minecraft:item",
-          "name": "fossils:huaxiazhoulong_fossil",
-          "weight": 2
-        },
-        {
-          "type": "minecraft:item",
-          "name": "fossils:velociraptor_fossil",
-          "weight": 2
-        },
-        {
-          "type": "minecraft:item",
-          "name": "fossils:hatzegopteryx_fossil",
-          "weight": 2
-        },
-        {
-          "type": "minecraft:item",
-          "name": "fossils:carcharodontosaurus_fossil",
-          "weight": 2
-        },
-        {
-          "type": "minecraft:item",
-          "name": "fossils:edmontosaurusannectens_fossil",
-          "weight": 2
-        },
-        {
-          "type": "minecraft:item",
-          "name": "fossils:tyrannosaurus_fossil",
-          "weight": 2
-        },
-        {
-          "type": "minecraft:item",
-          "name": "fossils:spinosaurus_fossil",
-          "weight": 2
-        },
-        {
-          "type": "minecraft:item",
-          "name": "fossils:platecarpus_fossil",
-          "weight": 2
-        },
-        {
-          "type": "minecraft:item",
-          "name": "fossils:buitreraptor_fossil",
-          "weight": 2
-        },
-        {
-          "type": "minecraft:item",
-          "name": "fossils:oviraptor_fossil",
-          "weight": 2
-        },
-        {
-          "type": "minecraft:item",
-          "name": "fossils:therizinosaurus_fossil",
-          "weight": 2
-        },
-        {
-          "type": "minecraft:item",
-          "name": "fossils:rajasaurus_fossil",
-          "weight": 2
-        },
-        {
-          "type": "minecraft:item",
-          "name": "fossils:zarafasaura_fossil",
-          "weight": 2
-        },
-        {
-          "type": "minecraft:item",
-          "name": "fossils:aristonectes_fossil",
-          "weight": 2
-        },
-        {
-          "type": "minecraft:item",
-          "name": "fossils:oksoko_fossil",
-          "weight": 2
-        },
-        {
-          "type": "minecraft:item",
-          "name": "fossils:parasaurolophuswalkeri_fossil",
+          "type": "minecraft:loot_table",
+          "name": "fossils:blocks/late_cretaceous_fossil_items",
           "weight": 2
         }
-      ],
-      "rolls": 1
+      ]
     }
-  ],
-  "random_sequence": "fossils:block/late_cretaceous_fossil_ore"
+  ]
 }

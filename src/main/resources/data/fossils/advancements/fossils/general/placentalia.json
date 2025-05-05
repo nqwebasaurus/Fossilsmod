@@ -1,5 +1,5 @@
 {
-  "parent": "fossils:fossils/general/mammals",
+  "parent": "fossils:fossils/general/eutheria",
   "criteria": {
     "finish_placentalia": {
       "trigger": "minecraft:tick"

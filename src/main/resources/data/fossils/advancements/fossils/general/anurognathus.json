@@ -1,5 +1,5 @@
 {
-  "parent": "fossils:fossils/general/novialoidea",
+  "parent": "fossils:fossils/general/pterodactyliformes",
   "criteria": {
     "finish_anurognathus": {
       "conditions": {

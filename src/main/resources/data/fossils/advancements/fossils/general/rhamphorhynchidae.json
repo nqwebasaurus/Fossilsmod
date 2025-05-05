@@ -1,5 +1,5 @@
 {
-  "parent": "fossils:fossils/general/novialoidea",
+  "parent": "fossils:fossils/general/breviquartossa",
   "criteria": {
     "finish_rhamphorhynchidae": {
       "trigger": "minecraft:tick"

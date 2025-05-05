@@ -1,5 +1,5 @@
 {
-  "parent": "fossils:fossils/general/mammals",
+  "parent": "fossils:fossils/general/metatheria",
   "criteria": {
     "finish_marsupialia": {
       "trigger": "minecraft:tick"

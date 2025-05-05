@@ -1,0 +1,24 @@
+{
+  "parent": "fossils:fossils/general/ferungulata",
+  "criteria": {
+    "finish_panperissodactyla": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "description": {
+      "translate": "advancements.fossils.panperissodactyla.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:advancement_line"
+    },
+    "show_toast": false,
+    "title": {
+      "translate": "advancements.fossils.panperissodactyla.title"
+    }
+  },
+  "sends_telemetry_event": true
+}

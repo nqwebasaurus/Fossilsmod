@@ -1,0 +1,57 @@
+{
+  "parent": "fossils:fossils/general/meridiungulata",
+  "criteria": {
+    "finish_pyrotherium": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:pyrotherium_fossil"
+                ],
+                "state": {
+                  "fossil_level": "14"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:pyrotherium_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.pyrotherium.description"
+    },
+    "frame": "goal",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:pyrotherium_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.pyrotherium.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_pyrotherium"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  },
+  "sends_telemetry_event": true
+}

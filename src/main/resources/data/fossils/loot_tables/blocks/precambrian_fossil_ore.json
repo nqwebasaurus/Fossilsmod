@@ -2,17 +2,19 @@
   "type": "minecraft:block",
   "pools": [
     {
-      "bonus_rolls": 0,
-      "conditions": [],
+      "rolls": 1,
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "fossils:alienum_fossil",
+          "name": "fossils:junk_fossil",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "fossils:blocks/precambrian_fossil_items",
           "weight": 2
         }
-      ],
-      "rolls": 1
+      ]
     }
-  ],
-  "random_sequence": "fossils:block/precambrian_fossil_ore"
+  ]
 }

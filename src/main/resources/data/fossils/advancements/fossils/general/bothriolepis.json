@@ -1,0 +1,54 @@
+{
+  "parent": "fossils:fossils/general/placodermi",
+  "criteria": {
+    "finish_bothriolepis": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:bothriolepis_fossil"
+                ],
+                "state": {
+                  "fossil_level": "4"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:bothriolepis_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.bothriolepis.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:bothriolepis_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.bothriolepis.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_bothriolepis"
+    ]
+  ],
+  "sends_telemetry_event": true
+}
