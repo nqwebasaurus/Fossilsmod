@@ -1,0 +1,54 @@
+{
+  "parent": "fossils:fossils/general/thyreophora",
+  "criteria": {
+    "finish_jakapil": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:jakapil_fossil"
+                ],
+                "state": {
+                  "fossil_level": "4"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:jakapil_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.jakapil.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:jakapil_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.jakapil.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_jakapil"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

@@ -136,7 +136,22 @@
         },
         {
           "type": "minecraft:item",
-          "name": "fossils:ouranosaurus_fossil",
+          "name": "fossils:jakapil_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:stellasaurus_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:halszkaraptor_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:pachyrhinosauruscanadensis_fossil",
           "weight": 2
         }
       ],

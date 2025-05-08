@@ -1,0 +1,57 @@
+{
+  "parent": "fossils:fossils/general/rhinocerotoidea",
+  "criteria": {
+    "finish_paraceratheriumtransouralicum": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:paraceratheriumtransouralicum_fossil"
+                ],
+                "state": {
+                  "fossil_level": "19"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:paraceratheriumtransouralicum_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.paraceratheriumtransouralicum.description"
+    },
+    "frame": "challenge",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:paraceratheriumtransouralicum_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.paraceratheriumtransouralicum.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_paraceratheriumtransouralicum"
+    ]
+  ],
+  "rewards": {
+    "experience": 500
+  },
+  "sends_telemetry_event": true
+}

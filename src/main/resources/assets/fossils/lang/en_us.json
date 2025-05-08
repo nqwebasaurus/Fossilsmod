@@ -52,6 +52,8 @@
 	"block.fossils.pterodactylus_fossil": "Pterodactylus Fossil",
 	"block.fossils.bothriolepis_fossil": "Bothriolepis Fossil",
 	"block.fossils.platyhystrix_fossil": "Platyhystrix Fossil",
+	"block.fossils.jakapil_fossil": "Jakapil Fossil",
+	"block.fossils.halszkaraptor_fossil": "Halszkaraptor Fossil",
 	"block.fossils.kentrosaurus_fossil": "Kentrosaurus Fossil",
 	"block.fossils.endothiodonbathystoma_fossil": "Endothiodon bathystoma Fossil",
 	"block.fossils.dimetrodongrandis_fossil": "Dimetrodon grandis Fossil",
@@ -116,6 +118,8 @@
 	"block.fossils.ouranosaurus_fossil": "Ouranosaurus Fossil",
 	"block.fossils.pyrotherium_fossil": "Pyrotherium Fossil",
 	"block.fossils.monolophosaurus_fossil": "Monolophosaurus Fossil",
+	"block.fossils.stellasaurus_fossil": "Stellasaurus Fossil",
+	"block.fossils.coelodonta_fossil": "Coelodonta Fossil",
 	"block.fossils.bisonlatifrons_fossil": "Bison latifrons Fossil",
 	"block.fossils.utahraptor_fossil": "Utahraptor Fossil",
 	"block.fossils.shonisaurus_fossil": "Shonisaurus Fossil",
@@ -145,6 +149,8 @@
 	"block.fossils.deinotherium_fossil": "Deinotherium Fossil",
 	"block.fossils.anteosaurus_fossil": "Anteosaurus Fossil",
 	"block.fossils.doedicurus_fossil": "Doedicurus Fossil",
+	"block.fossils.paraceratheriumtransouralicum_fossil": "Paraceratherium transouralicum Fossil",
+	"block.fossils.pachyrhinosauruscanadensis_fossil": "Pachyrhinosaurus canadensis Fossil",
 	
 	"itemGroup.fossil_slab_tab": "Fossils Slabs",
 	"itemGroup.fossil_blocks_tab": "Fossils Blocks",
@@ -502,6 +508,10 @@
 	"advancements.fossils.chlamyphoridae.description": "Chlamyphoridae",
 	"advancements.fossils.glyptodontinae.title": "Shining (morning) Stars",
 	"advancements.fossils.glyptodontinae.description": "Glyptodontinae",
+	"advancements.fossils.rhinocerotoidea.title": "Mum was a Giraffe, Pops a Rhino",
+	"advancements.fossils.rhinocerotoidea.description": "Rhinocerotoidea",
+	"advancements.fossils.rhinocerotidae.title": "We're the new Ceratopsians",
+	"advancements.fossils.rhinocerotidae.description": "Rhinocerotidae",
 
 
 "advancements.fossils.pelecanimimus.title": "Pelican Mimic",
@@ -755,5 +765,17 @@
 	"advancements.fossils.barylambda.title": "Heavy Lambda (the letter)",
 	"advancements.fossils.barylambda.description": "Complete a Barylambda skeleton",
 	"advancements.fossils.doedicurus.title": "Pestle Tail",
-	"advancements.fossils.doedicurus.description": "Complete a Doedicurus skeleton"
+	"advancements.fossils.doedicurus.description": "Complete a Doedicurus skeleton",
+	"advancements.fossils.jakapil.title": "shield bearer",
+	"advancements.fossils.jakapil.description": "Complete a Jakapil skeleton",
+	"advancements.fossils.stellasaurus.title": "Star Lizard",
+	"advancements.fossils.stellasaurus.description": "Complete a Stellasaurus skeleton",
+	"advancements.fossils.coelodonta.title": "Wooly Rhinoceros",
+	"advancements.fossils.coelodonta.description": "Complete a Coelodonta skeleton",
+	"advancements.fossils.paraceratheriumtransouralicum.title": "Close to the horned Beast from the Ural Mountains",
+	"advancements.fossils.paraceratheriumtransouralicum.description": "Complete a Paraceratherium transouralicum skeleton",
+	"advancements.fossils.halszkaraptor.title": "Halszka Osmólska's Thief",
+	"advancements.fossils.halszkaraptor.description": "Complete a Halszkaraptor skeleton",
+	"advancements.fossils.pachyrhinosauruscanadensis.title": "Canadian Thick-Nosed Lizard",
+	"advancements.fossils.pachyrhinosauruscanadensis.description": "Complete a Pachyrhinosaurus canadensis skeleton"
 }

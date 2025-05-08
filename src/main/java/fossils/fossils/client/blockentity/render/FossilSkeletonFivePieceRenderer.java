@@ -37,8 +37,12 @@ import fossils.fossils.client.blockentity.model.drepanosaurus.DrepanosaurusFossi
 import fossils.fossils.client.blockentity.model.drepanosaurus.DrepanosaurusFossilModel;
 import fossils.fossils.client.blockentity.model.eunotosaurus.EunotosaurusFossilFrameModel;
 import fossils.fossils.client.blockentity.model.eunotosaurus.EunotosaurusFossilModel;
+import fossils.fossils.client.blockentity.model.halszkaraptor.HalszkaraptorFossilFrameModel;
+import fossils.fossils.client.blockentity.model.halszkaraptor.HalszkaraptorFossilModel;
 import fossils.fossils.client.blockentity.model.henodus.HenodusFossilFrameModel;
 import fossils.fossils.client.blockentity.model.henodus.HenodusFossilModel;
+import fossils.fossils.client.blockentity.model.jakapil.JakapilFossilFrameModel;
+import fossils.fossils.client.blockentity.model.jakapil.JakapilFossilModel;
 import fossils.fossils.client.blockentity.model.manidens.ManidensFossilFrameModel;
 import fossils.fossils.client.blockentity.model.manidens.ManidensFossilModel;
 import fossils.fossils.client.blockentity.model.megalancosaurus.MegalancosaurusFossilFrameModel;
@@ -128,6 +132,8 @@ public class FossilSkeletonFivePieceRenderer implements BlockEntityRenderer<Foss
 		type.put(FossilSkeletonFivePieceBlock.Types.PTERODACTYLUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/pterodactylus/stage_0.png"));
 		type.put(FossilSkeletonFivePieceBlock.Types.BOTHRIOLEPIS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/bothriolepis/stage_0.png"));
 		type.put(FossilSkeletonFivePieceBlock.Types.PLATYHYSTRIX, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/platyhystrix/stage_0.png"));
+		type.put(FossilSkeletonFivePieceBlock.Types.JAKAPIL, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/jakapil/stage_0.png"));
+		type.put(FossilSkeletonFivePieceBlock.Types.HALSZKARAPTOR, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/halszkaraptor/stage_0.png"));
 	});
 	public static final Map<FossilSkeletonFivePieceBlock.Type, ResourceLocation> FRAME_BY_TYPE = Util.make(Maps.newHashMap(), (type) -> {
 		type.put(FossilSkeletonFivePieceBlock.Types.EUNOTOSAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/eunotosaurus/frame.png"));
@@ -162,6 +168,8 @@ public class FossilSkeletonFivePieceRenderer implements BlockEntityRenderer<Foss
 		type.put(FossilSkeletonFivePieceBlock.Types.PTERODACTYLUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/pterodactylus/frame.png"));
 		type.put(FossilSkeletonFivePieceBlock.Types.BOTHRIOLEPIS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/bothriolepis/frame.png"));
 		type.put(FossilSkeletonFivePieceBlock.Types.PLATYHYSTRIX, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/platyhystrix/frame.png"));
+		type.put(FossilSkeletonFivePieceBlock.Types.JAKAPIL, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/jakapil/frame.png"));
+		type.put(FossilSkeletonFivePieceBlock.Types.HALSZKARAPTOR, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/halszkaraptor/frame.png"));
 	});
 	public static Map<FossilSkeletonFivePieceBlock.Type, SkullModelBase> createFossilRenderers(EntityModelSet p_173662_) {
 		ImmutableMap.Builder<FossilSkeletonFivePieceBlock.Type, SkullModelBase> builder = ImmutableMap.builder();
@@ -197,6 +205,8 @@ public class FossilSkeletonFivePieceRenderer implements BlockEntityRenderer<Foss
 		builder.put(FossilSkeletonFivePieceBlock.Types.PTERODACTYLUS, new PterodactylusFossilModel(p_173662_.bakeLayer(ClientEvents.PTERODACTYLUS)));
 		builder.put(FossilSkeletonFivePieceBlock.Types.BOTHRIOLEPIS, new BothriolepisFossilModel(p_173662_.bakeLayer(ClientEvents.BOTHRIOLEPIS)));
 		builder.put(FossilSkeletonFivePieceBlock.Types.PLATYHYSTRIX, new PlatyhystrixFossilModel(p_173662_.bakeLayer(ClientEvents.PLATYHYSTRIX)));
+		builder.put(FossilSkeletonFivePieceBlock.Types.JAKAPIL, new JakapilFossilModel(p_173662_.bakeLayer(ClientEvents.JAKAPIL)));
+		builder.put(FossilSkeletonFivePieceBlock.Types.HALSZKARAPTOR, new HalszkaraptorFossilModel(p_173662_.bakeLayer(ClientEvents.HALSZKARAPTOR)));
 		return builder.build();
 	}
 
@@ -234,6 +244,8 @@ public class FossilSkeletonFivePieceRenderer implements BlockEntityRenderer<Foss
 		builder.put(FossilSkeletonFivePieceBlock.Types.PTERODACTYLUS, new PterodactylusFossilFrameModel(p_173662_.bakeLayer(ClientEvents.PTERODACTYLUS_FRAME)));
 		builder.put(FossilSkeletonFivePieceBlock.Types.BOTHRIOLEPIS, new BothriolepisFossilFrameModel(p_173662_.bakeLayer(ClientEvents.BOTHRIOLEPIS_FRAME)));
 		builder.put(FossilSkeletonFivePieceBlock.Types.PLATYHYSTRIX, new PlatyhystrixFossilFrameModel(p_173662_.bakeLayer(ClientEvents.PLATYHYSTRIX_FRAME)));
+		builder.put(FossilSkeletonFivePieceBlock.Types.JAKAPIL, new JakapilFossilFrameModel(p_173662_.bakeLayer(ClientEvents.JAKAPIL_FRAME)));
+		builder.put(FossilSkeletonFivePieceBlock.Types.HALSZKARAPTOR, new HalszkaraptorFossilFrameModel(p_173662_.bakeLayer(ClientEvents.HALSZKARAPTOR_FRAME)));
 		return builder.build();
 	}
 
@@ -359,6 +371,12 @@ public class FossilSkeletonFivePieceRenderer implements BlockEntityRenderer<Foss
 		} else if (FossilSkeletonFivePieceBlock$type == FossilSkeletonFivePieceBlock.Types.PLATYHYSTRIX) {
 			p_173667_.scale(-0.5F, -0.5F, 0.5F);
 			p_173667_.translate(0F, 0.5F, 0F);
+		} else if (FossilSkeletonFivePieceBlock$type == FossilSkeletonFivePieceBlock.Types.JAKAPIL) {
+			p_173667_.scale(-0.48F, -0.48F, 0.48F);
+			p_173667_.translate(0F, 0.6F, 0F);
+		} else if (FossilSkeletonFivePieceBlock$type == FossilSkeletonFivePieceBlock.Types.HALSZKARAPTOR) {
+			p_173667_.scale(-0.24F, -0.24F, 0.24F);
+			p_173667_.translate(0F, 2.67F, 0F);
 		} else p_173667_.scale(-1.0F, -1.0F, 1.0F);
 		VertexConsumer vertexconsumer = p_173668_.getBuffer(p_173671_);
 		p_173670_.setupAnim(p_173666_, p_173665_, 0.0F);
@@ -432,6 +450,10 @@ public class FossilSkeletonFivePieceRenderer implements BlockEntityRenderer<Foss
 			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/bothriolepis/stage_" + fossilLevel + ".png");
 		} else if (type == FossilSkeletonFivePieceBlock.Types.PLATYHYSTRIX) {
 			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/platyhystrix/stage_" + fossilLevel + ".png");
+		} else if (type == FossilSkeletonFivePieceBlock.Types.JAKAPIL) {
+			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/jakapil/stage_" + fossilLevel + ".png");
+		} else if (type == FossilSkeletonFivePieceBlock.Types.HALSZKARAPTOR) {
+			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/halszkaraptor/stage_" + fossilLevel + ".png");
 		} else resourceLocation = SKIN_BY_TYPE.get(type);
 		return RenderType.entityCutoutNoCullZOffset(resourceLocation);
 	}

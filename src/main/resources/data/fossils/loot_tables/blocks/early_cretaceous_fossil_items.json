@@ -103,6 +103,11 @@
           "type": "minecraft:item",
           "name": "fossils:sarcosuchus_fossil",
           "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:ouranosaurus_fossil",
+          "weight": 2
         }
       ],
       "rolls": 1

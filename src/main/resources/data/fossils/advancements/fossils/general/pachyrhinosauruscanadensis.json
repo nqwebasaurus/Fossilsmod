@@ -1,0 +1,57 @@
+{
+  "parent": "fossils:fossils/general/centrosaurinae",
+  "criteria": {
+    "finish_pachyrhinosauruscanadensis": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:pachyrhinosauruscanadensis_fossil"
+                ],
+                "state": {
+                  "fossil_level": "19"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:pachyrhinosauruscanadensis_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.pachyrhinosauruscanadensis.description"
+    },
+    "frame": "challenge",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:pachyrhinosauruscanadensis_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.pachyrhinosauruscanadensis.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_pachyrhinosauruscanadensis"
+    ]
+  ],
+  "rewards": {
+    "experience": 500
+  },
+  "sends_telemetry_event": true
+}

@@ -1,0 +1,54 @@
+{
+  "parent": "fossils:fossils/general/dromaeosauridae",
+  "criteria": {
+    "finish_halszkaraptor": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:halszkaraptor_fossil"
+                ],
+                "state": {
+                  "fossil_level": "4"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:halszkaraptor_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.halszkaraptor.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:halszkaraptor_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.halszkaraptor.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_halszkaraptor"
+    ]
+  ],
+  "sends_telemetry_event": true
+}
