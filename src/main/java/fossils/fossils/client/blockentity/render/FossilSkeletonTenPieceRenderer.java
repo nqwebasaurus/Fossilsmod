@@ -80,7 +80,6 @@ import fossils.fossils.client.blockentity.model.thylacoleo.ThylacoleoFossilModel
 import fossils.fossils.client.blockentity.model.tupandactylusnavigans.TupandactylusnavigansFossilFrameModel;
 import fossils.fossils.client.blockentity.model.tupandactylusnavigans.TupandactylusnavigansFossilModel;
 import fossils.fossils.common.block.FossilSkeletonTenPieceBlock;
-import fossils.fossils.common.block.FossilSkeletonTenPieceBlock;
 import fossils.fossils.common.entity.block.FossilSkeletonTenPieceBlockEntity;
 import net.minecraft.Util;
 import net.minecraft.client.model.SkullModelBase;

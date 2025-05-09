@@ -6,6 +6,7 @@ import fossils.fossils.common.block.FossilSkeletonFivePieceBlock;
 import fossils.fossils.common.block.FossilSkeletonTenPieceBlock;
 import fossils.fossils.common.block.FossilSkeletonTwentyPieceBlock;
 import fossils.fossils.common.block.FossilSlabBlock;
+import fossils.fossils.common.block.FossilSlabWallBlock;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.SoundType;
@@ -20,6 +21,7 @@ public class FossilBlocks {
 	//Slabs
 	public static final RegistryObject<FossilSlabBlock> TROPAEUM = REGISTER.register("tropaeum_fossil", () -> new FossilSlabBlock(FossilSlabBlock.Types.TROPAEUM, Properties.of().strength(2.0F, 3.0F).sound(SoundType.STONE).requiresCorrectToolForDrops().noCollission().noOcclusion()));
 	public static final RegistryObject<FossilSlabBlock> ALIENUM = REGISTER.register("alienum_fossil", () -> new FossilSlabBlock(FossilSlabBlock.Types.ALIENUM, Properties.of().strength(2.0F, 3.0F).sound(SoundType.STONE).requiresCorrectToolForDrops().noCollission().noOcclusion()));
+	public static final RegistryObject<FossilSlabWallBlock> ALIENUM_WALL = REGISTER.register("alienum_wall_fossil", () -> new FossilSlabWallBlock(FossilSlabBlock.Types.ALIENUM, Properties.of().strength(2.0F, 3.0F).sound(SoundType.STONE).requiresCorrectToolForDrops().noCollission().noOcclusion()));
 	
 	//Five
 	public static final RegistryObject<FossilSkeletonFivePieceBlock> EUNOTOSAURUS = REGISTER.register("eunotosaurus_fossil", () -> new FossilSkeletonFivePieceBlock(FossilSkeletonFivePieceBlock.Types.EUNOTOSAURUS, Properties.of().strength(2.0F, 3.0F).sound(SoundType.BONE_BLOCK).requiresCorrectToolForDrops().noOcclusion().noCollission()));

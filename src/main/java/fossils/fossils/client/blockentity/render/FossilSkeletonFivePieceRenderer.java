@@ -73,8 +73,6 @@ import fossils.fossils.client.blockentity.model.suminia.SuminiaFossilFrameModel;
 import fossils.fossils.client.blockentity.model.suminia.SuminiaFossilModel;
 import fossils.fossils.client.blockentity.model.sylviornis.SylviornisFossilFrameModel;
 import fossils.fossils.client.blockentity.model.sylviornis.SylviornisFossilModel;
-import fossils.fossils.client.blockentity.model.synthetoceras.SynthetocerasFossilFrameModel;
-import fossils.fossils.client.blockentity.model.synthetoceras.SynthetocerasFossilModel;
 import fossils.fossils.client.blockentity.model.tiktaalik.TiktaalikFossilFrameModel;
 import fossils.fossils.client.blockentity.model.tiktaalik.TiktaalikFossilModel;
 import fossils.fossils.client.blockentity.model.yuanyanglong.YuanyanglongFossilFrameModel;

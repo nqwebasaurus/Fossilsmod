@@ -1,8 +1,10 @@
 package fossils.fossils.init;
 
 import fossils.fossils.FossilMod;
+import net.minecraft.core.Direction;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.StandingAndWallBlockItem;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
@@ -19,7 +21,7 @@ public class FossilItems {
 
 	//Slabs
 	public static final RegistryObject<BlockItem> TROPAEUM = SLAB_REGISTER.register("tropaeum_fossil", () -> new BlockItem(FossilBlocks.TROPAEUM.get(), new Item.Properties()));
-	public static final RegistryObject<BlockItem> ALIENUM = SLAB_REGISTER.register("alienum_fossil", () -> new BlockItem(FossilBlocks.ALIENUM.get(), new Item.Properties()));
+	public static final RegistryObject<BlockItem> ALIENUM = SLAB_REGISTER.register("alienum_fossil", () -> new StandingAndWallBlockItem(FossilBlocks.ALIENUM.get(), FossilBlocks.ALIENUM_WALL.get(), new Item.Properties(), Direction.DOWN));
 	
 	//Five
 	public static final RegistryObject<BlockItem> EUNOTOSAURUS = SKELETON_REGISTER.register("eunotosaurus_fossil", () -> new BlockItem(FossilBlocks.EUNOTOSAURUS.get(), new Item.Properties().rarity(FossilRarities.FIVE_PIECE_FOSSIL)));

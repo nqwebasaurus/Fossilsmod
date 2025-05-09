@@ -1,14 +1,14 @@
 package fossils.fossils.client;
 
 import fossils.fossils.FossilMod;
-import fossils.fossils.client.blockentity.model.AlienumFossilSlabModel;
+import fossils.fossils.client.blockentity.model.TropaeumFossilSlabModel;
 import fossils.fossils.client.blockentity.model.Deinotherium.DeinotheriumFossilFrameModel;
 import fossils.fossils.client.blockentity.model.Deinotherium.DeinotheriumFossilModel;
-import fossils.fossils.client.blockentity.model.TropaeumFossilSlabModel;
 import fossils.fossils.client.blockentity.model.abyssosaurus.AbyssosaurusFossilFrameModel;
 import fossils.fossils.client.blockentity.model.abyssosaurus.AbyssosaurusFossilModel;
 import fossils.fossils.client.blockentity.model.acanthostega.AcanthostegaFossilFrameModel;
 import fossils.fossils.client.blockentity.model.acanthostega.AcanthostegaFossilModel;
+import fossils.fossils.client.blockentity.model.alienum.AlienumFossilSlabModel;
 import fossils.fossils.client.blockentity.model.allosaurus.AllosaurusFossilFrameModel;
 import fossils.fossils.client.blockentity.model.allosaurus.AllosaurusFossilModel;
 import fossils.fossils.client.blockentity.model.amargasaurus.AmargasaurusFossilFrameModel;
