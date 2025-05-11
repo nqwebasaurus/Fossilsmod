@@ -15,6 +15,8 @@ import fossils.fossils.client.blockentity.model.allosaurus.AllosaurusFossilFrame
 import fossils.fossils.client.blockentity.model.allosaurus.AllosaurusFossilModel;
 import fossils.fossils.client.blockentity.model.amargasaurus.AmargasaurusFossilFrameModel;
 import fossils.fossils.client.blockentity.model.amargasaurus.AmargasaurusFossilModel;
+import fossils.fossils.client.blockentity.model.ankylosaurus.AnkylosaurusFossilFrameModel;
+import fossils.fossils.client.blockentity.model.ankylosaurus.AnkylosaurusFossilModel;
 import fossils.fossils.client.blockentity.model.anteosaurus.AnteosaurusFossilFrameModel;
 import fossils.fossils.client.blockentity.model.anteosaurus.AnteosaurusFossilModel;
 import fossils.fossils.client.blockentity.model.apatosaurus.ApatosaurusFossilFrameModel;
@@ -120,6 +122,7 @@ public class FossilSkeletonTwentyPieceRenderer implements BlockEntityRenderer<Fo
 		type.put(FossilSkeletonTwentyPieceBlock.Types.DOEDICURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/doedicurus/stage_0.png"));
 		type.put(FossilSkeletonTwentyPieceBlock.Types.PARACERATHERIUMTRANSOURALICUM, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/paraceratheriumtransouralicum/stage_0.png"));
 		type.put(FossilSkeletonTwentyPieceBlock.Types.PACHYRHINOSAURUSCANADENSIS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/pachyrhinosauruscanadensis/stage_0.png"));
+		type.put(FossilSkeletonTwentyPieceBlock.Types.ANKYLOSAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/ankylosaurus/stage_0.png"));
 	});
 	public static final Map<FossilSkeletonTwentyPieceBlock.Type, ResourceLocation> FRAME_BY_TYPE = Util.make(Maps.newHashMap(), (type) -> {
 		type.put(FossilSkeletonTwentyPieceBlock.Types.UTAHRAPTOR, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/utahraptor/frame.png"));
@@ -152,6 +155,7 @@ public class FossilSkeletonTwentyPieceRenderer implements BlockEntityRenderer<Fo
 		type.put(FossilSkeletonTwentyPieceBlock.Types.DOEDICURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/doedicurus/frame.png"));
 		type.put(FossilSkeletonTwentyPieceBlock.Types.PARACERATHERIUMTRANSOURALICUM, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/paraceratheriumtransouralicum/frame.png"));
 		type.put(FossilSkeletonTwentyPieceBlock.Types.PACHYRHINOSAURUSCANADENSIS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/pachyrhinosauruscanadensis/frame.png"));
+		type.put(FossilSkeletonTwentyPieceBlock.Types.ANKYLOSAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/ankylosaurus/frame.png"));
 	});
 	public static Map<FossilSkeletonTwentyPieceBlock.Type, SkullModelBase> createFossilRenderers(EntityModelSet p_173662_) {
 		ImmutableMap.Builder<FossilSkeletonTwentyPieceBlock.Type, SkullModelBase> builder = ImmutableMap.builder();
@@ -185,6 +189,7 @@ public class FossilSkeletonTwentyPieceRenderer implements BlockEntityRenderer<Fo
 		builder.put(FossilSkeletonTwentyPieceBlock.Types.DOEDICURUS, new DoedicurusFossilModel(p_173662_.bakeLayer(ClientEvents.DOEDICURUS)));
 		builder.put(FossilSkeletonTwentyPieceBlock.Types.PARACERATHERIUMTRANSOURALICUM, new ParaceratheriumtransouralicumFossilModel(p_173662_.bakeLayer(ClientEvents.PARACERATHERIUMTRANSOURALICUM)));
 		builder.put(FossilSkeletonTwentyPieceBlock.Types.PACHYRHINOSAURUSCANADENSIS, new PachyrhinosauruscanadensisFossilModel(p_173662_.bakeLayer(ClientEvents.PACHYRHINOSAURUSCANADENSIS)));
+		builder.put(FossilSkeletonTwentyPieceBlock.Types.ANKYLOSAURUS, new AnkylosaurusFossilModel(p_173662_.bakeLayer(ClientEvents.ANKYLOSAURUS)));
 		return builder.build();
 	}
 
@@ -220,6 +225,7 @@ public class FossilSkeletonTwentyPieceRenderer implements BlockEntityRenderer<Fo
 		builder.put(FossilSkeletonTwentyPieceBlock.Types.DOEDICURUS, new DoedicurusFossilFrameModel(p_173662_.bakeLayer(ClientEvents.DOEDICURUS_FRAME)));
 		builder.put(FossilSkeletonTwentyPieceBlock.Types.PARACERATHERIUMTRANSOURALICUM, new ParaceratheriumtransouralicumFossilFrameModel(p_173662_.bakeLayer(ClientEvents.PARACERATHERIUMTRANSOURALICUM_FRAME)));
 		builder.put(FossilSkeletonTwentyPieceBlock.Types.PACHYRHINOSAURUSCANADENSIS, new PachyrhinosauruscanadensisFossilFrameModel(p_173662_.bakeLayer(ClientEvents.PACHYRHINOSAURUSCANADENSIS_FRAME)));
+		builder.put(FossilSkeletonTwentyPieceBlock.Types.ANKYLOSAURUS, new AnkylosaurusFossilFrameModel(p_173662_.bakeLayer(ClientEvents.ANKYLOSAURUS_FRAME)));
 		return builder.build();
 	}
 
@@ -339,6 +345,9 @@ public class FossilSkeletonTwentyPieceRenderer implements BlockEntityRenderer<Fo
 		} else if (FossilSkeletonTwentyPieceBlock$type == FossilSkeletonTwentyPieceBlock.Types.PACHYRHINOSAURUSCANADENSIS) {
 			p_173667_.scale(-1F, -1F, 1F);
 			p_173667_.translate(0F, -0.5F, 0F);
+		} else if (FossilSkeletonTwentyPieceBlock$type == FossilSkeletonTwentyPieceBlock.Types.ANKYLOSAURUS) {
+			p_173667_.scale(-1F, -1F, 1F);
+			p_173667_.translate(0F, -0.5F, 0F);
 		} else p_173667_.scale(-1.0F, -1.0F, 1.0F);
 		VertexConsumer vertexconsumer = p_173668_.getBuffer(p_173671_);
 		p_173670_.setupAnim(p_173666_, p_173665_, 0.0F);
@@ -408,6 +417,8 @@ public class FossilSkeletonTwentyPieceRenderer implements BlockEntityRenderer<Fo
 			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/paraceratheriumtransouralicum/stage_" + fossilLevel + ".png");
 		} else if (type == FossilSkeletonTwentyPieceBlock.Types.PACHYRHINOSAURUSCANADENSIS) {
 			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/pachyrhinosauruscanadensis/stage_" + fossilLevel + ".png");
+		} else if (type == FossilSkeletonTwentyPieceBlock.Types.ANKYLOSAURUS) {
+			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/ankylosaurus/stage_" + fossilLevel + ".png");
 		} else resourceLocation = SKIN_BY_TYPE.get(type);
 		return RenderType.entityCutoutNoCullZOffset(resourceLocation);
 	}

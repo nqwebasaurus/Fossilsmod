@@ -100,6 +100,7 @@ public class FossilSlabBlock extends BaseEntityBlock {
 
 	public static enum Types implements Type {
 		TROPAEUM,
+		DICRANURUS,
 		ALIENUM;
 	}
 

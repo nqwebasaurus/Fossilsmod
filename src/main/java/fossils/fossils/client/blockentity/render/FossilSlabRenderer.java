@@ -4,6 +4,7 @@ import java.util.Map;
 
 import javax.annotation.Nullable;
 
+import fossils.fossils.client.blockentity.model.DicranurusFossilSlabModel;
 import org.joml.Quaternionf;
 
 import com.google.common.collect.ImmutableMap;
@@ -40,11 +41,13 @@ public class FossilSlabRenderer implements BlockEntityRenderer<FossilSlabBlockEn
 	public static final Map<FossilSlabBlock.Type, ResourceLocation> SKIN_BY_TYPE = Util.make(Maps.newHashMap(), (type) -> {
 		type.put(FossilSlabBlock.Types.TROPAEUM, new ResourceLocation(FossilMod.MOD_ID, "textures/block/slabs/tropaeum.png"));
 		type.put(FossilSlabBlock.Types.ALIENUM, new ResourceLocation(FossilMod.MOD_ID, "textures/block/slabs/alienum.png"));
+		type.put(FossilSlabBlock.Types.DICRANURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/slabs/dicranurus.png"));
 	});
 	public static Map<FossilSlabBlock.Type, SkullModelBase> createFossilRenderers(EntityModelSet p_173662_) {
 		ImmutableMap.Builder<FossilSlabBlock.Type, SkullModelBase> builder = ImmutableMap.builder();
 		builder.put(FossilSlabBlock.Types.TROPAEUM, new TropaeumFossilSlabModel(p_173662_.bakeLayer(ClientEvents.TROPAEUM)));
 		builder.put(FossilSlabBlock.Types.ALIENUM, new AlienumFossilSlabModel(p_173662_.bakeLayer(ClientEvents.ALIENUM)));
+		builder.put(FossilSlabBlock.Types.DICRANURUS, new DicranurusFossilSlabModel(p_173662_.bakeLayer(ClientEvents.DICRANURUS)));
 		return builder.build();
 	}
 
@@ -101,6 +104,31 @@ public class FossilSlabRenderer implements BlockEntityRenderer<FossilSlabBlockEn
 			} else {
 				p_173667_.scale(-0.2F, -0.2F, 0.2F);
 				p_173667_.translate(0F, 3.51F, 0F);
+			}
+		} else if (fossilslabblock$type == FossilSlabBlock.Types.DICRANURUS) {
+			if (!flag) {
+				if (direction == Direction.SOUTH) {
+					p_173667_.rotateAround(new Quaternionf(1, 0, 0, 1), 0, 0, 0);
+					p_173667_.scale(-0.07F, -0.07F, -0.07F);
+					p_173667_.translate(0F, 1F, -2.25F);
+				} else if (direction == Direction.NORTH) {
+					p_173667_.rotateAround(new Quaternionf(-1, 0, 0, 1), 0, 0, 0);
+					p_173667_.scale(-0.07F, -0.07F, 0.07F);
+					p_173667_.translate(0F, 1F, -2.25F);
+				} else if (direction == Direction.EAST) {
+					p_173667_.rotateAround(new Quaternionf(0, 1, 0, 1), 0, 0, 0);
+					p_173667_.rotateAround(new Quaternionf(1, 0, 0, 1), 0, 0, 0);
+					p_173667_.scale(-0.035F, -0.035F, -0.035F);
+					p_173667_.translate(0F, 1F, -2.25F);
+				} else {
+					p_173667_.rotateAround(new Quaternionf(0, 1, 0, 1), 0, 0, 0);
+					p_173667_.rotateAround(new Quaternionf(-1, 0, 0, 1), 0, 0, 0);
+					p_173667_.scale(-0.035F, -0.035F, 0.035F);
+					p_173667_.translate(0F, 1F, -2.25F);
+				}
+			} else {
+				p_173667_.scale(-0.14F, -0.14F, 0.14F);
+				p_173667_.translate(0F, 5.6F, 0F);
 			}
 		} else p_173667_.scale(-1.0F, -1.0F, 1.0F);
 		VertexConsumer vertexconsumer = p_173668_.getBuffer(p_173671_);

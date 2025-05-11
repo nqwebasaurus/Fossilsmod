@@ -32,6 +32,8 @@ public class FossilSlabWallBlock extends BaseEntityBlock {
 		super(properties);
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
 		this.type = type;
+
+
 	}
 
 	public VoxelShape getShape(BlockState p_58114_, BlockGetter p_58115_, BlockPos p_58116_, CollisionContext p_58117_) {

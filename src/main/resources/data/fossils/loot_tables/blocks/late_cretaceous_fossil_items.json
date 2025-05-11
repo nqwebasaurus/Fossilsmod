@@ -153,6 +153,16 @@
           "type": "minecraft:item",
           "name": "fossils:pachyrhinosauruscanadensis_fossil",
           "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:achelousaurus_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:ankylosaurus_fossil",
+          "weight": 2
         }
       ],
       "rolls": 1

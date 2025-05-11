@@ -19,6 +19,7 @@
 	"item.fossils.junk_fossil": "Fossil Hash",
 	"block.fossils.tropaeum_fossil": "Tropaeum Fossil Slab",
 	"block.fossils.alienum_fossil": "Alienum Fossil Slab",
+	"block.fossils.dicranurus_fossil": "Dicranurus Fossil Slab",
 	"block.fossils.pelecanimimus_fossil": "Pelecanimimus Fossil",
 	"block.fossils.acanthostega_fossil": "Acanthostega Fossil",
 	"block.fossils.stenokranio_fossil": "Stenokranio Fossil",
@@ -120,6 +121,7 @@
 	"block.fossils.monolophosaurus_fossil": "Monolophosaurus Fossil",
 	"block.fossils.stellasaurus_fossil": "Stellasaurus Fossil",
 	"block.fossils.coelodonta_fossil": "Coelodonta Fossil",
+	"block.fossils.achelousaurus_fossil": "Achelousaurus Fossil",
 	"block.fossils.bisonlatifrons_fossil": "Bison latifrons Fossil",
 	"block.fossils.utahraptor_fossil": "Utahraptor Fossil",
 	"block.fossils.shonisaurus_fossil": "Shonisaurus Fossil",
@@ -151,6 +153,7 @@
 	"block.fossils.doedicurus_fossil": "Doedicurus Fossil",
 	"block.fossils.paraceratheriumtransouralicum_fossil": "Paraceratherium transouralicum Fossil",
 	"block.fossils.pachyrhinosauruscanadensis_fossil": "Pachyrhinosaurus canadensis Fossil",
+	"block.fossils.ankylosaurus_fossil": "Ankylosaurus Fossil",
 	
 	"itemGroup.fossil_slab_tab": "Fossils Slabs",
 	"itemGroup.fossil_blocks_tab": "Fossils Blocks",
@@ -777,5 +780,9 @@
 	"advancements.fossils.halszkaraptor.title": "Halszka Osmólska's Thief",
 	"advancements.fossils.halszkaraptor.description": "Complete a Halszkaraptor skeleton",
 	"advancements.fossils.pachyrhinosauruscanadensis.title": "Canadian Thick-Nosed Lizard",
-	"advancements.fossils.pachyrhinosauruscanadensis.description": "Complete a Pachyrhinosaurus canadensis skeleton"
+	"advancements.fossils.pachyrhinosauruscanadensis.description": "Complete a Pachyrhinosaurus canadensis skeleton",
+	"advancements.fossils.achelousaurus.title": "Achelous Lizard",
+	"advancements.fossils.achelousaurus.description": "Complete an Achelousaurus skeleton",
+	"advancements.fossils.ankylosaurus.title": "Crooked Lizard",
+	"advancements.fossils.ankylosaurus.description": "Complete an Ankylosaurus skeleton"
 }
