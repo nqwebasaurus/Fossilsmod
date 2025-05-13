@@ -84,22 +84,22 @@ public class FossilSlabRenderer implements BlockEntityRenderer<FossilSlabBlockEn
 			if (!flag) {
 				if (direction == Direction.SOUTH) {
 					p_173667_.rotateAround(new Quaternionf(1, 0, 0, 1), 0, 0, 0);
-					p_173667_.scale(-0.1F, -0.1F, -0.1F);
-					p_173667_.translate(0F, 1F, -2.25F);
+					p_173667_.scale(-0.1F, -0.1F, 0.1F);
+					p_173667_.translate(0F, 1F, 2.5F);
 				} else if (direction == Direction.NORTH) {
 					p_173667_.rotateAround(new Quaternionf(-1, 0, 0, 1), 0, 0, 0);
-					p_173667_.scale(-0.1F, -0.1F, 0.1F);
-					p_173667_.translate(0F, 1F, -2.25F);
+					p_173667_.scale(-0.1F, -0.1F, -0.1F);
+					p_173667_.translate(0F, 1F, 2.5F);
 				} else if (direction == Direction.EAST) {
 					p_173667_.rotateAround(new Quaternionf(0, 1, 0, 1), 0, 0, 0);
 					p_173667_.rotateAround(new Quaternionf(1, 0, 0, 1), 0, 0, 0);
-					p_173667_.scale(-0.05F, -0.05F, -0.05F);
-					p_173667_.translate(0F, 1F, -2.25F);
+					p_173667_.scale(-0.05F, -0.05F, 0.05F);
+					p_173667_.translate(0F, 1F, 2.5F);
 				} else {
 					p_173667_.rotateAround(new Quaternionf(0, 1, 0, 1), 0, 0, 0);
 					p_173667_.rotateAround(new Quaternionf(-1, 0, 0, 1), 0, 0, 0);
-					p_173667_.scale(-0.05F, -0.05F, 0.05F);
-					p_173667_.translate(0F, 1F, -2.25F);
+					p_173667_.scale(-0.05F, -0.05F, -0.05F);
+					p_173667_.translate(0F, 1F, 2.5F);
 				}
 			} else {
 				p_173667_.scale(-0.2F, -0.2F, 0.2F);
