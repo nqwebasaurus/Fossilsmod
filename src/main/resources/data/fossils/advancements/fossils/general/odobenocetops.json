@@ -1,0 +1,54 @@
+{
+  "parent": "fossils:fossils/general/delphinida",
+  "criteria": {
+    "finish_odobenocetops": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:odobenocetops_fossil"
+                ],
+                "state": {
+                  "fossil_level": "9"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:odobenocetops_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.odobenocetops.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:odobenocetops_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.odobenocetops.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_odobenocetops"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

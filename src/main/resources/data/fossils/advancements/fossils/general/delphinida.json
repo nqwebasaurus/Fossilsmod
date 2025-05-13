@@ -1,0 +1,24 @@
+{
+  "parent": "fossils:fossils/general/odontoceti",
+  "criteria": {
+    "finish_delphinida": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "description": {
+      "translate": "advancements.fossils.delphinida.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:advancement_line"
+    },
+    "show_toast": false,
+    "title": {
+      "translate": "advancements.fossils.delphinida.title"
+    }
+  },
+  "sends_telemetry_event": true
+}

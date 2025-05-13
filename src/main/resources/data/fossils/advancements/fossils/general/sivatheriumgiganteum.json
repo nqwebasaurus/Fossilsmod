@@ -1,0 +1,57 @@
+{
+  "parent": "fossils:fossils/general/giraffoidea",
+  "criteria": {
+    "finish_sivatheriumgiganteum": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:sivatheriumgiganteum_fossil"
+                ],
+                "state": {
+                  "fossil_level": "19"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:sivatheriumgiganteum_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.sivatheriumgiganteum.description"
+    },
+    "frame": "challenge",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:sivatheriumgiganteum_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.sivatheriumgiganteum.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_sivatheriumgiganteum"
+    ]
+  ],
+  "rewards": {
+    "experience": 500
+  },
+  "sends_telemetry_event": true
+}

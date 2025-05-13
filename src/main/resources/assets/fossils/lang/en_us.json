@@ -84,6 +84,7 @@
 	"block.fossils.diabloceratops_fossil": "diabloceratops Fossil",
 	"block.fossils.moschops_fossil": "Moschops Fossil",
 	"block.fossils.barylambda_fossil": "Barylambda Fossil",
+	"block.fossils.odobenocetops_fossil": "Odobenocetops Fossil",
 	"block.fossils.poposaurus_fossil": "Poposaurus Fossil",
 	"block.fossils.nigerpeton_fossil": "Nigerpeton Fossil",
 	"block.fossils.stahleckeria_fossil": "Stahleckeria Fossil",
@@ -154,6 +155,7 @@
 	"block.fossils.paraceratheriumtransouralicum_fossil": "Paraceratherium transouralicum Fossil",
 	"block.fossils.pachyrhinosauruscanadensis_fossil": "Pachyrhinosaurus canadensis Fossil",
 	"block.fossils.ankylosaurus_fossil": "Ankylosaurus Fossil",
+	"block.fossils.sivatheriumgiganteum_fossil": "Sivatherium giganteum Fossil",
 	
 	"itemGroup.fossil_slab_tab": "Fossils Slabs",
 	"itemGroup.fossil_blocks_tab": "Fossils Blocks",
@@ -515,6 +517,20 @@
 	"advancements.fossils.rhinocerotoidea.description": "Rhinocerotoidea",
 	"advancements.fossils.rhinocerotidae.title": "We're the new Ceratopsians",
 	"advancements.fossils.rhinocerotidae.description": "Rhinocerotidae",
+	"advancements.fossils.ruminantia.title": "Eating the same bite twice",
+	"advancements.fossils.ruminantia.description": "Ruminants",
+	"advancements.fossils.pecora.title": "It's a barnyard",
+	"advancements.fossils.pecora.description": "Pecora (Giraffes, Deer, Bovids)",
+	"advancements.fossils.tylopoda.title": "Knoblly feet",
+	"advancements.fossils.tylopoda.description": "Tylopoda",
+	"advancements.fossils.cetancodontamorpha.title": "Predator Pigs",
+	"advancements.fossils.cetancodontamorpha.description": "Cetancodontamorphans",
+	"advancements.fossils.whippomorpha.title": "When Whales Walked",
+	"advancements.fossils.whippomorpha.description": "Whippomorpha",
+	"advancements.fossils.odontoceti.title": "What a big smile you have",
+	"advancements.fossils.odontoceti.description": "Odontoceti (toothed whales)",
+	"advancements.fossils.delphinida.title": "Something's fishy about them",
+	"advancements.fossils.delphinida.description": "Delphinida",
 
 
 "advancements.fossils.pelecanimimus.title": "Pelican Mimic",
@@ -784,5 +800,9 @@
 	"advancements.fossils.achelousaurus.title": "Achelous Lizard",
 	"advancements.fossils.achelousaurus.description": "Complete an Achelousaurus skeleton",
 	"advancements.fossils.ankylosaurus.title": "Crooked Lizard",
-	"advancements.fossils.ankylosaurus.description": "Complete an Ankylosaurus skeleton"
+	"advancements.fossils.ankylosaurus.description": "Complete an Ankylosaurus skeleton",
+	"advancements.fossils.odobenocetops.title": "The Cetacean that seems to walk on its Teeth",
+	"advancements.fossils.odobenocetops.description": "Complete an Odobenocetops skeleton",
+	"advancements.fossils.sivatheriumgiganteum.title": "Shiva's beast",
+	"advancements.fossils.sivatheriumgiganteum.description": "Complete an Sivatherium giganteum skeleton"
 }

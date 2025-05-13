@@ -1,0 +1,24 @@
+{
+  "parent": "fossils:fossils/general/artiodactyla",
+  "criteria": {
+    "finish_ruminantia": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "description": {
+      "translate": "advancements.fossils.ruminantia.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:advancement_line"
+    },
+    "show_toast": false,
+    "title": {
+      "translate": "advancements.fossils.ruminantia.title"
+    }
+  },
+  "sends_telemetry_event": true
+}

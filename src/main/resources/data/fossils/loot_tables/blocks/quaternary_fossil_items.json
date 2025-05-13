@@ -63,6 +63,11 @@
           "type": "minecraft:item",
           "name": "fossils:coelodonta_fossil",
           "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:sivatheriumgiganteum_fossil",
+          "weight": 2
         }
       ],
       "rolls": 1

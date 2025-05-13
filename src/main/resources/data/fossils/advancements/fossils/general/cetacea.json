@@ -1,5 +1,5 @@
 {
-  "parent": "fossils:fossils/general/artiodactyla",
+  "parent": "fossils:fossils/general/whippomorpha",
   "criteria": {
     "finish_cetacea": {
       "trigger": "minecraft:tick"

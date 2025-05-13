@@ -1,5 +1,5 @@
 {
-  "parent": "fossils:fossils/general/cetacea",
+  "parent": "fossils:fossils/general/odontoceti",
   "criteria": {
     "finish_physeteroidea": {
       "trigger": "minecraft:tick"

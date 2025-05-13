@@ -49,6 +49,8 @@ import fossils.fossils.client.blockentity.model.nasutoceratops.NasutoceratopsFos
 import fossils.fossils.client.blockentity.model.nasutoceratops.NasutoceratopsFossilModel;
 import fossils.fossils.client.blockentity.model.nigerpeton.NigerpetonFossilFrameModel;
 import fossils.fossils.client.blockentity.model.nigerpeton.NigerpetonFossilModel;
+import fossils.fossils.client.blockentity.model.odobenocetops.OdobenocetopsFossilFrameModel;
+import fossils.fossils.client.blockentity.model.odobenocetops.OdobenocetopsFossilModel;
 import fossils.fossils.client.blockentity.model.piatnitzkysaurus.PiatnitzkysaurusFossilFrameModel;
 import fossils.fossils.client.blockentity.model.piatnitzkysaurus.PiatnitzkysaurusFossilModel;
 import fossils.fossils.client.blockentity.model.placerias.PlaceriasFossilFrameModel;
@@ -135,6 +137,7 @@ public class FossilSkeletonTenPieceRenderer implements BlockEntityRenderer<Fossi
 		type.put(FossilSkeletonTenPieceBlock.Types.DIABLOCERATOPS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/diabloceratops/stage_0.png"));
 		type.put(FossilSkeletonTenPieceBlock.Types.MOSCHOPS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/moschops/stage_0.png"));
 		type.put(FossilSkeletonTenPieceBlock.Types.BARYLAMBDA, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/barylambda/stage_0.png"));
+		type.put(FossilSkeletonTenPieceBlock.Types.ODOBENOCETOPS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/odobenocetops/stage_0.png"));
 
 	});
 	public static final Map<FossilSkeletonTenPieceBlock.Type, ResourceLocation> FRAME_BY_TYPE = Util.make(Maps.newHashMap(), (type) -> {
@@ -173,6 +176,7 @@ public class FossilSkeletonTenPieceRenderer implements BlockEntityRenderer<Fossi
 		type.put(FossilSkeletonTenPieceBlock.Types.DIABLOCERATOPS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/diabloceratops/frame.png"));
 		type.put(FossilSkeletonTenPieceBlock.Types.MOSCHOPS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/moschops/frame.png"));
 		type.put(FossilSkeletonTenPieceBlock.Types.BARYLAMBDA, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/barylambda/frame.png"));
+		type.put(FossilSkeletonTenPieceBlock.Types.ODOBENOCETOPS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/odobenocetops/frame.png"));
 
 
 	});
@@ -213,6 +217,7 @@ public class FossilSkeletonTenPieceRenderer implements BlockEntityRenderer<Fossi
 		builder.put(FossilSkeletonTenPieceBlock.Types.DIABLOCERATOPS, new DiabloceratopsFossilModel(p_173662_.bakeLayer(ClientEvents.DIABLOCERATOPS)));
 		builder.put(FossilSkeletonTenPieceBlock.Types.MOSCHOPS, new MoschopsFossilModel(p_173662_.bakeLayer(ClientEvents.MOSCHOPS)));
 		builder.put(FossilSkeletonTenPieceBlock.Types.BARYLAMBDA, new BarylambdaFossilModel(p_173662_.bakeLayer(ClientEvents.BARYLAMBDA)));
+		builder.put(FossilSkeletonTenPieceBlock.Types.ODOBENOCETOPS, new OdobenocetopsFossilModel(p_173662_.bakeLayer(ClientEvents.ODOBENOCETOPS)));
 		return builder.build();
 	}
 
@@ -253,6 +258,7 @@ public class FossilSkeletonTenPieceRenderer implements BlockEntityRenderer<Fossi
 		builder.put(FossilSkeletonTenPieceBlock.Types.DIABLOCERATOPS, new DiabloceratopsFossilFrameModel(p_173662_.bakeLayer(ClientEvents.DIABLOCERATOPS_FRAME)));
 		builder.put(FossilSkeletonTenPieceBlock.Types.MOSCHOPS, new MoschopsFossilFrameModel(p_173662_.bakeLayer(ClientEvents.MOSCHOPS_FRAME)));
 		builder.put(FossilSkeletonTenPieceBlock.Types.BARYLAMBDA, new BarylambdaFossilFrameModel(p_173662_.bakeLayer(ClientEvents.BARYLAMBDA_FRAME)));
+		builder.put(FossilSkeletonTenPieceBlock.Types.ODOBENOCETOPS, new OdobenocetopsFossilFrameModel(p_173662_.bakeLayer(ClientEvents.ODOBENOCETOPS_FRAME)));
 		return builder.build();
 	}
 
@@ -387,6 +393,9 @@ public class FossilSkeletonTenPieceRenderer implements BlockEntityRenderer<Fossi
 		} else if (FossilSkeletonTenPieceBlock$type == FossilSkeletonTenPieceBlock.Types.BARYLAMBDA) {
 			p_173667_.scale(-0.88F, -0.88F, 0.88F);
 			p_173667_.translate(0F, -0.36F, 0F);
+		} else if (FossilSkeletonTenPieceBlock$type == FossilSkeletonTenPieceBlock.Types.ODOBENOCETOPS) {
+			p_173667_.scale(-1F, -1F, 1F);
+			p_173667_.translate(0F, -0.52F, 0F);
 		} else p_173667_.scale(-1.0F, -1.0F, 1.0F);
 		VertexConsumer vertexconsumer = p_173668_.getBuffer(p_173671_);
 		p_173670_.setupAnim(p_173666_, p_173665_, 0.0F);
@@ -466,6 +475,8 @@ public class FossilSkeletonTenPieceRenderer implements BlockEntityRenderer<Fossi
 			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/moschops/stage_" + fossilLevel + ".png");
 		} else if (type == FossilSkeletonTenPieceBlock.Types.BARYLAMBDA) {
 			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/barylambda/stage_" + fossilLevel + ".png");
+		} else if (type == FossilSkeletonTenPieceBlock.Types.ODOBENOCETOPS) {
+			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/odobenocetops/stage_" + fossilLevel + ".png");
 		} else resourceLocation = SKIN_BY_TYPE.get(type);
 		return RenderType.entityCutoutNoCullZOffset(resourceLocation);
 	}

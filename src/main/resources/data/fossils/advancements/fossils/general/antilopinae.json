@@ -1,5 +1,5 @@
 {
-  "parent": "fossils:fossils/general/artiodactyla",
+  "parent": "fossils:fossils/general/bovids",
   "criteria": {
     "finish_antilopinae": {
       "trigger": "minecraft:tick"

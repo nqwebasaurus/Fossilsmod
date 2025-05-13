@@ -1,5 +1,5 @@
 {
-  "parent": "fossils:fossils/general/artiodactyla",
+  "parent": "fossils:fossils/general/pecora",
   "criteria": {
     "finish_giraffoidea": {
       "trigger": "minecraft:tick"

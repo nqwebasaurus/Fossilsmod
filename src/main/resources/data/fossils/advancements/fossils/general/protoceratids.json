@@ -1,5 +1,5 @@
 {
-  "parent": "fossils:fossils/general/artiodactyla",
+  "parent": "fossils:fossils/general/tylopoda",
   "criteria": {
     "finish_protoceratids": {
       "trigger": "minecraft:tick"

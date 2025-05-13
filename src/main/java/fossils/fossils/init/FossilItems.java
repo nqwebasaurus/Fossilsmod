@@ -96,6 +96,7 @@ public class FossilItems {
 	public static final RegistryObject<BlockItem> DIABLOCERATOPS = SKELETON_REGISTER.register("diabloceratops_fossil", () -> new BlockItem(FossilBlocks.DIABLOCERATOPS.get(), new Item.Properties().rarity(FossilRarities.TEN_PIECE_FOSSIL)));
 	public static final RegistryObject<BlockItem> MOSCHOPS = SKELETON_REGISTER.register("moschops_fossil", () -> new BlockItem(FossilBlocks.MOSCHOPS.get(), new Item.Properties().rarity(FossilRarities.TEN_PIECE_FOSSIL)));
 	public static final RegistryObject<BlockItem> BARYLAMBDA = SKELETON_REGISTER.register("barylambda_fossil", () -> new BlockItem(FossilBlocks.BARYLAMBDA.get(), new Item.Properties().rarity(FossilRarities.TEN_PIECE_FOSSIL)));
+	public static final RegistryObject<BlockItem> ODOBENOCETOPS = SKELETON_REGISTER.register("odobenocetops_fossil", () -> new BlockItem(FossilBlocks.ODOBENOCETOPS.get(), new Item.Properties().rarity(FossilRarities.TEN_PIECE_FOSSIL)));
 
 
 	//Fifteen
@@ -166,6 +167,7 @@ public class FossilItems {
 	public static final RegistryObject<BlockItem> PARACERATHERIUMTRANSOURALICUM = SKELETON_REGISTER.register("paraceratheriumtransouralicum_fossil", () -> new BlockItem(FossilBlocks.PARACERATHERIUMTRANSOURALICUM.get(), new Item.Properties().rarity(FossilRarities.TWENTY_PIECE_FOSSIL)));
 	public static final RegistryObject<BlockItem> PACHYRHINOSAURUSCANADENSIS = SKELETON_REGISTER.register("pachyrhinosauruscanadensis_fossil", () -> new BlockItem(FossilBlocks.PACHYRHINOSAURUSCANADENSIS.get(), new Item.Properties().rarity(FossilRarities.TWENTY_PIECE_FOSSIL)));
 	public static final RegistryObject<BlockItem> ANKYLOSAURUS = SKELETON_REGISTER.register("ankylosaurus_fossil", () -> new BlockItem(FossilBlocks.ANKYLOSAURUS.get(), new Item.Properties().rarity(FossilRarities.TWENTY_PIECE_FOSSIL)));
+	public static final RegistryObject<BlockItem> SIVATHERIUMGIGANTEUM = SKELETON_REGISTER.register("sivatheriumgiganteum_fossil", () -> new BlockItem(FossilBlocks.SIVATHERIUMGIGANTEUM.get(), new Item.Properties().rarity(FossilRarities.TWENTY_PIECE_FOSSIL)));
 		
 	public static final RegistryObject<BlockItem> PRECAMBRIAN_FOSSIL_ORE = BLOCK_REGISTER.register("precambrian_fossil_ore", () -> new BlockItem(FossilBlocks.PRECAMBRIAN_FOSSIL_ORE.get(), new Item.Properties()));
 	public static final RegistryObject<BlockItem> CAMBRIAN_FOSSIL_ORE = BLOCK_REGISTER.register("cambrian_fossil_ore", () -> new BlockItem(FossilBlocks.CAMBRIAN_FOSSIL_ORE.get(), new Item.Properties()));
