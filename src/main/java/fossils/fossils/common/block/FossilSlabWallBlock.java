@@ -10,6 +10,7 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
+import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.block.BaseEntityBlock;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.HorizontalDirectionalBlock;
@@ -19,7 +20,11 @@ import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
+import net.minecraft.world.level.block.state.properties.BlockStateProperties;
+import net.minecraft.world.level.block.state.properties.BooleanProperty;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
+import net.minecraft.world.level.material.FluidState;
+import net.minecraft.world.level.material.Fluids;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
@@ -27,10 +32,11 @@ public class FossilSlabWallBlock extends BaseEntityBlock {
 	public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
 	private static final Map<Direction, VoxelShape> AABBS = Maps.newEnumMap(ImmutableMap.of(Direction.NORTH, Block.box(4.0D, 4.0D, 8.0D, 12.0D, 12.0D, 16.0D), Direction.SOUTH, Block.box(4.0D, 4.0D, 0.0D, 12.0D, 12.0D, 8.0D), Direction.EAST, Block.box(0.0D, 4.0D, 4.0D, 8.0D, 12.0D, 12.0D), Direction.WEST, Block.box(8.0D, 4.0D, 4.0D, 16.0D, 12.0D, 12.0D)));
 	private final FossilSlabBlock.Type type;
+	public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
 
 	public FossilSlabWallBlock(FossilSlabBlock.Type type, BlockBehaviour.Properties properties) {
 		super(properties);
-		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
+		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(WATERLOGGED, false));
 		this.type = type;
 
 
@@ -41,6 +47,7 @@ public class FossilSlabWallBlock extends BaseEntityBlock {
 	}
 
 	public BlockState getStateForPlacement(BlockPlaceContext p_58104_) {
+		FluidState fluidstate = p_58104_.getLevel().getFluidState(p_58104_.getClickedPos());
 		BlockState blockstate = this.defaultBlockState();
 		BlockGetter blockgetter = p_58104_.getLevel();
 		BlockPos blockpos = p_58104_.getClickedPos();
@@ -51,7 +58,7 @@ public class FossilSlabWallBlock extends BaseEntityBlock {
 				Direction direction1 = direction.getOpposite();
 				blockstate = blockstate.setValue(FACING, direction1);
 				if (!blockgetter.getBlockState(blockpos.relative(direction)).canBeReplaced(p_58104_)) {
-					return blockstate;
+					return blockstate.setValue(WATERLOGGED, Boolean.valueOf(fluidstate.getType() == Fluids.WATER));
 				}
 			}
 		}
@@ -67,9 +74,21 @@ public class FossilSlabWallBlock extends BaseEntityBlock {
 	public BlockState mirror(BlockState p_58106_, Mirror p_58107_) {
 		return p_58106_.rotate(p_58107_.getRotation(p_58106_.getValue(FACING)));
 	}
+	
+	public BlockState updateShape(BlockState p_154530_, Direction p_154531_, BlockState p_154532_, LevelAccessor p_154533_, BlockPos p_154534_, BlockPos p_154535_) {
+		if (p_154530_.getValue(WATERLOGGED)) {
+			p_154533_.scheduleTick(p_154534_, Fluids.WATER, Fluids.WATER.getTickDelay(p_154533_));
+	      }
+		return p_154530_;
+	}
+
+	@SuppressWarnings("deprecation")
+	public FluidState getFluidState(BlockState p_52362_) {
+		return p_52362_.getValue(WATERLOGGED) ? Fluids.WATER.getSource(false) : super.getFluidState(p_52362_);
+	}
 
 	protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> p_58112_) {
-		p_58112_.add(FACING);
+		p_58112_.add(FACING, WATERLOGGED);
 	}
 
 	@Override
