@@ -1,0 +1,54 @@
+{
+  "parent": "fossils:fossils/general/rhinocerotidae",
+  "criteria": {
+    "finish_menoceras": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:menoceras_fossil"
+                ],
+                "state": {
+                  "fossil_level": "4"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:menoceras_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.menoceras.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:menoceras_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.menoceras.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_menoceras"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

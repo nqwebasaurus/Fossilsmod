@@ -49,6 +49,8 @@ import fossils.fossils.client.blockentity.model.megalancosaurus.MegalancosaurusF
 import fossils.fossils.client.blockentity.model.megalancosaurus.MegalancosaurusFossilModel;
 import fossils.fossils.client.blockentity.model.mei.MeiFossilFrameModel;
 import fossils.fossils.client.blockentity.model.mei.MeiFossilModel;
+import fossils.fossils.client.blockentity.model.menoceras.MenocerasFossilFrameModel;
+import fossils.fossils.client.blockentity.model.menoceras.MenocerasFossilModel;
 import fossils.fossils.client.blockentity.model.nqwebasaurus.NqwebasaurusFossilFrameModel;
 import fossils.fossils.client.blockentity.model.nqwebasaurus.NqwebasaurusFossilModel;
 import fossils.fossils.client.blockentity.model.oksoko.OksokoFossilFrameModel;
@@ -132,6 +134,7 @@ public class FossilSkeletonFivePieceRenderer implements BlockEntityRenderer<Foss
 		type.put(FossilSkeletonFivePieceBlock.Types.PLATYHYSTRIX, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/platyhystrix/stage_0.png"));
 		type.put(FossilSkeletonFivePieceBlock.Types.JAKAPIL, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/jakapil/stage_0.png"));
 		type.put(FossilSkeletonFivePieceBlock.Types.HALSZKARAPTOR, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/halszkaraptor/stage_0.png"));
+		type.put(FossilSkeletonFivePieceBlock.Types.MENOCERAS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/menoceras/stage_0.png"));
 	});
 	public static final Map<FossilSkeletonFivePieceBlock.Type, ResourceLocation> FRAME_BY_TYPE = Util.make(Maps.newHashMap(), (type) -> {
 		type.put(FossilSkeletonFivePieceBlock.Types.EUNOTOSAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/eunotosaurus/frame.png"));
@@ -168,6 +171,7 @@ public class FossilSkeletonFivePieceRenderer implements BlockEntityRenderer<Foss
 		type.put(FossilSkeletonFivePieceBlock.Types.PLATYHYSTRIX, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/platyhystrix/frame.png"));
 		type.put(FossilSkeletonFivePieceBlock.Types.JAKAPIL, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/jakapil/frame.png"));
 		type.put(FossilSkeletonFivePieceBlock.Types.HALSZKARAPTOR, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/halszkaraptor/frame.png"));
+		type.put(FossilSkeletonFivePieceBlock.Types.MENOCERAS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/menoceras/frame.png"));
 	});
 	public static Map<FossilSkeletonFivePieceBlock.Type, SkullModelBase> createFossilRenderers(EntityModelSet p_173662_) {
 		ImmutableMap.Builder<FossilSkeletonFivePieceBlock.Type, SkullModelBase> builder = ImmutableMap.builder();
@@ -205,6 +209,7 @@ public class FossilSkeletonFivePieceRenderer implements BlockEntityRenderer<Foss
 		builder.put(FossilSkeletonFivePieceBlock.Types.PLATYHYSTRIX, new PlatyhystrixFossilModel(p_173662_.bakeLayer(ClientEvents.PLATYHYSTRIX)));
 		builder.put(FossilSkeletonFivePieceBlock.Types.JAKAPIL, new JakapilFossilModel(p_173662_.bakeLayer(ClientEvents.JAKAPIL)));
 		builder.put(FossilSkeletonFivePieceBlock.Types.HALSZKARAPTOR, new HalszkaraptorFossilModel(p_173662_.bakeLayer(ClientEvents.HALSZKARAPTOR)));
+		builder.put(FossilSkeletonFivePieceBlock.Types.MENOCERAS, new MenocerasFossilModel(p_173662_.bakeLayer(ClientEvents.MENOCERAS)));
 		return builder.build();
 	}
 
@@ -244,6 +249,7 @@ public class FossilSkeletonFivePieceRenderer implements BlockEntityRenderer<Foss
 		builder.put(FossilSkeletonFivePieceBlock.Types.PLATYHYSTRIX, new PlatyhystrixFossilFrameModel(p_173662_.bakeLayer(ClientEvents.PLATYHYSTRIX_FRAME)));
 		builder.put(FossilSkeletonFivePieceBlock.Types.JAKAPIL, new JakapilFossilFrameModel(p_173662_.bakeLayer(ClientEvents.JAKAPIL_FRAME)));
 		builder.put(FossilSkeletonFivePieceBlock.Types.HALSZKARAPTOR, new HalszkaraptorFossilFrameModel(p_173662_.bakeLayer(ClientEvents.HALSZKARAPTOR_FRAME)));
+		builder.put(FossilSkeletonFivePieceBlock.Types.MENOCERAS, new MenocerasFossilFrameModel(p_173662_.bakeLayer(ClientEvents.MENOCERAS_FRAME)));
 		return builder.build();
 	}
 
@@ -375,6 +381,9 @@ public class FossilSkeletonFivePieceRenderer implements BlockEntityRenderer<Foss
 		} else if (FossilSkeletonFivePieceBlock$type == FossilSkeletonFivePieceBlock.Types.HALSZKARAPTOR) {
 			p_173667_.scale(-0.24F, -0.24F, 0.24F);
 			p_173667_.translate(0F, 2.67F, 0F);
+		} else if (FossilSkeletonFivePieceBlock$type == FossilSkeletonFivePieceBlock.Types.MENOCERAS) {
+			p_173667_.scale(-0.48F, -0.48F, 0.48F);
+			p_173667_.translate(0F, 0.6F, 0F);
 		} else p_173667_.scale(-1.0F, -1.0F, 1.0F);
 		VertexConsumer vertexconsumer = p_173668_.getBuffer(p_173671_);
 		p_173670_.setupAnim(p_173666_, p_173665_, 0.0F);
@@ -452,6 +461,8 @@ public class FossilSkeletonFivePieceRenderer implements BlockEntityRenderer<Foss
 			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/jakapil/stage_" + fossilLevel + ".png");
 		} else if (type == FossilSkeletonFivePieceBlock.Types.HALSZKARAPTOR) {
 			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/halszkaraptor/stage_" + fossilLevel + ".png");
+		} else if (type == FossilSkeletonFivePieceBlock.Types.MENOCERAS) {
+			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/menoceras/stage_" + fossilLevel + ".png");
 		} else resourceLocation = SKIN_BY_TYPE.get(type);
 		return RenderType.entityCutoutNoCullZOffset(resourceLocation);
 	}

@@ -55,6 +55,7 @@
 	"block.fossils.platyhystrix_fossil": "Platyhystrix Fossil",
 	"block.fossils.jakapil_fossil": "Jakapil Fossil",
 	"block.fossils.halszkaraptor_fossil": "Halszkaraptor Fossil",
+	"block.fossils.menoceras_fossil": "Menoceras Fossil",
 	"block.fossils.kentrosaurus_fossil": "Kentrosaurus Fossil",
 	"block.fossils.endothiodonbathystoma_fossil": "Endothiodon bathystoma Fossil",
 	"block.fossils.dimetrodongrandis_fossil": "Dimetrodon grandis Fossil",
@@ -85,6 +86,7 @@
 	"block.fossils.moschops_fossil": "Moschops Fossil",
 	"block.fossils.barylambda_fossil": "Barylambda Fossil",
 	"block.fossils.odobenocetops_fossil": "Odobenocetops Fossil",
+	"block.fossils.monachus_fossil": "Monachus Fossil",
 	"block.fossils.poposaurus_fossil": "Poposaurus Fossil",
 	"block.fossils.nigerpeton_fossil": "Nigerpeton Fossil",
 	"block.fossils.stahleckeria_fossil": "Stahleckeria Fossil",
@@ -123,6 +125,7 @@
 	"block.fossils.stellasaurus_fossil": "Stellasaurus Fossil",
 	"block.fossils.coelodonta_fossil": "Coelodonta Fossil",
 	"block.fossils.achelousaurus_fossil": "Achelousaurus Fossil",
+	"block.fossils.kamuysaurus_fossil": "Kamuysaurus Fossil",
 	"block.fossils.bisonlatifrons_fossil": "Bison latifrons Fossil",
 	"block.fossils.utahraptor_fossil": "Utahraptor Fossil",
 	"block.fossils.shonisaurus_fossil": "Shonisaurus Fossil",
@@ -156,6 +159,7 @@
 	"block.fossils.pachyrhinosauruscanadensis_fossil": "Pachyrhinosaurus canadensis Fossil",
 	"block.fossils.ankylosaurus_fossil": "Ankylosaurus Fossil",
 	"block.fossils.sivatheriumgiganteum_fossil": "Sivatherium giganteum Fossil",
+	"block.fossils.baryonyx_fossil": "Baryonyx Fossil",
 	
 	"itemGroup.fossil_slab_tab": "Fossils Slabs",
 	"itemGroup.fossil_blocks_tab": "Fossils Blocks",
@@ -531,6 +535,8 @@
 	"advancements.fossils.odontoceti.description": "Odontoceti (toothed whales)",
 	"advancements.fossils.delphinida.title": "Something's fishy about them",
 	"advancements.fossils.delphinida.description": "Delphinida",
+	"advancements.fossils.pinnipedia.title": "Quality Seal",
+	"advancements.fossils.pinnipedia.description": "Pinnipedia",
 
 
 "advancements.fossils.pelecanimimus.title": "Pelican Mimic",
@@ -804,5 +810,13 @@
 	"advancements.fossils.odobenocetops.title": "The Cetacean that seems to walk on its Teeth",
 	"advancements.fossils.odobenocetops.description": "Complete an Odobenocetops skeleton",
 	"advancements.fossils.sivatheriumgiganteum.title": "Shiva's beast",
-	"advancements.fossils.sivatheriumgiganteum.description": "Complete an Sivatherium giganteum skeleton"
+	"advancements.fossils.sivatheriumgiganteum.description": "Complete an Sivatherium giganteum skeleton",
+	"advancements.fossils.menoceras.title": "Crescent Horns",
+	"advancements.fossils.menoceras.description": "Complete a Menoceras skeleton",
+	"advancements.fossils.monachus.title": "Monk Seal",
+	"advancements.fossils.monachus.description": "Complete a Monachus skeleton",
+	"advancements.fossils.kamuysaurus.title": "Deity Lizard",
+	"advancements.fossils.kamuysaurus.description": "Complete a Kamuysaurus skeleton",
+	"advancements.fossils.baryonyx.title": "Heavy Claw",
+	"advancements.fossils.baryonyx.description": "Complete a Baryonyx skeleton"
 }
