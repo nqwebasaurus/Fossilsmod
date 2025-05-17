@@ -31,6 +31,7 @@ import net.minecraft.world.level.material.Fluids;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
+import org.jetbrains.annotations.NotNull;
 
 public class FossilSlabWallBlock extends BaseEntityBlock {
 	public static final int MAX = RotationSegment.getMaxSegmentIndex();
@@ -99,7 +100,7 @@ public class FossilSlabWallBlock extends BaseEntityBlock {
 	}
 
 	@SuppressWarnings("deprecation")
-	public InteractionResult use(BlockState state, Level world, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hit) {
+	public @NotNull InteractionResult use(@NotNull BlockState state, @NotNull Level world, @NotNull BlockPos pos, Player player, @NotNull InteractionHand hand, @NotNull BlockHitResult hit) {
 		ItemStack stack = player.getItemInHand(hand);
 		if (stack.isEmpty() ) {
 			if (player.isShiftKeyDown()) {

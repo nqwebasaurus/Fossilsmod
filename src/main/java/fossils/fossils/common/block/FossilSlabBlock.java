@@ -26,6 +26,7 @@ import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.material.Fluids;
 import net.minecraft.world.level.pathfinder.PathComputationType;
 import net.minecraft.world.phys.BlockHitResult;
+import org.jetbrains.annotations.NotNull;
 
 public class FossilSlabBlock extends BaseEntityBlock {
 	public static final int MAX = RotationSegment.getMaxSegmentIndex();
@@ -74,7 +75,7 @@ public class FossilSlabBlock extends BaseEntityBlock {
 	}
 	
 	@SuppressWarnings("deprecation")
-	public InteractionResult use(BlockState state, Level world, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hit) {
+	public @NotNull InteractionResult use(@NotNull BlockState state, @NotNull Level world, @NotNull BlockPos pos, Player player, @NotNull InteractionHand hand, @NotNull BlockHitResult hit) {
 		ItemStack stack = player.getItemInHand(hand);
 		if (stack.isEmpty() ) {
 			if (player.isShiftKeyDown()) {

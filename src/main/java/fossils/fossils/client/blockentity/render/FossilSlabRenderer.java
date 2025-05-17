@@ -59,21 +59,18 @@ public class FossilSlabRenderer implements BlockEntityRenderer<FossilSlabBlockEn
 		float f = 0;
 		BlockState blocktate = p_112534_.getBlockState();
 		boolean flag = blocktate.getBlock() instanceof FossilSlabBlock;
-		int i = flag ? blocktate.getValue(FossilSlabBlock.ROTATION) : 0;
+		int rotation = flag ? blocktate.getValue(FossilSlabBlock.ROTATION) : 0;
 		Direction direction = flag ? null : blocktate.getValue(WallSkullBlock.FACING);
-		boolean flog = blocktate.getBlock() instanceof FossilSlabWallBlock;
-		int i1 = flog ? blocktate.getValue(FossilSlabWallBlock.ROTATION) : 0;
-		float f1 = RotationSegment.convertToDegrees(i);
-		float f2 = RotationSegment.convertToDegrees(i1);
+		float rotationDegrees = RotationSegment.convertToDegrees(rotation);
 		FossilSlabBlock.Type skullblock$type;
 		if (flag) skullblock$type = ((FossilSlabBlock)blocktate.getBlock()).getType();
 		else skullblock$type = ((FossilSlabWallBlock)blocktate.getBlock()).getType();
 		SkullModelBase skullmodelbase = this.modelByType.get(skullblock$type);
 		RenderType rendertype = getRenderType(skullblock$type);
-		renderFossilSlab(p_112534_, direction, f1, f, p_112536_, p_112537_, p_112538_, skullmodelbase, rendertype, f2);
+		renderFossilSlab(p_112534_, direction, rotationDegrees, f, p_112536_, p_112537_, p_112538_, skullmodelbase, rendertype);
 	}
 
-	public static void renderFossilSlab(FossilSlabBlockEntity p_112534_, @Nullable Direction direction, float p_173665_, float p_173666_, PoseStack p_173667_, MultiBufferSource p_173668_, int p_173669_, SkullModelBase p_173670_, RenderType p_173671_, float f2) {
+	public static void renderFossilSlab(FossilSlabBlockEntity p_112534_, @Nullable Direction direction, float p_173665_, float p_173666_, PoseStack p_173667_, MultiBufferSource p_173668_, int p_173669_, SkullModelBase p_173670_, RenderType p_173671_) {
 		p_173667_.pushPose();
 		BlockState blocktate = p_112534_.getBlockState();
 		boolean flag = blocktate.getBlock() instanceof FossilSlabBlock;
