@@ -34,6 +34,8 @@ import fossils.fossils.client.blockentity.model.aristonectes.AristonectesFossilF
 import fossils.fossils.client.blockentity.model.aristonectes.AristonectesFossilModel;
 import fossils.fossils.client.blockentity.model.arizonasaurus.ArizonasaurusFossilFrameModel;
 import fossils.fossils.client.blockentity.model.arizonasaurus.ArizonasaurusFossilModel;
+import fossils.fossils.client.blockentity.model.atopodentatus.AtopodentatusFossilFrameModel;
+import fossils.fossils.client.blockentity.model.atopodentatus.AtopodentatusFossilModel;
 import fossils.fossils.client.blockentity.model.bannykus.BannykusFossilFrameModel;
 import fossils.fossils.client.blockentity.model.bannykus.BannykusFossilModel;
 import fossils.fossils.client.blockentity.model.barylambda.BarylambdaFossilFrameModel;
@@ -56,6 +58,8 @@ import fossils.fossils.client.blockentity.model.carcharodontosaurus.Carcharodont
 import fossils.fossils.client.blockentity.model.carcharodontosaurus.CarcharodontosaurusFossilModel;
 import fossils.fossils.client.blockentity.model.ceratosaurusdentisulcatus.CeratosaurusdentisulcatusFossilFrameModel;
 import fossils.fossils.client.blockentity.model.ceratosaurusdentisulcatus.CeratosaurusdentisulcatusFossilModel;
+import fossils.fossils.client.blockentity.model.ceratotherium.CeratotheriumFossilFrameModel;
+import fossils.fossils.client.blockentity.model.ceratotherium.CeratotheriumFossilModel;
 import fossils.fossils.client.blockentity.model.coelodonta.CoelodontaFossilFrameModel;
 import fossils.fossils.client.blockentity.model.coelodonta.CoelodontaFossilModel;
 import fossils.fossils.client.blockentity.model.coelophysis.CoelophysisFossilFrameModel;
@@ -66,6 +70,8 @@ import fossils.fossils.client.blockentity.model.compsognathus.CompsognathusFossi
 import fossils.fossils.client.blockentity.model.compsognathus.CompsognathusFossilModel;
 import fossils.fossils.client.blockentity.model.cotylorhynchus.CotylorhynchusFossilFrameModel;
 import fossils.fossils.client.blockentity.model.cotylorhynchus.CotylorhynchusFossilModel;
+import fossils.fossils.client.blockentity.model.crassigyrinus.CrassigyrinusFossilFrameModel;
+import fossils.fossils.client.blockentity.model.crassigyrinus.CrassigyrinusFossilModel;
 import fossils.fossils.client.blockentity.model.cryolophosaurus.CryolophosaurusFossilFrameModel;
 import fossils.fossils.client.blockentity.model.cryolophosaurus.CryolophosaurusFossilModel;
 import fossils.fossils.client.blockentity.model.dasyceps.DasycepsFossilFrameModel;
@@ -140,6 +146,8 @@ import fossils.fossils.client.blockentity.model.litocranius.LitocraniusFossilFra
 import fossils.fossils.client.blockentity.model.litocranius.LitocraniusFossilModel;
 import fossils.fossils.client.blockentity.model.livyatan.LivyatanFossilFrameModel;
 import fossils.fossils.client.blockentity.model.livyatan.LivyatanFossilModel;
+import fossils.fossils.client.blockentity.model.ludodactylus.LudodactylusFossilFrameModel;
+import fossils.fossils.client.blockentity.model.ludodactylus.LudodactylusFossilModel;
 import fossils.fossils.client.blockentity.model.manidens.ManidensFossilFrameModel;
 import fossils.fossils.client.blockentity.model.manidens.ManidensFossilModel;
 import fossils.fossils.client.blockentity.model.megacerops.MegaceropsFossilFrameModel;
@@ -224,6 +232,8 @@ import fossils.fossils.client.blockentity.model.scelidosaurus.ScelidosaurusFossi
 import fossils.fossils.client.blockentity.model.scelidosaurus.ScelidosaurusFossilModel;
 import fossils.fossils.client.blockentity.model.shonisaurus.ShonisaurusFossilFrameModel;
 import fossils.fossils.client.blockentity.model.shonisaurus.ShonisaurusFossilModel;
+import fossils.fossils.client.blockentity.model.shunosaurus.ShunosaurusFossilFrameModel;
+import fossils.fossils.client.blockentity.model.shunosaurus.ShunosaurusFossilModel;
 import fossils.fossils.client.blockentity.model.shuvuuia.ShuvuuiaFossilFrameModel;
 import fossils.fossils.client.blockentity.model.shuvuuia.ShuvuuiaFossilModel;
 import fossils.fossils.client.blockentity.model.silesaurus.SilesaurusFossilFrameModel;
@@ -278,6 +288,8 @@ import fossils.fossils.client.blockentity.model.velociraptor.VelociraptorFossilF
 import fossils.fossils.client.blockentity.model.velociraptor.VelociraptorFossilModel;
 import fossils.fossils.client.blockentity.model.wuerhosaurus.WuerhosaurusFossilFrameModel;
 import fossils.fossils.client.blockentity.model.wuerhosaurus.WuerhosaurusFossilModel;
+import fossils.fossils.client.blockentity.model.yangchuanosaurus.YangchuanosaurusFossilFrameModel;
+import fossils.fossils.client.blockentity.model.yangchuanosaurus.YangchuanosaurusFossilModel;
 import fossils.fossils.client.blockentity.model.yingshanosaurus.YingshanosaurusFossilFrameModel;
 import fossils.fossils.client.blockentity.model.yingshanosaurus.YingshanosaurusFossilModel;
 import fossils.fossils.client.blockentity.model.yuanyanglong.YuanyanglongFossilFrameModel;
@@ -439,6 +451,12 @@ public class ClientEvents {
 	public static ModelLayerLocation ODOBENOCETOPS_FRAME = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "odobenocetops_frame"), "odobenocetops_frame");
 	public static ModelLayerLocation MONACHUS= new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "monachus"), "monachus");
 	public static ModelLayerLocation MONACHUS_FRAME = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "monachus_frame"), "monachus_frame");
+	public static ModelLayerLocation CRASSIGYRINUS= new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "crassigyrinus"), "crassigyrinus");
+	public static ModelLayerLocation CRASSIGYRINUS_FRAME = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "crassigyrinus_frame"), "crassigyrinus_frame");
+	public static ModelLayerLocation ATOPODENTATUS= new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "atopodentatus"), "atopodentatus");
+	public static ModelLayerLocation ATOPODENTATUS_FRAME = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "atopodentatus_frame"), "atopodentatus_frame");
+	public static ModelLayerLocation LUDODACTYLUS= new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "ludodactylus"), "ludodactylus");
+	public static ModelLayerLocation LUDODACTYLUS_FRAME = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "ludodactylus_frame"), "ludodactylus_frame");
 	public static ModelLayerLocation PLACERIAS = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "placerias"), "placerias");
 	public static ModelLayerLocation PLACERIAS_FRAME = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "placerias_frame"), "placerias_frame");
 	public static ModelLayerLocation ENDOTHIODONBATHYSTOMA = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "endothiodonbathystoma"), "endothiodonbathystoma");
@@ -529,6 +547,8 @@ public class ClientEvents {
 	public static ModelLayerLocation ACHELOUSAURUS_FRAME = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "achelousaurus_frame"), "achelousaurus_frame");
 	public static ModelLayerLocation KAMUYSAURUS = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "kamuysaurus"), "kamuysaurus");
 	public static ModelLayerLocation KAMUYSAURUS_FRAME = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "kamuysaurus_frame"), "kamuysaurus_frame");
+	public static ModelLayerLocation SHUNOSAURUS = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "shunosaurus"), "shunosaurus");
+	public static ModelLayerLocation SHUNOSAURUS_FRAME = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "shunosaurus_frame"), "shunosaurus_frame");
 	public static ModelLayerLocation UTAHRAPTOR = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "utahraptor"), "utahraptor");
 	public static ModelLayerLocation UTAHRAPTOR_FRAME = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "utahraptor_frame"), "utahraptor_frame");
 	public static ModelLayerLocation SHONISAURUS = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "shonisaurus"), "shonisaurus");
@@ -595,6 +615,10 @@ public class ClientEvents {
 	public static ModelLayerLocation SIVATHERIUMGIGANTEUM_FRAME = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "sivatheriumgiganteum_frame"), "sivatheriumgiganteum_frame");
 	public static ModelLayerLocation BARYONYX = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "baryonyx"), "baryonyx");
 	public static ModelLayerLocation BARYONYX_FRAME = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "baryonyx_frame"), "baryonyx_frame");
+	public static ModelLayerLocation YANGCHUANOSAURUS = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "yangchuanosaurus"), "yangchuanosaurus");
+	public static ModelLayerLocation YANGCHUANOSAURUS_FRAME = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "yangchuanosaurus_frame"), "yangchuanosaurus_frame");
+	public static ModelLayerLocation CERATOTHERIUM = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "ceratotherium"), "ceratotherium");
+	public static ModelLayerLocation CERATOTHERIUM_FRAME = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "ceratotherium_frame"), "ceratotherium_frame");
 
 	@SubscribeEvent
 	public static void registerLayerDefinition(EntityRenderersEvent.RegisterLayerDefinitions event) {
@@ -725,6 +749,12 @@ public class ClientEvents {
 		event.registerLayerDefinition(ODOBENOCETOPS_FRAME, OdobenocetopsFossilFrameModel::createBodyLayer);
 		event.registerLayerDefinition(MONACHUS, MonachusFossilModel::createBodyLayer);
 		event.registerLayerDefinition(MONACHUS_FRAME, MonachusFossilFrameModel::createBodyLayer);
+		event.registerLayerDefinition(CRASSIGYRINUS, CrassigyrinusFossilModel::createBodyLayer);
+		event.registerLayerDefinition(CRASSIGYRINUS_FRAME, CrassigyrinusFossilFrameModel::createBodyLayer);
+		event.registerLayerDefinition(ATOPODENTATUS, AtopodentatusFossilModel::createBodyLayer);
+		event.registerLayerDefinition(ATOPODENTATUS_FRAME, AtopodentatusFossilFrameModel::createBodyLayer);
+		event.registerLayerDefinition(LUDODACTYLUS, LudodactylusFossilModel::createBodyLayer);
+		event.registerLayerDefinition(LUDODACTYLUS_FRAME, LudodactylusFossilFrameModel::createBodyLayer);
 		event.registerLayerDefinition(PLACERIAS, PlaceriasFossilModel::createBodyLayer);
 		event.registerLayerDefinition(PLACERIAS_FRAME, PlaceriasFossilFrameModel::createBodyLayer);
 		event.registerLayerDefinition(ENDOTHIODONBATHYSTOMA, EndothiodonbathystomaFossilModel::createBodyLayer);
@@ -815,6 +845,8 @@ public class ClientEvents {
 		event.registerLayerDefinition(ACHELOUSAURUS_FRAME, AchelousaurusFossilFrameModel::createBodyLayer);
 		event.registerLayerDefinition(KAMUYSAURUS, KamuysaurusFossilModel::createBodyLayer);
 		event.registerLayerDefinition(KAMUYSAURUS_FRAME, KamuysaurusFossilFrameModel::createBodyLayer);
+		event.registerLayerDefinition(SHUNOSAURUS, ShunosaurusFossilModel::createBodyLayer);
+		event.registerLayerDefinition(SHUNOSAURUS_FRAME, ShunosaurusFossilFrameModel::createBodyLayer);
 		event.registerLayerDefinition(UTAHRAPTOR, UtahraptorFossilModel::createBodyLayer);
 		event.registerLayerDefinition(UTAHRAPTOR_FRAME, UtahraptorFossilFrameModel::createBodyLayer);
 		event.registerLayerDefinition(SHONISAURUS, ShonisaurusFossilModel::createBodyLayer);
@@ -881,6 +913,10 @@ public class ClientEvents {
 		event.registerLayerDefinition(SIVATHERIUMGIGANTEUM_FRAME, SivatheriumgiganteumFossilFrameModel::createBodyLayer);
 		event.registerLayerDefinition(BARYONYX, BaryonyxFossilModel::createBodyLayer);
 		event.registerLayerDefinition(BARYONYX_FRAME, BaryonyxFossilFrameModel::createBodyLayer);
+		event.registerLayerDefinition(YANGCHUANOSAURUS, YangchuanosaurusFossilModel::createBodyLayer);
+		event.registerLayerDefinition(YANGCHUANOSAURUS_FRAME, YangchuanosaurusFossilFrameModel::createBodyLayer);
+		event.registerLayerDefinition(CERATOTHERIUM, CeratotheriumFossilModel::createBodyLayer);
+		event.registerLayerDefinition(CERATOTHERIUM_FRAME, CeratotheriumFossilFrameModel::createBodyLayer);
 	}
 	
 	@SubscribeEvent

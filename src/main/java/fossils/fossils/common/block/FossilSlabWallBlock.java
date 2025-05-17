@@ -8,8 +8,13 @@ import com.google.common.collect.Maps;
 import fossils.fossils.common.entity.block.FossilSlabBlockEntity;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
+import net.minecraft.world.InteractionHand;
+import net.minecraft.world.InteractionResult;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
+import net.minecraft.world.level.Level;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.block.BaseEntityBlock;
 import net.minecraft.world.level.block.Block;
@@ -20,15 +25,17 @@ import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
-import net.minecraft.world.level.block.state.properties.BlockStateProperties;
-import net.minecraft.world.level.block.state.properties.BooleanProperty;
-import net.minecraft.world.level.block.state.properties.DirectionProperty;
+import net.minecraft.world.level.block.state.properties.*;
 import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.material.Fluids;
+import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
 public class FossilSlabWallBlock extends BaseEntityBlock {
+	public static final int MAX = RotationSegment.getMaxSegmentIndex();
+	private static final int ROTATIONS = MAX + 1;
+	public static final IntegerProperty ROTATION = BlockStateProperties.ROTATION_16;
 	public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
 	private static final Map<Direction, VoxelShape> AABBS = Maps.newEnumMap(ImmutableMap.of(Direction.NORTH, Block.box(4.0D, 4.0D, 8.0D, 12.0D, 12.0D, 16.0D), Direction.SOUTH, Block.box(4.0D, 4.0D, 0.0D, 12.0D, 12.0D, 8.0D), Direction.EAST, Block.box(0.0D, 4.0D, 4.0D, 8.0D, 12.0D, 12.0D), Direction.WEST, Block.box(8.0D, 4.0D, 4.0D, 16.0D, 12.0D, 12.0D)));
 	private final FossilSlabBlock.Type type;
@@ -36,7 +43,7 @@ public class FossilSlabWallBlock extends BaseEntityBlock {
 
 	public FossilSlabWallBlock(FossilSlabBlock.Type type, BlockBehaviour.Properties properties) {
 		super(properties);
-		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(WATERLOGGED, false));
+		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(ROTATION, Integer.valueOf(0)).setValue(WATERLOGGED, false));
 		this.type = type;
 
 
@@ -58,7 +65,7 @@ public class FossilSlabWallBlock extends BaseEntityBlock {
 				Direction direction1 = direction.getOpposite();
 				blockstate = blockstate.setValue(FACING, direction1);
 				if (!blockgetter.getBlockState(blockpos.relative(direction)).canBeReplaced(p_58104_)) {
-					return blockstate.setValue(WATERLOGGED, Boolean.valueOf(fluidstate.getType() == Fluids.WATER));
+					return blockstate.setValue(ROTATION, Integer.valueOf(RotationSegment.convertToSegment(p_58104_.getRotation()))).setValue(WATERLOGGED, Boolean.valueOf(fluidstate.getType() == Fluids.WATER));
 				}
 			}
 		}
@@ -67,12 +74,12 @@ public class FossilSlabWallBlock extends BaseEntityBlock {
 	}
 
 	public BlockState rotate(BlockState p_58109_, Rotation p_58110_) {
-		return p_58109_.setValue(FACING, p_58110_.rotate(p_58109_.getValue(FACING)));
+		return p_58109_.setValue(ROTATION, Integer.valueOf(p_58110_.rotate(p_58109_.getValue(ROTATION), ROTATIONS))).setValue(FACING, p_58110_.rotate(p_58109_.getValue(FACING)));
 	}
 
 	@SuppressWarnings("deprecation")
 	public BlockState mirror(BlockState p_58106_, Mirror p_58107_) {
-		return p_58106_.rotate(p_58107_.getRotation(p_58106_.getValue(FACING)));
+		return p_58106_.setValue(ROTATION, Integer.valueOf(p_58107_.mirror(p_58106_.getValue(ROTATION), ROTATIONS))).rotate(p_58107_.getRotation(p_58106_.getValue(FACING)));
 	}
 	
 	public BlockState updateShape(BlockState p_154530_, Direction p_154531_, BlockState p_154532_, LevelAccessor p_154533_, BlockPos p_154534_, BlockPos p_154535_) {
@@ -88,8 +95,27 @@ public class FossilSlabWallBlock extends BaseEntityBlock {
 	}
 
 	protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> p_58112_) {
-		p_58112_.add(FACING, WATERLOGGED);
+		p_58112_.add(FACING, ROTATION, WATERLOGGED);
 	}
+
+	@SuppressWarnings("deprecation")
+	public InteractionResult use(BlockState state, Level world, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hit) {
+		ItemStack stack = player.getItemInHand(hand);
+		if (stack.isEmpty() ) {
+			if (player.isShiftKeyDown()) {
+				int rotation = state.getValue(ROTATION);
+				if (rotation - 1 >= 0) world.setBlockAndUpdate(pos, state.setValue(ROTATION, rotation - 1));
+				else world.setBlockAndUpdate(pos, state.setValue(ROTATION, 15));
+				return InteractionResult.sidedSuccess(world.isClientSide);
+			} else {
+				int rotation = state.getValue(ROTATION);
+				if (rotation + 1 <= 15) world.setBlockAndUpdate(pos, state.setValue(ROTATION, rotation + 1));
+				else world.setBlockAndUpdate(pos, state.setValue(ROTATION, 0));
+				return InteractionResult.sidedSuccess(world.isClientSide);
+			}
+		} else return super.use(state, world, pos, player, hand, hit);
+	}
+
 
 	@Override
 	public BlockEntity newBlockEntity(BlockPos p_153215_, BlockState p_153216_) {

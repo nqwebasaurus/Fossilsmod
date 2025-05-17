@@ -73,6 +73,11 @@
           "type": "minecraft:item",
           "name": "fossils:monachus_fossil",
           "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:ceratotherium_fossil",
+          "weight": 2
         }
       ],
       "rolls": 1

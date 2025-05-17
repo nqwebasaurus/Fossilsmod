@@ -113,6 +113,11 @@
           "type": "minecraft:item",
           "name": "fossils:baryonyx_fossil",
           "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:ludodactylus_fossil",
+          "weight": 2
         }
       ],
       "rolls": 1

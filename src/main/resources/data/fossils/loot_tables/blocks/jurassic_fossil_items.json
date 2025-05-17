@@ -128,6 +128,16 @@
           "type": "minecraft:item",
           "name": "fossils:monolophosaurus_fossil",
           "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:shunosaurus_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:yangchuanosaurus_fossil",
+          "weight": 2
         }
       ],
       "rolls": 1

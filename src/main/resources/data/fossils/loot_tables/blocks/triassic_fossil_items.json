@@ -73,6 +73,11 @@
           "type": "minecraft:item",
           "name": "fossils:tanystropheus_fossil",
           "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:atopodentatus_fossil",
+          "weight": 2
         }
       ],
       "rolls": 1

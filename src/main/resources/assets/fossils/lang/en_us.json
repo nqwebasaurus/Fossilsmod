@@ -87,6 +87,9 @@
 	"block.fossils.barylambda_fossil": "Barylambda Fossil",
 	"block.fossils.odobenocetops_fossil": "Odobenocetops Fossil",
 	"block.fossils.monachus_fossil": "Monachus Fossil",
+	"block.fossils.crassigyrinus_fossil": "Crassigyrinus Fossil",
+	"block.fossils.atopodentatus_fossil": "Atopodentatus Fossil",
+	"block.fossils.ludodactylus_fossil": "Ludodactylus Fossil",
 	"block.fossils.poposaurus_fossil": "Poposaurus Fossil",
 	"block.fossils.nigerpeton_fossil": "Nigerpeton Fossil",
 	"block.fossils.stahleckeria_fossil": "Stahleckeria Fossil",
@@ -126,6 +129,7 @@
 	"block.fossils.coelodonta_fossil": "Coelodonta Fossil",
 	"block.fossils.achelousaurus_fossil": "Achelousaurus Fossil",
 	"block.fossils.kamuysaurus_fossil": "Kamuysaurus Fossil",
+	"block.fossils.shunosaurus_fossil": "Shunosaurus Fossil",
 	"block.fossils.bisonlatifrons_fossil": "Bison latifrons Fossil",
 	"block.fossils.utahraptor_fossil": "Utahraptor Fossil",
 	"block.fossils.shonisaurus_fossil": "Shonisaurus Fossil",
@@ -160,6 +164,8 @@
 	"block.fossils.ankylosaurus_fossil": "Ankylosaurus Fossil",
 	"block.fossils.sivatheriumgiganteum_fossil": "Sivatherium giganteum Fossil",
 	"block.fossils.baryonyx_fossil": "Baryonyx Fossil",
+	"block.fossils.yangchuanosaurus_fossil": "Yangchuanosaurus Fossil",
+	"block.fossils.ceratotherium_fossil": "Ceratotherium Fossil",
 	
 	"itemGroup.fossil_slab_tab": "Fossils Slabs",
 	"itemGroup.fossil_blocks_tab": "Fossils Blocks",
@@ -537,6 +543,8 @@
 	"advancements.fossils.delphinida.description": "Delphinida",
 	"advancements.fossils.pinnipedia.title": "Quality Seal",
 	"advancements.fossils.pinnipedia.description": "Pinnipedia",
+	"advancements.fossils.ornithocheiromorpha.title": "Long Beaks and Iron Sights",
+	"advancements.fossils.ornithocheiromorpha.description": "Ornithocheiromorphs",
 
 
 "advancements.fossils.pelecanimimus.title": "Pelican Mimic",
@@ -818,5 +826,17 @@
 	"advancements.fossils.kamuysaurus.title": "Deity Lizard",
 	"advancements.fossils.kamuysaurus.description": "Complete a Kamuysaurus skeleton",
 	"advancements.fossils.baryonyx.title": "Heavy Claw",
-	"advancements.fossils.baryonyx.description": "Complete a Baryonyx skeleton"
+	"advancements.fossils.baryonyx.description": "Complete a Baryonyx skeleton",
+	"advancements.fossils.crassigyrinus.title": "Thick Tadpole",
+	"advancements.fossils.crassigyrinus.description": "Complete a Crassigyrinus skeleton",
+	"advancements.fossils.shunosaurus.title": "Lizard from Shu [Sichuan]",
+	"advancements.fossils.shunosaurus.description": "Complete a Shunosaurus skeleton",
+	"advancements.fossils.atopodentatus.title": "Unusual Teeth",
+	"advancements.fossils.atopodentatus.description": "Complete an Atopodentatus skeleton",
+	"advancements.fossils.yangchuanosaurus.title": "Lizard from Yangquan",
+	"advancements.fossils.yangchuanosaurus.description": "Complete a Yangchuanosaurus skeleton",
+	"advancements.fossils.ludodactylus.title": "Toy Finger",
+	"advancements.fossils.ludodactylus.description": "Complete a Ludodactylus skeleton",
+	"advancements.fossils.ceratotherium.title": "White Rhinoceros",
+	"advancements.fossils.ceratotherium.description": "Complete a Ceratotherium skeleton"
 }

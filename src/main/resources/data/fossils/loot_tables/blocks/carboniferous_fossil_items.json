@@ -18,6 +18,11 @@
           "type": "minecraft:item",
           "name": "fossils:platyhystrix_fossil",
           "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:crassigyrinus_fossil",
+          "weight": 2
         }
       ],
       "rolls": 1
