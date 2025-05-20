@@ -90,6 +90,7 @@
 	"block.fossils.crassigyrinus_fossil": "Crassigyrinus Fossil",
 	"block.fossils.atopodentatus_fossil": "Atopodentatus Fossil",
 	"block.fossils.ludodactylus_fossil": "Ludodactylus Fossil",
+	"block.fossils.dunkleosteus_fossil": "Dunkleosteus Fossil",
 	"block.fossils.poposaurus_fossil": "Poposaurus Fossil",
 	"block.fossils.nigerpeton_fossil": "Nigerpeton Fossil",
 	"block.fossils.stahleckeria_fossil": "Stahleckeria Fossil",
@@ -130,6 +131,7 @@
 	"block.fossils.achelousaurus_fossil": "Achelousaurus Fossil",
 	"block.fossils.kamuysaurus_fossil": "Kamuysaurus Fossil",
 	"block.fossils.shunosaurus_fossil": "Shunosaurus Fossil",
+	"block.fossils.malawisaurus_fossil": "Malawisaurus Fossil",
 	"block.fossils.bisonlatifrons_fossil": "Bison latifrons Fossil",
 	"block.fossils.utahraptor_fossil": "Utahraptor Fossil",
 	"block.fossils.shonisaurus_fossil": "Shonisaurus Fossil",
@@ -545,6 +547,8 @@
 	"advancements.fossils.pinnipedia.description": "Pinnipedia",
 	"advancements.fossils.ornithocheiromorpha.title": "Long Beaks and Iron Sights",
 	"advancements.fossils.ornithocheiromorpha.description": "Ornithocheiromorphs",
+	"advancements.fossils.titanosauria.title": "Larger then life",
+	"advancements.fossils.titanosauria.description": "Titanosauria",
 
 
 "advancements.fossils.pelecanimimus.title": "Pelican Mimic",
@@ -838,5 +842,9 @@
 	"advancements.fossils.ludodactylus.title": "Toy Finger",
 	"advancements.fossils.ludodactylus.description": "Complete a Ludodactylus skeleton",
 	"advancements.fossils.ceratotherium.title": "White Rhinoceros",
-	"advancements.fossils.ceratotherium.description": "Complete a Ceratotherium skeleton"
+	"advancements.fossils.ceratotherium.description": "Complete a Ceratotherium skeleton",
+	"advancements.fossils.dunkleosteus.title": "Dunkle's Bone",
+	"advancements.fossils.dunkleosteus.description": "Complete a Dunkleosteus skeleton",
+	"advancements.fossils.malawisaurus.title": "Malawi Lizard",
+	"advancements.fossils.malawisaurus.description": "Complete a Malawisaurus skeleton"
 }
