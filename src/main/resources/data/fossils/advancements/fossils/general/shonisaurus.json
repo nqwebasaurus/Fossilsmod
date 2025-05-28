@@ -1,5 +1,5 @@
 {
-  "parent": "fossils:fossils/general/ichthyosauriafish",
+  "parent": "fossils:fossils/general/ichthyosauria",
   "criteria": {
     "finish_shonisaurus": {
       "conditions": {

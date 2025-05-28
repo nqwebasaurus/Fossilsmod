@@ -1,5 +1,5 @@
 {
-  "parent": "fossils:fossils/general/rauisuchians_aetosaurs",
+  "parent": "fossils:fossils/general/pseudosuchians",
   "criteria": {
     "finish_aetosaurs": {
       "trigger": "minecraft:tick"

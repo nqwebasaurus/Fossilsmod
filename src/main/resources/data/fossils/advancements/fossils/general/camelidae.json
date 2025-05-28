@@ -1,0 +1,24 @@
+{
+  "parent": "fossils:fossils/general/tylopoda",
+  "criteria": {
+    "finish_camelidae": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "description": {
+      "translate": "advancements.fossils.camelidae.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:advancement_line"
+    },
+    "show_toast": false,
+    "title": {
+      "translate": "advancements.fossils.camelidae.title"
+    }
+  },
+  "sends_telemetry_event": true
+}

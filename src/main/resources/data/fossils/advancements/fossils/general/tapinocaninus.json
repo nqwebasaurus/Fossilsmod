@@ -1,0 +1,57 @@
+{
+  "parent": "fossils:fossils/general/tapinocephalia",
+  "criteria": {
+    "finish_tapinocaninus": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:tapinocaninus_fossil"
+                ],
+                "state": {
+                  "fossil_level": "14"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:tapinocaninus_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.tapinocaninus.description"
+    },
+    "frame": "goal",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:tapinocaninus_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.tapinocaninus.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_tapinocaninus"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  },
+  "sends_telemetry_event": true
+}

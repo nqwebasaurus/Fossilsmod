@@ -1,0 +1,24 @@
+{
+  "parent": "fossils:fossils/general/sauropodomorpha",
+  "criteria": {
+    "finish_massopoda": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "description": {
+      "translate": "advancements.fossils.massopoda.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:advancement_line"
+    },
+    "show_toast": false,
+    "title": {
+      "translate": "advancements.fossils.massopoda.title"
+    }
+  },
+  "sends_telemetry_event": true
+}

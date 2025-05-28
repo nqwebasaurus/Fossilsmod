@@ -168,6 +168,16 @@
           "type": "minecraft:item",
           "name": "fossils:kamuysaurus_fossil",
           "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:champsosaurus_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:prenocephale_fossil",
+          "weight": 2
         }
       ],
       "rolls": 1

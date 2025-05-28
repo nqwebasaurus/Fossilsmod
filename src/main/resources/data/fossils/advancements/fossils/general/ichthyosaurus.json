@@ -1,5 +1,5 @@
 {
-  "parent": "fossils:fossils/general/ichthyosauriafish",
+  "parent": "fossils:fossils/general/parvipelvia",
   "criteria": {
     "finish_ichthyosaurus": {
       "conditions": {

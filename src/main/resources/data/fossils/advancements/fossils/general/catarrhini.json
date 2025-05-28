@@ -1,0 +1,24 @@
+{
+  "parent": "fossils:fossils/general/haplorhines",
+  "criteria": {
+    "finish_catarrhini": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "description": {
+      "translate": "advancements.fossils.catarrhini.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:advancement_line"
+    },
+    "show_toast": false,
+    "title": {
+      "translate": "advancements.fossils.catarrhini.title"
+    }
+  },
+  "sends_telemetry_event": true
+}

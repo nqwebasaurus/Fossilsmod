@@ -1,0 +1,57 @@
+{
+  "parent": "fossils:fossils/general/homoinoidea",
+  "criteria": {
+    "finish_pan": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:pan_fossil"
+                ],
+                "state": {
+                  "fossil_level": "14"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:pan_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.pan.description"
+    },
+    "frame": "goal",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:pan_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.pan.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_pan"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  },
+  "sends_telemetry_event": true
+}

@@ -1,0 +1,57 @@
+{
+  "parent": "fossils:fossils/general/archosauriformes",
+  "criteria": {
+    "finish_erythrosuchus": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:erythrosuchus_fossil"
+                ],
+                "state": {
+                  "fossil_level": "14"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:erythrosuchus_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.erythrosuchus.description"
+    },
+    "frame": "goal",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:erythrosuchus_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.erythrosuchus.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_erythrosuchus"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  },
+  "sends_telemetry_event": true
+}

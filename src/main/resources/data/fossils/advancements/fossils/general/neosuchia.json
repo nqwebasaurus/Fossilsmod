@@ -1,5 +1,5 @@
 {
-  "parent": "fossils:fossils/general/pseudosuchians",
+  "parent": "fossils:fossils/general/crocodylomorpha",
   "criteria": {
     "finish_neosuchia": {
       "trigger": "minecraft:tick"

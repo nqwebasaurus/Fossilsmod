@@ -78,6 +78,31 @@
           "type": "minecraft:item",
           "name": "fossils:ceratotherium_fossil",
           "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:pan_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:praemegaceroscazioti_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:hippidion_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:megalibgwilia_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:sinomegacerosyabei_fossil",
+          "weight": 2
         }
       ],
       "rolls": 1

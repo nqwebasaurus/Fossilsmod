@@ -53,6 +53,16 @@
           "type": "minecraft:item",
           "name": "fossils:menoceras_fossil",
           "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:champsosaurus_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:oxydactylus_fossil",
+          "weight": 2
         }
       ],
       "rolls": 1

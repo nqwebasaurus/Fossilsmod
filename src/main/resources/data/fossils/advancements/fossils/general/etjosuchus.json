@@ -1,0 +1,57 @@
+{
+  "parent": "fossils:fossils/general/loricata",
+  "criteria": {
+    "finish_etjosuchus": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:etjosuchus_fossil"
+                ],
+                "state": {
+                  "fossil_level": "14"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:etjosuchus_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.etjosuchus.description"
+    },
+    "frame": "goal",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:etjosuchus_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.etjosuchus.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_etjosuchus"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  },
+  "sends_telemetry_event": true
+}

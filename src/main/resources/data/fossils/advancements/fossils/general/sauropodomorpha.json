@@ -1,0 +1,24 @@
+{
+  "parent": "fossils:fossils/general/dinosauria",
+  "criteria": {
+    "finish_sauropodomorpha": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "description": {
+      "translate": "advancements.fossils.sauropodomorpha.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:advancement_line"
+    },
+    "show_toast": false,
+    "title": {
+      "translate": "advancements.fossils.sauropodomorpha.title"
+    }
+  },
+  "sends_telemetry_event": true
+}

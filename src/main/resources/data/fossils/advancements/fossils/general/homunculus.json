@@ -1,0 +1,54 @@
+{
+  "parent": "fossils:fossils/general/platyrrhini",
+  "criteria": {
+    "finish_homunculus": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:homunculus_fossil"
+                ],
+                "state": {
+                  "fossil_level": "4"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:homunculus_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.homunculus.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:homunculus_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.homunculus.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_homunculus"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

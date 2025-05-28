@@ -1,5 +1,5 @@
 {
-  "parent": "fossils:fossils/general/dinosauria",
+  "parent": "fossils:fossils/general/massopoda",
   "criteria": {
     "finish_sauropods": {
       "trigger": "minecraft:tick"

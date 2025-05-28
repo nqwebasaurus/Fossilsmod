@@ -1,5 +1,5 @@
 {
-  "parent": "fossils:fossils/general/diapsida",
+  "parent": "fossils:fossils/general/ichthyosauromorpha",
   "criteria": {
     "finish_ichthyosauria": {
       "trigger": "minecraft:tick"

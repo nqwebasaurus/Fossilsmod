@@ -1,0 +1,24 @@
+{
+  "parent": "fossils:fossils/general/crocodylomorpha",
+  "criteria": {
+    "finish_thalattosuchia": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "description": {
+      "translate": "advancements.fossils.thalattosuchia.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:advancement_line"
+    },
+    "show_toast": false,
+    "title": {
+      "translate": "advancements.fossils.thalattosuchia.title"
+    }
+  },
+  "sends_telemetry_event": true
+}

@@ -1,5 +1,5 @@
 {
-  "parent": "fossils:fossils/general/haplorhines",
+  "parent": "fossils:fossils/general/cercopithecidae",
   "criteria": {
     "finish_theropithecus": {
       "conditions": {

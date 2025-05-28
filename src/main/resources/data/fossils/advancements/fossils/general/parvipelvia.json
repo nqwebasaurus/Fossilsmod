@@ -1,0 +1,24 @@
+{
+  "parent": "fossils:fossils/general/ichthyosauria",
+  "criteria": {
+    "finish_parvipelvia": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "description": {
+      "translate": "advancements.fossils.parvipelvia.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:advancement_line"
+    },
+    "show_toast": false,
+    "title": {
+      "translate": "advancements.fossils.parvipelvia.title"
+    }
+  },
+  "sends_telemetry_event": true
+}

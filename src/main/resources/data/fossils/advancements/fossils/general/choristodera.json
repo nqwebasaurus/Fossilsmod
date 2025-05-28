@@ -1,0 +1,24 @@
+{
+  "parent": "fossils:fossils/general/diapsida",
+  "criteria": {
+    "finish_choristodera": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "description": {
+      "translate": "advancements.fossils.choristodera.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:advancement_line"
+    },
+    "show_toast": false,
+    "title": {
+      "translate": "advancements.fossils.choristodera.title"
+    }
+  },
+  "sends_telemetry_event": true
+}

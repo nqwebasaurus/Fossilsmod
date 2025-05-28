@@ -1,5 +1,5 @@
 {
-  "parent": "fossils:fossils/general/crocopoda",
+  "parent": "fossils:fossils/general/archosauriformes",
   "criteria": {
     "finish_eucrocopoda": {
       "trigger": "minecraft:tick"

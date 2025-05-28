@@ -5,6 +5,7 @@ import java.util.Map;
 import javax.annotation.Nullable;
 
 import fossils.fossils.client.blockentity.model.DicranurusFossilSlabModel;
+import fossils.fossils.common.block.AbstractFossilSlabBlock;
 import org.joml.Quaternionf;
 
 import com.google.common.collect.ImmutableMap;
@@ -57,14 +58,14 @@ public class FossilSlabRenderer implements BlockEntityRenderer<FossilSlabBlockEn
 
 	public void render(FossilSlabBlockEntity p_112534_, float p_112535_, PoseStack p_112536_, MultiBufferSource p_112537_, int p_112538_, int p_112539_) {
 		float f = 0;
-		BlockState blocktate = p_112534_.getBlockState();
-		boolean flag = blocktate.getBlock() instanceof FossilSlabBlock;
-		int rotation = flag ? blocktate.getValue(FossilSlabBlock.ROTATION) : 0;
-		Direction direction = flag ? null : blocktate.getValue(WallSkullBlock.FACING);
-		float rotationDegrees = RotationSegment.convertToDegrees(rotation);
+		BlockState blockstate = p_112534_.getBlockState();
+		boolean flag = blockstate.getBlock() instanceof FossilSlabBlock;
+		int rotation = flag ? blockstate.getValue(FossilSlabBlock.ROTATION) : 0;
+		Direction direction = flag ? null : blockstate.getValue(WallSkullBlock.FACING);
+		float rotationDegrees = ((AbstractFossilSlabBlock) blockstate.getBlock()).getYRotationDegrees(blockstate);
 		FossilSlabBlock.Type skullblock$type;
-		if (flag) skullblock$type = ((FossilSlabBlock)blocktate.getBlock()).getType();
-		else skullblock$type = ((FossilSlabWallBlock)blocktate.getBlock()).getType();
+		if (flag) skullblock$type = ((FossilSlabBlock)blockstate.getBlock()).getType();
+		else skullblock$type = ((FossilSlabWallBlock)blockstate.getBlock()).getType();
 		SkullModelBase skullmodelbase = this.modelByType.get(skullblock$type);
 		RenderType rendertype = getRenderType(skullblock$type);
 		renderFossilSlab(p_112534_, direction, rotationDegrees, f, p_112536_, p_112537_, p_112538_, skullmodelbase, rendertype);

@@ -1,0 +1,54 @@
+{
+  "parent": "fossils:fossils/general/neosuchia",
+  "criteria": {
+    "finish_anteophthalmosuchus": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:anteophthalmosuchus_fossil"
+                ],
+                "state": {
+                  "fossil_level": "9"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:anteophthalmosuchus_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.anteophthalmosuchus.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:anteophthalmosuchus_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.anteophthalmosuchus.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_anteophthalmosuchus"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

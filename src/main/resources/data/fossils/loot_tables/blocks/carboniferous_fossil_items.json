@@ -23,6 +23,16 @@
           "type": "minecraft:item",
           "name": "fossils:crassigyrinus_fossil",
           "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:edaphosaurus_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:anthracosaurus_fossil",
+          "weight": 2
         }
       ],
       "rolls": 1

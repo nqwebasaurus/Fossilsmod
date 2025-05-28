@@ -1,0 +1,24 @@
+{
+  "parent": "fossils:fossils/general/catarrhini",
+  "criteria": {
+    "finish_cercopithecidae": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "description": {
+      "translate": "advancements.fossils.cercopithecidae.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:advancement_line"
+    },
+    "show_toast": false,
+    "title": {
+      "translate": "advancements.fossils.cercopithecidae.title"
+    }
+  },
+  "sends_telemetry_event": true
+}

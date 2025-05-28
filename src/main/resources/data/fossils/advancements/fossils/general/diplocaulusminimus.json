@@ -1,0 +1,54 @@
+{
+  "parent": "fossils:fossils/general/lepospondyli",
+  "criteria": {
+    "finish_diplocaulusminimus": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:diplocaulusminimus_fossil"
+                ],
+                "state": {
+                  "fossil_level": "4"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:diplocaulusminimus_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.diplocaulusminimus.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:diplocaulusminimus_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.diplocaulusminimus.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_diplocaulusminimus"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

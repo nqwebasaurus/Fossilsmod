@@ -123,6 +123,31 @@
           "type": "minecraft:item",
           "name": "fossils:malawisaurus_fossil",
           "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:anteophthalmosuchus_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:beipiaosaurus_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:concavenator_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:tupandactylusimperator_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:tenontosaurus_fossil",
+          "weight": 2
         }
       ],
       "rolls": 1

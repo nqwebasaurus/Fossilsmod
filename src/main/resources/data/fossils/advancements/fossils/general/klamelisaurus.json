@@ -1,0 +1,57 @@
+{
+  "parent": "fossils:fossils/general/mamenchisauridae",
+  "criteria": {
+    "finish_klamelisaurus": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:klamelisaurus_fossil"
+                ],
+                "state": {
+                  "fossil_level": "14"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:klamelisaurus_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.klamelisaurus.description"
+    },
+    "frame": "goal",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:klamelisaurus_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.klamelisaurus.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_klamelisaurus"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  },
+  "sends_telemetry_event": true
+}

@@ -1,0 +1,57 @@
+{
+  "parent": "fossils:fossils/general/cervidae",
+  "criteria": {
+    "finish_sinomegacerosyabei": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:sinomegacerosyabei_fossil"
+                ],
+                "state": {
+                  "fossil_level": "14"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:sinomegacerosyabei_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.sinomegacerosyabei.description"
+    },
+    "frame": "goal",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:sinomegacerosyabei_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.sinomegacerosyabei.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_sinomegacerosyabei"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  },
+  "sends_telemetry_event": true
+}

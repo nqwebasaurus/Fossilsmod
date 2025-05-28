@@ -1,0 +1,57 @@
+{
+  "parent": "fossils:fossils/general/thalattosuchia",
+  "criteria": {
+    "finish_thalattosuchus": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:thalattosuchus_fossil"
+                ],
+                "state": {
+                  "fossil_level": "14"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:thalattosuchus_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.thalattosuchus.description"
+    },
+    "frame": "goal",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:thalattosuchus_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.thalattosuchus.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_thalattosuchus"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  },
+  "sends_telemetry_event": true
+}

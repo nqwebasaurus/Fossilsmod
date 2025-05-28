@@ -63,6 +63,21 @@
           "type": "minecraft:item",
           "name": "fossils:moschops_fossil",
           "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:tapinocaninus_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:edaphosaurus_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:diplocaulusminimus_fossil",
+          "weight": 2
         }
       ],
       "rolls": 1
