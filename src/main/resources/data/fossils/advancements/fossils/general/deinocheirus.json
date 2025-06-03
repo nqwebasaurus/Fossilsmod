@@ -1,0 +1,57 @@
+{
+  "parent": "fossils:fossils/general/ornithomimosauria",
+  "criteria": {
+    "finish_deinocheirus": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:deinocheirus_fossil"
+                ],
+                "state": {
+                  "fossil_level": "19"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:deinocheirus_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.deinocheirus.description"
+    },
+    "frame": "challenge",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:deinocheirus_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.deinocheirus.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_deinocheirus"
+    ]
+  ],
+  "rewards": {
+    "experience": 500
+  },
+  "sends_telemetry_event": true
+}

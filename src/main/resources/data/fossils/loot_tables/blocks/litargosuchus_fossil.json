@@ -1,0 +1,71 @@
+{
+	"type": "minecraft:block",
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"conditions": [
+								{
+									"condition": "minecraft:block_state_property",
+									"block": "fossils:litargosuchus_fossil",
+									"properties": {
+										"fossil_level": 1
+									}
+								}
+							],
+							"count": 2
+						},
+						{
+							"function": "minecraft:set_count",
+							"conditions": [
+								{
+									"condition": "minecraft:block_state_property",
+									"block": "fossils:litargosuchus_fossil",
+									"properties": {
+										"fossil_level": 2
+									}
+								}
+							],
+							"count": 3
+						},
+						{
+							"function": "minecraft:set_count",
+							"conditions": [
+								{
+									"condition": "minecraft:block_state_property",
+									"block": "fossils:litargosuchus_fossil",
+									"properties": {
+										"fossil_level": 3
+									}
+								}
+							],
+							"count": 4
+						},
+						{
+							"function": "minecraft:set_count",
+							"conditions": [
+								{
+									"condition": "minecraft:block_state_property",
+									"block": "fossils:litargosuchus_fossil",
+									"properties": {
+										"fossil_level": 4
+									}
+								}
+							],
+							"count": 5
+						},
+						{
+							"function": "minecraft:explosion_decay"
+						}
+					],
+					"name": "fossils:litargosuchus_fossil"
+				}
+			]
+		}
+	]
+}

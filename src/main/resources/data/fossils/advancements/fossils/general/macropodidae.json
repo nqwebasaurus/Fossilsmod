@@ -1,0 +1,24 @@
+{
+  "parent": "fossils:fossils/general/macropodiformes",
+  "criteria": {
+    "finish_macropodidae": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "description": {
+      "translate": "advancements.fossils.macropodidae.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:advancement_line"
+    },
+    "show_toast": false,
+    "title": {
+      "translate": "advancements.fossils.macropodidae.title"
+    }
+  },
+  "sends_telemetry_event": true
+}

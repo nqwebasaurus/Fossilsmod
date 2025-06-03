@@ -1,0 +1,24 @@
+{
+  "parent": "fossils:fossils/general/diprotodontia",
+  "criteria": {
+    "finish_macropodiformes": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "description": {
+      "translate": "advancements.fossils.macropodiformes.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:advancement_line"
+    },
+    "show_toast": false,
+    "title": {
+      "translate": "advancements.fossils.macropodiformes.title"
+    }
+  },
+  "sends_telemetry_event": true
+}

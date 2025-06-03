@@ -1,0 +1,57 @@
+{
+  "parent": "fossils:fossils/general/macronaria",
+  "criteria": {
+    "finish_euhelopus": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:euhelopus_fossil"
+                ],
+                "state": {
+                  "fossil_level": "14"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:euhelopus_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.euhelopus.description"
+    },
+    "frame": "goal",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:euhelopus_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.euhelopus.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_euhelopus"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  },
+  "sends_telemetry_event": true
+}

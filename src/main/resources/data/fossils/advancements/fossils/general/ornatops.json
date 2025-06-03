@@ -1,0 +1,54 @@
+{
+  "parent": "fossils:fossils/general/saurolophines",
+  "criteria": {
+    "finish_ornatops": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:ornatops_fossil"
+                ],
+                "state": {
+                  "fossil_level": "9"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:ornatops_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.ornatops.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:ornatops_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.ornatops.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_ornatops"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

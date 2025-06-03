@@ -1,0 +1,54 @@
+{
+  "parent": "fossils:fossils/general/leptocleidia",
+  "criteria": {
+    "finish_leptocleidus": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:leptocleidus_fossil"
+                ],
+                "state": {
+                  "fossil_level": "9"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:leptocleidus_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.leptocleidus.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:leptocleidus_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.leptocleidus.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_leptocleidus"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

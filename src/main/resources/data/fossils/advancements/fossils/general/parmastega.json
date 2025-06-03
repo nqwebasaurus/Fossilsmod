@@ -1,0 +1,54 @@
+{
+  "parent": "fossils:fossils/general/finfellows",
+  "criteria": {
+    "finish_parmastega": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:parmastega_fossil"
+                ],
+                "state": {
+                  "fossil_level": "4"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:parmastega_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.parmastega.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:parmastega_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.parmastega.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_parmastega"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

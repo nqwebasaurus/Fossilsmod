@@ -1,0 +1,54 @@
+{
+  "parent": "fossils:fossils/general/tapejaridae",
+  "criteria": {
+    "finish_torukjara": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:torukjara_fossil"
+                ],
+                "state": {
+                  "fossil_level": "4"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:torukjara_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.torukjara.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:torukjara_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.torukjara.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_torukjara"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

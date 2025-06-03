@@ -1,0 +1,24 @@
+{
+  "parent": "fossils:fossils/general/plesiosauroidea",
+  "criteria": {
+    "finish_leptocleidia": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "description": {
+      "translate": "advancements.fossils.leptocleidia.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:advancement_line"
+    },
+    "show_toast": false,
+    "title": {
+      "translate": "advancements.fossils.leptocleidia.title"
+    }
+  },
+  "sends_telemetry_event": true
+}

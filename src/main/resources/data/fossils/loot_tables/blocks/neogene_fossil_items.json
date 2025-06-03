@@ -108,6 +108,11 @@
           "type": "minecraft:item",
           "name": "fossils:hippidion_fossil",
           "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:daeodon_fossil",
+          "weight": 2
         }
       ],
       "rolls": 1

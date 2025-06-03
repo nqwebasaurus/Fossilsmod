@@ -1,0 +1,54 @@
+{
+  "parent": "fossils:fossils/general/eutheria",
+  "criteria": {
+    "finish_leptictidium": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:leptictidium_fossil"
+                ],
+                "state": {
+                  "fossil_level": "4"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:leptictidium_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.leptictidium.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:leptictidium_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.leptictidium.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_leptictidium"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

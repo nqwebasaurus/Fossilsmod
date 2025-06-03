@@ -1,0 +1,57 @@
+{
+  "parent": "fossils:fossils/general/machairodontinae",
+  "criteria": {
+    "finish_smilodon": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:smilodon_fossil"
+                ],
+                "state": {
+                  "fossil_level": "19"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:smilodon_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.smilodon.description"
+    },
+    "frame": "challenge",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:smilodon_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.smilodon.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_smilodon"
+    ]
+  ],
+  "rewards": {
+    "experience": 500
+  },
+  "sends_telemetry_event": true
+}

@@ -1,0 +1,57 @@
+{
+  "parent": "fossils:fossils/general/entelodontidae",
+  "criteria": {
+    "finish_daeodon": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:daeodon_fossil"
+                ],
+                "state": {
+                  "fossil_level": "14"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:daeodon_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.daeodon.description"
+    },
+    "frame": "goal",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:daeodon_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.daeodon.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_daeodon"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  },
+  "sends_telemetry_event": true
+}

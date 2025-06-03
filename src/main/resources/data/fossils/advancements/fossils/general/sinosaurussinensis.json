@@ -1,0 +1,54 @@
+{
+  "parent": "fossils:fossils/general/neotheropodscrested",
+  "criteria": {
+    "finish_sinosaurussinensis": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:sinosaurussinensis_fossil"
+                ],
+                "state": {
+                  "fossil_level": "9"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:sinosaurussinensis_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.sinosaurussinensis.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:sinosaurussinensis_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.sinosaurussinensis.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_sinosaurussinensis"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

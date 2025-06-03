@@ -1,0 +1,54 @@
+{
+  "parent": "fossils:fossils/general/nodosauridae",
+  "criteria": {
+    "finish_gastonia": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:gastonia_fossil"
+                ],
+                "state": {
+                  "fossil_level": "9"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:gastonia_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.gastonia.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:gastonia_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.gastonia.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_gastonia"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

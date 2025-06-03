@@ -1,0 +1,54 @@
+{
+  "parent": "fossils:fossils/general/ankylosauria",
+  "criteria": {
+    "finish_stegouros": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:stegouros_fossil"
+                ],
+                "state": {
+                  "fossil_level": "4"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:stegouros_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.stegouros.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:stegouros_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.stegouros.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_stegouros"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

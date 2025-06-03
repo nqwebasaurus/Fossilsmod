@@ -1,0 +1,54 @@
+{
+  "parent": "fossils:fossils/general/therizinosauria",
+  "criteria": {
+    "finish_falcarius": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:falcarius_fossil"
+                ],
+                "state": {
+                  "fossil_level": "9"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:falcarius_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.falcarius.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:falcarius_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.falcarius.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_falcarius"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

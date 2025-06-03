@@ -1,0 +1,57 @@
+{
+  "parent": "fossils:fossils/general/megaraptora",
+  "criteria": {
+    "finish_megaraptor": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:megaraptor_fossil"
+                ],
+                "state": {
+                  "fossil_level": "14"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:megaraptor_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.megaraptor.description"
+    },
+    "frame": "goal",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:megaraptor_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.megaraptor.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_megaraptor"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  },
+  "sends_telemetry_event": true
+}

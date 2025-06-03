@@ -1,0 +1,54 @@
+{
+  "parent": "fossils:fossils/general/pterosauria",
+  "criteria": {
+    "finish_austriadactylus": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:austriadactylus_fossil"
+                ],
+                "state": {
+                  "fossil_level": "4"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:austriadactylus_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.austriadactylus.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:austriadactylus_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.austriadactylus.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_austriadactylus"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

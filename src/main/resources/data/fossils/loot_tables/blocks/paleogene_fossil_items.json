@@ -63,6 +63,21 @@
           "type": "minecraft:item",
           "name": "fossils:oxydactylus_fossil",
           "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:leptictidium_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:daeodon_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:basilosaurus_fossil",
+          "weight": 2
         }
       ],
       "rolls": 1

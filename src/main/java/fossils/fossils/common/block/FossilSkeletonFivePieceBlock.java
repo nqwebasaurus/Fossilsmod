@@ -476,6 +476,118 @@ public class FossilSkeletonFivePieceBlock extends BaseEntityBlock implements Sim
 				stack.shrink(1);
 			}
 			return InteractionResult.sidedSuccess(world.isClientSide);
+		} else if (item == FossilItems.LEPTICTIDIUM.get() && state.getValue(FOSSIL_LEVEL) != 4 && type == Types.LEPTICTIDIUM) {
+			fossilLevel = state.getValue(FOSSIL_LEVEL);
+			world.setBlockAndUpdate(pos, state.setValue(FOSSIL_LEVEL, fossilLevel + 1));
+			world.playSound(player, pos, SoundEvents.BONE_BLOCK_PLACE, SoundSource.BLOCKS);
+			if (!player.isCreative()) {
+				stack.shrink(1);
+			}
+			return InteractionResult.sidedSuccess(world.isClientSide);
+		} else if (item == FossilItems.PARMASTEGA.get() && state.getValue(FOSSIL_LEVEL) != 4 && type == Types.PARMASTEGA) {
+			fossilLevel = state.getValue(FOSSIL_LEVEL);
+			world.setBlockAndUpdate(pos, state.setValue(FOSSIL_LEVEL, fossilLevel + 1));
+			world.playSound(player, pos, SoundEvents.BONE_BLOCK_PLACE, SoundSource.BLOCKS);
+			if (!player.isCreative()) {
+				stack.shrink(1);
+			}
+			return InteractionResult.sidedSuccess(world.isClientSide);
+		} else if (item == FossilItems.TORUKJARA.get() && state.getValue(FOSSIL_LEVEL) != 4 && type == Types.TORUKJARA) {
+			fossilLevel = state.getValue(FOSSIL_LEVEL);
+			world.setBlockAndUpdate(pos, state.setValue(FOSSIL_LEVEL, fossilLevel + 1));
+			world.playSound(player, pos, SoundEvents.BONE_BLOCK_PLACE, SoundSource.BLOCKS);
+			if (!player.isCreative()) {
+				stack.shrink(1);
+			}
+			return InteractionResult.sidedSuccess(world.isClientSide);
+		} else if (item == FossilItems.CONVOLOSAURUS.get() && state.getValue(FOSSIL_LEVEL) != 4 && type == Types.CONVOLOSAURUS) {
+			fossilLevel = state.getValue(FOSSIL_LEVEL);
+			world.setBlockAndUpdate(pos, state.setValue(FOSSIL_LEVEL, fossilLevel + 1));
+			world.playSound(player, pos, SoundEvents.BONE_BLOCK_PLACE, SoundSource.BLOCKS);
+			if (!player.isCreative()) {
+				stack.shrink(1);
+			}
+			return InteractionResult.sidedSuccess(world.isClientSide);
+		} else if (item == FossilItems.EOCURSOR.get() && state.getValue(FOSSIL_LEVEL) != 4 && type == Types.EOCURSOR) {
+			fossilLevel = state.getValue(FOSSIL_LEVEL);
+			world.setBlockAndUpdate(pos, state.setValue(FOSSIL_LEVEL, fossilLevel + 1));
+			world.playSound(player, pos, SoundEvents.BONE_BLOCK_PLACE, SoundSource.BLOCKS);
+			if (!player.isCreative()) {
+				stack.shrink(1);
+			}
+			return InteractionResult.sidedSuccess(world.isClientSide);
+		} else if (item == FossilItems.AUSTRIADACTYLUS.get() && state.getValue(FOSSIL_LEVEL) != 4 && type == Types.AUSTRIADACTYLUS) {
+			fossilLevel = state.getValue(FOSSIL_LEVEL);
+			world.setBlockAndUpdate(pos, state.setValue(FOSSIL_LEVEL, fossilLevel + 1));
+			world.playSound(player, pos, SoundEvents.BONE_BLOCK_PLACE, SoundSource.BLOCKS);
+			if (!player.isCreative()) {
+				stack.shrink(1);
+			}
+			return InteractionResult.sidedSuccess(world.isClientSide);
+		} else if (item == FossilItems.JIANCHANGNATHUS.get() && state.getValue(FOSSIL_LEVEL) != 4 && type == Types.JIANCHANGNATHUS) {
+			fossilLevel = state.getValue(FOSSIL_LEVEL);
+			world.setBlockAndUpdate(pos, state.setValue(FOSSIL_LEVEL, fossilLevel + 1));
+			world.playSound(player, pos, SoundEvents.BONE_BLOCK_PLACE, SoundSource.BLOCKS);
+			if (!player.isCreative()) {
+				stack.shrink(1);
+			}
+			return InteractionResult.sidedSuccess(world.isClientSide);
+		} else if (item == FossilItems.STEGOUROS.get() && state.getValue(FOSSIL_LEVEL) != 4 && type == Types.STEGOUROS) {
+			fossilLevel = state.getValue(FOSSIL_LEVEL);
+			world.setBlockAndUpdate(pos, state.setValue(FOSSIL_LEVEL, fossilLevel + 1));
+			world.playSound(player, pos, SoundEvents.BONE_BLOCK_PLACE, SoundSource.BLOCKS);
+			if (!player.isCreative()) {
+				stack.shrink(1);
+			}
+			return InteractionResult.sidedSuccess(world.isClientSide);
+		} else if (item == FossilItems.LESOTHOSAURUS.get() && state.getValue(FOSSIL_LEVEL) != 4 && type == Types.LESOTHOSAURUS) {
+			fossilLevel = state.getValue(FOSSIL_LEVEL);
+			world.setBlockAndUpdate(pos, state.setValue(FOSSIL_LEVEL, fossilLevel + 1));
+			world.playSound(player, pos, SoundEvents.BONE_BLOCK_PLACE, SoundSource.BLOCKS);
+			if (!player.isCreative()) {
+				stack.shrink(1);
+			}
+			return InteractionResult.sidedSuccess(world.isClientSide);
+		} else if (item == FossilItems.PSITTACOSAURUSMONGOLIENSIS.get() && state.getValue(FOSSIL_LEVEL) != 4 && type == Types.PSITTACOSAURUSMONGOLIENSIS) {
+			fossilLevel = state.getValue(FOSSIL_LEVEL);
+			world.setBlockAndUpdate(pos, state.setValue(FOSSIL_LEVEL, fossilLevel + 1));
+			world.playSound(player, pos, SoundEvents.BONE_BLOCK_PLACE, SoundSource.BLOCKS);
+			if (!player.isCreative()) {
+				stack.shrink(1);
+			}
+			return InteractionResult.sidedSuccess(world.isClientSide);
+		} else if (item == FossilItems.DRACORAPTOR.get() && state.getValue(FOSSIL_LEVEL) != 4 && type == Types.DRACORAPTOR) {
+			fossilLevel = state.getValue(FOSSIL_LEVEL);
+			world.setBlockAndUpdate(pos, state.setValue(FOSSIL_LEVEL, fossilLevel + 1));
+			world.playSound(player, pos, SoundEvents.BONE_BLOCK_PLACE, SoundSource.BLOCKS);
+			if (!player.isCreative()) {
+				stack.shrink(1);
+			}
+			return InteractionResult.sidedSuccess(world.isClientSide);
+		} else if (item == FossilItems.TERATERPETON.get() && state.getValue(FOSSIL_LEVEL) != 4 && type == Types.TERATERPETON) {
+			fossilLevel = state.getValue(FOSSIL_LEVEL);
+			world.setBlockAndUpdate(pos, state.setValue(FOSSIL_LEVEL, fossilLevel + 1));
+			world.playSound(player, pos, SoundEvents.BONE_BLOCK_PLACE, SoundSource.BLOCKS);
+			if (!player.isCreative()) {
+				stack.shrink(1);
+			}
+			return InteractionResult.sidedSuccess(world.isClientSide);
+		} else if (item == FossilItems.INCISIVOSAURUS.get() && state.getValue(FOSSIL_LEVEL) != 4 && type == Types.INCISIVOSAURUS) {
+			fossilLevel = state.getValue(FOSSIL_LEVEL);
+			world.setBlockAndUpdate(pos, state.setValue(FOSSIL_LEVEL, fossilLevel + 1));
+			world.playSound(player, pos, SoundEvents.BONE_BLOCK_PLACE, SoundSource.BLOCKS);
+			if (!player.isCreative()) {
+				stack.shrink(1);
+			}
+			return InteractionResult.sidedSuccess(world.isClientSide);
+		} else if (item == FossilItems.LITARGOSUCHUS.get() && state.getValue(FOSSIL_LEVEL) != 4 && type == Types.LITARGOSUCHUS) {
+			fossilLevel = state.getValue(FOSSIL_LEVEL);
+			world.setBlockAndUpdate(pos, state.setValue(FOSSIL_LEVEL, fossilLevel + 1));
+			world.playSound(player, pos, SoundEvents.BONE_BLOCK_PLACE, SoundSource.BLOCKS);
+			if (!player.isCreative()) {
+				stack.shrink(1);
+			}
+			return InteractionResult.sidedSuccess(world.isClientSide);
 		} else return super.use(state, world, pos, player, hand, hit);
 	}
 
@@ -528,6 +640,20 @@ public class FossilSkeletonFivePieceBlock extends BaseEntityBlock implements Sim
 		DIADEMODON,
 		KAYENTATHERIUM,
 		MEGALIBGWILIA,
+		LEPTICTIDIUM,
+		PARMASTEGA,
+		TORUKJARA,
+		CONVOLOSAURUS,
+		EOCURSOR,
+		AUSTRIADACTYLUS,
+		JIANCHANGNATHUS,
+		STEGOUROS,
+		LESOTHOSAURUS,
+		PSITTACOSAURUSMONGOLIENSIS,
+		DRACORAPTOR,
+		TERATERPETON,
+		INCISIVOSAURUS,
+		LITARGOSUCHUS,
 		PELECANIMIMUS;
 	}
 

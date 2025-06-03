@@ -1,0 +1,54 @@
+{
+  "parent": "fossils:fossils/general/ankylosauria",
+  "criteria": {
+    "finish_kunbarrasaurus": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:kunbarrasaurus_fossil"
+                ],
+                "state": {
+                  "fossil_level": "9"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:kunbarrasaurus_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.kunbarrasaurus.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:kunbarrasaurus_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.kunbarrasaurus.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_kunbarrasaurus"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

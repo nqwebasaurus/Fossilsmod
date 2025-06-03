@@ -1,0 +1,54 @@
+{
+  "parent": "fossils:fossils/general/kannemeyeriiformes",
+  "criteria": {
+    "finish_kannemeyeria": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:kannemeyeria_fossil"
+                ],
+                "state": {
+                  "fossil_level": "9"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:kannemeyeria_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.kannemeyeria.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:kannemeyeria_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.kannemeyeria.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_kannemeyeria"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

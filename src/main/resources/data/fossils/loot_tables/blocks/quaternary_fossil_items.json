@@ -103,6 +103,21 @@
           "type": "minecraft:item",
           "name": "fossils:sinomegacerosyabei_fossil",
           "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:simosthenurus_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:smilodon_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:rangifer_fossil",
+          "weight": 2
         }
       ],
       "rolls": 1

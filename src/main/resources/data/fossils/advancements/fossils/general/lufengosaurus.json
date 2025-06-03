@@ -1,0 +1,54 @@
+{
+  "parent": "fossils:fossils/general/dryomorphs",
+  "criteria": {
+    "finish_leaellynasaura": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:leaellynasaura_fossil"
+                ],
+                "state": {
+                  "fossil_level": "9"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:leaellynasaura_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.leaellynasaura.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:leaellynasaura_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.leaellynasaura.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_leaellynasaura"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

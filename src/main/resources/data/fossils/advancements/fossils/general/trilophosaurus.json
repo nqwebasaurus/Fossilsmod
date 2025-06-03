@@ -1,0 +1,54 @@
+{
+  "parent": "fossils:fossils/general/allokotosauria",
+  "criteria": {
+    "finish_trilophosaurus": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:trilophosaurus_fossil"
+                ],
+                "state": {
+                  "fossil_level": "9"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:trilophosaurus_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.trilophosaurus.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:trilophosaurus_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.trilophosaurus.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_trilophosaurus"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

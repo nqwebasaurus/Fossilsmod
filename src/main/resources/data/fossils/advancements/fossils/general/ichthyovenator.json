@@ -1,0 +1,57 @@
+{
+  "parent": "fossils:fossils/general/spinosauridae",
+  "criteria": {
+    "finish_ichthyovenator": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:ichthyovenator_fossil"
+                ],
+                "state": {
+                  "fossil_level": "14"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:ichthyovenator_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.ichthyovenator.description"
+    },
+    "frame": "goal",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:ichthyovenator_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.ichthyovenator.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_ichthyovenator"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  },
+  "sends_telemetry_event": true
+}

@@ -1,5 +1,5 @@
 {
-  "parent": "fossils:fossils/general/felidae",
+  "parent": "fossils:fossils/general/felinae",
   "criteria": {
     "finish_pantheratigris": {
       "conditions": {
