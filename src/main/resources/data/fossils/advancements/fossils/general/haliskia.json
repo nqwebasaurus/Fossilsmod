@@ -1,0 +1,54 @@
+{
+  "parent": "fossils:fossils/general/ornithocheiromorpha",
+  "criteria": {
+    "finish_haliskia": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:haliskia_fossil"
+                ],
+                "state": {
+                  "fossil_level": "9"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:haliskia_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.haliskia.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:haliskia_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.haliskia.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_haliskia"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

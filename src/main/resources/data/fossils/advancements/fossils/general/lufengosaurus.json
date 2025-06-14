@@ -1,7 +1,7 @@
 {
-  "parent": "fossils:fossils/general/dryomorphs",
+  "parent": "fossils:fossils/general/massopoda",
   "criteria": {
-    "finish_leaellynasaura": {
+    "finish_lufengosaurus": {
       "conditions": {
         "location": [
           {
@@ -9,7 +9,7 @@
             "predicate": {
               "block": {
                 "blocks": [
-                  "fossils:leaellynasaura_fossil"
+                  "fossils:lufengosaurus_fossil"
                 ],
                 "state": {
                   "fossil_level": "9"
@@ -21,7 +21,7 @@
             "condition": "minecraft:match_tool",
             "predicate": {
               "items": [
-                "fossils:leaellynasaura_fossil"
+                "fossils:lufengosaurus_fossil"
               ]
             }
           }
@@ -33,21 +33,21 @@
   "display": {
     "announce_to_chat": true,
     "description": {
-      "translate": "advancements.fossils.leaellynasaura.description"
+      "translate": "advancements.fossils.lufengosaurus.description"
     },
     "frame": "task",
     "hidden": false,
     "icon": {
-      "item": "fossils:leaellynasaura_fossil"
+      "item": "fossils:lufengosaurus_fossil"
     },
     "show_toast": true,
     "title": {
-      "translate": "advancements.fossils.leaellynasaura.title"
+      "translate": "advancements.fossils.lufengosaurus.title"
     }
   },
   "requirements": [
     [
-      "finish_leaellynasaura"
+      "finish_lufengosaurus"
     ]
   ],
   "sends_telemetry_event": true

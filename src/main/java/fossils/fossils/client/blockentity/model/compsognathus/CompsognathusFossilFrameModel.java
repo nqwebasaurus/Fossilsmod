@@ -87,7 +87,7 @@ public class CompsognathusFossilFrameModel extends SkullModelBase {
 
 		PartDefinition cube_r2 = fossil.addOrReplaceChild("cube_r2", CubeListBuilder.create().texOffs(2, 1).addBox(-1.7F, -2.1F, -0.5F, 1.0F, 4.0F, 1.0F, new CubeDeformation(-0.2F)), PartPose.offsetAndRotation(-2.6F, -12.0F, -8.4F, 0.5498F, 0.0F, 1.5708F));
 
-		PartDefinition cube_r3 = fossil.addOrReplaceChild("cube_r3", CubeListBuilder.create().texOffs(2, 1).addBox(-3.9F, -1.5F, -0.5F, 1.0F, 4.0F, 1.0F, new CubeDeformation(-0.2F)), PartPose.offsetAndRotation(0.5F, -10.5F, 0.2F, 0.0F, 0.0F, 1.5708F));
+		PartDefinition cube_r3 = fossil.addOrReplaceChild("cube_r3", CubeListBuilder.create().texOffs(2, 1).addBox(-3.9F, -1.0F, -0.5F, 1.0F, 3.0F, 1.0F, new CubeDeformation(-0.2F)), PartPose.offsetAndRotation(0.5F, -10.5F, 0.2F, 0.0F, 0.0F, 1.5708F));
 
 		PartDefinition Compsognathus = fossil.addOrReplaceChild("Compsognathus", CubeListBuilder.create(), PartPose.offsetAndRotation(0.0F, -14.0F, 0.3F, -0.1309F, 0.0F, 0.0F));
 
@@ -126,7 +126,7 @@ public class CompsognathusFossilFrameModel extends SkullModelBase {
 
 		PartDefinition Tail4 = Tail3.addOrReplaceChild("Tail4", CubeListBuilder.create(), PartPose.offsetAndRotation(0.0F, -0.5F, 4.55F, -0.0931F, 0.3924F, 0.0145F));
 
-		PartDefinition cube_r6 = Tail4.addOrReplaceChild("cube_r6", CubeListBuilder.create().texOffs(21, 22).addBox(-1.0F, 0.4228F, 1.7937F, 1.0F, 1.0F, 7.0F, new CubeDeformation(-0.2F)), PartPose.offsetAndRotation(0.0F, -0.7872F, -2.0981F, -0.192F, 0.0F, 0.0F));
+		PartDefinition cube_r6 = Tail4.addOrReplaceChild("cube_r6", CubeListBuilder.create().texOffs(21, 22).addBox(-1.0F, 0.4227F, 1.7937F, 1.0F, 1.0F, 7.0F, new CubeDeformation(-0.2F)), PartPose.offsetAndRotation(0.0F, -0.7872F, -2.0981F, -0.192F, 0.0F, 0.0F));
 
 		PartDefinition Tail5 = Tail4.addOrReplaceChild("Tail5", CubeListBuilder.create(), PartPose.offsetAndRotation(0.0F, 1.2813F, 6.4913F, -0.2768F, 0.2101F, -0.0592F));
 

@@ -1,0 +1,57 @@
+{
+  "parent": "fossils:fossils/general/elephantidae",
+  "criteria": {
+    "finish_mammuthuscolumbi": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:mammuthuscolumbi_fossil"
+                ],
+                "state": {
+                  "fossil_level": "19"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:mammuthuscolumbi_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.mammuthuscolumbi.description"
+    },
+    "frame": "challenge",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:mammuthuscolumbi_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.mammuthuscolumbi.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_mammuthuscolumbi"
+    ]
+  ],
+  "rewards": {
+    "experience": 500
+  },
+  "sends_telemetry_event": true
+}

@@ -87,7 +87,7 @@ public class SkorpiovenatorFossilFrameModel extends SkullModelBase {
 				.texOffs(2, 1).addBox(-0.5F, -22.6F, -23.2F, 1.0F, 22.0F, 1.0F, new CubeDeformation(-0.16F)), PartPose.offset(0.0F, 24.75F, 0.0F));
 
 		PartDefinition cube_r1 = fossil.addOrReplaceChild("cube_r1", CubeListBuilder.create().texOffs(2, 1).addBox(-0.9F, -4.5F, -0.5F, 1.0F, 8.0F, 1.0F, new CubeDeformation(-0.15F))
-				.texOffs(2, 1).addBox(7.0F, -4.5F, 17.4F, 1.0F, 8.0F, 1.0F, new CubeDeformation(-0.15F)), PartPose.offsetAndRotation(0.5F, -16.5F, -22.7F, 0.0F, 0.0F, -1.5708F));
+				.texOffs(2, 1).addBox(7.0F, -4.0F, 17.4F, 1.0F, 7.0F, 1.0F, new CubeDeformation(-0.15F)), PartPose.offsetAndRotation(0.5F, -16.5F, -22.7F, 0.0F, 0.0F, -1.5708F));
 
 		PartDefinition hips = fossil.addOrReplaceChild("hips", CubeListBuilder.create(), PartPose.offsetAndRotation(0.0F, -24.9F, -4.6F, 0.1222F, 0.0F, 0.0F));
 

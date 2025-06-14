@@ -91,7 +91,7 @@ public class DeinonychusFossilFrameModel extends SkullModelBase {
 
 		PartDefinition cube_r2 = fossil.addOrReplaceChild("cube_r2", CubeListBuilder.create().texOffs(1, 1).addBox(0.2F, -3.0F, -0.5F, 1.0F, 7.0F, 1.0F, new CubeDeformation(-0.21F)), PartPose.offsetAndRotation(0.0F, -16.6F, -16.0F, 0.1047F, 0.0F, -1.5708F));
 
-		PartDefinition cube_r3 = fossil.addOrReplaceChild("cube_r3", CubeListBuilder.create().texOffs(1, 1).addBox(0.85F, -3.0F, -0.5F, 1.0F, 6.0F, 1.0F, new CubeDeformation(-0.21F)), PartPose.offsetAndRotation(0.0F, -17.35F, -5.3F, -0.0349F, 0.0F, -1.5708F));
+		PartDefinition cube_r3 = fossil.addOrReplaceChild("cube_r3", CubeListBuilder.create().texOffs(1, 1).addBox(0.85F, -2.0F, -0.5F, 1.0F, 4.0F, 1.0F, new CubeDeformation(-0.21F)), PartPose.offsetAndRotation(0.0F, -17.35F, -5.3F, -0.0349F, 0.0F, -1.5708F));
 
 		PartDefinition cube_r4 = fossil.addOrReplaceChild("cube_r4", CubeListBuilder.create().texOffs(1, 1).addBox(-0.5F, -1.65F, -0.5F, 1.0F, 19.0F, 1.0F, new CubeDeformation(-0.21F)), PartPose.offsetAndRotation(0.0F, -17.35F, -5.3F, 0.0F, 0.0349F, 0.0F));
 

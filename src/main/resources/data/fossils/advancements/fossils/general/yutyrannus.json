@@ -1,0 +1,57 @@
+{
+  "parent": "fossils:fossils/general/proceratosaurids",
+  "criteria": {
+    "finish_yutyrannus": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:yutyrannus_fossil"
+                ],
+                "state": {
+                  "fossil_level": "19"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:yutyrannus_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.yutyrannus.description"
+    },
+    "frame": "challenge",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:yutyrannus_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.yutyrannus.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_yutyrannus"
+    ]
+  ],
+  "rewards": {
+    "experience": 500
+  },
+  "sends_telemetry_event": true
+}

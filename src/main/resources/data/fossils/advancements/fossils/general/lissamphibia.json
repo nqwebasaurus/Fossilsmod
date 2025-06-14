@@ -1,0 +1,24 @@
+{
+  "parent": "fossils:fossils/general/amphibians",
+  "criteria": {
+    "finish_lissamphibia": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "description": {
+      "translate": "advancements.fossils.lissamphibia.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:advancement_line"
+    },
+    "show_toast": false,
+    "title": {
+      "translate": "advancements.fossils.lissamphibia.title"
+    }
+  },
+  "sends_telemetry_event": true
+}

@@ -87,86 +87,89 @@ public class CompsognathusFossilModel extends SkullModelBase {
 
 		PartDefinition basin_r1 = Compsognathus.addOrReplaceChild("basin_r1", CubeListBuilder.create().texOffs(40, 12).addBox(-0.6F, -0.8562F, 1.0288F, 0.0F, 1.0F, 3.0F, new CubeDeformation(0.0F))
 				.texOffs(36, 64).addBox(-0.6F, -0.8562F, 0.0288F, 0.0F, 1.0F, 1.0F, new CubeDeformation(0.0F))
-				.texOffs(24, 31).mirror().addBox(-1.8F, 0.1438F, 0.5288F, 1.0F, 0.0F, 4.0F, new CubeDeformation(0.0F)).mirror(false)
-				.texOffs(24, 31).addBox(-0.4F, 0.1438F, 0.5288F, 1.0F, 0.0F, 4.0F, new CubeDeformation(0.0F))
 				.texOffs(0, 30).addBox(-1.1F, -0.2562F, 0.0288F, 1.0F, 1.0F, 5.0F, new CubeDeformation(-0.156F)), PartPose.offsetAndRotation(0.6F, -0.7F, -2.3F, -0.0873F, 0.0F, 0.0F));
 
-		PartDefinition basin_r2 = Compsognathus.addOrReplaceChild("basin_r2", CubeListBuilder.create().texOffs(57, 0).mirror().addBox(-0.5F, 0.5361F, -0.7793F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.25F)).mirror(false), PartPose.offsetAndRotation(-0.925F, 0.6857F, -0.4352F, 0.9774F, 0.0F, -0.3142F));
+		PartDefinition basin_r2 = Compsognathus.addOrReplaceChild("basin_r2", CubeListBuilder.create().texOffs(44, 31).mirror().addBox(-0.6064F, -1.346F, 1.2508F, 1.0F, 1.0F, 2.0F, new CubeDeformation(-0.15F)).mirror(false), PartPose.offsetAndRotation(-0.2568F, 1.4391F, -0.7683F, 0.488F, -0.0845F, 0.0229F));
 
-		PartDefinition basin_r3 = Compsognathus.addOrReplaceChild("basin_r3", CubeListBuilder.create().texOffs(56, 43).mirror().addBox(-0.5F, 2.6027F, -0.5671F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.25F)).mirror(false)
-				.texOffs(50, 8).mirror().addBox(-0.5F, 1.1027F, -0.5671F, 1.0F, 2.0F, 1.0F, new CubeDeformation(-0.25F)).mirror(false), PartPose.offsetAndRotation(-0.925F, 0.6857F, -0.4352F, 0.8203F, 0.0F, -0.3142F));
+		PartDefinition basin_r3 = Compsognathus.addOrReplaceChild("basin_r3", CubeListBuilder.create().texOffs(35, 31).mirror().addBox(-0.9432F, -3.0707F, -0.0063F, 1.0F, 1.0F, 3.0F, new CubeDeformation(-0.15F)).mirror(false), PartPose.offsetAndRotation(-0.2568F, 1.4391F, -0.7683F, -0.2182F, 0.0F, 0.0873F));
 
-		PartDefinition basin_r4 = Compsognathus.addOrReplaceChild("basin_r4", CubeListBuilder.create().texOffs(47, 48).mirror().addBox(-0.5F, -0.465F, 0.2827F, 1.0F, 2.0F, 1.0F, new CubeDeformation(-0.248F)).mirror(false), PartPose.offsetAndRotation(-0.925F, 0.6857F, -0.4352F, 0.2094F, 0.0F, -0.3142F));
+		PartDefinition basin_r4 = Compsognathus.addOrReplaceChild("basin_r4", CubeListBuilder.create().texOffs(30, 55).mirror().addBox(-0.9432F, -2.7614F, -0.8997F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.155F)).mirror(false), PartPose.offsetAndRotation(-0.2568F, 1.4391F, -0.7683F, 0.2313F, 0.0F, 0.0873F));
 
-		PartDefinition basin_r5 = Compsognathus.addOrReplaceChild("basin_r5", CubeListBuilder.create().texOffs(56, 40).mirror().addBox(-0.8399F, -0.1264F, 0.888F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.255F)).mirror(false), PartPose.offsetAndRotation(0.1148F, 2.786F, -2.163F, -1.7715F, 0.0F, -0.0087F));
+		PartDefinition basin_r5 = Compsognathus.addOrReplaceChild("basin_r5", CubeListBuilder.create().texOffs(60, 3).mirror().addBox(-0.9432F, -2.47F, -1.3958F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.15F)).mirror(false), PartPose.offsetAndRotation(-0.2568F, 1.4391F, -0.7683F, -0.2923F, 0.0F, 0.0873F));
 
-		PartDefinition basin_r6 = Compsognathus.addOrReplaceChild("basin_r6", CubeListBuilder.create().texOffs(35, 55).mirror().addBox(-0.8399F, -0.1556F, 0.7871F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.25F)).mirror(false), PartPose.offsetAndRotation(0.1148F, 2.786F, -2.163F, -1.4748F, 0.0F, -0.0087F));
+		PartDefinition basin_r6 = Compsognathus.addOrReplaceChild("basin_r6", CubeListBuilder.create().texOffs(30, 44).mirror().addBox(-0.9432F, -2.9434F, -0.982F, 1.0F, 1.0F, 2.0F, new CubeDeformation(-0.148F)).mirror(false), PartPose.offsetAndRotation(-0.2568F, 1.4391F, -0.7683F, 0.0349F, 0.0F, 0.0873F));
 
-		PartDefinition basin_r7 = Compsognathus.addOrReplaceChild("basin_r7", CubeListBuilder.create().texOffs(56, 37).mirror().addBox(-0.8399F, -0.3946F, 0.7524F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.255F)).mirror(false), PartPose.offsetAndRotation(0.1148F, 2.786F, -2.163F, -1.3046F, 0.0F, -0.0087F));
+		PartDefinition basin_r7 = Compsognathus.addOrReplaceChild("basin_r7", CubeListBuilder.create().texOffs(56, 34).mirror().addBox(-0.9432F, -2.9984F, -0.1877F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.15F)).mirror(false), PartPose.offsetAndRotation(-0.2568F, 1.4391F, -0.7683F, 0.5411F, 0.0F, 0.0873F));
 
-		PartDefinition basin_r8 = Compsognathus.addOrReplaceChild("basin_r8", CubeListBuilder.create().texOffs(40, 55).mirror().addBox(-0.8399F, -1.1458F, 0.6753F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.25F)).mirror(false)
-				.texOffs(42, 48).mirror().addBox(-0.8399F, -0.6458F, 0.6753F, 1.0F, 2.0F, 1.0F, new CubeDeformation(-0.247F)).mirror(false), PartPose.offsetAndRotation(0.1148F, 2.786F, -2.163F, -1.5664F, 0.0F, -0.0087F));
+		PartDefinition basin_r8 = Compsognathus.addOrReplaceChild("basin_r8", CubeListBuilder.create().texOffs(22, 48).mirror().addBox(-0.5697F, -1.5539F, -1.1745F, 1.0F, 2.0F, 1.0F, new CubeDeformation(-0.15F)).mirror(false), PartPose.offsetAndRotation(-0.2568F, 1.4391F, -0.7683F, -1.5577F, 0.0F, -0.1047F));
 
-		PartDefinition basin_r9 = Compsognathus.addOrReplaceChild("basin_r9", CubeListBuilder.create().texOffs(37, 48).mirror().addBox(-0.8399F, -0.0477F, -0.8496F, 1.0F, 2.0F, 1.0F, new CubeDeformation(-0.25F)).mirror(false), PartPose.offsetAndRotation(0.1148F, 2.786F, -2.163F, -0.3447F, 0.0F, -0.0087F));
+		PartDefinition basin_r9 = Compsognathus.addOrReplaceChild("basin_r9", CubeListBuilder.create().texOffs(47, 16).mirror().addBox(-0.5697F, -2.6756F, -0.5129F, 1.0F, 2.0F, 1.0F, new CubeDeformation(-0.155F)).mirror(false), PartPose.offsetAndRotation(-0.2568F, 1.4391F, -0.7683F, -0.0393F, 0.0F, -0.1047F));
 
-		PartDefinition basin_r10 = Compsognathus.addOrReplaceChild("basin_r10", CubeListBuilder.create().texOffs(22, 48).mirror().addBox(-0.5F, -1.0804F, -0.0024F, 1.0F, 2.0F, 1.0F, new CubeDeformation(-0.15F)).mirror(false), PartPose.offsetAndRotation(-0.95F, 0.2958F, -0.3101F, -1.5577F, 0.0F, -0.192F));
+		PartDefinition basin_r10 = Compsognathus.addOrReplaceChild("basin_r10", CubeListBuilder.create().texOffs(38, 22).mirror().addBox(-0.5697F, -2.7098F, -0.6269F, 1.0F, 2.0F, 2.0F, new CubeDeformation(-0.147F)).mirror(false), PartPose.offsetAndRotation(-0.2568F, 1.4391F, -0.7683F, -0.3011F, 0.0F, -0.1047F));
 
-		PartDefinition basin_r11 = Compsognathus.addOrReplaceChild("basin_r11", CubeListBuilder.create().texOffs(32, 48).mirror().addBox(-0.5F, 1.4721F, -0.9425F, 1.0F, 2.0F, 1.0F, new CubeDeformation(-0.25F)).mirror(false), PartPose.offsetAndRotation(-0.925F, 0.6857F, -0.4352F, -0.5847F, 0.0F, -0.3142F));
+		PartDefinition basin_r11 = Compsognathus.addOrReplaceChild("basin_r11", CubeListBuilder.create().texOffs(57, 0).mirror().addBox(-0.4248F, 0.3777F, 0.051F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.25F)).mirror(false), PartPose.offsetAndRotation(-0.3568F, 1.4391F, -0.7683F, 0.9774F, 0.0F, -0.1047F));
 
-		PartDefinition basin_r12 = Compsognathus.addOrReplaceChild("basin_r12", CubeListBuilder.create().texOffs(27, 48).mirror().addBox(-0.5F, 0.0253F, -0.7897F, 1.0F, 2.0F, 1.0F, new CubeDeformation(-0.25F)).mirror(false), PartPose.offsetAndRotation(-0.925F, 0.6857F, -0.4352F, -0.6632F, 0.0F, -0.3142F));
+		PartDefinition basin_r12 = Compsognathus.addOrReplaceChild("basin_r12", CubeListBuilder.create().texOffs(56, 43).mirror().addBox(-0.4248F, 2.3164F, 0.2283F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.25F)).mirror(false)
+				.texOffs(50, 8).mirror().addBox(-0.4248F, 0.8164F, 0.2283F, 1.0F, 2.0F, 1.0F, new CubeDeformation(-0.25F)).mirror(false), PartPose.offsetAndRotation(-0.3568F, 1.4391F, -0.7683F, 0.8203F, 0.0F, -0.1047F));
 
-		PartDefinition basin_r13 = Compsognathus.addOrReplaceChild("basin_r13", CubeListBuilder.create().texOffs(47, 16).mirror().addBox(-0.5F, -1.4803F, -0.9244F, 1.0F, 2.0F, 1.0F, new CubeDeformation(-0.155F)).mirror(false), PartPose.offsetAndRotation(-0.95F, 0.2958F, -0.3101F, -0.0393F, 0.0F, -0.192F));
+		PartDefinition basin_r13 = Compsognathus.addOrReplaceChild("basin_r13", CubeListBuilder.create().texOffs(47, 48).mirror().addBox(-0.4248F, -1.1558F, 0.77F, 1.0F, 2.0F, 1.0F, new CubeDeformation(-0.248F)).mirror(false), PartPose.offsetAndRotation(-0.3568F, 1.4391F, -0.7683F, 0.2094F, 0.0F, -0.1047F));
 
-		PartDefinition basin_r14 = Compsognathus.addOrReplaceChild("basin_r14", CubeListBuilder.create().texOffs(38, 22).mirror().addBox(-0.5F, -1.4487F, -0.715F, 1.0F, 2.0F, 2.0F, new CubeDeformation(-0.147F)).mirror(false), PartPose.offsetAndRotation(-0.95F, 0.2958F, -0.3101F, -0.3011F, 0.0F, -0.192F));
+		PartDefinition basin_r14 = Compsognathus.addOrReplaceChild("basin_r14", CubeListBuilder.create().texOffs(56, 40).mirror().addBox(-0.493F, 0.0452F, -0.0904F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.255F)).mirror(false), PartPose.offsetAndRotation(-0.0249F, 3.8293F, -2.19F, -1.7715F, 0.0F, 0.0F));
 
-		PartDefinition basin_r15 = Compsognathus.addOrReplaceChild("basin_r15", CubeListBuilder.create().texOffs(44, 31).mirror().addBox(-0.475F, -0.8066F, -1.6497F, 1.0F, 1.0F, 2.0F, new CubeDeformation(-0.15F)).mirror(false), PartPose.offsetAndRotation(-1.1F, -0.3723F, 1.5214F, 0.488F, -0.0845F, -0.0644F));
+		PartDefinition basin_r15 = Compsognathus.addOrReplaceChild("basin_r15", CubeListBuilder.create().texOffs(35, 55).mirror().addBox(-0.493F, -0.2776F, -0.1986F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.25F)).mirror(false), PartPose.offsetAndRotation(-0.0249F, 3.8293F, -2.19F, -1.4748F, 0.0F, 0.0F));
 
-		PartDefinition basin_r16 = Compsognathus.addOrReplaceChild("basin_r16", CubeListBuilder.create().texOffs(60, 3).mirror().addBox(-0.5F, -0.8035F, -0.3665F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.15F)).mirror(false)
-				.texOffs(60, 3).addBox(1.7F, -0.8035F, -0.3665F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.15F)), PartPose.offsetAndRotation(-1.1F, -0.4532F, -1.2736F, -0.2923F, 0.0F, 0.0F));
+		PartDefinition basin_r16 = Compsognathus.addOrReplaceChild("basin_r16", CubeListBuilder.create().texOffs(56, 37).mirror().addBox(-0.493F, -0.6817F, -0.1984F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.255F)).mirror(false), PartPose.offsetAndRotation(-0.0249F, 3.8293F, -2.19F, -1.3046F, 0.0F, 0.0F));
 
-		PartDefinition basin_r17 = Compsognathus.addOrReplaceChild("basin_r17", CubeListBuilder.create().texOffs(30, 55).mirror().addBox(-0.5F, -0.5F, -0.425F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.155F)).mirror(false)
-				.texOffs(30, 55).addBox(1.7F, -0.5F, -0.425F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.155F)), PartPose.offsetAndRotation(-1.1F, -0.6532F, -1.7486F, 0.2313F, 0.0F, 0.0F));
+		PartDefinition basin_r17 = Compsognathus.addOrReplaceChild("basin_r17", CubeListBuilder.create().texOffs(40, 55).mirror().addBox(-0.493F, -1.177F, -0.3174F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.25F)).mirror(false)
+				.texOffs(42, 48).mirror().addBox(-0.493F, -0.677F, -0.3174F, 1.0F, 2.0F, 1.0F, new CubeDeformation(-0.247F)).mirror(false), PartPose.offsetAndRotation(-0.0249F, 3.8293F, -2.19F, -1.5664F, 0.0F, 0.0F));
 
-		PartDefinition basin_r18 = Compsognathus.addOrReplaceChild("basin_r18", CubeListBuilder.create().texOffs(56, 34).mirror().addBox(-0.5F, -0.2268F, -0.791F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.15F)).mirror(false)
-				.texOffs(56, 34).addBox(1.7F, -0.2268F, -0.791F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.15F)), PartPose.offsetAndRotation(-1.1F, -1.2473F, -1.6785F, 0.5411F, 0.0F, 0.0F));
+		PartDefinition basin_r18 = Compsognathus.addOrReplaceChild("basin_r18", CubeListBuilder.create().texOffs(37, 48).mirror().addBox(-0.493F, -0.9913F, -1.1598F, 1.0F, 2.0F, 1.0F, new CubeDeformation(-0.25F)).mirror(false), PartPose.offsetAndRotation(-0.0249F, 3.8293F, -2.19F, -0.3447F, 0.0F, 0.0F));
 
-		PartDefinition basin_r19 = Compsognathus.addOrReplaceChild("basin_r19", CubeListBuilder.create().texOffs(30, 44).mirror().addBox(-0.5F, -0.1604F, -1.8444F, 1.0F, 1.0F, 2.0F, new CubeDeformation(-0.148F)).mirror(false)
-				.texOffs(30, 44).addBox(1.7F, -0.1604F, -1.8444F, 1.0F, 1.0F, 2.0F, new CubeDeformation(-0.148F)), PartPose.offsetAndRotation(-1.1F, -1.3723F, -0.0035F, 0.0349F, 0.0F, 0.0F));
+		PartDefinition basin_r19 = Compsognathus.addOrReplaceChild("basin_r19", CubeListBuilder.create().texOffs(32, 48).mirror().addBox(-0.4174F, 0.9842F, -0.8661F, 1.0F, 2.0F, 1.0F, new CubeDeformation(-0.25F)).mirror(false), PartPose.offsetAndRotation(-0.4568F, 1.0391F, -0.7683F, -0.5847F, 0.0F, -0.1745F));
 
-		PartDefinition basin_r20 = Compsognathus.addOrReplaceChild("basin_r20", CubeListBuilder.create().texOffs(35, 31).mirror().addBox(-0.5F, -0.5F, -1.5F, 1.0F, 1.0F, 3.0F, new CubeDeformation(-0.15F)).mirror(false)
-				.texOffs(35, 31).addBox(1.7F, -0.5F, -1.5F, 1.0F, 1.0F, 3.0F, new CubeDeformation(-0.15F)), PartPose.offsetAndRotation(-1.1F, -0.7473F, 1.2465F, -0.2182F, 0.0F, 0.0F));
+		PartDefinition basin_r20 = Compsognathus.addOrReplaceChild("basin_r20", CubeListBuilder.create().texOffs(27, 48).mirror().addBox(-0.4174F, -0.4672F, -0.7518F, 1.0F, 2.0F, 1.0F, new CubeDeformation(-0.25F)).mirror(false), PartPose.offsetAndRotation(-0.4568F, 1.0391F, -0.7683F, -0.6632F, 0.0F, -0.1745F));
 
-		PartDefinition basin_r21 = Compsognathus.addOrReplaceChild("basin_r21", CubeListBuilder.create().texOffs(56, 40).addBox(-0.1601F, -0.1264F, 0.888F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.255F)), PartPose.offsetAndRotation(-0.1148F, 2.786F, -2.163F, -1.7715F, 0.0F, 0.0087F));
+		PartDefinition basin_r21 = Compsognathus.addOrReplaceChild("basin_r21", CubeListBuilder.create().texOffs(60, 3).addBox(-0.0568F, -2.47F, -1.3958F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.15F)), PartPose.offsetAndRotation(0.2568F, 1.4391F, -0.7683F, -0.2923F, 0.0F, -0.0873F));
 
-		PartDefinition basin_r22 = Compsognathus.addOrReplaceChild("basin_r22", CubeListBuilder.create().texOffs(35, 55).addBox(-0.1601F, -0.1556F, 0.7871F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.25F)), PartPose.offsetAndRotation(-0.1148F, 2.786F, -2.163F, -1.4748F, 0.0F, 0.0087F));
+		PartDefinition basin_r22 = Compsognathus.addOrReplaceChild("basin_r22", CubeListBuilder.create().texOffs(30, 55).addBox(-0.0568F, -2.7614F, -0.8997F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.155F)), PartPose.offsetAndRotation(0.2568F, 1.4391F, -0.7683F, 0.2313F, 0.0F, -0.0873F));
 
-		PartDefinition basin_r23 = Compsognathus.addOrReplaceChild("basin_r23", CubeListBuilder.create().texOffs(56, 37).addBox(-0.1601F, -0.3946F, 0.7524F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.255F)), PartPose.offsetAndRotation(-0.1148F, 2.786F, -2.163F, -1.3046F, 0.0F, 0.0087F));
+		PartDefinition basin_r23 = Compsognathus.addOrReplaceChild("basin_r23", CubeListBuilder.create().texOffs(56, 34).addBox(-0.0568F, -2.9984F, -0.1877F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.15F)), PartPose.offsetAndRotation(0.2568F, 1.4391F, -0.7683F, 0.5411F, 0.0F, -0.0873F));
 
-		PartDefinition basin_r24 = Compsognathus.addOrReplaceChild("basin_r24", CubeListBuilder.create().texOffs(40, 55).addBox(-0.1601F, -1.1458F, 0.6753F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.25F))
-				.texOffs(42, 48).addBox(-0.1601F, -0.6458F, 0.6753F, 1.0F, 2.0F, 1.0F, new CubeDeformation(-0.247F)), PartPose.offsetAndRotation(-0.1148F, 2.786F, -2.163F, -1.5664F, 0.0F, 0.0087F));
+		PartDefinition basin_r24 = Compsognathus.addOrReplaceChild("basin_r24", CubeListBuilder.create().texOffs(30, 44).addBox(-0.0568F, -2.9434F, -0.982F, 1.0F, 1.0F, 2.0F, new CubeDeformation(-0.148F)), PartPose.offsetAndRotation(0.2568F, 1.4391F, -0.7683F, 0.0349F, 0.0F, -0.0873F));
 
-		PartDefinition basin_r25 = Compsognathus.addOrReplaceChild("basin_r25", CubeListBuilder.create().texOffs(37, 48).addBox(-0.1601F, -0.0477F, -0.8496F, 1.0F, 2.0F, 1.0F, new CubeDeformation(-0.25F)), PartPose.offsetAndRotation(-0.1148F, 2.786F, -2.163F, -0.3447F, 0.0F, 0.0087F));
+		PartDefinition basin_r25 = Compsognathus.addOrReplaceChild("basin_r25", CubeListBuilder.create().texOffs(56, 40).addBox(-0.507F, 0.0452F, -0.0904F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.255F)), PartPose.offsetAndRotation(0.0249F, 3.8293F, -2.19F, -1.7715F, 0.0F, 0.0F));
 
-		PartDefinition basin_r26 = Compsognathus.addOrReplaceChild("basin_r26", CubeListBuilder.create().texOffs(32, 48).addBox(-0.5F, 1.4721F, -0.9425F, 1.0F, 2.0F, 1.0F, new CubeDeformation(-0.25F)), PartPose.offsetAndRotation(0.925F, 0.6857F, -0.4352F, -0.5847F, 0.0F, 0.3142F));
+		PartDefinition basin_r26 = Compsognathus.addOrReplaceChild("basin_r26", CubeListBuilder.create().texOffs(35, 55).addBox(-0.507F, -0.2776F, -0.1986F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.25F)), PartPose.offsetAndRotation(0.0249F, 3.8293F, -2.19F, -1.4748F, 0.0F, 0.0F));
 
-		PartDefinition basin_r27 = Compsognathus.addOrReplaceChild("basin_r27", CubeListBuilder.create().texOffs(57, 0).addBox(-0.5F, 0.5361F, -0.7793F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.25F)), PartPose.offsetAndRotation(0.925F, 0.6857F, -0.4352F, 0.9774F, 0.0F, 0.3142F));
+		PartDefinition basin_r27 = Compsognathus.addOrReplaceChild("basin_r27", CubeListBuilder.create().texOffs(56, 37).addBox(-0.507F, -0.6817F, -0.1984F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.255F)), PartPose.offsetAndRotation(0.0249F, 3.8293F, -2.19F, -1.3046F, 0.0F, 0.0F));
 
-		PartDefinition basin_r28 = Compsognathus.addOrReplaceChild("basin_r28", CubeListBuilder.create().texOffs(56, 43).addBox(-0.5F, 2.6027F, -0.5671F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.25F))
-				.texOffs(50, 8).addBox(-0.5F, 1.1027F, -0.5671F, 1.0F, 2.0F, 1.0F, new CubeDeformation(-0.25F)), PartPose.offsetAndRotation(0.925F, 0.6857F, -0.4352F, 0.8203F, 0.0F, 0.3142F));
+		PartDefinition basin_r28 = Compsognathus.addOrReplaceChild("basin_r28", CubeListBuilder.create().texOffs(40, 55).addBox(-0.507F, -1.177F, -0.3174F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.25F))
+				.texOffs(42, 48).addBox(-0.507F, -0.677F, -0.3174F, 1.0F, 2.0F, 1.0F, new CubeDeformation(-0.247F)), PartPose.offsetAndRotation(0.0249F, 3.8293F, -2.19F, -1.5664F, 0.0F, 0.0F));
 
-		PartDefinition basin_r29 = Compsognathus.addOrReplaceChild("basin_r29", CubeListBuilder.create().texOffs(47, 48).addBox(-0.5F, -0.465F, 0.2827F, 1.0F, 2.0F, 1.0F, new CubeDeformation(-0.248F)), PartPose.offsetAndRotation(0.925F, 0.6857F, -0.4352F, 0.2094F, 0.0F, 0.3142F));
+		PartDefinition basin_r29 = Compsognathus.addOrReplaceChild("basin_r29", CubeListBuilder.create().texOffs(37, 48).addBox(-0.507F, -0.9913F, -1.1598F, 1.0F, 2.0F, 1.0F, new CubeDeformation(-0.25F)), PartPose.offsetAndRotation(0.0249F, 3.8293F, -2.19F, -0.3447F, 0.0F, 0.0F));
 
-		PartDefinition basin_r30 = Compsognathus.addOrReplaceChild("basin_r30", CubeListBuilder.create().texOffs(27, 48).addBox(-0.5F, 0.0253F, -0.7897F, 1.0F, 2.0F, 1.0F, new CubeDeformation(-0.25F)), PartPose.offsetAndRotation(0.925F, 0.6857F, -0.4352F, -0.6632F, 0.0F, 0.3142F));
+		PartDefinition basin_r30 = Compsognathus.addOrReplaceChild("basin_r30", CubeListBuilder.create().texOffs(32, 48).addBox(-0.5826F, 0.9842F, -0.8661F, 1.0F, 2.0F, 1.0F, new CubeDeformation(-0.25F)), PartPose.offsetAndRotation(0.4568F, 1.0391F, -0.7683F, -0.5847F, 0.0F, 0.1745F));
 
-		PartDefinition basin_r31 = Compsognathus.addOrReplaceChild("basin_r31", CubeListBuilder.create().texOffs(22, 48).addBox(-0.5F, -1.0804F, -0.0024F, 1.0F, 2.0F, 1.0F, new CubeDeformation(-0.15F)), PartPose.offsetAndRotation(0.95F, 0.2958F, -0.3101F, -1.5577F, 0.0F, 0.192F));
+		PartDefinition basin_r31 = Compsognathus.addOrReplaceChild("basin_r31", CubeListBuilder.create().texOffs(57, 0).addBox(-0.5752F, 0.3777F, 0.051F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.25F)), PartPose.offsetAndRotation(0.3568F, 1.4391F, -0.7683F, 0.9774F, 0.0F, 0.1047F));
 
-		PartDefinition basin_r32 = Compsognathus.addOrReplaceChild("basin_r32", CubeListBuilder.create().texOffs(47, 16).addBox(-0.5F, -1.4803F, -0.9244F, 1.0F, 2.0F, 1.0F, new CubeDeformation(-0.155F)), PartPose.offsetAndRotation(0.95F, 0.2958F, -0.3101F, -0.0393F, 0.0F, 0.192F));
+		PartDefinition basin_r32 = Compsognathus.addOrReplaceChild("basin_r32", CubeListBuilder.create().texOffs(56, 43).addBox(-0.5752F, 2.3164F, 0.2283F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.25F))
+				.texOffs(50, 8).addBox(-0.5752F, 0.8164F, 0.2283F, 1.0F, 2.0F, 1.0F, new CubeDeformation(-0.25F)), PartPose.offsetAndRotation(0.3568F, 1.4391F, -0.7683F, 0.8203F, 0.0F, 0.1047F));
 
-		PartDefinition basin_r33 = Compsognathus.addOrReplaceChild("basin_r33", CubeListBuilder.create().texOffs(38, 22).addBox(-0.5F, -1.4487F, -0.715F, 1.0F, 2.0F, 2.0F, new CubeDeformation(-0.147F)), PartPose.offsetAndRotation(0.95F, 0.2958F, -0.3101F, -0.3011F, 0.0F, 0.192F));
+		PartDefinition basin_r33 = Compsognathus.addOrReplaceChild("basin_r33", CubeListBuilder.create().texOffs(47, 48).addBox(-0.5752F, -1.1558F, 0.77F, 1.0F, 2.0F, 1.0F, new CubeDeformation(-0.248F)), PartPose.offsetAndRotation(0.3568F, 1.4391F, -0.7683F, 0.2094F, 0.0F, 0.1047F));
 
-		PartDefinition basin_r34 = Compsognathus.addOrReplaceChild("basin_r34", CubeListBuilder.create().texOffs(44, 31).addBox(-0.525F, -0.8066F, -1.6497F, 1.0F, 1.0F, 2.0F, new CubeDeformation(-0.15F)), PartPose.offsetAndRotation(1.1F, -0.3723F, 1.5214F, 0.488F, 0.0845F, 0.0644F));
+		PartDefinition basin_r34 = Compsognathus.addOrReplaceChild("basin_r34", CubeListBuilder.create().texOffs(27, 48).addBox(-0.5826F, -0.4672F, -0.7518F, 1.0F, 2.0F, 1.0F, new CubeDeformation(-0.25F)), PartPose.offsetAndRotation(0.4568F, 1.0391F, -0.7683F, -0.6632F, 0.0F, 0.1745F));
 
-		PartDefinition leftLeg1 = Compsognathus.addOrReplaceChild("leftLeg1", CubeListBuilder.create(), PartPose.offsetAndRotation(1.6F, -0.0215F, 0.0481F, -0.851F, 0.0987F, 0.0862F));
+		PartDefinition basin_r35 = Compsognathus.addOrReplaceChild("basin_r35", CubeListBuilder.create().texOffs(22, 48).addBox(-0.4303F, -1.5539F, -1.1745F, 1.0F, 2.0F, 1.0F, new CubeDeformation(-0.15F)), PartPose.offsetAndRotation(0.2568F, 1.4391F, -0.7683F, -1.5577F, 0.0F, 0.1047F));
+
+		PartDefinition basin_r36 = Compsognathus.addOrReplaceChild("basin_r36", CubeListBuilder.create().texOffs(47, 16).addBox(-0.4303F, -2.6756F, -0.5129F, 1.0F, 2.0F, 1.0F, new CubeDeformation(-0.155F)), PartPose.offsetAndRotation(0.2568F, 1.4391F, -0.7683F, -0.0393F, 0.0F, 0.1047F));
+
+		PartDefinition basin_r37 = Compsognathus.addOrReplaceChild("basin_r37", CubeListBuilder.create().texOffs(38, 22).addBox(-0.4303F, -2.7098F, -0.6269F, 1.0F, 2.0F, 2.0F, new CubeDeformation(-0.147F)), PartPose.offsetAndRotation(0.2568F, 1.4391F, -0.7683F, -0.3011F, 0.0F, 0.1047F));
+
+		PartDefinition basin_r38 = Compsognathus.addOrReplaceChild("basin_r38", CubeListBuilder.create().texOffs(44, 31).addBox(-0.3936F, -1.346F, 1.2508F, 1.0F, 1.0F, 2.0F, new CubeDeformation(-0.15F)), PartPose.offsetAndRotation(0.2568F, 1.4391F, -0.7683F, 0.488F, 0.0845F, -0.0229F));
+
+		PartDefinition basin_r39 = Compsognathus.addOrReplaceChild("basin_r39", CubeListBuilder.create().texOffs(35, 31).addBox(-0.0568F, -3.0707F, -0.0063F, 1.0F, 1.0F, 3.0F, new CubeDeformation(-0.15F)), PartPose.offsetAndRotation(0.2568F, 1.4391F, -0.7683F, -0.2182F, 0.0F, -0.0873F));
+
+		PartDefinition leftLeg1 = Compsognathus.addOrReplaceChild("leftLeg1", CubeListBuilder.create(), PartPose.offsetAndRotation(1.1043F, -0.0644F, 0.0973F, -0.851F, 0.0F, 0.0F));
 
 		PartDefinition cube_r1 = leftLeg1.addOrReplaceChild("cube_r1", CubeListBuilder.create().texOffs(17, 45).addBox(-0.5F, -1.0F, 0.0F, 1.0F, 3.0F, 1.0F, new CubeDeformation(-0.15F)), PartPose.offsetAndRotation(0.0F, 0.5045F, -0.5429F, -0.0436F, 0.0F, 0.0F));
 
@@ -187,11 +190,11 @@ public class CompsognathusFossilModel extends SkullModelBase {
 		PartDefinition leftLeg3 = leftLeg2.addOrReplaceChild("leftLeg3", CubeListBuilder.create().texOffs(7, 41).addBox(-0.2F, -0.2066F, -0.6088F, 1.0F, 4.0F, 1.0F, new CubeDeformation(-0.15F))
 				.texOffs(12, 41).addBox(-0.6F, -0.2066F, -0.6088F, 1.0F, 4.0F, 1.0F, new CubeDeformation(-0.154F)), PartPose.offsetAndRotation(0.0F, 6.4235F, 0.5195F, -1.6144F, 0.0F, 0.0F));
 
-		PartDefinition leftFoot = leftLeg3.addOrReplaceChild("leftFoot", CubeListBuilder.create().texOffs(9, 37).addBox(-0.9F, -0.5F, -1.5F, 2.0F, 1.0F, 2.0F, new CubeDeformation(-0.15F)), PartPose.offsetAndRotation(0.0F, 3.7934F, -0.3088F, 1.7439F, 0.0227F, -0.1289F));
+		PartDefinition leftFoot = leftLeg3.addOrReplaceChild("leftFoot", CubeListBuilder.create().texOffs(9, 37).addBox(-0.9F, -0.5F, -1.5F, 2.0F, 1.0F, 2.0F, new CubeDeformation(-0.15F)), PartPose.offsetAndRotation(0.0F, 3.7934F, -0.3088F, 1.7439F, 0.0227F, 0.0F));
 
 		PartDefinition leftToes = leftFoot.addOrReplaceChild("leftToes", CubeListBuilder.create().texOffs(36, 0).addBox(-1.4F, -0.5F, -1.8F, 2.0F, 1.0F, 2.0F, new CubeDeformation(-0.15F)), PartPose.offsetAndRotation(0.5F, 0.0F, -1.4F, 0.6109F, 0.0F, 0.0F));
 
-		PartDefinition rightLeg1 = Compsognathus.addOrReplaceChild("rightLeg1", CubeListBuilder.create(), PartPose.offsetAndRotation(-1.6F, -0.0215F, 0.0481F, -0.1558F, -0.0204F, -0.1293F));
+		PartDefinition rightLeg1 = Compsognathus.addOrReplaceChild("rightLeg1", CubeListBuilder.create(), PartPose.offsetAndRotation(-1.1043F, -0.086F, 0.0583F, -0.1558F, 0.0F, 0.0F));
 
 		PartDefinition cube_r7 = rightLeg1.addOrReplaceChild("cube_r7", CubeListBuilder.create().texOffs(17, 45).mirror().addBox(-0.5F, -1.0F, 0.0F, 1.0F, 3.0F, 1.0F, new CubeDeformation(-0.15F)).mirror(false), PartPose.offsetAndRotation(0.0F, 0.5045F, -0.5429F, -0.0436F, 0.0F, 0.0F));
 
@@ -212,7 +215,7 @@ public class CompsognathusFossilModel extends SkullModelBase {
 		PartDefinition rightLeg3 = rightLeg2.addOrReplaceChild("rightLeg3", CubeListBuilder.create().texOffs(7, 41).mirror().addBox(-0.8F, -0.2066F, -0.6088F, 1.0F, 4.0F, 1.0F, new CubeDeformation(-0.15F)).mirror(false)
 				.texOffs(12, 41).mirror().addBox(-0.4F, -0.2066F, -0.6088F, 1.0F, 4.0F, 1.0F, new CubeDeformation(-0.154F)).mirror(false), PartPose.offsetAndRotation(0.0F, 6.4235F, 0.5195F, -0.6981F, 0.0F, 0.0F));
 
-		PartDefinition rightFoot = rightLeg3.addOrReplaceChild("rightFoot", CubeListBuilder.create().texOffs(9, 37).mirror().addBox(-1.1F, -0.5F, -1.5F, 2.0F, 1.0F, 2.0F, new CubeDeformation(-0.15F)).mirror(false), PartPose.offsetAndRotation(0.0F, 3.7934F, -0.3088F, 0.3894F, 0.0308F, 0.1542F));
+		PartDefinition rightFoot = rightLeg3.addOrReplaceChild("rightFoot", CubeListBuilder.create().texOffs(9, 37).mirror().addBox(-1.1F, -0.5F, -1.5F, 2.0F, 1.0F, 2.0F, new CubeDeformation(-0.15F)).mirror(false), PartPose.offsetAndRotation(0.0F, 3.7934F, -0.3088F, 0.3894F, 0.0308F, 0.0F));
 
 		PartDefinition rightToes = rightFoot.addOrReplaceChild("rightToes", CubeListBuilder.create().texOffs(36, 0).mirror().addBox(-0.6F, -0.5F, -1.8F, 2.0F, 1.0F, 2.0F, new CubeDeformation(-0.15F)).mirror(false), PartPose.offsetAndRotation(-0.5F, 0.0F, -1.4F, -0.3927F, 0.0F, 0.0F));
 

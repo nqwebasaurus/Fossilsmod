@@ -83,135 +83,134 @@ public class MonolophosaurusFossilModel extends SkullModelBase {
 
 		PartDefinition Monolophosaurus = fossil.addOrReplaceChild("Monolophosaurus", CubeListBuilder.create(), PartPose.offsetAndRotation(0.0F, -21.6122F, 4.9009F, -0.0087F, 0.0F, 0.0F));
 
-		PartDefinition Basin_r1 = Monolophosaurus.addOrReplaceChild("Basin_r1", CubeListBuilder.create().texOffs(70, 14).mirror().addBox(-0.0836F, -0.3517F, -1.9598F, 1.0F, 1.0F, 2.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offsetAndRotation(-2.4288F, 2.0456F, 1.1053F, 2.0271F, -0.0204F, -0.5017F));
+		PartDefinition Basin_r1 = Monolophosaurus.addOrReplaceChild("Basin_r1", CubeListBuilder.create().texOffs(61, 27).mirror().addBox(-0.8917F, -3.685F, 2.5402F, 1.0F, 1.0F, 3.0F, new CubeDeformation(0.007F)).mirror(false)
+				.texOffs(7, 74).mirror().addBox(-0.8917F, -4.285F, 2.5402F, 1.0F, 1.0F, 2.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offsetAndRotation(-0.7179F, 2.9725F, -0.2918F, 0.0175F, -0.1396F, 0.1745F));
 
-		PartDefinition Basin_r2 = Monolophosaurus.addOrReplaceChild("Basin_r2", CubeListBuilder.create().texOffs(9, 70).mirror().addBox(-0.0598F, -1.0388F, -3.6906F, 1.0F, 1.0F, 2.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offsetAndRotation(-2.4288F, 2.0456F, 1.1053F, 2.3753F, -0.014F, -0.488F));
+		PartDefinition Basin_r2 = Monolophosaurus.addOrReplaceChild("Basin_r2", CubeListBuilder.create().texOffs(84, 77).mirror().addBox(-1.0509F, -4.1997F, -0.5345F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offsetAndRotation(-0.7179F, 2.9725F, -0.2918F, -0.637F, 0.0F, 0.0873F));
 
-		PartDefinition Basin_r3 = Monolophosaurus.addOrReplaceChild("Basin_r3", CubeListBuilder.create().texOffs(70, 10).mirror().addBox(0.0124F, -0.7848F, -1.8449F, 1.0F, 1.0F, 2.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offsetAndRotation(-1.2038F, 4.5706F, 3.5803F, 1.9419F, -0.0397F, -0.2196F));
+		PartDefinition Basin_r3 = Monolophosaurus.addOrReplaceChild("Basin_r3", CubeListBuilder.create().texOffs(84, 5).mirror().addBox(-0.8917F, -5.9955F, 0.8602F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.003F)).mirror(false), PartPose.offsetAndRotation(-0.7179F, 2.9725F, -0.2918F, -0.3491F, -0.1396F, 0.1745F));
 
-		PartDefinition Basin_r4 = Monolophosaurus.addOrReplaceChild("Basin_r4", CubeListBuilder.create().texOffs(75, 67).mirror().addBox(0.0124F, -0.7868F, -2.1247F, 1.0F, 1.0F, 2.0F, new CubeDeformation(0.005F)).mirror(false), PartPose.offsetAndRotation(-1.2038F, 4.5706F, 3.5803F, 2.0728F, -0.0397F, -0.2196F));
+		PartDefinition Basin_r4 = Monolophosaurus.addOrReplaceChild("Basin_r4", CubeListBuilder.create().texOffs(14, 76).mirror().addBox(-0.8917F, -6.0687F, 1.6002F, 1.0F, 1.0F, 2.0F, new CubeDeformation(-0.003F)).mirror(false), PartPose.offsetAndRotation(-0.7179F, 2.9725F, -0.2918F, -0.3927F, -0.1396F, 0.1745F));
 
-		PartDefinition Basin_r5 = Monolophosaurus.addOrReplaceChild("Basin_r5", CubeListBuilder.create().texOffs(89, 24).mirror().addBox(0.0124F, -0.0717F, -2.501F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.006F)).mirror(false), PartPose.offsetAndRotation(-1.2038F, 4.5706F, 3.5803F, 1.5492F, -0.0397F, -0.2196F));
+		PartDefinition Basin_r5 = Monolophosaurus.addOrReplaceChild("Basin_r5", CubeListBuilder.create().texOffs(39, 69).mirror().addBox(-1.2821F, -5.8036F, -0.1992F, 1.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offsetAndRotation(-0.7179F, 2.9725F, -0.2918F, -0.2094F, 0.0F, 0.1745F));
 
-		PartDefinition Basin_r6 = Monolophosaurus.addOrReplaceChild("Basin_r6", CubeListBuilder.create().texOffs(42, 11).mirror().addBox(0.0124F, 0.7246F, -2.0993F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.008F)).mirror(false), PartPose.offsetAndRotation(-1.2038F, 4.5706F, 3.5803F, 1.2437F, -0.0397F, -0.2196F));
+		PartDefinition Basin_r6 = Monolophosaurus.addOrReplaceChild("Basin_r6", CubeListBuilder.create().texOffs(46, 69).mirror().addBox(-1.2821F, -5.7125F, -0.9487F, 1.0F, 2.0F, 2.0F, new CubeDeformation(-0.006F)).mirror(false), PartPose.offsetAndRotation(-0.7179F, 2.9725F, -0.2918F, 0.0087F, 0.0F, 0.1745F));
 
-		PartDefinition Basin_r7 = Monolophosaurus.addOrReplaceChild("Basin_r7", CubeListBuilder.create().texOffs(89, 21).mirror().addBox(-0.8713F, 0.2113F, -1.895F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.0F)).mirror(false)
-				.texOffs(85, 42).mirror().addBox(-0.8713F, -0.4887F, -2.595F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.005F)).mirror(false), PartPose.offsetAndRotation(-0.0201F, 6.4108F, -3.4511F, 0.8895F, 0.0151F, -0.0423F));
+		PartDefinition Basin_r7 = Monolophosaurus.addOrReplaceChild("Basin_r7", CubeListBuilder.create().texOffs(87, 36).mirror().addBox(-1.2723F, -5.9959F, -0.4592F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.005F)).mirror(false), PartPose.offsetAndRotation(-0.7179F, 2.9725F, -0.2918F, 0.4803F, 0.2262F, 0.2214F));
 
-		PartDefinition Basin_r8 = Monolophosaurus.addOrReplaceChild("Basin_r8", CubeListBuilder.create().texOffs(77, 82).mirror().addBox(-0.8713F, -1.3272F, -2.2483F, 1.0F, 2.0F, 1.0F, new CubeDeformation(0.012F)).mirror(false), PartPose.offsetAndRotation(-0.0201F, 6.4108F, -3.4511F, 1.544F, 0.0151F, -0.0423F));
+		PartDefinition Basin_r8 = Monolophosaurus.addOrReplaceChild("Basin_r8", CubeListBuilder.create().texOffs(84, 8).mirror().addBox(-1.2723F, -5.7301F, -1.7575F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offsetAndRotation(-0.7179F, 2.9725F, -0.2918F, 0.0876F, 0.2262F, 0.2214F));
 
-		PartDefinition Basin_r9 = Monolophosaurus.addOrReplaceChild("Basin_r9", CubeListBuilder.create().texOffs(70, 18).mirror().addBox(-0.8713F, -0.9659F, -2.1352F, 1.0F, 1.0F, 2.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offsetAndRotation(-0.0201F, 6.4108F, -3.4511F, 1.1949F, 0.0151F, -0.0423F));
+		PartDefinition Basin_r9 = Monolophosaurus.addOrReplaceChild("Basin_r9", CubeListBuilder.create().texOffs(89, 18).mirror().addBox(-1.2723F, -1.9688F, 4.1575F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.005F)).mirror(false)
+				.texOffs(82, 68).mirror().addBox(-1.2723F, -1.2688F, 4.1575F, 1.0F, 2.0F, 1.0F, new CubeDeformation(0.007F)).mirror(false)
+				.texOffs(37, 78).mirror().addBox(-1.2723F, -1.9688F, 3.6575F, 1.0F, 3.0F, 1.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offsetAndRotation(-0.7179F, 2.9725F, -0.2918F, 1.9202F, 0.2262F, 0.2214F));
 
-		PartDefinition Basin_r10 = Monolophosaurus.addOrReplaceChild("Basin_r10", CubeListBuilder.create().texOffs(70, 22).mirror().addBox(-0.8713F, -0.9585F, -1.9278F, 1.0F, 1.0F, 2.0F, new CubeDeformation(0.005F)).mirror(false), PartPose.offsetAndRotation(-0.0201F, 6.4108F, -3.4511F, 1.4131F, 0.0151F, -0.0423F));
+		PartDefinition Basin_r10 = Monolophosaurus.addOrReplaceChild("Basin_r10", CubeListBuilder.create().texOffs(89, 15).mirror().addBox(-1.2723F, -5.0441F, 2.2598F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offsetAndRotation(-0.7179F, 2.9725F, -0.2918F, 1.1348F, 0.2262F, 0.2214F));
 
-		PartDefinition Basin_r11 = Monolophosaurus.addOrReplaceChild("Basin_r11", CubeListBuilder.create().texOffs(43, 60).mirror().addBox(0.0008F, -1.052F, -2.9145F, 1.0F, 1.0F, 3.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offsetAndRotation(-1.5201F, 4.1108F, -2.4511F, 1.2385F, 0.0151F, -0.2605F));
+		PartDefinition Basin_r11 = Monolophosaurus.addOrReplaceChild("Basin_r11", CubeListBuilder.create().texOffs(27, 60).mirror().addBox(-1.0509F, -4.0713F, -1.179F, 1.0F, 1.0F, 3.0F, new CubeDeformation(-0.007F)).mirror(false), PartPose.offsetAndRotation(-0.7179F, 2.9725F, -0.2918F, -0.1134F, 0.0F, 0.0873F));
 
-		PartDefinition Basin_r12 = Monolophosaurus.addOrReplaceChild("Basin_r12", CubeListBuilder.create().texOffs(75, 63).mirror().addBox(0.0155F, -0.7131F, -1.9184F, 1.0F, 1.0F, 2.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offsetAndRotation(-2.4201F, 2.6108F, -1.8511F, 1.0647F, 0.0F, -0.5236F));
+		PartDefinition Basin_r12 = Monolophosaurus.addOrReplaceChild("Basin_r12", CubeListBuilder.create().texOffs(39, 52).mirror().addBox(-1.2821F, -4.701F, -1.8064F, 1.0F, 1.0F, 4.0F, new CubeDeformation(0.003F)).mirror(false), PartPose.offsetAndRotation(-0.7179F, 2.9725F, -0.2918F, -0.1134F, 0.0F, 0.1745F));
 
-		PartDefinition Basin_r13 = Monolophosaurus.addOrReplaceChild("Basin_r13", CubeListBuilder.create().texOffs(0, 76).mirror().addBox(-0.5F, -0.3F, -0.5F, 1.0F, 1.0F, 2.0F, new CubeDeformation(0.014F)).mirror(false), PartPose.offsetAndRotation(-2.1201F, 2.4108F, -1.5511F, -0.0262F, 0.0F, -0.0873F));
+		PartDefinition Basin_r13 = Monolophosaurus.addOrReplaceChild("Basin_r13", CubeListBuilder.create().texOffs(55, 45).mirror().addBox(-1.0509F, -2.7539F, -3.2425F, 1.0F, 3.0F, 3.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offsetAndRotation(-0.7179F, 2.9725F, -0.2918F, -1.0297F, 0.0F, 0.0873F));
 
-		PartDefinition Basin_r14 = Monolophosaurus.addOrReplaceChild("Basin_r14", CubeListBuilder.create().texOffs(53, 69).mirror().addBox(-0.683F, 0.006F, 0.0357F, 1.0F, 2.0F, 2.0F, new CubeDeformation(0.006F)).mirror(false), PartPose.offsetAndRotation(-2.1185F, 0.3285F, -2.186F, -0.2007F, 0.0F, -0.0873F));
+		PartDefinition Basin_r14 = Monolophosaurus.addOrReplaceChild("Basin_r14", CubeListBuilder.create().texOffs(53, 69).mirror().addBox(-1.0509F, -2.2487F, -2.356F, 1.0F, 2.0F, 2.0F, new CubeDeformation(0.006F)).mirror(false), PartPose.offsetAndRotation(-0.7179F, 2.9725F, -0.2918F, -0.2007F, 0.0F, 0.0873F));
 
-		PartDefinition Basin_r15 = Monolophosaurus.addOrReplaceChild("Basin_r15", CubeListBuilder.create().texOffs(84, 77).mirror().addBox(-0.5F, -1.9F, 0.0F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offsetAndRotation(-2.2555F, 0.8622F, 0.6464F, -0.637F, 0.0F, -0.0873F));
+		PartDefinition Basin_r15 = Monolophosaurus.addOrReplaceChild("Basin_r15", CubeListBuilder.create().texOffs(70, 10).mirror().addBox(0.1248F, 2.2321F, -4.7657F, 1.0F, 1.0F, 2.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offsetAndRotation(-0.7179F, 2.9725F, -0.2918F, 1.9419F, -0.0397F, -0.0451F));
 
-		PartDefinition Basin_r16 = Monolophosaurus.addOrReplaceChild("Basin_r16", CubeListBuilder.create().texOffs(55, 45).mirror().addBox(-0.5F, -1.6F, -0.5F, 1.0F, 3.0F, 3.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offsetAndRotation(-2.3234F, 0.0867F, -0.7153F, -1.0297F, 0.0F, -0.0873F));
+		PartDefinition Basin_r16 = Monolophosaurus.addOrReplaceChild("Basin_r16", CubeListBuilder.create().texOffs(89, 24).mirror().addBox(0.1248F, 3.8334F, -4.0449F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.006F)).mirror(false), PartPose.offsetAndRotation(-0.7179F, 2.9725F, -0.2918F, 1.5492F, -0.0397F, -0.0451F));
 
-		PartDefinition Basin_r17 = Monolophosaurus.addOrReplaceChild("Basin_r17", CubeListBuilder.create().texOffs(27, 60).mirror().addBox(-0.5F, -0.1F, -1.7F, 1.0F, 1.0F, 3.0F, new CubeDeformation(-0.007F)).mirror(false), PartPose.offsetAndRotation(-2.4055F, -0.8514F, 0.6753F, -0.1134F, 0.0F, -0.0873F));
+		PartDefinition Basin_r17 = Monolophosaurus.addOrReplaceChild("Basin_r17", CubeListBuilder.create().texOffs(42, 11).mirror().addBox(0.1248F, 4.9132F, -2.3975F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.008F)).mirror(false), PartPose.offsetAndRotation(-0.7179F, 2.9725F, -0.2918F, 1.2437F, -0.0397F, -0.0451F));
 
-		PartDefinition Basin_r18 = Monolophosaurus.addOrReplaceChild("Basin_r18", CubeListBuilder.create().texOffs(82, 68).mirror().addBox(-0.5F, 0.7F, -0.3F, 1.0F, 2.0F, 1.0F, new CubeDeformation(0.007F)).mirror(false)
-				.texOffs(37, 78).mirror().addBox(-0.5F, 0.0F, -0.8F, 1.0F, 3.0F, 1.0F, new CubeDeformation(0.0F)).mirror(false)
-				.texOffs(89, 18).mirror().addBox(-0.5F, 0.0F, -0.3F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.005F)).mirror(false), PartPose.offsetAndRotation(-2.8614F, -0.6085F, -3.4085F, 1.9202F, 0.2262F, 0.0469F));
+		PartDefinition Basin_r18 = Monolophosaurus.addOrReplaceChild("Basin_r18", CubeListBuilder.create().texOffs(75, 67).mirror().addBox(0.1248F, 1.8231F, -5.4143F, 1.0F, 1.0F, 2.0F, new CubeDeformation(0.005F)).mirror(false), PartPose.offsetAndRotation(-0.7179F, 2.9725F, -0.2918F, 2.0728F, -0.0397F, -0.0451F));
 
-		PartDefinition Basin_r19 = Monolophosaurus.addOrReplaceChild("Basin_r19", CubeListBuilder.create().texOffs(89, 15).mirror().addBox(-0.5F, -0.1F, -0.325F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offsetAndRotation(-2.8216F, -1.5244F, -3.4223F, 1.1348F, 0.2262F, 0.0469F));
+		PartDefinition Basin_r19 = Monolophosaurus.addOrReplaceChild("Basin_r19", CubeListBuilder.create().texOffs(9, 70).mirror().addBox(-0.4103F, 0.8312F, -3.8369F, 1.0F, 1.0F, 2.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offsetAndRotation(-0.7179F, 2.9725F, -0.2918F, 2.3753F, -0.014F, -0.3134F));
 
-		PartDefinition Basin_r20 = Monolophosaurus.addOrReplaceChild("Basin_r20", CubeListBuilder.create().texOffs(87, 36).mirror().addBox(-0.5F, -0.3F, -0.375F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.005F)).mirror(false), PartPose.offsetAndRotation(-2.6412F, -2.0982F, -2.7562F, 0.4803F, 0.2262F, 0.0469F));
+		PartDefinition Basin_r20 = Monolophosaurus.addOrReplaceChild("Basin_r20", CubeListBuilder.create().texOffs(70, 14).mirror().addBox(-0.4079F, 1.4598F, -1.4556F, 1.0F, 1.0F, 2.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offsetAndRotation(-0.7179F, 2.9725F, -0.2918F, 2.0271F, -0.0204F, -0.3272F));
 
-		PartDefinition Basin_r21 = Monolophosaurus.addOrReplaceChild("Basin_r21", CubeListBuilder.create().texOffs(46, 69).mirror().addBox(-2.5F, -0.0488F, -1.99F, 1.0F, 2.0F, 2.0F, new CubeDeformation(-0.006F)).mirror(false)
-				.texOffs(46, 69).addBox(2.1F, -0.0488F, -1.99F, 1.0F, 2.0F, 2.0F, new CubeDeformation(-0.006F)), PartPose.offsetAndRotation(-0.3F, -2.7F, 0.7F, 0.0087F, 0.0F, 0.0F));
+		PartDefinition Basin_r21 = Monolophosaurus.addOrReplaceChild("Basin_r21", CubeListBuilder.create().texOffs(9, 64).mirror().addBox(-1.0509F, -3.3327F, 0.0781F, 1.0F, 3.0F, 2.0F, new CubeDeformation(0.007F)).mirror(false), PartPose.offsetAndRotation(-0.7179F, 2.9725F, -0.2918F, -0.0698F, 0.0F, 0.0873F));
 
-		PartDefinition Basin_r22 = Monolophosaurus.addOrReplaceChild("Basin_r22", CubeListBuilder.create().texOffs(7, 74).mirror().addBox(-0.5F, -1.0F, -1.7F, 1.0F, 1.0F, 2.0F, new CubeDeformation(0.0F)).mirror(false)
-				.texOffs(61, 27).mirror().addBox(-0.5F, -0.4F, -1.7F, 1.0F, 1.0F, 3.0F, new CubeDeformation(0.007F)).mirror(false), PartPose.offsetAndRotation(-2.4878F, -0.3859F, 3.7952F, 0.0175F, -0.1396F, 0.0F));
+		PartDefinition Basin_r22 = Monolophosaurus.addOrReplaceChild("Basin_r22", CubeListBuilder.create().texOffs(0, 76).mirror().addBox(-1.0509F, -0.8789F, -1.7749F, 1.0F, 1.0F, 2.0F, new CubeDeformation(0.014F)).mirror(false), PartPose.offsetAndRotation(-0.7179F, 2.9725F, -0.2918F, -0.0262F, 0.0F, 0.0873F));
 
-		PartDefinition Basin_r23 = Monolophosaurus.addOrReplaceChild("Basin_r23", CubeListBuilder.create().texOffs(14, 76).mirror().addBox(-0.6253F, -0.0747F, 0.0524F, 1.0F, 1.0F, 2.0F, new CubeDeformation(-0.003F)).mirror(false), PartPose.offsetAndRotation(-2.3F, -1.9729F, 3.3586F, -0.3927F, -0.1396F, 0.0F));
+		PartDefinition Basin_r23 = Monolophosaurus.addOrReplaceChild("Basin_r23", CubeListBuilder.create().texOffs(75, 63).mirror().addBox(-0.5849F, -2.4474F, -2.0059F, 1.0F, 1.0F, 2.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offsetAndRotation(-0.7179F, 2.9725F, -0.2918F, 1.0647F, 0.0F, -0.3491F));
 
-		PartDefinition Basin_r24 = Monolophosaurus.addOrReplaceChild("Basin_r24", CubeListBuilder.create().texOffs(15, 48).mirror().addBox(-4.5F, 0.1312F, 2.7165F, 2.0F, 0.0F, 4.0F, new CubeDeformation(0.0F)).mirror(false)
-				.texOffs(20, 48).mirror().addBox(-4.5F, 0.1312F, -0.2835F, 2.0F, 0.0F, 4.0F, new CubeDeformation(0.0F)).mirror(false)
-				.texOffs(20, 48).addBox(-1.5F, 0.1312F, -0.2835F, 2.0F, 0.0F, 4.0F, new CubeDeformation(0.0F))
-				.texOffs(15, 48).addBox(-1.5F, 0.1312F, 2.7165F, 2.0F, 0.0F, 4.0F, new CubeDeformation(0.0F))
-				.texOffs(23, 38).addBox(-2.5F, -0.3688F, 1.7165F, 1.0F, 1.0F, 8.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(2.0F, -0.8F, -3.9F, -0.1134F, 0.0F, 0.0F));
+		PartDefinition Basin_r24 = Monolophosaurus.addOrReplaceChild("Basin_r24", CubeListBuilder.create().texOffs(43, 60).mirror().addBox(-0.2617F, -2.7386F, -4.6593F, 1.0F, 1.0F, 3.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offsetAndRotation(-0.7179F, 2.9725F, -0.2918F, 1.2385F, 0.0151F, -0.0859F));
 
-		PartDefinition Basin_r25 = Monolophosaurus.addOrReplaceChild("Basin_r25", CubeListBuilder.create().texOffs(9, 64).mirror().addBox(-0.5F, -0.5F, -0.5F, 1.0F, 3.0F, 2.0F, new CubeDeformation(0.007F)).mirror(false), PartPose.offsetAndRotation(-2.3095F, 0.2456F, 0.4824F, -0.0698F, 0.0F, -0.0873F));
+		PartDefinition Basin_r25 = Monolophosaurus.addOrReplaceChild("Basin_r25", CubeListBuilder.create().texOffs(89, 21).mirror().addBox(-0.5053F, 0.0336F, -0.3726F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.0F)).mirror(false)
+				.texOffs(85, 42).mirror().addBox(-0.5053F, -0.6664F, -1.0726F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.005F)).mirror(false), PartPose.offsetAndRotation(-0.1856F, 7.852F, -4.2663F, 0.8895F, 0.0151F, 0.0013F));
 
-		PartDefinition Basin_r26 = Monolophosaurus.addOrReplaceChild("Basin_r26", CubeListBuilder.create().texOffs(39, 52).mirror().addBox(-2.5F, -1.1688F, 0.5165F, 1.0F, 1.0F, 4.0F, new CubeDeformation(0.003F)).mirror(false)
-				.texOffs(39, 52).addBox(2.1F, -1.1688F, 0.5165F, 1.0F, 1.0F, 4.0F, new CubeDeformation(0.003F)), PartPose.offsetAndRotation(-0.3F, -0.8F, -2.2F, -0.1134F, 0.0F, 0.0F));
+		PartDefinition Basin_r26 = Monolophosaurus.addOrReplaceChild("Basin_r26", CubeListBuilder.create().texOffs(77, 82).mirror().addBox(-0.5053F, -0.5415F, -0.9323F, 1.0F, 2.0F, 1.0F, new CubeDeformation(0.012F)).mirror(false), PartPose.offsetAndRotation(-0.1856F, 7.852F, -4.2663F, 1.544F, 0.0151F, 0.0013F));
 
-		PartDefinition Basin_r27 = Monolophosaurus.addOrReplaceChild("Basin_r27", CubeListBuilder.create().texOffs(84, 8).mirror().addBox(-0.6F, -0.0541F, -0.9593F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offsetAndRotation(-2.2F, -2.65F, -1.4F, 0.0876F, 0.2262F, 0.0469F));
+		PartDefinition Basin_r27 = Monolophosaurus.addOrReplaceChild("Basin_r27", CubeListBuilder.create().texOffs(70, 18).mirror().addBox(-0.5053F, -0.6776F, -0.6298F, 1.0F, 1.0F, 2.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offsetAndRotation(-0.1856F, 7.852F, -4.2663F, 1.1949F, 0.0151F, 0.0013F));
 
-		PartDefinition Basin_r28 = Monolophosaurus.addOrReplaceChild("Basin_r28", CubeListBuilder.create().texOffs(39, 69).mirror().addBox(-2.5F, -0.3385F, -1.994F, 1.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).mirror(false)
-				.texOffs(39, 69).addBox(2.1F, -0.3385F, -1.994F, 1.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(-0.3F, -2.0F, 2.6F, -0.2094F, 0.0F, 0.0F));
+		PartDefinition Basin_r28 = Monolophosaurus.addOrReplaceChild("Basin_r28", CubeListBuilder.create().texOffs(70, 22).mirror().addBox(-0.5053F, -0.3512F, -0.5204F, 1.0F, 1.0F, 2.0F, new CubeDeformation(0.005F)).mirror(false), PartPose.offsetAndRotation(-0.1856F, 7.852F, -4.2663F, 1.4131F, 0.0151F, 0.0013F));
 
-		PartDefinition Basin_r29 = Monolophosaurus.addOrReplaceChild("Basin_r29", CubeListBuilder.create().texOffs(84, 5).mirror().addBox(-0.5F, -1.5071F, -0.5205F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.003F)).mirror(false), PartPose.offsetAndRotation(-2.3F, -0.7729F, 2.4586F, -0.3491F, -0.1396F, 0.0F));
+		PartDefinition Basin_r29 = Monolophosaurus.addOrReplaceChild("Basin_r29", CubeListBuilder.create().texOffs(82, 68).addBox(0.2723F, -1.2688F, 4.1575F, 1.0F, 2.0F, 1.0F, new CubeDeformation(0.007F))
+				.texOffs(37, 78).addBox(0.2723F, -1.9688F, 3.6575F, 1.0F, 3.0F, 1.0F, new CubeDeformation(0.0F))
+				.texOffs(89, 18).addBox(0.2723F, -1.9688F, 4.1575F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.005F)), PartPose.offsetAndRotation(0.7179F, 2.9725F, -0.2918F, 1.9202F, -0.2262F, -0.2214F));
 
-		PartDefinition Basin_r30 = Monolophosaurus.addOrReplaceChild("Basin_r30", CubeListBuilder.create().texOffs(82, 68).addBox(-0.5F, 0.7F, -0.3F, 1.0F, 2.0F, 1.0F, new CubeDeformation(0.007F))
-				.texOffs(37, 78).addBox(-0.5F, 0.0F, -0.8F, 1.0F, 3.0F, 1.0F, new CubeDeformation(0.0F))
-				.texOffs(89, 18).addBox(-0.5F, 0.0F, -0.3F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.005F)), PartPose.offsetAndRotation(2.8614F, -0.6085F, -3.4085F, 1.9202F, -0.2262F, -0.0469F));
+		PartDefinition Basin_r30 = Monolophosaurus.addOrReplaceChild("Basin_r30", CubeListBuilder.create().texOffs(89, 15).addBox(0.2723F, -5.0441F, 2.2598F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.7179F, 2.9725F, -0.2918F, 1.1348F, -0.2262F, -0.2214F));
 
-		PartDefinition Basin_r31 = Monolophosaurus.addOrReplaceChild("Basin_r31", CubeListBuilder.create().texOffs(89, 15).addBox(-0.5F, -0.1F, -0.325F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(2.8216F, -1.5244F, -3.4223F, 1.1348F, -0.2262F, -0.0469F));
+		PartDefinition Basin_r31 = Monolophosaurus.addOrReplaceChild("Basin_r31", CubeListBuilder.create().texOffs(87, 36).addBox(0.2723F, -5.9959F, -0.4592F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.005F)), PartPose.offsetAndRotation(0.7179F, 2.9725F, -0.2918F, 0.4803F, -0.2262F, -0.2214F));
 
-		PartDefinition Basin_r32 = Monolophosaurus.addOrReplaceChild("Basin_r32", CubeListBuilder.create().texOffs(87, 36).addBox(-0.5F, -0.3F, -0.375F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.005F)), PartPose.offsetAndRotation(2.6412F, -2.0982F, -2.7562F, 0.4803F, -0.2262F, -0.0469F));
+		PartDefinition Basin_r32 = Monolophosaurus.addOrReplaceChild("Basin_r32", CubeListBuilder.create().texOffs(84, 8).addBox(0.2723F, -5.7301F, -1.7575F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.7179F, 2.9725F, -0.2918F, 0.0876F, -0.2262F, -0.2214F));
 
-		PartDefinition Basin_r33 = Monolophosaurus.addOrReplaceChild("Basin_r33", CubeListBuilder.create().texOffs(84, 8).addBox(-0.4F, -0.0541F, -0.9593F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(2.2F, -2.65F, -1.4F, 0.0876F, -0.2262F, -0.0469F));
+		PartDefinition Basin_r33 = Monolophosaurus.addOrReplaceChild("Basin_r33", CubeListBuilder.create().texOffs(46, 69).addBox(0.2821F, -5.7125F, -0.9487F, 1.0F, 2.0F, 2.0F, new CubeDeformation(-0.006F)), PartPose.offsetAndRotation(0.7179F, 2.9725F, -0.2918F, 0.0087F, 0.0F, -0.1745F));
 
-		PartDefinition Basin_r34 = Monolophosaurus.addOrReplaceChild("Basin_r34", CubeListBuilder.create().texOffs(14, 76).addBox(-0.3747F, -0.0747F, 0.0524F, 1.0F, 1.0F, 2.0F, new CubeDeformation(-0.003F)), PartPose.offsetAndRotation(2.3F, -1.9729F, 3.3586F, -0.3927F, 0.1396F, 0.0F));
+		PartDefinition Basin_r34 = Monolophosaurus.addOrReplaceChild("Basin_r34", CubeListBuilder.create().texOffs(39, 69).addBox(0.2821F, -5.8036F, -0.1992F, 1.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.7179F, 2.9725F, -0.2918F, -0.2094F, 0.0F, -0.1745F));
 
-		PartDefinition Basin_r35 = Monolophosaurus.addOrReplaceChild("Basin_r35", CubeListBuilder.create().texOffs(84, 5).addBox(-0.5F, -1.5071F, -0.5205F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.003F)), PartPose.offsetAndRotation(2.3F, -0.7729F, 2.4586F, -0.3491F, 0.1396F, 0.0F));
+		PartDefinition Basin_r35 = Monolophosaurus.addOrReplaceChild("Basin_r35", CubeListBuilder.create().texOffs(14, 76).addBox(-0.1083F, -6.0687F, 1.6002F, 1.0F, 1.0F, 2.0F, new CubeDeformation(-0.003F)), PartPose.offsetAndRotation(0.7179F, 2.9725F, -0.2918F, -0.3927F, 0.1396F, -0.1745F));
+
+		PartDefinition Basin_r36 = Monolophosaurus.addOrReplaceChild("Basin_r36", CubeListBuilder.create().texOffs(84, 5).addBox(-0.1083F, -5.9955F, 0.8602F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.003F)), PartPose.offsetAndRotation(0.7179F, 2.9725F, -0.2918F, -0.3491F, 0.1396F, -0.1745F));
 
 		PartDefinition CaudalProximal_r1 = Monolophosaurus.addOrReplaceChild("CaudalProximal_r1", CubeListBuilder.create().texOffs(82, 56).addBox(0.0F, 2.5F, -4.8F, 0.0F, 1.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.0F, 2.612F, 9.5811F, -0.9599F, 0.0F, 0.0F));
 
-		PartDefinition Basin_r36 = Monolophosaurus.addOrReplaceChild("Basin_r36", CubeListBuilder.create().texOffs(42, 11).addBox(-1.0124F, 0.7246F, -2.0993F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.008F)), PartPose.offsetAndRotation(1.2038F, 4.5706F, 3.5803F, 1.2437F, 0.0397F, 0.2196F));
+		PartDefinition Basin_r37 = Monolophosaurus.addOrReplaceChild("Basin_r37", CubeListBuilder.create().texOffs(42, 11).addBox(-1.1248F, 4.9132F, -2.3975F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.008F)), PartPose.offsetAndRotation(0.7179F, 2.9725F, -0.2918F, 1.2437F, 0.0397F, 0.0451F));
 
-		PartDefinition Basin_r37 = Monolophosaurus.addOrReplaceChild("Basin_r37", CubeListBuilder.create().texOffs(89, 24).addBox(-1.0124F, -0.0717F, -2.501F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.006F)), PartPose.offsetAndRotation(1.2038F, 4.5706F, 3.5803F, 1.5492F, 0.0397F, 0.2196F));
+		PartDefinition Basin_r38 = Monolophosaurus.addOrReplaceChild("Basin_r38", CubeListBuilder.create().texOffs(89, 24).addBox(-1.1248F, 3.8334F, -4.0449F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.006F)), PartPose.offsetAndRotation(0.7179F, 2.9725F, -0.2918F, 1.5492F, 0.0397F, 0.0451F));
 
-		PartDefinition Basin_r38 = Monolophosaurus.addOrReplaceChild("Basin_r38", CubeListBuilder.create().texOffs(75, 67).addBox(-1.0124F, -0.7868F, -2.1247F, 1.0F, 1.0F, 2.0F, new CubeDeformation(0.005F)), PartPose.offsetAndRotation(1.2038F, 4.5706F, 3.5803F, 2.0728F, 0.0397F, 0.2196F));
+		PartDefinition Basin_r39 = Monolophosaurus.addOrReplaceChild("Basin_r39", CubeListBuilder.create().texOffs(75, 67).addBox(-1.1248F, 1.8231F, -5.4143F, 1.0F, 1.0F, 2.0F, new CubeDeformation(0.005F)), PartPose.offsetAndRotation(0.7179F, 2.9725F, -0.2918F, 2.0728F, 0.0397F, 0.0451F));
 
-		PartDefinition Basin_r39 = Monolophosaurus.addOrReplaceChild("Basin_r39", CubeListBuilder.create().texOffs(70, 10).addBox(-1.0124F, -0.7848F, -1.8449F, 1.0F, 1.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(1.2038F, 4.5706F, 3.5803F, 1.9419F, 0.0397F, 0.2196F));
+		PartDefinition Basin_r40 = Monolophosaurus.addOrReplaceChild("Basin_r40", CubeListBuilder.create().texOffs(70, 10).addBox(-1.1248F, 2.2321F, -4.7657F, 1.0F, 1.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.7179F, 2.9725F, -0.2918F, 1.9419F, 0.0397F, 0.0451F));
 
-		PartDefinition Basin_r40 = Monolophosaurus.addOrReplaceChild("Basin_r40", CubeListBuilder.create().texOffs(9, 70).addBox(-0.9402F, -1.0388F, -3.6906F, 1.0F, 1.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(2.4288F, 2.0456F, 1.1053F, 2.3753F, 0.014F, 0.488F));
+		PartDefinition Basin_r41 = Monolophosaurus.addOrReplaceChild("Basin_r41", CubeListBuilder.create().texOffs(9, 70).addBox(-0.5897F, 0.8312F, -3.8369F, 1.0F, 1.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.7179F, 2.9725F, -0.2918F, 2.3753F, 0.014F, 0.3134F));
 
-		PartDefinition Basin_r41 = Monolophosaurus.addOrReplaceChild("Basin_r41", CubeListBuilder.create().texOffs(70, 14).addBox(-0.9164F, -0.3517F, -1.9598F, 1.0F, 1.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(2.4288F, 2.0456F, 1.1053F, 2.0271F, 0.0204F, 0.5017F));
+		PartDefinition Basin_r42 = Monolophosaurus.addOrReplaceChild("Basin_r42", CubeListBuilder.create().texOffs(70, 14).addBox(-0.5921F, 1.4598F, -1.4556F, 1.0F, 1.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.7179F, 2.9725F, -0.2918F, 2.0271F, 0.0204F, 0.3272F));
 
-		PartDefinition Basin_r42 = Monolophosaurus.addOrReplaceChild("Basin_r42", CubeListBuilder.create().texOffs(89, 21).addBox(-0.1287F, 0.2113F, -1.895F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.0F))
-				.texOffs(85, 42).addBox(-0.1287F, -0.4887F, -2.595F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.005F)), PartPose.offsetAndRotation(0.0201F, 6.4108F, -3.4511F, 0.8895F, -0.0151F, 0.0423F));
+		PartDefinition Basin_r43 = Monolophosaurus.addOrReplaceChild("Basin_r43", CubeListBuilder.create().texOffs(89, 21).addBox(-0.4947F, 0.0336F, -0.3726F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.0F))
+				.texOffs(85, 42).addBox(-0.4947F, -0.6664F, -1.0726F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.005F)), PartPose.offsetAndRotation(0.1856F, 7.852F, -4.2663F, 0.8895F, -0.0151F, -0.0013F));
 
-		PartDefinition Basin_r43 = Monolophosaurus.addOrReplaceChild("Basin_r43", CubeListBuilder.create().texOffs(77, 82).addBox(-0.1287F, -1.3272F, -2.2483F, 1.0F, 2.0F, 1.0F, new CubeDeformation(0.012F)), PartPose.offsetAndRotation(0.0201F, 6.4108F, -3.4511F, 1.544F, -0.0151F, 0.0423F));
+		PartDefinition Basin_r44 = Monolophosaurus.addOrReplaceChild("Basin_r44", CubeListBuilder.create().texOffs(77, 82).addBox(-0.4947F, -0.5415F, -0.9323F, 1.0F, 2.0F, 1.0F, new CubeDeformation(0.012F)), PartPose.offsetAndRotation(0.1856F, 7.852F, -4.2663F, 1.544F, -0.0151F, -0.0013F));
 
-		PartDefinition Basin_r44 = Monolophosaurus.addOrReplaceChild("Basin_r44", CubeListBuilder.create().texOffs(70, 18).addBox(-0.1287F, -0.9659F, -2.1352F, 1.0F, 1.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.0201F, 6.4108F, -3.4511F, 1.1949F, -0.0151F, 0.0423F));
+		PartDefinition Basin_r45 = Monolophosaurus.addOrReplaceChild("Basin_r45", CubeListBuilder.create().texOffs(70, 18).addBox(-0.4947F, -0.6776F, -0.6298F, 1.0F, 1.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.1856F, 7.852F, -4.2663F, 1.1949F, -0.0151F, -0.0013F));
 
-		PartDefinition Basin_r45 = Monolophosaurus.addOrReplaceChild("Basin_r45", CubeListBuilder.create().texOffs(70, 22).addBox(-0.1287F, -0.9585F, -1.9278F, 1.0F, 1.0F, 2.0F, new CubeDeformation(0.005F)), PartPose.offsetAndRotation(0.0201F, 6.4108F, -3.4511F, 1.4131F, -0.0151F, 0.0423F));
+		PartDefinition Basin_r46 = Monolophosaurus.addOrReplaceChild("Basin_r46", CubeListBuilder.create().texOffs(70, 22).addBox(-0.4947F, -0.3512F, -0.5204F, 1.0F, 1.0F, 2.0F, new CubeDeformation(0.005F)), PartPose.offsetAndRotation(0.1856F, 7.852F, -4.2663F, 1.4131F, -0.0151F, -0.0013F));
 
-		PartDefinition Basin_r46 = Monolophosaurus.addOrReplaceChild("Basin_r46", CubeListBuilder.create().texOffs(43, 60).addBox(-1.0008F, -1.052F, -2.9145F, 1.0F, 1.0F, 3.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(1.5201F, 4.1108F, -2.4511F, 1.2385F, -0.0151F, 0.2605F));
+		PartDefinition Basin_r47 = Monolophosaurus.addOrReplaceChild("Basin_r47", CubeListBuilder.create().texOffs(43, 60).addBox(-0.7383F, -2.7386F, -4.6593F, 1.0F, 1.0F, 3.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.7179F, 2.9725F, -0.2918F, 1.2385F, -0.0151F, 0.0859F));
 
-		PartDefinition Basin_r47 = Monolophosaurus.addOrReplaceChild("Basin_r47", CubeListBuilder.create().texOffs(75, 63).addBox(-1.0155F, -0.7131F, -1.9184F, 1.0F, 1.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(2.4201F, 2.6108F, -1.8511F, 1.0647F, 0.0F, 0.5236F));
+		PartDefinition Basin_r48 = Monolophosaurus.addOrReplaceChild("Basin_r48", CubeListBuilder.create().texOffs(75, 63).addBox(-0.4151F, -2.4474F, -2.0059F, 1.0F, 1.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.7179F, 2.9725F, -0.2918F, 1.0647F, 0.0F, 0.3491F));
 
-		PartDefinition Basin_r48 = Monolophosaurus.addOrReplaceChild("Basin_r48", CubeListBuilder.create().texOffs(0, 76).addBox(-0.5F, -0.3F, -0.5F, 1.0F, 1.0F, 2.0F, new CubeDeformation(0.014F)), PartPose.offsetAndRotation(2.1201F, 2.4108F, -1.5511F, -0.0262F, 0.0F, 0.0873F));
+		PartDefinition Basin_r49 = Monolophosaurus.addOrReplaceChild("Basin_r49", CubeListBuilder.create().texOffs(0, 76).addBox(0.0509F, -0.8789F, -1.7749F, 1.0F, 1.0F, 2.0F, new CubeDeformation(0.014F)), PartPose.offsetAndRotation(0.7179F, 2.9725F, -0.2918F, -0.0262F, 0.0F, -0.0873F));
 
-		PartDefinition Basin_r49 = Monolophosaurus.addOrReplaceChild("Basin_r49", CubeListBuilder.create().texOffs(53, 69).addBox(-0.317F, 0.006F, 0.0357F, 1.0F, 2.0F, 2.0F, new CubeDeformation(0.006F)), PartPose.offsetAndRotation(2.1185F, 0.3285F, -2.186F, -0.2007F, 0.0F, 0.0873F));
+		PartDefinition Basin_r50 = Monolophosaurus.addOrReplaceChild("Basin_r50", CubeListBuilder.create().texOffs(53, 69).addBox(0.0509F, -2.2487F, -2.356F, 1.0F, 2.0F, 2.0F, new CubeDeformation(0.006F)), PartPose.offsetAndRotation(0.7179F, 2.9725F, -0.2918F, -0.2007F, 0.0F, -0.0873F));
 
-		PartDefinition Basin_r50 = Monolophosaurus.addOrReplaceChild("Basin_r50", CubeListBuilder.create().texOffs(55, 45).addBox(-0.5F, -1.6F, -0.5F, 1.0F, 3.0F, 3.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(2.3234F, 0.0867F, -0.7153F, -1.0297F, 0.0F, 0.0873F));
+		PartDefinition Basin_r51 = Monolophosaurus.addOrReplaceChild("Basin_r51", CubeListBuilder.create().texOffs(55, 45).addBox(0.0509F, -2.7539F, -3.2425F, 1.0F, 3.0F, 3.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.7179F, 2.9725F, -0.2918F, -1.0297F, 0.0F, -0.0873F));
 
-		PartDefinition Basin_r51 = Monolophosaurus.addOrReplaceChild("Basin_r51", CubeListBuilder.create().texOffs(27, 60).addBox(-0.5F, -0.1F, -1.7F, 1.0F, 1.0F, 3.0F, new CubeDeformation(-0.007F)), PartPose.offsetAndRotation(2.4055F, -0.8514F, 0.6753F, -0.1134F, 0.0F, 0.0873F));
+		PartDefinition Basin_r52 = Monolophosaurus.addOrReplaceChild("Basin_r52", CubeListBuilder.create().texOffs(27, 60).addBox(0.0509F, -4.0713F, -1.179F, 1.0F, 1.0F, 3.0F, new CubeDeformation(-0.007F)), PartPose.offsetAndRotation(0.7179F, 2.9725F, -0.2918F, -0.1134F, 0.0F, -0.0873F));
 
-		PartDefinition Basin_r52 = Monolophosaurus.addOrReplaceChild("Basin_r52", CubeListBuilder.create().texOffs(84, 77).addBox(-0.5F, -1.9F, 0.0F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(2.2555F, 0.8622F, 0.6464F, -0.637F, 0.0F, 0.0873F));
+		PartDefinition Basin_r53 = Monolophosaurus.addOrReplaceChild("Basin_r53", CubeListBuilder.create().texOffs(84, 77).addBox(0.0509F, -4.1997F, -0.5345F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.7179F, 2.9725F, -0.2918F, -0.637F, 0.0F, -0.0873F));
 
-		PartDefinition Basin_r53 = Monolophosaurus.addOrReplaceChild("Basin_r53", CubeListBuilder.create().texOffs(9, 64).addBox(-0.5F, -0.5F, -0.5F, 1.0F, 3.0F, 2.0F, new CubeDeformation(0.007F)), PartPose.offsetAndRotation(2.3095F, 0.2456F, 0.4824F, -0.0698F, 0.0F, 0.0873F));
+		PartDefinition Basin_r54 = Monolophosaurus.addOrReplaceChild("Basin_r54", CubeListBuilder.create().texOffs(9, 64).addBox(0.0509F, -3.3327F, 0.0781F, 1.0F, 3.0F, 2.0F, new CubeDeformation(0.007F)), PartPose.offsetAndRotation(0.7179F, 2.9725F, -0.2918F, -0.0698F, 0.0F, -0.0873F));
 
-		PartDefinition Basin_r54 = Monolophosaurus.addOrReplaceChild("Basin_r54", CubeListBuilder.create().texOffs(7, 74).addBox(-0.5F, -1.0F, -1.7F, 1.0F, 1.0F, 2.0F, new CubeDeformation(0.0F))
-				.texOffs(61, 27).addBox(-0.5F, -0.4F, -1.7F, 1.0F, 1.0F, 3.0F, new CubeDeformation(0.007F)), PartPose.offsetAndRotation(2.4878F, -0.3859F, 3.7952F, 0.0175F, 0.1396F, 0.0F));
+		PartDefinition Basin_r55 = Monolophosaurus.addOrReplaceChild("Basin_r55", CubeListBuilder.create().texOffs(39, 52).addBox(0.2821F, -4.701F, -1.8064F, 1.0F, 1.0F, 4.0F, new CubeDeformation(0.003F)), PartPose.offsetAndRotation(0.7179F, 2.9725F, -0.2918F, -0.1134F, 0.0F, -0.1745F));
 
-		PartDefinition Basin_r55 = Monolophosaurus.addOrReplaceChild("Basin_r55", CubeListBuilder.create().texOffs(13, 84).addBox(0.0F, -1.5F, 3.0F, 0.0F, 3.0F, 1.0F, new CubeDeformation(0.0F))
+		PartDefinition Basin_r56 = Monolophosaurus.addOrReplaceChild("Basin_r56", CubeListBuilder.create().texOffs(7, 74).addBox(-0.1083F, -4.285F, 2.5402F, 1.0F, 1.0F, 2.0F, new CubeDeformation(0.0F))
+				.texOffs(61, 27).addBox(-0.1083F, -3.685F, 2.5402F, 1.0F, 1.0F, 3.0F, new CubeDeformation(0.007F)), PartPose.offsetAndRotation(0.7179F, 2.9725F, -0.2918F, 0.0175F, 0.1396F, -0.1745F));
+
+		PartDefinition Basin_r57 = Monolophosaurus.addOrReplaceChild("Basin_r57", CubeListBuilder.create().texOffs(13, 84).addBox(0.0F, -1.5F, 3.0F, 0.0F, 3.0F, 1.0F, new CubeDeformation(0.0F))
 				.texOffs(50, 52).addBox(0.0F, -1.5F, -2.0F, 0.0F, 3.0F, 4.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.0F, -1.4273F, 0.9185F, -0.1571F, 0.0F, 0.0F));
 
-		PartDefinition LegL = Monolophosaurus.addOrReplaceChild("LegL", CubeListBuilder.create(), PartPose.offsetAndRotation(3.2F, 1.5465F, 0.3241F, -0.3054F, 0.0F, 0.0F));
+		PartDefinition Basin_r58 = Monolophosaurus.addOrReplaceChild("Basin_r58", CubeListBuilder.create().texOffs(23, 38).addBox(1.5F, -0.3688F, 1.7165F, 1.0F, 1.0F, 8.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(-2.0F, -0.8F, -3.9F, -0.1134F, 0.0F, 0.0F));
+
+		PartDefinition LegL = Monolophosaurus.addOrReplaceChild("LegL", CubeListBuilder.create(), PartPose.offsetAndRotation(2.2F, 1.5465F, 0.3241F, -0.3054F, 0.0F, 0.0F));
 
 		PartDefinition Femur_r1 = LegL.addOrReplaceChild("Femur_r1", CubeListBuilder.create().texOffs(7, 78).addBox(-1.0F, -0.5034F, -0.2421F, 2.0F, 1.0F, 1.0F, new CubeDeformation(0.009F)), PartPose.offsetAndRotation(0.5F, 6.7132F, -3.7787F, -1.2741F, 0.0F, 0.0F));
 
@@ -257,7 +256,7 @@ public class MonolophosaurusFossilModel extends SkullModelBase {
 
 		PartDefinition FootL2 = FootL.addOrReplaceChild("FootL2", CubeListBuilder.create().texOffs(0, 46).addBox(-1.5F, -0.4F, -2.9F, 4.0F, 1.0F, 3.0F, new CubeDeformation(-0.003F)), PartPose.offset(0.5F, 0.05F, -2.3F));
 
-		PartDefinition LegL2 = Monolophosaurus.addOrReplaceChild("LegL2", CubeListBuilder.create(), PartPose.offsetAndRotation(-3.2F, 1.5465F, 0.3241F, 0.4837F, -0.0365F, 0.0168F));
+		PartDefinition LegL2 = Monolophosaurus.addOrReplaceChild("LegL2", CubeListBuilder.create(), PartPose.offsetAndRotation(-2.2008F, 1.5633F, 0.3606F, 0.4837F, -0.0365F, 0.0168F));
 
 		PartDefinition Femur_r13 = LegL2.addOrReplaceChild("Femur_r13", CubeListBuilder.create().texOffs(76, 94).mirror().addBox(-1.0F, -0.5034F, -0.2421F, 2.0F, 1.0F, 1.0F, new CubeDeformation(0.009F)).mirror(false), PartPose.offsetAndRotation(-0.5F, 6.7132F, -3.7787F, -1.2741F, 0.0F, 0.0F));
 

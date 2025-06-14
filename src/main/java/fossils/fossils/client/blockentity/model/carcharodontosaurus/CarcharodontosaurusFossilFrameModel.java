@@ -95,7 +95,7 @@ public class CarcharodontosaurusFossilFrameModel extends SkullModelBase {
 				.texOffs(2, 1).addBox(2.4F, -45.0F, -27.5F, 1.0F, 45.0F, 1.0F, new CubeDeformation(-0.16F)), PartPose.offset(0.0F, 24.0F, 0.0F));
 
 		PartDefinition cube_r1 = fossil.addOrReplaceChild("cube_r1", CubeListBuilder.create().texOffs(2, 1).addBox(-4.1F, -11.0F, -0.5F, 1.0F, 18.0F, 1.0F, new CubeDeformation(-0.15F))
-				.texOffs(2, 1).addBox(-13.0F, -7.0F, 32.0F, 1.0F, 15.0F, 1.0F, new CubeDeformation(-0.15F)), PartPose.offsetAndRotation(0.5F, -32.0F, -27.0F, 0.0F, 0.0F, 1.5708F));
+				.texOffs(2, 1).addBox(-13.0F, -5.5F, 32.0F, 1.0F, 12.0F, 1.0F, new CubeDeformation(-0.15F)), PartPose.offsetAndRotation(0.5F, -32.0F, -27.0F, 0.0F, 0.0F, 1.5708F));
 
 		PartDefinition hips = fossil.addOrReplaceChild("hips", CubeListBuilder.create(), PartPose.offsetAndRotation(0.0F, -45.5743F, 4.5076F, 0.0F, 0.0F, 0.0436F));
 

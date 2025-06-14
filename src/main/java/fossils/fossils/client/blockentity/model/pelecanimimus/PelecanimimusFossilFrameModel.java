@@ -87,10 +87,10 @@ public class PelecanimimusFossilFrameModel extends SkullModelBase {
 		PartDefinition partdefinition = meshdefinition.getRoot();
 
 		PartDefinition fossil = partdefinition.addOrReplaceChild("fossil", CubeListBuilder.create().texOffs(1, 1).addBox(-0.5F, -21.0F, -2.9F, 1.0F, 21.0F, 1.0F, new CubeDeformation(-0.16F))
-		.texOffs(1, 1).addBox(-0.5F, -17.0F, -16.1F, 1.0F, 17.0F, 1.0F, new CubeDeformation(-0.16F)), PartPose.offset(0.0F, 24.0F, 0.0F));
+				.texOffs(1, 1).addBox(-0.5F, -17.0F, -16.1F, 1.0F, 17.0F, 1.0F, new CubeDeformation(-0.16F)), PartPose.offset(0.0F, 24.0F, 0.0F));
 
 		PartDefinition cube_r1 = fossil.addOrReplaceChild("cube_r1", CubeListBuilder.create().texOffs(1, 1).addBox(-3.5F, -2.7F, -0.5F, 1.0F, 6.0F, 1.0F, new CubeDeformation(-0.15F))
-		.texOffs(1, 1).addBox(1.7F, -3.5F, 12.7F, 1.0F, 8.0F, 1.0F, new CubeDeformation(-0.15F)), PartPose.offsetAndRotation(-0.5F, -17.5F, -15.6F, 0.0F, 0.0F, -1.5708F));
+				.texOffs(1, 1).addBox(1.7F, -2.5F, 12.7F, 1.0F, 6.0F, 1.0F, new CubeDeformation(-0.15F)), PartPose.offsetAndRotation(-0.5F, -17.5F, -15.6F, 0.0F, 0.0F, -1.5708F));
 
 		PartDefinition hips = fossil.addOrReplaceChild("hips", CubeListBuilder.create(), PartPose.offsetAndRotation(0.0F, -21.5F, -1.9F, 0.3054F, 0.0F, 0.0F));
 

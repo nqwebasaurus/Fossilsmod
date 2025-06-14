@@ -1,0 +1,54 @@
+{
+  "parent": "fossils:fossils/general/ornithocheiromorpha",
+  "criteria": {
+    "finish_ikrandraco": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:ikrandraco_fossil"
+                ],
+                "state": {
+                  "fossil_level": "4"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:ikrandraco_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.ikrandraco.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:ikrandraco_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.ikrandraco.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_ikrandraco"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

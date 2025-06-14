@@ -1,0 +1,57 @@
+{
+  "parent": "fossils:fossils/general/diplodocoidea",
+  "criteria": {
+    "finish_diplodocus": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:diplodocus_fossil"
+                ],
+                "state": {
+                  "fossil_level": "19"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:diplodocus_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.diplodocus.description"
+    },
+    "frame": "challenge",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:diplodocus_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.diplodocus.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_diplodocus"
+    ]
+  ],
+  "rewards": {
+    "experience": 500
+  },
+  "sends_telemetry_event": true
+}

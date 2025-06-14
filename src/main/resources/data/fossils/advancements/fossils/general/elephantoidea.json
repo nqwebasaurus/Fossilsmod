@@ -1,0 +1,24 @@
+{
+  "parent": "fossils:fossils/general/elephantimorpha",
+  "criteria": {
+    "finish_elephantoidea": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "description": {
+      "translate": "advancements.fossils.elephantoidea.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:advancement_line"
+    },
+    "show_toast": false,
+    "title": {
+      "translate": "advancements.fossils.elephantoidea.title"
+    }
+  },
+  "sends_telemetry_event": true
+}

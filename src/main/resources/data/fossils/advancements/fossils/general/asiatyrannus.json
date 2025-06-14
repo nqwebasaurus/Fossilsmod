@@ -1,0 +1,54 @@
+{
+  "parent": "fossils:fossils/general/tyrannosaurids",
+  "criteria": {
+    "finish_asiatyrannus": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:asiatyrannus_fossil"
+                ],
+                "state": {
+                  "fossil_level": "9"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:asiatyrannus_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.asiatyrannus.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:asiatyrannus_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.asiatyrannus.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_asiatyrannus"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

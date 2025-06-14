@@ -1,0 +1,54 @@
+{
+  "parent": "fossils:fossils/general/dryomorphs",
+  "criteria": {
+    "finish_hypsilophodon": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:hypsilophodon_fossil"
+                ],
+                "state": {
+                  "fossil_level": "9"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:hypsilophodon_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.hypsilophodon.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:hypsilophodon_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.hypsilophodon.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_hypsilophodon"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

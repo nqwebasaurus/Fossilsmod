@@ -1,0 +1,54 @@
+{
+  "parent": "fossils:fossils/general/anura",
+  "criteria": {
+    "finish_beelzebufo": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:beelzebufo_fossil"
+                ],
+                "state": {
+                  "fossil_level": "4"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:beelzebufo_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.beelzebufo.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:beelzebufo_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.beelzebufo.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_beelzebufo"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

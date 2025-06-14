@@ -1,0 +1,54 @@
+{
+  "parent": "fossils:fossils/general/psittacosauridae",
+  "criteria": {
+    "finish_psittacosauruslujiatunensis": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:psittacosauruslujiatunensis_fossil"
+                ],
+                "state": {
+                  "fossil_level": "4"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:psittacosauruslujiatunensis_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.psittacosauruslujiatunensis.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:psittacosauruslujiatunensis_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.psittacosauruslujiatunensis.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_psittacosauruslujiatunensis"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

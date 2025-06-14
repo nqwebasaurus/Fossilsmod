@@ -663,6 +663,96 @@ public class FossilSkeletonFifteenPieceBlock extends BaseEntityBlock implements 
 			}
 
 			return InteractionResult.sidedSuccess(world.isClientSide);
+		} else if (item == FossilItems.TYRANNOTITAN.get() && state.getValue(FOSSIL_LEVEL) != 14 && type == Types.TYRANNOTITAN) {
+			fossilLevel = state.getValue(FOSSIL_LEVEL);
+			world.setBlockAndUpdate(pos, state.setValue(FOSSIL_LEVEL, fossilLevel + 1));
+			world.playSound(player, pos, SoundEvents.BONE_BLOCK_PLACE, SoundSource.BLOCKS);
+			if (!player.isCreative()) {
+				stack.shrink(1);
+			}
+
+			return InteractionResult.sidedSuccess(world.isClientSide);
+		} else if (item == FossilItems.LUSKHAN.get() && state.getValue(FOSSIL_LEVEL) != 14 && type == Types.LUSKHAN) {
+			fossilLevel = state.getValue(FOSSIL_LEVEL);
+			world.setBlockAndUpdate(pos, state.setValue(FOSSIL_LEVEL, fossilLevel + 1));
+			world.playSound(player, pos, SoundEvents.BONE_BLOCK_PLACE, SoundSource.BLOCKS);
+			if (!player.isCreative()) {
+				stack.shrink(1);
+			}
+
+			return InteractionResult.sidedSuccess(world.isClientSide);
+		} else if (item == FossilItems.DESMATOSUCHUS.get() && state.getValue(FOSSIL_LEVEL) != 14 && type == Types.DESMATOSUCHUS) {
+			fossilLevel = state.getValue(FOSSIL_LEVEL);
+			world.setBlockAndUpdate(pos, state.setValue(FOSSIL_LEVEL, fossilLevel + 1));
+			world.playSound(player, pos, SoundEvents.BONE_BLOCK_PLACE, SoundSource.BLOCKS);
+			if (!player.isCreative()) {
+				stack.shrink(1);
+			}
+
+			return InteractionResult.sidedSuccess(world.isClientSide);
+		} else if (item == FossilItems.SUZHOUSAURUS.get() && state.getValue(FOSSIL_LEVEL) != 14 && type == Types.SUZHOUSAURUS) {
+			fossilLevel = state.getValue(FOSSIL_LEVEL);
+			world.setBlockAndUpdate(pos, state.setValue(FOSSIL_LEVEL, fossilLevel + 1));
+			world.playSound(player, pos, SoundEvents.BONE_BLOCK_PLACE, SoundSource.BLOCKS);
+			if (!player.isCreative()) {
+				stack.shrink(1);
+			}
+
+			return InteractionResult.sidedSuccess(world.isClientSide);
+		} else if (item == FossilItems.MANTELLISAURUS.get() && state.getValue(FOSSIL_LEVEL) != 14 && type == Types.MANTELLISAURUS) {
+			fossilLevel = state.getValue(FOSSIL_LEVEL);
+			world.setBlockAndUpdate(pos, state.setValue(FOSSIL_LEVEL, fossilLevel + 1));
+			world.playSound(player, pos, SoundEvents.BONE_BLOCK_PLACE, SoundSource.BLOCKS);
+			if (!player.isCreative()) {
+				stack.shrink(1);
+			}
+
+			return InteractionResult.sidedSuccess(world.isClientSide);
+		} else if (item == FossilItems.CHASMOSAURUS.get() && state.getValue(FOSSIL_LEVEL) != 14 && type == Types.CHASMOSAURUS) {
+			fossilLevel = state.getValue(FOSSIL_LEVEL);
+			world.setBlockAndUpdate(pos, state.setValue(FOSSIL_LEVEL, fossilLevel + 1));
+			world.playSound(player, pos, SoundEvents.BONE_BLOCK_PLACE, SoundSource.BLOCKS);
+			if (!player.isCreative()) {
+				stack.shrink(1);
+			}
+
+			return InteractionResult.sidedSuccess(world.isClientSide);
+		} else if (item == FossilItems.CENTROSAURUS.get() && state.getValue(FOSSIL_LEVEL) != 14 && type == Types.CENTROSAURUS) {
+			fossilLevel = state.getValue(FOSSIL_LEVEL);
+			world.setBlockAndUpdate(pos, state.setValue(FOSSIL_LEVEL, fossilLevel + 1));
+			world.playSound(player, pos, SoundEvents.BONE_BLOCK_PLACE, SoundSource.BLOCKS);
+			if (!player.isCreative()) {
+				stack.shrink(1);
+			}
+
+			return InteractionResult.sidedSuccess(world.isClientSide);
+		} else if (item == FossilItems.LIOPLEURODON.get() && state.getValue(FOSSIL_LEVEL) != 14 && type == Types.LIOPLEURODON) {
+			fossilLevel = state.getValue(FOSSIL_LEVEL);
+			world.setBlockAndUpdate(pos, state.setValue(FOSSIL_LEVEL, fossilLevel + 1));
+			world.playSound(player, pos, SoundEvents.BONE_BLOCK_PLACE, SoundSource.BLOCKS);
+			if (!player.isCreative()) {
+				stack.shrink(1);
+			}
+
+			return InteractionResult.sidedSuccess(world.isClientSide);
+		} else if (item == FossilItems.LUSOVENATOR.get() && state.getValue(FOSSIL_LEVEL) != 14 && type == Types.LUSOVENATOR) {
+			fossilLevel = state.getValue(FOSSIL_LEVEL);
+			world.setBlockAndUpdate(pos, state.setValue(FOSSIL_LEVEL, fossilLevel + 1));
+			world.playSound(player, pos, SoundEvents.BONE_BLOCK_PLACE, SoundSource.BLOCKS);
+			if (!player.isCreative()) {
+				stack.shrink(1);
+			}
+
+			return InteractionResult.sidedSuccess(world.isClientSide);
+		} else if (item == FossilItems.PHOLIDERPETON.get() && state.getValue(FOSSIL_LEVEL) != 14 && type == Types.PHOLIDERPETON) {
+			fossilLevel = state.getValue(FOSSIL_LEVEL);
+			world.setBlockAndUpdate(pos, state.setValue(FOSSIL_LEVEL, fossilLevel + 1));
+			world.playSound(player, pos, SoundEvents.BONE_BLOCK_PLACE, SoundSource.BLOCKS);
+			if (!player.isCreative()) {
+				stack.shrink(1);
+			}
+
+			return InteractionResult.sidedSuccess(world.isClientSide);
 		} else return super.use(state, world, pos, player, hand, hit);
 	}
 
@@ -733,6 +823,16 @@ public class FossilSkeletonFifteenPieceBlock extends BaseEntityBlock implements 
 		BRIGHTSTONEUS,
 		EUHELOPUS,
 		NEOVENATOR,
+		TYRANNOTITAN,
+		LUSKHAN,
+		DESMATOSUCHUS,
+		SUZHOUSAURUS,
+		MANTELLISAURUS,
+		CHASMOSAURUS,
+		CENTROSAURUS,
+		LIOPLEURODON,
+		LUSOVENATOR,
+		PHOLIDERPETON,
 		WUERHOSAURUS;
 	}
 

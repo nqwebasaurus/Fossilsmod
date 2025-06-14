@@ -33,6 +33,16 @@
           "type": "minecraft:item",
           "name": "fossils:anthracosaurus_fossil",
           "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:limnoscelis_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:pholiderpeton_fossil",
+          "weight": 2
         }
       ],
       "rolls": 1

@@ -78,6 +78,16 @@
           "type": "minecraft:item",
           "name": "fossils:diplocaulusminimus_fossil",
           "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:geikiaelginensis_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:secodontosaurus_fossil",
+          "weight": 2
         }
       ],
       "rolls": 1

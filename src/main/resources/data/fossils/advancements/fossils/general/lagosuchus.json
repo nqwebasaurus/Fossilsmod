@@ -1,0 +1,54 @@
+{
+  "parent": "fossils:fossils/general/dinosauromorpha",
+  "criteria": {
+    "finish_lagosuchus": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:lagosuchus_fossil"
+                ],
+                "state": {
+                  "fossil_level": "4"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:lagosuchus_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.lagosuchus.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:lagosuchus_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.lagosuchus.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_lagosuchus"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

@@ -1,0 +1,54 @@
+{
+  "parent": "fossils:fossils/general/nodosauridae",
+  "criteria": {
+    "finish_polacanthus": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:polacanthus_fossil"
+                ],
+                "state": {
+                  "fossil_level": "9"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:polacanthus_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.polacanthus.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:polacanthus_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.polacanthus.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_polacanthus"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

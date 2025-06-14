@@ -1,0 +1,24 @@
+{
+  "parent": "fossils:fossils/general/elephantoidea",
+  "criteria": {
+    "finish_elephantidae": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "description": {
+      "translate": "advancements.fossils.elephantidae.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:advancement_line"
+    },
+    "show_toast": false,
+    "title": {
+      "translate": "advancements.fossils.elephantidae.title"
+    }
+  },
+  "sends_telemetry_event": true
+}

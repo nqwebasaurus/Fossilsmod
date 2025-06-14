@@ -83,7 +83,7 @@ public class MonolophosaurusFossilFrameModel extends SkullModelBase {
 				.texOffs(2, 1).addBox(0.6F, -22.0F, -14.0F, 1.0F, 22.0F, 1.0F, new CubeDeformation(-0.16F)), PartPose.offset(0.0F, 24.0F, 0.0F));
 
 		PartDefinition cube_r1 = fossil.addOrReplaceChild("cube_r1", CubeListBuilder.create().texOffs(2, 1).addBox(2.5F, -4.5F, -0.5F, 1.0F, 8.0F, 1.0F, new CubeDeformation(-0.15F))
-				.texOffs(2, 1).addBox(-0.5F, -4.0F, 18.5F, 1.0F, 9.0F, 1.0F, new CubeDeformation(-0.15F)), PartPose.offsetAndRotation(0.5F, -20.0F, -13.5F, 0.0F, 0.0F, 1.5708F));
+				.texOffs(2, 1).addBox(-0.5F, -3.0F, 18.5F, 1.0F, 7.0F, 1.0F, new CubeDeformation(-0.15F)), PartPose.offsetAndRotation(0.5F, -20.0F, -13.5F, 0.0F, 0.0F, 1.5708F));
 
 		PartDefinition Monolophosaurus = fossil.addOrReplaceChild("Monolophosaurus", CubeListBuilder.create(), PartPose.offsetAndRotation(0.0F, -21.6122F, 4.9009F, -0.0087F, 0.0F, 0.0F));
 

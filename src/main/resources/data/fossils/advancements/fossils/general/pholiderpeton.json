@@ -1,0 +1,57 @@
+{
+  "parent": "fossils:fossils/general/embolomeres",
+  "criteria": {
+    "finish_pholiderpeton": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:pholiderpeton_fossil"
+                ],
+                "state": {
+                  "fossil_level": "14"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:pholiderpeton_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.pholiderpeton.description"
+    },
+    "frame": "goal",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:pholiderpeton_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.pholiderpeton.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_pholiderpeton"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  },
+  "sends_telemetry_event": true
+}

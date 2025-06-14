@@ -1,0 +1,54 @@
+{
+  "parent": "fossils:fossils/general/cryptodontia",
+  "criteria": {
+    "finish_geikiaelginensis": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:geikiaelginensis_fossil"
+                ],
+                "state": {
+                  "fossil_level": "4"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:geikiaelginensis_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.geikiaelginensis.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:geikiaelginensis_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.geikiaelginensis.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_geikiaelginensis"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

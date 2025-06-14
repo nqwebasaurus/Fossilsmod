@@ -118,6 +118,11 @@
           "type": "minecraft:item",
           "name": "fossils:rangifer_fossil",
           "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:mammuthuscolumbi_fossil",
+          "weight": 2
         }
       ],
       "rolls": 1
