@@ -1,0 +1,24 @@
+{
+  "parent": "fossils:fossils/general/telluraves",
+  "criteria": {
+    "finish_coraciimorphae": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "description": {
+      "translate": "advancements.fossils.coraciimorphae.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:advancement_line"
+    },
+    "show_toast": false,
+    "title": {
+      "translate": "advancements.fossils.coraciimorphae.title"
+    }
+  },
+  "sends_telemetry_event": true
+}

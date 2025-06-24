@@ -156,14 +156,6 @@ public class FossilSkeletonTenPieceBlock extends BaseEntityBlock implements Simp
 				stack.shrink(1);
 			}
 			return InteractionResult.sidedSuccess(world.isClientSide);
-		} else if (item == FossilItems.DIMETRODONGRANDIS.get() && state.getValue(FOSSIL_LEVEL) != 9 && type == Types.DIMETRODONGRANDIS) {
-			fossilLevel = state.getValue(FOSSIL_LEVEL);
-			world.setBlockAndUpdate(pos, state.setValue(FOSSIL_LEVEL, fossilLevel + 1));
-			world.playSound(player, pos, SoundEvents.BONE_BLOCK_PLACE, SoundSource.BLOCKS);
-			if (!player.isCreative()) {
-				stack.shrink(1);
-			}
-			return InteractionResult.sidedSuccess(world.isClientSide);
 		} else if (item == FossilItems.ENDOTHIODONBATHYSTOMA.get() && state.getValue(FOSSIL_LEVEL) != 9 && type == Types.ENDOTHIODONBATHYSTOMA) {
 			fossilLevel = state.getValue(FOSSIL_LEVEL);
 			world.setBlockAndUpdate(pos, state.setValue(FOSSIL_LEVEL, fossilLevel + 1));
@@ -389,14 +381,6 @@ public class FossilSkeletonTenPieceBlock extends BaseEntityBlock implements Simp
 			}
 			return InteractionResult.sidedSuccess(world.isClientSide);
 		} else if (item == FossilItems.DIABLOCERATOPS.get() && state.getValue(FOSSIL_LEVEL) != 9 && type == Types.DIABLOCERATOPS) {
-			fossilLevel = state.getValue(FOSSIL_LEVEL);
-			world.setBlockAndUpdate(pos, state.setValue(FOSSIL_LEVEL, fossilLevel + 1));
-			world.playSound(player, pos, SoundEvents.BONE_BLOCK_PLACE, SoundSource.BLOCKS);
-			if (!player.isCreative()) {
-				stack.shrink(1);
-			}
-			return InteractionResult.sidedSuccess(world.isClientSide);
-		} else if (item == FossilItems.MOSCHOPS.get() && state.getValue(FOSSIL_LEVEL) != 9 && type == Types.MOSCHOPS) {
 			fossilLevel = state.getValue(FOSSIL_LEVEL);
 			world.setBlockAndUpdate(pos, state.setValue(FOSSIL_LEVEL, fossilLevel + 1));
 			world.playSound(player, pos, SoundEvents.BONE_BLOCK_PLACE, SoundSource.BLOCKS);
@@ -828,6 +812,14 @@ public class FossilSkeletonTenPieceBlock extends BaseEntityBlock implements Simp
 				stack.shrink(1);
 			}
 			return InteractionResult.sidedSuccess(world.isClientSide);
+		} else if (item == FossilItems.OBDURODON.get() && state.getValue(FOSSIL_LEVEL) != 9 && type == Types.OBDURODON) {
+			fossilLevel = state.getValue(FOSSIL_LEVEL);
+			world.setBlockAndUpdate(pos, state.setValue(FOSSIL_LEVEL, fossilLevel + 1));
+			world.playSound(player, pos, SoundEvents.BONE_BLOCK_PLACE, SoundSource.BLOCKS);
+			if (!player.isCreative()) {
+				stack.shrink(1);
+			}
+			return InteractionResult.sidedSuccess(world.isClientSide);
 		} else return super.use(state, world, pos, player, hand, hit);
 	}
 
@@ -840,7 +832,6 @@ public class FossilSkeletonTenPieceBlock extends BaseEntityBlock implements Simp
 	public static enum Types implements Type {
 		KENTROSAURUS,
 		SYNTHETOCERAS,
-		DIMETRODONGRANDIS,
 		ENDOTHIODONBATHYSTOMA,
 		NIGERPETON,
 		ARIZONASAURUS,
@@ -870,7 +861,6 @@ public class FossilSkeletonTenPieceBlock extends BaseEntityBlock implements Simp
 		THEROPITHECUS,
 		DODO,
 		DIABLOCERATOPS,
-		MOSCHOPS,
 		BARYLAMBDA,
 		ODOBENOCETOPS,
 		MONACHUS,
@@ -924,6 +914,7 @@ public class FossilSkeletonTenPieceBlock extends BaseEntityBlock implements Simp
 		HALISKIA,
 		QIANOSUCHUS,
 		POLACANTHUS,
+		OBDURODON,
 		NASUTOCERATOPS;
 	}
 

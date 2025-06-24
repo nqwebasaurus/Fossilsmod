@@ -88,6 +88,16 @@
           "type": "minecraft:item",
           "name": "fossils:secodontosaurus_fossil",
           "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:elginia_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:scutosaurus_fossil",
+          "weight": 2
         }
       ],
       "rolls": 1

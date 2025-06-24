@@ -12,7 +12,7 @@
                   "fossils:dimetrodongrandis_fossil"
                 ],
                 "state": {
-                  "fossil_level": "9"
+                  "fossil_level": "19"
                 }
               }
             }
@@ -35,7 +35,7 @@
     "description": {
       "translate": "advancements.fossils.dimetrodongrandis.description"
     },
-    "frame": "task",
+    "frame": "challenge",
     "hidden": false,
     "icon": {
       "item": "fossils:dimetrodongrandis_fossil"
@@ -50,5 +50,8 @@
       "finish_dimetrodongrandis"
     ]
   ],
+  "rewards": {
+    "experience": 500
+  },
   "sends_telemetry_event": true
 }

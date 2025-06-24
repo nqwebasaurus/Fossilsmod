@@ -113,6 +113,16 @@
           "type": "minecraft:item",
           "name": "fossils:daeodon_fossil",
           "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:purussaurus_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:obdurodon_fossil",
+          "weight": 2
         }
       ],
       "rolls": 1

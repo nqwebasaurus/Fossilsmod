@@ -12,7 +12,7 @@
                   "fossils:inostrancevia_fossil"
                 ],
                 "state": {
-                  "fossil_level": "14"
+                  "fossil_level": "19"
                 }
               }
             }
@@ -35,7 +35,7 @@
     "description": {
       "translate": "advancements.fossils.inostrancevia.description"
     },
-    "frame": "goal",
+    "frame": "challenge",
     "hidden": false,
     "icon": {
       "item": "fossils:inostrancevia_fossil"
@@ -51,7 +51,7 @@
     ]
   ],
   "rewards": {
-    "experience": 100
+    "experience": 500
   },
   "sends_telemetry_event": true
 }

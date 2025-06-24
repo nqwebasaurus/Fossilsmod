@@ -1,0 +1,54 @@
+{
+  "parent": "fossils:fossils/general/ornithorhynchidae",
+  "criteria": {
+    "finish_obdurodon": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:obdurodon_fossil"
+                ],
+                "state": {
+                  "fossil_level": "9"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:obdurodon_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.obdurodon.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:obdurodon_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.obdurodon.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_obdurodon"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

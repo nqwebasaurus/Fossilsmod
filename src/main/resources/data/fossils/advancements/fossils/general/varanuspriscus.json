@@ -1,0 +1,57 @@
+{
+  "parent": "fossils:fossils/general/varanoidea",
+  "criteria": {
+    "finish_varanuspriscus": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:varanuspriscus_fossil"
+                ],
+                "state": {
+                  "fossil_level": "19"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:varanuspriscus_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.varanuspriscus.description"
+    },
+    "frame": "challenge",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:varanuspriscus_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.varanuspriscus.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_varanuspriscus"
+    ]
+  ],
+  "rewards": {
+    "experience": 500
+  },
+  "sends_telemetry_event": true
+}

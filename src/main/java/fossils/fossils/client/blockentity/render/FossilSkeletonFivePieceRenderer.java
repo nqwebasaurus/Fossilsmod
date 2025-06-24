@@ -59,6 +59,8 @@ import fossils.fossils.client.blockentity.model.drepanosaurus.DrepanosaurusFossi
 import fossils.fossils.client.blockentity.model.drepanosaurus.DrepanosaurusFossilModel;
 import fossils.fossils.client.blockentity.model.effigia.EffigiaFossilFrameModel;
 import fossils.fossils.client.blockentity.model.effigia.EffigiaFossilModel;
+import fossils.fossils.client.blockentity.model.elginia.ElginiaFossilFrameModel;
+import fossils.fossils.client.blockentity.model.elginia.ElginiaFossilModel;
 import fossils.fossils.client.blockentity.model.eocursor.EocursorFossilFrameModel;
 import fossils.fossils.client.blockentity.model.eocursor.EocursorFossilModel;
 import fossils.fossils.client.blockentity.model.eretmorhipis.EretmorhipisFossilFrameModel;
@@ -143,6 +145,8 @@ import fossils.fossils.client.blockentity.model.teraterpeton.TeraterpetonFossilF
 import fossils.fossils.client.blockentity.model.teraterpeton.TeraterpetonFossilModel;
 import fossils.fossils.client.blockentity.model.tiktaalik.TiktaalikFossilFrameModel;
 import fossils.fossils.client.blockentity.model.tiktaalik.TiktaalikFossilModel;
+import fossils.fossils.client.blockentity.model.tockus.TockusFossilFrameModel;
+import fossils.fossils.client.blockentity.model.tockus.TockusFossilModel;
 import fossils.fossils.client.blockentity.model.torukjara.TorukjaraFossilFrameModel;
 import fossils.fossils.client.blockentity.model.torukjara.TorukjaraFossilModel;
 import fossils.fossils.client.blockentity.model.yuanyanglong.YuanyanglongFossilFrameModel;
@@ -236,6 +240,8 @@ public class FossilSkeletonFivePieceRenderer implements BlockEntityRenderer<Foss
 		type.put(FossilSkeletonFivePieceBlock.Types.CAIUAJARA, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/caiuajara/stage_0.png"));
 		type.put(FossilSkeletonFivePieceBlock.Types.CALLAWAYIA, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/callawayia/stage_0.png"));
 		type.put(FossilSkeletonFivePieceBlock.Types.TAPEJARA, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/tapejara/stage_0.png"));
+		type.put(FossilSkeletonFivePieceBlock.Types.TOCKUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/tockus/stage_0.png"));
+		type.put(FossilSkeletonFivePieceBlock.Types.ELGINIA, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/elginia/stage_0.png"));
 	});
 	public static final Map<FossilSkeletonFivePieceBlock.Type, ResourceLocation> FRAME_BY_TYPE = Util.make(Maps.newHashMap(), (type) -> {
 		type.put(FossilSkeletonFivePieceBlock.Types.EUNOTOSAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/eunotosaurus/frame.png"));
@@ -307,6 +313,8 @@ public class FossilSkeletonFivePieceRenderer implements BlockEntityRenderer<Foss
 		type.put(FossilSkeletonFivePieceBlock.Types.CAIUAJARA, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/caiuajara/frame.png"));
 		type.put(FossilSkeletonFivePieceBlock.Types.CALLAWAYIA, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/callawayia/frame.png"));
 		type.put(FossilSkeletonFivePieceBlock.Types.TAPEJARA, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/tapejara/frame.png"));
+		type.put(FossilSkeletonFivePieceBlock.Types.TOCKUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/tockus/frame.png"));
+		type.put(FossilSkeletonFivePieceBlock.Types.ELGINIA, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/elginia/frame.png"));
 	});
 	public static Map<FossilSkeletonFivePieceBlock.Type, SkullModelBase> createFossilRenderers(EntityModelSet p_173662_) {
 		ImmutableMap.Builder<FossilSkeletonFivePieceBlock.Type, SkullModelBase> builder = ImmutableMap.builder();
@@ -379,6 +387,8 @@ public class FossilSkeletonFivePieceRenderer implements BlockEntityRenderer<Foss
 		builder.put(FossilSkeletonFivePieceBlock.Types.CAIUAJARA, new CaiuajaraFossilModel(p_173662_.bakeLayer(ClientEvents.CAIUAJARA)));
 		builder.put(FossilSkeletonFivePieceBlock.Types.CALLAWAYIA, new CallawayiaFossilModel(p_173662_.bakeLayer(ClientEvents.CALLAWAYIA)));
 		builder.put(FossilSkeletonFivePieceBlock.Types.TAPEJARA, new TapejaraFossilModel(p_173662_.bakeLayer(ClientEvents.TAPEJARA)));
+		builder.put(FossilSkeletonFivePieceBlock.Types.TOCKUS, new TockusFossilModel(p_173662_.bakeLayer(ClientEvents.TOCKUS)));
+		builder.put(FossilSkeletonFivePieceBlock.Types.ELGINIA, new ElginiaFossilModel(p_173662_.bakeLayer(ClientEvents.ELGINIA)));
 		return builder.build();
 	}
 
@@ -453,6 +463,8 @@ public class FossilSkeletonFivePieceRenderer implements BlockEntityRenderer<Foss
 		builder.put(FossilSkeletonFivePieceBlock.Types.CAIUAJARA, new CaiuajaraFossilFrameModel(p_173662_.bakeLayer(ClientEvents.CAIUAJARA_FRAME)));
 		builder.put(FossilSkeletonFivePieceBlock.Types.CALLAWAYIA, new CallawayiaFossilFrameModel(p_173662_.bakeLayer(ClientEvents.CALLAWAYIA_FRAME)));
 		builder.put(FossilSkeletonFivePieceBlock.Types.TAPEJARA, new TapejaraFossilFrameModel(p_173662_.bakeLayer(ClientEvents.TAPEJARA_FRAME)));
+		builder.put(FossilSkeletonFivePieceBlock.Types.TOCKUS, new TockusFossilFrameModel(p_173662_.bakeLayer(ClientEvents.TOCKUS_FRAME)));
+		builder.put(FossilSkeletonFivePieceBlock.Types.ELGINIA, new ElginiaFossilFrameModel(p_173662_.bakeLayer(ClientEvents.ELGINIA_FRAME)));
 		return builder.build();
 	}
 
@@ -689,6 +701,12 @@ public class FossilSkeletonFivePieceRenderer implements BlockEntityRenderer<Foss
 		} else if (FossilSkeletonFivePieceBlock$type == FossilSkeletonFivePieceBlock.Types.TAPEJARA) {
 			p_173667_.scale(-0.32F, -0.32F, 0.32F);
 			p_173667_.translate(0F, 1.63F, 0F);
+		} else if (FossilSkeletonFivePieceBlock$type == FossilSkeletonFivePieceBlock.Types.TOCKUS) {
+			p_173667_.scale(-0.2F, -0.2F, 0.2F);
+			p_173667_.translate(0F, 3.5F, 0F);
+		} else if (FossilSkeletonFivePieceBlock$type == FossilSkeletonFivePieceBlock.Types.ELGINIA) {
+			p_173667_.scale(-0.2F, -0.2F, 0.2F);
+			p_173667_.translate(0F, 3.5F, 0F);
 		} else p_173667_.scale(-1.0F, -1.0F, 1.0F);
 		VertexConsumer vertexconsumer = p_173668_.getBuffer(p_173671_);
 		p_173670_.setupAnim(p_173666_, p_173665_, 0.0F);
@@ -836,6 +854,10 @@ public class FossilSkeletonFivePieceRenderer implements BlockEntityRenderer<Foss
 			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/callawayia/stage_" + fossilLevel + ".png");
 		} else if (type == FossilSkeletonFivePieceBlock.Types.TAPEJARA) {
 			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/tapejara/stage_" + fossilLevel + ".png");
+		} else if (type == FossilSkeletonFivePieceBlock.Types.TOCKUS) {
+			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/tockus/stage_" + fossilLevel + ".png");
+		} else if (type == FossilSkeletonFivePieceBlock.Types.ELGINIA) {
+			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/elginia/stage_" + fossilLevel + ".png");
 		} else resourceLocation = SKIN_BY_TYPE.get(type);
 		return RenderType.entityCutoutNoCullZOffset(resourceLocation);
 	}
