@@ -700,6 +700,62 @@ public class FossilSkeletonFivePieceBlock extends BaseEntityBlock implements Sim
 				stack.shrink(1);
 			}
 			return InteractionResult.sidedSuccess(world.isClientSide);
+		} else if (item == FossilItems.EUROPEJARA.get() && state.getValue(FOSSIL_LEVEL) != 4 && type == Types.EUROPEJARA) {
+			fossilLevel = state.getValue(FOSSIL_LEVEL);
+			world.setBlockAndUpdate(pos, state.setValue(FOSSIL_LEVEL, fossilLevel + 1));
+			world.playSound(player, pos, SoundEvents.BONE_BLOCK_PLACE, SoundSource.BLOCKS);
+			if (!player.isCreative()) {
+				stack.shrink(1);
+			}
+			return InteractionResult.sidedSuccess(world.isClientSide);
+		} else if (item == FossilItems.KRANOSAURA.get() && state.getValue(FOSSIL_LEVEL) != 4 && type == Types.KRANOSAURA) {
+			fossilLevel = state.getValue(FOSSIL_LEVEL);
+			world.setBlockAndUpdate(pos, state.setValue(FOSSIL_LEVEL, fossilLevel + 1));
+			world.playSound(player, pos, SoundEvents.BONE_BLOCK_PLACE, SoundSource.BLOCKS);
+			if (!player.isCreative()) {
+				stack.shrink(1);
+			}
+			return InteractionResult.sidedSuccess(world.isClientSide);
+		} else if (item == FossilItems.DIPLOCERASPIS.get() && state.getValue(FOSSIL_LEVEL) != 4 && type == Types.DIPLOCERASPIS) {
+			fossilLevel = state.getValue(FOSSIL_LEVEL);
+			world.setBlockAndUpdate(pos, state.setValue(FOSSIL_LEVEL, fossilLevel + 1));
+			world.playSound(player, pos, SoundEvents.BONE_BLOCK_PLACE, SoundSource.BLOCKS);
+			if (!player.isCreative()) {
+				stack.shrink(1);
+			}
+			return InteractionResult.sidedSuccess(world.isClientSide);
+		}  else if (item == FossilItems.ACANTHOSTOMATOPS.get() && state.getValue(FOSSIL_LEVEL) != 4 && type == Types.ACANTHOSTOMATOPS) {
+			fossilLevel = state.getValue(FOSSIL_LEVEL);
+			world.setBlockAndUpdate(pos, state.setValue(FOSSIL_LEVEL, fossilLevel + 1));
+			world.playSound(player, pos, SoundEvents.BONE_BLOCK_PLACE, SoundSource.BLOCKS);
+			if (!player.isCreative()) {
+				stack.shrink(1);
+			}
+			return InteractionResult.sidedSuccess(world.isClientSide);
+		}  else if (item == FossilItems.HYPURONECTOR.get() && state.getValue(FOSSIL_LEVEL) != 4 && type == Types.HYPURONECTOR) {
+			fossilLevel = state.getValue(FOSSIL_LEVEL);
+			world.setBlockAndUpdate(pos, state.setValue(FOSSIL_LEVEL, fossilLevel + 1));
+			world.playSound(player, pos, SoundEvents.BONE_BLOCK_PLACE, SoundSource.BLOCKS);
+			if (!player.isCreative()) {
+				stack.shrink(1);
+			}
+			return InteractionResult.sidedSuccess(world.isClientSide);
+		}  else if (item == FossilItems.MEILIFEILONG.get() && state.getValue(FOSSIL_LEVEL) != 4 && type == Types.MEILIFEILONG) {
+			fossilLevel = state.getValue(FOSSIL_LEVEL);
+			world.setBlockAndUpdate(pos, state.setValue(FOSSIL_LEVEL, fossilLevel + 1));
+			world.playSound(player, pos, SoundEvents.BONE_BLOCK_PLACE, SoundSource.BLOCKS);
+			if (!player.isCreative()) {
+				stack.shrink(1);
+			}
+			return InteractionResult.sidedSuccess(world.isClientSide);
+		}  else if (item == FossilItems.CARTORHYNCHUS.get() && state.getValue(FOSSIL_LEVEL) != 4 && type == Types.CARTORHYNCHUS) {
+			fossilLevel = state.getValue(FOSSIL_LEVEL);
+			world.setBlockAndUpdate(pos, state.setValue(FOSSIL_LEVEL, fossilLevel + 1));
+			world.playSound(player, pos, SoundEvents.BONE_BLOCK_PLACE, SoundSource.BLOCKS);
+			if (!player.isCreative()) {
+				stack.shrink(1);
+			}
+			return InteractionResult.sidedSuccess(world.isClientSide);
 		} else return super.use(state, world, pos, player, hand, hit);
 	}
 
@@ -780,6 +836,13 @@ public class FossilSkeletonFivePieceBlock extends BaseEntityBlock implements Sim
 		TAPEJARA,
 		TOCKUS,
 		ELGINIA,
+		EUROPEJARA,
+		KRANOSAURA,
+		DIPLOCERASPIS,
+		ACANTHOSTOMATOPS,
+		HYPURONECTOR,
+		MEILIFEILONG,
+		CARTORHYNCHUS,
 		PELECANIMIMUS;
 	}
 

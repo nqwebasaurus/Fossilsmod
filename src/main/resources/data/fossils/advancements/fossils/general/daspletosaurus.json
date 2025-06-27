@@ -1,0 +1,57 @@
+{
+  "parent": "fossils:fossils/general/tyrannosaurids",
+  "criteria": {
+    "finish_daspletosaurus": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:daspletosaurus_fossil"
+                ],
+                "state": {
+                  "fossil_level": "19"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:daspletosaurus_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.daspletosaurus.description"
+    },
+    "frame": "challenge",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:daspletosaurus_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.daspletosaurus.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_daspletosaurus"
+    ]
+  ],
+  "rewards": {
+    "experience": 500
+  },
+  "sends_telemetry_event": true
+}

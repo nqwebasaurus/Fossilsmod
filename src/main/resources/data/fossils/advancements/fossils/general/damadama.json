@@ -1,0 +1,54 @@
+{
+  "parent": "fossils:fossils/general/cervidae",
+  "criteria": {
+    "finish_damadama": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:damadama_fossil"
+                ],
+                "state": {
+                  "fossil_level": "9"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:damadama_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.damadama.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:damadama_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.damadama.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_damadama"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

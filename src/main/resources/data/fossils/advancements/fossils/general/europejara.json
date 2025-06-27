@@ -1,0 +1,54 @@
+{
+  "parent": "fossils:fossils/general/tapejaridae",
+  "criteria": {
+    "finish_europejara": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:europejara_fossil"
+                ],
+                "state": {
+                  "fossil_level": "4"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:europejara_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.europejara.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:europejara_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.europejara.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_europejara"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

@@ -1,0 +1,54 @@
+{
+  "parent": "fossils:fossils/general/gorgonopsia",
+  "criteria": {
+    "finish_ruhuhucerberus": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:ruhuhucerberus_fossil"
+                ],
+                "state": {
+                  "fossil_level": "9"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:ruhuhucerberus_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.ruhuhucerberus.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:ruhuhucerberus_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.ruhuhucerberus.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_ruhuhucerberus"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

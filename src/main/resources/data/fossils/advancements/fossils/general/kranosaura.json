@@ -1,0 +1,54 @@
+{
+  "parent": "fossils:fossils/general/crocopoda",
+  "criteria": {
+    "finish_kranosaura": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:kranosaura_fossil"
+                ],
+                "state": {
+                  "fossil_level": "4"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:kranosaura_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.kranosaura.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:kranosaura_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.kranosaura.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_kranosaura"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

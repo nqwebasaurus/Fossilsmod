@@ -820,6 +820,54 @@ public class FossilSkeletonTenPieceBlock extends BaseEntityBlock implements Simp
 				stack.shrink(1);
 			}
 			return InteractionResult.sidedSuccess(world.isClientSide);
+		} else if (item == FossilItems.BARBOSANIA.get() && state.getValue(FOSSIL_LEVEL) != 9 && type == Types.BARBOSANIA) {
+			fossilLevel = state.getValue(FOSSIL_LEVEL);
+			world.setBlockAndUpdate(pos, state.setValue(FOSSIL_LEVEL, fossilLevel + 1));
+			world.playSound(player, pos, SoundEvents.BONE_BLOCK_PLACE, SoundSource.BLOCKS);
+			if (!player.isCreative()) {
+				stack.shrink(1);
+			}
+			return InteractionResult.sidedSuccess(world.isClientSide);
+		} else if (item == FossilItems.ANHANGUERA.get() && state.getValue(FOSSIL_LEVEL) != 9 && type == Types.ANHANGUERA) {
+			fossilLevel = state.getValue(FOSSIL_LEVEL);
+			world.setBlockAndUpdate(pos, state.setValue(FOSSIL_LEVEL, fossilLevel + 1));
+			world.playSound(player, pos, SoundEvents.BONE_BLOCK_PLACE, SoundSource.BLOCKS);
+			if (!player.isCreative()) {
+				stack.shrink(1);
+			}
+			return InteractionResult.sidedSuccess(world.isClientSide);
+		} else if (item == FossilItems.DSUNGARIPTERUS.get() && state.getValue(FOSSIL_LEVEL) != 9 && type == Types.DSUNGARIPTERUS) {
+			fossilLevel = state.getValue(FOSSIL_LEVEL);
+			world.setBlockAndUpdate(pos, state.setValue(FOSSIL_LEVEL, fossilLevel + 1));
+			world.playSound(player, pos, SoundEvents.BONE_BLOCK_PLACE, SoundSource.BLOCKS);
+			if (!player.isCreative()) {
+				stack.shrink(1);
+			}
+			return InteractionResult.sidedSuccess(world.isClientSide);
+		} else if (item == FossilItems.LAJASVENATOR.get() && state.getValue(FOSSIL_LEVEL) != 9 && type == Types.LAJASVENATOR) {
+			fossilLevel = state.getValue(FOSSIL_LEVEL);
+			world.setBlockAndUpdate(pos, state.setValue(FOSSIL_LEVEL, fossilLevel + 1));
+			world.playSound(player, pos, SoundEvents.BONE_BLOCK_PLACE, SoundSource.BLOCKS);
+			if (!player.isCreative()) {
+				stack.shrink(1);
+			}
+			return InteractionResult.sidedSuccess(world.isClientSide);
+		} else if (item == FossilItems.DAMADAMA.get() && state.getValue(FOSSIL_LEVEL) != 9 && type == Types.DAMADAMA) {
+			fossilLevel = state.getValue(FOSSIL_LEVEL);
+			world.setBlockAndUpdate(pos, state.setValue(FOSSIL_LEVEL, fossilLevel + 1));
+			world.playSound(player, pos, SoundEvents.BONE_BLOCK_PLACE, SoundSource.BLOCKS);
+			if (!player.isCreative()) {
+				stack.shrink(1);
+			}
+			return InteractionResult.sidedSuccess(world.isClientSide);
+		} else if (item == FossilItems.RUHUHUCERBERUS.get() && state.getValue(FOSSIL_LEVEL) != 9 && type == Types.RUHUHUCERBERUS) {
+			fossilLevel = state.getValue(FOSSIL_LEVEL);
+			world.setBlockAndUpdate(pos, state.setValue(FOSSIL_LEVEL, fossilLevel + 1));
+			world.playSound(player, pos, SoundEvents.BONE_BLOCK_PLACE, SoundSource.BLOCKS);
+			if (!player.isCreative()) {
+				stack.shrink(1);
+			}
+			return InteractionResult.sidedSuccess(world.isClientSide);
 		} else return super.use(state, world, pos, player, hand, hit);
 	}
 
@@ -915,6 +963,12 @@ public class FossilSkeletonTenPieceBlock extends BaseEntityBlock implements Simp
 		QIANOSUCHUS,
 		POLACANTHUS,
 		OBDURODON,
+		BARBOSANIA,
+		ANHANGUERA,
+		DSUNGARIPTERUS,
+		LAJASVENATOR,
+		DAMADAMA,
+		RUHUHUCERBERUS,
 		NASUTOCERATOPS;
 	}
 

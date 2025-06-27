@@ -1,0 +1,54 @@
+{
+  "parent": "fossils:fossils/general/lepospondyli",
+  "criteria": {
+    "finish_diploceraspis": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:diploceraspis_fossil"
+                ],
+                "state": {
+                  "fossil_level": "4"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:diploceraspis_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.diploceraspis.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:diploceraspis_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.diploceraspis.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_diploceraspis"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

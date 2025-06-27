@@ -98,6 +98,21 @@
           "type": "minecraft:item",
           "name": "fossils:scutosaurus_fossil",
           "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:diploceraspis_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:acanthostomatops_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:ruhuhucerberus_fossil",
+          "weight": 2
         }
       ],
       "rolls": 1

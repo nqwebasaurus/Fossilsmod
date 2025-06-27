@@ -41,6 +41,8 @@ import fossils.fossils.client.blockentity.model.ceratotherium.CeratotheriumFossi
 import fossils.fossils.client.blockentity.model.ceratotherium.CeratotheriumFossilModel;
 import fossils.fossils.client.blockentity.model.cotylorhynchus.CotylorhynchusFossilFrameModel;
 import fossils.fossils.client.blockentity.model.cotylorhynchus.CotylorhynchusFossilModel;
+import fossils.fossils.client.blockentity.model.daspletosaurus.DaspletosaurusFossilFrameModel;
+import fossils.fossils.client.blockentity.model.daspletosaurus.DaspletosaurusFossilModel;
 import fossils.fossils.client.blockentity.model.deinocheirus.DeinocheirusFossilFrameModel;
 import fossils.fossils.client.blockentity.model.deinocheirus.DeinocheirusFossilModel;
 import fossils.fossils.client.blockentity.model.dimetrodongrandis.DimetrodonFossilFrameModel;
@@ -191,6 +193,7 @@ public class FossilSkeletonTwentyPieceRenderer implements BlockEntityRenderer<Fo
 		type.put(FossilSkeletonTwentyPieceBlock.Types.DIMETRODONGRANDIS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/dimetrodongrandis/stage_0.png"));
 		type.put(FossilSkeletonTwentyPieceBlock.Types.INOSTRANCEVIA, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/inostrancevia/stage_0.png"));
 		type.put(FossilSkeletonTwentyPieceBlock.Types.MOSCHOPS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/moschops/stage_0.png"));
+		type.put(FossilSkeletonTwentyPieceBlock.Types.DASPLETOSAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/daspletosaurus/stage_0.png"));
 	});
 	public static final Map<FossilSkeletonTwentyPieceBlock.Type, ResourceLocation> FRAME_BY_TYPE = Util.make(Maps.newHashMap(), (type) -> {
 		type.put(FossilSkeletonTwentyPieceBlock.Types.UTAHRAPTOR, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/utahraptor/frame.png"));
@@ -246,6 +249,7 @@ public class FossilSkeletonTwentyPieceRenderer implements BlockEntityRenderer<Fo
 		type.put(FossilSkeletonTwentyPieceBlock.Types.DIMETRODONGRANDIS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/dimetrodongrandis/frame.png"));
 		type.put(FossilSkeletonTwentyPieceBlock.Types.INOSTRANCEVIA, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/inostrancevia/frame.png"));
 		type.put(FossilSkeletonTwentyPieceBlock.Types.MOSCHOPS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/moschops/frame.png"));
+		type.put(FossilSkeletonTwentyPieceBlock.Types.DASPLETOSAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/daspletosaurus/frame.png"));
 
 	});
 	public static Map<FossilSkeletonTwentyPieceBlock.Type, SkullModelBase> createFossilRenderers(EntityModelSet p_173662_) {
@@ -303,6 +307,7 @@ public class FossilSkeletonTwentyPieceRenderer implements BlockEntityRenderer<Fo
 		builder.put(FossilSkeletonTwentyPieceBlock.Types.DIMETRODONGRANDIS, new DimetrodonFossilModel(p_173662_.bakeLayer(ClientEvents.DIMETRODONGRANDIS)));
 		builder.put(FossilSkeletonTwentyPieceBlock.Types.INOSTRANCEVIA, new InostranceviaFossilModel(p_173662_.bakeLayer(ClientEvents.INOSTRANCEVIA)));
 		builder.put(FossilSkeletonTwentyPieceBlock.Types.MOSCHOPS, new MoschopsFossilModel(p_173662_.bakeLayer(ClientEvents.MOSCHOPS)));
+		builder.put(FossilSkeletonTwentyPieceBlock.Types.DASPLETOSAURUS, new DaspletosaurusFossilModel(p_173662_.bakeLayer(ClientEvents.DASPLETOSAURUS)));
 		return builder.build();
 	}
 
@@ -361,6 +366,7 @@ public class FossilSkeletonTwentyPieceRenderer implements BlockEntityRenderer<Fo
 		builder.put(FossilSkeletonTwentyPieceBlock.Types.DIMETRODONGRANDIS, new DimetrodonFossilFrameModel(p_173662_.bakeLayer(ClientEvents.DIMETRODONGRANDIS_FRAME)));
 		builder.put(FossilSkeletonTwentyPieceBlock.Types.INOSTRANCEVIA, new InostranceviaFossilFrameModel(p_173662_.bakeLayer(ClientEvents.INOSTRANCEVIA_FRAME)));
 		builder.put(FossilSkeletonTwentyPieceBlock.Types.MOSCHOPS, new MoschopsFossilFrameModel(p_173662_.bakeLayer(ClientEvents.MOSCHOPS_FRAME)));
+		builder.put(FossilSkeletonTwentyPieceBlock.Types.DASPLETOSAURUS, new DaspletosaurusFossilFrameModel(p_173662_.bakeLayer(ClientEvents.DASPLETOSAURUS_FRAME)));
 		return builder.build();
 	}
 
@@ -549,6 +555,9 @@ public class FossilSkeletonTwentyPieceRenderer implements BlockEntityRenderer<Fo
 		} else if (FossilSkeletonTwentyPieceBlock$type == FossilSkeletonTwentyPieceBlock.Types.MOSCHOPS) {
 			p_173667_.scale(-0.9F, -0.9F, 0.9F);
 			p_173667_.translate(0F, -0.38F, 0F);
+		} else if (FossilSkeletonTwentyPieceBlock$type == FossilSkeletonTwentyPieceBlock.Types.DASPLETOSAURUS) {
+			p_173667_.scale(-1F, -1F, 1F);
+			p_173667_.translate(0F, -0.4F, 0F);
 		} else p_173667_.scale(-1.0F, -1.0F, 1.0F);
 		VertexConsumer vertexconsumer = p_173668_.getBuffer(p_173671_);
 		p_173670_.setupAnim(p_173666_, p_173665_, 0.0F);
@@ -664,6 +673,8 @@ public class FossilSkeletonTwentyPieceRenderer implements BlockEntityRenderer<Fo
 			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/inostrancevia/stage_" + fossilLevel + ".png");
 		}  else if (type == FossilSkeletonTwentyPieceBlock.Types.MOSCHOPS) {
 			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/moschops/stage_" + fossilLevel + ".png");
+		}  else if (type == FossilSkeletonTwentyPieceBlock.Types.DASPLETOSAURUS) {
+			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/daspletosaurus/stage_" + fossilLevel + ".png");
 		} else resourceLocation = SKIN_BY_TYPE.get(type);
 		return RenderType.entityCutoutNoCullZOffset(resourceLocation);
 	}

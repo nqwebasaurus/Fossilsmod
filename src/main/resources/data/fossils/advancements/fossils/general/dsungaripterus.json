@@ -1,0 +1,54 @@
+{
+  "parent": "fossils:fossils/general/ornithocheiroidea",
+  "criteria": {
+    "finish_dsungaripterus": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:dsungaripterus_fossil"
+                ],
+                "state": {
+                  "fossil_level": "9"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:dsungaripterus_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.dsungaripterus.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:dsungaripterus_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.dsungaripterus.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_dsungaripterus"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

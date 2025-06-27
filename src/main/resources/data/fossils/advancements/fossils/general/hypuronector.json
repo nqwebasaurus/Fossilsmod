@@ -1,0 +1,54 @@
+{
+  "parent": "fossils:fossils/general/drepanosauromorpha",
+  "criteria": {
+    "finish_hypuronector": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:hypuronector_fossil"
+                ],
+                "state": {
+                  "fossil_level": "4"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:hypuronector_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.hypuronector.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:hypuronector_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.hypuronector.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_hypuronector"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

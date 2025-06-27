@@ -1,5 +1,5 @@
 {
-  "parent": "fossils:fossils/general/dicynodontiabig",
+  "parent": "fossils:fossils/general/dicynodontia",
   "criteria": {
     "finish_endothiodonbathystoma": {
       "conditions": {

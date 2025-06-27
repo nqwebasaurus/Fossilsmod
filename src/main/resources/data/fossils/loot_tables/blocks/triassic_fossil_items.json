@@ -173,6 +173,21 @@
           "type": "minecraft:item",
           "name": "fossils:lessemsaurus_fossil",
           "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:kranosaura_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:hypuronector_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:cartorhynchus_fossil",
+          "weight": 2
         }
       ],
       "rolls": 1

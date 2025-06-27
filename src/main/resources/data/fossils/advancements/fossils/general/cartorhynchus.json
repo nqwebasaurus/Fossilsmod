@@ -1,0 +1,54 @@
+{
+  "parent": "fossils:fossils/general/ichthyosauria",
+  "criteria": {
+    "finish_cartorhynchus": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:cartorhynchus_fossil"
+                ],
+                "state": {
+                  "fossil_level": "4"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:cartorhynchus_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.cartorhynchus.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:cartorhynchus_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.cartorhynchus.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_cartorhynchus"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

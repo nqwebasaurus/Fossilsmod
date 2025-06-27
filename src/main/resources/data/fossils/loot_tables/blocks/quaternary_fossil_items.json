@@ -133,6 +133,11 @@
           "type": "minecraft:item",
           "name": "fossils:varanuspriscus_fossil",
           "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:damadama_fossil",
+          "weight": 2
         }
       ],
       "rolls": 1

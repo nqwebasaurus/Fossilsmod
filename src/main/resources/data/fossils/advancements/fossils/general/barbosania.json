@@ -1,0 +1,54 @@
+{
+  "parent": "fossils:fossils/general/ornithocheiromorpha",
+  "criteria": {
+    "finish_barbosania": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:barbosania_fossil"
+                ],
+                "state": {
+                  "fossil_level": "9"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:barbosania_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.barbosania.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:barbosania_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.barbosania.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_barbosania"
+    ]
+  ],
+  "sends_telemetry_event": true
+}
