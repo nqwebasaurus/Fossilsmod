@@ -1,0 +1,54 @@
+{
+  "parent": "fossils:fossils/general/tyrannoraptora",
+  "criteria": {
+    "finish_ornitholestes": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:ornitholestes_fossil"
+                ],
+                "state": {
+                  "fossil_level": "9"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:ornitholestes_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.ornitholestes.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:ornitholestes_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.ornitholestes.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_ornitholestes"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

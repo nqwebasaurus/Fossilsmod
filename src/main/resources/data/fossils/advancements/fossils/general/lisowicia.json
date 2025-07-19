@@ -1,0 +1,57 @@
+{
+  "parent": "fossils:fossils/general/stahleckeriidae",
+  "criteria": {
+    "finish_lisowicia": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:lisowicia_fossil"
+                ],
+                "state": {
+                  "fossil_level": "19"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:lisowicia_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.lisowicia.description"
+    },
+    "frame": "challenge",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:lisowicia_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.lisowicia.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_lisowicia"
+    ]
+  ],
+  "rewards": {
+    "experience": 500
+  },
+  "sends_telemetry_event": true
+}

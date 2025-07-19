@@ -15,6 +15,8 @@ import fossils.fossils.client.blockentity.model.achelousaurus.AchelousaurusFossi
 import fossils.fossils.client.blockentity.model.achelousaurus.AchelousaurusFossilModel;
 import fossils.fossils.client.blockentity.model.altirhinus.AltirhinusFossilFrameModel;
 import fossils.fossils.client.blockentity.model.altirhinus.AltirhinusFossilModel;
+import fossils.fossils.client.blockentity.model.angulomastacator.AngulomastacatorFossilFrameModel;
+import fossils.fossils.client.blockentity.model.angulomastacator.AngulomastacatorFossilModel;
 import fossils.fossils.client.blockentity.model.anthracosaurus.AnthracosaurusFossilFrameModel;
 import fossils.fossils.client.blockentity.model.anthracosaurus.AnthracosaurusFossilModel;
 import fossils.fossils.client.blockentity.model.asfaltovenator.AsfaltovenatorFossilFrameModel;
@@ -53,6 +55,8 @@ import fossils.fossils.client.blockentity.model.dilophosaurus.DilophosaurusFossi
 import fossils.fossils.client.blockentity.model.dilophosaurus.DilophosaurusFossilModel;
 import fossils.fossils.client.blockentity.model.eoabelisaurus.EoabelisaurusFossilFrameModel;
 import fossils.fossils.client.blockentity.model.eoabelisaurus.EoabelisaurusFossilModel;
+import fossils.fossils.client.blockentity.model.eocarcharia.EocarchariaFossilFrameModel;
+import fossils.fossils.client.blockentity.model.eocarcharia.EocarchariaFossilModel;
 import fossils.fossils.client.blockentity.model.erythrosuchus.ErythrosuchusFossilFrameModel;
 import fossils.fossils.client.blockentity.model.erythrosuchus.ErythrosuchusFossilModel;
 import fossils.fossils.client.blockentity.model.etjosuchus.EtjosuchusFossilFrameModel;
@@ -244,6 +248,8 @@ public class FossilSkeletonFifteenPieceRenderer implements BlockEntityRenderer<F
 		type.put(FossilSkeletonFifteenPieceBlock.Types.LIOPLEURODON, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/liopleurodon/stage_0.png"));
 		type.put(FossilSkeletonFifteenPieceBlock.Types.LUSOVENATOR, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/lusovenator/stage_0.png"));
 		type.put(FossilSkeletonFifteenPieceBlock.Types.PHOLIDERPETON, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/pholiderpeton/stage_0.png"));
+		type.put(FossilSkeletonFifteenPieceBlock.Types.EOCARCHARIA, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/eocarcharia/stage_0.png"));
+		type.put(FossilSkeletonFifteenPieceBlock.Types.ANGULOMASTACATOR, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/angulomastacator/stage_0.png"));
 	});
 	public static final Map<FossilSkeletonFifteenPieceBlock.Type, ResourceLocation> FRAME_BY_TYPE = Util.make(Maps.newHashMap(), (type) -> {
 		type.put(FossilSkeletonFifteenPieceBlock.Types.WUERHOSAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/wuerhosaurus/frame.png"));
@@ -316,6 +322,8 @@ public class FossilSkeletonFifteenPieceRenderer implements BlockEntityRenderer<F
 		type.put(FossilSkeletonFifteenPieceBlock.Types.LIOPLEURODON, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/liopleurodon/frame.png"));
 		type.put(FossilSkeletonFifteenPieceBlock.Types.LUSOVENATOR, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/lusovenator/frame.png"));
 		type.put(FossilSkeletonFifteenPieceBlock.Types.PHOLIDERPETON, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/pholiderpeton/frame.png"));
+		type.put(FossilSkeletonFifteenPieceBlock.Types.EOCARCHARIA, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/eocarcharia/frame.png"));
+		type.put(FossilSkeletonFifteenPieceBlock.Types.ANGULOMASTACATOR, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/angulomastacator/frame.png"));
 	});
 	public static Map<FossilSkeletonFifteenPieceBlock.Type, SkullModelBase> createFossilRenderers(EntityModelSet p_173662_) {
 		ImmutableMap.Builder<FossilSkeletonFifteenPieceBlock.Type, SkullModelBase> builder = ImmutableMap.builder();
@@ -389,6 +397,8 @@ public class FossilSkeletonFifteenPieceRenderer implements BlockEntityRenderer<F
 		builder.put(FossilSkeletonFifteenPieceBlock.Types.LIOPLEURODON, new LiopleurodonFossilModel(p_173662_.bakeLayer(ClientEvents.LIOPLEURODON)));
 		builder.put(FossilSkeletonFifteenPieceBlock.Types.LUSOVENATOR, new LusovenatorFossilModel(p_173662_.bakeLayer(ClientEvents.LUSOVENATOR)));
 		builder.put(FossilSkeletonFifteenPieceBlock.Types.PHOLIDERPETON, new PholiderpetonFossilModel(p_173662_.bakeLayer(ClientEvents.PHOLIDERPETON)));
+		builder.put(FossilSkeletonFifteenPieceBlock.Types.EOCARCHARIA, new EocarchariaFossilModel(p_173662_.bakeLayer(ClientEvents.EOCARCHARIA)));
+		builder.put(FossilSkeletonFifteenPieceBlock.Types.ANGULOMASTACATOR, new AngulomastacatorFossilModel(p_173662_.bakeLayer(ClientEvents.ANGULOMASTACATOR)));
 		return builder.build();
 	}
 
@@ -464,6 +474,8 @@ public class FossilSkeletonFifteenPieceRenderer implements BlockEntityRenderer<F
 		builder.put(FossilSkeletonFifteenPieceBlock.Types.LIOPLEURODON, new LiopleurodonFossilFrameModel(p_173662_.bakeLayer(ClientEvents.LIOPLEURODON_FRAME)));
 		builder.put(FossilSkeletonFifteenPieceBlock.Types.LUSOVENATOR, new LusovenatorFossilFrameModel(p_173662_.bakeLayer(ClientEvents.LUSOVENATOR_FRAME)));
 		builder.put(FossilSkeletonFifteenPieceBlock.Types.PHOLIDERPETON, new PholiderpetonFossilFrameModel(p_173662_.bakeLayer(ClientEvents.PHOLIDERPETON_FRAME)));
+		builder.put(FossilSkeletonFifteenPieceBlock.Types.EOCARCHARIA, new EocarchariaFossilFrameModel(p_173662_.bakeLayer(ClientEvents.EOCARCHARIA_FRAME)));
+		builder.put(FossilSkeletonFifteenPieceBlock.Types.ANGULOMASTACATOR, new AngulomastacatorFossilFrameModel(p_173662_.bakeLayer(ClientEvents.ANGULOMASTACATOR_FRAME)));
 		return builder.build();
 	}
 
@@ -521,8 +533,8 @@ public class FossilSkeletonFifteenPieceRenderer implements BlockEntityRenderer<F
 			p_173667_.scale(-1F, -1F, 1F);
 			p_173667_.translate(0F, -0.5F, 0F);
 		} else if (FossilSkeletonFifteenPieceBlock$type == FossilSkeletonFifteenPieceBlock.Types.CAMPTOSAURUS) {
-			p_173667_.scale(-0.65F, -0.65F, 0.65F);
-			p_173667_.translate(0F, 0.045F, 0F);
+			p_173667_.scale(-0.77F, -0.77F, 0.77F);
+			p_173667_.translate(0F, -0.2F, 0F);
 		}  else if (FossilSkeletonFifteenPieceBlock$type == FossilSkeletonFifteenPieceBlock.Types.KOOLASUCHUS) {
 			p_173667_.scale(-1F, -1F, 1F);
 			p_173667_.translate(0F, -0.6F, 0F);
@@ -703,6 +715,12 @@ public class FossilSkeletonFifteenPieceRenderer implements BlockEntityRenderer<F
 		}  else if (FossilSkeletonFifteenPieceBlock$type == FossilSkeletonFifteenPieceBlock.Types.PHOLIDERPETON) {
 			p_173667_.scale(-0.628F, -0.628F, 0.628F);
 			p_173667_.translate(0F, -0.5F, 0F);
+		}  else if (FossilSkeletonFifteenPieceBlock$type == FossilSkeletonFifteenPieceBlock.Types.EOCARCHARIA) {
+			p_173667_.scale(-1F, -1F, 1F);
+			p_173667_.translate(0F, -0.5F, 0F);
+		}  else if (FossilSkeletonFifteenPieceBlock$type == FossilSkeletonFifteenPieceBlock.Types.ANGULOMASTACATOR) {
+			p_173667_.scale(-1F, -1F, 1F);
+			p_173667_.translate(0F, -0.5F, 0F);
 		} else p_173667_.scale(-1.0F, -1.0F, 1.0F);
 		VertexConsumer vertexconsumer = p_173668_.getBuffer(p_173671_);
 		p_173670_.setupAnim(p_173666_, p_173665_, 0.0F);
@@ -852,6 +870,10 @@ public class FossilSkeletonFifteenPieceRenderer implements BlockEntityRenderer<F
 			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/lusovenator/stage_" + fossilLevel + ".png");
 		} else if (type == FossilSkeletonFifteenPieceBlock.Types.PHOLIDERPETON) {
 			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/pholiderpeton/stage_" + fossilLevel + ".png");
+		} else if (type == FossilSkeletonFifteenPieceBlock.Types.EOCARCHARIA) {
+			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/eocarcharia/stage_" + fossilLevel + ".png");
+		} else if (type == FossilSkeletonFifteenPieceBlock.Types.ANGULOMASTACATOR) {
+			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/angulomastacator/stage_" + fossilLevel + ".png");
 		} else resourceLocation = SKIN_BY_TYPE.get(type);
 		return RenderType.entityCutoutNoCullZOffset(resourceLocation);
 	}

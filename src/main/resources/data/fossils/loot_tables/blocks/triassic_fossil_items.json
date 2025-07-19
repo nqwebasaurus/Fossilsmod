@@ -188,6 +188,26 @@
           "type": "minecraft:item",
           "name": "fossils:cartorhynchus_fossil",
           "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:herrerasaurus_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:plateosaurus_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:prestosuchus_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:lisowicia_fossil",
+          "weight": 2
         }
       ],
       "rolls": 1

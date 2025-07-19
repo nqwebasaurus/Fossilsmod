@@ -1,0 +1,54 @@
+{
+  "parent": "fossils:fossils/general/eupelycosaurs",
+  "criteria": {
+    "finish_ophiacodon": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:ophiacodon_fossil"
+                ],
+                "state": {
+                  "fossil_level": "9"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:ophiacodon_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.ophiacodon.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:ophiacodon_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.ophiacodon.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_ophiacodon"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

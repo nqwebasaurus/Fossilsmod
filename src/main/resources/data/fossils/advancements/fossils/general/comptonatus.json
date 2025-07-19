@@ -1,0 +1,54 @@
+{
+  "parent": "fossils:fossils/general/iguanodontids",
+  "criteria": {
+    "finish_comptonatus": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:comptonatus_fossil"
+                ],
+                "state": {
+                  "fossil_level": "9"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:comptonatus_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.comptonatus.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:comptonatus_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.comptonatus.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_comptonatus"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

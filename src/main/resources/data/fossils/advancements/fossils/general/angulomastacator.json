@@ -1,0 +1,57 @@
+{
+  "parent": "fossils:fossils/general/lambeosaurines",
+  "criteria": {
+    "finish_angulomastacator": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:angulomastacator_fossil"
+                ],
+                "state": {
+                  "fossil_level": "14"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:angulomastacator_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.angulomastacator.description"
+    },
+    "frame": "goal",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:angulomastacator_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.angulomastacator.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_angulomastacator"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  },
+  "sends_telemetry_event": true
+}

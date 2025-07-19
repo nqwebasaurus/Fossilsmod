@@ -253,6 +253,11 @@
           "type": "minecraft:item",
           "name": "fossils:daspletosaurus_fossil",
           "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:angulomastacator_fossil",
+          "weight": 2
         }
       ],
       "rolls": 1

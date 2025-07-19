@@ -1,0 +1,54 @@
+{
+  "parent": "fossils:fossils/general/ankylosauridae",
+  "criteria": {
+    "finish_jinyunpelta": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:jinyunpelta_fossil"
+                ],
+                "state": {
+                  "fossil_level": "9"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:jinyunpelta_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.jinyunpelta.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:jinyunpelta_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.jinyunpelta.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_jinyunpelta"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

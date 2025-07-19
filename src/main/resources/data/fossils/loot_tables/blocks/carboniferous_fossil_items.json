@@ -43,6 +43,11 @@
           "type": "minecraft:item",
           "name": "fossils:pholiderpeton_fossil",
           "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:ophiacodon_fossil",
+          "weight": 2
         }
       ],
       "rolls": 1
