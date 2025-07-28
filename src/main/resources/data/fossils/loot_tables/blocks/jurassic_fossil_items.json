@@ -278,6 +278,16 @@
           "type": "minecraft:item",
           "name": "fossils:chilesaurus_fossil",
           "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:megalosaurus_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:elaphrosaurus_fossil",
+          "weight": 2
         }
       ],
       "rolls": 1

@@ -208,6 +208,16 @@
           "type": "minecraft:item",
           "name": "fossils:lisowicia_fossil",
           "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:mixosaurus_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:caviramus_fossil",
+          "weight": 2
         }
       ],
       "rolls": 1

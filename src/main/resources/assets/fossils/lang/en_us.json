@@ -102,6 +102,8 @@
 	"block.fossils.huaxiadraco_fossil": "Huaxiadraco Fossil",
 	"block.fossils.shenzhoupterus_fossil": "Shenzhoupterus Fossil",
 	"block.fossils.proburnetia_fossil": "Proburnetia Fossil",
+	"block.fossils.mixosaurus_fossil": "Mixosaurus Fossil",
+	"block.fossils.caviramus_fossil": "Caviramus Fossil",
 	"block.fossils.kentrosaurus_fossil": "Kentrosaurus Fossil",
 	"block.fossils.endothiodonbathystoma_fossil": "Endothiodon bathystoma Fossil",
 	"block.fossils.dimetrodongrandis_fossil": "Dimetrodon grandis Fossil",
@@ -279,6 +281,8 @@
 	"block.fossils.pholiderpeton_fossil": "Pholiderpeton Fossil",
 	"block.fossils.eocarcharia_fossil": "Eocarcharia Fossil",
 	"block.fossils.angulomastacator_fossil": "Angulomastacator Fossil",
+	"block.fossils.elaphrosaurus_fossil": "Elaphrosaurus Fossil",
+	"block.fossils.megalosaurus_fossil": "Megalosaurus Fossil",
 	"block.fossils.bisonlatifrons_fossil": "Bison latifrons Fossil",
 	"block.fossils.utahraptor_fossil": "Utahraptor Fossil",
 	"block.fossils.shonisaurus_fossil": "Shonisaurus Fossil",
@@ -1450,5 +1454,13 @@
 	"advancements.fossils.dryosaurus.title": "Oak Lizard",
 	"advancements.fossils.dryosaurus.description": "Complete a Dryosaurus skeleton",
 	"advancements.fossils.chilesaurus.title": "Chilean Lizard",
-	"advancements.fossils.chilesaurus.description": "Complete a Chilesaurus skeleton"
+	"advancements.fossils.chilesaurus.description": "Complete a Chilesaurus skeleton",
+	"advancements.fossils.mixosaurus.title": "Mixed Lizard",
+	"advancements.fossils.mixosaurus.description": "Complete a Mixosaurus skeleton",
+	"advancements.fossils.caviramus.title": "Hollow Branch",
+	"advancements.fossils.caviramus.description": "Complete a Caviramus skeleton",
+	"advancements.fossils.elaphrosaurus.title": "Light-Footed Lizard",
+	"advancements.fossils.elaphrosaurus.description": "Complete a Elaphrosaurus skeleton",
+	"advancements.fossils.megalosaurus.title": "Scrotum Humanum",
+	"advancements.fossils.megalosaurus.description": "Complete a Megalosaurus skeleton"
 }
