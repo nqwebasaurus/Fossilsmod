@@ -128,6 +128,16 @@
           "type": "minecraft:item",
           "name": "fossils:proburnetia_fossil",
           "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:alopecognathus_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:deuterosaurus_fossil",
+          "weight": 2
         }
       ],
       "rolls": 1

@@ -45,6 +45,8 @@ import fossils.fossils.client.blockentity.model.cryolophosaurus.CryolophosaurusF
 import fossils.fossils.client.blockentity.model.cryolophosaurus.CryolophosaurusFossilModel;
 import fossils.fossils.client.blockentity.model.daeodon.DaeodonFossilFrameModel;
 import fossils.fossils.client.blockentity.model.daeodon.DaeodonFossilModel;
+import fossils.fossils.client.blockentity.model.dakosaurus.DakosaurusFossilFrameModel;
+import fossils.fossils.client.blockentity.model.dakosaurus.DakosaurusFossilModel;
 import fossils.fossils.client.blockentity.model.decennatherium.DecennatheriumFossilFrameModel;
 import fossils.fossils.client.blockentity.model.decennatherium.DecennatheriumFossilModel;
 import fossils.fossils.client.blockentity.model.deinonychus.DeinonychusFossilFrameModel;
@@ -256,6 +258,7 @@ public class FossilSkeletonFifteenPieceRenderer implements BlockEntityRenderer<F
 		type.put(FossilSkeletonFifteenPieceBlock.Types.ANGULOMASTACATOR, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/angulomastacator/stage_0.png"));
 		type.put(FossilSkeletonFifteenPieceBlock.Types.ELAPHROSAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/elaphrosaurus/stage_0.png"));
 		type.put(FossilSkeletonFifteenPieceBlock.Types.MEGALOSAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/megalosaurus/stage_0.png"));
+		type.put(FossilSkeletonFifteenPieceBlock.Types.DAKOSAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/dakosaurus/stage_0.png"));
 	});
 	public static final Map<FossilSkeletonFifteenPieceBlock.Type, ResourceLocation> FRAME_BY_TYPE = Util.make(Maps.newHashMap(), (type) -> {
 		type.put(FossilSkeletonFifteenPieceBlock.Types.WUERHOSAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/wuerhosaurus/frame.png"));
@@ -332,6 +335,7 @@ public class FossilSkeletonFifteenPieceRenderer implements BlockEntityRenderer<F
 		type.put(FossilSkeletonFifteenPieceBlock.Types.ANGULOMASTACATOR, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/angulomastacator/frame.png"));
 		type.put(FossilSkeletonFifteenPieceBlock.Types.ELAPHROSAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/elaphrosaurus/frame.png"));
 		type.put(FossilSkeletonFifteenPieceBlock.Types.MEGALOSAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/megalosaurus/frame.png"));
+		type.put(FossilSkeletonFifteenPieceBlock.Types.DAKOSAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/dakosaurus/frame.png"));
 	});
 	public static Map<FossilSkeletonFifteenPieceBlock.Type, SkullModelBase> createFossilRenderers(EntityModelSet p_173662_) {
 		ImmutableMap.Builder<FossilSkeletonFifteenPieceBlock.Type, SkullModelBase> builder = ImmutableMap.builder();
@@ -409,6 +413,7 @@ public class FossilSkeletonFifteenPieceRenderer implements BlockEntityRenderer<F
 		builder.put(FossilSkeletonFifteenPieceBlock.Types.ANGULOMASTACATOR, new AngulomastacatorFossilModel(p_173662_.bakeLayer(ClientEvents.ANGULOMASTACATOR)));
 		builder.put(FossilSkeletonFifteenPieceBlock.Types.ELAPHROSAURUS, new ElaphrosaurusFossilModel(p_173662_.bakeLayer(ClientEvents.ELAPHROSAURUS)));
 		builder.put(FossilSkeletonFifteenPieceBlock.Types.MEGALOSAURUS, new MegalosaurusFossilModel(p_173662_.bakeLayer(ClientEvents.MEGALOSAURUS)));
+		builder.put(FossilSkeletonFifteenPieceBlock.Types.DAKOSAURUS, new DakosaurusFossilModel(p_173662_.bakeLayer(ClientEvents.DAKOSAURUS)));
 		return builder.build();
 	}
 
@@ -488,6 +493,7 @@ public class FossilSkeletonFifteenPieceRenderer implements BlockEntityRenderer<F
 		builder.put(FossilSkeletonFifteenPieceBlock.Types.ANGULOMASTACATOR, new AngulomastacatorFossilFrameModel(p_173662_.bakeLayer(ClientEvents.ANGULOMASTACATOR_FRAME)));
 		builder.put(FossilSkeletonFifteenPieceBlock.Types.ELAPHROSAURUS, new ElaphrosaurusFossilFrameModel(p_173662_.bakeLayer(ClientEvents.ELAPHROSAURUS_FRAME)));
 		builder.put(FossilSkeletonFifteenPieceBlock.Types.MEGALOSAURUS, new MegalosaurusFossilFrameModel(p_173662_.bakeLayer(ClientEvents.MEGALOSAURUS_FRAME)));
+		builder.put(FossilSkeletonFifteenPieceBlock.Types.DAKOSAURUS, new DakosaurusFossilFrameModel(p_173662_.bakeLayer(ClientEvents.DAKOSAURUS_FRAME)));
 		return builder.build();
 	}
 
@@ -739,6 +745,9 @@ public class FossilSkeletonFifteenPieceRenderer implements BlockEntityRenderer<F
 		}  else if (FossilSkeletonFifteenPieceBlock$type == FossilSkeletonFifteenPieceBlock.Types.MEGALOSAURUS) {
 			p_173667_.scale(-0.65F, -0.65F, 0.65F);
 			p_173667_.translate(0F, 0.05F, 0F);
+		}  else if (FossilSkeletonFifteenPieceBlock$type == FossilSkeletonFifteenPieceBlock.Types.DAKOSAURUS) {
+			p_173667_.scale(-0.85F, -0.85F, 0.85F);
+			p_173667_.translate(0F, 0.05F, 0F);
 		} else p_173667_.scale(-1.0F, -1.0F, 1.0F);
 		VertexConsumer vertexconsumer = p_173668_.getBuffer(p_173671_);
 		p_173670_.setupAnim(p_173666_, p_173665_, 0.0F);
@@ -896,6 +905,8 @@ public class FossilSkeletonFifteenPieceRenderer implements BlockEntityRenderer<F
 			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/elaphrosaurus/stage_" + fossilLevel + ".png");
 		} else if (type == FossilSkeletonFifteenPieceBlock.Types.MEGALOSAURUS) {
 			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/megalosaurus/stage_" + fossilLevel + ".png");
+		} else if (type == FossilSkeletonFifteenPieceBlock.Types.DAKOSAURUS) {
+			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/dakosaurus/stage_" + fossilLevel + ".png");
 		} else resourceLocation = SKIN_BY_TYPE.get(type);
 		return RenderType.entityCutoutNoCullZOffset(resourceLocation);
 	}

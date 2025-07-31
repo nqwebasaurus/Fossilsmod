@@ -108,6 +108,8 @@ public class FossilItems {
 	public static final RegistryObject<BlockItem> PROBURNETIA = SKELETON_REGISTER.register("proburnetia_fossil", () -> new BlockItem(FossilBlocks.PROBURNETIA.get(), new Item.Properties().rarity(FossilRarities.FIVE_PIECE_FOSSIL)));
 	public static final RegistryObject<BlockItem> MIXOSAURUS = SKELETON_REGISTER.register("mixosaurus_fossil", () -> new BlockItem(FossilBlocks.MIXOSAURUS.get(), new Item.Properties().rarity(FossilRarities.FIVE_PIECE_FOSSIL)));
 	public static final RegistryObject<BlockItem> CAVIRAMUS = SKELETON_REGISTER.register("caviramus_fossil", () -> new BlockItem(FossilBlocks.CAVIRAMUS.get(), new Item.Properties().rarity(FossilRarities.FIVE_PIECE_FOSSIL)));
+	public static final RegistryObject<BlockItem> ALOPECOGNATHUS = SKELETON_REGISTER.register("alopecognathus_fossil", () -> new BlockItem(FossilBlocks.ALOPECOGNATHUS.get(), new Item.Properties().rarity(FossilRarities.FIVE_PIECE_FOSSIL)));
+	public static final RegistryObject<BlockItem> CYAMODUS = SKELETON_REGISTER.register("cyamodus_fossil", () -> new BlockItem(FossilBlocks.CYAMODUS.get(), new Item.Properties().rarity(FossilRarities.FIVE_PIECE_FOSSIL)));
 
 	//Ten
 	public static final RegistryObject<BlockItem> KENTROSAURUS = SKELETON_REGISTER.register("kentrosaurus_fossil", () -> new BlockItem(FossilBlocks.KENTROSAURUS.get(), new Item.Properties().rarity(FossilRarities.TEN_PIECE_FOSSIL)));
@@ -214,6 +216,9 @@ public class FossilItems {
 	public static final RegistryObject<BlockItem> CRIOCEPHALOSAURUS = SKELETON_REGISTER.register("criocephalosaurus_fossil", () -> new BlockItem(FossilBlocks.CRIOCEPHALOSAURUS.get(), new Item.Properties().rarity(FossilRarities.TEN_PIECE_FOSSIL)));
 	public static final RegistryObject<BlockItem> DRYOSAURUS = SKELETON_REGISTER.register("dryosaurus_fossil", () -> new BlockItem(FossilBlocks.DRYOSAURUS.get(), new Item.Properties().rarity(FossilRarities.TEN_PIECE_FOSSIL)));
 	public static final RegistryObject<BlockItem> CHILESAURUS = SKELETON_REGISTER.register("chilesaurus_fossil", () -> new BlockItem(FossilBlocks.CHILESAURUS.get(), new Item.Properties().rarity(FossilRarities.TEN_PIECE_FOSSIL)));
+	public static final RegistryObject<BlockItem> DEUTEROSAURUS = SKELETON_REGISTER.register("deuterosaurus_fossil", () -> new BlockItem(FossilBlocks.DEUTEROSAURUS.get(), new Item.Properties().rarity(FossilRarities.TEN_PIECE_FOSSIL)));
+	public static final RegistryObject<BlockItem> RHAMPHORHYNCHUS = SKELETON_REGISTER.register("rhamphorhynchus_fossil", () -> new BlockItem(FossilBlocks.RHAMPHORHYNCHUS.get(), new Item.Properties().rarity(FossilRarities.TEN_PIECE_FOSSIL)));
+	public static final RegistryObject<BlockItem> PLACODUS = SKELETON_REGISTER.register("placodus_fossil", () -> new BlockItem(FossilBlocks.PLACODUS.get(), new Item.Properties().rarity(FossilRarities.TEN_PIECE_FOSSIL)));
 
 
 	//Fifteen
@@ -291,6 +296,7 @@ public class FossilItems {
 	public static final RegistryObject<BlockItem> ANGULOMASTACATOR = SKELETON_REGISTER.register("angulomastacator_fossil", () -> new BlockItem(FossilBlocks.ANGULOMASTACATOR.get(), new Item.Properties().rarity(FossilRarities.FIFTEEN_PIECE_FOSSIL)));
 	public static final RegistryObject<BlockItem> ELAPHROSAURUS = SKELETON_REGISTER.register("elaphrosaurus_fossil", () -> new BlockItem(FossilBlocks.ELAPHROSAURUS.get(), new Item.Properties().rarity(FossilRarities.FIFTEEN_PIECE_FOSSIL)));
 	public static final RegistryObject<BlockItem> MEGALOSAURUS = SKELETON_REGISTER.register("megalosaurus_fossil", () -> new BlockItem(FossilBlocks.MEGALOSAURUS.get(), new Item.Properties().rarity(FossilRarities.FIFTEEN_PIECE_FOSSIL)));
+	public static final RegistryObject<BlockItem> DAKOSAURUS = SKELETON_REGISTER.register("dakosaurus_fossil", () -> new BlockItem(FossilBlocks.DAKOSAURUS.get(), new Item.Properties().rarity(FossilRarities.FIFTEEN_PIECE_FOSSIL)));
 
 	//Twenty
 	public static final RegistryObject<BlockItem> UTAHRAPTOR = SKELETON_REGISTER.register("utahraptor_fossil", () -> new BlockItem(FossilBlocks.UTAHRAPTOR.get(), new Item.Properties().rarity(FossilRarities.TWENTY_PIECE_FOSSIL)));

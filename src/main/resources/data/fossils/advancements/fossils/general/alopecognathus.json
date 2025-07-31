@@ -1,0 +1,54 @@
+{
+  "parent": "fossils:fossils/general/therocephalia",
+  "criteria": {
+    "finish_alopecognathus": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:alopecognathus_fossil"
+                ],
+                "state": {
+                  "fossil_level": "4"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:alopecognathus_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.alopecognathus.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:alopecognathus_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.alopecognathus.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_alopecognathus"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

@@ -288,6 +288,16 @@
           "type": "minecraft:item",
           "name": "fossils:elaphrosaurus_fossil",
           "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:rhamphorhynchus_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:dakosaurus_fossil",
+          "weight": 2
         }
       ],
       "rolls": 1

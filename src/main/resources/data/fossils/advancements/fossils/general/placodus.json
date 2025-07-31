@@ -1,0 +1,54 @@
+{
+  "parent": "fossils:fossils/general/placodontia",
+  "criteria": {
+    "finish_placodus": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:placodus_fossil"
+                ],
+                "state": {
+                  "fossil_level": "9"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:placodus_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.placodus.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:placodus_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.placodus.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_placodus"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

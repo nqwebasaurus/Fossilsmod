@@ -218,6 +218,16 @@
           "type": "minecraft:item",
           "name": "fossils:caviramus_fossil",
           "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:cyamodus_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:placodus_fossil",
+          "weight": 2
         }
       ],
       "rolls": 1
