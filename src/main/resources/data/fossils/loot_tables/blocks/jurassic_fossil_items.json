@@ -298,6 +298,26 @@
           "type": "minecraft:item",
           "name": "fossils:dakosaurus_fossil",
           "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:heterodontosaurus_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:tuojiangosaurus_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:ophthalmosaurus_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:eurhinosaurus_fossil",
+          "weight": 2
         }
       ],
       "rolls": 1

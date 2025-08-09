@@ -65,6 +65,8 @@ import fossils.fossils.client.blockentity.model.iguanodon.IguanodonFossilFrameMo
 import fossils.fossils.client.blockentity.model.iguanodon.IguanodonFossilModel;
 import fossils.fossils.client.blockentity.model.inostrancevia.InostranceviaFossilFrameModel;
 import fossils.fossils.client.blockentity.model.inostrancevia.InostranceviaFossilModel;
+import fossils.fossils.client.blockentity.model.jonkeria.JonkeriaFossilFrameModel;
+import fossils.fossils.client.blockentity.model.jonkeria.JonkeriaFossilModel;
 import fossils.fossils.client.blockentity.model.kamuysaurus.KamuysaurusFossilFrameModel;
 import fossils.fossils.client.blockentity.model.kamuysaurus.KamuysaurusFossilModel;
 import fossils.fossils.client.blockentity.model.lessemsaurus.LessemsaurusFossilFrameModel;
@@ -77,6 +79,8 @@ import fossils.fossils.client.blockentity.model.mamenchisaurus.MamenchisaurusFos
 import fossils.fossils.client.blockentity.model.mamenchisaurus.MamenchisaurusFossilModel;
 import fossils.fossils.client.blockentity.model.mammuthuscolumbi.MammuthuscolumbiFossilFrameModel;
 import fossils.fossils.client.blockentity.model.mammuthuscolumbi.MammuthuscolumbiFossilModel;
+import fossils.fossils.client.blockentity.model.mastodonsaurus.MastodonsaurusFossilFrameModel;
+import fossils.fossils.client.blockentity.model.mastodonsaurus.MastodonsaurusFossilModel;
 import fossils.fossils.client.blockentity.model.megacerops.MegaceropsFossilFrameModel;
 import fossils.fossils.client.blockentity.model.megacerops.MegaceropsFossilModel;
 import fossils.fossils.client.blockentity.model.moschops.MoschopsFossilFrameModel;
@@ -97,6 +101,8 @@ import fossils.fossils.client.blockentity.model.pliosaurus.PliosaurusFossilFrame
 import fossils.fossils.client.blockentity.model.pliosaurus.PliosaurusFossilModel;
 import fossils.fossils.client.blockentity.model.prestosuchus.PrestosuchusFossilFrameModel;
 import fossils.fossils.client.blockentity.model.prestosuchus.PrestosuchusFossilModel;
+import fossils.fossils.client.blockentity.model.prionosuchus.PrionosuchusFossilFrameModel;
+import fossils.fossils.client.blockentity.model.prionosuchus.PrionosuchusFossilModel;
 import fossils.fossils.client.blockentity.model.pteranodonsternbergi.PteranodonsternbergiFossilFrameModel;
 import fossils.fossils.client.blockentity.model.pteranodonsternbergi.PteranodonsternbergiFossilModel;
 import fossils.fossils.client.blockentity.model.purussaurus.PurussaurusFossilFrameModel;
@@ -209,6 +215,9 @@ public class FossilSkeletonTwentyPieceRenderer implements BlockEntityRenderer<Fo
 		type.put(FossilSkeletonTwentyPieceBlock.Types.PLATEOSAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/plateosaurus/stage_0.png"));
 		type.put(FossilSkeletonTwentyPieceBlock.Types.PRESTOSUCHUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/prestosuchus/stage_0.png"));
 		type.put(FossilSkeletonTwentyPieceBlock.Types.LISOWICIA, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/lisowicia/stage_0.png"));
+		type.put(FossilSkeletonTwentyPieceBlock.Types.PRIONOSUCHUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/prionosuchus/stage_0.png"));
+		type.put(FossilSkeletonTwentyPieceBlock.Types.JONKERIA, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/jonkeria/stage_0.png"));
+		type.put(FossilSkeletonTwentyPieceBlock.Types.MASTODONSAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/mastodonsaurus/stage_0.png"));
 	});
 	public static final Map<FossilSkeletonTwentyPieceBlock.Type, ResourceLocation> FRAME_BY_TYPE = Util.make(Maps.newHashMap(), (type) -> {
 		type.put(FossilSkeletonTwentyPieceBlock.Types.UTAHRAPTOR, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/utahraptor/frame.png"));
@@ -270,6 +279,9 @@ public class FossilSkeletonTwentyPieceRenderer implements BlockEntityRenderer<Fo
 		type.put(FossilSkeletonTwentyPieceBlock.Types.PLATEOSAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/plateosaurus/frame.png"));
 		type.put(FossilSkeletonTwentyPieceBlock.Types.PRESTOSUCHUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/prestosuchus/frame.png"));
 		type.put(FossilSkeletonTwentyPieceBlock.Types.LISOWICIA, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/lisowicia/frame.png"));
+		type.put(FossilSkeletonTwentyPieceBlock.Types.PRIONOSUCHUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/prionosuchus/frame.png"));
+		type.put(FossilSkeletonTwentyPieceBlock.Types.JONKERIA, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/jonkeria/frame.png"));
+		type.put(FossilSkeletonTwentyPieceBlock.Types.MASTODONSAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/mastodonsaurus/frame.png"));
 
 	});
 	public static Map<FossilSkeletonTwentyPieceBlock.Type, SkullModelBase> createFossilRenderers(EntityModelSet p_173662_) {
@@ -333,6 +345,9 @@ public class FossilSkeletonTwentyPieceRenderer implements BlockEntityRenderer<Fo
 		builder.put(FossilSkeletonTwentyPieceBlock.Types.PLATEOSAURUS, new PlateosaurusFossilModel(p_173662_.bakeLayer(ClientEvents.PLATEOSAURUS)));
 		builder.put(FossilSkeletonTwentyPieceBlock.Types.PRESTOSUCHUS, new PrestosuchusFossilModel(p_173662_.bakeLayer(ClientEvents.PRESTOSUCHUS)));
 		builder.put(FossilSkeletonTwentyPieceBlock.Types.LISOWICIA, new LisowiciaFossilModel(p_173662_.bakeLayer(ClientEvents.LISOWICIA)));
+		builder.put(FossilSkeletonTwentyPieceBlock.Types.PRIONOSUCHUS, new PrionosuchusFossilModel(p_173662_.bakeLayer(ClientEvents.PRIONOSUCHUS)));
+		builder.put(FossilSkeletonTwentyPieceBlock.Types.JONKERIA, new JonkeriaFossilModel(p_173662_.bakeLayer(ClientEvents.JONKERIA)));
+		builder.put(FossilSkeletonTwentyPieceBlock.Types.MASTODONSAURUS, new MastodonsaurusFossilModel(p_173662_.bakeLayer(ClientEvents.MASTODONSAURUS)));
 		return builder.build();
 	}
 
@@ -397,6 +412,9 @@ public class FossilSkeletonTwentyPieceRenderer implements BlockEntityRenderer<Fo
 		builder.put(FossilSkeletonTwentyPieceBlock.Types.PLATEOSAURUS, new PlateosaurusFossilFrameModel(p_173662_.bakeLayer(ClientEvents.PLATEOSAURUS_FRAME)));
 		builder.put(FossilSkeletonTwentyPieceBlock.Types.PRESTOSUCHUS, new PrestosuchusFossilFrameModel(p_173662_.bakeLayer(ClientEvents.PRESTOSUCHUS_FRAME)));
 		builder.put(FossilSkeletonTwentyPieceBlock.Types.LISOWICIA, new LisowiciaFossilFrameModel(p_173662_.bakeLayer(ClientEvents.LISOWICIA_FRAME)));
+		builder.put(FossilSkeletonTwentyPieceBlock.Types.PRIONOSUCHUS, new PrionosuchusFossilFrameModel(p_173662_.bakeLayer(ClientEvents.PRIONOSUCHUS_FRAME)));
+		builder.put(FossilSkeletonTwentyPieceBlock.Types.JONKERIA, new JonkeriaFossilFrameModel(p_173662_.bakeLayer(ClientEvents.JONKERIA_FRAME)));
+		builder.put(FossilSkeletonTwentyPieceBlock.Types.MASTODONSAURUS, new MastodonsaurusFossilFrameModel(p_173662_.bakeLayer(ClientEvents.MASTODONSAURUS_FRAME)));
 		return builder.build();
 	}
 
@@ -603,6 +621,15 @@ public class FossilSkeletonTwentyPieceRenderer implements BlockEntityRenderer<Fo
 		} else if (FossilSkeletonTwentyPieceBlock$type == FossilSkeletonTwentyPieceBlock.Types.LISOWICIA) {
 			p_173667_.scale(-1F, -1F, 1F);
 			p_173667_.translate(0F, -0.5F, 0F);
+		} else if (FossilSkeletonTwentyPieceBlock$type == FossilSkeletonTwentyPieceBlock.Types.PRIONOSUCHUS) {
+			p_173667_.scale(-0.83F, -0.83F, 0.83F);
+			p_173667_.translate(0F, -1.5F, 0F);
+		} else if (FossilSkeletonTwentyPieceBlock$type == FossilSkeletonTwentyPieceBlock.Types.JONKERIA) {
+			p_173667_.scale(-1.01F, -1.01F, 1.01F);
+			p_173667_.translate(0F, -0.52F, 0F);
+		} else if (FossilSkeletonTwentyPieceBlock$type == FossilSkeletonTwentyPieceBlock.Types.MASTODONSAURUS) {
+			p_173667_.scale(-1.04F, -1.04F, 1.04F);
+			p_173667_.translate(0F, -0.53F, 0F);
 		} else p_173667_.scale(-1.0F, -1.0F, 1.0F);
 		VertexConsumer vertexconsumer = p_173668_.getBuffer(p_173671_);
 		p_173670_.setupAnim(p_173666_, p_173665_, 0.0F);
@@ -730,6 +757,12 @@ public class FossilSkeletonTwentyPieceRenderer implements BlockEntityRenderer<Fo
 			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/prestosuchus/stage_" + fossilLevel + ".png");
 		}  else if (type == FossilSkeletonTwentyPieceBlock.Types.LISOWICIA) {
 			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/lisowicia/stage_" + fossilLevel + ".png");
+		}  else if (type == FossilSkeletonTwentyPieceBlock.Types.PRIONOSUCHUS) {
+			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/prionosuchus/stage_" + fossilLevel + ".png");
+		}  else if (type == FossilSkeletonTwentyPieceBlock.Types.JONKERIA) {
+			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/jonkeria/stage_" + fossilLevel + ".png");
+		}  else if (type == FossilSkeletonTwentyPieceBlock.Types.MASTODONSAURUS) {
+			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/mastodonsaurus/stage_" + fossilLevel + ".png");
 		} else resourceLocation = SKIN_BY_TYPE.get(type);
 		return RenderType.entityCutoutNoCullZOffset(resourceLocation);
 	}

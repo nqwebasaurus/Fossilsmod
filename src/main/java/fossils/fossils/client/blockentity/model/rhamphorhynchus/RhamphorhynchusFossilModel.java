@@ -151,7 +151,7 @@ public class RhamphorhynchusFossilModel extends SkullModelBase {
 
 		PartDefinition root = fossil.addOrReplaceChild("root", CubeListBuilder.create(), PartPose.offset(0.0F, -24.0F, 0.0F));
 
-		PartDefinition chest = root.addOrReplaceChild("chest", CubeListBuilder.create(), PartPose.offsetAndRotation(0.0F, 6.1804F, -1.7332F, -0.8456F, 0.0F, 0.0F));
+		PartDefinition chest = root.addOrReplaceChild("chest", CubeListBuilder.create(), PartPose.offsetAndRotation(0.0F, 11.1804F, -1.7332F, -0.2347F, 0.0F, 0.0F));
 
 		PartDefinition chest_r1 = chest.addOrReplaceChild("chest_r1", CubeListBuilder.create().texOffs(50, 83).addBox(-0.8F, -1.025F, -0.4F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.15F))
 				.texOffs(0, 62).addBox(-0.5F, -0.525F, -1.4F, 1.0F, 1.0F, 3.0F, new CubeDeformation(-0.15F)), PartPose.offsetAndRotation(0.0F, -0.4F, 0.0F, 0.0873F, 0.0F, 0.0F));
@@ -181,7 +181,7 @@ public class RhamphorhynchusFossilModel extends SkullModelBase {
 
 		PartDefinition chest_r6 = chest.addOrReplaceChild("chest_r6", CubeListBuilder.create().texOffs(48, 8).addBox(-1.5F, -0.1708F, -1.7901F, 3.0F, 1.0F, 2.0F, new CubeDeformation(-0.15F)), PartPose.offsetAndRotation(0.0F, 2.4864F, 1.5389F, 0.2443F, 0.0F, 0.0F));
 
-		PartDefinition leftwing1 = chest.addOrReplaceChild("leftwing1", CubeListBuilder.create(), PartPose.offsetAndRotation(2.6239F, 1.1481F, -1.3634F, -0.9076F, -0.2982F, 0.3888F));
+		PartDefinition leftwing1 = chest.addOrReplaceChild("leftwing1", CubeListBuilder.create(), PartPose.offsetAndRotation(2.6239F, 1.1481F, -1.3634F, 0.5878F, -1.071F, 0.3278F));
 
 		PartDefinition upperwing13_r1 = leftwing1.addOrReplaceChild("upperwing13_r1", CubeListBuilder.create().texOffs(75, 89).addBox(-0.475F, -0.2F, -0.5F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.105F)), PartPose.offsetAndRotation(3.3756F, 0.3879F, -0.5873F, -0.7763F, 1.0047F, 0.71F));
 
@@ -201,20 +201,20 @@ public class RhamphorhynchusFossilModel extends SkullModelBase {
 		PartDefinition upperwing7_r1 = leftwing1.addOrReplaceChild("upperwing7_r1", CubeListBuilder.create().texOffs(80, 86).addBox(-0.5F, -0.575F, -0.5F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.098F)), PartPose.offsetAndRotation(-0.0753F, -0.0398F, 0.4452F, -1.1556F, -0.3215F, -0.1384F));
 
 		PartDefinition leftwing2 = leftwing1.addOrReplaceChild("leftwing2", CubeListBuilder.create().texOffs(18, 61).addBox(-0.6789F, -0.0386F, -0.1429F, 1.0F, 7.0F, 1.0F, new CubeDeformation(-0.15F))
-				.texOffs(33, 64).addBox(-0.6789F, -0.0386F, -0.9429F, 1.0F, 7.0F, 1.0F, new CubeDeformation(-0.2F)), PartPose.offsetAndRotation(4.1189F, 0.1874F, -1.1802F, -1.3656F, 0.4288F, -1.8285F));
+				.texOffs(33, 64).addBox(-0.6789F, -0.0386F, -0.9429F, 1.0F, 7.0F, 1.0F, new CubeDeformation(-0.2F)), PartPose.offsetAndRotation(4.1189F, 0.1874F, -1.1802F, -1.7689F, 0.6701F, -2.2534F));
 
 		PartDefinition wing10_r1 = leftwing2.addOrReplaceChild("wing10_r1", CubeListBuilder.create().texOffs(86, 21).addBox(-0.5F, -1.5F, -0.2F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.21F))
 				.texOffs(86, 18).addBox(-0.5F, -0.9F, -0.2F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.2F)), PartPose.offsetAndRotation(1.3889F, 5.9676F, 0.1691F, 0.0F, -1.5708F, 0.192F));
 
 		PartDefinition wing8_r1 = leftwing2.addOrReplaceChild("wing8_r1", CubeListBuilder.create().texOffs(77, 63).addBox(-0.1511F, 1.8736F, -2.7009F, 1.0F, 2.0F, 1.0F, new CubeDeformation(-0.21F)), PartPose.offsetAndRotation(0.2283F, 2.864F, -0.1798F, 0.0F, -1.5708F, 0.4974F));
 
-		PartDefinition leftwing3 = leftwing2.addOrReplaceChild("leftwing3", CubeListBuilder.create().texOffs(41, 49).addBox(-0.5F, 0.0F, 0.0F, 1.0F, 3.0F, 1.0F, new CubeDeformation(-0.11F)), PartPose.offsetAndRotation(-0.3287F, 6.8112F, -0.4604F, 0.3324F, 0.3933F, 0.354F));
+		PartDefinition leftwing3 = leftwing2.addOrReplaceChild("leftwing3", CubeListBuilder.create().texOffs(41, 49).addBox(-0.5F, 0.0F, 0.0F, 1.0F, 3.0F, 1.0F, new CubeDeformation(-0.11F)), PartPose.offsetAndRotation(-0.3287F, 6.8112F, -0.4604F, 0.1579F, 0.3933F, 0.354F));
 
-		PartDefinition leftwing4 = leftwing3.addOrReplaceChild("leftwing4", CubeListBuilder.create().texOffs(0, 37).addBox(-0.5799F, -0.5164F, 0.346F, 1.0F, 1.0F, 10.0F, new CubeDeformation(-0.2F)), PartPose.offsetAndRotation(-0.1353F, 2.8725F, 0.4866F, -1.0785F, -0.6411F, -0.4654F));
+		PartDefinition leftwing4 = leftwing3.addOrReplaceChild("leftwing4", CubeListBuilder.create().texOffs(0, 37).addBox(-0.5799F, -0.5164F, 0.346F, 1.0F, 1.0F, 10.0F, new CubeDeformation(-0.2F)), PartPose.offsetAndRotation(-0.1353F, 2.8725F, 0.4866F, 1.5197F, -0.9204F, -0.5704F));
 
-		PartDefinition leftwing5 = leftwing4.addOrReplaceChild("leftwing5", CubeListBuilder.create().texOffs(0, 13).addBox(-0.5F, -0.55F, -0.2F, 1.0F, 1.0F, 10.0F, new CubeDeformation(-0.2F)), PartPose.offsetAndRotation(-0.0651F, 0.0332F, 10.0663F, 0.1899F, 0.0529F, 0.2023F));
+		PartDefinition leftwing5 = leftwing4.addOrReplaceChild("leftwing5", CubeListBuilder.create().texOffs(0, 13).addBox(-0.5F, -0.55F, -0.2F, 1.0F, 1.0F, 10.0F, new CubeDeformation(-0.2F)), PartPose.offsetAndRotation(-0.0651F, 0.0333F, 10.0663F, 0.2771F, 0.0529F, 0.2023F));
 
-		PartDefinition leftwing7 = leftwing5.addOrReplaceChild("leftwing7", CubeListBuilder.create().texOffs(0, 25).addBox(-0.5F, -0.55F, -0.2F, 1.0F, 1.0F, 10.0F, new CubeDeformation(-0.2F)), PartPose.offsetAndRotation(-0.0488F, -0.0432F, 9.4877F, 0.1895F, 0.0193F, 0.1927F));
+		PartDefinition leftwing7 = leftwing5.addOrReplaceChild("leftwing7", CubeListBuilder.create().texOffs(0, 25).addBox(-0.5F, -0.55F, -0.2F, 1.0F, 1.0F, 10.0F, new CubeDeformation(-0.2F)), PartPose.offsetAndRotation(-0.0488F, -0.0432F, 9.4877F, 0.2768F, 0.0193F, 0.1927F));
 
 		PartDefinition leftwing8 = leftwing7.addOrReplaceChild("leftwing8", CubeListBuilder.create().texOffs(46, 12).addBox(-0.5F, -0.55F, -0.2F, 1.0F, 1.0F, 9.0F, new CubeDeformation(-0.2F)), PartPose.offsetAndRotation(0.0432F, -0.0296F, 9.5377F, 0.1898F, -0.0478F, 0.1737F));
 
@@ -222,7 +222,7 @@ public class RhamphorhynchusFossilModel extends SkullModelBase {
 
 		PartDefinition leftwing5membrance2 = leftwing6.addOrReplaceChild("leftwing5membrance2", CubeListBuilder.create(), PartPose.offset(0.0F, -0.9559F, 4.6511F));
 
-		PartDefinition lefthand2 = leftwing4.addOrReplaceChild("lefthand2", CubeListBuilder.create().texOffs(65, 46).addBox(-1.0495F, -0.3636F, -0.0678F, 2.0F, 1.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.0092F, 0.0525F, 0.712F, -1.4709F, 1.3671F, 0.7663F));
+		PartDefinition lefthand2 = leftwing4.addOrReplaceChild("lefthand2", CubeListBuilder.create().texOffs(65, 46).addBox(-1.0495F, -0.3636F, -0.0678F, 2.0F, 1.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.0092F, 0.0525F, 0.712F, -2.1394F, 0.1543F, -2.0117F));
 
 		PartDefinition leftwing4membrance = leftwing4.addOrReplaceChild("leftwing4membrance", CubeListBuilder.create(), PartPose.offset(-12.2799F, 3.7836F, 3.946F));
 
@@ -230,7 +230,7 @@ public class RhamphorhynchusFossilModel extends SkullModelBase {
 
 		PartDefinition leftwing1membrance = leftwing1.addOrReplaceChild("leftwing1membrance", CubeListBuilder.create(), PartPose.offsetAndRotation(1.3497F, 0.2368F, 2.9355F, 0.0021F, -0.3752F, -0.0093F));
 
-		PartDefinition rightwing1 = chest.addOrReplaceChild("rightwing1", CubeListBuilder.create(), PartPose.offsetAndRotation(-2.6239F, 1.1481F, -1.3634F, -1.0592F, 0.45F, 0.0603F));
+		PartDefinition rightwing1 = chest.addOrReplaceChild("rightwing1", CubeListBuilder.create(), PartPose.offsetAndRotation(-2.6239F, 1.1481F, -1.3634F, 0.3608F, 0.7185F, -0.6135F));
 
 		PartDefinition upperwing14_r1 = rightwing1.addOrReplaceChild("upperwing14_r1", CubeListBuilder.create().texOffs(90, 3).addBox(-0.525F, -0.2F, -0.5F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.105F)), PartPose.offsetAndRotation(-3.3756F, 0.3879F, -0.5873F, -0.7763F, -1.0047F, -0.71F));
 
@@ -250,7 +250,7 @@ public class RhamphorhynchusFossilModel extends SkullModelBase {
 		PartDefinition upperwing8_r1 = rightwing1.addOrReplaceChild("upperwing8_r1", CubeListBuilder.create().texOffs(20, 87).addBox(-0.5F, -0.575F, -0.5F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.098F)), PartPose.offsetAndRotation(0.0753F, -0.0398F, 0.4452F, -1.1556F, 0.3215F, 0.1384F));
 
 		PartDefinition rightwing2 = rightwing1.addOrReplaceChild("rightwing2", CubeListBuilder.create().texOffs(63, 0).addBox(-0.3211F, -0.0386F, -0.1429F, 1.0F, 7.0F, 1.0F, new CubeDeformation(-0.15F))
-				.texOffs(38, 64).addBox(-0.3211F, -0.0386F, -0.9429F, 1.0F, 7.0F, 1.0F, new CubeDeformation(-0.2F)), PartPose.offsetAndRotation(-4.1189F, 0.1874F, -1.1802F, -1.7689F, -0.6701F, 2.2534F));
+				.texOffs(38, 64).addBox(-0.3211F, -0.0386F, -0.9429F, 1.0F, 7.0F, 1.0F, new CubeDeformation(-0.2F)), PartPose.offsetAndRotation(-4.1189F, 0.1874F, -1.1802F, -1.5929F, -0.5828F, 2.2509F));
 
 		PartDefinition wing11_r1 = rightwing2.addOrReplaceChild("wing11_r1", CubeListBuilder.create().texOffs(86, 30).addBox(-0.5F, -1.5F, -0.2F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.21F))
 				.texOffs(86, 27).addBox(-0.5F, -0.9F, -0.2F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.2F)), PartPose.offsetAndRotation(-1.3889F, 5.9676F, 0.1691F, 0.0F, 1.5708F, -0.192F));
@@ -259,19 +259,19 @@ public class RhamphorhynchusFossilModel extends SkullModelBase {
 
 		PartDefinition rightwing3 = rightwing2.addOrReplaceChild("rightwing3", CubeListBuilder.create().texOffs(9, 56).addBox(-0.5F, 0.0F, 0.0F, 1.0F, 3.0F, 1.0F, new CubeDeformation(-0.11F)), PartPose.offsetAndRotation(0.3287F, 6.8112F, -0.4604F, 0.1579F, -0.3933F, -0.354F));
 
-		PartDefinition rightwing4 = rightwing3.addOrReplaceChild("rightwing4", CubeListBuilder.create().texOffs(23, 37).addBox(-0.4201F, -0.5164F, 0.346F, 1.0F, 1.0F, 10.0F, new CubeDeformation(-0.2F)), PartPose.offsetAndRotation(0.1353F, 2.8725F, 0.4866F, -0.8958F, 0.416F, 0.3098F));
+		PartDefinition rightwing4 = rightwing3.addOrReplaceChild("rightwing4", CubeListBuilder.create().texOffs(23, 37).addBox(-0.4201F, -0.5164F, 0.346F, 1.0F, 1.0F, 10.0F, new CubeDeformation(-0.2F)), PartPose.offsetAndRotation(0.1353F, 2.8725F, 0.4866F, 1.3189F, 0.9729F, 0.1628F));
 
-		PartDefinition rightwing5 = rightwing4.addOrReplaceChild("rightwing5", CubeListBuilder.create().texOffs(23, 13).addBox(-0.5F, -0.55F, -0.2F, 1.0F, 1.0F, 10.0F, new CubeDeformation(-0.2F)), PartPose.offsetAndRotation(0.0651F, 0.0332F, 10.0663F, 0.1676F, -0.1221F, 0.0512F));
+		PartDefinition rightwing5 = rightwing4.addOrReplaceChild("rightwing5", CubeListBuilder.create().texOffs(23, 13).addBox(-0.5F, -0.55F, -0.2F, 1.0F, 1.0F, 10.0F, new CubeDeformation(-0.2F)), PartPose.offsetAndRotation(0.0651F, 0.0333F, 10.0663F, 0.2771F, -0.0529F, -0.2023F));
 
-		PartDefinition rightwing7 = rightwing5.addOrReplaceChild("rightwing7", CubeListBuilder.create().texOffs(25, 0).addBox(-0.5F, -0.55F, -0.2F, 1.0F, 1.0F, 10.0F, new CubeDeformation(-0.2F)), PartPose.offsetAndRotation(0.0488F, -0.0432F, 9.4877F, 0.1895F, -0.0193F, -0.1927F));
+		PartDefinition rightwing7 = rightwing5.addOrReplaceChild("rightwing7", CubeListBuilder.create().texOffs(25, 0).addBox(-0.5F, -0.55F, -0.2F, 1.0F, 1.0F, 10.0F, new CubeDeformation(-0.2F)), PartPose.offsetAndRotation(0.0488F, -0.0432F, 9.4877F, 0.2768F, -0.0193F, -0.1927F));
 
-		PartDefinition rightwing8 = rightwing7.addOrReplaceChild("rightwing8", CubeListBuilder.create().texOffs(46, 23).addBox(-0.5F, -0.55F, -0.2F, 1.0F, 1.0F, 9.0F, new CubeDeformation(-0.2F)), PartPose.offsetAndRotation(-0.0432F, -0.0296F, 9.5377F, 0.1462F, 0.0478F, -0.1737F));
+		PartDefinition rightwing8 = rightwing7.addOrReplaceChild("rightwing8", CubeListBuilder.create().texOffs(46, 23).addBox(-0.5F, -0.55F, -0.2F, 1.0F, 1.0F, 9.0F, new CubeDeformation(-0.2F)), PartPose.offsetAndRotation(-0.0432F, -0.0296F, 9.5377F, 0.1898F, 0.0478F, -0.1737F));
 
 		PartDefinition rightwing6 = rightwing4.addOrReplaceChild("rightwing6", CubeListBuilder.create(), PartPose.offsetAndRotation(0.0799F, 0.4836F, 8.346F, 0.0594F, -0.0781F, -0.2095F));
 
 		PartDefinition rightwing5membrance2 = rightwing6.addOrReplaceChild("rightwing5membrance2", CubeListBuilder.create(), PartPose.offset(0.0F, -0.9559F, 4.6511F));
 
-		PartDefinition righthand2 = rightwing4.addOrReplaceChild("righthand2", CubeListBuilder.create().texOffs(65, 50).addBox(-0.9505F, -0.3636F, -0.0678F, 2.0F, 1.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(-0.0092F, 0.0525F, 0.712F, -1.8601F, -1.4749F, 0.0257F));
+		PartDefinition righthand2 = rightwing4.addOrReplaceChild("righthand2", CubeListBuilder.create().texOffs(65, 50).addBox(-0.9505F, -0.3636F, -0.0678F, 2.0F, 1.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(-0.0092F, 0.0525F, 0.712F, -2.0232F, -0.1014F, 2.1241F));
 
 		PartDefinition rightwing4membrance = rightwing4.addOrReplaceChild("rightwing4membrance", CubeListBuilder.create(), PartPose.offset(12.2799F, 3.7836F, 3.946F));
 
@@ -287,7 +287,7 @@ public class RhamphorhynchusFossilModel extends SkullModelBase {
 
 		PartDefinition cube_r3 = bone2.addOrReplaceChild("cube_r3", CubeListBuilder.create().texOffs(71, 72).addBox(1.328F, -0.3584F, -0.5525F, 1.0F, 1.0F, 2.0F, new CubeDeformation(-0.2F)), PartPose.offsetAndRotation(-0.1041F, -2.8023F, 1.4667F, 0.0235F, -0.1488F, 0.0099F));
 
-		PartDefinition cube_r4 = bone2.addOrReplaceChild("cube_r4", CubeListBuilder.create().texOffs(14, 70).addBox(1.5355F, -0.5916F, -0.5793F, 1.0F, 1.0F, 2.0F, new CubeDeformation(-0.197F)), PartPose.offsetAndRotation(-0.1041F, -2.1023F, 0.0667F, 0.3313F, -0.1474F, -0.0228F));
+		PartDefinition cube_r4 = bone2.addOrReplaceChild("cube_r4", CubeListBuilder.create().texOffs(14, 70).addBox(1.5355F, -0.5915F, -0.5793F, 1.0F, 1.0F, 2.0F, new CubeDeformation(-0.197F)), PartPose.offsetAndRotation(-0.1041F, -2.1023F, 0.0667F, 0.3313F, -0.1474F, -0.0228F));
 
 		PartDefinition bone6 = chest.addOrReplaceChild("bone6", CubeListBuilder.create(), PartPose.offset(-0.2719F, 1.4135F, -0.1378F));
 
@@ -297,7 +297,7 @@ public class RhamphorhynchusFossilModel extends SkullModelBase {
 
 		PartDefinition cube_r7 = bone6.addOrReplaceChild("cube_r7", CubeListBuilder.create().texOffs(71, 72).mirror().addBox(-2.328F, -0.3584F, -0.5525F, 1.0F, 1.0F, 2.0F, new CubeDeformation(-0.2F)).mirror(false), PartPose.offsetAndRotation(0.1041F, -2.8023F, 1.4667F, 0.0235F, 0.1488F, -0.0099F));
 
-		PartDefinition cube_r8 = bone6.addOrReplaceChild("cube_r8", CubeListBuilder.create().texOffs(14, 70).mirror().addBox(-2.5355F, -0.5916F, -0.5793F, 1.0F, 1.0F, 2.0F, new CubeDeformation(-0.197F)).mirror(false), PartPose.offsetAndRotation(0.1041F, -2.1023F, 0.0667F, 0.3313F, 0.1474F, 0.0228F));
+		PartDefinition cube_r8 = bone6.addOrReplaceChild("cube_r8", CubeListBuilder.create().texOffs(14, 70).mirror().addBox(-2.5355F, -0.5915F, -0.5793F, 1.0F, 1.0F, 2.0F, new CubeDeformation(-0.197F)).mirror(false), PartPose.offsetAndRotation(0.1041F, -2.1023F, 0.0667F, 0.3313F, 0.1474F, 0.0228F));
 
 		PartDefinition body3 = chest.addOrReplaceChild("body3", CubeListBuilder.create(), PartPose.offsetAndRotation(0.0F, -0.7122F, 0.9007F, -0.1222F, 0.0F, 0.0F));
 
@@ -385,19 +385,19 @@ public class RhamphorhynchusFossilModel extends SkullModelBase {
 		PartDefinition neck10_r5 = body1.addOrReplaceChild("neck10_r5", CubeListBuilder.create().texOffs(85, 83).addBox(-0.0735F, -0.1392F, -0.3766F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.15F)), PartPose.offsetAndRotation(0.3F, 0.053F, 0.8562F, -0.1033F, 0.0437F, 0.274F));
 
 		PartDefinition tail1 = body1.addOrReplaceChild("tail1", CubeListBuilder.create().texOffs(43, 68).addBox(-0.5F, -0.625F, 0.15F, 1.0F, 1.0F, 2.0F, new CubeDeformation(-0.148F))
-				.texOffs(75, 83).addBox(-0.8F, -0.825F, 1.15F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.15F)), PartPose.offsetAndRotation(0.0F, 0.5779F, 2.8993F, 0.4269F, 0.0F, 0.0F));
+				.texOffs(75, 83).addBox(-0.8F, -0.825F, 1.15F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.15F)), PartPose.offsetAndRotation(0.0F, 0.5779F, 2.8993F, 0.2088F, 0.0F, 0.0F));
 
 		PartDefinition tail3_r1 = tail1.addOrReplaceChild("tail3_r1", CubeListBuilder.create().texOffs(80, 83).addBox(-0.8F, -0.5F, -0.5F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.15F)), PartPose.offsetAndRotation(0.0F, 0.275F, 0.95F, 0.3054F, 0.0F, 0.0F));
 
-		PartDefinition tail2 = tail1.addOrReplaceChild("tail2", CubeListBuilder.create().texOffs(0, 0).addBox(-0.5F, -0.6F, -0.1F, 1.0F, 1.0F, 11.0F, new CubeDeformation(-0.15F)), PartPose.offsetAndRotation(0.0F, 0.0079F, 1.8316F, 0.4405F, -0.0773F, 0.0F));
+		PartDefinition tail2 = tail1.addOrReplaceChild("tail2", CubeListBuilder.create().texOffs(0, 0).addBox(-0.5F, -0.6F, -0.1F, 1.0F, 1.0F, 11.0F, new CubeDeformation(-0.15F)), PartPose.offsetAndRotation(0.0F, 0.0079F, 1.8316F, 0.4787F, 0.2152F, -0.0358F));
 
-		PartDefinition tail3 = tail2.addOrReplaceChild("tail3", CubeListBuilder.create().texOffs(46, 44).addBox(-0.5F, -0.575F, -0.1F, 1.0F, 1.0F, 8.0F, new CubeDeformation(-0.15F)), PartPose.offsetAndRotation(0.0F, -0.0314F, 10.6992F, 0.1217F, -0.0085F, 0.067F));
+		PartDefinition tail3 = tail2.addOrReplaceChild("tail3", CubeListBuilder.create().texOffs(46, 44).addBox(-0.5F, -0.575F, -0.1F, 1.0F, 1.0F, 8.0F, new CubeDeformation(-0.15F)), PartPose.offsetAndRotation(0.0F, -0.0313F, 10.6992F, 0.0885F, 0.1739F, 0.0154F));
 
-		PartDefinition tail4 = tail3.addOrReplaceChild("tail4", CubeListBuilder.create().texOffs(46, 34).addBox(-0.5F, -0.56F, -0.1002F, 1.0F, 1.0F, 8.0F, new CubeDeformation(-0.15F)), PartPose.offsetAndRotation(0.0F, -0.0075F, 7.6999F, 0.0519F, 0.0F, 0.0F));
+		PartDefinition tail4 = tail3.addOrReplaceChild("tail4", CubeListBuilder.create().texOffs(46, 34).addBox(-0.5F, -0.56F, -0.1002F, 1.0F, 1.0F, 8.0F, new CubeDeformation(-0.15F)), PartPose.offsetAndRotation(0.0F, -0.0075F, 7.6999F, 0.1915F, 0.0857F, 0.0166F));
 
-		PartDefinition tail5 = tail4.addOrReplaceChild("tail5", CubeListBuilder.create().texOffs(23, 25).addBox(-0.5F, -0.5611F, -0.2001F, 1.0F, 1.0F, 10.0F, new CubeDeformation(-0.15F)), PartPose.offsetAndRotation(0.0F, 0.0121F, 7.7995F, 0.0604F, 0.0F, 0.0F));
+		PartDefinition tail5 = tail4.addOrReplaceChild("tail5", CubeListBuilder.create().texOffs(23, 25).addBox(-0.5F, -0.5611F, -0.2001F, 1.0F, 1.0F, 10.0F, new CubeDeformation(-0.15F)), PartPose.offsetAndRotation(0.0F, 0.0121F, 7.7995F, 0.1269F, 0.0866F, 0.011F));
 
-		PartDefinition leftLeg = body1.addOrReplaceChild("leftLeg", CubeListBuilder.create(), PartPose.offsetAndRotation(1.4974F, 0.1465F, 1.3299F, 0.3094F, -0.0609F, -0.4618F));
+		PartDefinition leftLeg = body1.addOrReplaceChild("leftLeg", CubeListBuilder.create(), PartPose.offsetAndRotation(1.4974F, 0.1465F, 1.3299F, -0.1901F, -0.1255F, -0.2525F));
 
 		PartDefinition cube_r9 = leftLeg.addOrReplaceChild("cube_r9", CubeListBuilder.create().texOffs(78, 67).addBox(-0.5F, -0.171F, -0.7295F, 1.0F, 2.0F, 1.0F, new CubeDeformation(-0.1987F)), PartPose.offsetAndRotation(0.1F, 1.5128F, 0.4938F, 0.0087F, 0.0F, 0.0F));
 
@@ -408,9 +408,9 @@ public class RhamphorhynchusFossilModel extends SkullModelBase {
 
 		PartDefinition leftLegMembrane = leftLeg.addOrReplaceChild("leftLegMembrane", CubeListBuilder.create(), PartPose.offset(0.0F, 1.0F, 1.6F));
 
-		PartDefinition leftLeg2 = leftLeg.addOrReplaceChild("leftLeg2", CubeListBuilder.create().texOffs(23, 64).addBox(-0.4F, -0.2F, 0.0F, 1.0F, 7.0F, 1.0F, new CubeDeformation(-0.2F)), PartPose.offsetAndRotation(-0.0063F, 4.2779F, 0.12F, 0.9906F, -0.0875F, 0.0975F));
+		PartDefinition leftLeg2 = leftLeg.addOrReplaceChild("leftLeg2", CubeListBuilder.create().texOffs(23, 64).addBox(-0.4F, -0.2F, 0.0F, 1.0F, 7.0F, 1.0F, new CubeDeformation(-0.2F)), PartPose.offsetAndRotation(-0.0063F, 4.2779F, 0.12F, 1.4269F, -0.0875F, 0.0975F));
 
-		PartDefinition leftLeg3 = leftLeg2.addOrReplaceChild("leftLeg3", CubeListBuilder.create().texOffs(15, 49).addBox(-1.0F, -0.6F, -3.9F, 2.0F, 1.0F, 4.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.1238F, 6.3451F, 0.7863F, -0.404F, 0.136F, 0.069F));
+		PartDefinition leftLeg3 = leftLeg2.addOrReplaceChild("leftLeg3", CubeListBuilder.create().texOffs(15, 49).addBox(-1.0F, -0.6F, -3.9F, 2.0F, 1.0F, 4.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.1238F, 6.3451F, 0.7863F, -0.2731F, 0.136F, 0.069F));
 
 		PartDefinition finger = leftLeg3.addOrReplaceChild("finger", CubeListBuilder.create(), PartPose.offsetAndRotation(-0.7243F, -0.1695F, 0.0302F, 0.0643F, -0.2724F, -0.0431F));
 
@@ -422,9 +422,9 @@ public class RhamphorhynchusFossilModel extends SkullModelBase {
 
 		PartDefinition cube_r14 = finger.addOrReplaceChild("cube_r14", CubeListBuilder.create().texOffs(86, 15).addBox(-0.3039F, -0.5F, -1.7478F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.3F)), PartPose.offsetAndRotation(0.0858F, 0.0542F, 1.0691F, 0.0F, 0.3491F, 0.0F));
 
-		PartDefinition leftLeg4 = leftLeg3.addOrReplaceChild("leftLeg4", CubeListBuilder.create().texOffs(43, 64).addBox(-1.0F, -0.0101F, -1.9001F, 2.0F, 1.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.0F, -0.5883F, -3.9649F, 0.0007F, 0.0F, 0.0F));
+		PartDefinition leftLeg4 = leftLeg3.addOrReplaceChild("leftLeg4", CubeListBuilder.create().texOffs(43, 64).addBox(-1.0F, -0.0101F, -1.9001F, 2.0F, 1.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.0F, -0.5883F, -3.9649F, -0.5229F, 0.0F, 0.0F));
 
-		PartDefinition rightLeg = body1.addOrReplaceChild("rightLeg", CubeListBuilder.create(), PartPose.offsetAndRotation(-1.4974F, 0.1465F, 1.3299F, -0.0592F, 0.1255F, 0.2525F));
+		PartDefinition rightLeg = body1.addOrReplaceChild("rightLeg", CubeListBuilder.create(), PartPose.offsetAndRotation(-1.4974F, 0.1465F, 1.3299F, -0.2337F, 0.1255F, 0.2525F));
 
 		PartDefinition cube_r15 = rightLeg.addOrReplaceChild("cube_r15", CubeListBuilder.create().texOffs(78, 71).addBox(-0.5F, -0.171F, -0.7295F, 1.0F, 2.0F, 1.0F, new CubeDeformation(-0.1987F)), PartPose.offsetAndRotation(-0.1F, 1.5128F, 0.4938F, 0.0087F, 0.0F, 0.0F));
 
@@ -437,7 +437,7 @@ public class RhamphorhynchusFossilModel extends SkullModelBase {
 
 		PartDefinition rightLeg2 = rightLeg.addOrReplaceChild("rightLeg2", CubeListBuilder.create().texOffs(28, 64).addBox(-0.6F, -0.2F, 0.0F, 1.0F, 7.0F, 1.0F, new CubeDeformation(-0.2F)), PartPose.offsetAndRotation(0.0063F, 4.2779F, 0.12F, 0.7288F, 0.0875F, -0.0975F));
 
-		PartDefinition rightLeg3 = rightLeg2.addOrReplaceChild("rightLeg3", CubeListBuilder.create().texOffs(28, 49).addBox(-1.0F, -0.6F, -3.9F, 2.0F, 1.0F, 4.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(-0.1238F, 6.3451F, 0.7863F, 0.2505F, -0.136F, -0.069F));
+		PartDefinition rightLeg3 = rightLeg2.addOrReplaceChild("rightLeg3", CubeListBuilder.create().texOffs(28, 49).addBox(-1.0F, -0.6F, -3.9F, 2.0F, 1.0F, 4.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(-0.1238F, 6.3451F, 0.7863F, -0.1858F, -0.136F, -0.069F));
 
 		PartDefinition finger2 = rightLeg3.addOrReplaceChild("finger2", CubeListBuilder.create(), PartPose.offsetAndRotation(0.7243F, -0.1695F, 0.0302F, 0.0643F, 0.2724F, 0.0431F));
 
@@ -527,7 +527,7 @@ public class RhamphorhynchusFossilModel extends SkullModelBase {
 
 		PartDefinition cube_r54 = bone5.addOrReplaceChild("cube_r54", CubeListBuilder.create().texOffs(81, 27).mirror().addBox(-0.5F, -0.875F, -1.9F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.205F)).mirror(false), PartPose.offsetAndRotation(0.3965F, 2.051F, 1.2886F, -1.2278F, 0.2106F, -0.0573F));
 
-		PartDefinition neck1 = chest.addOrReplaceChild("neck1", CubeListBuilder.create(), PartPose.offsetAndRotation(0.0F, -0.4F, -1.2F, -0.111F, 0.0F, 0.0F));
+		PartDefinition neck1 = chest.addOrReplaceChild("neck1", CubeListBuilder.create(), PartPose.offsetAndRotation(0.0F, -0.4F, -1.2F, 0.4126F, 0.0F, 0.0F));
 
 		PartDefinition cube_r55 = neck1.addOrReplaceChild("cube_r55", CubeListBuilder.create().texOffs(45, 83).addBox(-0.8F, -1.025F, 2.375F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.15F))
 				.texOffs(40, 83).addBox(-0.8F, -1.175F, 0.375F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.15F))
@@ -550,34 +550,34 @@ public class RhamphorhynchusFossilModel extends SkullModelBase {
 		PartDefinition neck5_r4 = neck1.addOrReplaceChild("neck5_r4", CubeListBuilder.create().texOffs(10, 85).addBox(-0.0735F, -0.1392F, -0.3766F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.15F)), PartPose.offsetAndRotation(0.3F, 0.091F, -0.4703F, 0.8358F, -0.3868F, 0.3153F));
 
 		PartDefinition neck2 = neck1.addOrReplaceChild("neck2", CubeListBuilder.create().texOffs(57, 68).addBox(-0.5F, -0.4536F, -1.8481F, 1.0F, 1.0F, 2.0F, new CubeDeformation(-0.15F))
-				.texOffs(0, 83).addBox(-0.8F, -1.0537F, -1.8481F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.15F)), PartPose.offsetAndRotation(0.0F, 0.372F, -2.5937F, -0.1152F, 0.0F, 0.0F));
+				.texOffs(0, 83).addBox(-0.8F, -1.0536F, -1.8481F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.15F)), PartPose.offsetAndRotation(0.0F, 0.372F, -2.5937F, -0.2897F, 0.0F, 0.0F));
 
 		PartDefinition neck8_r8 = neck2.addOrReplaceChild("neck8_r8", CubeListBuilder.create().texOffs(40, 86).mirror().addBox(-0.9265F, -0.1392F, -0.3766F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.15F)).mirror(false), PartPose.offsetAndRotation(-0.325F, 0.3191F, -1.6766F, 0.7801F, 1.0293F, -0.7804F));
 
 		PartDefinition neck7_r10 = neck2.addOrReplaceChild("neck7_r10", CubeListBuilder.create().texOffs(40, 86).addBox(-0.0735F, -0.1392F, -0.3766F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.15F)), PartPose.offsetAndRotation(0.325F, 0.3191F, -1.6766F, 0.7801F, -1.0293F, 0.7804F));
 
 		PartDefinition neck3 = neck2.addOrReplaceChild("neck3", CubeListBuilder.create().texOffs(53, 59).addBox(-0.5F, -0.511F, -2.809F, 1.0F, 1.0F, 3.0F, new CubeDeformation(-0.15F))
-				.texOffs(82, 75).addBox(-0.8F, -1.111F, -1.809F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.15F)), PartPose.offsetAndRotation(0.0F, 0.0595F, -1.7151F, -0.0249F, 0.1001F, 0.4776F));
+				.texOffs(82, 75).addBox(-0.8F, -1.111F, -1.809F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.15F)), PartPose.offsetAndRotation(0.0F, 0.0595F, -1.7151F, -0.2024F, 0.0F, 0.0F));
 
 		PartDefinition neck9_r7 = neck3.addOrReplaceChild("neck9_r7", CubeListBuilder.create().texOffs(86, 42).mirror().addBox(-0.9265F, -0.1392F, -0.3766F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.15F)).mirror(false), PartPose.offsetAndRotation(-0.325F, 0.2596F, -1.5614F, 0.5943F, 1.1127F, -0.9918F));
 
 		PartDefinition neck8_r9 = neck3.addOrReplaceChild("neck8_r9", CubeListBuilder.create().texOffs(86, 42).addBox(-0.0735F, -0.1392F, -0.3766F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.15F)), PartPose.offsetAndRotation(0.325F, 0.2596F, -1.5614F, 0.5943F, -1.1127F, 0.9918F));
 
 		PartDefinition neck4 = neck3.addOrReplaceChild("neck4", CubeListBuilder.create().texOffs(64, 68).addBox(-0.5F, -0.6007F, -1.8472F, 1.0F, 1.0F, 2.0F, new CubeDeformation(-0.15F))
-				.texOffs(82, 62).addBox(-0.8F, -1.1007F, -0.8472F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.15F)), PartPose.offsetAndRotation(0.0F, 0.0996F, -2.6108F, -0.1588F, 0.0F, 0.0F));
+				.texOffs(82, 62).addBox(-0.8F, -1.1007F, -0.8472F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.15F)), PartPose.offsetAndRotation(0.0F, 0.0996F, -2.6108F, -0.2932F, 0.2031F, -0.0922F));
 
 		PartDefinition neck10_r6 = neck4.addOrReplaceChild("neck10_r6", CubeListBuilder.create().texOffs(45, 86).mirror().addBox(-0.9265F, -0.1392F, -0.3766F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.15F)).mirror(false), PartPose.offsetAndRotation(-0.325F, 0.16F, -0.6506F, 0.7658F, 1.2655F, -0.8449F));
 
 		PartDefinition neck9_r8 = neck4.addOrReplaceChild("neck9_r8", CubeListBuilder.create().texOffs(45, 86).addBox(-0.0735F, -0.1392F, -0.3766F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.15F)), PartPose.offsetAndRotation(0.325F, 0.16F, -0.6506F, 0.7658F, -1.2655F, 0.8449F));
 
 		PartDefinition neck5 = neck4.addOrReplaceChild("neck5", CubeListBuilder.create().texOffs(7, 69).addBox(-0.5F, -0.354F, -1.9023F, 1.0F, 1.0F, 2.0F, new CubeDeformation(-0.15F))
-				.texOffs(15, 82).addBox(-0.8F, -1.054F, -0.9023F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.15F)), PartPose.offsetAndRotation(0.0F, -0.2745F, -1.5681F, 0.4084F, 0.0F, 0.0F));
+				.texOffs(15, 82).addBox(-0.8F, -1.054F, -0.9023F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.15F)), PartPose.offsetAndRotation(0.0F, -0.2745F, -1.5681F, 0.2419F, 0.0591F, -0.0392F));
 
 		PartDefinition neck11_r4 = neck5.addOrReplaceChild("neck11_r4", CubeListBuilder.create().texOffs(50, 86).mirror().addBox(-0.9265F, -0.1392F, -0.3766F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.15F)).mirror(false), PartPose.offsetAndRotation(-0.325F, 0.4345F, -0.6826F, 0.7659F, 1.1404F, -0.8222F));
 
 		PartDefinition neck10_r7 = neck5.addOrReplaceChild("neck10_r7", CubeListBuilder.create().texOffs(50, 86).addBox(-0.0735F, -0.1392F, -0.3766F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.15F)), PartPose.offsetAndRotation(0.325F, 0.4345F, -0.6826F, 0.7659F, -1.1404F, 0.8222F));
 
-		PartDefinition head = neck5.addOrReplaceChild("head", CubeListBuilder.create(), PartPose.offsetAndRotation(0.0F, 0.3012F, -1.3467F, -0.4383F, 0.3012F, 0.0517F));
+		PartDefinition head = neck5.addOrReplaceChild("head", CubeListBuilder.create(), PartPose.offsetAndRotation(0.0F, 0.3012F, -1.3467F, -0.5636F, -0.0782F, 0.1667F));
 
 		PartDefinition cube_r56 = head.addOrReplaceChild("cube_r56", CubeListBuilder.create().texOffs(10, 82).addBox(-2.0F, -0.1951F, -0.4805F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.353F)), PartPose.offsetAndRotation(1.5F, 3.7951F, -9.4138F, -1.0865F, 0.0F, 0.0F));
 
@@ -789,7 +789,7 @@ public class RhamphorhynchusFossilModel extends SkullModelBase {
 				.texOffs(80, 3).mirror().addBox(-0.5F, -0.725F, -0.5F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.28F)).mirror(false), PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, -0.3088F, -0.2761F, 0.2073F));
 
 		PartDefinition jaw = head.addOrReplaceChild("jaw", CubeListBuilder.create().texOffs(50, 68).addBox(0.175F, -0.3F, -1.4F, 1.0F, 1.0F, 2.0F, new CubeDeformation(-0.203F))
-				.texOffs(50, 68).mirror().addBox(-1.175F, -0.3F, -1.4F, 1.0F, 1.0F, 2.0F, new CubeDeformation(-0.203F)).mirror(false), PartPose.offsetAndRotation(0.0F, 1.7371F, -0.425F, 1.2039F, 0.0F, 0.0F));
+				.texOffs(50, 68).mirror().addBox(-1.175F, -0.3F, -1.4F, 1.0F, 1.0F, 2.0F, new CubeDeformation(-0.203F)).mirror(false), PartPose.offsetAndRotation(0.0F, 1.7371F, -0.425F, 0.8548F, 0.0F, 0.0F));
 
 		PartDefinition cube_r124 = jaw.addOrReplaceChild("cube_r124", CubeListBuilder.create().texOffs(86, 57).mirror().addBox(-2.0F, -0.2F, -1.4F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.2F)).mirror(false)
 				.texOffs(55, 86).mirror().addBox(-2.0F, -0.2F, -0.8F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.2F)).mirror(false)

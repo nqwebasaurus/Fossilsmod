@@ -1,0 +1,57 @@
+{
+  "parent": "fossils:fossils/general/dinocephalia",
+  "criteria": {
+    "finish_jonkeria": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:jonkeria_fossil"
+                ],
+                "state": {
+                  "fossil_level": "19"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:jonkeria_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.jonkeria.description"
+    },
+    "frame": "challenge",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:jonkeria_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.jonkeria.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_jonkeria"
+    ]
+  ],
+  "rewards": {
+    "experience": 500
+  },
+  "sends_telemetry_event": true
+}

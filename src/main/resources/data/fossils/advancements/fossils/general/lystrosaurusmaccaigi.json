@@ -1,0 +1,54 @@
+{
+  "parent": "fossils:fossils/general/dicynodontoidea",
+  "criteria": {
+    "finish_lystrosaurusmaccaigi": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:lystrosaurusmaccaigi_fossil"
+                ],
+                "state": {
+                  "fossil_level": "9"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:lystrosaurusmaccaigi_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.lystrosaurusmaccaigi.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:lystrosaurusmaccaigi_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.lystrosaurusmaccaigi.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_lystrosaurusmaccaigi"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

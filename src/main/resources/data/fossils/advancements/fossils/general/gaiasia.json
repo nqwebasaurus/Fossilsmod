@@ -1,0 +1,57 @@
+{
+  "parent": "fossils:fossils/general/fishapods",
+  "criteria": {
+    "finish_gaiasia": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:gaiasia_fossil"
+                ],
+                "state": {
+                  "fossil_level": "14"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:gaiasia_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.gaiasia.description"
+    },
+    "frame": "goal",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:gaiasia_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.gaiasia.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_gaiasia"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  },
+  "sends_telemetry_event": true
+}

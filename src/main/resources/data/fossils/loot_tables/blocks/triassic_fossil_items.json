@@ -228,6 +228,26 @@
           "type": "minecraft:item",
           "name": "fossils:placodus_fossil",
           "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:batrachotomus_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:mastodonsaurus_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:xinpusaurus_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:lystrosaurusmaccaigi_fossil",
+          "weight": 2
         }
       ],
       "rolls": 1

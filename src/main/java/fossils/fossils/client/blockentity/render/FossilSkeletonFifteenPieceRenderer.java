@@ -23,6 +23,8 @@ import fossils.fossils.client.blockentity.model.asfaltovenator.AsfaltovenatorFos
 import fossils.fossils.client.blockentity.model.asfaltovenator.AsfaltovenatorFossilModel;
 import fossils.fossils.client.blockentity.model.bajadasaurus.BajadasaurusFossilFrameModel;
 import fossils.fossils.client.blockentity.model.bajadasaurus.BajadasaurusFossilModel;
+import fossils.fossils.client.blockentity.model.batrachotomus.BatrachotomusFossilFrameModel;
+import fossils.fossils.client.blockentity.model.batrachotomus.BatrachotomusFossilModel;
 import fossils.fossils.client.blockentity.model.bisonlatifrons.BisonlatifronsFossilFrameModel;
 import fossils.fossils.client.blockentity.model.bisonlatifrons.BisonlatifronsFossilModel;
 import fossils.fossils.client.blockentity.model.brachytrachelopan.BrachytrachelopanFossilFrameModel;
@@ -67,6 +69,10 @@ import fossils.fossils.client.blockentity.model.etjosuchus.EtjosuchusFossilFrame
 import fossils.fossils.client.blockentity.model.etjosuchus.EtjosuchusFossilModel;
 import fossils.fossils.client.blockentity.model.euhelopus.EuhelopusFossilFrameModel;
 import fossils.fossils.client.blockentity.model.euhelopus.EuhelopusFossilModel;
+import fossils.fossils.client.blockentity.model.eurhinosaurus.EurhinosaurusFossilFrameModel;
+import fossils.fossils.client.blockentity.model.eurhinosaurus.EurhinosaurusFossilModel;
+import fossils.fossils.client.blockentity.model.gaiasia.GaiasiaFossilFrameModel;
+import fossils.fossils.client.blockentity.model.gaiasia.GaiasiaFossilModel;
 import fossils.fossils.client.blockentity.model.huaxiazhoulong.HuaxiazhoulongFossilFrameModel;
 import fossils.fossils.client.blockentity.model.huaxiazhoulong.HuaxiazhoulongFossilModel;
 import fossils.fossils.client.blockentity.model.ichthyovenator.IchthyovenatorFossilFrameModel;
@@ -149,6 +155,8 @@ import fossils.fossils.client.blockentity.model.tethyshadros.TethyshadrosFossilF
 import fossils.fossils.client.blockentity.model.tethyshadros.TethyshadrosFossilModel;
 import fossils.fossils.client.blockentity.model.thalattosuchus.ThalattosuchusFossilFrameModel;
 import fossils.fossils.client.blockentity.model.thalattosuchus.ThalattosuchusFossilModel;
+import fossils.fossils.client.blockentity.model.tuojiangosaurus.TuojiangosaurusFossilFrameModel;
+import fossils.fossils.client.blockentity.model.tuojiangosaurus.TuojiangosaurusFossilModel;
 import fossils.fossils.client.blockentity.model.tupandactylusimperator.TupandactylusimperatorFossilFrameModel;
 import fossils.fossils.client.blockentity.model.tupandactylusimperator.TupandactylusimperatorFossilModel;
 import fossils.fossils.client.blockentity.model.tyrannotitan.TyrannotitanFossilFrameModel;
@@ -259,6 +267,10 @@ public class FossilSkeletonFifteenPieceRenderer implements BlockEntityRenderer<F
 		type.put(FossilSkeletonFifteenPieceBlock.Types.ELAPHROSAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/elaphrosaurus/stage_0.png"));
 		type.put(FossilSkeletonFifteenPieceBlock.Types.MEGALOSAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/megalosaurus/stage_0.png"));
 		type.put(FossilSkeletonFifteenPieceBlock.Types.DAKOSAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/dakosaurus/stage_0.png"));
+		type.put(FossilSkeletonFifteenPieceBlock.Types.GAIASIA, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/gaiasia/stage_0.png"));
+		type.put(FossilSkeletonFifteenPieceBlock.Types.TUOJIANGOSAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/tuojiangosaurus/stage_0.png"));
+		type.put(FossilSkeletonFifteenPieceBlock.Types.BATRACHOTOMUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/batrachotomus/stage_0.png"));
+		type.put(FossilSkeletonFifteenPieceBlock.Types.EURHINOSAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/eurhinosaurus/stage_0.png"));
 	});
 	public static final Map<FossilSkeletonFifteenPieceBlock.Type, ResourceLocation> FRAME_BY_TYPE = Util.make(Maps.newHashMap(), (type) -> {
 		type.put(FossilSkeletonFifteenPieceBlock.Types.WUERHOSAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/wuerhosaurus/frame.png"));
@@ -336,6 +348,10 @@ public class FossilSkeletonFifteenPieceRenderer implements BlockEntityRenderer<F
 		type.put(FossilSkeletonFifteenPieceBlock.Types.ELAPHROSAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/elaphrosaurus/frame.png"));
 		type.put(FossilSkeletonFifteenPieceBlock.Types.MEGALOSAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/megalosaurus/frame.png"));
 		type.put(FossilSkeletonFifteenPieceBlock.Types.DAKOSAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/dakosaurus/frame.png"));
+		type.put(FossilSkeletonFifteenPieceBlock.Types.GAIASIA, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/gaiasia/frame.png"));
+		type.put(FossilSkeletonFifteenPieceBlock.Types.TUOJIANGOSAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/tuojiangosaurus/frame.png"));
+		type.put(FossilSkeletonFifteenPieceBlock.Types.BATRACHOTOMUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/batrachotomus/frame.png"));
+		type.put(FossilSkeletonFifteenPieceBlock.Types.EURHINOSAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/eurhinosaurus/frame.png"));
 	});
 	public static Map<FossilSkeletonFifteenPieceBlock.Type, SkullModelBase> createFossilRenderers(EntityModelSet p_173662_) {
 		ImmutableMap.Builder<FossilSkeletonFifteenPieceBlock.Type, SkullModelBase> builder = ImmutableMap.builder();
@@ -414,6 +430,10 @@ public class FossilSkeletonFifteenPieceRenderer implements BlockEntityRenderer<F
 		builder.put(FossilSkeletonFifteenPieceBlock.Types.ELAPHROSAURUS, new ElaphrosaurusFossilModel(p_173662_.bakeLayer(ClientEvents.ELAPHROSAURUS)));
 		builder.put(FossilSkeletonFifteenPieceBlock.Types.MEGALOSAURUS, new MegalosaurusFossilModel(p_173662_.bakeLayer(ClientEvents.MEGALOSAURUS)));
 		builder.put(FossilSkeletonFifteenPieceBlock.Types.DAKOSAURUS, new DakosaurusFossilModel(p_173662_.bakeLayer(ClientEvents.DAKOSAURUS)));
+		builder.put(FossilSkeletonFifteenPieceBlock.Types.GAIASIA, new GaiasiaFossilModel(p_173662_.bakeLayer(ClientEvents.GAIASIA)));
+		builder.put(FossilSkeletonFifteenPieceBlock.Types.TUOJIANGOSAURUS, new TuojiangosaurusFossilModel(p_173662_.bakeLayer(ClientEvents.TUOJIANGOSAURUS)));
+		builder.put(FossilSkeletonFifteenPieceBlock.Types.BATRACHOTOMUS, new BatrachotomusFossilModel(p_173662_.bakeLayer(ClientEvents.BATRACHOTOMUS)));
+		builder.put(FossilSkeletonFifteenPieceBlock.Types.EURHINOSAURUS, new EurhinosaurusFossilModel(p_173662_.bakeLayer(ClientEvents.EURHINOSAURUS)));
 		return builder.build();
 	}
 
@@ -494,6 +514,10 @@ public class FossilSkeletonFifteenPieceRenderer implements BlockEntityRenderer<F
 		builder.put(FossilSkeletonFifteenPieceBlock.Types.ELAPHROSAURUS, new ElaphrosaurusFossilFrameModel(p_173662_.bakeLayer(ClientEvents.ELAPHROSAURUS_FRAME)));
 		builder.put(FossilSkeletonFifteenPieceBlock.Types.MEGALOSAURUS, new MegalosaurusFossilFrameModel(p_173662_.bakeLayer(ClientEvents.MEGALOSAURUS_FRAME)));
 		builder.put(FossilSkeletonFifteenPieceBlock.Types.DAKOSAURUS, new DakosaurusFossilFrameModel(p_173662_.bakeLayer(ClientEvents.DAKOSAURUS_FRAME)));
+		builder.put(FossilSkeletonFifteenPieceBlock.Types.GAIASIA, new GaiasiaFossilFrameModel(p_173662_.bakeLayer(ClientEvents.GAIASIA_FRAME)));
+		builder.put(FossilSkeletonFifteenPieceBlock.Types.TUOJIANGOSAURUS, new TuojiangosaurusFossilFrameModel(p_173662_.bakeLayer(ClientEvents.TUOJIANGOSAURUS_FRAME)));
+		builder.put(FossilSkeletonFifteenPieceBlock.Types.BATRACHOTOMUS, new BatrachotomusFossilFrameModel(p_173662_.bakeLayer(ClientEvents.BATRACHOTOMUS_FRAME)));
+		builder.put(FossilSkeletonFifteenPieceBlock.Types.EURHINOSAURUS, new EurhinosaurusFossilFrameModel(p_173662_.bakeLayer(ClientEvents.EURHINOSAURUS_FRAME)));
 		return builder.build();
 	}
 
@@ -748,6 +772,18 @@ public class FossilSkeletonFifteenPieceRenderer implements BlockEntityRenderer<F
 		}  else if (FossilSkeletonFifteenPieceBlock$type == FossilSkeletonFifteenPieceBlock.Types.DAKOSAURUS) {
 			p_173667_.scale(-0.85F, -0.85F, 0.85F);
 			p_173667_.translate(0F, 0.05F, 0F);
+		}  else if (FossilSkeletonFifteenPieceBlock$type == FossilSkeletonFifteenPieceBlock.Types.GAIASIA) {
+			p_173667_.scale(-0.8F, -0.8F, 0.8F);
+			p_173667_.translate(0F, -0.3F, 0F);
+		}  else if (FossilSkeletonFifteenPieceBlock$type == FossilSkeletonFifteenPieceBlock.Types.TUOJIANGOSAURUS) {
+			p_173667_.scale(-0.92F, -0.92F, 0.92F);
+			p_173667_.translate(0F, -0.43F, 0F);
+		}  else if (FossilSkeletonFifteenPieceBlock$type == FossilSkeletonFifteenPieceBlock.Types.BATRACHOTOMUS) {
+			p_173667_.scale(-0.98F, -0.98F, 0.98F);
+			p_173667_.translate(0F, -0.48F, 0F);
+		}  else if (FossilSkeletonFifteenPieceBlock$type == FossilSkeletonFifteenPieceBlock.Types.EURHINOSAURUS) {
+			p_173667_.scale(-0.88F, -0.88F, 0.88F);
+			p_173667_.translate(0F, -0.8F, 0F);
 		} else p_173667_.scale(-1.0F, -1.0F, 1.0F);
 		VertexConsumer vertexconsumer = p_173668_.getBuffer(p_173671_);
 		p_173670_.setupAnim(p_173666_, p_173665_, 0.0F);
@@ -907,6 +943,14 @@ public class FossilSkeletonFifteenPieceRenderer implements BlockEntityRenderer<F
 			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/megalosaurus/stage_" + fossilLevel + ".png");
 		} else if (type == FossilSkeletonFifteenPieceBlock.Types.DAKOSAURUS) {
 			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/dakosaurus/stage_" + fossilLevel + ".png");
+		} else if (type == FossilSkeletonFifteenPieceBlock.Types.GAIASIA) {
+			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/gaiasia/stage_" + fossilLevel + ".png");
+		} else if (type == FossilSkeletonFifteenPieceBlock.Types.TUOJIANGOSAURUS) {
+			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/tuojiangosaurus/stage_" + fossilLevel + ".png");
+		} else if (type == FossilSkeletonFifteenPieceBlock.Types.BATRACHOTOMUS) {
+			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/batrachotomus/stage_" + fossilLevel + ".png");
+		} else if (type == FossilSkeletonFifteenPieceBlock.Types.EURHINOSAURUS) {
+			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/eurhinosaurus/stage_" + fossilLevel + ".png");
 		} else resourceLocation = SKIN_BY_TYPE.get(type);
 		return RenderType.entityCutoutNoCullZOffset(resourceLocation);
 	}

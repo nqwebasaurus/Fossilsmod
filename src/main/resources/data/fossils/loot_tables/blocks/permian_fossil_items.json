@@ -138,6 +138,26 @@
           "type": "minecraft:item",
           "name": "fossils:deuterosaurus_fossil",
           "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:gaiasia_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:prionosuchus_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:jonkeria_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:lystrosaurusmaccaigi_fossil",
+          "weight": 2
         }
       ],
       "rolls": 1
