@@ -213,6 +213,7 @@
 	"block.fossils.placodus_fossil": "Placodus Fossil",
 	"block.fossils.ophthalmosaurus_fossil": "Ophthalmosaurus Fossil",
 	"block.fossils.lystrosaurusmaccaigi_fossil": "Lystrosaurus maccaigi Fossil",
+	"block.fossils.plesiosaurus_fossil": "Plesiosaurus Fossil",
 	"block.fossils.poposaurus_fossil": "Poposaurus Fossil",
 	"block.fossils.nigerpeton_fossil": "Nigerpeton Fossil",
 	"block.fossils.stahleckeria_fossil": "Stahleckeria Fossil",
@@ -297,6 +298,7 @@
 	"block.fossils.tuojiangosaurus_fossil": "Tuojiangosaurus Fossil",
 	"block.fossils.batrachotomus_fossil": "Batrachotomus Fossil",
 	"block.fossils.eurhinosaurus_fossil": "Eurhinosaurus Fossil",
+	"block.fossils.rhomaleosaurus_fossil": "Rhomaleosaurus Fossil",
 	"block.fossils.bisonlatifrons_fossil": "Bison latifrons Fossil",
 	"block.fossils.utahraptor_fossil": "Utahraptor Fossil",
 	"block.fossils.shonisaurus_fossil": "Shonisaurus Fossil",
@@ -1519,5 +1521,9 @@
 	"advancements.fossils.lystrosaurusmaccaigi.title": "McCaig's Shovel Lizard",
 	"advancements.fossils.lystrosaurusmaccaigi.description": "Complete a Lystrosaurus maccaigi skeleton",
 	"advancements.fossils.eurhinosaurus.title": "Well-Nosed Lizard",
-	"advancements.fossils.eurhinosaurus.description": "Complete an Eurhinosaurus skeleton"
+	"advancements.fossils.eurhinosaurus.description": "Complete an Eurhinosaurus skeleton",
+	"advancements.fossils.plesiosaurus.title": "Close to a Lizard",
+	"advancements.fossils.plesiosaurus.description": "Complete a Plesiosaurus skeleton",
+	"advancements.fossils.rhomaleosaurus.title": "Strong Lizard",
+	"advancements.fossils.rhomaleosaurus.description": "Complete a Rhomaleosaurus skeleton"
 }

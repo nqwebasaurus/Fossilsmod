@@ -318,6 +318,16 @@
           "type": "minecraft:item",
           "name": "fossils:eurhinosaurus_fossil",
           "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:plesiosaurus_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:rhomaleosaurus_fossil",
+          "weight": 2
         }
       ],
       "rolls": 1
