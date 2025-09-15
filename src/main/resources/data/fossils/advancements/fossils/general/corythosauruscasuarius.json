@@ -1,0 +1,57 @@
+{
+  "parent": "fossils:fossils/general/lambeosaurines",
+  "criteria": {
+    "finish_corythosauruscasuarius": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:corythosauruscasuarius_fossil"
+                ],
+                "state": {
+                  "fossil_level": "19"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:corythosauruscasuarius_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.corythosauruscasuarius.description"
+    },
+    "frame": "challenge",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:corythosauruscasuarius_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.corythosauruscasuarius.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_corythosauruscasuarius"
+    ]
+  ],
+  "rewards": {
+    "experience": 500
+  },
+  "sends_telemetry_event": true
+}

@@ -328,6 +328,21 @@
           "type": "minecraft:item",
           "name": "fossils:rhomaleosaurus_fossil",
           "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:europasaurus_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:huayangosaurus_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:spicomellus_fossil",
+          "weight": 2
         }
       ],
       "rolls": 1

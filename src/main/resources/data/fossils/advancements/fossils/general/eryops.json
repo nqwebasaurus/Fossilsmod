@@ -1,0 +1,54 @@
+{
+  "parent": "fossils:fossils/general/eryopoidea",
+  "criteria": {
+    "finish_eryops": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:eryops_fossil"
+                ],
+                "state": {
+                  "fossil_level": "9"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:eryops_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.eryops.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:eryops_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.eryops.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_eryops"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

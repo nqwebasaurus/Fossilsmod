@@ -1,0 +1,57 @@
+{
+  "parent": "fossils:fossils/general/hippomorpha",
+  "criteria": {
+    "finish_palaeotherium": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:palaeotherium_fossil"
+                ],
+                "state": {
+                  "fossil_level": "14"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:palaeotherium_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.palaeotherium.description"
+    },
+    "frame": "goal",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:palaeotherium_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.palaeotherium.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_palaeotherium"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  },
+  "sends_telemetry_event": true
+}

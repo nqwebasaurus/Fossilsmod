@@ -1,5 +1,5 @@
 {
-  "parent": "fossils:fossils/general/temnospondyli",
+  "parent": "fossils:fossils/general/stereospondylomorpha",
   "criteria": {
     "finish_capitosauria": {
       "trigger": "minecraft:tick"

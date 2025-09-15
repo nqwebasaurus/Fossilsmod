@@ -83,6 +83,21 @@
           "type": "minecraft:item",
           "name": "fossils:obdurodon_fossil",
           "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:pezosiren_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:palaeotherium_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:odontopteryx_fossil",
+          "weight": 2
         }
       ],
       "rolls": 1

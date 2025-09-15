@@ -123,6 +123,11 @@
           "type": "minecraft:item",
           "name": "fossils:obdurodon_fossil",
           "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:llallawavis_fossil",
+          "weight": 2
         }
       ],
       "rolls": 1

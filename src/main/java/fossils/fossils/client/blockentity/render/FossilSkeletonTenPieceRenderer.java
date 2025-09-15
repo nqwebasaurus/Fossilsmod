@@ -75,6 +75,10 @@ import fossils.fossils.client.blockentity.model.einiosaurus.EiniosaurusFossilFra
 import fossils.fossils.client.blockentity.model.einiosaurus.EiniosaurusFossilModel;
 import fossils.fossils.client.blockentity.model.endothiodonbathystoma.EndothiodonbathystomaFossilFrameModel;
 import fossils.fossils.client.blockentity.model.endothiodonbathystoma.EndothiodonbathystomaFossilModel;
+import fossils.fossils.client.blockentity.model.eryops.EryopsFossilFrameModel;
+import fossils.fossils.client.blockentity.model.eryops.EryopsFossilModel;
+import fossils.fossils.client.blockentity.model.europasaurus.EuropasaurusFossilFrameModel;
+import fossils.fossils.client.blockentity.model.europasaurus.EuropasaurusFossilModel;
 import fossils.fossils.client.blockentity.model.europelta.EuropeltaFossilFrameModel;
 import fossils.fossils.client.blockentity.model.europelta.EuropeltaFossilModel;
 import fossils.fossils.client.blockentity.model.eustreptospondylus.EustreptospondylusFossilFrameModel;
@@ -95,6 +99,8 @@ import fossils.fossils.client.blockentity.model.hamipterus.HamipterusFossilFrame
 import fossils.fossils.client.blockentity.model.hamipterus.HamipterusFossilModel;
 import fossils.fossils.client.blockentity.model.hippidion.HippidionFossilFrameModel;
 import fossils.fossils.client.blockentity.model.hippidion.HippidionFossilModel;
+import fossils.fossils.client.blockentity.model.huayangosaurus.HuayangosaurusFossilFrameModel;
+import fossils.fossils.client.blockentity.model.huayangosaurus.HuayangosaurusFossilModel;
 import fossils.fossils.client.blockentity.model.hypselospinus.HypselospinusFossilFrameModel;
 import fossils.fossils.client.blockentity.model.hypselospinus.HypselospinusFossilModel;
 import fossils.fossils.client.blockentity.model.hypsilophodon.HypsilophodonFossilFrameModel;
@@ -131,6 +137,8 @@ import fossils.fossils.client.blockentity.model.lufengosaurus.LufengosaurusFossi
 import fossils.fossils.client.blockentity.model.lufengosaurus.LufengosaurusFossilModel;
 import fossils.fossils.client.blockentity.model.lystrosaurusmaccaigi.LystrosaurusmaccaigiFossilFrameModel;
 import fossils.fossils.client.blockentity.model.lystrosaurusmaccaigi.LystrosaurusmaccaigiFossilModel;
+import fossils.fossils.client.blockentity.model.megalocephalus.MegalocephalusFossilFrameModel;
+import fossils.fossils.client.blockentity.model.megalocephalus.MegalocephalusFossilModel;
 import fossils.fossils.client.blockentity.model.monachus.MonachusFossilFrameModel;
 import fossils.fossils.client.blockentity.model.monachus.MonachusFossilModel;
 import fossils.fossils.client.blockentity.model.montanoceratops.MontanoceratopsFossilFrameModel;
@@ -159,6 +167,8 @@ import fossils.fossils.client.blockentity.model.ornitholestes.OrnitholestesFossi
 import fossils.fossils.client.blockentity.model.ornitholestes.OrnitholestesFossilModel;
 import fossils.fossils.client.blockentity.model.oxydactylus.OxydactylusFossilFrameModel;
 import fossils.fossils.client.blockentity.model.oxydactylus.OxydactylusFossilModel;
+import fossils.fossils.client.blockentity.model.pezosiren.PezosirenFossilFrameModel;
+import fossils.fossils.client.blockentity.model.pezosiren.PezosirenFossilModel;
 import fossils.fossils.client.blockentity.model.piatnitzkysaurus.PiatnitzkysaurusFossilFrameModel;
 import fossils.fossils.client.blockentity.model.piatnitzkysaurus.PiatnitzkysaurusFossilModel;
 import fossils.fossils.client.blockentity.model.placerias.PlaceriasFossilFrameModel;
@@ -231,6 +241,8 @@ import fossils.fossils.client.blockentity.model.trilophosaurus.TrilophosaurusFos
 import fossils.fossils.client.blockentity.model.trilophosaurus.TrilophosaurusFossilModel;
 import fossils.fossils.client.blockentity.model.tupandactylusnavigans.TupandactylusnavigansFossilFrameModel;
 import fossils.fossils.client.blockentity.model.tupandactylusnavigans.TupandactylusnavigansFossilModel;
+import fossils.fossils.client.blockentity.model.vivaxosaurus.VivaxosaurusFossilFrameModel;
+import fossils.fossils.client.blockentity.model.vivaxosaurus.VivaxosaurusFossilModel;
 import fossils.fossils.client.blockentity.model.zhenyuanlong.ZhenyuanlongFossilFrameModel;
 import fossils.fossils.client.blockentity.model.zhenyuanlong.ZhenyuanlongFossilModel;
 import fossils.fossils.common.block.FossilSkeletonTenPieceBlock;
@@ -363,6 +375,12 @@ public class FossilSkeletonTenPieceRenderer implements BlockEntityRenderer<Fossi
 		type.put(FossilSkeletonTenPieceBlock.Types.OPHTHALMOSAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/ophthalmosaurus/stage_0.png"));
 		type.put(FossilSkeletonTenPieceBlock.Types.LYSTROSAURUSMACCAIGI, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/lystrosaurusmaccaigi/stage_0.png"));
 		type.put(FossilSkeletonTenPieceBlock.Types.PLESIOSAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/plesiosaurus/stage_0.png"));
+		type.put(FossilSkeletonTenPieceBlock.Types.VIVAXOSAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/vivaxosaurus/stage_0.png"));
+		type.put(FossilSkeletonTenPieceBlock.Types.EUROPASAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/europasaurus/stage_0.png"));
+		type.put(FossilSkeletonTenPieceBlock.Types.HUAYANGOSAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/huayangosaurus/stage_0.png"));
+		type.put(FossilSkeletonTenPieceBlock.Types.ERYOPS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/eryops/stage_0.png"));
+		type.put(FossilSkeletonTenPieceBlock.Types.MEGALOCEPHALUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/megalocephalus/stage_0.png"));
+		type.put(FossilSkeletonTenPieceBlock.Types.PEZOSIREN, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/pezosiren/stage_0.png"));
 
 	});
 	public static final Map<FossilSkeletonTenPieceBlock.Type, ResourceLocation> FRAME_BY_TYPE = Util.make(Maps.newHashMap(), (type) -> {
@@ -476,6 +494,12 @@ public class FossilSkeletonTenPieceRenderer implements BlockEntityRenderer<Fossi
 		type.put(FossilSkeletonTenPieceBlock.Types.OPHTHALMOSAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/ophthalmosaurus/frame.png"));
 		type.put(FossilSkeletonTenPieceBlock.Types.LYSTROSAURUSMACCAIGI, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/lystrosaurusmaccaigi/frame.png"));
 		type.put(FossilSkeletonTenPieceBlock.Types.PLESIOSAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/plesiosaurus/frame.png"));
+		type.put(FossilSkeletonTenPieceBlock.Types.VIVAXOSAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/vivaxosaurus/frame.png"));
+		type.put(FossilSkeletonTenPieceBlock.Types.EUROPASAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/europasaurus/frame.png"));
+		type.put(FossilSkeletonTenPieceBlock.Types.HUAYANGOSAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/huayangosaurus/frame.png"));
+		type.put(FossilSkeletonTenPieceBlock.Types.ERYOPS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/eryops/frame.png"));
+		type.put(FossilSkeletonTenPieceBlock.Types.MEGALOCEPHALUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/megalocephalus/frame.png"));
+		type.put(FossilSkeletonTenPieceBlock.Types.PEZOSIREN, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/pezosiren/frame.png"));
 
 	});
 	public static Map<FossilSkeletonTenPieceBlock.Type, SkullModelBase> createFossilRenderers(EntityModelSet p_173662_) {
@@ -590,6 +614,12 @@ public class FossilSkeletonTenPieceRenderer implements BlockEntityRenderer<Fossi
 		builder.put(FossilSkeletonTenPieceBlock.Types.OPHTHALMOSAURUS, new OphthalmosaurusFossilModel(p_173662_.bakeLayer(ClientEvents.OPHTHALMOSAURUS)));
 		builder.put(FossilSkeletonTenPieceBlock.Types.LYSTROSAURUSMACCAIGI, new LystrosaurusmaccaigiFossilModel(p_173662_.bakeLayer(ClientEvents.LYSTROSAURUSMACCAIGI)));
 		builder.put(FossilSkeletonTenPieceBlock.Types.PLESIOSAURUS, new PlesiosaurusFossilModel(p_173662_.bakeLayer(ClientEvents.PLESIOSAURUS)));
+		builder.put(FossilSkeletonTenPieceBlock.Types.VIVAXOSAURUS, new VivaxosaurusFossilModel(p_173662_.bakeLayer(ClientEvents.VIVAXOSAURUS)));
+		builder.put(FossilSkeletonTenPieceBlock.Types.EUROPASAURUS, new EuropasaurusFossilModel(p_173662_.bakeLayer(ClientEvents.EUROPASAURUS)));
+		builder.put(FossilSkeletonTenPieceBlock.Types.HUAYANGOSAURUS, new HuayangosaurusFossilModel(p_173662_.bakeLayer(ClientEvents.HUAYANGOSAURUS)));
+		builder.put(FossilSkeletonTenPieceBlock.Types.ERYOPS, new EryopsFossilModel(p_173662_.bakeLayer(ClientEvents.ERYOPS)));
+		builder.put(FossilSkeletonTenPieceBlock.Types.MEGALOCEPHALUS, new MegalocephalusFossilModel(p_173662_.bakeLayer(ClientEvents.MEGALOCEPHALUS)));
+		builder.put(FossilSkeletonTenPieceBlock.Types.PEZOSIREN, new PezosirenFossilModel(p_173662_.bakeLayer(ClientEvents.PEZOSIREN)));
 		return builder.build();
 	}
 
@@ -705,6 +735,12 @@ public class FossilSkeletonTenPieceRenderer implements BlockEntityRenderer<Fossi
 		builder.put(FossilSkeletonTenPieceBlock.Types.OPHTHALMOSAURUS, new OphthalmosaurusFossilFrameModel(p_173662_.bakeLayer(ClientEvents.OPHTHALMOSAURUS_FRAME)));
 		builder.put(FossilSkeletonTenPieceBlock.Types.LYSTROSAURUSMACCAIGI, new LystrosaurusmaccaigiFossilFrameModel(p_173662_.bakeLayer(ClientEvents.LYSTROSAURUSMACCAIGI_FRAME)));
 		builder.put(FossilSkeletonTenPieceBlock.Types.PLESIOSAURUS, new PlesiosaurusFossilFrameModel(p_173662_.bakeLayer(ClientEvents.PLESIOSAURUS_FRAME)));
+		builder.put(FossilSkeletonTenPieceBlock.Types.VIVAXOSAURUS, new VivaxosaurusFossilFrameModel(p_173662_.bakeLayer(ClientEvents.VIVAXOSAURUS_FRAME)));
+		builder.put(FossilSkeletonTenPieceBlock.Types.EUROPASAURUS, new EuropasaurusFossilFrameModel(p_173662_.bakeLayer(ClientEvents.EUROPASAURUS_FRAME)));
+		builder.put(FossilSkeletonTenPieceBlock.Types.HUAYANGOSAURUS, new HuayangosaurusFossilFrameModel(p_173662_.bakeLayer(ClientEvents.HUAYANGOSAURUS_FRAME)));
+		builder.put(FossilSkeletonTenPieceBlock.Types.ERYOPS, new EryopsFossilFrameModel(p_173662_.bakeLayer(ClientEvents.ERYOPS_FRAME)));
+		builder.put(FossilSkeletonTenPieceBlock.Types.MEGALOCEPHALUS, new MegalocephalusFossilFrameModel(p_173662_.bakeLayer(ClientEvents.MEGALOCEPHALUS_FRAME)));
+		builder.put(FossilSkeletonTenPieceBlock.Types.PEZOSIREN, new PezosirenFossilFrameModel(p_173662_.bakeLayer(ClientEvents.PEZOSIREN_FRAME)));
 		return builder.build();
 	}
 
@@ -1064,6 +1100,24 @@ public class FossilSkeletonTenPieceRenderer implements BlockEntityRenderer<Fossi
 		} else if (FossilSkeletonTenPieceBlock$type == FossilSkeletonTenPieceBlock.Types.PLESIOSAURUS) {
 			p_173667_.scale(-0.61F, -0.61F, 0.61F);
 			p_173667_.translate(0F, -0.1F, 0F);
+		} else if (FossilSkeletonTenPieceBlock$type == FossilSkeletonTenPieceBlock.Types.VIVAXOSAURUS) {
+			p_173667_.scale(-0.44F, -0.44F, 0.44F);
+			p_173667_.translate(0F, 0.77F, 0F);
+		} else if (FossilSkeletonTenPieceBlock$type == FossilSkeletonTenPieceBlock.Types.EUROPASAURUS) {
+			p_173667_.scale(-0.8F, -0.8F, 0.8F);
+			p_173667_.translate(0F, -0.24F, 0F);
+		} else if (FossilSkeletonTenPieceBlock$type == FossilSkeletonTenPieceBlock.Types.HUAYANGOSAURUS) {
+			p_173667_.scale(-0.8F, -0.8F, 0.8F);
+			p_173667_.translate(0F, -0.25F, 0F);
+		} else if (FossilSkeletonTenPieceBlock$type == FossilSkeletonTenPieceBlock.Types.ERYOPS) {
+			p_173667_.scale(-0.62F, -0.62F, 0.62F);
+			p_173667_.translate(0F, 0.13F, 0F);
+		} else if (FossilSkeletonTenPieceBlock$type == FossilSkeletonTenPieceBlock.Types.MEGALOCEPHALUS) {
+			p_173667_.scale(-0.28F, -0.28F, 0.28F);
+			p_173667_.translate(0F, 0.3F, 0F);
+		} else if (FossilSkeletonTenPieceBlock$type == FossilSkeletonTenPieceBlock.Types.PEZOSIREN) {
+			p_173667_.scale(-0.51F, -0.51F, 0.51F);
+			p_173667_.translate(0F, 0.48F, 0F);
 		} else p_173667_.scale(-1.0F, -1.0F, 1.0F);
 		VertexConsumer vertexconsumer = p_173668_.getBuffer(p_173671_);
 		p_173670_.setupAnim(p_173666_, p_173665_, 0.0F);
@@ -1293,6 +1347,18 @@ public class FossilSkeletonTenPieceRenderer implements BlockEntityRenderer<Fossi
 			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/lystrosaurusmaccaigi/stage_" + fossilLevel + ".png");
 		} else if (type == FossilSkeletonTenPieceBlock.Types.PLESIOSAURUS) {
 			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/plesiosaurus/stage_" + fossilLevel + ".png");
+		} else if (type == FossilSkeletonTenPieceBlock.Types.VIVAXOSAURUS) {
+			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/vivaxosaurus/stage_" + fossilLevel + ".png");
+		} else if (type == FossilSkeletonTenPieceBlock.Types.EUROPASAURUS) {
+			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/europasaurus/stage_" + fossilLevel + ".png");
+		} else if (type == FossilSkeletonTenPieceBlock.Types.HUAYANGOSAURUS) {
+			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/huayangosaurus/stage_" + fossilLevel + ".png");
+		} else if (type == FossilSkeletonTenPieceBlock.Types.ERYOPS) {
+			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/eryops/stage_" + fossilLevel + ".png");
+		} else if (type == FossilSkeletonTenPieceBlock.Types.MEGALOCEPHALUS) {
+			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/megalocephalus/stage_" + fossilLevel + ".png");
+		} else if (type == FossilSkeletonTenPieceBlock.Types.PEZOSIREN) {
+			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/pezosiren/stage_" + fossilLevel + ".png");
 		} else resourceLocation = SKIN_BY_TYPE.get(type);
 		return RenderType.entityCutoutNoCullZOffset(resourceLocation);
 	}

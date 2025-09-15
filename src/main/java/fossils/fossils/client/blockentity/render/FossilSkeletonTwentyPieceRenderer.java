@@ -39,6 +39,8 @@ import fossils.fossils.client.blockentity.model.carcharodontosaurus.Carcharodont
 import fossils.fossils.client.blockentity.model.carcharodontosaurus.CarcharodontosaurusFossilModel;
 import fossils.fossils.client.blockentity.model.ceratotherium.CeratotheriumFossilFrameModel;
 import fossils.fossils.client.blockentity.model.ceratotherium.CeratotheriumFossilModel;
+import fossils.fossils.client.blockentity.model.corythosauruscasuarius.CorythosauruscasuariusFossilFrameModel;
+import fossils.fossils.client.blockentity.model.corythosauruscasuarius.CorythosauruscasuariusFossilModel;
 import fossils.fossils.client.blockentity.model.cotylorhynchus.CotylorhynchusFossilFrameModel;
 import fossils.fossils.client.blockentity.model.cotylorhynchus.CotylorhynchusFossilModel;
 import fossils.fossils.client.blockentity.model.daspletosaurus.DaspletosaurusFossilFrameModel;
@@ -218,6 +220,7 @@ public class FossilSkeletonTwentyPieceRenderer implements BlockEntityRenderer<Fo
 		type.put(FossilSkeletonTwentyPieceBlock.Types.PRIONOSUCHUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/prionosuchus/stage_0.png"));
 		type.put(FossilSkeletonTwentyPieceBlock.Types.JONKERIA, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/jonkeria/stage_0.png"));
 		type.put(FossilSkeletonTwentyPieceBlock.Types.MASTODONSAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/mastodonsaurus/stage_0.png"));
+		type.put(FossilSkeletonTwentyPieceBlock.Types.CORYTHOSAURUSCASUARIUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/corythosauruscasuarius/stage_0.png"));
 	});
 	public static final Map<FossilSkeletonTwentyPieceBlock.Type, ResourceLocation> FRAME_BY_TYPE = Util.make(Maps.newHashMap(), (type) -> {
 		type.put(FossilSkeletonTwentyPieceBlock.Types.UTAHRAPTOR, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/utahraptor/frame.png"));
@@ -282,6 +285,7 @@ public class FossilSkeletonTwentyPieceRenderer implements BlockEntityRenderer<Fo
 		type.put(FossilSkeletonTwentyPieceBlock.Types.PRIONOSUCHUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/prionosuchus/frame.png"));
 		type.put(FossilSkeletonTwentyPieceBlock.Types.JONKERIA, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/jonkeria/frame.png"));
 		type.put(FossilSkeletonTwentyPieceBlock.Types.MASTODONSAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/mastodonsaurus/frame.png"));
+		type.put(FossilSkeletonTwentyPieceBlock.Types.CORYTHOSAURUSCASUARIUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/corythosauruscasuarius/frame.png"));
 
 	});
 	public static Map<FossilSkeletonTwentyPieceBlock.Type, SkullModelBase> createFossilRenderers(EntityModelSet p_173662_) {
@@ -348,6 +352,7 @@ public class FossilSkeletonTwentyPieceRenderer implements BlockEntityRenderer<Fo
 		builder.put(FossilSkeletonTwentyPieceBlock.Types.PRIONOSUCHUS, new PrionosuchusFossilModel(p_173662_.bakeLayer(ClientEvents.PRIONOSUCHUS)));
 		builder.put(FossilSkeletonTwentyPieceBlock.Types.JONKERIA, new JonkeriaFossilModel(p_173662_.bakeLayer(ClientEvents.JONKERIA)));
 		builder.put(FossilSkeletonTwentyPieceBlock.Types.MASTODONSAURUS, new MastodonsaurusFossilModel(p_173662_.bakeLayer(ClientEvents.MASTODONSAURUS)));
+		builder.put(FossilSkeletonTwentyPieceBlock.Types.CORYTHOSAURUSCASUARIUS, new CorythosauruscasuariusFossilModel(p_173662_.bakeLayer(ClientEvents.CORYTHOSAURUSCASUARIUS)));
 		return builder.build();
 	}
 
@@ -415,6 +420,7 @@ public class FossilSkeletonTwentyPieceRenderer implements BlockEntityRenderer<Fo
 		builder.put(FossilSkeletonTwentyPieceBlock.Types.PRIONOSUCHUS, new PrionosuchusFossilFrameModel(p_173662_.bakeLayer(ClientEvents.PRIONOSUCHUS_FRAME)));
 		builder.put(FossilSkeletonTwentyPieceBlock.Types.JONKERIA, new JonkeriaFossilFrameModel(p_173662_.bakeLayer(ClientEvents.JONKERIA_FRAME)));
 		builder.put(FossilSkeletonTwentyPieceBlock.Types.MASTODONSAURUS, new MastodonsaurusFossilFrameModel(p_173662_.bakeLayer(ClientEvents.MASTODONSAURUS_FRAME)));
+		builder.put(FossilSkeletonTwentyPieceBlock.Types.CORYTHOSAURUSCASUARIUS, new CorythosauruscasuariusFossilFrameModel(p_173662_.bakeLayer(ClientEvents.CORYTHOSAURUSCASUARIUS_FRAME)));
 		return builder.build();
 	}
 
@@ -630,6 +636,9 @@ public class FossilSkeletonTwentyPieceRenderer implements BlockEntityRenderer<Fo
 		} else if (FossilSkeletonTwentyPieceBlock$type == FossilSkeletonTwentyPieceBlock.Types.MASTODONSAURUS) {
 			p_173667_.scale(-1.04F, -1.04F, 1.04F);
 			p_173667_.translate(0F, -0.53F, 0F);
+		} else if (FossilSkeletonTwentyPieceBlock$type == FossilSkeletonTwentyPieceBlock.Types.CORYTHOSAURUSCASUARIUS) {
+			p_173667_.scale(-0.87F, -0.87F, 0.87F);
+			p_173667_.translate(0F, -0.3F, 0F);
 		} else p_173667_.scale(-1.0F, -1.0F, 1.0F);
 		VertexConsumer vertexconsumer = p_173668_.getBuffer(p_173671_);
 		p_173670_.setupAnim(p_173666_, p_173665_, 0.0F);
@@ -763,6 +772,8 @@ public class FossilSkeletonTwentyPieceRenderer implements BlockEntityRenderer<Fo
 			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/jonkeria/stage_" + fossilLevel + ".png");
 		}  else if (type == FossilSkeletonTwentyPieceBlock.Types.MASTODONSAURUS) {
 			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/mastodonsaurus/stage_" + fossilLevel + ".png");
+		}  else if (type == FossilSkeletonTwentyPieceBlock.Types.CORYTHOSAURUSCASUARIUS) {
+			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/corythosauruscasuarius/stage_" + fossilLevel + ".png");
 		} else resourceLocation = SKIN_BY_TYPE.get(type);
 		return RenderType.entityCutoutNoCullZOffset(resourceLocation);
 	}

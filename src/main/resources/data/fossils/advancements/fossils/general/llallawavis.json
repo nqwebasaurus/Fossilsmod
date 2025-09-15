@@ -1,0 +1,54 @@
+{
+  "parent": "fossils:fossils/general/phorusrhacidae",
+  "criteria": {
+    "finish_llallawavis": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:llallawavis_fossil"
+                ],
+                "state": {
+                  "fossil_level": "4"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:llallawavis_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.llallawavis.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:llallawavis_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.llallawavis.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_llallawavis"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

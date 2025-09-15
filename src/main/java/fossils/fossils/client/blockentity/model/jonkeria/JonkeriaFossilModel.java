@@ -159,7 +159,7 @@ public class JonkeriaFossilModel extends SkullModelBase {
 
 		PartDefinition Bodymiddle_r17 = Bodymiddle.addOrReplaceChild("Bodymiddle_r17", CubeListBuilder.create().texOffs(78, 16).addBox(1.8419F, -0.8106F, -0.4576F, 3.0F, 0.0F, 1.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.5F, -0.9936F, -5.4841F, 0.3628F, -0.2296F, 0.8547F));
 
-		PartDefinition body2 = Bodymiddle.addOrReplaceChild("body2", CubeListBuilder.create(), PartPose.offsetAndRotation(0.0F, -1.1026F, -5.9083F, 0.1584F, -0.1293F, -0.0206F));
+		PartDefinition body2 = Bodymiddle.addOrReplaceChild("body2", CubeListBuilder.create(), PartPose.offsetAndRotation(0.0F, -1.1026F, -5.9083F, 0.1595F, 0.1724F, 0.0276F));
 
 		PartDefinition Bodymiddle_r18 = body2.addOrReplaceChild("Bodymiddle_r18", CubeListBuilder.create().texOffs(64, 92).addBox(0.0F, -2.4957F, -0.0065F, 0.0F, 3.0F, 1.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.0F, 0.0F, -2.0F, -0.1833F, 0.0F, 0.0F));
 
@@ -203,7 +203,7 @@ public class JonkeriaFossilModel extends SkullModelBase {
 
 		PartDefinition Bodymiddle_r38 = body2.addOrReplaceChild("Bodymiddle_r38", CubeListBuilder.create().texOffs(0, 26).addBox(-0.5F, -0.0911F, -5.9758F, 1.0F, 1.0F, 6.0F, new CubeDeformation(0.006F)), PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, -0.0524F, 0.0F, 0.0F));
 
-		PartDefinition body = body2.addOrReplaceChild("body", CubeListBuilder.create(), PartPose.offsetAndRotation(0.0F, -0.4F, -6.0F, 0.0876F, -0.0869F, -0.0076F));
+		PartDefinition body = body2.addOrReplaceChild("body", CubeListBuilder.create(), PartPose.offsetAndRotation(0.0F, -0.4F, -6.0F, 0.0876F, 0.0869F, 0.0076F));
 
 		PartDefinition Bodymiddle_r39 = body.addOrReplaceChild("Bodymiddle_r39", CubeListBuilder.create().texOffs(92, 73).addBox(0.0F, -2.4882F, 0.0368F, 0.0F, 3.0F, 1.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.0F, 0.0F, -2.0F, -0.0611F, 0.0F, 0.0F));
 
@@ -262,7 +262,7 @@ public class JonkeriaFossilModel extends SkullModelBase {
 		PartDefinition Bodymiddle_r66 = body.addOrReplaceChild("Bodymiddle_r66", CubeListBuilder.create().texOffs(0, 18).addBox(-2.0F, 9.9953F, -7.0068F, 4.0F, 2.0F, 5.0F, new CubeDeformation(0.0F))
 				.texOffs(19, 18).addBox(-0.5F, -0.0056F, -6.9631F, 1.0F, 1.0F, 7.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, 0.0175F, 0.0F, 0.0F));
 
-		PartDefinition Bodyfront = body.addOrReplaceChild("Bodyfront", CubeListBuilder.create().texOffs(92, 78).addBox(0.0F, -2.5936F, -5.0725F, 0.0F, 3.0F, 1.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.0F, 0.6225F, -6.9012F, 0.083F, -0.087F, -0.0072F));
+		PartDefinition Bodyfront = body.addOrReplaceChild("Bodyfront", CubeListBuilder.create().texOffs(92, 78).addBox(0.0F, -2.5936F, -5.0725F, 0.0F, 3.0F, 1.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.0F, 0.6225F, -6.9012F, 0.083F, 0.087F, 0.0072F));
 
 		PartDefinition Bodyfront_r1 = Bodyfront.addOrReplaceChild("Bodyfront_r1", CubeListBuilder.create().texOffs(81, 92).addBox(0.0F, -2.5734F, -0.0687F, 0.0F, 3.0F, 1.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.0F, -0.3732F, -0.957F, -0.0087F, 0.0F, 0.0F));
 
@@ -324,7 +324,7 @@ public class JonkeriaFossilModel extends SkullModelBase {
 
 		PartDefinition Bodymiddle_r90 = Bodyfront.addOrReplaceChild("Bodymiddle_r90", CubeListBuilder.create().texOffs(73, 0).addBox(0.0F, 0.0F, -0.5F, 3.0F, 0.0F, 1.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.5F, -0.0542F, -0.5098F, 0.2171F, -0.0183F, 0.1554F));
 
-		PartDefinition Neck = Bodyfront.addOrReplaceChild("Neck", CubeListBuilder.create().texOffs(36, 56).addBox(-0.5F, -0.4905F, -2.9026F, 1.0F, 1.0F, 3.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.0F, 0.5512F, -5.8931F, -0.1442F, -0.3025F, 0.0432F));
+		PartDefinition Neck = Bodyfront.addOrReplaceChild("Neck", CubeListBuilder.create().texOffs(36, 56).addBox(-0.5F, -0.4905F, -2.9026F, 1.0F, 1.0F, 3.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.0F, 0.5512F, -5.8931F, -0.1382F, 0.0864F, -0.012F));
 
 		PartDefinition Bodymiddle_r91 = Neck.addOrReplaceChild("Bodymiddle_r91", CubeListBuilder.create().texOffs(74, 10).mirror().addBox(-3.838F, -0.4614F, -0.411F, 3.0F, 0.0F, 1.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offsetAndRotation(-0.5F, 0.0191F, -2.4443F, 0.8246F, 0.59F, -0.7989F));
 
@@ -351,7 +351,7 @@ public class JonkeriaFossilModel extends SkullModelBase {
 		PartDefinition Bodymiddle_r100 = Neck.addOrReplaceChild("Bodymiddle_r100", CubeListBuilder.create().texOffs(93, 42).addBox(-0.0418F, -0.0225F, -0.4339F, 1.0F, 0.0F, 1.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.5F, -0.0809F, -0.4443F, 0.556F, -0.1768F, 0.2275F));
 
 		PartDefinition Neck2 = Neck.addOrReplaceChild("Neck2", CubeListBuilder.create().texOffs(55, 0).addBox(-0.5F, -0.5915F, -3.0078F, 1.0F, 1.0F, 3.0F, new CubeDeformation(0.0F))
-				.texOffs(18, 49).addBox(0.0F, -3.0915F, -2.0078F, 0.0F, 3.0F, 1.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.0F, 0.1045F, -2.8362F, -0.1512F, -0.4085F, -0.0616F));
+				.texOffs(18, 49).addBox(0.0F, -3.0915F, -2.0078F, 0.0F, 3.0F, 1.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.0F, 0.1045F, -2.8362F, -0.1429F, 0.3295F, 0.1214F));
 
 		PartDefinition Bodymiddle_r101 = Neck2.addOrReplaceChild("Bodymiddle_r101", CubeListBuilder.create().texOffs(64, 54).mirror().addBox(-3.838F, -0.4614F, -0.411F, 3.0F, 0.0F, 1.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offsetAndRotation(-0.5F, 0.0146F, -1.6081F, 0.3117F, 0.8872F, -1.0766F));
 
@@ -361,7 +361,7 @@ public class JonkeriaFossilModel extends SkullModelBase {
 
 		PartDefinition Bodymiddle_r104 = Neck2.addOrReplaceChild("Bodymiddle_r104", CubeListBuilder.create().texOffs(26, 72).addBox(-0.0418F, -0.0225F, -0.4339F, 1.0F, 0.0F, 1.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.5F, 0.0146F, -1.6081F, 0.7402F, -0.6597F, 0.4764F));
 
-		PartDefinition Neck3 = Neck2.addOrReplaceChild("Neck3", CubeListBuilder.create().texOffs(15, 35).addBox(-0.5F, -0.489F, -5.0026F, 1.0F, 1.0F, 5.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.0F, -0.0899F, -2.9508F, 0.1545F, -0.2372F, -0.207F));
+		PartDefinition Neck3 = Neck2.addOrReplaceChild("Neck3", CubeListBuilder.create().texOffs(15, 35).addBox(-0.5F, -0.489F, -5.0026F, 1.0F, 1.0F, 5.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.0F, -0.0899F, -2.9508F, -0.0703F, 0.2173F, 0.2023F));
 
 		PartDefinition Neck_r3 = Neck3.addOrReplaceChild("Neck_r3", CubeListBuilder.create().texOffs(96, 3).addBox(0.0F, -0.7F, 0.0F, 0.0F, 1.0F, 1.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.0F, -0.7511F, -4.4968F, -0.0436F, 0.0F, 0.0F));
 
@@ -393,7 +393,7 @@ public class JonkeriaFossilModel extends SkullModelBase {
 
 		PartDefinition Bodymiddle_r116 = Neck3.addOrReplaceChild("Bodymiddle_r116", CubeListBuilder.create().texOffs(94, 62).addBox(-0.0418F, -0.0225F, -0.4339F, 1.0F, 0.0F, 1.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.5F, 0.0949F, -2.0682F, 0.7303F, -0.707F, 0.6194F));
 
-		PartDefinition head = Neck3.addOrReplaceChild("head", CubeListBuilder.create(), PartPose.offsetAndRotation(0.0F, -0.1384F, -4.9664F, 0.3491F, 0.0F, 0.0F));
+		PartDefinition head = Neck3.addOrReplaceChild("head", CubeListBuilder.create(), PartPose.offsetAndRotation(0.0F, -0.1384F, -4.9664F, 0.0986F, 0.2457F, 0.0914F));
 
 		PartDefinition cube_r1 = head.addOrReplaceChild("cube_r1", CubeListBuilder.create().texOffs(43, 95).addBox(0.0F, -0.0098F, -0.9997F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(-0.5F, 1.0856F, -9.054F, 1.2392F, 0.0F, 0.0F));
 
@@ -585,7 +585,7 @@ public class JonkeriaFossilModel extends SkullModelBase {
 
 		PartDefinition cube_r87 = rightFace.addOrReplaceChild("cube_r87", CubeListBuilder.create().texOffs(34, 84).mirror().addBox(-0.502F, -1.451F, -0.5096F, 1.0F, 2.0F, 1.0F, new CubeDeformation(-0.3F)).mirror(false), PartPose.offsetAndRotation(0.8976F, 2.3537F, -6.1075F, -0.2425F, -0.021F, 0.1072F));
 
-		PartDefinition jaw = head.addOrReplaceChild("jaw", CubeListBuilder.create(), PartPose.offsetAndRotation(0.0F, 2.0698F, -1.6219F, 1.1781F, 0.0F, 0.0F));
+		PartDefinition jaw = head.addOrReplaceChild("jaw", CubeListBuilder.create(), PartPose.offsetAndRotation(0.0F, 2.0698F, -1.6219F, 1.3526F, 0.0F, 0.0F));
 
 		PartDefinition cube_r88 = jaw.addOrReplaceChild("cube_r88", CubeListBuilder.create().texOffs(84, 89).mirror().addBox(0.0516F, -2.2314F, -2.6623F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.15F)).mirror(false), PartPose.offsetAndRotation(-1.5059F, 0.7703F, -1.3664F, 0.0508F, -0.0753F, 0.0459F));
 
@@ -682,7 +682,7 @@ public class JonkeriaFossilModel extends SkullModelBase {
 
 		PartDefinition cube_r130 = jaw.addOrReplaceChild("cube_r130", CubeListBuilder.create().texOffs(67, 37).addBox(-0.988F, -1.4171F, -1.1039F, 1.0F, 2.0F, 2.0F, new CubeDeformation(-0.007F)), PartPose.offsetAndRotation(1.5059F, 0.7703F, -1.3664F, -0.5214F, 0.1799F, -0.0465F));
 
-		PartDefinition leftarm = Bodyfront.addOrReplaceChild("leftarm", CubeListBuilder.create(), PartPose.offsetAndRotation(6.2274F, 8.4252F, -4.9903F, 1.0884F, 0.1478F, -0.4752F));
+		PartDefinition leftarm = Bodyfront.addOrReplaceChild("leftarm", CubeListBuilder.create(), PartPose.offsetAndRotation(6.2274F, 8.4252F, -4.9903F, -0.2642F, 0.1478F, -0.4752F));
 
 		PartDefinition cube_r131 = leftarm.addOrReplaceChild("cube_r131", CubeListBuilder.create().texOffs(0, 68).addBox(-0.5F, -0.125F, -0.925F, 1.0F, 2.0F, 2.0F, new CubeDeformation(-0.005F)), PartPose.offsetAndRotation(0.0F, 3.0154F, 0.9335F, -0.4102F, 0.0F, 0.0F));
 
@@ -711,7 +711,7 @@ public class JonkeriaFossilModel extends SkullModelBase {
 
 		PartDefinition cube_r143 = leftarm.addOrReplaceChild("cube_r143", CubeListBuilder.create().texOffs(60, 65).addBox(-0.5F, -0.6F, -3.0F, 1.0F, 2.0F, 2.0F, new CubeDeformation(-0.003F)), PartPose.offsetAndRotation(0.0F, 1.3565F, 1.0946F, -0.4974F, 0.0F, 0.0F));
 
-		PartDefinition leftarm2 = leftarm.addOrReplaceChild("leftarm2", CubeListBuilder.create(), PartPose.offsetAndRotation(0.1474F, 6.9516F, 0.8482F, -1.4914F, 0.1552F, 0.4931F));
+		PartDefinition leftarm2 = leftarm.addOrReplaceChild("leftarm2", CubeListBuilder.create(), PartPose.offsetAndRotation(0.1474F, 6.9516F, 0.8482F, -0.6188F, 0.1552F, 0.4931F));
 
 		PartDefinition cube_r144 = leftarm2.addOrReplaceChild("cube_r144", CubeListBuilder.create().texOffs(92, 83).addBox(0.8599F, 0.8203F, -0.4708F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.1F)), PartPose.offsetAndRotation(-0.1472F, 1.0259F, 0.0332F, 1.5708F, 0.925F, -1.5708F));
 
@@ -735,15 +735,15 @@ public class JonkeriaFossilModel extends SkullModelBase {
 
 		PartDefinition cube_r152 = leftArm3.addOrReplaceChild("cube_r152", CubeListBuilder.create().texOffs(63, 78).addBox(-1.0F, 2.0F, -0.5F, 2.0F, 1.0F, 1.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.0808F, -2.2844F, -0.1621F, 0.0436F, 0.0F, 0.0F));
 
-		PartDefinition leftArm4 = leftArm3.addOrReplaceChild("leftArm4", CubeListBuilder.create(), PartPose.offsetAndRotation(0.0808F, 0.6698F, -0.0237F, 0.9512F, -0.0002F, 0.0001F));
+		PartDefinition leftArm4 = leftArm3.addOrReplaceChild("leftArm4", CubeListBuilder.create(), PartPose.offsetAndRotation(0.0808F, 0.6698F, -0.0237F, 0.384F, -0.0002F, 0.0001F));
 
 		PartDefinition cube_r153 = leftArm4.addOrReplaceChild("cube_r153", CubeListBuilder.create().texOffs(32, 61).addBox(-1.0F, -0.4F, -0.3F, 3.0F, 2.0F, 1.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(-0.5F, 0.0602F, -0.1907F, -1.0908F, 0.0F, 0.0F));
 
-		PartDefinition leftArm5 = leftArm4.addOrReplaceChild("leftArm5", CubeListBuilder.create(), PartPose.offsetAndRotation(-0.0127F, 0.7642F, -1.4173F, 0.6981F, 0.0F, 0.0F));
+		PartDefinition leftArm5 = leftArm4.addOrReplaceChild("leftArm5", CubeListBuilder.create(), PartPose.offset(-0.0127F, 0.7642F, -1.4173F));
 
 		PartDefinition cube_r154 = leftArm5.addOrReplaceChild("cube_r154", CubeListBuilder.create().texOffs(42, 52).addBox(-1.5F, -0.35F, -2.0F, 3.0F, 1.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, 0.48F, 0.0F, 0.0F));
 
-		PartDefinition rightarm = Bodyfront.addOrReplaceChild("rightarm", CubeListBuilder.create(), PartPose.offsetAndRotation(-6.2274F, 8.4252F, -4.9903F, 0.3903F, -0.1478F, 0.4752F));
+		PartDefinition rightarm = Bodyfront.addOrReplaceChild("rightarm", CubeListBuilder.create(), PartPose.offsetAndRotation(-6.2274F, 8.4252F, -4.9903F, 0.9575F, -0.1478F, 0.4752F));
 
 		PartDefinition cube_r155 = rightarm.addOrReplaceChild("cube_r155", CubeListBuilder.create().texOffs(68, 60).addBox(-0.5F, -0.125F, -0.925F, 1.0F, 2.0F, 2.0F, new CubeDeformation(-0.005F)), PartPose.offsetAndRotation(0.0F, 3.0154F, 0.9335F, -0.4102F, 0.0F, 0.0F));
 
@@ -796,11 +796,11 @@ public class JonkeriaFossilModel extends SkullModelBase {
 
 		PartDefinition cube_r176 = rightArm3.addOrReplaceChild("cube_r176", CubeListBuilder.create().texOffs(70, 78).addBox(-1.0F, 2.0F, -0.5F, 2.0F, 1.0F, 1.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(-0.0808F, -2.2844F, -0.1621F, 0.0436F, 0.0F, 0.0F));
 
-		PartDefinition rightArm4 = rightArm3.addOrReplaceChild("rightArm4", CubeListBuilder.create(), PartPose.offsetAndRotation(-0.0808F, 0.6698F, -0.0237F, -0.0524F, 0.0002F, -0.0001F));
+		PartDefinition rightArm4 = rightArm3.addOrReplaceChild("rightArm4", CubeListBuilder.create(), PartPose.offsetAndRotation(-0.0808F, 0.6698F, -0.0237F, 0.8203F, 0.0002F, -0.0001F));
 
 		PartDefinition cube_r177 = rightArm4.addOrReplaceChild("cube_r177", CubeListBuilder.create().texOffs(61, 33).addBox(-2.0F, -0.4F, -0.3F, 3.0F, 2.0F, 1.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.5F, 0.0602F, -0.1907F, -1.0908F, 0.0F, 0.0F));
 
-		PartDefinition rightArm5 = rightArm4.addOrReplaceChild("rightArm5", CubeListBuilder.create(), PartPose.offset(0.0127F, 0.7642F, -1.4173F));
+		PartDefinition rightArm5 = rightArm4.addOrReplaceChild("rightArm5", CubeListBuilder.create(), PartPose.offsetAndRotation(0.0127F, 0.7642F, -1.4173F, -1.2654F, 0.0F, 0.0F));
 
 		PartDefinition cube_r178 = rightArm5.addOrReplaceChild("cube_r178", CubeListBuilder.create().texOffs(53, 52).addBox(-1.5F, -0.35F, -2.0F, 3.0F, 1.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, 0.48F, 0.0F, 0.0F));
 
@@ -890,7 +890,7 @@ public class JonkeriaFossilModel extends SkullModelBase {
 
 		PartDefinition Tailbase_r1 = Tailbase.addOrReplaceChild("Tailbase_r1", CubeListBuilder.create().texOffs(31, 94).addBox(0.0F, -1.3F, 1.0F, 0.0F, 2.0F, 1.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.0F, -0.442F, -0.0094F, -0.0873F, 0.0F, 0.0F));
 
-		PartDefinition Tailmiddlebase = Tailbase.addOrReplaceChild("Tailmiddlebase", CubeListBuilder.create().texOffs(54, 56).addBox(-0.5F, -0.5932F, -0.0378F, 1.0F, 1.0F, 3.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.0F, 0.1729F, 2.8925F, -0.1041F, 0.0F, 0.0F));
+		PartDefinition Tailmiddlebase = Tailbase.addOrReplaceChild("Tailmiddlebase", CubeListBuilder.create().texOffs(54, 56).addBox(-0.5F, -0.5932F, -0.0378F, 1.0F, 1.0F, 3.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.0F, 0.1729F, 2.8925F, -0.1057F, 0.1736F, -0.0183F));
 
 		PartDefinition Tailmiddlebase_r1 = Tailmiddlebase.addOrReplaceChild("Tailmiddlebase_r1", CubeListBuilder.create().texOffs(79, 83).addBox(0.0F, -0.7F, 0.0F, 0.0F, 1.0F, 1.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.0F, -0.5932F, 1.9622F, -0.3054F, 0.0F, 0.0F));
 
@@ -900,7 +900,7 @@ public class JonkeriaFossilModel extends SkullModelBase {
 
 		PartDefinition Tailmiddlebase_r4 = Tailmiddlebase.addOrReplaceChild("Tailmiddlebase_r4", CubeListBuilder.create().texOffs(51, 48).addBox(-0.7F, 0.0F, 0.0F, 2.0F, 0.0F, 3.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.5F, -0.0932F, -0.0378F, 0.0F, -0.0698F, 0.0F));
 
-		PartDefinition Tailmiddlebase2 = Tailmiddlebase.addOrReplaceChild("Tailmiddlebase2", CubeListBuilder.create().texOffs(0, 59).addBox(-0.5F, -0.5932F, -0.0378F, 1.0F, 1.0F, 3.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.0F, -0.0244F, 2.8193F, -0.2787F, 0.0F, 0.0F));
+		PartDefinition Tailmiddlebase2 = Tailmiddlebase.addOrReplaceChild("Tailmiddlebase2", CubeListBuilder.create().texOffs(0, 59).addBox(-0.5F, -0.5932F, -0.0378F, 1.0F, 1.0F, 3.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.0F, -0.0244F, 2.8193F, -0.2828F, 0.1677F, -0.0485F));
 
 		PartDefinition leftLeg = Hips.addOrReplaceChild("leftLeg", CubeListBuilder.create(), PartPose.offsetAndRotation(3.9528F, 1.5221F, -0.6579F, 0.3189F, 0.0154F, -0.0804F));
 
@@ -965,7 +965,7 @@ public class JonkeriaFossilModel extends SkullModelBase {
 
 		PartDefinition cube_r203 = leftArm6.addOrReplaceChild("cube_r203", CubeListBuilder.create().texOffs(64, 0).addBox(-1.0F, 1.6F, -0.3F, 3.0F, 2.0F, 1.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(-0.5F, -0.9162F, 1.3735F, -1.0908F, 0.0F, 0.0F));
 
-		PartDefinition rightLeg = Hips.addOrReplaceChild("rightLeg", CubeListBuilder.create(), PartPose.offsetAndRotation(-3.9528F, 1.5221F, -0.6579F, 1.017F, -0.0154F, 0.0804F));
+		PartDefinition rightLeg = Hips.addOrReplaceChild("rightLeg", CubeListBuilder.create(), PartPose.offsetAndRotation(-3.9528F, 1.5221F, -0.6579F, 1.1479F, -0.0154F, 0.0804F));
 
 		PartDefinition cube_r204 = rightLeg.addOrReplaceChild("cube_r204", CubeListBuilder.create().texOffs(0, 81).addBox(-0.5F, -0.9731F, -0.8636F, 2.0F, 1.0F, 1.0F, new CubeDeformation(0.004F)), PartPose.offsetAndRotation(-0.5F, -1.2645F, -0.0372F, 2.6267F, 0.0F, 0.0F));
 
@@ -991,7 +991,7 @@ public class JonkeriaFossilModel extends SkullModelBase {
 
 		PartDefinition cube_r215 = rightLeg.addOrReplaceChild("cube_r215", CubeListBuilder.create().texOffs(15, 86).addBox(-0.5F, -1.0883F, -2.2199F, 1.0F, 2.0F, 1.0F, new CubeDeformation(0.012F)), PartPose.offsetAndRotation(0.0F, 4.1852F, 0.2973F, -0.4887F, 0.0F, 0.0F));
 
-		PartDefinition rightLeg2 = rightLeg.addOrReplaceChild("rightLeg2", CubeListBuilder.create(), PartPose.offsetAndRotation(-0.1962F, 5.6055F, -2.697F, 1.195F, -0.0356F, -0.0797F));
+		PartDefinition rightLeg2 = rightLeg.addOrReplaceChild("rightLeg2", CubeListBuilder.create(), PartPose.offsetAndRotation(-0.1962F, 5.6055F, -2.697F, 0.7147F, -0.0319F, -0.0895F));
 
 		PartDefinition cube_r216 = rightLeg2.addOrReplaceChild("cube_r216", CubeListBuilder.create().texOffs(93, 92).addBox(-0.5F, -0.55F, -0.5F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.003F)), PartPose.offsetAndRotation(0.308F, 1.6585F, -0.5046F, 1.0909F, 0.0049F, 0.0015F));
 
@@ -1020,11 +1020,11 @@ public class JonkeriaFossilModel extends SkullModelBase {
 
 		PartDefinition cube_r226 = rightLeg3.addOrReplaceChild("cube_r226", CubeListBuilder.create().texOffs(0, 64).addBox(-1.4116F, -0.4225F, -0.576F, 3.0F, 2.0F, 1.0F, new CubeDeformation(-0.012F)), PartPose.offsetAndRotation(0.0F, 0.4103F, -0.1519F, 0.1047F, 0.0F, 0.0F));
 
-		PartDefinition rightArm7 = rightLeg3.addOrReplaceChild("rightArm7", CubeListBuilder.create(), PartPose.offsetAndRotation(0.0431F, 2.087F, 0.2608F, 0.1416F, 0.008F, -0.0104F));
+		PartDefinition rightArm7 = rightLeg3.addOrReplaceChild("rightArm7", CubeListBuilder.create(), PartPose.offsetAndRotation(0.0431F, 2.087F, 0.2608F, -0.3384F, 0.008F, -0.0104F));
 
 		PartDefinition cube_r227 = rightArm7.addOrReplaceChild("cube_r227", CubeListBuilder.create().texOffs(50, 61).addBox(-2.0F, -0.4F, -0.3F, 3.0F, 2.0F, 1.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.5F, 0.0601F, -0.1907F, -1.0908F, 0.0F, 0.0F));
 
-		PartDefinition rightArm6 = rightArm7.addOrReplaceChild("rightArm6", CubeListBuilder.create(), PartPose.offsetAndRotation(0.0F, 0.97F, -1.5472F, -0.6894F, 0.0F, 0.0F));
+		PartDefinition rightArm6 = rightArm7.addOrReplaceChild("rightArm6", CubeListBuilder.create(), PartPose.offsetAndRotation(0.0F, 0.97F, -1.5472F, 0.0524F, 0.0F, 0.0F));
 
 		PartDefinition cube_r228 = rightArm6.addOrReplaceChild("cube_r228", CubeListBuilder.create().texOffs(64, 50).addBox(-2.0F, 1.6F, -0.3F, 3.0F, 2.0F, 1.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.5F, -0.9162F, 1.3735F, -1.0908F, 0.0F, 0.0F));
 

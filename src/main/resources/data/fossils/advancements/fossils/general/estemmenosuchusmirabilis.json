@@ -1,0 +1,57 @@
+{
+  "parent": "fossils:fossils/general/dinocephalia",
+  "criteria": {
+    "finish_estemmenosuchusmirabilis": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:estemmenosuchusmirabilis_fossil"
+                ],
+                "state": {
+                  "fossil_level": "14"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:estemmenosuchusmirabilis_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.estemmenosuchusmirabilis.description"
+    },
+    "frame": "goal",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:estemmenosuchusmirabilis_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.estemmenosuchusmirabilis.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_estemmenosuchusmirabilis"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  },
+  "sends_telemetry_event": true
+}

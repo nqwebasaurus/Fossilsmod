@@ -12,6 +12,7 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
@@ -35,6 +36,9 @@ import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
+
+import javax.annotation.Nullable;
+import java.util.List;
 
 public class FossilSkeletonTwentyPieceBlock extends BaseEntityBlock implements SimpleWaterloggedBlock {
 	public static final int MAX = RotationSegment.getMaxSegmentIndex();
@@ -628,6 +632,14 @@ public class FossilSkeletonTwentyPieceBlock extends BaseEntityBlock implements S
 				stack.shrink(1);
 			}
 			return InteractionResult.sidedSuccess(world.isClientSide);
+		} else if (item == FossilItems.CORYTHOSAURUSCASUARIUS.get() && state.getValue(FOSSIL_LEVEL) != 19 && type == Types.CORYTHOSAURUSCASUARIUS) {
+			fossilLevel = state.getValue(FOSSIL_LEVEL);
+			world.setBlockAndUpdate(pos, state.setValue(FOSSIL_LEVEL, fossilLevel + 1));
+			world.playSound(player, pos, SoundEvents.BONE_BLOCK_PLACE, SoundSource.BLOCKS);
+			if (!player.isCreative()) {
+				stack.shrink(1);
+			}
+			return InteractionResult.sidedSuccess(world.isClientSide);
 		} else return super.use(state, world, pos, player, hand, hit);
 	}
 
@@ -699,6 +711,7 @@ public class FossilSkeletonTwentyPieceBlock extends BaseEntityBlock implements S
 		PRIONOSUCHUS,
 		JONKERIA,
 		MASTODONSAURUS,
+		CORYTHOSAURUSCASUARIUS,
 		UTAHRAPTOR;
 	}
 

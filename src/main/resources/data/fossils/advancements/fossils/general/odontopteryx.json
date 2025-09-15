@@ -1,0 +1,57 @@
+{
+  "parent": "fossils:fossils/general/odontopterygiformes",
+  "criteria": {
+    "finish_odontopteryx": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:odontopteryx_fossil"
+                ],
+                "state": {
+                  "fossil_level": "14"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:odontopteryx_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.odontopteryx.description"
+    },
+    "frame": "goal",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:odontopteryx_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.odontopteryx.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_odontopteryx"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  },
+  "sends_telemetry_event": true
+}

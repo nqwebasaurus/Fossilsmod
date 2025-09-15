@@ -1,0 +1,24 @@
+{
+  "parent": "fossils:fossils/general/cariamiformes",
+  "criteria": {
+    "finish_phorusrhacidae": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "description": {
+      "translate": "advancements.fossils.phorusrhacidae.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:advancement_line"
+    },
+    "show_toast": false,
+    "title": {
+      "translate": "advancements.fossils.phorusrhacidae.title"
+    }
+  },
+  "sends_telemetry_event": true
+}
