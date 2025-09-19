@@ -109,6 +109,8 @@ import fossils.fossils.client.blockentity.model.muttaburrasaurus.Muttaburrasauru
 import fossils.fossils.client.blockentity.model.muttaburrasaurus.MuttaburrasaurusFossilModel;
 import fossils.fossils.client.blockentity.model.neovenator.NeovenatorFossilFrameModel;
 import fossils.fossils.client.blockentity.model.neovenator.NeovenatorFossilModel;
+import fossils.fossils.client.blockentity.model.nothosaurus.NothosaurusFossilFrameModel;
+import fossils.fossils.client.blockentity.model.nothosaurus.NothosaurusFossilModel;
 import fossils.fossils.client.blockentity.model.odontopteryx.OdontopteryxFossilFrameModel;
 import fossils.fossils.client.blockentity.model.odontopteryx.OdontopteryxFossilModel;
 import fossils.fossils.client.blockentity.model.ouranosaurus.OuranosaurusFossilFrameModel;
@@ -286,6 +288,7 @@ public class FossilSkeletonFifteenPieceRenderer implements BlockEntityRenderer<F
 		type.put(FossilSkeletonFifteenPieceBlock.Types.SPICOMELLUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/spicomellus/stage_0.png"));
 		type.put(FossilSkeletonFifteenPieceBlock.Types.PALAEOTHERIUM, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/palaeotherium/stage_0.png"));
 		type.put(FossilSkeletonFifteenPieceBlock.Types.ODONTOPTERYX, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/odontopteryx/stage_0.png"));
+		type.put(FossilSkeletonFifteenPieceBlock.Types.NOTHOSAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/nothosaurus/stage_0.png"));
 	});
 	public static final Map<FossilSkeletonFifteenPieceBlock.Type, ResourceLocation> FRAME_BY_TYPE = Util.make(Maps.newHashMap(), (type) -> {
 		type.put(FossilSkeletonFifteenPieceBlock.Types.WUERHOSAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/wuerhosaurus/frame.png"));
@@ -372,6 +375,7 @@ public class FossilSkeletonFifteenPieceRenderer implements BlockEntityRenderer<F
 		type.put(FossilSkeletonFifteenPieceBlock.Types.SPICOMELLUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/spicomellus/frame.png"));
 		type.put(FossilSkeletonFifteenPieceBlock.Types.PALAEOTHERIUM, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/palaeotherium/frame.png"));
 		type.put(FossilSkeletonFifteenPieceBlock.Types.ODONTOPTERYX, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/odontopteryx/frame.png"));
+		type.put(FossilSkeletonFifteenPieceBlock.Types.NOTHOSAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/nothosaurus/frame.png"));
 	});
 	public static Map<FossilSkeletonFifteenPieceBlock.Type, SkullModelBase> createFossilRenderers(EntityModelSet p_173662_) {
 		ImmutableMap.Builder<FossilSkeletonFifteenPieceBlock.Type, SkullModelBase> builder = ImmutableMap.builder();
@@ -459,6 +463,7 @@ public class FossilSkeletonFifteenPieceRenderer implements BlockEntityRenderer<F
 		builder.put(FossilSkeletonFifteenPieceBlock.Types.SPICOMELLUS, new SpicomellusFossilModel(p_173662_.bakeLayer(ClientEvents.SPICOMELLUS)));
 		builder.put(FossilSkeletonFifteenPieceBlock.Types.PALAEOTHERIUM, new PalaeotheriumFossilModel(p_173662_.bakeLayer(ClientEvents.PALAEOTHERIUM)));
 		builder.put(FossilSkeletonFifteenPieceBlock.Types.ODONTOPTERYX, new OdontopteryxFossilModel(p_173662_.bakeLayer(ClientEvents.ODONTOPTERYX)));
+		builder.put(FossilSkeletonFifteenPieceBlock.Types.NOTHOSAURUS, new NothosaurusFossilModel(p_173662_.bakeLayer(ClientEvents.NOTHOSAURUS)));
 		return builder.build();
 	}
 
@@ -548,6 +553,7 @@ public class FossilSkeletonFifteenPieceRenderer implements BlockEntityRenderer<F
 		builder.put(FossilSkeletonFifteenPieceBlock.Types.SPICOMELLUS, new SpicomellusFossilFrameModel(p_173662_.bakeLayer(ClientEvents.SPICOMELLUS_FRAME)));
 		builder.put(FossilSkeletonFifteenPieceBlock.Types.PALAEOTHERIUM, new PalaeotheriumFossilFrameModel(p_173662_.bakeLayer(ClientEvents.PALAEOTHERIUM_FRAME)));
 		builder.put(FossilSkeletonFifteenPieceBlock.Types.ODONTOPTERYX, new OdontopteryxFossilFrameModel(p_173662_.bakeLayer(ClientEvents.ODONTOPTERYX_FRAME)));
+		builder.put(FossilSkeletonFifteenPieceBlock.Types.NOTHOSAURUS, new NothosaurusFossilFrameModel(p_173662_.bakeLayer(ClientEvents.NOTHOSAURUS_FRAME)));
 		return builder.build();
 	}
 
@@ -829,6 +835,9 @@ public class FossilSkeletonFifteenPieceRenderer implements BlockEntityRenderer<F
 		}  else if (FossilSkeletonFifteenPieceBlock$type == FossilSkeletonFifteenPieceBlock.Types.ODONTOPTERYX) {
 			p_173667_.scale(-0.29F, -0.29F, 0.29F);
 			p_173667_.translate(0F, -0.2F, 0F);
+		}  else if (FossilSkeletonFifteenPieceBlock$type == FossilSkeletonFifteenPieceBlock.Types.NOTHOSAURUS) {
+			p_173667_.scale(-0.8F, -0.8F, 0.8F);
+			p_173667_.translate(0F, -0.8F, 0F);
 		} else p_173667_.scale(-1.0F, -1.0F, 1.0F);
 		VertexConsumer vertexconsumer = p_173668_.getBuffer(p_173671_);
 		p_173670_.setupAnim(p_173666_, p_173665_, 0.0F);
@@ -1006,6 +1015,8 @@ public class FossilSkeletonFifteenPieceRenderer implements BlockEntityRenderer<F
 			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/palaeotherium/stage_" + fossilLevel + ".png");
 		} else if (type == FossilSkeletonFifteenPieceBlock.Types.ODONTOPTERYX) {
 			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/odontopteryx/stage_" + fossilLevel + ".png");
+		} else if (type == FossilSkeletonFifteenPieceBlock.Types.NOTHOSAURUS) {
+			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/nothosaurus/stage_" + fossilLevel + ".png");
 		} else resourceLocation = SKIN_BY_TYPE.get(type);
 		return RenderType.entityCutoutNoCullZOffset(resourceLocation);
 	}

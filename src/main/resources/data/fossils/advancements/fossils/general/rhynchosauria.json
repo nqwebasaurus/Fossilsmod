@@ -1,0 +1,24 @@
+{
+  "parent": "fossils:fossils/general/crocopoda",
+  "criteria": {
+    "finish_rhynchosauria": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "description": {
+      "translate": "advancements.fossils.rhynchosauria.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:advancement_line"
+    },
+    "show_toast": false,
+    "title": {
+      "translate": "advancements.fossils.rhynchosauria.title"
+    }
+  },
+  "sends_telemetry_event": true
+}

@@ -47,6 +47,8 @@ import fossils.fossils.client.blockentity.model.columba.ColumbaFossilFrameModel;
 import fossils.fossils.client.blockentity.model.columba.ColumbaFossilModel;
 import fossils.fossils.client.blockentity.model.compsognathus.CompsognathusFossilFrameModel;
 import fossils.fossils.client.blockentity.model.compsognathus.CompsognathusFossilModel;
+import fossils.fossils.client.blockentity.model.conflicto.ConflictoFossilFrameModel;
+import fossils.fossils.client.blockentity.model.conflicto.ConflictoFossilModel;
 import fossils.fossils.client.blockentity.model.convolosaurus.ConvolosaurusFossilFrameModel;
 import fossils.fossils.client.blockentity.model.convolosaurus.ConvolosaurusFossilModel;
 import fossils.fossils.client.blockentity.model.cyamodus.CyamodusFossilFrameModel;
@@ -97,6 +99,10 @@ import fossils.fossils.client.blockentity.model.homunculus.HomunculusFossilFrame
 import fossils.fossils.client.blockentity.model.homunculus.HomunculusFossilModel;
 import fossils.fossils.client.blockentity.model.huaxiadraco.HuaxiadracoFossilFrameModel;
 import fossils.fossils.client.blockentity.model.huaxiadraco.HuaxiadracoFossilModel;
+import fossils.fossils.client.blockentity.model.hupehsuchus.HupehsuchusFossilFrameModel;
+import fossils.fossils.client.blockentity.model.hupehsuchus.HupehsuchusFossilModel;
+import fossils.fossils.client.blockentity.model.hyperodapedon.HyperodapedonFossilFrameModel;
+import fossils.fossils.client.blockentity.model.hyperodapedon.HyperodapedonFossilModel;
 import fossils.fossils.client.blockentity.model.hypuronector.HypuronectorFossilFrameModel;
 import fossils.fossils.client.blockentity.model.hypuronector.HypuronectorFossilModel;
 import fossils.fossils.client.blockentity.model.ikrandraco.IkrandracoFossilFrameModel;
@@ -139,6 +145,8 @@ import fossils.fossils.client.blockentity.model.parmastega.ParmastegaFossilFrame
 import fossils.fossils.client.blockentity.model.parmastega.ParmastegaFossilModel;
 import fossils.fossils.client.blockentity.model.proburnetia.ProburnetiaFossilFrameModel;
 import fossils.fossils.client.blockentity.model.proburnetia.ProburnetiaFossilModel;
+import fossils.fossils.client.blockentity.model.proganochelys.ProganochelysFossilFrameModel;
+import fossils.fossils.client.blockentity.model.proganochelys.ProganochelysFossilModel;
 import fossils.fossils.client.blockentity.model.psittacosauruslujiatunensis.PsittacosauruslujiatunensisFossilFrameModel;
 import fossils.fossils.client.blockentity.model.psittacosauruslujiatunensis.PsittacosauruslujiatunensisFossilModel;
 import fossils.fossils.client.blockentity.model.psittacosaurusmongoliensis.PsittacosaurusmongoliensisFossilFrameModel;
@@ -305,6 +313,10 @@ public class FossilSkeletonFivePieceRenderer implements BlockEntityRenderer<Foss
 		type.put(FossilSkeletonFivePieceBlock.Types.MELOSAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/melosaurus/stage_0.png"));
 		type.put(FossilSkeletonFivePieceBlock.Types.DATHEOSAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/datheosaurus/stage_0.png"));
 		type.put(FossilSkeletonFivePieceBlock.Types.LLALLAWAVIS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/llallawavis/stage_0.png"));
+		type.put(FossilSkeletonFivePieceBlock.Types.CONFLICTO, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/conflicto/stage_0.png"));
+		type.put(FossilSkeletonFivePieceBlock.Types.PROGANOCHELYS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/proganochelys/stage_0.png"));
+		type.put(FossilSkeletonFivePieceBlock.Types.HYPERODAPEDON, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/hyperodapedon/stage_0.png"));
+		type.put(FossilSkeletonFivePieceBlock.Types.HUPEHSUCHUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/hupehsuchus/stage_0.png"));
 	});
 	public static final Map<FossilSkeletonFivePieceBlock.Type, ResourceLocation> FRAME_BY_TYPE = Util.make(Maps.newHashMap(), (type) -> {
 		type.put(FossilSkeletonFivePieceBlock.Types.EUNOTOSAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/eunotosaurus/frame.png"));
@@ -399,6 +411,10 @@ public class FossilSkeletonFivePieceRenderer implements BlockEntityRenderer<Foss
 		type.put(FossilSkeletonFivePieceBlock.Types.MELOSAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/melosaurus/frame.png"));
 		type.put(FossilSkeletonFivePieceBlock.Types.DATHEOSAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/datheosaurus/frame.png"));
 		type.put(FossilSkeletonFivePieceBlock.Types.LLALLAWAVIS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/llallawavis/frame.png"));
+		type.put(FossilSkeletonFivePieceBlock.Types.CONFLICTO, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/conflicto/frame.png"));
+		type.put(FossilSkeletonFivePieceBlock.Types.PROGANOCHELYS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/proganochelys/frame.png"));
+		type.put(FossilSkeletonFivePieceBlock.Types.HYPERODAPEDON, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/hyperodapedon/frame.png"));
+		type.put(FossilSkeletonFivePieceBlock.Types.HUPEHSUCHUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/hupehsuchus/frame.png"));
 	});
 	public static Map<FossilSkeletonFivePieceBlock.Type, SkullModelBase> createFossilRenderers(EntityModelSet p_173662_) {
 		ImmutableMap.Builder<FossilSkeletonFivePieceBlock.Type, SkullModelBase> builder = ImmutableMap.builder();
@@ -494,6 +510,10 @@ public class FossilSkeletonFivePieceRenderer implements BlockEntityRenderer<Foss
 		builder.put(FossilSkeletonFivePieceBlock.Types.MELOSAURUS, new MelosaurusFossilModel(p_173662_.bakeLayer(ClientEvents.MELOSAURUS)));
 		builder.put(FossilSkeletonFivePieceBlock.Types.DATHEOSAURUS, new DatheosaurusFossilModel(p_173662_.bakeLayer(ClientEvents.DATHEOSAURUS)));
 		builder.put(FossilSkeletonFivePieceBlock.Types.LLALLAWAVIS, new LlallawavisFossilModel(p_173662_.bakeLayer(ClientEvents.LLALLAWAVIS)));
+		builder.put(FossilSkeletonFivePieceBlock.Types.CONFLICTO, new ConflictoFossilModel(p_173662_.bakeLayer(ClientEvents.CONFLICTO)));
+		builder.put(FossilSkeletonFivePieceBlock.Types.PROGANOCHELYS, new ProganochelysFossilModel(p_173662_.bakeLayer(ClientEvents.PROGANOCHELYS)));
+		builder.put(FossilSkeletonFivePieceBlock.Types.HYPERODAPEDON, new HyperodapedonFossilModel(p_173662_.bakeLayer(ClientEvents.HYPERODAPEDON)));
+		builder.put(FossilSkeletonFivePieceBlock.Types.HUPEHSUCHUS, new HupehsuchusFossilModel(p_173662_.bakeLayer(ClientEvents.HUPEHSUCHUS)));
 		return builder.build();
 	}
 
@@ -591,6 +611,10 @@ public class FossilSkeletonFivePieceRenderer implements BlockEntityRenderer<Foss
 		builder.put(FossilSkeletonFivePieceBlock.Types.MELOSAURUS, new MelosaurusFossilFrameModel(p_173662_.bakeLayer(ClientEvents.MELOSAURUS_FRAME)));
 		builder.put(FossilSkeletonFivePieceBlock.Types.DATHEOSAURUS, new DatheosaurusFossilFrameModel(p_173662_.bakeLayer(ClientEvents.DATHEOSAURUS_FRAME)));
 		builder.put(FossilSkeletonFivePieceBlock.Types.LLALLAWAVIS, new LlallawavisFossilFrameModel(p_173662_.bakeLayer(ClientEvents.LLALLAWAVIS_FRAME)));
+		builder.put(FossilSkeletonFivePieceBlock.Types.CONFLICTO, new ConflictoFossilFrameModel(p_173662_.bakeLayer(ClientEvents.CONFLICTO_FRAME)));
+		builder.put(FossilSkeletonFivePieceBlock.Types.PROGANOCHELYS, new ProganochelysFossilFrameModel(p_173662_.bakeLayer(ClientEvents.PROGANOCHELYS_FRAME)));
+		builder.put(FossilSkeletonFivePieceBlock.Types.HYPERODAPEDON, new HyperodapedonFossilFrameModel(p_173662_.bakeLayer(ClientEvents.HYPERODAPEDON_FRAME)));
+		builder.put(FossilSkeletonFivePieceBlock.Types.HUPEHSUCHUS, new HupehsuchusFossilFrameModel(p_173662_.bakeLayer(ClientEvents.HUPEHSUCHUS_FRAME)));
 		return builder.build();
 	}
 
@@ -896,6 +920,18 @@ public class FossilSkeletonFivePieceRenderer implements BlockEntityRenderer<Foss
 		} else if (FossilSkeletonFivePieceBlock$type == FossilSkeletonFivePieceBlock.Types.LLALLAWAVIS) {
 			p_173667_.scale(-0.34F, -0.34F, 0.34F);
 			p_173667_.translate(0F, 1.45F, 0F);
+		} else if (FossilSkeletonFivePieceBlock$type == FossilSkeletonFivePieceBlock.Types.CONFLICTO) {
+			p_173667_.scale(-0.13F, -0.13F, 0.13F);
+			p_173667_.translate(0F, 6.2F, 0F);
+		} else if (FossilSkeletonFivePieceBlock$type == FossilSkeletonFivePieceBlock.Types.PROGANOCHELYS) {
+			p_173667_.scale(-0.39F, -0.39F, 0.39F);
+			p_173667_.translate(0F, 1.06F, 0F);
+		} else if (FossilSkeletonFivePieceBlock$type == FossilSkeletonFivePieceBlock.Types.HYPERODAPEDON) {
+			p_173667_.scale(-0.48F, -0.48F, 0.48F);
+			p_173667_.translate(0F, 0.6F, 0F);
+		} else if (FossilSkeletonFivePieceBlock$type == FossilSkeletonFivePieceBlock.Types.HUPEHSUCHUS) {
+			p_173667_.scale(-0.18F, -0.18F, 0.18F);
+			p_173667_.translate(0F, 1.3F, 0F);
 		} else p_173667_.scale(-1.0F, -1.0F, 1.0F);
 		VertexConsumer vertexconsumer = p_173668_.getBuffer(p_173671_);
 		p_173670_.setupAnim(p_173666_, p_173665_, 0.0F);
@@ -1089,6 +1125,14 @@ public class FossilSkeletonFivePieceRenderer implements BlockEntityRenderer<Foss
 			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/datheosaurus/stage_" + fossilLevel + ".png");
 		} else if (type == FossilSkeletonFivePieceBlock.Types.LLALLAWAVIS) {
 			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/llallawavis/stage_" + fossilLevel + ".png");
+		} else if (type == FossilSkeletonFivePieceBlock.Types.CONFLICTO) {
+			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/conflicto/stage_" + fossilLevel + ".png");
+		} else if (type == FossilSkeletonFivePieceBlock.Types.PROGANOCHELYS) {
+			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/proganochelys/stage_" + fossilLevel + ".png");
+		} else if (type == FossilSkeletonFivePieceBlock.Types.HYPERODAPEDON) {
+			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/hyperodapedon/stage_" + fossilLevel + ".png");
+		} else if (type == FossilSkeletonFivePieceBlock.Types.HUPEHSUCHUS) {
+			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/hupehsuchus/stage_" + fossilLevel + ".png");
 		} else resourceLocation = SKIN_BY_TYPE.get(type);
 		return RenderType.entityCutoutNoCullZOffset(resourceLocation);
 	}

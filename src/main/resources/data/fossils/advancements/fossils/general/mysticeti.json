@@ -1,0 +1,24 @@
+{
+  "parent": "fossils:fossils/general/cetacea",
+  "criteria": {
+    "finish_mysticeti": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "description": {
+      "translate": "advancements.fossils.mysticeti.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:advancement_line"
+    },
+    "show_toast": false,
+    "title": {
+      "translate": "advancements.fossils.mysticeti.title"
+    }
+  },
+  "sends_telemetry_event": true
+}

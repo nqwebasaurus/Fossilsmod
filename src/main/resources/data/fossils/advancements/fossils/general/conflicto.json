@@ -1,0 +1,54 @@
+{
+  "parent": "fossils:fossils/general/anseriformes",
+  "criteria": {
+    "finish_conflicto": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:conflicto_fossil"
+                ],
+                "state": {
+                  "fossil_level": "4"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:conflicto_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.conflicto.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:conflicto_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.conflicto.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_conflicto"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

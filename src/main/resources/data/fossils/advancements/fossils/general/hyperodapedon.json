@@ -1,0 +1,54 @@
+{
+  "parent": "fossils:fossils/general/rhynchosauria",
+  "criteria": {
+    "finish_hyperodapedon": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:hyperodapedon_fossil"
+                ],
+                "state": {
+                  "fossil_level": "4"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:hyperodapedon_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.hyperodapedon.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:hyperodapedon_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.hyperodapedon.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_hyperodapedon"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

@@ -98,6 +98,11 @@
           "type": "minecraft:item",
           "name": "fossils:odontopteryx_fossil",
           "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:conflicto_fossil",
+          "weight": 2
         }
       ],
       "rolls": 1

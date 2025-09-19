@@ -868,6 +868,38 @@ public class FossilSkeletonFivePieceBlock extends BaseEntityBlock implements Sim
 				stack.shrink(1);
 			}
 			return InteractionResult.sidedSuccess(world.isClientSide);
+		}  else if (item == FossilItems.CONFLICTO.get() && state.getValue(FOSSIL_LEVEL) != 4 && type == Types.CONFLICTO) {
+			fossilLevel = state.getValue(FOSSIL_LEVEL);
+			world.setBlockAndUpdate(pos, state.setValue(FOSSIL_LEVEL, fossilLevel + 1));
+			world.playSound(player, pos, SoundEvents.BONE_BLOCK_PLACE, SoundSource.BLOCKS);
+			if (!player.isCreative()) {
+				stack.shrink(1);
+			}
+			return InteractionResult.sidedSuccess(world.isClientSide);
+		}  else if (item == FossilItems.PROGANOCHELYS.get() && state.getValue(FOSSIL_LEVEL) != 4 && type == Types.PROGANOCHELYS) {
+			fossilLevel = state.getValue(FOSSIL_LEVEL);
+			world.setBlockAndUpdate(pos, state.setValue(FOSSIL_LEVEL, fossilLevel + 1));
+			world.playSound(player, pos, SoundEvents.BONE_BLOCK_PLACE, SoundSource.BLOCKS);
+			if (!player.isCreative()) {
+				stack.shrink(1);
+			}
+			return InteractionResult.sidedSuccess(world.isClientSide);
+		}  else if (item == FossilItems.HYPERODAPEDON.get() && state.getValue(FOSSIL_LEVEL) != 4 && type == Types.HYPERODAPEDON) {
+			fossilLevel = state.getValue(FOSSIL_LEVEL);
+			world.setBlockAndUpdate(pos, state.setValue(FOSSIL_LEVEL, fossilLevel + 1));
+			world.playSound(player, pos, SoundEvents.BONE_BLOCK_PLACE, SoundSource.BLOCKS);
+			if (!player.isCreative()) {
+				stack.shrink(1);
+			}
+			return InteractionResult.sidedSuccess(world.isClientSide);
+		}  else if (item == FossilItems.HUPEHSUCHUS.get() && state.getValue(FOSSIL_LEVEL) != 4 && type == Types.HUPEHSUCHUS) {
+			fossilLevel = state.getValue(FOSSIL_LEVEL);
+			world.setBlockAndUpdate(pos, state.setValue(FOSSIL_LEVEL, fossilLevel + 1));
+			world.playSound(player, pos, SoundEvents.BONE_BLOCK_PLACE, SoundSource.BLOCKS);
+			if (!player.isCreative()) {
+				stack.shrink(1);
+			}
+			return InteractionResult.sidedSuccess(world.isClientSide);
 		} else return super.use(state, world, pos, player, hand, hit);
 	}
 
@@ -969,6 +1001,10 @@ public class FossilSkeletonFivePieceBlock extends BaseEntityBlock implements Sim
 		MELOSAURUS,
 		DATHEOSAURUS,
 		LLALLAWAVIS,
+		CONFLICTO,
+		PROGANOCHELYS,
+		HYPERODAPEDON,
+		HUPEHSUCHUS,
 		PELECANIMIMUS;
 	}
 

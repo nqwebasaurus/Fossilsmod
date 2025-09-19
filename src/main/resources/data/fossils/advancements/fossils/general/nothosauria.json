@@ -1,0 +1,24 @@
+{
+  "parent": "fossils:fossils/general/sauropterygia",
+  "criteria": {
+    "finish_nothosauria": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "description": {
+      "translate": "advancements.fossils.nothosauria.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:advancement_line"
+    },
+    "show_toast": false,
+    "title": {
+      "translate": "advancements.fossils.nothosauria.title"
+    }
+  },
+  "sends_telemetry_event": true
+}

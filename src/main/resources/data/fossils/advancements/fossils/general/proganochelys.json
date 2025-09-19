@@ -1,0 +1,54 @@
+{
+  "parent": "fossils:fossils/general/pantestudines",
+  "criteria": {
+    "finish_proganochelys": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:proganochelys_fossil"
+                ],
+                "state": {
+                  "fossil_level": "4"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:proganochelys_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.proganochelys.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:proganochelys_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.proganochelys.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_proganochelys"
+    ]
+  ],
+  "sends_telemetry_event": true
+}
