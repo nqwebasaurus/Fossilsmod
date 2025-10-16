@@ -1,0 +1,54 @@
+{
+  "parent": "fossils:fossils/general/pennaraptora",
+  "criteria": {
+    "finish_yi": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:yi_fossil"
+                ],
+                "state": {
+                  "fossil_level": "4"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:yi_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.yi.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:yi_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.yi.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_yi"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

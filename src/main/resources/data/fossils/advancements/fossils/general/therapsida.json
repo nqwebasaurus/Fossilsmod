@@ -1,5 +1,5 @@
 {
-  "parent": "fossils:fossils/general/sphenacodontidae",
+  "parent": "fossils:fossils/general/eupelycosaurs",
   "criteria": {
     "finish_therapsida": {
       "trigger": "minecraft:tick"

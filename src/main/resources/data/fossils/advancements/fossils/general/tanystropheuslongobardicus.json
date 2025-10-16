@@ -1,0 +1,54 @@
+{
+  "parent": "fossils:fossils/general/tanysauria",
+  "criteria": {
+    "finish_tanystropheuslongobardicus": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:tanystropheuslongobardicus_fossil"
+                ],
+                "state": {
+                  "fossil_level": "4"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:tanystropheuslongobardicus_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.tanystropheuslongobardicus.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:tanystropheuslongobardicus_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.tanystropheuslongobardicus.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_tanystropheuslongobardicus"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

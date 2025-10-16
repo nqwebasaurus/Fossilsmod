@@ -1,0 +1,54 @@
+{
+  "parent": "fossils:fossils/general/biarmosuchia",
+  "criteria": {
+    "finish_isengops": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:isengops_fossil"
+                ],
+                "state": {
+                  "fossil_level": "4"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:isengops_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.isengops.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:isengops_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.isengops.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_isengops"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

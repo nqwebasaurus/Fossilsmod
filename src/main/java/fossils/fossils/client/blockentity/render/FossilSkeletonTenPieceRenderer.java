@@ -29,6 +29,8 @@ import fossils.fossils.client.blockentity.model.barylambda.BarylambdaFossilFrame
 import fossils.fossils.client.blockentity.model.barylambda.BarylambdaFossilModel;
 import fossils.fossils.client.blockentity.model.beipiaosaurus.BeipiaosaurusFossilFrameModel;
 import fossils.fossils.client.blockentity.model.beipiaosaurus.BeipiaosaurusFossilModel;
+import fossils.fossils.client.blockentity.model.bunostegos.BunostegosFossilFrameModel;
+import fossils.fossils.client.blockentity.model.bunostegos.BunostegosFossilModel;
 import fossils.fossils.client.blockentity.model.champsosaurus.ChampsosaurusFossilFrameModel;
 import fossils.fossils.client.blockentity.model.champsosaurus.ChampsosaurusFossilModel;
 import fossils.fossils.client.blockentity.model.chilesaurus.ChilesaurusFossilFrameModel;
@@ -91,6 +93,8 @@ import fossils.fossils.client.blockentity.model.gastonia.GastoniaFossilFrameMode
 import fossils.fossils.client.blockentity.model.gastonia.GastoniaFossilModel;
 import fossils.fossils.client.blockentity.model.gastornis.GastornisFossilFrameModel;
 import fossils.fossils.client.blockentity.model.gastornis.GastornisFossilModel;
+import fossils.fossils.client.blockentity.model.gigantspinosaurus.GigantspinosaurusFossilFrameModel;
+import fossils.fossils.client.blockentity.model.gigantspinosaurus.GigantspinosaurusFossilModel;
 import fossils.fossils.client.blockentity.model.guanlong.GuanlongFossilFrameModel;
 import fossils.fossils.client.blockentity.model.guanlong.GuanlongFossilModel;
 import fossils.fossils.client.blockentity.model.haliskia.HaliskiaFossilFrameModel;
@@ -384,6 +388,8 @@ public class FossilSkeletonTenPieceRenderer implements BlockEntityRenderer<Fossi
 		type.put(FossilSkeletonTenPieceBlock.Types.MEGALOCEPHALUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/megalocephalus/stage_0.png"));
 		type.put(FossilSkeletonTenPieceBlock.Types.PEZOSIREN, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/pezosiren/stage_0.png"));
 		type.put(FossilSkeletonTenPieceBlock.Types.SHRINGASAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/shringasaurus/stage_0.png"));
+		type.put(FossilSkeletonTenPieceBlock.Types.BUNOSTEGOS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/bunostegos/stage_0.png"));
+		type.put(FossilSkeletonTenPieceBlock.Types.GIGANTSPINOSAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/gigantspinosaurus/stage_0.png"));
 
 	});
 	public static final Map<FossilSkeletonTenPieceBlock.Type, ResourceLocation> FRAME_BY_TYPE = Util.make(Maps.newHashMap(), (type) -> {
@@ -504,6 +510,8 @@ public class FossilSkeletonTenPieceRenderer implements BlockEntityRenderer<Fossi
 		type.put(FossilSkeletonTenPieceBlock.Types.MEGALOCEPHALUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/megalocephalus/frame.png"));
 		type.put(FossilSkeletonTenPieceBlock.Types.PEZOSIREN, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/pezosiren/frame.png"));
 		type.put(FossilSkeletonTenPieceBlock.Types.SHRINGASAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/shringasaurus/frame.png"));
+		type.put(FossilSkeletonTenPieceBlock.Types.BUNOSTEGOS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/bunostegos/frame.png"));
+		type.put(FossilSkeletonTenPieceBlock.Types.GIGANTSPINOSAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/gigantspinosaurus/frame.png"));
 
 	});
 	public static Map<FossilSkeletonTenPieceBlock.Type, SkullModelBase> createFossilRenderers(EntityModelSet p_173662_) {
@@ -625,6 +633,8 @@ public class FossilSkeletonTenPieceRenderer implements BlockEntityRenderer<Fossi
 		builder.put(FossilSkeletonTenPieceBlock.Types.MEGALOCEPHALUS, new MegalocephalusFossilModel(p_173662_.bakeLayer(ClientEvents.MEGALOCEPHALUS)));
 		builder.put(FossilSkeletonTenPieceBlock.Types.PEZOSIREN, new PezosirenFossilModel(p_173662_.bakeLayer(ClientEvents.PEZOSIREN)));
 		builder.put(FossilSkeletonTenPieceBlock.Types.SHRINGASAURUS, new ShringasaurusFossilModel(p_173662_.bakeLayer(ClientEvents.SHRINGASAURUS)));
+		builder.put(FossilSkeletonTenPieceBlock.Types.BUNOSTEGOS, new BunostegosFossilModel(p_173662_.bakeLayer(ClientEvents.BUNOSTEGOS)));
+		builder.put(FossilSkeletonTenPieceBlock.Types.GIGANTSPINOSAURUS, new GigantspinosaurusFossilModel(p_173662_.bakeLayer(ClientEvents.GIGANTSPINOSAURUS)));
 		return builder.build();
 	}
 
@@ -747,6 +757,8 @@ public class FossilSkeletonTenPieceRenderer implements BlockEntityRenderer<Fossi
 		builder.put(FossilSkeletonTenPieceBlock.Types.MEGALOCEPHALUS, new MegalocephalusFossilFrameModel(p_173662_.bakeLayer(ClientEvents.MEGALOCEPHALUS_FRAME)));
 		builder.put(FossilSkeletonTenPieceBlock.Types.PEZOSIREN, new PezosirenFossilFrameModel(p_173662_.bakeLayer(ClientEvents.PEZOSIREN_FRAME)));
 		builder.put(FossilSkeletonTenPieceBlock.Types.SHRINGASAURUS, new ShringasaurusFossilFrameModel(p_173662_.bakeLayer(ClientEvents.SHRINGASAURUS_FRAME)));
+		builder.put(FossilSkeletonTenPieceBlock.Types.BUNOSTEGOS, new BunostegosFossilFrameModel(p_173662_.bakeLayer(ClientEvents.BUNOSTEGOS_FRAME)));
+		builder.put(FossilSkeletonTenPieceBlock.Types.GIGANTSPINOSAURUS, new GigantspinosaurusFossilFrameModel(p_173662_.bakeLayer(ClientEvents.GIGANTSPINOSAURUS_FRAME)));
 		return builder.build();
 	}
 
@@ -990,8 +1002,8 @@ public class FossilSkeletonTenPieceRenderer implements BlockEntityRenderer<Fossi
 			p_173667_.scale(-0.6F, -0.6F, 0.6F);
 			p_173667_.translate(0F, 0.18F, 0F);
 		} else if (FossilSkeletonTenPieceBlock$type == FossilSkeletonTenPieceBlock.Types.JINZHOUSAURUS) {
-			p_173667_.scale(-1F, -1F, 1F);
-			p_173667_.translate(0F, -0.5F, 0F);
+			p_173667_.scale(-0.79F, -0.79F, 0.79F);
+			p_173667_.translate(0F, -0.23F, 0F);
 		} else if (FossilSkeletonTenPieceBlock$type == FossilSkeletonTenPieceBlock.Types.LUFENGOSAURUS) {
 			p_173667_.scale(-0.7272F, -0.7272F, 0.7272F);
 			p_173667_.translate(0F, -0.08F, 0F);
@@ -1127,6 +1139,12 @@ public class FossilSkeletonTenPieceRenderer implements BlockEntityRenderer<Fossi
 		} else if (FossilSkeletonTenPieceBlock$type == FossilSkeletonTenPieceBlock.Types.SHRINGASAURUS) {
 			p_173667_.scale(-0.58F, -0.58F, 0.58F);
 			p_173667_.translate(0F, 0.23F, 0F);
+		} else if (FossilSkeletonTenPieceBlock$type == FossilSkeletonTenPieceBlock.Types.BUNOSTEGOS) {
+			p_173667_.scale(-0.64F, -0.64F, 0.64F);
+			p_173667_.translate(0F, 0.07F, 0F);
+		} else if (FossilSkeletonTenPieceBlock$type == FossilSkeletonTenPieceBlock.Types.GIGANTSPINOSAURUS) {
+			p_173667_.scale(-1.03F, -1.03F, 1.03F);
+			p_173667_.translate(0F, -0.53F, 0F);
 		} else p_173667_.scale(-1.0F, -1.0F, 1.0F);
 		VertexConsumer vertexconsumer = p_173668_.getBuffer(p_173671_);
 		p_173670_.setupAnim(p_173666_, p_173665_, 0.0F);
@@ -1370,6 +1388,10 @@ public class FossilSkeletonTenPieceRenderer implements BlockEntityRenderer<Fossi
 			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/pezosiren/stage_" + fossilLevel + ".png");
 		} else if (type == FossilSkeletonTenPieceBlock.Types.SHRINGASAURUS) {
 			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/shringasaurus/stage_" + fossilLevel + ".png");
+		} else if (type == FossilSkeletonTenPieceBlock.Types.BUNOSTEGOS) {
+			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/bunostegos/stage_" + fossilLevel + ".png");
+		} else if (type == FossilSkeletonTenPieceBlock.Types.GIGANTSPINOSAURUS) {
+			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/gigantspinosaurus/stage_" + fossilLevel + ".png");
 		} else resourceLocation = SKIN_BY_TYPE.get(type);
 		return RenderType.entityCutoutNoCullZOffset(resourceLocation);
 	}

@@ -103,7 +103,7 @@ public class ProburnetiaFossilModel extends SkullModelBase {
 
 		PartDefinition proburnetia = fossil.addOrReplaceChild("proburnetia", CubeListBuilder.create(), PartPose.offset(0.5F, -12.1F, 3.0F));
 
-		PartDefinition main = proburnetia.addOrReplaceChild("main", CubeListBuilder.create(), PartPose.offsetAndRotation(0.0F, -0.5996F, -3.3244F, 0.0349F, 0.0F, 0.0F));
+		PartDefinition main = proburnetia.addOrReplaceChild("main", CubeListBuilder.create(), PartPose.offsetAndRotation(0.0F, 2.9005F, -3.3113F, -0.2236F, -0.0301F, -0.2161F));
 
 		PartDefinition cube_r1 = main.addOrReplaceChild("cube_r1", CubeListBuilder.create().texOffs(70, 56).addBox(0.0F, -2.0831F, 3.5944F, 0.0F, 2.0F, 1.0F, new CubeDeformation(0.0F))
 				.texOffs(56, 70).addBox(0.0F, -1.8831F, 1.5944F, 0.0F, 2.0F, 1.0F, new CubeDeformation(0.0F))
@@ -112,7 +112,7 @@ public class ProburnetiaFossilModel extends SkullModelBase {
 				.texOffs(34, 43).addBox(0.5F, -0.1831F, 1.5944F, 1.0F, 0.0F, 3.0F, new CubeDeformation(0.0F))
 				.texOffs(0, 17).addBox(-0.5F, -0.6831F, -0.4056F, 1.0F, 1.0F, 5.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(-0.5F, 0.5769F, 7.2014F, -0.2094F, 0.0F, 0.0F));
 
-		PartDefinition body = main.addOrReplaceChild("body", CubeListBuilder.create(), PartPose.offsetAndRotation(-0.5F, 0.0186F, 6.9189F, -0.0873F, 0.0F, 0.0F));
+		PartDefinition body = main.addOrReplaceChild("body", CubeListBuilder.create(), PartPose.offsetAndRotation(-0.5F, 0.0186F, 6.9189F, -0.1312F, -0.0869F, 0.0076F));
 
 		PartDefinition cube_r2 = body.addOrReplaceChild("cube_r2", CubeListBuilder.create().texOffs(70, 52).addBox(0.0F, -1.5156F, 0.0203F, 0.0F, 2.0F, 1.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.0F, -0.2F, -2.0F, -0.096F, 0.0F, 0.0F));
 
@@ -140,7 +140,7 @@ public class ProburnetiaFossilModel extends SkullModelBase {
 
 		PartDefinition cube_r14 = body.addOrReplaceChild("cube_r14", CubeListBuilder.create().texOffs(15, 13).addBox(-0.5F, -0.7792F, 4.5939F, 1.0F, 1.0F, 5.0F, new CubeDeformation(0.003F)), PartPose.offsetAndRotation(0.0F, 0.0F, -9.6F, -0.0611F, 0.0F, 0.0F));
 
-		PartDefinition body2 = body.addOrReplaceChild("body2", CubeListBuilder.create(), PartPose.offsetAndRotation(0.5F, -0.0406F, -4.9571F, 0.0704F, -0.1306F, -0.0092F));
+		PartDefinition body2 = body.addOrReplaceChild("body2", CubeListBuilder.create(), PartPose.offsetAndRotation(0.5F, -0.0406F, -4.9571F, 0.0271F, -0.1802F, 0.0748F));
 
 		PartDefinition cube_r15 = body2.addOrReplaceChild("cube_r15", CubeListBuilder.create().texOffs(70, 48).addBox(0.0F, -2.1594F, -0.0994F, 0.0F, 2.0F, 1.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(-0.5F, 0.0406F, -1.0429F, -0.1484F, 0.0F, 0.0F));
 
@@ -184,9 +184,9 @@ public class ProburnetiaFossilModel extends SkullModelBase {
 
 		PartDefinition cube_r34 = body2.addOrReplaceChild("cube_r34", CubeListBuilder.create().texOffs(44, 51).addBox(2.2241F, -1.918F, -0.5F, 3.0F, 0.0F, 1.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.0F, -0.3875F, -4.4651F, 0.0519F, -0.2299F, 1.3466F));
 
-		PartDefinition body3 = body2.addOrReplaceChild("body3", CubeListBuilder.create(), PartPose.offsetAndRotation(-0.5F, -0.3516F, -5.0172F, -0.0913F, -0.083F, 0.0512F));
+		PartDefinition body3 = body2.addOrReplaceChild("body3", CubeListBuilder.create(), PartPose.offsetAndRotation(-0.5F, -0.3516F, -5.0172F, -0.0448F, -0.1701F, 0.0588F));
 
-		PartDefinition cube_r35 = body3.addOrReplaceChild("cube_r35", CubeListBuilder.create().texOffs(39, 70).addBox(0.0F, -2.012F, -0.0379F, 0.0F, 2.0F, 1.0F, new CubeDeformation(0.002F)), PartPose.offsetAndRotation(0.0F, 0.1F, -1.9F, 0.0611F, 0.0F, 0.0F));
+		PartDefinition cube_r35 = body3.addOrReplaceChild("cube_r35", CubeListBuilder.create().texOffs(39, 70).addBox(0.0F, -2.0119F, -0.0379F, 0.0F, 2.0F, 1.0F, new CubeDeformation(0.002F)), PartPose.offsetAndRotation(0.0F, 0.1F, -1.9F, 0.0611F, 0.0F, 0.0F));
 
 		PartDefinition cube_r36 = body3.addOrReplaceChild("cube_r36", CubeListBuilder.create().texOffs(70, 37).addBox(0.0F, -1.9037F, 5.0957F, 0.0F, 2.0F, 1.0F, new CubeDeformation(0.002F))
 				.texOffs(15, 6).addBox(-0.5F, -0.2037F, 4.0957F, 1.0F, 1.0F, 5.0F, new CubeDeformation(0.002F)), PartPose.offsetAndRotation(0.0F, 0.8F, -9.0F, 0.1134F, 0.0F, 0.0F));
@@ -239,7 +239,7 @@ public class ProburnetiaFossilModel extends SkullModelBase {
 
 		PartDefinition cube_r60 = body3.addOrReplaceChild("cube_r60", CubeListBuilder.create().texOffs(39, 0).addBox(-0.5F, -0.5F, -1.5F, 1.0F, 1.0F, 3.0F, new CubeDeformation(0.007F)), PartPose.offsetAndRotation(0.0F, 5.0314F, -2.886F, 0.0698F, 0.0F, 0.0F));
 
-		PartDefinition chest = body3.addOrReplaceChild("chest", CubeListBuilder.create(), PartPose.offsetAndRotation(0.5F, 0.5202F, -4.8266F, 0.22F, -0.1278F, -0.0285F));
+		PartDefinition chest = body3.addOrReplaceChild("chest", CubeListBuilder.create(), PartPose.offsetAndRotation(0.5F, 0.5202F, -4.8266F, 0.2182F, 0.0F, 0.0F));
 
 		PartDefinition cube_r61 = chest.addOrReplaceChild("cube_r61", CubeListBuilder.create().texOffs(36, 70).addBox(0.0F, -2.016F, -0.0837F, 0.0F, 2.0F, 1.0F, new CubeDeformation(0.002F)), PartPose.offsetAndRotation(-0.5F, 0.2499F, -0.8959F, 0.0436F, 0.0F, 0.0F));
 
@@ -269,11 +269,11 @@ public class ProburnetiaFossilModel extends SkullModelBase {
 
 		PartDefinition cube_r74 = chest.addOrReplaceChild("cube_r74", CubeListBuilder.create().texOffs(72, 0).addBox(0.0F, 0.0F, -0.5F, 1.0F, 0.0F, 1.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.0F, 0.0439F, -0.5213F, 0.2963F, -0.1059F, 0.438F));
 
-		PartDefinition cube_r75 = chest.addOrReplaceChild("cube_r75", CubeListBuilder.create().texOffs(22, 38).addBox(-1.5F, -1.0199F, -1.6716F, 3.0F, 1.0F, 2.0F, new CubeDeformation(0.002F)), PartPose.offsetAndRotation(-0.5F, 3.6311F, -5.7642F, -0.672F, 0.0F, 0.0F));
+		PartDefinition cube_r75 = chest.addOrReplaceChild("cube_r75", CubeListBuilder.create().texOffs(22, 38).addBox(-1.5F, -1.0199F, -1.6716F, 3.0F, 1.0F, 2.0F, new CubeDeformation(0.002F)), PartPose.offsetAndRotation(-0.5F, 3.631F, -5.7642F, -0.672F, 0.0F, 0.0F));
 
-		PartDefinition cube_r76 = chest.addOrReplaceChild("cube_r76", CubeListBuilder.create().texOffs(39, 14).addBox(-1.0F, -0.971F, -1.6926F, 2.0F, 1.0F, 2.0F, new CubeDeformation(0.002F)), PartPose.offsetAndRotation(-0.5F, 4.3311F, -3.8642F, -0.3229F, 0.0F, 0.0F));
+		PartDefinition cube_r76 = chest.addOrReplaceChild("cube_r76", CubeListBuilder.create().texOffs(39, 14).addBox(-1.0F, -0.971F, -1.6926F, 2.0F, 1.0F, 2.0F, new CubeDeformation(0.002F)), PartPose.offsetAndRotation(-0.5F, 4.331F, -3.8642F, -0.3229F, 0.0F, 0.0F));
 
-		PartDefinition cube_r77 = chest.addOrReplaceChild("cube_r77", CubeListBuilder.create().texOffs(60, 22).addBox(-0.5F, -0.5617F, -0.7156F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.002F)), PartPose.offsetAndRotation(-0.5F, 4.0311F, -2.8642F, -0.0175F, 0.0F, 0.0F));
+		PartDefinition cube_r77 = chest.addOrReplaceChild("cube_r77", CubeListBuilder.create().texOffs(60, 22).addBox(-0.5F, -0.5617F, -0.7156F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.002F)), PartPose.offsetAndRotation(-0.5F, 4.031F, -2.8642F, -0.0175F, 0.0F, 0.0F));
 
 		PartDefinition cube_r78 = chest.addOrReplaceChild("cube_r78", CubeListBuilder.create().texOffs(44, 47).addBox(-0.5F, -1.05F, -0.5F, 1.0F, 1.0F, 2.0F, new CubeDeformation(0.002F)), PartPose.offsetAndRotation(-0.5F, 4.7353F, -1.9788F, -0.2793F, 0.0F, 0.0F));
 
@@ -321,7 +321,7 @@ public class ProburnetiaFossilModel extends SkullModelBase {
 
 		PartDefinition cube_r97 = Neck2.addOrReplaceChild("cube_r97", CubeListBuilder.create().texOffs(5, 48).addBox(-0.5F, -0.3352F, 1.4653F, 1.0F, 1.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.0F, -0.4F, -3.1F, -0.0698F, 0.0F, 0.0F));
 
-		PartDefinition Neck3 = Neck2.addOrReplaceChild("Neck3", CubeListBuilder.create(), PartPose.offsetAndRotation(0.0F, -0.1324F, -1.5559F, 0.0914F, -0.2031F, -0.2323F));
+		PartDefinition Neck3 = Neck2.addOrReplaceChild("Neck3", CubeListBuilder.create(), PartPose.offsetAndRotation(0.0F, -0.1324F, -1.5559F, 0.2589F, -0.2062F, -0.1269F));
 
 		PartDefinition cube_r98 = Neck3.addOrReplaceChild("cube_r98", CubeListBuilder.create().texOffs(30, 70).addBox(0.0F, -1.5352F, 2.4653F, 0.0F, 2.0F, 1.0F, new CubeDeformation(0.0F))
 				.texOffs(48, 28).addBox(-0.5F, -0.3352F, 1.4653F, 1.0F, 1.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.0F, -0.4F, -3.5F, -0.0698F, 0.0F, 0.0F));
@@ -330,7 +330,7 @@ public class ProburnetiaFossilModel extends SkullModelBase {
 
 		PartDefinition cube_r100 = Neck3.addOrReplaceChild("cube_r100", CubeListBuilder.create().texOffs(60, 0).addBox(0.0F, 0.0F, -0.5F, 2.0F, 0.0F, 1.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.5F, -0.0474F, -0.5293F, 0.3978F, -0.7203F, 1.0043F));
 
-		PartDefinition Neck4 = Neck3.addOrReplaceChild("Neck4", CubeListBuilder.create(), PartPose.offsetAndRotation(0.0F, -0.1636F, -1.984F, 0.0464F, -0.3487F, -0.0159F));
+		PartDefinition Neck4 = Neck3.addOrReplaceChild("Neck4", CubeListBuilder.create(), PartPose.offsetAndRotation(0.0F, -0.1636F, -1.984F, 0.0443F, -0.1744F, -0.0077F));
 
 		PartDefinition cube_r101 = Neck4.addOrReplaceChild("cube_r101", CubeListBuilder.create().texOffs(70, 25).addBox(0.0F, -1.5352F, 2.4653F, 0.0F, 2.0F, 1.0F, new CubeDeformation(0.0F))
 				.texOffs(70, 29).addBox(0.0F, -1.6352F, 0.4653F, 0.0F, 2.0F, 1.0F, new CubeDeformation(0.0F))
@@ -344,43 +344,43 @@ public class ProburnetiaFossilModel extends SkullModelBase {
 
 		PartDefinition cube_r105 = Neck4.addOrReplaceChild("cube_r105", CubeListBuilder.create().texOffs(53, 40).addBox(0.0F, 0.0F, -0.5F, 2.0F, 0.0F, 1.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.5F, 0.1162F, -0.7453F, 0.2376F, -0.9702F, 1.0979F));
 
-		PartDefinition Head = Neck4.addOrReplaceChild("Head", CubeListBuilder.create(), PartPose.offsetAndRotation(0.0F, -0.5276F, -4.8019F, 0.0358F, -0.167F, -0.0509F));
+		PartDefinition Head = Neck4.addOrReplaceChild("Head", CubeListBuilder.create(), PartPose.offsetAndRotation(0.0F, -0.5276F, -4.3019F, 0.3515F, -0.2354F, -0.262F));
 
-		PartDefinition cube_r106 = Head.addOrReplaceChild("cube_r106", CubeListBuilder.create().texOffs(20, 64).addBox(-1.0F, -1.0282F, -1.801F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.02F)), PartPose.offsetAndRotation(0.5F, 1.9125F, -5.1596F, -0.1309F, 0.0F, 0.0F));
+		PartDefinition cube_r106 = Head.addOrReplaceChild("cube_r106", CubeListBuilder.create().texOffs(20, 64).addBox(-1.0F, -1.0282F, -1.801F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.02F)), PartPose.offsetAndRotation(0.5F, 1.7679F, -5.6382F, -0.1309F, 0.0F, 0.0F));
 
 		PartDefinition cube_r107 = Head.addOrReplaceChild("cube_r107", CubeListBuilder.create().texOffs(25, 64).addBox(-1.0F, -0.0043F, -2.6199F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.0F))
-				.texOffs(21, 52).addBox(-1.0F, -0.0043F, -2.0199F, 1.0F, 1.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.5F, -0.6078F, -4.572F, 0.4014F, 0.0F, 0.0F));
+				.texOffs(21, 52).addBox(-1.0F, -0.0043F, -2.0199F, 1.0F, 1.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.5F, -0.7524F, -5.0507F, 0.4014F, 0.0F, 0.0F));
 
-		PartDefinition cube_r108 = Head.addOrReplaceChild("cube_r108", CubeListBuilder.create().texOffs(53, 17).addBox(-1.0F, -0.2355F, -0.2741F, 1.0F, 1.0F, 2.0F, new CubeDeformation(-0.2F)), PartPose.offsetAndRotation(0.5F, -1.7451F, -1.4316F, -0.2531F, 0.0F, 0.0F));
+		PartDefinition cube_r108 = Head.addOrReplaceChild("cube_r108", CubeListBuilder.create().texOffs(53, 17).addBox(-1.0F, -0.2355F, -0.2741F, 1.0F, 1.0F, 2.0F, new CubeDeformation(-0.2F)), PartPose.offsetAndRotation(0.5F, -1.8897F, -1.9102F, -0.2531F, 0.0F, 0.0F));
 
-		PartDefinition cube_r109 = Head.addOrReplaceChild("cube_r109", CubeListBuilder.create().texOffs(53, 8).addBox(-1.0F, -0.2249F, -0.1867F, 1.0F, 1.0F, 2.0F, new CubeDeformation(-0.196F)), PartPose.offsetAndRotation(0.5F, -1.5451F, -3.0316F, 0.144F, 0.0F, 0.0F));
+		PartDefinition cube_r109 = Head.addOrReplaceChild("cube_r109", CubeListBuilder.create().texOffs(53, 8).addBox(-1.0F, -0.2249F, -0.1867F, 1.0F, 1.0F, 2.0F, new CubeDeformation(-0.196F)), PartPose.offsetAndRotation(0.5F, -1.6897F, -3.5102F, 0.144F, 0.0F, 0.0F));
 
-		PartDefinition cube_r110 = Head.addOrReplaceChild("cube_r110", CubeListBuilder.create().texOffs(52, 64).addBox(-1.0F, -0.2225F, -0.1983F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.2F)), PartPose.offsetAndRotation(0.5F, -1.4201F, -3.6066F, 0.2182F, 0.0F, 0.0F));
+		PartDefinition cube_r110 = Head.addOrReplaceChild("cube_r110", CubeListBuilder.create().texOffs(52, 64).addBox(-1.0F, -0.2225F, -0.1983F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.2F)), PartPose.offsetAndRotation(0.5F, -1.5647F, -4.0852F, 0.2182F, 0.0F, 0.0F));
 
-		PartDefinition cube_r111 = Head.addOrReplaceChild("cube_r111", CubeListBuilder.create().texOffs(40, 64).addBox(-1.0F, -0.2223F, -0.2131F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.196F)), PartPose.offsetAndRotation(0.5F, -1.2201F, -4.1566F, 0.3491F, 0.0F, 0.0F));
+		PartDefinition cube_r111 = Head.addOrReplaceChild("cube_r111", CubeListBuilder.create().texOffs(40, 64).addBox(-1.0F, -0.2223F, -0.2131F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.196F)), PartPose.offsetAndRotation(0.5F, -1.3647F, -4.6352F, 0.3491F, 0.0F, 0.0F));
 
-		PartDefinition cube_r112 = Head.addOrReplaceChild("cube_r112", CubeListBuilder.create().texOffs(0, 65).addBox(-1.0F, -0.2036F, -0.2097F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.2F)), PartPose.offsetAndRotation(0.5F, -0.82F, -4.8542F, -0.6632F, 0.0F, 0.0F));
+		PartDefinition cube_r112 = Head.addOrReplaceChild("cube_r112", CubeListBuilder.create().texOffs(0, 65).addBox(-1.0F, -0.2036F, -0.2097F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.2F)), PartPose.offsetAndRotation(0.5F, -0.9645F, -5.3329F, -0.6632F, 0.0F, 0.0F));
 
-		PartDefinition cube_r113 = Head.addOrReplaceChild("cube_r113", CubeListBuilder.create().texOffs(62, 64).addBox(-1.0F, -0.2194F, -0.1775F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.197F)), PartPose.offsetAndRotation(0.5F, -0.6199F, -5.4542F, 0.2967F, 0.0F, 0.0F));
+		PartDefinition cube_r113 = Head.addOrReplaceChild("cube_r113", CubeListBuilder.create().texOffs(62, 64).addBox(-1.0F, -0.2194F, -0.1775F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.197F)), PartPose.offsetAndRotation(0.5F, -0.7645F, -5.9329F, 0.2967F, 0.0F, 0.0F));
 
-		PartDefinition cube_r114 = Head.addOrReplaceChild("cube_r114", CubeListBuilder.create().texOffs(65, 4).addBox(-1.0F, -0.2076F, -0.8069F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.197F)), PartPose.offsetAndRotation(0.5F, -0.3449F, -5.9542F, 1.309F, 0.0F, 0.0F));
+		PartDefinition cube_r114 = Head.addOrReplaceChild("cube_r114", CubeListBuilder.create().texOffs(65, 4).addBox(-1.0F, -0.2076F, -0.8069F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.197F)), PartPose.offsetAndRotation(0.5F, -0.4895F, -6.4329F, 1.309F, 0.0F, 0.0F));
 
-		PartDefinition cube_r115 = Head.addOrReplaceChild("cube_r115", CubeListBuilder.create().texOffs(57, 64).addBox(-1.0F, -0.55F, -0.5F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.2F)), PartPose.offsetAndRotation(0.5F, -0.195F, -5.5292F, 0.5236F, 0.0F, 0.0F));
+		PartDefinition cube_r115 = Head.addOrReplaceChild("cube_r115", CubeListBuilder.create().texOffs(57, 64).addBox(-1.0F, -0.55F, -0.5F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.2F)), PartPose.offsetAndRotation(0.5F, -0.3395F, -6.0079F, 0.5236F, 0.0F, 0.0F));
 
-		PartDefinition cube_r116 = Head.addOrReplaceChild("cube_r116", CubeListBuilder.create().texOffs(35, 64).addBox(-1.0F, -0.5F, -0.6F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.2F)), PartPose.offsetAndRotation(0.5F, -0.8701F, -4.1566F, 0.6545F, 0.0F, 0.0F));
+		PartDefinition cube_r116 = Head.addOrReplaceChild("cube_r116", CubeListBuilder.create().texOffs(35, 64).addBox(-1.0F, -0.5F, -0.6F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.2F)), PartPose.offsetAndRotation(0.5F, -1.0147F, -4.6352F, 0.6545F, 0.0F, 0.0F));
 
-		PartDefinition cube_r117 = Head.addOrReplaceChild("cube_r117", CubeListBuilder.create().texOffs(65, 7).addBox(-1.0F, -0.0302F, 0.0318F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.5F, -0.9078F, -3.672F, 0.2182F, 0.0F, 0.0F));
+		PartDefinition cube_r117 = Head.addOrReplaceChild("cube_r117", CubeListBuilder.create().texOffs(65, 7).addBox(-1.0F, -0.0302F, 0.0318F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.5F, -1.0524F, -4.1507F, 0.2182F, 0.0F, 0.0F));
 
-		PartDefinition cube_r118 = Head.addOrReplaceChild("cube_r118", CubeListBuilder.create().texOffs(42, 61).addBox(-1.0F, 0.9206F, 0.2553F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.5F, -1.3828F, -5.147F, 0.3491F, 0.0F, 0.0F));
+		PartDefinition cube_r118 = Head.addOrReplaceChild("cube_r118", CubeListBuilder.create().texOffs(42, 61).addBox(-1.0F, 0.9206F, 0.2553F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.5F, -1.5274F, -5.6257F, 0.3491F, 0.0F, 0.0F));
 
 		PartDefinition cube_r119 = Head.addOrReplaceChild("cube_r119", CubeListBuilder.create().texOffs(65, 17).addBox(-1.0F, -0.2516F, 1.2098F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.2F))
-				.texOffs(35, 32).addBox(-2.0F, -0.0266F, 0.0348F, 3.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.5F, -1.4137F, -1.6854F, -0.0785F, 0.0F, 0.0F));
+				.texOffs(35, 32).addBox(-2.0F, -0.0266F, 0.0348F, 3.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.5F, -1.5583F, -2.164F, -0.0785F, 0.0F, 0.0F));
 
-		PartDefinition cube_r120 = Head.addOrReplaceChild("cube_r120", CubeListBuilder.create().texOffs(44, 37).addBox(-2.0F, -0.0479F, 0.0624F, 3.0F, 2.0F, 1.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.5F, -1.3387F, -2.7104F, 0.0524F, 0.0F, 0.0F));
+		PartDefinition cube_r120 = Head.addOrReplaceChild("cube_r120", CubeListBuilder.create().texOffs(44, 37).addBox(-2.0F, -0.0479F, 0.0624F, 3.0F, 2.0F, 1.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.5F, -1.4833F, -3.189F, 0.0524F, 0.0F, 0.0F));
 
-		PartDefinition cube_r121 = Head.addOrReplaceChild("cube_r121", CubeListBuilder.create().texOffs(44, 9).addBox(-1.5F, -0.725F, -1.5F, 2.0F, 1.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.5F, -0.5387F, -2.6104F, 0.6981F, 0.0F, 0.0F));
+		PartDefinition cube_r121 = Head.addOrReplaceChild("cube_r121", CubeListBuilder.create().texOffs(44, 9).addBox(-1.5F, -0.725F, -1.5F, 2.0F, 1.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.5F, -0.6833F, -3.089F, 0.6981F, 0.0F, 0.0F));
 
-		PartDefinition leftFace = Head.addOrReplaceChild("leftFace", CubeListBuilder.create(), PartPose.offset(1.7874F, -0.2661F, 0.7745F));
+		PartDefinition leftFace = Head.addOrReplaceChild("leftFace", CubeListBuilder.create(), PartPose.offset(1.7874F, -0.4107F, 0.2959F));
 
 		PartDefinition cube_r122 = leftFace.addOrReplaceChild("cube_r122", CubeListBuilder.create().texOffs(70, 13).addBox(-0.5F, -0.5F, -0.5F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.25F)), PartPose.offsetAndRotation(-0.842F, 1.9614F, -4.2003F, 0.2618F, 0.2269F, 0.0F));
 
@@ -399,7 +399,7 @@ public class ProburnetiaFossilModel extends SkullModelBase {
 
 		PartDefinition cube_r129 = leftFace.addOrReplaceChild("cube_r129", CubeListBuilder.create().texOffs(38, 57).addBox(-1.0F, -1.1245F, -0.8673F, 1.0F, 2.0F, 1.0F, new CubeDeformation(-0.02F)), PartPose.offsetAndRotation(-0.4624F, 1.227F, -4.2771F, 0.1222F, 0.2793F, 0.0F));
 
-		PartDefinition cube_r130 = leftFace.addOrReplaceChild("cube_r130", CubeListBuilder.create().texOffs(60, 4).addBox(-1.0F, -0.9912F, -1.656F, 1.0F, 2.0F, 1.0F, new CubeDeformation(-0.017F)), PartPose.offsetAndRotation(-0.4624F, 1.227F, -4.2771F, -0.0524F, 0.2793F, 0.0F));
+		PartDefinition cube_r130 = leftFace.addOrReplaceChild("cube_r130", CubeListBuilder.create().texOffs(60, 4).addBox(-1.0F, -0.9912F, -1.6559F, 1.0F, 2.0F, 1.0F, new CubeDeformation(-0.017F)), PartPose.offsetAndRotation(-0.4624F, 1.227F, -4.2771F, -0.0524F, 0.2793F, 0.0F));
 
 		PartDefinition cube_r131 = leftFace.addOrReplaceChild("cube_r131", CubeListBuilder.create().texOffs(11, 39).addBox(-1.0F, -1.5062F, -1.1592F, 1.0F, 1.0F, 3.0F, new CubeDeformation(-0.024F)), PartPose.offsetAndRotation(-0.4624F, 1.227F, -4.2771F, 0.3054F, 0.2793F, 0.0F));
 
@@ -413,15 +413,15 @@ public class ProburnetiaFossilModel extends SkullModelBase {
 
 		PartDefinition cube_r136 = leftFace.addOrReplaceChild("cube_r136", CubeListBuilder.create().texOffs(10, 70).addBox(-0.525F, -0.35F, -0.5F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.25F)), PartPose.offsetAndRotation(-1.3671F, 1.2817F, -7.1935F, -1.7601F, 0.0416F, 0.019F));
 
-		PartDefinition cube_r137 = leftFace.addOrReplaceChild("cube_r137", CubeListBuilder.create().texOffs(70, 6).addBox(-0.3058F, -0.4867F, -0.4919F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.25F))
-				.texOffs(60, 67).addBox(-0.4808F, -0.4867F, -0.4919F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.1F)), PartPose.offsetAndRotation(-0.4074F, 0.0166F, -2.6373F, -1.5095F, 0.2463F, 0.0315F));
+		PartDefinition cube_r137 = leftFace.addOrReplaceChild("cube_r137", CubeListBuilder.create().texOffs(70, 6).addBox(-0.3058F, -0.4867F, -0.492F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.25F))
+				.texOffs(60, 67).addBox(-0.4808F, -0.4867F, -0.492F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.1F)), PartPose.offsetAndRotation(-0.4074F, 0.0166F, -2.6373F, -1.5095F, 0.2463F, 0.0315F));
 
 		PartDefinition cube_r138 = leftFace.addOrReplaceChild("cube_r138", CubeListBuilder.create().texOffs(55, 67).addBox(-0.5308F, -0.1348F, -0.9262F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.1F))
 				.texOffs(50, 67).addBox(-0.5308F, -0.4348F, -0.9262F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.105F)), PartPose.offsetAndRotation(-0.4074F, 0.0166F, -2.6373F, -0.8551F, 0.2463F, 0.0315F));
 
-		PartDefinition cube_r139 = leftFace.addOrReplaceChild("cube_r139", CubeListBuilder.create().texOffs(65, 29).addBox(-0.5308F, -0.9387F, -0.4246F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.1F)), PartPose.offsetAndRotation(-0.4074F, 0.0166F, -2.6373F, -0.026F, 0.2463F, 0.0315F));
+		PartDefinition cube_r139 = leftFace.addOrReplaceChild("cube_r139", CubeListBuilder.create().texOffs(65, 29).addBox(-0.5308F, -0.9386F, -0.4246F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.1F)), PartPose.offsetAndRotation(-0.4074F, 0.0166F, -2.6373F, -0.026F, 0.2463F, 0.0315F));
 
-		PartDefinition cube_r140 = leftFace.addOrReplaceChild("cube_r140", CubeListBuilder.create().texOffs(65, 26).addBox(-0.5308F, -0.5597F, -0.0758F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.105F)), PartPose.offsetAndRotation(-0.4074F, 0.0166F, -2.6373F, 0.515F, 0.2463F, 0.0315F));
+		PartDefinition cube_r140 = leftFace.addOrReplaceChild("cube_r140", CubeListBuilder.create().texOffs(65, 26).addBox(-0.5308F, -0.5596F, -0.0758F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.105F)), PartPose.offsetAndRotation(-0.4074F, 0.0166F, -2.6373F, 0.515F, 0.2463F, 0.0315F));
 
 		PartDefinition cube_r141 = leftFace.addOrReplaceChild("cube_r141", CubeListBuilder.create().texOffs(40, 67).addBox(-0.5308F, -0.0139F, -0.221F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.097F)), PartPose.offsetAndRotation(-0.4074F, 0.0166F, -2.6373F, 1.0386F, 0.2463F, 0.0315F));
 
@@ -450,7 +450,7 @@ public class ProburnetiaFossilModel extends SkullModelBase {
 
 		PartDefinition cube_r153 = leftFace.addOrReplaceChild("cube_r153", CubeListBuilder.create().texOffs(30, 64).addBox(-0.5F, -0.8126F, -1.1908F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.153F)), PartPose.offsetAndRotation(-0.0374F, -1.2996F, -1.9736F, -0.5759F, 0.0604F, 0.5683F));
 
-		PartDefinition cube_r154 = leftFace.addOrReplaceChild("cube_r154", CubeListBuilder.create().texOffs(60, 14).addBox(-0.5F, -1.3706F, -0.6025F, 1.0F, 2.0F, 1.0F, new CubeDeformation(-0.155F)), PartPose.offsetAndRotation(-0.0374F, -1.2996F, -1.9736F, 0.6458F, 0.0604F, 0.5683F));
+		PartDefinition cube_r154 = leftFace.addOrReplaceChild("cube_r154", CubeListBuilder.create().texOffs(60, 14).addBox(-0.5F, -1.3706F, -0.6026F, 1.0F, 2.0F, 1.0F, new CubeDeformation(-0.155F)), PartPose.offsetAndRotation(-0.0374F, -1.2996F, -1.9736F, 0.6458F, 0.0604F, 0.5683F));
 
 		PartDefinition cube_r155 = leftFace.addOrReplaceChild("cube_r155", CubeListBuilder.create().texOffs(53, 4).addBox(-0.5F, -0.351F, -1.1744F, 1.0F, 1.0F, 2.0F, new CubeDeformation(-0.154F)), PartPose.offsetAndRotation(0.3558F, -0.8609F, 1.0916F, 0.9172F, 0.4138F, -0.0402F));
 
@@ -466,7 +466,7 @@ public class ProburnetiaFossilModel extends SkullModelBase {
 
 		PartDefinition cube_r161 = leftFace.addOrReplaceChild("cube_r161", CubeListBuilder.create().texOffs(37, 18).addBox(-0.4874F, 0.5187F, -1.5516F, 1.0F, 2.0F, 3.0F, new CubeDeformation(0.007F)), PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, -0.5236F, 0.24F, -0.0873F));
 
-		PartDefinition rightFace = Head.addOrReplaceChild("rightFace", CubeListBuilder.create(), PartPose.offset(-1.7874F, -0.2661F, 0.7745F));
+		PartDefinition rightFace = Head.addOrReplaceChild("rightFace", CubeListBuilder.create(), PartPose.offset(-1.7874F, -0.4107F, 0.2959F));
 
 		PartDefinition cube_r162 = rightFace.addOrReplaceChild("cube_r162", CubeListBuilder.create().texOffs(70, 13).mirror().addBox(-0.5F, -0.5F, -0.5F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.25F)).mirror(false), PartPose.offsetAndRotation(0.842F, 1.9614F, -4.2003F, 0.2618F, -0.2269F, 0.0F));
 
@@ -485,7 +485,7 @@ public class ProburnetiaFossilModel extends SkullModelBase {
 
 		PartDefinition cube_r169 = rightFace.addOrReplaceChild("cube_r169", CubeListBuilder.create().texOffs(38, 57).mirror().addBox(0.0F, -1.1245F, -0.8673F, 1.0F, 2.0F, 1.0F, new CubeDeformation(-0.02F)).mirror(false), PartPose.offsetAndRotation(0.4624F, 1.227F, -4.2771F, 0.1222F, -0.2793F, 0.0F));
 
-		PartDefinition cube_r170 = rightFace.addOrReplaceChild("cube_r170", CubeListBuilder.create().texOffs(60, 4).mirror().addBox(0.0F, -0.9912F, -1.656F, 1.0F, 2.0F, 1.0F, new CubeDeformation(-0.017F)).mirror(false), PartPose.offsetAndRotation(0.4624F, 1.227F, -4.2771F, -0.0524F, -0.2793F, 0.0F));
+		PartDefinition cube_r170 = rightFace.addOrReplaceChild("cube_r170", CubeListBuilder.create().texOffs(60, 4).mirror().addBox(0.0F, -0.9912F, -1.6559F, 1.0F, 2.0F, 1.0F, new CubeDeformation(-0.017F)).mirror(false), PartPose.offsetAndRotation(0.4624F, 1.227F, -4.2771F, -0.0524F, -0.2793F, 0.0F));
 
 		PartDefinition cube_r171 = rightFace.addOrReplaceChild("cube_r171", CubeListBuilder.create().texOffs(11, 39).mirror().addBox(0.0F, -1.5062F, -1.1592F, 1.0F, 1.0F, 3.0F, new CubeDeformation(-0.024F)).mirror(false), PartPose.offsetAndRotation(0.4624F, 1.227F, -4.2771F, 0.3054F, -0.2793F, 0.0F));
 
@@ -499,15 +499,15 @@ public class ProburnetiaFossilModel extends SkullModelBase {
 
 		PartDefinition cube_r176 = rightFace.addOrReplaceChild("cube_r176", CubeListBuilder.create().texOffs(10, 70).mirror().addBox(-0.475F, -0.35F, -0.5F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.25F)).mirror(false), PartPose.offsetAndRotation(1.3671F, 1.2817F, -7.1935F, -1.7601F, -0.0416F, -0.019F));
 
-		PartDefinition cube_r177 = rightFace.addOrReplaceChild("cube_r177", CubeListBuilder.create().texOffs(70, 6).mirror().addBox(-0.6942F, -0.4867F, -0.4919F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.25F)).mirror(false)
-				.texOffs(60, 67).mirror().addBox(-0.5192F, -0.4867F, -0.4919F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.1F)).mirror(false), PartPose.offsetAndRotation(0.4074F, 0.0166F, -2.6373F, -1.5095F, -0.2463F, -0.0315F));
+		PartDefinition cube_r177 = rightFace.addOrReplaceChild("cube_r177", CubeListBuilder.create().texOffs(70, 6).mirror().addBox(-0.6942F, -0.4867F, -0.492F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.25F)).mirror(false)
+				.texOffs(60, 67).mirror().addBox(-0.5192F, -0.4867F, -0.492F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.1F)).mirror(false), PartPose.offsetAndRotation(0.4074F, 0.0166F, -2.6373F, -1.5095F, -0.2463F, -0.0315F));
 
 		PartDefinition cube_r178 = rightFace.addOrReplaceChild("cube_r178", CubeListBuilder.create().texOffs(55, 67).mirror().addBox(-0.4692F, -0.1348F, -0.9262F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.1F)).mirror(false)
 				.texOffs(50, 67).mirror().addBox(-0.4692F, -0.4348F, -0.9262F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.105F)).mirror(false), PartPose.offsetAndRotation(0.4074F, 0.0166F, -2.6373F, -0.8551F, -0.2463F, -0.0315F));
 
-		PartDefinition cube_r179 = rightFace.addOrReplaceChild("cube_r179", CubeListBuilder.create().texOffs(65, 29).mirror().addBox(-0.4692F, -0.9387F, -0.4246F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.1F)).mirror(false), PartPose.offsetAndRotation(0.4074F, 0.0166F, -2.6373F, -0.026F, -0.2463F, -0.0315F));
+		PartDefinition cube_r179 = rightFace.addOrReplaceChild("cube_r179", CubeListBuilder.create().texOffs(65, 29).mirror().addBox(-0.4692F, -0.9386F, -0.4246F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.1F)).mirror(false), PartPose.offsetAndRotation(0.4074F, 0.0166F, -2.6373F, -0.026F, -0.2463F, -0.0315F));
 
-		PartDefinition cube_r180 = rightFace.addOrReplaceChild("cube_r180", CubeListBuilder.create().texOffs(65, 26).mirror().addBox(-0.4692F, -0.5597F, -0.0758F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.105F)).mirror(false), PartPose.offsetAndRotation(0.4074F, 0.0166F, -2.6373F, 0.515F, -0.2463F, -0.0315F));
+		PartDefinition cube_r180 = rightFace.addOrReplaceChild("cube_r180", CubeListBuilder.create().texOffs(65, 26).mirror().addBox(-0.4692F, -0.5596F, -0.0758F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.105F)).mirror(false), PartPose.offsetAndRotation(0.4074F, 0.0166F, -2.6373F, 0.515F, -0.2463F, -0.0315F));
 
 		PartDefinition cube_r181 = rightFace.addOrReplaceChild("cube_r181", CubeListBuilder.create().texOffs(40, 67).mirror().addBox(-0.4692F, -0.0139F, -0.221F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.097F)).mirror(false), PartPose.offsetAndRotation(0.4074F, 0.0166F, -2.6373F, 1.0386F, -0.2463F, -0.0315F));
 
@@ -536,7 +536,7 @@ public class ProburnetiaFossilModel extends SkullModelBase {
 
 		PartDefinition cube_r193 = rightFace.addOrReplaceChild("cube_r193", CubeListBuilder.create().texOffs(30, 64).mirror().addBox(-0.5F, -0.8126F, -1.1908F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.153F)).mirror(false), PartPose.offsetAndRotation(0.0374F, -1.2996F, -1.9736F, -0.5759F, -0.0604F, -0.5683F));
 
-		PartDefinition cube_r194 = rightFace.addOrReplaceChild("cube_r194", CubeListBuilder.create().texOffs(60, 14).mirror().addBox(-0.5F, -1.3706F, -0.6025F, 1.0F, 2.0F, 1.0F, new CubeDeformation(-0.155F)).mirror(false), PartPose.offsetAndRotation(0.0374F, -1.2996F, -1.9736F, 0.6458F, -0.0604F, -0.5683F));
+		PartDefinition cube_r194 = rightFace.addOrReplaceChild("cube_r194", CubeListBuilder.create().texOffs(60, 14).mirror().addBox(-0.5F, -1.3706F, -0.6026F, 1.0F, 2.0F, 1.0F, new CubeDeformation(-0.155F)).mirror(false), PartPose.offsetAndRotation(0.0374F, -1.2996F, -1.9736F, 0.6458F, -0.0604F, -0.5683F));
 
 		PartDefinition cube_r195 = rightFace.addOrReplaceChild("cube_r195", CubeListBuilder.create().texOffs(53, 4).mirror().addBox(-0.5F, -0.351F, -1.1744F, 1.0F, 1.0F, 2.0F, new CubeDeformation(-0.154F)).mirror(false), PartPose.offsetAndRotation(-0.3558F, -0.8609F, 1.0916F, 0.9172F, -0.4138F, 0.0402F));
 
@@ -552,7 +552,7 @@ public class ProburnetiaFossilModel extends SkullModelBase {
 
 		PartDefinition cube_r201 = rightFace.addOrReplaceChild("cube_r201", CubeListBuilder.create().texOffs(37, 18).mirror().addBox(-0.5126F, 0.5187F, -1.5516F, 1.0F, 2.0F, 3.0F, new CubeDeformation(0.007F)).mirror(false), PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, -0.5236F, -0.24F, 0.0873F));
 
-		PartDefinition Jaw = Head.addOrReplaceChild("Jaw", CubeListBuilder.create(), PartPose.offsetAndRotation(0.0F, 1.8213F, 0.696F, 0.7418F, 0.0F, 0.0F));
+		PartDefinition Jaw = Head.addOrReplaceChild("Jaw", CubeListBuilder.create(), PartPose.offsetAndRotation(0.0F, 1.6767F, 0.2173F, -0.1309F, 0.0F, 0.0F));
 
 		PartDefinition cube_r202 = Jaw.addOrReplaceChild("cube_r202", CubeListBuilder.create().texOffs(46, 53).mirror().addBox(-0.2F, -0.3346F, 1.3102F, 1.0F, 1.0F, 2.0F, new CubeDeformation(-0.148F)).mirror(false), PartPose.offsetAndRotation(-1.3F, 0.5F, -2.975F, -0.0175F, -0.3142F, 0.0F));
 
@@ -562,7 +562,7 @@ public class ProburnetiaFossilModel extends SkullModelBase {
 
 		PartDefinition cube_r205 = Jaw.addOrReplaceChild("cube_r205", CubeListBuilder.create().texOffs(65, 58).mirror().addBox(-0.1419F, 0.4987F, -1.9772F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.15F)).mirror(false), PartPose.offsetAndRotation(-1.175F, 0.9031F, -4.3896F, -0.0785F, -0.2793F, 0.0F));
 
-		PartDefinition cube_r206 = Jaw.addOrReplaceChild("cube_r206", CubeListBuilder.create().texOffs(65, 55).mirror().addBox(-0.1419F, -0.4563F, -1.8769F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.155F)).mirror(false), PartPose.offsetAndRotation(-1.175F, 0.9031F, -4.3896F, 0.5672F, -0.2793F, 0.0F));
+		PartDefinition cube_r206 = Jaw.addOrReplaceChild("cube_r206", CubeListBuilder.create().texOffs(65, 55).mirror().addBox(-0.1419F, -0.4562F, -1.8769F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.155F)).mirror(false), PartPose.offsetAndRotation(-1.175F, 0.9031F, -4.3896F, 0.5672F, -0.2793F, 0.0F));
 
 		PartDefinition cube_r207 = Jaw.addOrReplaceChild("cube_r207", CubeListBuilder.create().texOffs(65, 52).mirror().addBox(-0.1419F, -0.2952F, -1.2123F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.15F)).mirror(false), PartPose.offsetAndRotation(-1.175F, 0.9031F, -4.3896F, 0.4363F, -0.2793F, 0.0F));
 
@@ -597,7 +597,7 @@ public class ProburnetiaFossilModel extends SkullModelBase {
 
 		PartDefinition cube_r221 = Jaw.addOrReplaceChild("cube_r221", CubeListBuilder.create().texOffs(53, 36).mirror().addBox(-0.2F, -0.7575F, -0.2034F, 1.0F, 1.0F, 2.0F, new CubeDeformation(-0.155F)).mirror(false), PartPose.offsetAndRotation(-1.3F, 0.5F, -2.975F, 0.0436F, -0.3142F, 0.0F));
 
-		PartDefinition cube_r222 = Jaw.addOrReplaceChild("cube_r222", CubeListBuilder.create().texOffs(48, 13).mirror().addBox(-0.2F, -1.3432F, 1.1483F, 1.0F, 1.0F, 2.0F, new CubeDeformation(-0.159F)).mirror(false), PartPose.offsetAndRotation(-1.3F, 0.5F, -2.975F, -0.3491F, -0.3142F, 0.0F));
+		PartDefinition cube_r222 = Jaw.addOrReplaceChild("cube_r222", CubeListBuilder.create().texOffs(48, 13).mirror().addBox(-0.2F, -1.3432F, 1.1484F, 1.0F, 1.0F, 2.0F, new CubeDeformation(-0.159F)).mirror(false), PartPose.offsetAndRotation(-1.3F, 0.5F, -2.975F, -0.3491F, -0.3142F, 0.0F));
 
 		PartDefinition cube_r223 = Jaw.addOrReplaceChild("cube_r223", CubeListBuilder.create().texOffs(46, 53).addBox(-0.8F, -0.3346F, 1.3102F, 1.0F, 1.0F, 2.0F, new CubeDeformation(-0.148F)), PartPose.offsetAndRotation(1.3F, 0.5F, -2.975F, -0.0175F, 0.3142F, 0.0F));
 
@@ -607,7 +607,7 @@ public class ProburnetiaFossilModel extends SkullModelBase {
 
 		PartDefinition cube_r226 = Jaw.addOrReplaceChild("cube_r226", CubeListBuilder.create().texOffs(65, 58).addBox(-0.8581F, 0.4987F, -1.9772F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.15F)), PartPose.offsetAndRotation(1.175F, 0.9031F, -4.3896F, -0.0785F, 0.2793F, 0.0F));
 
-		PartDefinition cube_r227 = Jaw.addOrReplaceChild("cube_r227", CubeListBuilder.create().texOffs(65, 55).addBox(-0.8581F, -0.4563F, -1.8769F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.155F)), PartPose.offsetAndRotation(1.175F, 0.9031F, -4.3896F, 0.5672F, 0.2793F, 0.0F));
+		PartDefinition cube_r227 = Jaw.addOrReplaceChild("cube_r227", CubeListBuilder.create().texOffs(65, 55).addBox(-0.8581F, -0.4562F, -1.8769F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.155F)), PartPose.offsetAndRotation(1.175F, 0.9031F, -4.3896F, 0.5672F, 0.2793F, 0.0F));
 
 		PartDefinition cube_r228 = Jaw.addOrReplaceChild("cube_r228", CubeListBuilder.create().texOffs(65, 52).addBox(-0.8581F, -0.2952F, -1.2123F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.15F)), PartPose.offsetAndRotation(1.175F, 0.9031F, -4.3896F, 0.4363F, 0.2793F, 0.0F));
 
@@ -639,9 +639,9 @@ public class ProburnetiaFossilModel extends SkullModelBase {
 
 		PartDefinition cube_r241 = Jaw.addOrReplaceChild("cube_r241", CubeListBuilder.create().texOffs(53, 36).addBox(-0.8F, -0.7575F, -0.2034F, 1.0F, 1.0F, 2.0F, new CubeDeformation(-0.155F)), PartPose.offsetAndRotation(1.3F, 0.5F, -2.975F, 0.0436F, 0.3142F, 0.0F));
 
-		PartDefinition cube_r242 = Jaw.addOrReplaceChild("cube_r242", CubeListBuilder.create().texOffs(48, 13).addBox(-0.8F, -1.3432F, 1.1483F, 1.0F, 1.0F, 2.0F, new CubeDeformation(-0.159F)), PartPose.offsetAndRotation(1.3F, 0.5F, -2.975F, -0.3491F, 0.3142F, 0.0F));
+		PartDefinition cube_r242 = Jaw.addOrReplaceChild("cube_r242", CubeListBuilder.create().texOffs(48, 13).addBox(-0.8F, -1.3432F, 1.1484F, 1.0F, 1.0F, 2.0F, new CubeDeformation(-0.159F)), PartPose.offsetAndRotation(1.3F, 0.5F, -2.975F, -0.3491F, 0.3142F, 0.0F));
 
-		PartDefinition RFrontLeg2 = chest.addOrReplaceChild("RFrontLeg2", CubeListBuilder.create(), PartPose.offsetAndRotation(2.1F, 3.2877F, -3.5977F, 1.1166F, 0.1274F, -0.2783F));
+		PartDefinition RFrontLeg2 = chest.addOrReplaceChild("RFrontLeg2", CubeListBuilder.create(), PartPose.offsetAndRotation(2.1F, 3.2877F, -3.5977F, 1.0895F, 0.0197F, 0.0114F));
 
 		PartDefinition cube_r243 = RFrontLeg2.addOrReplaceChild("cube_r243", CubeListBuilder.create().texOffs(60, 27).addBox(-0.5F, -1.0F, -1.2F, 1.0F, 2.0F, 1.0F, new CubeDeformation(0.014F)), PartPose.offsetAndRotation(2.5171F, 4.8978F, -0.174F, 1.4486F, 0.0F, -0.48F));
 
@@ -659,18 +659,18 @@ public class ProburnetiaFossilModel extends SkullModelBase {
 
 		PartDefinition cube_r250 = RFrontLeg2.addOrReplaceChild("cube_r250", CubeListBuilder.create().texOffs(39, 5).addBox(-1.25F, -2.5F, 0.0F, 1.0F, 7.0F, 1.0F, new CubeDeformation(0.006F)), PartPose.offsetAndRotation(1.5592F, 1.4334F, -0.5516F, -0.0349F, 0.0F, -0.48F));
 
-		PartDefinition LowerRFrontLeg2 = RFrontLeg2.addOrReplaceChild("LowerRFrontLeg2", CubeListBuilder.create(), PartPose.offsetAndRotation(3.349F, 6.471F, -0.5626F, -0.8912F, 0.0475F, 0.4333F));
+		PartDefinition LowerRFrontLeg2 = RFrontLeg2.addOrReplaceChild("LowerRFrontLeg2", CubeListBuilder.create(), PartPose.offsetAndRotation(3.349F, 6.471F, -0.5626F, -0.9903F, 0.0419F, -0.1344F));
 
 		PartDefinition cube_r251 = LowerRFrontLeg2.addOrReplaceChild("cube_r251", CubeListBuilder.create().texOffs(34, 47).addBox(-1.0F, -3.25F, -0.5F, 1.0F, 5.0F, 1.0F, new CubeDeformation(-0.2F))
 				.texOffs(0, 46).addBox(0.4F, -3.25F, -0.5F, 1.0F, 5.0F, 1.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(-0.3819F, 3.0225F, -0.8159F, -0.2182F, 0.0F, 0.0F));
 
 		PartDefinition cube_r252 = LowerRFrontLeg2.addOrReplaceChild("cube_r252", CubeListBuilder.create().texOffs(12, 48).addBox(-0.35F, -1.0F, -0.5F, 1.0F, 2.0F, 1.0F, new CubeDeformation(0.005F)), PartPose.offsetAndRotation(0.1513F, -0.7504F, 0.0206F, -0.2084F, -0.0651F, -0.2986F));
 
-		PartDefinition RFrontFoot2 = LowerRFrontLeg2.addOrReplaceChild("RFrontFoot2", CubeListBuilder.create().texOffs(0, 37).addBox(-1.7F, 0.0038F, -1.1071F, 3.0F, 1.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.1459F, 4.5825F, -1.191F, 0.8631F, 0.0214F, -0.0583F));
+		PartDefinition RFrontFoot2 = LowerRFrontLeg2.addOrReplaceChild("RFrontFoot2", CubeListBuilder.create().texOffs(0, 37).addBox(-1.7F, 0.0038F, -1.1071F, 3.0F, 1.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.1459F, 4.5825F, -1.191F, 0.1114F, 0.0082F, -0.019F));
 
-		PartDefinition RFrontFoot3 = RFrontFoot2.addOrReplaceChild("RFrontFoot3", CubeListBuilder.create().texOffs(0, 6).addBox(-1.7F, -0.5441F, -3.8211F, 3.0F, 1.0F, 4.0F, new CubeDeformation(-0.005F)), PartPose.offsetAndRotation(0.0F, 0.5649F, -0.9039F, -0.7854F, 0.0F, 0.0F));
+		PartDefinition RFrontFoot3 = RFrontFoot2.addOrReplaceChild("RFrontFoot3", CubeListBuilder.create().texOffs(0, 6).addBox(-1.7F, -0.5441F, -3.8211F, 3.0F, 1.0F, 4.0F, new CubeDeformation(-0.005F)), PartPose.offset(0.0F, 0.5649F, -0.9039F));
 
-		PartDefinition RFrontLeg3 = chest.addOrReplaceChild("RFrontLeg3", CubeListBuilder.create(), PartPose.offsetAndRotation(-3.1F, 3.2877F, -3.5977F, -0.3758F, -0.5383F, 0.4354F));
+		PartDefinition RFrontLeg3 = chest.addOrReplaceChild("RFrontLeg3", CubeListBuilder.create(), PartPose.offsetAndRotation(-3.1F, 3.2877F, -3.5977F, 0.8238F, 0.0681F, -0.1132F));
 
 		PartDefinition cube_r253 = RFrontLeg3.addOrReplaceChild("cube_r253", CubeListBuilder.create().texOffs(60, 27).mirror().addBox(-0.5F, -1.0F, -1.2F, 1.0F, 2.0F, 1.0F, new CubeDeformation(0.014F)).mirror(false), PartPose.offsetAndRotation(-2.5171F, 4.8978F, -0.174F, 1.4486F, 0.0F, 0.48F));
 
@@ -688,14 +688,14 @@ public class ProburnetiaFossilModel extends SkullModelBase {
 
 		PartDefinition cube_r260 = RFrontLeg3.addOrReplaceChild("cube_r260", CubeListBuilder.create().texOffs(39, 5).mirror().addBox(0.25F, -2.5F, 0.0F, 1.0F, 7.0F, 1.0F, new CubeDeformation(0.006F)).mirror(false), PartPose.offsetAndRotation(-1.5592F, 1.4334F, -0.5516F, -0.0349F, 0.0F, 0.48F));
 
-		PartDefinition LowerRFrontLeg3 = RFrontLeg3.addOrReplaceChild("LowerRFrontLeg3", CubeListBuilder.create(), PartPose.offsetAndRotation(-3.349F, 6.471F, -0.5626F, -0.554F, 0.1108F, -0.401F));
+		PartDefinition LowerRFrontLeg3 = RFrontLeg3.addOrReplaceChild("LowerRFrontLeg3", CubeListBuilder.create(), PartPose.offsetAndRotation(-3.349F, 6.471F, -0.5626F, -0.9903F, -0.0419F, 0.1344F));
 
 		PartDefinition cube_r261 = LowerRFrontLeg3.addOrReplaceChild("cube_r261", CubeListBuilder.create().texOffs(34, 47).mirror().addBox(0.0F, -3.25F, -0.5F, 1.0F, 5.0F, 1.0F, new CubeDeformation(-0.2F)).mirror(false)
 				.texOffs(0, 46).mirror().addBox(-1.4F, -3.25F, -0.5F, 1.0F, 5.0F, 1.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offsetAndRotation(0.3819F, 3.0225F, -0.8159F, -0.2182F, 0.0F, 0.0F));
 
 		PartDefinition cube_r262 = LowerRFrontLeg3.addOrReplaceChild("cube_r262", CubeListBuilder.create().texOffs(12, 48).mirror().addBox(-0.65F, -1.0F, -0.5F, 1.0F, 2.0F, 1.0F, new CubeDeformation(0.005F)).mirror(false), PartPose.offsetAndRotation(-0.1513F, -0.7504F, 0.0206F, -0.2084F, 0.0651F, 0.2986F));
 
-		PartDefinition RFrontFoot4 = LowerRFrontLeg3.addOrReplaceChild("RFrontFoot4", CubeListBuilder.create().texOffs(0, 37).mirror().addBox(-1.3F, 0.0038F, -1.1071F, 3.0F, 1.0F, 2.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offsetAndRotation(-0.1459F, 4.5825F, -1.191F, 0.514F, -0.0214F, 0.0583F));
+		PartDefinition RFrontFoot4 = LowerRFrontLeg3.addOrReplaceChild("RFrontFoot4", CubeListBuilder.create().texOffs(0, 37).mirror().addBox(-1.3F, 0.0038F, -1.1071F, 3.0F, 1.0F, 2.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offsetAndRotation(-0.1459F, 4.5825F, -1.191F, 0.3296F, -0.0082F, 0.019F));
 
 		PartDefinition RFrontFoot5 = RFrontFoot4.addOrReplaceChild("RFrontFoot5", CubeListBuilder.create().texOffs(0, 6).mirror().addBox(-1.3F, -0.5441F, -3.8211F, 3.0F, 1.0F, 4.0F, new CubeDeformation(-0.005F)).mirror(false), PartPose.offset(0.0F, 0.5649F, -0.9039F));
 
@@ -722,7 +722,7 @@ public class ProburnetiaFossilModel extends SkullModelBase {
 
 		PartDefinition cube_r272 = sacrum.addOrReplaceChild("cube_r272", CubeListBuilder.create().texOffs(60, 31).addBox(1.5F, -1.9404F, -0.0054F, 1.0F, 2.0F, 1.0F, new CubeDeformation(0.006F)), PartPose.offsetAndRotation(0.0F, 0.1F, 0.5F, -1.4748F, 0.0F, 0.0F));
 
-		PartDefinition cube_r273 = sacrum.addOrReplaceChild("cube_r273", CubeListBuilder.create().texOffs(15, 70).addBox(1.5F, -0.0817F, -0.0585F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.0F, -0.6F, 1.0F, -0.5585F, 0.0F, 0.0F));
+		PartDefinition cube_r273 = sacrum.addOrReplaceChild("cube_r273", CubeListBuilder.create().texOffs(15, 70).addBox(1.5F, -0.0818F, -0.0585F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.0F, -0.6F, 1.0F, -0.5585F, 0.0F, 0.0F));
 
 		PartDefinition cube_r274 = sacrum.addOrReplaceChild("cube_r274", CubeListBuilder.create().texOffs(0, 62).addBox(1.5F, -0.5831F, 0.9944F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.013F))
 				.texOffs(60, 61).addBox(1.5F, -0.5831F, 1.5944F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, 0.096F, 0.0F, 0.0F));
@@ -750,12 +750,12 @@ public class ProburnetiaFossilModel extends SkullModelBase {
 
 		PartDefinition cube_r284 = sacrum2.addOrReplaceChild("cube_r284", CubeListBuilder.create().texOffs(60, 31).mirror().addBox(-2.5F, -1.9404F, -0.0054F, 1.0F, 2.0F, 1.0F, new CubeDeformation(0.006F)).mirror(false), PartPose.offsetAndRotation(0.0F, 0.1F, 0.5F, -1.4748F, 0.0F, 0.0F));
 
-		PartDefinition cube_r285 = sacrum2.addOrReplaceChild("cube_r285", CubeListBuilder.create().texOffs(15, 70).mirror().addBox(-2.5F, -0.0817F, -0.0585F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offsetAndRotation(0.0F, -0.6F, 1.0F, -0.5585F, 0.0F, 0.0F));
+		PartDefinition cube_r285 = sacrum2.addOrReplaceChild("cube_r285", CubeListBuilder.create().texOffs(15, 70).mirror().addBox(-2.5F, -0.0818F, -0.0585F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offsetAndRotation(0.0F, -0.6F, 1.0F, -0.5585F, 0.0F, 0.0F));
 
 		PartDefinition cube_r286 = sacrum2.addOrReplaceChild("cube_r286", CubeListBuilder.create().texOffs(0, 62).mirror().addBox(-2.5F, -0.5831F, 0.9944F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.013F)).mirror(false)
 				.texOffs(60, 61).mirror().addBox(-2.5F, -0.5831F, 1.5944F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, 0.096F, 0.0F, 0.0F));
 
-		PartDefinition RBackLeg2 = main.addOrReplaceChild("RBackLeg2", CubeListBuilder.create(), PartPose.offsetAndRotation(1.1495F, 1.707F, 10.0904F, -0.7476F, -0.2351F, -0.3175F));
+		PartDefinition RBackLeg2 = main.addOrReplaceChild("RBackLeg2", CubeListBuilder.create(), PartPose.offsetAndRotation(1.1495F, 1.707F, 10.0904F, -1.1579F, -0.3702F, -0.2097F));
 
 		PartDefinition cube_r287 = RBackLeg2.addOrReplaceChild("cube_r287", CubeListBuilder.create().texOffs(27, 61).addBox(-0.5F, 0.4055F, 0.2603F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.0F))
 				.texOffs(22, 61).addBox(-0.5F, 0.4055F, -0.0397F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.006F))
@@ -771,7 +771,7 @@ public class ProburnetiaFossilModel extends SkullModelBase {
 
 		PartDefinition cube_r291 = RBackLeg2.addOrReplaceChild("cube_r291", CubeListBuilder.create().texOffs(39, 47).addBox(-0.5F, -1.3F, -0.375F, 1.0F, 4.0F, 1.0F, new CubeDeformation(0.006F)), PartPose.offsetAndRotation(0.6229F, 3.2167F, -0.5616F, -0.0305F, 0.0F, 0.0F));
 
-		PartDefinition LowerRBackLeg2 = RBackLeg2.addOrReplaceChild("LowerRBackLeg2", CubeListBuilder.create(), PartPose.offsetAndRotation(0.7058F, 7.3429F, -0.3685F, 1.0081F, 0.0072F, 0.3379F));
+		PartDefinition LowerRBackLeg2 = RBackLeg2.addOrReplaceChild("LowerRBackLeg2", CubeListBuilder.create(), PartPose.offsetAndRotation(0.7058F, 7.3429F, -0.3685F, 1.8623F, -0.1154F, 0.1229F));
 
 		PartDefinition cube_r292 = LowerRBackLeg2.addOrReplaceChild("cube_r292", CubeListBuilder.create().texOffs(60, 39).addBox(-0.4921F, 1.503F, -0.0439F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.2F))
 				.texOffs(0, 53).addBox(-0.4921F, -0.897F, -0.0439F, 1.0F, 3.0F, 1.0F, new CubeDeformation(-0.197F)), PartPose.offsetAndRotation(-0.1107F, 3.2952F, 0.1598F, -0.4478F, 1.4845F, -0.3452F));
@@ -780,11 +780,11 @@ public class ProburnetiaFossilModel extends SkullModelBase {
 
 		PartDefinition cube_r294 = LowerRBackLeg2.addOrReplaceChild("cube_r294", CubeListBuilder.create().texOffs(29, 42).addBox(-0.4933F, -3.3317F, -1.1093F, 1.0F, 6.0F, 1.0F, new CubeDeformation(-0.1F)), PartPose.offsetAndRotation(-0.1107F, 3.2952F, 0.1598F, -0.2733F, 1.4845F, -0.3016F));
 
-		PartDefinition RBackFoot2 = LowerRBackLeg2.addOrReplaceChild("RBackFoot2", CubeListBuilder.create().texOffs(0, 12).addBox(-2.65F, 0.0F, -2.4F, 4.0F, 1.0F, 3.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.3426F, 5.5429F, 0.3447F, 0.0642F, -0.0199F, 0.0356F));
+		PartDefinition RBackFoot2 = LowerRBackLeg2.addOrReplaceChild("RBackFoot2", CubeListBuilder.create().texOffs(0, 12).addBox(-2.65F, 0.0F, -2.4F, 4.0F, 1.0F, 3.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.3426F, 5.5429F, 0.3447F, -0.3701F, 0.0437F, 0.1988F));
 
-		PartDefinition RBackFoot3 = RBackFoot2.addOrReplaceChild("RBackFoot3", CubeListBuilder.create().texOffs(0, 0).addBox(-2.65F, -0.5F, -4.0F, 4.0F, 1.0F, 4.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.0F, 0.5F, -2.4F, -0.3491F, 0.0F, 0.0F));
+		PartDefinition RBackFoot3 = RBackFoot2.addOrReplaceChild("RBackFoot3", CubeListBuilder.create().texOffs(0, 0).addBox(-2.65F, -0.5F, -4.0F, 4.0F, 1.0F, 4.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 0.5F, -2.4F));
 
-		PartDefinition RBackLeg3 = main.addOrReplaceChild("RBackLeg3", CubeListBuilder.create(), PartPose.offsetAndRotation(-2.1495F, 1.707F, 10.0904F, 0.1687F, 0.2351F, 0.3175F));
+		PartDefinition RBackLeg3 = main.addOrReplaceChild("RBackLeg3", CubeListBuilder.create(), PartPose.offsetAndRotation(-2.1495F, 1.707F, 10.0904F, -1.2087F, 0.674F, 0.163F));
 
 		PartDefinition cube_r295 = RBackLeg3.addOrReplaceChild("cube_r295", CubeListBuilder.create().texOffs(27, 61).mirror().addBox(-0.5F, 0.4055F, 0.2603F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.0F)).mirror(false)
 				.texOffs(22, 61).mirror().addBox(-0.5F, 0.4055F, -0.0397F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.006F)).mirror(false)
@@ -800,7 +800,7 @@ public class ProburnetiaFossilModel extends SkullModelBase {
 
 		PartDefinition cube_r299 = RBackLeg3.addOrReplaceChild("cube_r299", CubeListBuilder.create().texOffs(39, 47).mirror().addBox(-0.5F, -1.3F, -0.375F, 1.0F, 4.0F, 1.0F, new CubeDeformation(0.006F)).mirror(false), PartPose.offsetAndRotation(-0.6229F, 3.2167F, -0.5616F, -0.0305F, 0.0F, 0.0F));
 
-		PartDefinition LowerRBackLeg3 = RBackLeg3.addOrReplaceChild("LowerRBackLeg3", CubeListBuilder.create(), PartPose.offsetAndRotation(-0.7058F, 7.3429F, -0.3685F, 1.0081F, -0.0072F, -0.3379F));
+		PartDefinition LowerRBackLeg3 = RBackLeg3.addOrReplaceChild("LowerRBackLeg3", CubeListBuilder.create(), PartPose.offsetAndRotation(-0.7058F, 7.3429F, -0.3685F, 2.5175F, -0.1354F, -0.198F));
 
 		PartDefinition cube_r300 = LowerRBackLeg3.addOrReplaceChild("cube_r300", CubeListBuilder.create().texOffs(60, 39).mirror().addBox(-0.5079F, 1.503F, -0.0439F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.2F)).mirror(false)
 				.texOffs(0, 53).mirror().addBox(-0.5079F, -0.897F, -0.0439F, 1.0F, 3.0F, 1.0F, new CubeDeformation(-0.197F)).mirror(false), PartPose.offsetAndRotation(0.1107F, 3.2952F, 0.1598F, -0.4478F, -1.4845F, 0.3452F));
@@ -809,11 +809,11 @@ public class ProburnetiaFossilModel extends SkullModelBase {
 
 		PartDefinition cube_r302 = LowerRBackLeg3.addOrReplaceChild("cube_r302", CubeListBuilder.create().texOffs(29, 42).mirror().addBox(-0.5067F, -3.3317F, -1.1093F, 1.0F, 6.0F, 1.0F, new CubeDeformation(-0.1F)).mirror(false), PartPose.offsetAndRotation(0.1107F, 3.2952F, 0.1598F, -0.2733F, -1.4845F, 0.3016F));
 
-		PartDefinition RBackFoot4 = LowerRBackLeg3.addOrReplaceChild("RBackFoot4", CubeListBuilder.create().texOffs(0, 12).mirror().addBox(-1.35F, 0.0F, -2.4F, 4.0F, 1.0F, 3.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offsetAndRotation(-0.3426F, 5.5429F, 0.3447F, -0.5466F, 0.0199F, -0.0356F));
+		PartDefinition RBackFoot4 = LowerRBackLeg3.addOrReplaceChild("RBackFoot4", CubeListBuilder.create().texOffs(0, 12).mirror().addBox(-1.35F, 0.0F, -2.4F, 4.0F, 1.0F, 3.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offsetAndRotation(-0.3426F, 5.5429F, 0.3447F, -1.0702F, 0.0197F, -0.0361F));
 
-		PartDefinition RBackFoot5 = RBackFoot4.addOrReplaceChild("RBackFoot5", CubeListBuilder.create().texOffs(0, 0).mirror().addBox(-1.35F, -0.5F, -4.0F, 4.0F, 1.0F, 4.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offsetAndRotation(0.0F, 0.5F, -2.4F, -0.5236F, 0.0F, 0.0F));
+		PartDefinition RBackFoot5 = RBackFoot4.addOrReplaceChild("RBackFoot5", CubeListBuilder.create().texOffs(0, 0).mirror().addBox(-1.35F, -0.5F, -4.0F, 4.0F, 1.0F, 4.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offset(0.0F, 0.5F, -2.4F));
 
-		PartDefinition Tail = main.addOrReplaceChild("Tail", CubeListBuilder.create(), PartPose.offsetAndRotation(-0.5F, 1.2763F, 11.7253F, -0.2131F, -0.2134F, 0.0458F));
+		PartDefinition Tail = main.addOrReplaceChild("Tail", CubeListBuilder.create(), PartPose.offsetAndRotation(-0.5F, 1.2763F, 11.7253F, -0.2082F, 0.0F, 0.0F));
 
 		PartDefinition cube_r303 = Tail.addOrReplaceChild("cube_r303", CubeListBuilder.create().texOffs(70, 60).addBox(0.0F, -1.1117F, -0.0829F, 0.0F, 2.0F, 1.0F, new CubeDeformation(0.002F)), PartPose.offsetAndRotation(0.0F, -0.1801F, 3.0393F, -0.1571F, 0.0F, 0.0F));
 
@@ -825,7 +825,7 @@ public class ProburnetiaFossilModel extends SkullModelBase {
 
 		PartDefinition cube_r307 = Tail.addOrReplaceChild("cube_r307", CubeListBuilder.create().texOffs(26, 26).addBox(-0.5F, -0.5F, 3.9F, 1.0F, 1.0F, 4.0F, new CubeDeformation(0.002F)), PartPose.offsetAndRotation(0.0F, -0.1801F, -3.9607F, -0.0698F, 0.0F, 0.0F));
 
-		PartDefinition Tail2 = Tail.addOrReplaceChild("Tail2", CubeListBuilder.create().texOffs(24, 32).addBox(-1.0F, -0.5412F, 0.1096F, 1.0F, 1.0F, 4.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.5F, 0.3949F, 3.766F, -0.1124F, -0.1735F, 0.0195F));
+		PartDefinition Tail2 = Tail.addOrReplaceChild("Tail2", CubeListBuilder.create().texOffs(24, 32).addBox(-1.0F, -0.5412F, 0.1096F, 1.0F, 1.0F, 4.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.5F, 0.3949F, 3.766F, 0.0202F, 0.0F, 0.0F));
 
 		PartDefinition cube_r308 = Tail2.addOrReplaceChild("cube_r308", CubeListBuilder.create().texOffs(72, 69).addBox(0.0F, -0.75F, 0.0F, 0.0F, 1.0F, 1.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(-0.5F, -0.4912F, 3.1096F, -0.0873F, 0.0F, 0.0F));
 
@@ -836,7 +836,7 @@ public class ProburnetiaFossilModel extends SkullModelBase {
 		PartDefinition cube_r311 = Tail2.addOrReplaceChild("cube_r311", CubeListBuilder.create().texOffs(44, 5).addBox(-0.1F, -4.75F, 0.0F, 1.0F, 0.0F, 3.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(-0.1F, 4.7088F, 1.1096F, 0.0F, -0.0524F, 0.0F));
 
 		PartDefinition Tail3 = Tail2.addOrReplaceChild("Tail3", CubeListBuilder.create().texOffs(25, 47).addBox(0.0F, -1.1476F, 0.8727F, 0.0F, 1.0F, 1.0F, new CubeDeformation(0.002F))
-				.texOffs(28, 6).addBox(-0.5F, -0.5476F, -0.1273F, 1.0F, 1.0F, 4.0F, new CubeDeformation(0.002F)), PartPose.offsetAndRotation(-0.5F, 0.0447F, 4.1516F, -0.0836F, -0.2609F, 0.0216F));
+				.texOffs(28, 6).addBox(-0.5F, -0.5476F, -0.1273F, 1.0F, 1.0F, 4.0F, new CubeDeformation(0.002F)), PartPose.offsetAndRotation(-0.5F, 0.0447F, 4.1516F, 0.1374F, 0.0F, 0.0F));
 
 		PartDefinition cube_r312 = Tail3.addOrReplaceChild("cube_r312", CubeListBuilder.create().texOffs(9, 44).mirror().addBox(-0.6F, 0.0F, -0.1F, 1.0F, 0.0F, 3.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offsetAndRotation(-0.4F, -0.0476F, 0.9727F, 0.0F, 0.0698F, 0.0F));
 
@@ -846,13 +846,13 @@ public class ProburnetiaFossilModel extends SkullModelBase {
 
 		PartDefinition Tail4 = Tail3.addOrReplaceChild("Tail4", CubeListBuilder.create().texOffs(17, 0).addBox(-0.5F, -0.483F, -0.1206F, 1.0F, 1.0F, 4.0F, new CubeDeformation(0.0F))
 				.texOffs(0, 73).addBox(0.0F, -0.883F, 0.8794F, 0.0F, 1.0F, 1.0F, new CubeDeformation(0.0F))
-				.texOffs(3, 73).addBox(0.0F, -0.783F, 2.8794F, 0.0F, 1.0F, 1.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.0F, -0.056F, 3.8517F, -0.1395F, -0.2161F, 0.0301F));
+				.texOffs(3, 73).addBox(0.0F, -0.783F, 2.8794F, 0.0F, 1.0F, 1.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.0F, -0.056F, 3.8517F, 0.2171F, 0.1667F, 0.0521F));
 
-		PartDefinition Tail5 = Tail4.addOrReplaceChild("Tail5", CubeListBuilder.create().texOffs(26, 20).addBox(-0.5F, -0.4571F, -0.0901F, 1.0F, 1.0F, 4.0F, new CubeDeformation(-0.01F)), PartPose.offsetAndRotation(0.0F, -0.0314F, 3.8504F, 0.0227F, -0.3054F, -0.0068F));
+		PartDefinition Tail5 = Tail4.addOrReplaceChild("Tail5", CubeListBuilder.create().texOffs(26, 20).addBox(-0.5F, -0.4571F, -0.0901F, 1.0F, 1.0F, 4.0F, new CubeDeformation(-0.01F)), PartPose.offsetAndRotation(0.0F, -0.0314F, 3.8504F, 0.0243F, 0.2169F, 0.0241F));
 
-		PartDefinition Tail6 = Tail5.addOrReplaceChild("Tail6", CubeListBuilder.create().texOffs(11, 33).addBox(-0.5F, -0.4571F, -0.0901F, 1.0F, 1.0F, 4.0F, new CubeDeformation(-0.01F)), PartPose.offsetAndRotation(0.0F, -0.0131F, 3.9447F, 0.1116F, 0.2169F, 0.0241F));
+		PartDefinition Tail6 = Tail5.addOrReplaceChild("Tail6", CubeListBuilder.create().texOffs(11, 33).addBox(-0.5F, -0.4571F, -0.0901F, 1.0F, 1.0F, 4.0F, new CubeDeformation(-0.01F)), PartPose.offsetAndRotation(0.0F, -0.0131F, 3.9447F, -0.1023F, 0.3469F, 0.0396F));
 
-		PartDefinition Tail7 = Tail6.addOrReplaceChild("Tail7", CubeListBuilder.create().texOffs(28, 0).addBox(-0.5F, -0.4571F, -0.0901F, 1.0F, 1.0F, 4.0F, new CubeDeformation(-0.01F)), PartPose.offsetAndRotation(0.0F, 0.0011F, 3.8982F, 0.2159F, 0.4274F, 0.0907F));
+		PartDefinition Tail7 = Tail6.addOrReplaceChild("Tail7", CubeListBuilder.create().texOffs(28, 0).addBox(-0.5F, -0.4571F, -0.0901F, 1.0F, 1.0F, 4.0F, new CubeDeformation(-0.01F)), PartPose.offsetAndRotation(0.0F, 0.0011F, 3.8982F, 0.0219F, 0.1309F, 0.0029F));
 
 		return LayerDefinition.create(meshdefinition, 76, 76);
 	}

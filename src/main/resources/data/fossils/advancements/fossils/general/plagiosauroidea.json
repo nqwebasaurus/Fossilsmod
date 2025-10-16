@@ -1,0 +1,24 @@
+{
+  "parent": "fossils:fossils/general/trematosauria",
+  "criteria": {
+    "finish_plagiosauroidea": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "description": {
+      "translate": "advancements.fossils.plagiosauroidea.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:advancement_line"
+    },
+    "show_toast": false,
+    "title": {
+      "translate": "advancements.fossils.plagiosauroidea.title"
+    }
+  },
+  "sends_telemetry_event": true
+}

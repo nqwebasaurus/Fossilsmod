@@ -28,6 +28,16 @@
           "type": "minecraft:item",
           "name": "fossils:dunkleosteus_fossil",
           "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:ichthyostega_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:parmastega_fossil",
+          "weight": 2
         }
       ],
       "rolls": 1

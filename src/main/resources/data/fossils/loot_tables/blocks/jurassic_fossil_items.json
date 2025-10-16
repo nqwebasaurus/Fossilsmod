@@ -343,6 +343,16 @@
           "type": "minecraft:item",
           "name": "fossils:spicomellus_fossil",
           "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:yi_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:gigantspinosaurus_fossil",
+          "weight": 2
         }
       ],
       "rolls": 1

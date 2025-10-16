@@ -1,0 +1,54 @@
+{
+  "parent": "fossils:fossils/general/pareiasauria",
+  "criteria": {
+    "finish_bunostegos": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:bunostegos_fossil"
+                ],
+                "state": {
+                  "fossil_level": "9"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:bunostegos_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.bunostegos.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:bunostegos_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.bunostegos.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_bunostegos"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

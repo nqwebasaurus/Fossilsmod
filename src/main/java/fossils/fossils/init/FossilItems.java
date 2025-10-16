@@ -122,6 +122,15 @@ public class FossilItems {
 	public static final RegistryObject<FossilItem> PROGANOCHELYS = SKELETON_REGISTER.register("proganochelys_fossil", () -> new FossilItem(FossilBlocks.PROGANOCHELYS.get(), new Item.Properties().rarity(FossilRarities.FIVE_PIECE_FOSSIL)));
 	public static final RegistryObject<FossilItem> HYPERODAPEDON = SKELETON_REGISTER.register("hyperodapedon_fossil", () -> new FossilItem(FossilBlocks.HYPERODAPEDON.get(), new Item.Properties().rarity(FossilRarities.FIVE_PIECE_FOSSIL)));
 	public static final RegistryObject<FossilItem> HUPEHSUCHUS = SKELETON_REGISTER.register("hupehsuchus_fossil", () -> new FossilItem(FossilBlocks.HUPEHSUCHUS.get(), new Item.Properties().rarity(FossilRarities.FIVE_PIECE_FOSSIL)));
+	public static final RegistryObject<FossilItem> GERROTHORAX = SKELETON_REGISTER.register("gerrothorax_fossil", () -> new FossilItem(FossilBlocks.GERROTHORAX.get(), new Item.Properties().rarity(FossilRarities.FIVE_PIECE_FOSSIL)));
+	public static final RegistryObject<FossilItem> ICHTHYOSTEGA = SKELETON_REGISTER.register("ichthyostega_fossil", () -> new FossilItem(FossilBlocks.ICHTHYOSTEGA.get(), new Item.Properties().rarity(FossilRarities.FIVE_PIECE_FOSSIL)));
+	public static final RegistryObject<FossilItem> TETRACERATOPS = SKELETON_REGISTER.register("tetraceratops_fossil", () -> new FossilItem(FossilBlocks.TETRACERATOPS.get(), new Item.Properties().rarity(FossilRarities.FIVE_PIECE_FOSSIL)));
+	public static final RegistryObject<FossilItem> LABIDOSAURUS = SKELETON_REGISTER.register("labidosaurus_fossil", () -> new FossilItem(FossilBlocks.LABIDOSAURUS.get(), new Item.Properties().rarity(FossilRarities.FIVE_PIECE_FOSSIL)));
+	public static final RegistryObject<FossilItem> TANYSTROPHEUSLONGOBARDICUS = SKELETON_REGISTER.register("tanystropheuslongobardicus_fossil", () -> new FossilItem(FossilBlocks.TANYSTROPHEUSLONGOBARDICUS.get(), new Item.Properties().rarity(FossilRarities.FIVE_PIECE_FOSSIL)));
+	public static final RegistryObject<FossilItem> LAGERPETON = SKELETON_REGISTER.register("lagerpeton_fossil", () -> new FossilItem(FossilBlocks.LAGERPETON.get(), new Item.Properties().rarity(FossilRarities.FIVE_PIECE_FOSSIL)));
+	public static final RegistryObject<FossilItem> HIPPOSAURUS = SKELETON_REGISTER.register("hipposaurus_fossil", () -> new FossilItem(FossilBlocks.HIPPOSAURUS.get(), new Item.Properties().rarity(FossilRarities.FIVE_PIECE_FOSSIL)));
+	public static final RegistryObject<FossilItem> ISENGOPS = SKELETON_REGISTER.register("isengops_fossil", () -> new FossilItem(FossilBlocks.ISENGOPS.get(), new Item.Properties().rarity(FossilRarities.FIVE_PIECE_FOSSIL)));
+	public static final RegistryObject<FossilItem> YI = SKELETON_REGISTER.register("yi_fossil", () -> new FossilItem(FossilBlocks.YI.get(), new Item.Properties().rarity(FossilRarities.FIVE_PIECE_FOSSIL)));
 
 	//Ten
 	public static final RegistryObject<FossilItem> KENTROSAURUS = SKELETON_REGISTER.register("kentrosaurus_fossil", () -> new FossilItem(FossilBlocks.KENTROSAURUS.get(), new Item.Properties().rarity(FossilRarities.TEN_PIECE_FOSSIL)));
@@ -241,6 +250,8 @@ public class FossilItems {
 	public static final RegistryObject<FossilItem> MEGALOCEPHALUS = SKELETON_REGISTER.register("megalocephalus_fossil", () -> new FossilItem(FossilBlocks.MEGALOCEPHALUS.get(), new Item.Properties().rarity(FossilRarities.TEN_PIECE_FOSSIL)));
 	public static final RegistryObject<FossilItem> PEZOSIREN = SKELETON_REGISTER.register("pezosiren_fossil", () -> new FossilItem(FossilBlocks.PEZOSIREN.get(), new Item.Properties().rarity(FossilRarities.TEN_PIECE_FOSSIL)));
 	public static final RegistryObject<FossilItem> SHRINGASAURUS = SKELETON_REGISTER.register("shringasaurus_fossil", () -> new FossilItem(FossilBlocks.SHRINGASAURUS.get(), new Item.Properties().rarity(FossilRarities.TEN_PIECE_FOSSIL)));
+	public static final RegistryObject<FossilItem> BUNOSTEGOS = SKELETON_REGISTER.register("bunostegos_fossil", () -> new FossilItem(FossilBlocks.BUNOSTEGOS.get(), new Item.Properties().rarity(FossilRarities.TEN_PIECE_FOSSIL)));
+	public static final RegistryObject<FossilItem> GIGANTSPINOSAURUS = SKELETON_REGISTER.register("gigantspinosaurus_fossil", () -> new FossilItem(FossilBlocks.GIGANTSPINOSAURUS.get(), new Item.Properties().rarity(FossilRarities.TEN_PIECE_FOSSIL)));
 
 
 	//Fifteen
@@ -396,6 +407,7 @@ public class FossilItems {
 	public static final RegistryObject<FossilItem> CORYTHOSAURUSCASUARIUS = SKELETON_REGISTER.register("corythosauruscasuarius_fossil", () -> new FossilItem(FossilBlocks.CORYTHOSAURUSCASUARIUS.get(), new Item.Properties().rarity(FossilRarities.TWENTY_PIECE_FOSSIL)));
 	public static final RegistryObject<FossilItem> BALAENA = SKELETON_REGISTER.register("balaena_fossil", () -> new FossilItem(FossilBlocks.BALAENA.get(), new Item.Properties().rarity(FossilRarities.TWENTY_PIECE_FOSSIL)));
 	public static final RegistryObject<FossilItem> SILLOSUCHUS = SKELETON_REGISTER.register("sillosuchus_fossil", () -> new FossilItem(FossilBlocks.SILLOSUCHUS.get(), new Item.Properties().rarity(FossilRarities.TWENTY_PIECE_FOSSIL)));
+	public static final RegistryObject<FossilItem> POSTOSUCHUS = SKELETON_REGISTER.register("postosuchus_fossil", () -> new FossilItem(FossilBlocks.POSTOSUCHUS.get(), new Item.Properties().rarity(FossilRarities.TWENTY_PIECE_FOSSIL)));
 		
 	public static final RegistryObject<FossilItem> PRECAMBRIAN_FOSSIL_ORE = BLOCK_REGISTER.register("precambrian_fossil_ore", () -> new FossilItem(FossilBlocks.PRECAMBRIAN_FOSSIL_ORE.get(), new Item.Properties()));
 	public static final RegistryObject<FossilItem> CAMBRIAN_FOSSIL_ORE = BLOCK_REGISTER.register("cambrian_fossil_ore", () -> new FossilItem(FossilBlocks.CAMBRIAN_FOSSIL_ORE.get(), new Item.Properties()));

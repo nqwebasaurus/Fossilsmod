@@ -278,6 +278,26 @@
           "type": "minecraft:item",
           "name": "fossils:shringasaurus_fossil",
           "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:gerrothorax_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:postosuchus_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:tanystropheuslongobardicus_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:lagerpeton_fossil",
+          "weight": 2
         }
       ],
       "rolls": 1

@@ -1,0 +1,54 @@
+{
+  "parent": "fossils:fossils/general/pterosauromorpha",
+  "criteria": {
+    "finish_lagerpeton": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:lagerpeton_fossil"
+                ],
+                "state": {
+                  "fossil_level": "4"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:lagerpeton_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.lagerpeton.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:lagerpeton_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.lagerpeton.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_lagerpeton"
+    ]
+  ],
+  "sends_telemetry_event": true
+}
