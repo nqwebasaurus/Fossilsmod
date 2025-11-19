@@ -263,6 +263,16 @@
           "type": "minecraft:item",
           "name": "fossils:corythosauruscasuarius_fossil",
           "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:zanabazar_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:nanotyrannus_fossil",
+          "weight": 2
         }
       ],
       "rolls": 1

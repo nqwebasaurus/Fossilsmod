@@ -1,0 +1,54 @@
+{
+  "parent": "fossils:fossils/general/plagiosauroidea",
+  "criteria": {
+    "finish_laidleria": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:laidleria_fossil"
+                ],
+                "state": {
+                  "fossil_level": "4"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:laidleria_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.laidleria.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:laidleria_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.laidleria.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_laidleria"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

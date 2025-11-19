@@ -1,0 +1,54 @@
+{
+  "parent": "fossils:fossils/general/aphanosauria",
+  "criteria": {
+    "finish_teleocrater": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:teleocrater_fossil"
+                ],
+                "state": {
+                  "fossil_level": "9"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:teleocrater_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.teleocrater.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:teleocrater_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.teleocrater.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_teleocrater"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

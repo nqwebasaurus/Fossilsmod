@@ -1,0 +1,57 @@
+{
+  "parent": "fossils:fossils/general/gorgonopsia",
+  "criteria": {
+    "finish_rubidgea": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:rubidgea_fossil"
+                ],
+                "state": {
+                  "fossil_level": "19"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:rubidgea_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.rubidgea.description"
+    },
+    "frame": "challenge",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:rubidgea_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.rubidgea.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_rubidgea"
+    ]
+  ],
+  "rewards": {
+    "experience": 500
+  },
+  "sends_telemetry_event": true
+}

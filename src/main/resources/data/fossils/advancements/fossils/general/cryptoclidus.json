@@ -1,0 +1,57 @@
+{
+  "parent": "fossils:fossils/general/plesiosauroidea",
+  "criteria": {
+    "finish_cryptoclidus": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:cryptoclidus_fossil"
+                ],
+                "state": {
+                  "fossil_level": "9"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:cryptoclidus_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.cryptoclidus.description"
+    },
+    "frame": "goal",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:cryptoclidus_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.cryptoclidus.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_cryptoclidus"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  },
+  "sends_telemetry_event": true
+}

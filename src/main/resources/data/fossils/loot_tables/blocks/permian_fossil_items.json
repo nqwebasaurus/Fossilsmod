@@ -213,6 +213,16 @@
           "type": "minecraft:item",
           "name": "fossils:hipposaurus_fossil",
           "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:rubidgea_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:cacops_fossil",
+          "weight": 2
         }
       ],
       "rolls": 1

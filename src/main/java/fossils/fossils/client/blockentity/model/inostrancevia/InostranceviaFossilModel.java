@@ -1144,24 +1144,28 @@ public class InostranceviaFossilModel extends SkullModelBase {
 
 		PartDefinition upperjaw4_r4 = upperjaw1.addOrReplaceChild("upperjaw4_r4", CubeListBuilder.create().texOffs(77, 21).addBox(-1.5F, 0.0466F, -0.9583F, 1.0F, 3.0F, 1.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(1.0F, 0.6F, -4.0F, 0.3142F, 0.0F, 0.0F));
 
+		PartDefinition upperjaw5_r5 = upperjaw1.addOrReplaceChild("upperjaw5_r5", CubeListBuilder.create().texOffs(89, 27).mirror().addBox(0.025F, 0.0053F, -0.9764F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offsetAndRotation(-0.675F, 0.4F, -2.95F, 0.2293F, -0.1445F, -0.0336F));
+
+		PartDefinition upperjaw3_r2 = upperjaw1.addOrReplaceChild("upperjaw3_r2", CubeListBuilder.create().texOffs(69, 46).mirror().addBox(0.0F, 0.0F, -2.0F, 1.0F, 1.0F, 2.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offsetAndRotation(-1.0F, 0.1F, -1.0F, 0.1595F, -0.1724F, -0.0276F));
+
 		PartDefinition upperjaw4_r5 = upperjaw1.addOrReplaceChild("upperjaw4_r5", CubeListBuilder.create().texOffs(89, 27).addBox(-1.025F, 0.0053F, -0.9764F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.675F, 0.4F, -2.95F, 0.2293F, 0.1445F, 0.0336F));
 
-		PartDefinition upperjaw3_r2 = upperjaw1.addOrReplaceChild("upperjaw3_r2", CubeListBuilder.create().texOffs(89, 0).addBox(-1.0F, 0.0166F, -0.9777F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.009F)), PartPose.offsetAndRotation(0.5F, 0.4F, -3.0F, 0.2269F, 0.0F, 0.0F));
+		PartDefinition upperjaw3_r3 = upperjaw1.addOrReplaceChild("upperjaw3_r3", CubeListBuilder.create().texOffs(89, 0).addBox(-1.0F, 0.0166F, -0.9777F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.009F)), PartPose.offsetAndRotation(0.5F, 0.4F, -3.0F, 0.2269F, 0.0F, 0.0F));
 
 		PartDefinition upperjaw4_r6 = upperjaw1.addOrReplaceChild("upperjaw4_r6", CubeListBuilder.create().texOffs(54, 25).addBox(-2.5F, 0.0872F, -1.8205F, 2.0F, 2.0F, 2.0F, new CubeDeformation(0.013F)), PartPose.offsetAndRotation(1.5F, 1.1F, -4.0F, 0.6196F, 0.0F, 0.0F));
 
-		PartDefinition upperjaw3_r3 = upperjaw1.addOrReplaceChild("upperjaw3_r3", CubeListBuilder.create().texOffs(11, 46).addBox(-1.0F, -1.9244F, -2.8659F, 1.0F, 2.0F, 3.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(1.5F, 2.3F, -0.7F, 0.2269F, 0.1571F, 0.0F));
+		PartDefinition upperjaw3_r4 = upperjaw1.addOrReplaceChild("upperjaw3_r4", CubeListBuilder.create().texOffs(11, 46).addBox(-1.0F, -1.9244F, -2.8659F, 1.0F, 2.0F, 3.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(1.5F, 2.3F, -0.7F, 0.2269F, 0.1571F, 0.0F));
 
-		PartDefinition upperjaw3_r4 = upperjaw1.addOrReplaceChild("upperjaw3_r4", CubeListBuilder.create().texOffs(69, 50).addBox(-1.5F, 0.0F, -2.0F, 1.0F, 1.0F, 2.0F, new CubeDeformation(0.007F)), PartPose.offsetAndRotation(1.0F, 0.1F, -1.0F, 0.1571F, 0.0F, 0.0F));
+		PartDefinition upperjaw3_r5 = upperjaw1.addOrReplaceChild("upperjaw3_r5", CubeListBuilder.create().texOffs(69, 50).addBox(-1.5F, 0.0F, -2.0F, 1.0F, 1.0F, 2.0F, new CubeDeformation(0.007F)), PartPose.offsetAndRotation(1.0F, 0.1F, -1.0F, 0.1571F, 0.0F, 0.0F));
 
 		PartDefinition upperjaw2_r2 = upperjaw1.addOrReplaceChild("upperjaw2_r2", CubeListBuilder.create().texOffs(69, 46).addBox(-1.0F, 0.0F, -2.0F, 1.0F, 1.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(1.0F, 0.1F, -1.0F, 0.1595F, 0.1724F, 0.0276F));
 
 		PartDefinition upperjaw2 = upperjaw1.addOrReplaceChild("upperjaw2", CubeListBuilder.create(), PartPose.offsetAndRotation(0.0F, 4.0F, -6.0F, -0.1047F, 0.0F, 0.0F));
 
-		PartDefinition upperjaw5_r5 = upperjaw2.addOrReplaceChild("upperjaw5_r5", CubeListBuilder.create().texOffs(18, 59).addBox(-2.0F, -1.5243F, 0.0173F, 2.0F, 1.0F, 2.0F, new CubeDeformation(0.0F))
+		PartDefinition upperjaw5_r6 = upperjaw2.addOrReplaceChild("upperjaw5_r6", CubeListBuilder.create().texOffs(18, 59).addBox(-2.0F, -1.5243F, 0.0173F, 2.0F, 1.0F, 2.0F, new CubeDeformation(0.0F))
 				.texOffs(78, 66).addBox(-2.0F, -1.0243F, 0.0173F, 2.0F, 1.0F, 1.0F, new CubeDeformation(0.006F)), PartPose.offsetAndRotation(1.0F, -0.2469F, 0.1003F, 0.2618F, 0.0F, 0.0F));
 
-		PartDefinition upperjaw3_r5 = upperjaw2.addOrReplaceChild("upperjaw3_r5", CubeListBuilder.create().texOffs(78, 52).addBox(-2.0F, 0.25F, -0.875F, 2.0F, 1.0F, 1.0F, new CubeDeformation(0.008F)), PartPose.offsetAndRotation(1.0F, -1.3469F, 1.2003F, -0.1745F, 0.0F, 0.0F));
+		PartDefinition upperjaw3_r6 = upperjaw2.addOrReplaceChild("upperjaw3_r6", CubeListBuilder.create().texOffs(78, 52).addBox(-2.0F, 0.25F, -0.875F, 2.0F, 1.0F, 1.0F, new CubeDeformation(0.008F)), PartPose.offsetAndRotation(1.0F, -1.3469F, 1.2003F, -0.1745F, 0.0F, 0.0F));
 
 		PartDefinition upperjaw2_r3 = upperjaw2.addOrReplaceChild("upperjaw2_r3", CubeListBuilder.create().texOffs(82, 9).addBox(-0.5F, -0.5F, -0.5F, 1.0F, 2.0F, 1.0F, new CubeDeformation(0.007F)), PartPose.offsetAndRotation(0.0F, -2.5F, 0.6F, 0.48F, 0.0F, 0.0F));
 

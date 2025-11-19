@@ -972,6 +972,38 @@ public class FossilSkeletonFivePieceBlock extends BaseEntityBlock implements Sim
 				stack.shrink(1);
 			}
 			return InteractionResult.sidedSuccess(world.isClientSide);
+		}  else if (item == FossilItems.LAIDLERIA.get() && state.getValue(FOSSIL_LEVEL) != 4 && type == Types.LAIDLERIA) {
+			fossilLevel = state.getValue(FOSSIL_LEVEL);
+			world.setBlockAndUpdate(pos, state.setValue(FOSSIL_LEVEL, fossilLevel + 1));
+			world.playSound(player, pos, SoundEvents.BONE_BLOCK_PLACE, SoundSource.BLOCKS);
+			if (!player.isCreative()) {
+				stack.shrink(1);
+			}
+			return InteractionResult.sidedSuccess(world.isClientSide);
+		}  else if (item == FossilItems.YINLONG.get() && state.getValue(FOSSIL_LEVEL) != 4 && type == Types.YINLONG) {
+			fossilLevel = state.getValue(FOSSIL_LEVEL);
+			world.setBlockAndUpdate(pos, state.setValue(FOSSIL_LEVEL, fossilLevel + 1));
+			world.playSound(player, pos, SoundEvents.BONE_BLOCK_PLACE, SoundSource.BLOCKS);
+			if (!player.isCreative()) {
+				stack.shrink(1);
+			}
+			return InteractionResult.sidedSuccess(world.isClientSide);
+		}  else if (item == FossilItems.CACOPS.get() && state.getValue(FOSSIL_LEVEL) != 4 && type == Types.CACOPS) {
+			fossilLevel = state.getValue(FOSSIL_LEVEL);
+			world.setBlockAndUpdate(pos, state.setValue(FOSSIL_LEVEL, fossilLevel + 1));
+			world.playSound(player, pos, SoundEvents.BONE_BLOCK_PLACE, SoundSource.BLOCKS);
+			if (!player.isCreative()) {
+				stack.shrink(1);
+			}
+			return InteractionResult.sidedSuccess(world.isClientSide);
+		}  else if (item == FossilItems.EORAPTOR.get() && state.getValue(FOSSIL_LEVEL) != 4 && type == Types.EORAPTOR) {
+			fossilLevel = state.getValue(FOSSIL_LEVEL);
+			world.setBlockAndUpdate(pos, state.setValue(FOSSIL_LEVEL, fossilLevel + 1));
+			world.playSound(player, pos, SoundEvents.BONE_BLOCK_PLACE, SoundSource.BLOCKS);
+			if (!player.isCreative()) {
+				stack.shrink(1);
+			}
+			return InteractionResult.sidedSuccess(world.isClientSide);
 		} else return super.use(state, world, pos, player, hand, hit);
 	}
 
@@ -1086,6 +1118,10 @@ public class FossilSkeletonFivePieceBlock extends BaseEntityBlock implements Sim
 		HIPPOSAURUS,
 		ISENGOPS,
 		YI,
+		LAIDLERIA,
+		YINLONG,
+		CACOPS,
+		EORAPTOR,
 		PELECANIMIMUS;
 	}
 

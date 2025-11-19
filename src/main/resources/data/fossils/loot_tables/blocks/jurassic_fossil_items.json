@@ -353,6 +353,26 @@
           "type": "minecraft:item",
           "name": "fossils:gigantspinosaurus_fossil",
           "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:cryptoclidus_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:ophthalmothule_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:yinlong_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:yuxisaurus_fossil",
+          "weight": 2
         }
       ],
       "rolls": 1
