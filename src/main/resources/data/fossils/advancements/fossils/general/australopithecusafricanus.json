@@ -1,0 +1,54 @@
+{
+  "parent": "fossils:fossils/general/homoinoidea",
+  "criteria": {
+    "finish_australopithecusafricanus": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:australopithecusafricanus_fossil"
+                ],
+                "state": {
+                  "fossil_level": "9"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:australopithecusafricanus_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.australopithecusafricanus.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:australopithecusafricanus_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.australopithecusafricanus.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_australopithecusafricanus"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

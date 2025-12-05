@@ -328,6 +328,21 @@
           "type": "minecraft:item",
           "name": "fossils:teleocrater_fossil",
           "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:vancleavea_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:rugarhynchos_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:zupaysaurus_fossil",
+          "weight": 2
         }
       ],
       "rolls": 1

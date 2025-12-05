@@ -1,0 +1,57 @@
+{
+  "parent": "fossils:fossils/general/allosauroidea",
+  "criteria": {
+    "finish_sinraptor": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:sinraptor_fossil"
+                ],
+                "state": {
+                  "fossil_level": "14"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:sinraptor_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.sinraptor.description"
+    },
+    "frame": "goal",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:sinraptor_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.sinraptor.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_sinraptor"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  },
+  "sends_telemetry_event": true
+}

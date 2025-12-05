@@ -1,0 +1,57 @@
+{
+  "parent": "fossils:fossils/general/placodermi",
+  "criteria": {
+    "finish_titanichthys": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:titanichthys_fossil"
+                ],
+                "state": {
+                  "fossil_level": "19"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:titanichthys_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.titanichthys.description"
+    },
+    "frame": "challenge",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:titanichthys_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.titanichthys.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_titanichthys"
+    ]
+  ],
+  "rewards": {
+    "experience": 500
+  },
+  "sends_telemetry_event": true
+}

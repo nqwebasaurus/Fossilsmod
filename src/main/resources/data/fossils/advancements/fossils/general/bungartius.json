@@ -1,0 +1,54 @@
+{
+  "parent": "fossils:fossils/general/placodermi",
+  "criteria": {
+    "finish_bungartius": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:bungartius_fossil"
+                ],
+                "state": {
+                  "fossil_level": "4"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:bungartius_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.bungartius.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:bungartius_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.bungartius.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_bungartius"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

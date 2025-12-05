@@ -1,0 +1,54 @@
+{
+  "parent": "fossils:fossils/general/proceratosaurids",
+  "criteria": {
+    "finish_tanycolagreus": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:tanycolagreus_fossil"
+                ],
+                "state": {
+                  "fossil_level": "9"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:tanycolagreus_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.tanycolagreus.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:tanycolagreus_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.tanycolagreus.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_tanycolagreus"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

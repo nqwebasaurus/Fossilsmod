@@ -31,6 +31,12 @@ public class FossilItem extends BlockItem {
 		if (stack.getItem() == FossilItems.ANTEOPHTHALMOSUCHUS.get()) {
 			tooltip.add(Component.translatable("Awarded to user TrixyLover as second prize for Guess-A-Ton Season 2, April 2025"));
 		}
+		if (stack.getItem() == FossilItems.AUSTRALOPITHECUSAFRICANUS.get()) {
+			tooltip.add(Component.translatable("Awarded to users Aquamarine and Antirrhopus as second prize for Guess-A-Ton Season 3, June 2025"));
+		}
+		if (stack.getItem() == FossilItems.RUGARHYNCHOS.get()) {
+			tooltip.add(Component.translatable("Awarded to user Defind as first prize for Guess-A-Ton Season 3, June 2025"));
+		}
 	}
 	
 }

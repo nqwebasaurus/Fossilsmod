@@ -1,0 +1,54 @@
+{
+  "parent": "fossils:fossils/general/eucrocopoda",
+  "criteria": {
+    "finish_vancleavea": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:vancleavea_fossil"
+                ],
+                "state": {
+                  "fossil_level": "9"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:vancleavea_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.vancleavea.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:vancleavea_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.vancleavea.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_vancleavea"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

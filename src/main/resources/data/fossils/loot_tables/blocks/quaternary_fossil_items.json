@@ -143,6 +143,11 @@
           "type": "minecraft:item",
           "name": "fossils:balaena_fossil",
           "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:australopithecusafricanus_fossil",
+          "weight": 2
         }
       ],
       "rolls": 1
