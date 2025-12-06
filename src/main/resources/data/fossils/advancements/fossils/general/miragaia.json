@@ -1,0 +1,57 @@
+{
+  "parent": "fossils:fossils/general/stegosauria",
+  "criteria": {
+    "finish_miragaia": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:miragaia_fossil"
+                ],
+                "state": {
+                  "fossil_level": "19"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:miragaia_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.miragaia.description"
+    },
+    "frame": "challenge",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:miragaia_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.miragaia.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_miragaia"
+    ]
+  ],
+  "rewards": {
+    "experience": 500
+  },
+  "sends_telemetry_event": true
+}

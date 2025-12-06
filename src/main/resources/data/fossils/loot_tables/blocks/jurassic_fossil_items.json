@@ -373,6 +373,31 @@
           "type": "minecraft:item",
           "name": "fossils:yuxisaurus_fossil",
           "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:sinraptor_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:miragaia_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:limusaurus_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:adeopapposaurus_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:tanycolagreus_fossil",
+          "weight": 2
         }
       ],
       "rolls": 1

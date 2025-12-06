@@ -33,6 +33,8 @@ import fossils.fossils.client.blockentity.model.bothriolepis.BothriolepisFossilF
 import fossils.fossils.client.blockentity.model.bothriolepis.BothriolepisFossilModel;
 import fossils.fossils.client.blockentity.model.buitreraptor.BuitreraptorFossilFrameModel;
 import fossils.fossils.client.blockentity.model.buitreraptor.BuitreraptorFossilModel;
+import fossils.fossils.client.blockentity.model.bungartius.BungartiusFossilFrameModel;
+import fossils.fossils.client.blockentity.model.bungartius.BungartiusFossilModel;
 import fossils.fossils.client.blockentity.model.cacops.CacopsFossilFrameModel;
 import fossils.fossils.client.blockentity.model.cacops.CacopsFossilModel;
 import fossils.fossils.client.blockentity.model.caiuajara.CaiuajaraFossilFrameModel;
@@ -358,6 +360,7 @@ public class FossilSkeletonFivePieceRenderer implements BlockEntityRenderer<Foss
 		type.put(FossilSkeletonFivePieceBlock.Types.YINLONG, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/yinlong/stage_0.png"));
 		type.put(FossilSkeletonFivePieceBlock.Types.CACOPS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/cacops/stage_0.png"));
 		type.put(FossilSkeletonFivePieceBlock.Types.EORAPTOR, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/eoraptor/stage_0.png"));
+		type.put(FossilSkeletonFivePieceBlock.Types.BUNGARTIUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/bungartius/stage_0.png"));
 	});
 	public static final Map<FossilSkeletonFivePieceBlock.Type, ResourceLocation> FRAME_BY_TYPE = Util.make(Maps.newHashMap(), (type) -> {
 		type.put(EUNOTOSAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/eunotosaurus/frame.png"));
@@ -469,6 +472,7 @@ public class FossilSkeletonFivePieceRenderer implements BlockEntityRenderer<Foss
 		type.put(FossilSkeletonFivePieceBlock.Types.YINLONG, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/yinlong/frame.png"));
 		type.put(FossilSkeletonFivePieceBlock.Types.CACOPS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/cacops/frame.png"));
 		type.put(FossilSkeletonFivePieceBlock.Types.EORAPTOR, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/eoraptor/frame.png"));
+		type.put(FossilSkeletonFivePieceBlock.Types.BUNGARTIUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/bungartius/frame.png"));
 	});
 	public static Map<FossilSkeletonFivePieceBlock.Type, SkullModelBase> createFossilRenderers(EntityModelSet p_173662_) {
 		ImmutableMap.Builder<FossilSkeletonFivePieceBlock.Type, SkullModelBase> builder = ImmutableMap.builder();
@@ -581,6 +585,7 @@ public class FossilSkeletonFivePieceRenderer implements BlockEntityRenderer<Foss
 		builder.put(FossilSkeletonFivePieceBlock.Types.YINLONG, new YinlongFossilModel(p_173662_.bakeLayer(ClientEvents.YINLONG)));
 		builder.put(FossilSkeletonFivePieceBlock.Types.CACOPS, new CacopsFossilModel(p_173662_.bakeLayer(ClientEvents.CACOPS)));
 		builder.put(FossilSkeletonFivePieceBlock.Types.EORAPTOR, new EoraptorFossilModel(p_173662_.bakeLayer(ClientEvents.EORAPTOR)));
+		builder.put(FossilSkeletonFivePieceBlock.Types.BUNGARTIUS, new BungartiusFossilModel(p_173662_.bakeLayer(ClientEvents.BUNGARTIUS)));
 		return builder.build();
 	}
 
@@ -695,6 +700,7 @@ public class FossilSkeletonFivePieceRenderer implements BlockEntityRenderer<Foss
 		builder.put(FossilSkeletonFivePieceBlock.Types.YINLONG, new YinlongFossilFrameModel(p_173662_.bakeLayer(ClientEvents.YINLONG_FRAME)));
 		builder.put(FossilSkeletonFivePieceBlock.Types.CACOPS, new CacopsFossilFrameModel(p_173662_.bakeLayer(ClientEvents.CACOPS_FRAME)));
 		builder.put(FossilSkeletonFivePieceBlock.Types.EORAPTOR, new EoraptorFossilFrameModel(p_173662_.bakeLayer(ClientEvents.EORAPTOR_FRAME)));
+		builder.put(FossilSkeletonFivePieceBlock.Types.BUNGARTIUS, new BungartiusFossilFrameModel(p_173662_.bakeLayer(ClientEvents.BUNGARTIUS_FRAME)));
 		return builder.build();
 	}
 
@@ -1271,6 +1277,11 @@ public class FossilSkeletonFivePieceRenderer implements BlockEntityRenderer<Foss
                 pose.scale(-scale, -scale, scale);
                 pose.translate(0F, 0.1F, 0F);
             }
+            case BUNGARTIUS -> {
+                scale = 0.69F;
+                pose.scale(-scale, -scale, scale);
+                pose.translate(0F, 0F, 0F);
+            }
             default -> throw new IllegalStateException("Unexpected value: " + type);
         }
 		VertexConsumer vertexconsumer = p_173668_.getBuffer(p_173671_);
@@ -1499,6 +1510,8 @@ public class FossilSkeletonFivePieceRenderer implements BlockEntityRenderer<Foss
 			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/cacops/stage_" + fossilLevel + ".png");
 		} else if (type == FossilSkeletonFivePieceBlock.Types.EORAPTOR) {
 			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/eoraptor/stage_" + fossilLevel + ".png");
+		} else if (type == FossilSkeletonFivePieceBlock.Types.BUNGARTIUS) {
+			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/bungartius/stage_" + fossilLevel + ".png");
 		} else resourceLocation = SKIN_BY_TYPE.get(type);
 		return RenderType.entityCutoutNoCullZOffset(resourceLocation);
 	}

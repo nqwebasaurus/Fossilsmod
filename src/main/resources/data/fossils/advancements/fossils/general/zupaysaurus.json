@@ -1,0 +1,57 @@
+{
+  "parent": "fossils:fossils/general/neotheropods",
+  "criteria": {
+    "finish_zupaysaurus": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:zupaysaurus_fossil"
+                ],
+                "state": {
+                  "fossil_level": "14"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:zupaysaurus_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.zupaysaurus.description"
+    },
+    "frame": "goal",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:zupaysaurus_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.zupaysaurus.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_zupaysaurus"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  },
+  "sends_telemetry_event": true
+}

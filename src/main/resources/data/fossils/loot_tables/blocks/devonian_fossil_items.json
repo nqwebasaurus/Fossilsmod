@@ -38,6 +38,16 @@
           "type": "minecraft:item",
           "name": "fossils:parmastega_fossil",
           "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:bungartius_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:titanichthys_fossil",
+          "weight": 2
         }
       ],
       "rolls": 1
