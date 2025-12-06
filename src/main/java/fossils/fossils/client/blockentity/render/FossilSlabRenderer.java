@@ -4,8 +4,10 @@ import java.util.Map;
 
 import javax.annotation.Nullable;
 
+import com.mojang.math.Axis;
 import fossils.fossils.client.blockentity.model.DicranurusFossilSlabModel;
-import fossils.fossils.common.block.AbstractFossilSlabBlock;
+import fossils.fossils.common.block.RotatableFossilEntity;
+import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import org.joml.Quaternionf;
 
 import com.google.common.collect.ImmutableMap;
@@ -17,8 +19,6 @@ import fossils.fossils.FossilMod;
 import fossils.fossils.client.ClientEvents;
 import fossils.fossils.client.blockentity.model.TropaeumFossilSlabModel;
 import fossils.fossils.client.blockentity.model.alienum.AlienumFossilSlabModel;
-import fossils.fossils.common.block.FossilSlabBlock;
-import fossils.fossils.common.block.FossilSlabWallBlock;
 import fossils.fossils.common.entity.block.FossilSlabBlockEntity;
 import net.minecraft.Util;
 import net.minecraft.client.model.SkullModelBase;
@@ -32,23 +32,22 @@ import net.minecraft.core.Direction;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.WallSkullBlock;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.block.state.properties.RotationSegment;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 
 @OnlyIn(Dist.CLIENT)
 public class FossilSlabRenderer implements BlockEntityRenderer<FossilSlabBlockEntity> {
-	private final Map<FossilSlabBlock.Type, SkullModelBase> modelByType;
-	public static final Map<FossilSlabBlock.Type, ResourceLocation> SKIN_BY_TYPE = Util.make(Maps.newHashMap(), (type) -> {
-		type.put(FossilSlabBlock.Types.TROPAEUM, new ResourceLocation(FossilMod.MOD_ID, "textures/block/slabs/tropaeum.png"));
-		type.put(FossilSlabBlock.Types.ALIENUM, new ResourceLocation(FossilMod.MOD_ID, "textures/block/slabs/alienum.png"));
-		type.put(FossilSlabBlock.Types.DICRANURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/slabs/dicranurus.png"));
+	private final Map<RotatableFossilEntity.FossilType, SkullModelBase> modelByType;
+	public static final Map<RotatableFossilEntity.FossilType, ResourceLocation> SKIN_BY_TYPE = Util.make(Maps.newHashMap(), (type) -> {
+		type.put(RotatableFossilEntity.Types.TROPAEUM, new ResourceLocation(FossilMod.MOD_ID, "textures/block/slabs/tropaeum.png"));
+		type.put(RotatableFossilEntity.Types.ALIENUM, new ResourceLocation(FossilMod.MOD_ID, "textures/block/slabs/alienum.png"));
+		type.put(RotatableFossilEntity.Types.DICRANURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/slabs/dicranurus.png"));
 	});
-	public static Map<FossilSlabBlock.Type, SkullModelBase> createFossilRenderers(EntityModelSet p_173662_) {
-		ImmutableMap.Builder<FossilSlabBlock.Type, SkullModelBase> builder = ImmutableMap.builder();
-		builder.put(FossilSlabBlock.Types.TROPAEUM, new TropaeumFossilSlabModel(p_173662_.bakeLayer(ClientEvents.TROPAEUM)));
-		builder.put(FossilSlabBlock.Types.ALIENUM, new AlienumFossilSlabModel(p_173662_.bakeLayer(ClientEvents.ALIENUM)));
-		builder.put(FossilSlabBlock.Types.DICRANURUS, new DicranurusFossilSlabModel(p_173662_.bakeLayer(ClientEvents.DICRANURUS)));
+	public static Map<RotatableFossilEntity.FossilType, SkullModelBase> createFossilRenderers(EntityModelSet model) {
+		ImmutableMap.Builder<RotatableFossilEntity.FossilType, SkullModelBase> builder = ImmutableMap.builder();
+		builder.put(RotatableFossilEntity.Types.TROPAEUM, new TropaeumFossilSlabModel(model.bakeLayer(ClientEvents.TROPAEUM)));
+		builder.put(RotatableFossilEntity.Types.ALIENUM, new AlienumFossilSlabModel(model.bakeLayer(ClientEvents.ALIENUM)));
+		builder.put(RotatableFossilEntity.Types.DICRANURUS, new DicranurusFossilSlabModel(model.bakeLayer(ClientEvents.DICRANURUS)));
 		return builder.build();
 	}
 
@@ -56,91 +55,91 @@ public class FossilSlabRenderer implements BlockEntityRenderer<FossilSlabBlockEn
 		this.modelByType = createFossilRenderers(p_173660_.getModelSet());
 	}
 
-	public void render(FossilSlabBlockEntity p_112534_, float p_112535_, PoseStack p_112536_, MultiBufferSource p_112537_, int p_112538_, int p_112539_) {
+	public void render(FossilSlabBlockEntity entity, float p_112535_, PoseStack stack, MultiBufferSource p_112537_, int p_112538_, int p_112539_) {
 		float f = 0;
-		BlockState blockstate = p_112534_.getBlockState();
-		boolean flag = blockstate.getBlock() instanceof FossilSlabBlock;
-		int rotation = flag ? blockstate.getValue(FossilSlabBlock.ROTATION) : 0;
-		Direction direction = flag ? null : blockstate.getValue(WallSkullBlock.FACING);
-		float rotationDegrees = ((AbstractFossilSlabBlock) blockstate.getBlock()).getYRotationDegrees(blockstate);
-		FossilSlabBlock.Type skullblock$type;
-		if (flag) skullblock$type = ((FossilSlabBlock)blockstate.getBlock()).getType();
-		else skullblock$type = ((FossilSlabWallBlock)blockstate.getBlock()).getType();
+		BlockState blockstate = entity.getBlockState();
+		int rotation = blockstate.getValue(RotatableFossilEntity.ROTATION);
+		Direction direction = blockstate.getValue(BlockStateProperties.FACING);
+		float rotationDegrees = ((RotatableFossilEntity) blockstate.getBlock()).getRotationDegrees(blockstate);
+        RotatableFossilEntity.FossilType skullblock$type = ((RotatableFossilEntity)blockstate.getBlock()).getFossilType();
 		SkullModelBase skullmodelbase = this.modelByType.get(skullblock$type);
 		RenderType rendertype = getRenderType(skullblock$type);
-		renderFossilSlab(p_112534_, direction, rotationDegrees, f, p_112536_, p_112537_, p_112538_, skullmodelbase, rendertype);
+		renderFossilSlab(entity, direction, rotationDegrees, f, stack, p_112537_, p_112538_, skullmodelbase, rendertype);
 	}
 
-	public static void renderFossilSlab(FossilSlabBlockEntity p_112534_, @Nullable Direction direction, float p_173665_, float p_173666_, PoseStack p_173667_, MultiBufferSource p_173668_, int p_173669_, SkullModelBase p_173670_, RenderType p_173671_) {
-		p_173667_.pushPose();
-		BlockState blocktate = p_112534_.getBlockState();
-		boolean flag = blocktate.getBlock() instanceof FossilSlabBlock;
-		FossilSlabBlock.Type fossilslabblock$type;
-		if (flag) fossilslabblock$type = ((FossilSlabBlock)blocktate.getBlock()).getType();
-		else fossilslabblock$type = ((FossilSlabWallBlock)blocktate.getBlock()).getType();
-		p_173667_.translate(0.5F, 1.0F, 0.5F);
-		if (fossilslabblock$type == FossilSlabBlock.Types.TROPAEUM) {
-			p_173667_.scale(-0.68F, -0.68F, 0.68F);
-		} else if (fossilslabblock$type == FossilSlabBlock.Types.ALIENUM) {
-			if (!flag) {
-				if (direction == Direction.SOUTH) {
-					p_173667_.rotateAround(new Quaternionf(1, 0, 0, 1), 0, 0, 0);
-					p_173667_.scale(-0.1F, -0.1F, 0.1F);
-					p_173667_.translate(0F, 1F, 2.5F);
-				} else if (direction == Direction.NORTH) {
-					p_173667_.rotateAround(new Quaternionf(-1, 0, 0, 1), 0, 0, 0);
-					p_173667_.scale(-0.1F, -0.1F, -0.1F);
-					p_173667_.translate(0F, 1F, 2.5F);
-				} else if (direction == Direction.EAST) {
-					p_173667_.rotateAround(new Quaternionf(0, 1, 0, 1), 0, 0, 0);
-					p_173667_.rotateAround(new Quaternionf(1, 0, 0, 1), 0, 0, 0);
-					p_173667_.scale(-0.05F, -0.05F, 0.05F);
-					p_173667_.translate(0F, 1F, 2.5F);
-				} else {
-					p_173667_.rotateAround(new Quaternionf(0, 1, 0, 1), 0, 0, 0);
-					p_173667_.rotateAround(new Quaternionf(-1, 0, 0, 1), 0, 0, 0);
-					p_173667_.scale(-0.05F, -0.05F, -0.05F);
-					p_173667_.translate(0F, 1F, 2.5F);
-				}
-			} else {
-				p_173667_.scale(-0.2F, -0.2F, 0.2F);
-				p_173667_.translate(0F, 3.51F, 0F);
-			}
-		} else if (fossilslabblock$type == FossilSlabBlock.Types.DICRANURUS) {
-			if (!flag) {
-				if (direction == Direction.SOUTH) {
-					p_173667_.rotateAround(new Quaternionf(1, 0, 0, 1), 0, 0, 0);
-					p_173667_.scale(-0.07F, -0.07F, -0.07F);
-					p_173667_.translate(0F, 1F, -2.25F);
-				} else if (direction == Direction.NORTH) {
-					p_173667_.rotateAround(new Quaternionf(-1, 0, 0, 1), 0, 0, 0);
-					p_173667_.scale(-0.07F, -0.07F, 0.07F);
-					p_173667_.translate(0F, 1F, -2.25F);
-				} else if (direction == Direction.EAST) {
-					p_173667_.rotateAround(new Quaternionf(0, 1, 0, 1), 0, 0, 0);
-					p_173667_.rotateAround(new Quaternionf(1, 0, 0, 1), 0, 0, 0);
-					p_173667_.scale(-0.035F, -0.035F, -0.035F);
-					p_173667_.translate(0F, 1F, -2.25F);
-				} else {
-					p_173667_.rotateAround(new Quaternionf(0, 1, 0, 1), 0, 0, 0);
-					p_173667_.rotateAround(new Quaternionf(-1, 0, 0, 1), 0, 0, 0);
-					p_173667_.scale(-0.035F, -0.035F, 0.035F);
-					p_173667_.translate(0F, 1F, -2.25F);
-				}
-			} else {
-				p_173667_.scale(-0.14F, -0.14F, 0.14F);
-				p_173667_.translate(0F, 5.6F, 0F);
-			}
-		} else p_173667_.scale(-1.0F, -1.0F, 1.0F);
+	public static void renderFossilSlab(FossilSlabBlockEntity entity, Direction dir, float p_173665_, float p_173666_, PoseStack pose, MultiBufferSource p_173668_, int p_173669_, SkullModelBase base, RenderType p_173671_) {
+		pose.pushPose();
+		BlockState state = entity.getBlockState();
+        RotatableFossilEntity.FossilType fossilBlock = ((RotatableFossilEntity)state.getBlock()).getFossilType();
+		pose.translate(0.5F, 1.0F, 0.5F);
+		if (fossilBlock == RotatableFossilEntity.Types.TROPAEUM) {
+            float scale = 0.68F;
+            pose.scale(-scale, -scale, scale);
+		} else if (fossilBlock == RotatableFossilEntity.Types.ALIENUM) {
+            float scale = 0.2F;
+            pose.scale(-scale, -scale, scale);
+            switch (dir) {
+                case DOWN -> {
+                    pose.translate(0F, 3.50F, 0F);
+                }
+                case UP -> {
+                    pose.mulPose(Axis.XP.rotationDegrees(180));
+                    pose.translate(0F, -1.50F, 0F);
+                }
+                case NORTH -> {
+                    pose.mulPose(Axis.XP.rotationDegrees(-90));
+                    pose.translate(0F, 1F, 2.5F);
+                }
+                case SOUTH -> {
+                    pose.mulPose(Axis.XP.rotationDegrees(90));
+                    pose.translate(0F, 1F, -2.5F);
+                }
+                case WEST -> {
+                    pose.mulPose(Axis.ZP.rotationDegrees(-90));
+                    pose.translate(-2.5F, 1F, 0F);
+                }
+                case EAST -> {
+                    pose.mulPose(Axis.ZP.rotationDegrees(90));
+                    pose.translate(2.5F, 1F, 0F);
+                }
+            };
+		} else if (fossilBlock == RotatableFossilEntity.Types.DICRANURUS) {
+            float scale = 0.14F;
+            pose.scale(-scale, -scale, scale);
+            switch (dir) {
+                case DOWN -> {
+                    pose.translate(0F, 3.50F, 0F);
+                }
+                case UP -> {
+                    pose.mulPose(Axis.XP.rotationDegrees(180));
+                    pose.translate(0F, -1.50F, 0F);
+                }
+                case NORTH -> {
+                    pose.mulPose(Axis.XP.rotationDegrees(-90));
+                    pose.translate(0F, 1F, 2.5F);
+                }
+                case SOUTH -> {
+                    pose.mulPose(Axis.XP.rotationDegrees(90));
+                    pose.translate(0F, 1F, -2.5F);
+                }
+                case WEST -> {
+                    pose.mulPose(Axis.ZP.rotationDegrees(-90));
+                    pose.translate(-2.5F, 1F, 0F);
+                }
+                case EAST -> {
+                    pose.mulPose(Axis.ZP.rotationDegrees(90));
+                    pose.translate(2.5F, 1F, 0F);
+                }
+            };
+		} else pose.scale(-1.0F, -1.0F, 1.0F);
 		VertexConsumer vertexconsumer = p_173668_.getBuffer(p_173671_);
-		p_173670_.setupAnim(p_173666_, p_173665_, 0.0F);
-		p_173670_.renderToBuffer(p_173667_, vertexconsumer, p_173669_, OverlayTexture.NO_OVERLAY, 1.0F, 1.0F, 1.0F, 1.0F);
-		p_173667_.popPose();
+		base.setupAnim(p_173666_, p_173665_, 0.0F);
+		base.renderToBuffer(pose, vertexconsumer, p_173669_, OverlayTexture.NO_OVERLAY, 1.0F, 1.0F, 1.0F, 1.0F);
+		pose.popPose();
 	}
 
-	public static RenderType getRenderType(FossilSlabBlock.Type p_112524_) {
+	public static RenderType getRenderType(RotatableFossilEntity.FossilType p_112524_) {
 		ResourceLocation resourcelocation = SKIN_BY_TYPE.get(p_112524_);
 		return RenderType.entityCutoutNoCullZOffset(resourcelocation);
 	}
-
 }

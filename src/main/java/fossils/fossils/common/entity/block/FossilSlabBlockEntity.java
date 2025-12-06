@@ -6,9 +6,7 @@ import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 
 public class FossilSlabBlockEntity extends BlockEntity  {
-
-	public FossilSlabBlockEntity(BlockPos p_155731_, BlockState p_155732_) {
-		super(FossilBlockEntities.FOSSIL_SLAB.get(), p_155731_, p_155732_);
+	public FossilSlabBlockEntity(BlockPos pos, BlockState state) {
+		super(FossilBlockEntities.FOSSIL_SLAB.get(), pos, state);
 	}
-
 }

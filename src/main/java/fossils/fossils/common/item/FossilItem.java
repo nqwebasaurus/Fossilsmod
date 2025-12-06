@@ -14,8 +14,8 @@ import net.minecraft.world.level.block.Block;
 
 public class FossilItem extends BlockItem {
 
-	public FossilItem(Block p_40565_, Properties p_40566_) {
-		super(p_40565_, p_40566_);
+	public FossilItem(Block block, Properties props) {
+		super(block, props);
 	}
 	
 	public void appendHoverText(ItemStack stack, @Nullable Level worldIn, List<Component> tooltip, TooltipFlag flagIn) {

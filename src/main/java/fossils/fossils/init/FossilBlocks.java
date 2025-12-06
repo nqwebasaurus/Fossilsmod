@@ -1,12 +1,7 @@
 package fossils.fossils.init;
 
 import fossils.fossils.FossilMod;
-import fossils.fossils.common.block.FossilSkeletonFifteenPieceBlock;
-import fossils.fossils.common.block.FossilSkeletonFivePieceBlock;
-import fossils.fossils.common.block.FossilSkeletonTenPieceBlock;
-import fossils.fossils.common.block.FossilSkeletonTwentyPieceBlock;
-import fossils.fossils.common.block.FossilSlabBlock;
-import fossils.fossils.common.block.FossilSlabWallBlock;
+import fossils.fossils.common.block.*;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.SoundType;
@@ -19,11 +14,9 @@ public class FossilBlocks {
 	public static final DeferredRegister<Block> REGISTER = DeferredRegister.create(ForgeRegistries.BLOCKS, FossilMod.MOD_ID);
 
 	//Slabs
-	public static final RegistryObject<FossilSlabBlock> TROPAEUM = REGISTER.register("tropaeum_fossil", () -> new FossilSlabBlock(FossilSlabBlock.Types.TROPAEUM, Properties.of().strength(2.0F, 3.0F).sound(SoundType.STONE).requiresCorrectToolForDrops().noCollission().noOcclusion()));
-	public static final RegistryObject<FossilSlabBlock> ALIENUM = REGISTER.register("alienum_fossil", () -> new FossilSlabBlock(FossilSlabBlock.Types.ALIENUM, Properties.of().strength(2.0F, 3.0F).sound(SoundType.STONE).requiresCorrectToolForDrops().noCollission().noOcclusion()));
-	public static final RegistryObject<FossilSlabWallBlock> ALIENUM_WALL = REGISTER.register("alienum_wall_fossil", () -> new FossilSlabWallBlock(FossilSlabBlock.Types.ALIENUM, Properties.of().strength(2.0F, 3.0F).sound(SoundType.STONE).requiresCorrectToolForDrops().noCollission().noOcclusion()));
-	public static final RegistryObject<FossilSlabBlock> DICRANURUS = REGISTER.register("dicranurus_fossil", () -> new FossilSlabBlock(FossilSlabBlock.Types.DICRANURUS, Properties.of().strength(2.0F, 3.0F).sound(SoundType.STONE).requiresCorrectToolForDrops().noCollission().noOcclusion()));
-	public static final RegistryObject<FossilSlabWallBlock> DICRANURUS_WALL = REGISTER.register("dicranurus_wall_fossil", () -> new FossilSlabWallBlock(FossilSlabBlock.Types.DICRANURUS, Properties.of().strength(2.0F, 3.0F).sound(SoundType.STONE).requiresCorrectToolForDrops().noCollission().noOcclusion()));
+	public static final RegistryObject<RotatableFossilEntity> TROPAEUM = REGISTER.register("tropaeum_fossil", () -> new RotatableFossilEntity(RotatableFossilEntity.Types.TROPAEUM, Properties.of().strength(2.0F, 3.0F).sound(SoundType.STONE).requiresCorrectToolForDrops().noCollission().noOcclusion()));
+	public static final RegistryObject<RotatableFossilEntity> ALIENUM = REGISTER.register("alienum_fossil", () -> new RotatableFossilEntity(RotatableFossilEntity.Types.ALIENUM, Properties.of().strength(2.0F, 3.0F).sound(SoundType.STONE).requiresCorrectToolForDrops().noCollission().noOcclusion()));
+	public static final RegistryObject<RotatableFossilEntity> DICRANURUS = REGISTER.register("dicranurus_fossil", () -> new RotatableFossilEntity(RotatableFossilEntity.Types.DICRANURUS, Properties.of().strength(2.0F, 3.0F).sound(SoundType.STONE).requiresCorrectToolForDrops().noCollission().noOcclusion()));
 
 	//Five
 	public static final RegistryObject<FossilSkeletonFivePieceBlock> EUNOTOSAURUS = REGISTER.register("eunotosaurus_fossil", () -> new FossilSkeletonFivePieceBlock(FossilSkeletonFivePieceBlock.Types.EUNOTOSAURUS, Properties.of().strength(2.0F, 3.0F).sound(SoundType.BONE_BLOCK).requiresCorrectToolForDrops().noOcclusion().noCollission()));
