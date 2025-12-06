@@ -22,8 +22,8 @@ public class FossilItems {
 
 	//Slabs
 	public static final RegistryObject<FossilItem> TROPAEUM = SLAB_REGISTER.register("tropaeum_fossil", () -> new FossilItem(FossilBlocks.TROPAEUM.get(), new Item.Properties()));
-	public static final RegistryObject<BlockItem> ALIENUM = SLAB_REGISTER.register("alienum_fossil", () -> new StandingAndWallBlockItem(FossilBlocks.ALIENUM.get(), FossilBlocks.ALIENUM_WALL.get(), new Item.Properties(), Direction.DOWN));
-	public static final RegistryObject<BlockItem> DICRANURUS = SLAB_REGISTER.register("dicranurus_fossil", () -> new StandingAndWallBlockItem(FossilBlocks.DICRANURUS.get(), FossilBlocks.DICRANURUS_WALL.get(), new Item.Properties(), Direction.DOWN));
+	public static final RegistryObject<FossilItem> ALIENUM = SLAB_REGISTER.register("alienum_fossil", () -> new FossilItem(FossilBlocks.ALIENUM.get(), new Item.Properties()));
+	public static final RegistryObject<FossilItem> DICRANURUS = SLAB_REGISTER.register("dicranurus_fossil", () -> new FossilItem(FossilBlocks.DICRANURUS.get(), new Item.Properties()));
 	
 	//Five
 	public static final RegistryObject<FossilItem> EUNOTOSAURUS = SKELETON_REGISTER.register("eunotosaurus_fossil", () -> new FossilItem(FossilBlocks.EUNOTOSAURUS.get(), new Item.Properties().rarity(FossilRarities.FIVE_PIECE_FOSSIL)));

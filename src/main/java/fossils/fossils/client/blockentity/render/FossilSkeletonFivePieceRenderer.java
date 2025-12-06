@@ -245,12 +245,14 @@ import net.minecraft.world.level.block.state.properties.RotationSegment;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 
+import static fossils.fossils.common.block.FossilSkeletonFivePieceBlock.Types.*;
+
 @OnlyIn(Dist.CLIENT)
 public class FossilSkeletonFivePieceRenderer implements BlockEntityRenderer<FossilSkeletonFivePieceBlockEntity> {
 	private final Map<FossilSkeletonFivePieceBlock.Type, SkullModelBase> skeletonModelByType;
 	private final Map<FossilSkeletonFivePieceBlock.Type, SkullModelBase> frameModelByType;
 	public static final Map<FossilSkeletonFivePieceBlock.Type, ResourceLocation> SKIN_BY_TYPE = Util.make(Maps.newHashMap(), (type) -> {
-		type.put(FossilSkeletonFivePieceBlock.Types.EUNOTOSAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/eunotosaurus/stage_0.png"));
+		type.put(EUNOTOSAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/eunotosaurus/stage_0.png"));
 		type.put(FossilSkeletonFivePieceBlock.Types.PELECANIMIMUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/pelecanimimus/stage_0.png"));
 		type.put(FossilSkeletonFivePieceBlock.Types.ACANTHOSTEGA, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/acanthostega/stage_0.png"));
 		type.put(FossilSkeletonFivePieceBlock.Types.STENOKRANIO, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/stenokranio/stage_0.png"));
@@ -361,7 +363,7 @@ public class FossilSkeletonFivePieceRenderer implements BlockEntityRenderer<Foss
 		type.put(FossilSkeletonFivePieceBlock.Types.BUNGARTIUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/bungartius/stage_0.png"));
 	});
 	public static final Map<FossilSkeletonFivePieceBlock.Type, ResourceLocation> FRAME_BY_TYPE = Util.make(Maps.newHashMap(), (type) -> {
-		type.put(FossilSkeletonFivePieceBlock.Types.EUNOTOSAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/eunotosaurus/frame.png"));
+		type.put(EUNOTOSAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/eunotosaurus/frame.png"));
 		type.put(FossilSkeletonFivePieceBlock.Types.PELECANIMIMUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/pelecanimimus/frame.png"));
 		type.put(FossilSkeletonFivePieceBlock.Types.ACANTHOSTEGA, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/acanthostega/frame.png"));
 		type.put(FossilSkeletonFivePieceBlock.Types.STENOKRANIO, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/stenokranio/frame.png"));
@@ -476,7 +478,7 @@ public class FossilSkeletonFivePieceRenderer implements BlockEntityRenderer<Foss
 		ImmutableMap.Builder<FossilSkeletonFivePieceBlock.Type, SkullModelBase> builder = ImmutableMap.builder();
 		builder.put(FossilSkeletonFivePieceBlock.Types.PELECANIMIMUS, new PelecanimimusFossilModel(p_173662_.bakeLayer(ClientEvents.PELECANIMIMUS)));
 		builder.put(FossilSkeletonFivePieceBlock.Types.ACANTHOSTEGA, new AcanthostegaFossilModel(p_173662_.bakeLayer(ClientEvents.ACANTHOSTEGA)));
-		builder.put(FossilSkeletonFivePieceBlock.Types.EUNOTOSAURUS, new EunotosaurusFossilModel(p_173662_.bakeLayer(ClientEvents.EUNOTOSAURUS)));
+		builder.put(EUNOTOSAURUS, new EunotosaurusFossilModel(p_173662_.bakeLayer(ClientEvents.EUNOTOSAURUS)));
 		builder.put(FossilSkeletonFivePieceBlock.Types.STENOKRANIO, new StenokranioFossilModel(p_173662_.bakeLayer(ClientEvents.STENOKRANIO)));
 		builder.put(FossilSkeletonFivePieceBlock.Types.HENODUS, new HenodusFossilModel(p_173662_.bakeLayer(ClientEvents.HENODUS)));
 		builder.put(FossilSkeletonFivePieceBlock.Types.PROTOCERAS, new ProtocerasFossilModel(p_173662_.bakeLayer(ClientEvents.PROTOCERAS)));
@@ -591,7 +593,7 @@ public class FossilSkeletonFivePieceRenderer implements BlockEntityRenderer<Foss
 		ImmutableMap.Builder<FossilSkeletonFivePieceBlock.Type, SkullModelBase> builder = ImmutableMap.builder();
 		builder.put(FossilSkeletonFivePieceBlock.Types.PELECANIMIMUS, new PelecanimimusFossilFrameModel(p_173662_.bakeLayer(ClientEvents.PELECANIMIMUS_FRAME)));
 		builder.put(FossilSkeletonFivePieceBlock.Types.ACANTHOSTEGA, new AcanthostegaFossilFrameModel(p_173662_.bakeLayer(ClientEvents.ACANTHOSTEGA_FRAME)));
-		builder.put(FossilSkeletonFivePieceBlock.Types.EUNOTOSAURUS, new EunotosaurusFossilFrameModel(p_173662_.bakeLayer(ClientEvents.EUNOTOSAURUS_FRAME)));
+		builder.put(EUNOTOSAURUS, new EunotosaurusFossilFrameModel(p_173662_.bakeLayer(ClientEvents.EUNOTOSAURUS_FRAME)));
 		builder.put(FossilSkeletonFivePieceBlock.Types.STENOKRANIO, new StenokranioFossilFrameModel(p_173662_.bakeLayer(ClientEvents.STENOKRANIO_FRAME)));
 		builder.put(FossilSkeletonFivePieceBlock.Types.HENODUS, new HenodusFossilFrameModel(p_173662_.bakeLayer(ClientEvents.HENODUS_FRAME)));
 		builder.put(FossilSkeletonFivePieceBlock.Types.PROTOCERAS, new ProtocerasFossilFrameModel(p_173662_.bakeLayer(ClientEvents.PROTOCERAS_FRAME)));
@@ -724,350 +726,573 @@ public class FossilSkeletonFivePieceRenderer implements BlockEntityRenderer<Foss
 		renderFossilSkeleton(blocktate, f1, f, p_112536_, p_112537_, p_112538_, skullmodelbase, rendertype);
 	}
 
-	public static void renderFossilSkeleton(BlockState p_112534_, float p_173665_, float p_173666_, PoseStack p_173667_, MultiBufferSource p_173668_, int p_173669_, SkullModelBase p_173670_, RenderType p_173671_) {
-		p_173667_.pushPose();
-		FossilSkeletonFivePieceBlock.Type FossilSkeletonFivePieceBlock$type = ((FossilSkeletonFivePieceBlock)p_112534_.getBlock()).getType();
-		p_173667_.translate(0.5F, 1.0F, 0.5F);
-		if (FossilSkeletonFivePieceBlock$type == FossilSkeletonFivePieceBlock.Types.EUNOTOSAURUS) {
-			p_173667_.scale(-0.238F, -0.238F, 0.238F);
-			p_173667_.translate(0F, 2.7F, 0F);
-		} else if (FossilSkeletonFivePieceBlock$type == FossilSkeletonFivePieceBlock.Types.PELECANIMIMUS) {
-			p_173667_.scale(-0.62F, -0.62F, 0.62F);
-			p_173667_.translate(0F, 0.1F, 0F);
-		} else if (FossilSkeletonFivePieceBlock$type == FossilSkeletonFivePieceBlock.Types.ACANTHOSTEGA) {
-			p_173667_.scale(-0.22F, -0.22F, 0.22F);
-			p_173667_.translate(0F, 3.1F, 0F);
-		} else if (FossilSkeletonFivePieceBlock$type == FossilSkeletonFivePieceBlock.Types.STENOKRANIO) {
-			p_173667_.scale(-0.6F, -0.6F, 0.6F);
-			p_173667_.translate(0F, 0.18F, 0F);
-		} else if (FossilSkeletonFivePieceBlock$type == FossilSkeletonFivePieceBlock.Types.HENODUS) {
-			p_173667_.scale(-0.45F, -0.45F, 0.45F);
-			p_173667_.translate(0F, -0.18F, 0F);
-		} else if (FossilSkeletonFivePieceBlock$type == FossilSkeletonFivePieceBlock.Types.PROTOCERAS) {
-			p_173667_.scale(-0.34F, -0.34F, 0.34F);
-			p_173667_.translate(0F, 1.43F, 0F);
-		} else if (FossilSkeletonFivePieceBlock$type == FossilSkeletonFivePieceBlock.Types.DIPLOCAULUSMAGNICORNIS) {
-			p_173667_.scale(-0.385F, -0.385F, 0.385F);
-			p_173667_.translate(0F, 1.43F, 0F);
-		} else if (FossilSkeletonFivePieceBlock$type == FossilSkeletonFivePieceBlock.Types.TIKTAALIK) {
-			p_173667_.scale(-0.355F, -0.355F, 0.355F);
-			p_173667_.translate(0F, 1.18F, 0F);
-		} else if (FossilSkeletonFivePieceBlock$type == FossilSkeletonFivePieceBlock.Types.SUMINIA) {
-			p_173667_.scale(-0.15F, -0.15F, 0.15F);
-			p_173667_.translate(0F, 5.17F, 0F);
-		} else if (FossilSkeletonFivePieceBlock$type == FossilSkeletonFivePieceBlock.Types.MEGALANCOSAURUS) {
-			p_173667_.scale(-0.15F, -0.15F, 0.15F);
-			p_173667_.translate(0F, 5.15F, 0F);
-		} else if (FossilSkeletonFivePieceBlock$type == FossilSkeletonFivePieceBlock.Types.RIOJASUCHUS) {
-			p_173667_.scale(-0.3F, -0.3F, 0.3F);
-			p_173667_.translate(0F, 1.85F, 0F);
-		} else if (FossilSkeletonFivePieceBlock$type == FossilSkeletonFivePieceBlock.Types.DREPANOSAURUS) {
-			p_173667_.scale(-0.15F, -0.15F, 0.15F);
-			p_173667_.translate(0F, 5.15F, 0F);
-		} else if (FossilSkeletonFivePieceBlock$type == FossilSkeletonFivePieceBlock.Types.MANIDENS) {
-			p_173667_.scale(-0.17F, -0.17F, 0.17F);
-			p_173667_.translate(0F, 4.4F, 0F);
-		} else if (FossilSkeletonFivePieceBlock$type == FossilSkeletonFivePieceBlock.Types.DASYCEPS) {
-			p_173667_.scale(-0.305F, -0.305F, 0.305F);
-			p_173667_.translate(0F, 1.75F, 0F);
-		} else if (FossilSkeletonFivePieceBlock$type == FossilSkeletonFivePieceBlock.Types.AQUILOPS) {
-			p_173667_.scale(-0.26F, -0.26F, 0.26F);
-			p_173667_.translate(0F, 2.35F, 0F);
-		} else if (FossilSkeletonFivePieceBlock$type == FossilSkeletonFivePieceBlock.Types.BANNYKUS) {
-			p_173667_.scale(-0.627F, -0.627F, 0.627F);
-			p_173667_.translate(0F, 0.09F, 0F);
-		} else if (FossilSkeletonFivePieceBlock$type == FossilSkeletonFivePieceBlock.Types.YUANYANGLONG) {
-			p_173667_.scale(-0.34F, -0.34F, 0.34F);
-			p_173667_.translate(0F, 1.47F, 0F);
-		} else if (FossilSkeletonFivePieceBlock$type == FossilSkeletonFivePieceBlock.Types.MEI) {
-			p_173667_.scale(-0.34F, -0.34F, 0.34F);
-			p_173667_.translate(0F, 1.47F, 0F);
-		} else if (FossilSkeletonFivePieceBlock$type == FossilSkeletonFivePieceBlock.Types.ANATOSUCHUS) {
-			p_173667_.scale(-0.27F, -0.27F, 0.27F);
-			p_173667_.translate(0F, 2.2F, 0F);
-		} else if (FossilSkeletonFivePieceBlock$type == FossilSkeletonFivePieceBlock.Types.NQWEBASAURUS) {
-			p_173667_.scale(-0.28F, -0.28F, 0.28F);
-			p_173667_.translate(0F, 2.1F, 0F);
-		} else if (FossilSkeletonFivePieceBlock$type == FossilSkeletonFivePieceBlock.Types.SHUVUUIA) {
-			p_173667_.scale(-0.32F, -0.32F, 0.32F);
-			p_173667_.translate(0F, 1.63F, 0F);
-		} else if (FossilSkeletonFivePieceBlock$type == FossilSkeletonFivePieceBlock.Types.SILESAURUS) {
-			p_173667_.scale(-0.45F, -0.45F, 0.45F);
-			p_173667_.translate(0F, 0.73F, 0F);
-		} else if (FossilSkeletonFivePieceBlock$type == FossilSkeletonFivePieceBlock.Types.BUITRERAPTOR) {
-			p_173667_.scale(-0.4F, -0.4F, 0.4F);
-			p_173667_.translate(0F, 1F, 0F);
-		} else if (FossilSkeletonFivePieceBlock$type == FossilSkeletonFivePieceBlock.Types.SYLVIORNIS) {
-			p_173667_.scale(-0.32F, -0.32F, 0.32F);
-			p_173667_.translate(0F, 1.6F, 0F);
-		} else if (FossilSkeletonFivePieceBlock$type == FossilSkeletonFivePieceBlock.Types.ANUROGNATHUS) {
-			p_173667_.scale(-0.14F, -0.14F, 0.14F);
-			p_173667_.translate(0F, 1.6F, 0F);
-		} else if (FossilSkeletonFivePieceBlock$type == FossilSkeletonFivePieceBlock.Types.COMPSOGNATHUS) {
-			p_173667_.scale(-0.35F, -0.35F, 0.35F);
-			p_173667_.translate(0F, 1.36F, 0F);
-		} else if (FossilSkeletonFivePieceBlock$type == FossilSkeletonFivePieceBlock.Types.OKSOKO) {
-			p_173667_.scale(-0.54F, -0.54F, 0.54F);
-			p_173667_.translate(0F, 0.35F, 0F);
-		} else if (FossilSkeletonFivePieceBlock$type == FossilSkeletonFivePieceBlock.Types.COLUMBA) {
-			p_173667_.scale(-0.2F, -0.2F, 0.2F);
-			p_173667_.translate(0F, 3.5F, 0F);
-		} else if (FossilSkeletonFivePieceBlock$type == FossilSkeletonFivePieceBlock.Types.DIMORPHODON) {
-			p_173667_.scale(-0.305F, -0.305F, 0.305F);
-			p_173667_.translate(0F, 1.78F, 0F);
-		} else if (FossilSkeletonFivePieceBlock$type == FossilSkeletonFivePieceBlock.Types.PTERODACTYLUS) {
-			p_173667_.scale(-0.35F, -0.35F, 0.35F);
-			p_173667_.translate(0F, 1.35F, 0F);
-		} else if (FossilSkeletonFivePieceBlock$type == FossilSkeletonFivePieceBlock.Types.BOTHRIOLEPIS) {
-			p_173667_.scale(-0.4F, -0.4F, 0.4F);
-			p_173667_.translate(0F, 0.98F, 0F);
-		} else if (FossilSkeletonFivePieceBlock$type == FossilSkeletonFivePieceBlock.Types.PLATYHYSTRIX) {
-			p_173667_.scale(-0.27F, -0.27F, 0.27F);
-			p_173667_.translate(0F, 2.2F, 0F);
-		} else if (FossilSkeletonFivePieceBlock$type == FossilSkeletonFivePieceBlock.Types.JAKAPIL) {
-			p_173667_.scale(-0.48F, -0.48F, 0.48F);
-			p_173667_.translate(0F, 0.6F, 0F);
-		} else if (FossilSkeletonFivePieceBlock$type == FossilSkeletonFivePieceBlock.Types.HALSZKARAPTOR) {
-			p_173667_.scale(-0.24F, -0.24F, 0.24F);
-			p_173667_.translate(0F, 2.67F, 0F);
-		} else if (FossilSkeletonFivePieceBlock$type == FossilSkeletonFivePieceBlock.Types.MENOCERAS) {
-			p_173667_.scale(-0.48F, -0.48F, 0.48F);
-			p_173667_.translate(0F, 0.6F, 0F);
-		} else if (FossilSkeletonFivePieceBlock$type == FossilSkeletonFivePieceBlock.Types.SORDES) {
-			p_173667_.scale(-0.14F, -0.14F, 0.14F);
-			p_173667_.translate(0F, 1.9F, 0F);
-		} else if (FossilSkeletonFivePieceBlock$type == FossilSkeletonFivePieceBlock.Types.HOMUNCULUS) {
-			p_173667_.scale(-0.13F, -0.13F, 0.13F);
-			p_173667_.translate(0F, 6.15F, 0F);
-		} else if (FossilSkeletonFivePieceBlock$type == FossilSkeletonFivePieceBlock.Types.DIPLOCAULUSMINIMUS) {
-			p_173667_.scale(-0.12F, -0.12F, 0.12F);
-			p_173667_.translate(0F, 6.15F, 0F);
-		} else if (FossilSkeletonFivePieceBlock$type == FossilSkeletonFivePieceBlock.Types.HESCHELERIA) {
-			p_173667_.scale(-0.17F, -0.17F, 0.17F);
-			p_173667_.translate(0F, 4F, 0F);
-		} else if (FossilSkeletonFivePieceBlock$type == FossilSkeletonFivePieceBlock.Types.ERETMORHIPIS) {
-			p_173667_.scale(-0.215F, -0.215F, 0.215F);
-			p_173667_.translate(0F, 1F, 0F);
-		} else if (FossilSkeletonFivePieceBlock$type == FossilSkeletonFivePieceBlock.Types.DIADEMODON) {
-			p_173667_.scale(-0.4F, -0.4F, 0.4F);
-			p_173667_.translate(0F, 1F, 0F);
-		} else if (FossilSkeletonFivePieceBlock$type == FossilSkeletonFivePieceBlock.Types.KAYENTATHERIUM) {
-			p_173667_.scale(-0.75F, -0.75F, 0.75F);
-			p_173667_.translate(0F, -0.16F, 0F);
-		} else if (FossilSkeletonFivePieceBlock$type == FossilSkeletonFivePieceBlock.Types.MEGALIBGWILIA) {
-			p_173667_.scale(-0.2F, -0.2F, 0.2F);
-			p_173667_.translate(0F, 3.5F, 0F);
-		} else if (FossilSkeletonFivePieceBlock$type == FossilSkeletonFivePieceBlock.Types.LEPTICTIDIUM) {
-			p_173667_.scale(-0.31F, -0.31F, 0.31F);
-			p_173667_.translate(0F, 1.75F, 0F);
-		} else if (FossilSkeletonFivePieceBlock$type == FossilSkeletonFivePieceBlock.Types.PARMASTEGA) {
-			p_173667_.scale(-0.355F, -0.355F, 0.355F);
-			p_173667_.translate(0F, 1.3F, 0F);
-		} else if (FossilSkeletonFivePieceBlock$type == FossilSkeletonFivePieceBlock.Types.TORUKJARA) {
-			p_173667_.scale(-0.61F, -0.61F, 0.61F);
-			p_173667_.translate(0F, 0.16F, 0F);
-		} else if (FossilSkeletonFivePieceBlock$type == FossilSkeletonFivePieceBlock.Types.CONVOLOSAURUS) {
-			p_173667_.scale(-0.72F, -0.72F, 0.72F);
-			p_173667_.translate(0F, -0.1F, 0F);
-		} else if (FossilSkeletonFivePieceBlock$type == FossilSkeletonFivePieceBlock.Types.EOCURSOR) {
-			p_173667_.scale(-0.25F, -0.25F, 0.25F);
-			p_173667_.translate(0F, 2.5F, 0F);
-		} else if (FossilSkeletonFivePieceBlock$type == FossilSkeletonFivePieceBlock.Types.AUSTRIADACTYLUS) {
-			p_173667_.scale(-0.195F, -0.195F, 0.195F);
-			p_173667_.translate(0F, 2.5F, 0F);
-		} else if (FossilSkeletonFivePieceBlock$type == FossilSkeletonFivePieceBlock.Types.JIANCHANGNATHUS) {
-			p_173667_.scale(-0.24F, -0.24F, 0.24F);
-			p_173667_.translate(0F, 2.67F, 0F);
-		} else if (FossilSkeletonFivePieceBlock$type == FossilSkeletonFivePieceBlock.Types.STEGOUROS) {
-			p_173667_.scale(-0.64F, -0.64F, 0.64F);
-			p_173667_.translate(0F, 0.08F, 0F);
-		} else if (FossilSkeletonFivePieceBlock$type == FossilSkeletonFivePieceBlock.Types.LESOTHOSAURUS) {
-			p_173667_.scale(-0.45F, -0.45F, 0.45F);
-			p_173667_.translate(0F, 0.7F, 0F);
-		} else if (FossilSkeletonFivePieceBlock$type == FossilSkeletonFivePieceBlock.Types.PSITTACOSAURUSMONGOLIENSIS) {
-			p_173667_.scale(-0.4F, -0.4F, 0.4F);
-			p_173667_.translate(0F, 1.F, 0F);
-		} else if (FossilSkeletonFivePieceBlock$type == FossilSkeletonFivePieceBlock.Types.DRACORAPTOR) {
-			p_173667_.scale(-0.45F, -0.45F, 0.45F);
-			p_173667_.translate(0F, 0.72F, 0F);
-		} else if (FossilSkeletonFivePieceBlock$type == FossilSkeletonFivePieceBlock.Types.TERATERPETON) {
-			p_173667_.scale(-0.5686F, -0.5686F, 0.5686F);
-			p_173667_.translate(0F, 0.26F, 0F);
-		} else if (FossilSkeletonFivePieceBlock$type == FossilSkeletonFivePieceBlock.Types.INCISIVOSAURUS) {
-			p_173667_.scale(-0.34F, -0.34F, 0.34F);
-			p_173667_.translate(0F, 1.5F, 0F);
-		} else if (FossilSkeletonFivePieceBlock$type == FossilSkeletonFivePieceBlock.Types.LITARGOSUCHUS) {
-			p_173667_.scale(-0.28F, -0.28F, 0.28F);
-			p_173667_.translate(0F, 2.08F, 0F);
-		} else if (FossilSkeletonFivePieceBlock$type == FossilSkeletonFivePieceBlock.Types.DALLASAURUS) {
-			p_173667_.scale(-0.24F, -0.24F, 0.24F);
-			p_173667_.translate(0F, 2.08F, 0F);
-		} else if (FossilSkeletonFivePieceBlock$type == FossilSkeletonFivePieceBlock.Types.GEIKIAELGINENSIS) {
-			p_173667_.scale(-0.2F, -0.2F, 0.2F);
-			p_173667_.translate(0F, 3.5F, 0F);
-		} else if (FossilSkeletonFivePieceBlock$type == FossilSkeletonFivePieceBlock.Types.IKRANDRACO) {
-			p_173667_.scale(-0.36F, -0.36F, 0.36F);
-			p_173667_.translate(0F, 0F, 0F);
-		} else if (FossilSkeletonFivePieceBlock$type == FossilSkeletonFivePieceBlock.Types.LAGOSUCHUS) {
-			p_173667_.scale(-0.145F, -0.145F, 0.145F);
-			p_173667_.translate(0F, 5.45F, 0F);
-		} else if (FossilSkeletonFivePieceBlock$type == FossilSkeletonFivePieceBlock.Types.EFFIGIA) {
-			p_173667_.scale(-0.355F, -0.355F, 0.355F);
-			p_173667_.translate(0F, 1.33F, 0F);
-		} else if (FossilSkeletonFivePieceBlock$type == FossilSkeletonFivePieceBlock.Types.BERTHASAURA) {
-			p_173667_.scale(-0.48F, -0.48F, 0.48F);
-			p_173667_.translate(0F, 0.6F, 0F);
-		} else if (FossilSkeletonFivePieceBlock$type == FossilSkeletonFivePieceBlock.Types.PSITTACOSAURUSLUJIATUNENSIS) {
-			p_173667_.scale(-0.4F, -0.4F, 0.4F);
-			p_173667_.translate(0F, 1.F, 0F);
-		} else if (FossilSkeletonFivePieceBlock$type == FossilSkeletonFivePieceBlock.Types.BEELZEBUFO) {
-			p_173667_.scale(-0.089F, -0.089F, 0.089F);
-			p_173667_.translate(0F, 9.75F, 0F);
-		} else if (FossilSkeletonFivePieceBlock$type == FossilSkeletonFivePieceBlock.Types.CHAOYANGOPTERUS) {
-			p_173667_.scale(-0.44F, -0.44F, 0.44F);
-			p_173667_.translate(0F, 0.8F, 0F);
-		} else if (FossilSkeletonFivePieceBlock$type == FossilSkeletonFivePieceBlock.Types.CAIUAJARA) {
-			p_173667_.scale(-0.61F, -0.61F, 0.61F);
-			p_173667_.translate(0F, -0.2F, 0F);
-		} else if (FossilSkeletonFivePieceBlock$type == FossilSkeletonFivePieceBlock.Types.CALLAWAYIA) {
-			p_173667_.scale(-0.6F, -0.6F, 0.6F);
-			p_173667_.translate(0F, -0.25F, 0F);
-		} else if (FossilSkeletonFivePieceBlock$type == FossilSkeletonFivePieceBlock.Types.TAPEJARA) {
-			p_173667_.scale(-0.32F, -0.32F, 0.32F);
-			p_173667_.translate(0F, 1.63F, 0F);
-		} else if (FossilSkeletonFivePieceBlock$type == FossilSkeletonFivePieceBlock.Types.TOCKUS) {
-			p_173667_.scale(-0.2F, -0.2F, 0.2F);
-			p_173667_.translate(0F, 3.5F, 0F);
-		} else if (FossilSkeletonFivePieceBlock$type == FossilSkeletonFivePieceBlock.Types.ELGINIA) {
-			p_173667_.scale(-0.2F, -0.2F, 0.2F);
-			p_173667_.translate(0F, 3.5F, 0F);
-		} else if (FossilSkeletonFivePieceBlock$type == FossilSkeletonFivePieceBlock.Types.EUROPEJARA) {
-			p_173667_.scale(-0.32F, -0.32F, 0.32F);
-			p_173667_.translate(0F, 0F, 0F);
-		} else if (FossilSkeletonFivePieceBlock$type == FossilSkeletonFivePieceBlock.Types.KRANOSAURA) {
-			p_173667_.scale(-0.17F, -0.17F, 0.17F);
-			p_173667_.translate(0F, 4.4F, 0F);
-		} else if (FossilSkeletonFivePieceBlock$type == FossilSkeletonFivePieceBlock.Types.DIPLOCERASPIS) {
-			p_173667_.scale(-0.175F, -0.175F, 0.175F);
-			p_173667_.translate(0F, 2F, 0F);
-		} else if (FossilSkeletonFivePieceBlock$type == FossilSkeletonFivePieceBlock.Types.ACANTHOSTOMATOPS) {
-			p_173667_.scale(-0.283F, -0.283F, 0.283F);
-			p_173667_.translate(0F, 2.02F, 0F);
-		} else if (FossilSkeletonFivePieceBlock$type == FossilSkeletonFivePieceBlock.Types.HYPURONECTOR) {
-			p_173667_.scale(-0.1F, -0.1F, 0.1F);
-			p_173667_.translate(0F, 8.5F, 0F);
-		} else if (FossilSkeletonFivePieceBlock$type == FossilSkeletonFivePieceBlock.Types.MEILIFEILONG) {
-			p_173667_.scale(-0.48F, -0.48F, 0.48F);
-			p_173667_.translate(0F, 0.58F, 0F);
-		} else if (FossilSkeletonFivePieceBlock$type == FossilSkeletonFivePieceBlock.Types.CARTORHYNCHUS) {
-			p_173667_.scale(-0.125F, -0.125F, 0.125F);
-			p_173667_.translate(0F, 6.5F, 0F);
-		} else if (FossilSkeletonFivePieceBlock$type == FossilSkeletonFivePieceBlock.Types.HUAXIADRACO) {
-			p_173667_.scale(-0.32F, -0.32F, 0.32F);
-			p_173667_.translate(0F, 1.6F, 0F);
-		} else if (FossilSkeletonFivePieceBlock$type == FossilSkeletonFivePieceBlock.Types.SHENZHOUPTERUS) {
-			p_173667_.scale(-0.34F, -0.34F, 0.34F);
-			p_173667_.translate(0F, 0.5F, 0F);
-		} else if (FossilSkeletonFivePieceBlock$type == FossilSkeletonFivePieceBlock.Types.PROBURNETIA) {
-			p_173667_.scale(-0.32F, -0.32F, 0.32F);
-			p_173667_.translate(0F, 1.62F, 0F);
-		} else if (FossilSkeletonFivePieceBlock$type == FossilSkeletonFivePieceBlock.Types.MIXOSAURUS) {
-			p_173667_.scale(-0.32F, -0.32F, 0.32F);
-			p_173667_.translate(0F, 0F, 0F);
-		} else if (FossilSkeletonFivePieceBlock$type == FossilSkeletonFivePieceBlock.Types.CAVIRAMUS) {
-			p_173667_.scale(-0.14F, -0.14F, 0.14F);
-			p_173667_.translate(0F, 5F, 0F);
-		} else if (FossilSkeletonFivePieceBlock$type == FossilSkeletonFivePieceBlock.Types.ALOPECOGNATHUS) {
-			p_173667_.scale(-0.33F, -0.33F, 0.33F);
-			p_173667_.translate(0F, 1.54F, 0F);
-		} else if (FossilSkeletonFivePieceBlock$type == FossilSkeletonFivePieceBlock.Types.CYAMODUS) {
-			p_173667_.scale(-0.44F, -0.44F, 0.44F);
-			p_173667_.translate(0F, 0.4F, 0F);
-		} else if (FossilSkeletonFivePieceBlock$type == FossilSkeletonFivePieceBlock.Types.HETERODONTOSAURUS) {
-			p_173667_.scale(-0.3F, -0.3F, 0.3F);
-			p_173667_.translate(0F, 1.85F, 0F);
-		} else if (FossilSkeletonFivePieceBlock$type == FossilSkeletonFivePieceBlock.Types.XINPUSAURUS) {
-			p_173667_.scale(-0.31F, -0.31F, 0.31F);
-			p_173667_.translate(0F, 1.6F, 0F);
-		} else if (FossilSkeletonFivePieceBlock$type == FossilSkeletonFivePieceBlock.Types.TIARAJUDENS) {
-			p_173667_.scale(-0.36F, -0.36F, 0.36F);
-			p_173667_.translate(0F, 1.27F, 0F);
-		} else if (FossilSkeletonFivePieceBlock$type == FossilSkeletonFivePieceBlock.Types.ROBERTIA) {
-			p_173667_.scale(-0.08F, -0.08F, 0.08F);
-			p_173667_.translate(0F, 11F, 0F);
-		} else if (FossilSkeletonFivePieceBlock$type == FossilSkeletonFivePieceBlock.Types.MELOSAURUS) {
-			p_173667_.scale(-0.22F, -0.22F, 0.22F);
-			p_173667_.translate(0F, 3F, 0F);
-		} else if (FossilSkeletonFivePieceBlock$type == FossilSkeletonFivePieceBlock.Types.DATHEOSAURUS) {
-			p_173667_.scale(-0.15F, -0.15F, 0.15F);
-			p_173667_.translate(0F, 5.17F, 0F);
-		} else if (FossilSkeletonFivePieceBlock$type == FossilSkeletonFivePieceBlock.Types.LLALLAWAVIS) {
-			p_173667_.scale(-0.34F, -0.34F, 0.34F);
-			p_173667_.translate(0F, 1.45F, 0F);
-		} else if (FossilSkeletonFivePieceBlock$type == FossilSkeletonFivePieceBlock.Types.CONFLICTO) {
-			p_173667_.scale(-0.13F, -0.13F, 0.13F);
-			p_173667_.translate(0F, 6.2F, 0F);
-		} else if (FossilSkeletonFivePieceBlock$type == FossilSkeletonFivePieceBlock.Types.PROGANOCHELYS) {
-			p_173667_.scale(-0.39F, -0.39F, 0.39F);
-			p_173667_.translate(0F, 1.06F, 0F);
-		} else if (FossilSkeletonFivePieceBlock$type == FossilSkeletonFivePieceBlock.Types.HYPERODAPEDON) {
-			p_173667_.scale(-0.48F, -0.48F, 0.48F);
-			p_173667_.translate(0F, 0.6F, 0F);
-		} else if (FossilSkeletonFivePieceBlock$type == FossilSkeletonFivePieceBlock.Types.HUPEHSUCHUS) {
-			p_173667_.scale(-0.18F, -0.18F, 0.18F);
-			p_173667_.translate(0F, 1.3F, 0F);
-		} else if (FossilSkeletonFivePieceBlock$type == FossilSkeletonFivePieceBlock.Types.GERROTHORAX) {
-			p_173667_.scale(-0.24F, -0.24F, 0.24F);
-			p_173667_.translate(0F, 2.68F, 0F);
-		} else if (FossilSkeletonFivePieceBlock$type == FossilSkeletonFivePieceBlock.Types.ICHTHYOSTEGA) {
-			p_173667_.scale(-0.46F, -0.46F, 0.46F);
-			p_173667_.translate(0F, 0.68F, 0F);
-		} else if (FossilSkeletonFivePieceBlock$type == FossilSkeletonFivePieceBlock.Types.TETRACERATOPS) {
-			p_173667_.scale(-0.11F, -0.11F, 0.11F);
-			p_173667_.translate(0F, 7.6F, 0F);
-		} else if (FossilSkeletonFivePieceBlock$type == FossilSkeletonFivePieceBlock.Types.LABIDOSAURUS) {
-			p_173667_.scale(-0.16F, -0.16F, 0.16F);
-			p_173667_.translate(0F, 4.735F, 0F);
-		} else if (FossilSkeletonFivePieceBlock$type == FossilSkeletonFivePieceBlock.Types.TANYSTROPHEUSLONGOBARDICUS) {
-			p_173667_.scale(-0.15F, -0.15F, 0.15F);
-			p_173667_.translate(0F, 4.735F, 0F);
-		} else if (FossilSkeletonFivePieceBlock$type == FossilSkeletonFivePieceBlock.Types.LAGERPETON) {
-			p_173667_.scale(-0.11F, -0.11F, 0.11F);
-			p_173667_.translate(0F, 7.56F, 0F);
-		} else if (FossilSkeletonFivePieceBlock$type == FossilSkeletonFivePieceBlock.Types.HIPPOSAURUS) {
-			p_173667_.scale(-0.31F, -0.31F, 0.31F);
-			p_173667_.translate(0F, 1.73F, 0F);
-		} else if (FossilSkeletonFivePieceBlock$type == FossilSkeletonFivePieceBlock.Types.ISENGOPS) {
-			p_173667_.scale(-0.27F, -0.27F, 0.27F);
-			p_173667_.translate(0F, 2.2F, 0F);
-		} else if (FossilSkeletonFivePieceBlock$type == FossilSkeletonFivePieceBlock.Types.YI) {
-			p_173667_.scale(-0.17F, -0.17F, 0.17F);
-			p_173667_.translate(0F, 4.37F, 0F);
-		} else if (FossilSkeletonFivePieceBlock$type == FossilSkeletonFivePieceBlock.Types.LAIDLERIA) {
-			p_173667_.scale(-0.11F, -0.11F, 0.11F);
-			p_173667_.translate(0F, 7.6F, 0F);
-		} else if (FossilSkeletonFivePieceBlock$type == FossilSkeletonFivePieceBlock.Types.YINLONG) {
-			p_173667_.scale(-0.26F, -0.26F, 0.26F);
-			p_173667_.translate(0F, 2.36F, 0F);
-		} else if (FossilSkeletonFivePieceBlock$type == FossilSkeletonFivePieceBlock.Types.CACOPS) {
-			p_173667_.scale(-0.14F, -0.14F, 0.14F);
-			p_173667_.translate(0F, 5.65F, 0F);
-		} else if (FossilSkeletonFivePieceBlock$type == FossilSkeletonFivePieceBlock.Types.EORAPTOR) {
-			p_173667_.scale(-0.19F, -0.19F, 0.19F);
-			p_173667_.translate(0F, 3.76F, 0F);
-		} else if (FossilSkeletonFivePieceBlock$type == FossilSkeletonFivePieceBlock.Types.BUNGARTIUS) {
-			p_173667_.scale(-0.69F, -0.69F, 0.69F);
-			p_173667_.translate(0F, 0F, 0F);
-		} else p_173667_.scale(-1.0F, -1.0F, 1.0F);
+	public static void renderFossilSkeleton(BlockState state, float p_173665_, float p_173666_, PoseStack pose, MultiBufferSource p_173668_, int p_173669_, SkullModelBase p_173670_, RenderType p_173671_) {
+		pose.pushPose();
+		FossilSkeletonFivePieceBlock.Types type = (FossilSkeletonFivePieceBlock.Types) ((FossilSkeletonFivePieceBlock)state.getBlock()).getType();
+		pose.translate(0.5F, 1.0F, 0.5F);
+        float scale = 1.0F;
+        switch (type) {
+            case EUNOTOSAURUS -> {
+                scale = 0.238F;
+                pose.scale(-scale, -scale, scale);
+                pose.translate(0F, 2.7F, 0F);
+            }
+            case ACANTHOSTEGA -> {
+                scale = 0.22F;
+                pose.scale(-scale, -scale, scale);
+                pose.translate(0F, 3.1F, 0F);
+            }
+            case STENOKRANIO -> {
+                scale = 0.6F;
+                pose.scale(-scale, -scale, scale);
+                pose.translate(0F, 0.18F, 0F);
+            }
+            case HENODUS -> {
+                scale = 0.45F;
+                pose.scale(-scale, -scale, scale);
+                pose.translate(0F, -0.18F, 0F);
+            }
+            case PROTOCERAS -> {
+                scale = 0.34F;
+                pose.scale(-scale, -scale, scale);
+                pose.translate(0F, 1.43F, 0F);
+            }
+            case DIPLOCAULUSMAGNICORNIS -> {
+                scale = 0.385F;
+                pose.scale(-scale, -scale, scale);
+                pose.translate(0F, 1.43F, 0F);
+            }
+            case TIKTAALIK -> {
+                scale = 0.355F;
+                pose.scale(-scale, -scale, scale);
+                pose.translate(0F, 1.18F, 0F);
+            }
+            case SUMINIA -> {
+                scale = 0.15F;
+                pose.scale(-scale, -scale, scale);
+                pose.translate(0F, 5.17F, 0F);
+            }
+            case MEGALANCOSAURUS -> {
+                scale = 0.15F;
+                pose.scale(-scale, -scale, scale);
+                pose.translate(0F, 5.15F, 0F);
+            }
+            case RIOJASUCHUS -> {
+                scale = 0.3F;
+                pose.scale(-scale, -scale, scale);
+                pose.translate(0F, 1.85F, 0F);
+            }
+            case DREPANOSAURUS -> {
+                scale = 0.15F;
+                pose.scale(-scale, -scale, scale);
+                pose.translate(0F, 5.15F, 0F);
+            }
+            case MANIDENS -> {
+                scale = 0.17F;
+                pose.scale(-scale, -scale, scale);
+                pose.translate(0F, 4.4F, 0F);
+            }
+            case DASYCEPS -> {
+                scale = 0.305F;
+                pose.scale(-scale, -scale, scale);
+                pose.translate(0F, 1.75F, 0F);
+            }
+            case AQUILOPS -> {
+                scale = 0.26F;
+                pose.scale(-scale, -scale, scale);
+                pose.translate(0F, 2.35F, 0F);
+            }
+            case BANNYKUS -> {
+                scale = 0.627F;
+                pose.scale(-scale, -scale, scale);
+                pose.translate(0F, 0.09F, 0F);
+            }
+            case YUANYANGLONG -> {
+                scale = 0.34F;
+                pose.scale(-scale, -scale, scale);
+                pose.translate(0F, 1.47F, 0F);
+            }
+            case MEI -> {
+                scale = 0.34F;
+                pose.scale(-scale, -scale, scale);
+                pose.translate(0F, 1.47F, 0F);
+            }
+            case ANATOSUCHUS -> {
+                scale = 0.27F;
+                pose.scale(-scale, -scale, scale);
+                pose.translate(0F, 2.2F, 0F);
+            }
+            case NQWEBASAURUS -> {
+                scale = 0.28F;
+                pose.scale(-scale, -scale, scale);
+                pose.translate(0F, 2.1F, 0F);
+            }
+            case SHUVUUIA -> {
+                scale = 0.32F;
+                pose.scale(-scale, -scale, scale);
+                pose.translate(0F, 1.63F, 0F);
+            }
+            case SILESAURUS -> {
+                scale = 0.45F;
+                pose.scale(-scale, -scale, scale);
+                pose.translate(0F, 0.73F, 0F);
+            }
+            case BUITRERAPTOR -> {
+                scale = 0.4F;
+                pose.scale(-scale, -scale, scale);
+                pose.translate(0F, 1F, 0F);
+            }
+            case SYLVIORNIS -> {
+                scale = 0.32F;
+                pose.scale(-scale, -scale, scale);
+                pose.translate(0F, 1.6F, 0F);
+            }
+            case ANUROGNATHUS -> {
+                scale = 0.14F;
+                pose.scale(-scale, -scale, scale);
+                pose.translate(0F, 1.6F, 0F);
+            }
+            case COMPSOGNATHUS -> {
+                scale = 0.35F;
+                pose.scale(-scale, -scale, scale);
+                pose.translate(0F, 1.36F, 0F);
+            }
+            case OKSOKO -> {
+                scale = 0.54F;
+                pose.scale(-scale, -scale, scale);
+                pose.translate(0F, 0.35F, 0F);
+            }
+            case COLUMBA -> {
+                scale = 0.2F;
+                pose.scale(-scale, -scale, scale);
+                pose.translate(0F, 3.5F, 0F);
+            }
+            case DIMORPHODON -> {
+                scale = 0.305F;
+                pose.scale(-scale, -scale, scale);
+                pose.translate(0F, 1.78F, 0F);
+            }
+            case PTERODACTYLUS -> {
+                scale = 0.35F;
+                pose.scale(-scale, -scale, scale);
+                pose.translate(0F, 1.35F, 0F);
+            }
+            case BOTHRIOLEPIS -> {
+                scale = 0.4F;
+                pose.scale(-scale, -scale, scale);
+                pose.translate(0F, 0.98F, 0F);
+            }
+            case PLATYHYSTRIX -> {
+                scale = 0.27F;
+                pose.scale(-scale, -scale, scale);
+                pose.translate(0F, 2.2F, 0F);
+            }
+            case JAKAPIL -> {
+                scale = 0.48F;
+                pose.scale(-scale, -scale, scale);
+                pose.translate(0F, 0.6F, 0F);
+            }
+            case HALSZKARAPTOR -> {
+                scale = 0.24F;
+                pose.scale(-scale, -scale, scale);
+                pose.translate(0F, 2.67F, 0F);
+            }
+            case MENOCERAS -> {
+                scale = 0.48F;
+                pose.scale(-scale, -scale, scale);
+                pose.translate(0F, 0.6F, 0F);
+            }
+            case SORDES -> {
+                scale = 0.14F;
+                pose.scale(-scale, -scale, scale);
+                pose.translate(0F, 1.9F, 0F);
+            }
+            case HOMUNCULUS -> {
+                scale = 0.13F;
+                pose.scale(-scale, -scale, scale);
+                pose.translate(0F, 6.15F, 0F);
+            }
+            case DIPLOCAULUSMINIMUS -> {
+                scale = 0.12F;
+                pose.scale(-scale, -scale, scale);
+                pose.translate(0F, 6.15F, 0F);
+            }
+            case HESCHELERIA -> {
+                scale = 0.17F;
+                pose.scale(-scale, -scale, scale);
+                pose.translate(0F, 4F, 0F);
+            }
+            case ERETMORHIPIS -> {
+                scale = 0.215F;
+                pose.scale(-scale, -scale, scale);
+                pose.translate(0F, 1F, 0F);
+            }
+            case DIADEMODON -> {
+                scale = 0.4F;
+                pose.scale(-scale, -scale, scale);
+                pose.translate(0F, 1F, 0F);
+            }
+            case KAYENTATHERIUM -> {
+                scale = 0.75F;
+                pose.scale(-scale, -scale, scale);
+                pose.translate(0F, -0.16F, 0F);
+            }
+            case MEGALIBGWILIA -> {
+                scale = 0.2F;
+                pose.scale(-scale, -scale, scale);
+                pose.translate(0F, 3.5F, 0F);
+            }
+            case LEPTICTIDIUM -> {
+                scale = 0.31F;
+                pose.scale(-scale, -scale, scale);
+                pose.translate(0F, 1.75F, 0F);
+            }
+            case PARMASTEGA -> {
+                scale = 0.355F;
+                pose.scale(-scale, -scale, scale);
+                pose.translate(0F, 1.3F, 0F);
+            }
+            case TORUKJARA -> {
+                scale = 0.61F;
+                pose.scale(-scale, -scale, scale);
+                pose.translate(0F, 0.16F, 0F);
+            }
+            case CONVOLOSAURUS -> {
+                scale = 0.72F;
+                pose.scale(-scale, -scale, scale);
+                pose.translate(0F, -0.1F, 0F);
+            }
+            case EOCURSOR -> {
+                scale = 0.25F;
+                pose.scale(-scale, -scale, scale);
+                pose.translate(0F, 2.5F, 0F);
+            }
+            case AUSTRIADACTYLUS -> {
+                scale = 0.195F;
+                pose.scale(-scale, -scale, scale);
+                pose.translate(0F, 2.5F, 0F);
+            }
+            case JIANCHANGNATHUS -> {
+                scale = 0.24F;
+                pose.scale(-scale, -scale, scale);
+                pose.translate(0F, 2.67F, 0F);
+            }
+            case STEGOUROS -> {
+                scale = 0.64F;
+                pose.scale(-scale, -scale, scale);
+                pose.translate(0F, 0.08F, 0F);
+            }
+            case LESOTHOSAURUS -> {
+                scale = 0.45F;
+                pose.scale(-scale, -scale, scale);
+                pose.translate(0F, 0.7F, 0F);
+            }
+            case PSITTACOSAURUSMONGOLIENSIS -> {
+                scale = 0.4F;
+                pose.scale(-scale, -scale, scale);
+                pose.translate(0F, 1.F, 0F);
+            }
+            case DRACORAPTOR -> {
+                scale = 0.45F;
+                pose.scale(-scale, -scale, scale);
+                pose.translate(0F, 0.72F, 0F);
+            }
+            case TERATERPETON -> {
+                scale = 0.5686F;
+                pose.scale(-scale, -scale, scale);
+                pose.translate(0F, 0.26F, 0F);
+            }
+            case INCISIVOSAURUS -> {
+                scale = 0.34F;
+                pose.scale(-scale, -scale, scale);
+                pose.translate(0F, 1.5F, 0F);
+            }
+            case LITARGOSUCHUS -> {
+                scale = 0.28F;
+                pose.scale(-scale, -scale, scale);
+                pose.translate(0F, 2.08F, 0F);
+            }
+            case DALLASAURUS -> {
+                scale = 0.24F;
+                pose.scale(-scale, -scale, scale);
+                pose.translate(0F, 2.08F, 0F);
+            }
+            case GEIKIAELGINENSIS -> {
+                scale = 0.2F;
+                pose.scale(-scale, -scale, scale);
+                pose.translate(0F, 3.5F, 0F);
+            }
+            case IKRANDRACO -> {
+                scale = 0.36F;
+                pose.scale(-scale, -scale, scale);
+                pose.translate(0F, 0F, 0F);
+            }
+            case LAGOSUCHUS -> {
+                scale = 0.145F;
+                pose.scale(-scale, -scale, scale);
+                pose.translate(0F, 5.45F, 0F);
+            }
+            case EFFIGIA -> {
+                scale = 0.355F;
+                pose.scale(-scale, -scale, scale);
+                pose.translate(0F, 1.33F, 0F);
+            }
+            case BERTHASAURA -> {
+                scale = 0.48F;
+                pose.scale(-scale, -scale, scale);
+                pose.translate(0F, 0.6F, 0F);
+            }
+            case PSITTACOSAURUSLUJIATUNENSIS -> {
+                scale = 0.4F;
+                pose.scale(-scale, -scale, scale);
+                pose.translate(0F, 1.F, 0F);
+            }
+            case BEELZEBUFO -> {
+                scale = 0.089F;
+                pose.scale(-scale, -scale, scale);
+                pose.translate(0F, 9.75F, 0F);
+            }
+            case CHAOYANGOPTERUS -> {
+                scale = 0.44F;
+                pose.scale(-scale, -scale, scale);
+                pose.translate(0F, 0.8F, 0F);
+            }
+            case CAIUAJARA -> {
+                scale = 0.61F;
+                pose.scale(-scale, -scale, scale);
+                pose.translate(0F, -0.2F, 0F);
+            }
+            case CALLAWAYIA -> {
+                scale = 0.6F;
+                pose.scale(-scale, -scale, scale);
+                pose.translate(0F, -0.25F, 0F);
+            }
+            case TAPEJARA -> {
+                scale = 0.32F;
+                pose.scale(-scale, -scale, scale);
+                pose.translate(0F, 1.63F, 0F);
+            }
+            case TOCKUS -> {
+                scale = 0.2F;
+                pose.scale(-scale, -scale, scale);
+                pose.translate(0F, 3.5F, 0F);
+            }
+            case ELGINIA -> {
+                scale = 0.2F;
+                pose.scale(-scale, -scale, scale);
+                pose.translate(0F, 3.5F, 0F);
+            }
+            case EUROPEJARA -> {
+                scale = 0.32F;
+                pose.scale(-scale, -scale, scale);
+                pose.translate(0F, 0F, 0F);
+            }
+            case KRANOSAURA -> {
+                scale = 0.17F;
+                pose.scale(-scale, -scale, scale);
+                pose.translate(0F, 4.4F, 0F);
+            }
+            case DIPLOCERASPIS -> {
+                scale = 0.175F;
+                pose.scale(-scale, -scale, scale);
+                pose.translate(0F, 2F, 0F);
+            }
+            case ACANTHOSTOMATOPS -> {
+                scale = 0.283F;
+                pose.scale(-scale, -scale, scale);
+                pose.translate(0F, 2.02F, 0F);
+            }
+            case HYPURONECTOR -> {
+                scale = 0.1F;
+                pose.scale(-scale, -scale, scale);
+                pose.translate(0F, 8.5F, 0F);
+            }
+            case MEILIFEILONG -> {
+                scale = 0.48F;
+                pose.scale(-scale, -scale, scale);
+                pose.translate(0F, 0.58F, 0F);
+            }
+            case CARTORHYNCHUS -> {
+                scale = 0.125F;
+                pose.scale(-scale, -scale, scale);
+                pose.translate(0F, 6.5F, 0F);
+            }
+            case HUAXIADRACO -> {
+                scale = 0.32F;
+                pose.scale(-scale, -scale, scale);
+                pose.translate(0F, 1.6F, 0F);
+            }
+            case SHENZHOUPTERUS -> {
+                scale = 0.34F;
+                pose.scale(-scale, -scale, scale);
+                pose.translate(0F, 0.5F, 0F);
+            }
+            case PROBURNETIA -> {
+                scale = 0.32F;
+                pose.scale(-scale, -scale, scale);
+                pose.translate(0F, 1.62F, 0F);
+            }
+            case MIXOSAURUS -> {
+                scale = 0.32F;
+                pose.scale(-scale, -scale, scale);
+                pose.translate(0F, 0F, 0F);
+            }
+            case CAVIRAMUS -> {
+                scale = 0.14F;
+                pose.scale(-scale, -scale, scale);
+                pose.translate(0F, 5F, 0F);
+            }
+            case ALOPECOGNATHUS -> {
+                scale = 0.33F;
+                pose.scale(-scale, -scale, scale);
+                pose.translate(0F, 1.54F, 0F);
+            }
+            case CYAMODUS -> {
+                scale = 0.44F;
+                pose.scale(-scale, -scale, scale);
+                pose.translate(0F, 0.4F, 0F);
+            }
+            case HETERODONTOSAURUS -> {
+                scale = 0.3F;
+                pose.scale(-scale, -scale, scale);
+                pose.translate(0F, 1.85F, 0F);
+            }
+            case XINPUSAURUS -> {
+                scale = 0.31F;
+                pose.scale(-scale, -scale, scale);
+                pose.translate(0F, 1.6F, 0F);
+            }
+            case TIARAJUDENS -> {
+                scale = 0.36F;
+                pose.scale(-scale, -scale, scale);
+                pose.translate(0F, 1.27F, 0F);
+            }
+            case ROBERTIA -> {
+                scale = 0.08F;
+                pose.scale(-scale, -scale, scale);
+                pose.translate(0F, 11F, 0F);
+            }
+            case MELOSAURUS -> {
+                scale = 0.22F;
+                pose.scale(-scale, -scale, scale);
+                pose.translate(0F, 3F, 0F);
+            }
+            case DATHEOSAURUS -> {
+                scale = 0.15F;
+                pose.scale(-scale, -scale, scale);
+                pose.translate(0F, 5.17F, 0F);
+            }
+            case LLALLAWAVIS -> {
+                scale = 0.34F;
+                pose.scale(-scale, -scale, scale);
+                pose.translate(0F, 1.45F, 0F);
+            }
+            case CONFLICTO -> {
+                scale = 0.13F;
+                pose.scale(-scale, -scale, scale);
+                pose.translate(0F, 6.2F, 0F);
+            }
+            case PROGANOCHELYS -> {
+                scale = 0.39F;
+                pose.scale(-scale, -scale, scale);
+                pose.translate(0F, 1.06F, 0F);
+            }
+            case HYPERODAPEDON -> {
+                scale = 0.48F;
+                pose.scale(-scale, -scale, scale);
+                pose.translate(0F, 0.6F, 0F);
+            }
+            case HUPEHSUCHUS -> {
+                scale = 0.18F;
+                pose.scale(-scale, -scale, scale);
+                pose.translate(0F, 1.3F, 0F);
+            }
+            case GERROTHORAX -> {
+                scale = 0.24F;
+                pose.scale(-scale, -scale, scale);
+                pose.translate(0F, 2.68F, 0F);
+            }
+            case ICHTHYOSTEGA -> {
+                scale = 0.46F;
+                pose.scale(-scale, -scale, scale);
+                pose.translate(0F, 0.68F, 0F);
+            }
+            case TETRACERATOPS -> {
+                scale = 0.11F;
+                pose.scale(-scale, -scale, scale);
+                pose.translate(0F, 7.6F, 0F);
+            }
+            case LABIDOSAURUS -> {
+                scale = 0.16F;
+                pose.scale(-scale, -scale, scale);
+                pose.translate(0F, 4.735F, 0F);
+            }
+            case TANYSTROPHEUSLONGOBARDICUS -> {
+                scale = 0.15F;
+                pose.scale(-scale, -scale, scale);
+                pose.translate(0F, 4.735F, 0F);
+            }
+            case LAGERPETON -> {
+                scale = 0.11F;
+                pose.scale(-scale, -scale, scale);
+                pose.translate(0F, 7.56F, 0F);
+            }
+            case HIPPOSAURUS -> {
+                scale = 0.31F;
+                pose.scale(-scale, -scale, scale);
+                pose.translate(0F, 1.73F, 0F);
+            }
+            case ISENGOPS -> {
+                scale = 0.27F;
+                pose.scale(-scale, -scale, scale);
+                pose.translate(0F, 2.2F, 0F);
+            }
+            case YI -> {
+                scale = 0.17F;
+                pose.scale(-scale, -scale, scale);
+                pose.translate(0F, 4.37F, 0F);
+            }
+            case LAIDLERIA -> {
+                scale = 0.11F;
+                pose.scale(-scale, -scale, scale);
+                pose.translate(0F, 7.6F, 0F);
+            }
+            case YINLONG -> {
+                scale = 0.26F;
+                pose.scale(-scale, -scale, scale);
+                pose.translate(0F, 2.36F, 0F);
+            }
+            case CACOPS -> {
+                scale = 0.14F;
+                pose.scale(-scale, -scale, scale);
+                pose.translate(0F, 5.65F, 0F);
+            }
+            case EORAPTOR -> {
+                scale = 0.19F;
+                pose.scale(-scale, -scale, scale);
+                pose.translate(0F, 3.76F, 0F);
+            }
+            case PELECANIMIMUS -> {
+                scale = 0.62F;
+                pose.scale(-scale, -scale, scale);
+                pose.translate(0F, 0.1F, 0F);
+            }
+            case BUNGARTIUS -> {
+                scale = 0.69F;
+                pose.scale(-scale, -scale, scale);
+                pose.translate(0F, 0F, 0F);
+            }
+            default -> throw new IllegalStateException("Unexpected value: " + type);
+        }
 		VertexConsumer vertexconsumer = p_173668_.getBuffer(p_173671_);
 		p_173670_.setupAnim(p_173666_, p_173665_, 0.0F);
-		p_173670_.renderToBuffer(p_173667_, vertexconsumer, p_173669_, OverlayTexture.NO_OVERLAY, 1.0F, 1.0F, 1.0F, 1.0F);
-		p_173667_.popPose();
+		p_173670_.renderToBuffer(pose, vertexconsumer, p_173669_, OverlayTexture.NO_OVERLAY, 1.0F, 1.0F, 1.0F, 1.0F);
+		pose.popPose();
 	}
 
-	public static RenderType getSkeletonRenderType(FossilSkeletonFivePieceBlock.Type type , int fossilLevel) {
+	public static RenderType getSkeletonRenderType(FossilSkeletonFivePieceBlock.Type type, int fossilLevel) {
 		ResourceLocation resourceLocation;
-		if (type == FossilSkeletonFivePieceBlock.Types.EUNOTOSAURUS) {
+		if (type == EUNOTOSAURUS) {
 			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/eunotosaurus/stage_" + fossilLevel + ".png");
 		} else if (type == FossilSkeletonFivePieceBlock.Types.PELECANIMIMUS) {
 			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/pelecanimimus/stage_" + fossilLevel + ".png");
