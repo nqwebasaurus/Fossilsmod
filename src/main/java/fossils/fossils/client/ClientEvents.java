@@ -1,8 +1,7 @@
 package fossils.fossils.client;
 
 import fossils.fossils.FossilMod;
-import fossils.fossils.client.blockentity.model.DicranurusFossilSlabModel;
-import fossils.fossils.client.blockentity.model.TropaeumFossilSlabModel;
+import fossils.fossils.client.blockentity.model.*;
 import fossils.fossils.client.blockentity.model.Deinotherium.DeinotheriumFossilFrameModel;
 import fossils.fossils.client.blockentity.model.Deinotherium.DeinotheriumFossilModel;
 import fossils.fossils.client.blockentity.model.abyssosaurus.AbyssosaurusFossilFrameModel;
@@ -841,6 +840,10 @@ public class ClientEvents {
 	public static ModelLayerLocation TROPAEUM = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "tropaeum"), "tropaeum");
 	public static ModelLayerLocation ALIENUM = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "alienum"), "alienum");
 	public static ModelLayerLocation DICRANURUS = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "dicranurus"), "dicranurus");
+    public static ModelLayerLocation CHARNIA = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "charnia"), "charnia");
+    public static ModelLayerLocation DICKINSONIA = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "dickinsonia"), "dickinsonia");
+    public static ModelLayerLocation OTTOIA = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "ottoia"), "ottoia");
+    public static ModelLayerLocation OPABINIA = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "opabinia"), "opabinia");
 	public static ModelLayerLocation EUNOTOSAURUS = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "eunotosaurus"), "eunotosaurus");
 	public static ModelLayerLocation EUNOTOSAURUS_FRAME = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "eunotosaurus_frame"), "eunotosaurus_frame");
 	public static ModelLayerLocation PELECANIMIMUS = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "pelecanimimus"), "pelecanimimus");
@@ -1653,6 +1656,10 @@ public class ClientEvents {
 		event.registerLayerDefinition(TROPAEUM, TropaeumFossilSlabModel::createBodyLayer);
 		event.registerLayerDefinition(ALIENUM, AlienumFossilSlabModel::createBodyLayer);
 		event.registerLayerDefinition(DICRANURUS, DicranurusFossilSlabModel::createBodyLayer);
+        event.registerLayerDefinition(CHARNIA, CharniaFossilSlabModel::createBodyLayer);
+        event.registerLayerDefinition(DICKINSONIA, DickinsoniaFossilSlabModel::createBodyLayer);
+        event.registerLayerDefinition(OTTOIA, OttoiaFossilSlabModel::createBodyLayer);
+        event.registerLayerDefinition(OPABINIA, OpabiniaFossilSlabModel::createBodyLayer);
 		event.registerLayerDefinition(EUNOTOSAURUS, EunotosaurusFossilModel::createBodyLayer);
 		event.registerLayerDefinition(EUNOTOSAURUS_FRAME, EunotosaurusFossilFrameModel::createBodyLayer);
 		event.registerLayerDefinition(PELECANIMIMUS, PelecanimimusFossilModel::createBodyLayer);

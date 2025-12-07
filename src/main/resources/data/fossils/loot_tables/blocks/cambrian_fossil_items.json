@@ -6,12 +6,12 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "fossils:alienum_fossil",
+          "name": "fossils:ottoia_fossil",
           "weight": 2
         },
         {
           "type": "minecraft:item",
-          "name": "fossils:charnia_fossil",
+          "name": "fossils:opabinia_fossil",
           "weight": 2
         },
         {

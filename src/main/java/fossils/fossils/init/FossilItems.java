@@ -24,6 +24,10 @@ public class FossilItems {
 	public static final RegistryObject<FossilItem> TROPAEUM = SLAB_REGISTER.register("tropaeum_fossil", () -> new FossilItem(FossilBlocks.TROPAEUM.get(), new Item.Properties()));
 	public static final RegistryObject<FossilItem> ALIENUM = SLAB_REGISTER.register("alienum_fossil", () -> new FossilItem(FossilBlocks.ALIENUM.get(), new Item.Properties()));
 	public static final RegistryObject<FossilItem> DICRANURUS = SLAB_REGISTER.register("dicranurus_fossil", () -> new FossilItem(FossilBlocks.DICRANURUS.get(), new Item.Properties()));
+	public static final RegistryObject<FossilItem> CHARNIA = SLAB_REGISTER.register("charnia_fossil", () -> new FossilItem(FossilBlocks.CHARNIA.get(), new Item.Properties()));
+	public static final RegistryObject<FossilItem> DICKINSONIA = SLAB_REGISTER.register("dickinsonia_fossil", () -> new FossilItem(FossilBlocks.DICKINSONIA.get(), new Item.Properties()));
+	public static final RegistryObject<FossilItem> OTTOIA = SLAB_REGISTER.register("ottoia_fossil", () -> new FossilItem(FossilBlocks.OTTOIA.get(), new Item.Properties()));
+	public static final RegistryObject<FossilItem> OPABINIA = SLAB_REGISTER.register("opabinia_fossil", () -> new FossilItem(FossilBlocks.OPABINIA.get(), new Item.Properties()));
 	
 	//Five
 	public static final RegistryObject<FossilItem> EUNOTOSAURUS = SKELETON_REGISTER.register("eunotosaurus_fossil", () -> new FossilItem(FossilBlocks.EUNOTOSAURUS.get(), new Item.Properties().rarity(FossilRarities.FIVE_PIECE_FOSSIL)));

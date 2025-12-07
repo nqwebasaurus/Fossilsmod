@@ -118,5 +118,9 @@ public class RotatableFossilEntity extends BaseEntityBlock {
         TROPAEUM,
         DICRANURUS,
         ALIENUM,
+        CHARNIA,
+        DICKINSONIA,
+        OTTOIA,
+        OPABINIA,
     }
 }
