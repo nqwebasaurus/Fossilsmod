@@ -852,6 +852,12 @@ public class ClientEvents {
     public static ModelLayerLocation PIKAIA = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "pikaia"), "pikaia");
     public static ModelLayerLocation CANADASPIS = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "canadaspis"), "canadaspis");
     public static ModelLayerLocation KERYGMACHELA = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "kerygmachela"), "kerygmachela");
+    public static ModelLayerLocation BALHUTICARIS = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "balhuticaris"), "balhuticaris");
+    public static ModelLayerLocation CAMBRORASTER = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "cambroraster"), "cambroraster");
+    public static ModelLayerLocation EOREDLICHIA = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "eoredlichia"), "eoredlichia");
+    public static ModelLayerLocation YAWUNIK = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "yawunik"), "yawunik");
+    public static ModelLayerLocation MARRELLA = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "marrella"), "marrella");
+    public static ModelLayerLocation YOHOIA = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "yohoia"), "yohoia");
 	public static ModelLayerLocation EUNOTOSAURUS = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "eunotosaurus"), "eunotosaurus");
 	public static ModelLayerLocation EUNOTOSAURUS_FRAME = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "eunotosaurus_frame"), "eunotosaurus_frame");
 	public static ModelLayerLocation PELECANIMIMUS = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "pelecanimimus"), "pelecanimimus");
@@ -1676,6 +1682,12 @@ public class ClientEvents {
         event.registerLayerDefinition(PIKAIA, PikaiaFossilSlabModel::createBodyLayer);
         event.registerLayerDefinition(CANADASPIS, CanadaspisFossilSlabModel::createBodyLayer);
         event.registerLayerDefinition(KERYGMACHELA, KerygmachelaFossilSlabModel::createBodyLayer);
+        event.registerLayerDefinition(BALHUTICARIS, BalhuticarisFossilSlabModel::createBodyLayer);
+        event.registerLayerDefinition(CAMBRORASTER, CambrorasterFossilSlabModel::createBodyLayer);
+        event.registerLayerDefinition(EOREDLICHIA, EoredlichiaFossilSlabModel::createBodyLayer);
+        event.registerLayerDefinition(YAWUNIK, YawunikFossilSlabModel::createBodyLayer);
+        event.registerLayerDefinition(MARRELLA, MarrellaFossilSlabModel::createBodyLayer);
+        event.registerLayerDefinition(YOHOIA, YohoiaFossilSlabModel::createBodyLayer);
 		event.registerLayerDefinition(EUNOTOSAURUS, EunotosaurusFossilModel::createBodyLayer);
 		event.registerLayerDefinition(EUNOTOSAURUS_FRAME, EunotosaurusFossilFrameModel::createBodyLayer);
 		event.registerLayerDefinition(PELECANIMIMUS, PelecanimimusFossilModel::createBodyLayer);

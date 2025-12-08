@@ -130,5 +130,11 @@ public class RotatableFossilEntity extends BaseEntityBlock {
         PIKAIA,
         CANADASPIS,
         KERYGMACHELA,
+        BALHUTICARIS,
+        CAMBRORASTER,
+        EOREDLICHIA,
+        YAWUNIK,
+        MARRELLA,
+        YOHOIA,
     }
 }
