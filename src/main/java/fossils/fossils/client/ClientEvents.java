@@ -862,6 +862,12 @@ public class ClientEvents {
     public static ModelLayerLocation SKEEMELLA = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "skeemella"), "skeemella");
     public static ModelLayerLocation PHANTASPIS = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "phantaspis"), "phantaspis");
     public static ModelLayerLocation KLEPTOTHULE = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "kleptothule"), "kleptothule");
+    public static ModelLayerLocation ISOXYS = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "isoxys"), "isoxys");
+    public static ModelLayerLocation CAPINATATOR = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "capinatator"), "capinatator");
+    public static ModelLayerLocation HADRANAX = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "hadranax"), "hadranax");
+    public static ModelLayerLocation PAMBDELURION = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "pambdelurion"), "pambdelurion");
+    public static ModelLayerLocation SIDNEYIA = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "sidneyia"), "sidneyia");
+    public static ModelLayerLocation TUZOIA = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "tuzoia"), "tuzoia");
 	public static ModelLayerLocation EUNOTOSAURUS = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "eunotosaurus"), "eunotosaurus");
 	public static ModelLayerLocation EUNOTOSAURUS_FRAME = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "eunotosaurus_frame"), "eunotosaurus_frame");
 	public static ModelLayerLocation PELECANIMIMUS = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "pelecanimimus"), "pelecanimimus");
@@ -1696,6 +1702,12 @@ public class ClientEvents {
         event.registerLayerDefinition(SKEEMELLA, SkeemellaFossilSlabModel::createBodyLayer);
         event.registerLayerDefinition(PHANTASPIS, PhantaspisFossilSlabModel::createBodyLayer);
         event.registerLayerDefinition(KLEPTOTHULE, KleptothuleFossilSlabModel::createBodyLayer);
+        event.registerLayerDefinition(ISOXYS, IsoxysFossilSlabModel::createBodyLayer);
+        event.registerLayerDefinition(CAPINATATOR, CapinatatorFossilSlabModel::createBodyLayer);
+        event.registerLayerDefinition(HADRANAX, HadranaxFossilSlabModel::createBodyLayer);
+        event.registerLayerDefinition(PAMBDELURION, PambdelurionFossilSlabModel::createBodyLayer);
+        event.registerLayerDefinition(SIDNEYIA, SidneyiaFossilSlabModel::createBodyLayer);
+        event.registerLayerDefinition(TUZOIA, TuzoiaFossilSlabModel::createBodyLayer);
 		event.registerLayerDefinition(EUNOTOSAURUS, EunotosaurusFossilModel::createBodyLayer);
 		event.registerLayerDefinition(EUNOTOSAURUS_FRAME, EunotosaurusFossilFrameModel::createBodyLayer);
 		event.registerLayerDefinition(PELECANIMIMUS, PelecanimimusFossilModel::createBodyLayer);

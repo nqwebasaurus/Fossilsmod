@@ -140,5 +140,11 @@ public class RotatableFossilEntity extends BaseEntityBlock {
         SKEEMELLA,
         PHANTASPIS,
         KLEPTOTHULE,
+        ISOXYS,
+        CAPINATATOR,
+        HADRANAX,
+        PAMBDELURION,
+        SIDNEYIA,
+        TUZOIA,
     }
 }
