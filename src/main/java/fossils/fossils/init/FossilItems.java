@@ -42,6 +42,10 @@ public class FossilItems {
 	public static final RegistryObject<FossilItem> YAWUNIK = SLAB_REGISTER.register("yawunik_fossil", () -> new FossilItem(FossilBlocks.YAWUNIK.get(), new Item.Properties()));
 	public static final RegistryObject<FossilItem> MARRELLA = SLAB_REGISTER.register("marrella_fossil", () -> new FossilItem(FossilBlocks.MARRELLA.get(), new Item.Properties()));
 	public static final RegistryObject<FossilItem> YOHOIA = SLAB_REGISTER.register("yohoia_fossil", () -> new FossilItem(FossilBlocks.YOHOIA.get(), new Item.Properties()));
+	public static final RegistryObject<FossilItem> SANCTACARIS = SLAB_REGISTER.register("sanctacaris_fossil", () -> new FossilItem(FossilBlocks.SANCTACARIS.get(), new Item.Properties()));
+	public static final RegistryObject<FossilItem> SKEEMELLA = SLAB_REGISTER.register("skeemella_fossil", () -> new FossilItem(FossilBlocks.SKEEMELLA.get(), new Item.Properties()));
+	public static final RegistryObject<FossilItem> PHANTASPIS = SLAB_REGISTER.register("phantaspis_fossil", () -> new FossilItem(FossilBlocks.PHANTASPIS.get(), new Item.Properties()));
+	public static final RegistryObject<FossilItem> KLEPTOTHULE = SLAB_REGISTER.register("kleptothule_fossil", () -> new FossilItem(FossilBlocks.KLEPTOTHULE.get(), new Item.Properties()));
 	
 	//Five
 	public static final RegistryObject<FossilItem> EUNOTOSAURUS = SKELETON_REGISTER.register("eunotosaurus_fossil", () -> new FossilItem(FossilBlocks.EUNOTOSAURUS.get(), new Item.Properties().rarity(FossilRarities.FIVE_PIECE_FOSSIL)));

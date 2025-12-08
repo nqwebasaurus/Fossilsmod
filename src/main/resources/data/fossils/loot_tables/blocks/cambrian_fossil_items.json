@@ -83,6 +83,26 @@
           "type": "minecraft:item",
           "name": "fossils:yohoia_fossil",
           "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:sanctacaris_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:skeemella_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:phantaspis_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:kleptothule_fossil",
+          "weight": 2
         }
       ],
       "rolls": 1

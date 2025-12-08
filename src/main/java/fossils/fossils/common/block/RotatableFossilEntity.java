@@ -136,5 +136,9 @@ public class RotatableFossilEntity extends BaseEntityBlock {
         YAWUNIK,
         MARRELLA,
         YOHOIA,
+        SANCTACARIS,
+        SKEEMELLA,
+        PHANTASPIS,
+        KLEPTOTHULE,
     }
 }

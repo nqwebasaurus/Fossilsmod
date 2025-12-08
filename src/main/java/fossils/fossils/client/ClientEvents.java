@@ -858,6 +858,10 @@ public class ClientEvents {
     public static ModelLayerLocation YAWUNIK = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "yawunik"), "yawunik");
     public static ModelLayerLocation MARRELLA = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "marrella"), "marrella");
     public static ModelLayerLocation YOHOIA = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "yohoia"), "yohoia");
+    public static ModelLayerLocation SANCTACARIS = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "sanctacaris"), "sanctacaris");
+    public static ModelLayerLocation SKEEMELLA = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "skeemella"), "skeemella");
+    public static ModelLayerLocation PHANTASPIS = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "phantaspis"), "phantaspis");
+    public static ModelLayerLocation KLEPTOTHULE = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "kleptothule"), "kleptothule");
 	public static ModelLayerLocation EUNOTOSAURUS = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "eunotosaurus"), "eunotosaurus");
 	public static ModelLayerLocation EUNOTOSAURUS_FRAME = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "eunotosaurus_frame"), "eunotosaurus_frame");
 	public static ModelLayerLocation PELECANIMIMUS = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "pelecanimimus"), "pelecanimimus");
@@ -1688,6 +1692,10 @@ public class ClientEvents {
         event.registerLayerDefinition(YAWUNIK, YawunikFossilSlabModel::createBodyLayer);
         event.registerLayerDefinition(MARRELLA, MarrellaFossilSlabModel::createBodyLayer);
         event.registerLayerDefinition(YOHOIA, YohoiaFossilSlabModel::createBodyLayer);
+        event.registerLayerDefinition(SANCTACARIS, SanctacarisFossilSlabModel::createBodyLayer);
+        event.registerLayerDefinition(SKEEMELLA, SkeemellaFossilSlabModel::createBodyLayer);
+        event.registerLayerDefinition(PHANTASPIS, PhantaspisFossilSlabModel::createBodyLayer);
+        event.registerLayerDefinition(KLEPTOTHULE, KleptothuleFossilSlabModel::createBodyLayer);
 		event.registerLayerDefinition(EUNOTOSAURUS, EunotosaurusFossilModel::createBodyLayer);
 		event.registerLayerDefinition(EUNOTOSAURUS_FRAME, EunotosaurusFossilFrameModel::createBodyLayer);
 		event.registerLayerDefinition(PELECANIMIMUS, PelecanimimusFossilModel::createBodyLayer);
