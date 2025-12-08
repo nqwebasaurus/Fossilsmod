@@ -122,5 +122,13 @@ public class RotatableFossilEntity extends BaseEntityBlock {
         DICKINSONIA,
         OTTOIA,
         OPABINIA,
+        WAPTIA,
+        MOBULAVERMIS,
+        HALLUCIGENIA,
+        NECTOCARIS,
+        HAIKOUICHTHYS,
+        PIKAIA,
+        CANADASPIS,
+        KERYGMACHELA,
     }
 }
