@@ -70,6 +70,8 @@ public class FossilItems {
 	public static final RegistryObject<FossilItem> PRICYCLOPYGE = SLAB_REGISTER.register("pricyclopyge_fossil", () -> new FossilItem(FossilBlocks.PRICYCLOPYGE.get(), new Item.Properties()));
 	public static final RegistryObject<FossilItem> VILLEBRUNASTER = SLAB_REGISTER.register("villebrunaster_fossil", () -> new FossilItem(FossilBlocks.VILLEBRUNASTER.get(), new Item.Properties()));
 	public static final RegistryObject<FossilItem> CALVAPILOSA = SLAB_REGISTER.register("calvapilosa_fossil", () -> new FossilItem(FossilBlocks.CALVAPILOSA.get(), new Item.Properties()));
+	public static final RegistryObject<FossilItem> TREMAGLASPIS = SLAB_REGISTER.register("tremaglaspis_fossil", () -> new FossilItem(FossilBlocks.TREMAGLASPIS.get(), new Item.Properties()));
+	public static final RegistryObject<FossilItem> EURYPTERUS = SLAB_REGISTER.register("eurypterus_fossil", () -> new FossilItem(FossilBlocks.EURYPTERUS.get(), new Item.Properties()));
 	
 	//Five
 	public static final RegistryObject<FossilItem> EUNOTOSAURUS = SKELETON_REGISTER.register("eunotosaurus_fossil", () -> new FossilItem(FossilBlocks.EUNOTOSAURUS.get(), new Item.Properties().rarity(FossilRarities.FIVE_PIECE_FOSSIL)));

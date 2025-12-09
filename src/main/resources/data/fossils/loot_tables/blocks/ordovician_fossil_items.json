@@ -88,6 +88,11 @@
           "type": "minecraft:item",
           "name": "fossils:calvapilosa_fossil",
           "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:tremaglaspis_fossil",
+          "weight": 2
         }
       ],
       "rolls": 1

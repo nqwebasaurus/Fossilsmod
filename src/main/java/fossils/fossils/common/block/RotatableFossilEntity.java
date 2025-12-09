@@ -164,5 +164,7 @@ public class RotatableFossilEntity extends BaseEntityBlock {
         PRICYCLOPYGE,
         VILLEBRUNASTER,
         CALVAPILOSA,
+        TREMAGLASPIS,
+        EURYPTERUS,
     }
 }

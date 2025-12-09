@@ -28,6 +28,11 @@
           "type": "minecraft:item",
           "name": "fossils:hungioides_fossil",
           "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:eurypterus_fossil",
+          "weight": 2
         }
       ],
       "rolls": 1

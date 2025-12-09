@@ -884,6 +884,8 @@ public class ClientEvents {
     public static ModelLayerLocation CONODONT = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "conodont"), "conodont");
     public static ModelLayerLocation PRICYCLOPYGE = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "pricyclopyge"), "pricyclopyge");
     public static ModelLayerLocation VILLEBRUNASTER = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "villebrunaster"), "villebrunaster");
+    public static ModelLayerLocation TREMAGLASPIS = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "tremaglaspis"), "tremaglaspis");
+    public static ModelLayerLocation EURYPTERUS = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "eurypterus"), "eurypterus");
     public static ModelLayerLocation CALVAPILOSA = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "calvapilosa"), "calvapilosa");
     public static ModelLayerLocation ENDOCERAS = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "endoceras"), "endoceras");
 	public static ModelLayerLocation EUNOTOSAURUS = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "eunotosaurus"), "eunotosaurus");
@@ -1742,6 +1744,8 @@ public class ClientEvents {
         event.registerLayerDefinition(CONODONT, ConodontFossilSlabModel::createBodyLayer);
         event.registerLayerDefinition(PRICYCLOPYGE, PricyclopygeFossilSlabModel::createBodyLayer);
         event.registerLayerDefinition(VILLEBRUNASTER, VillebrunasterFossilSlabModel::createBodyLayer);
+        event.registerLayerDefinition(TREMAGLASPIS, TremaglaspisFossilSlabModel::createBodyLayer);
+        event.registerLayerDefinition(EURYPTERUS, EurypterusFossilSlabModel::createBodyLayer);
         event.registerLayerDefinition(CALVAPILOSA, CalvapilosaFossilSlabModel::createBodyLayer);
         event.registerLayerDefinition(ENDOCERAS, EndocerasFossilSlabModel::createBodyLayer);
 		event.registerLayerDefinition(EUNOTOSAURUS, EunotosaurusFossilModel::createBodyLayer);
