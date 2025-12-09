@@ -60,6 +60,14 @@ public class FossilItems {
 	public static final RegistryObject<FossilItem> PLATYPELTOIDES = SLAB_REGISTER.register("platypeltoides_fossil", () -> new FossilItem(FossilBlocks.PLATYPELTOIDES.get(), new Item.Properties()));
 	public static final RegistryObject<FossilItem> LITUITES = SLAB_REGISTER.register("lituites_fossil", () -> new FossilItem(FossilBlocks.LITUITES.get(), new Item.Properties()));
 	public static final RegistryObject<FossilItem> COTHURNOCYSTIS = SLAB_REGISTER.register("cothurnocystis_fossil", () -> new FossilItem(FossilBlocks.COTHURNOCYSTIS.get(), new Item.Properties()));
+	public static final RegistryObject<FossilItem> ORTHOCERAS = SLAB_REGISTER.register("orthoceras_fossil", () -> new FossilItem(FossilBlocks.ORTHOCERAS.get(), new Item.Properties()));
+	public static final RegistryObject<FossilItem> ARANDASPIS = SLAB_REGISTER.register("arandaspis_fossil", () -> new FossilItem(FossilBlocks.ARANDASPIS.get(), new Item.Properties()));
+	public static final RegistryObject<FossilItem> SACABAMBASPIS = SLAB_REGISTER.register("sacabambaspis_fossil", () -> new FossilItem(FossilBlocks.SACABAMBASPIS.get(), new Item.Properties()));
+	public static final RegistryObject<FossilItem> DIDYMOGRAPTUS = SLAB_REGISTER.register("didymograptus_fossil", () -> new FossilItem(FossilBlocks.DIDYMOGRAPTUS.get(), new Item.Properties()));
+	public static final RegistryObject<FossilItem> GONIOCERAS = SLAB_REGISTER.register("gonioceras_fossil", () -> new FossilItem(FossilBlocks.GONIOCERAS.get(), new Item.Properties()));
+	public static final RegistryObject<FossilItem> ENDOCERAS = SLAB_REGISTER.register("endoceras_fossil", () -> new FossilItem(FossilBlocks.ENDOCERAS.get(), new Item.Properties()));
+	public static final RegistryObject<FossilItem> CONODONT = SLAB_REGISTER.register("conodont_fossil", () -> new FossilItem(FossilBlocks.CONODONT.get(), new Item.Properties()));
+	public static final RegistryObject<FossilItem> PRICYCLOPYGE = SLAB_REGISTER.register("pricyclopyge_fossil", () -> new FossilItem(FossilBlocks.PRICYCLOPYGE.get(), new Item.Properties()));
 	
 	//Five
 	public static final RegistryObject<FossilItem> EUNOTOSAURUS = SKELETON_REGISTER.register("eunotosaurus_fossil", () -> new FossilItem(FossilBlocks.EUNOTOSAURUS.get(), new Item.Properties().rarity(FossilRarities.FIVE_PIECE_FOSSIL)));

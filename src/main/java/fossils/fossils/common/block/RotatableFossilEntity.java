@@ -154,5 +154,13 @@ public class RotatableFossilEntity extends BaseEntityBlock {
         PLATYPELTOIDES,
         LITUITES,
         COTHURNOCYSTIS,
+        ORTHOCERAS,
+        ARANDASPIS,
+        SACABAMBASPIS,
+        DIDYMOGRAPTUS,
+        GONIOCERAS,
+        ENDOCERAS,
+        CONODONT,
+        PRICYCLOPYGE,
     }
 }

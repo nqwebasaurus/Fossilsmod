@@ -53,6 +53,11 @@
           "type": "minecraft:item",
           "name": "fossils:eryops_fossil",
           "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:conodont_fossil",
+          "weight": 2
         }
       ],
       "rolls": 1

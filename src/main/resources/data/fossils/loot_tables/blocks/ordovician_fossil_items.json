@@ -11,16 +11,6 @@
         },
         {
           "type": "minecraft:item",
-          "name": "fossils:charnia_fossil",
-          "weight": 2
-        },
-        {
-          "type": "minecraft:item",
-          "name": "fossils:dickinsonia_fossil",
-          "weight": 2
-        },
-        {
-          "type": "minecraft:item",
           "name": "fossils:aphetoceras_fossil",
           "weight": 2
         },
@@ -47,6 +37,46 @@
         {
           "type": "minecraft:item",
           "name": "fossils:cothurnocystis_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:arandaspis_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:orthoceras_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:sacabambaspis_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:didymograptus_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:gonioceras_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:endoceras_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:conodont_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:pricyclopyge_fossil",
           "weight": 2
         }
       ],
