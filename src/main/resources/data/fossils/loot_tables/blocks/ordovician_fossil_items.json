@@ -6,57 +6,52 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "fossils:acanthostega_fossil",
+          "name": "fossils:aegirocassis_fossil",
           "weight": 2
         },
         {
           "type": "minecraft:item",
-          "name": "fossils:tiktaalik_fossil",
+          "name": "fossils:charnia_fossil",
           "weight": 2
         },
         {
           "type": "minecraft:item",
-          "name": "fossils:bothriolepis_fossil",
+          "name": "fossils:dickinsonia_fossil",
           "weight": 2
         },
         {
           "type": "minecraft:item",
-          "name": "fossils:dicranurus_fossil",
+          "name": "fossils:aphetoceras_fossil",
           "weight": 2
         },
         {
           "type": "minecraft:item",
-          "name": "fossils:dunkleosteus_fossil",
-          "weight": 2
-        },
-        {
-          "type": "minecraft:item",
-          "name": "fossils:ichthyostega_fossil",
-          "weight": 2
-        },
-        {
-          "type": "minecraft:item",
-          "name": "fossils:parmastega_fossil",
-          "weight": 2
-        },
-        {
-          "type": "minecraft:item",
-          "name": "fossils:bungartius_fossil",
-          "weight": 2
-        },
-        {
-          "type": "minecraft:item",
-          "name": "fossils:titanichthys_fossil",
+          "name": "fossils:hungioides_fossil",
           "weight": 2
         },
         {
           "type": "minecraft:item",
           "name": "fossils:cyrtoceras_fossil",
           "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:platypeltoides_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:lituites_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:cothurnocystis_fossil",
+          "weight": 2
         }
       ],
       "rolls": 1
     }
   ],
-  "random_sequence": "fossils:block/devonian_fossil_ore"
+  "random_sequence": "fossils:block/precambrian_fossil_ore"
 }

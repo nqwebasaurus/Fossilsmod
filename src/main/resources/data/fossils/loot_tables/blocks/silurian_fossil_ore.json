@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "fossils:junk_fossil",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "fossils:blocks/silurian_fossil_items",
+          "weight": 2
+        }
+      ]
+    }
+  ]
+}

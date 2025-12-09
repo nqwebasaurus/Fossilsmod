@@ -146,5 +146,13 @@ public class RotatableFossilEntity extends BaseEntityBlock {
         PAMBDELURION,
         SIDNEYIA,
         TUZOIA,
+        VETULICOLA,
+        AEGIROCASSIS,
+        APHETOCERAS,
+        HUNGIOIDES,
+        CYRTOCERAS,
+        PLATYPELTOIDES,
+        LITUITES,
+        COTHURNOCYSTIS,
     }
 }

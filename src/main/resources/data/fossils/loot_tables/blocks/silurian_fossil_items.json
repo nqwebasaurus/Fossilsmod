@@ -1,0 +1,37 @@
+{
+  "pools": [
+    {
+      "bonus_rolls": 0,
+      "conditions": [],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "fossils:cyrtoceras_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:charnia_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:dickinsonia_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:aphetoceras_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:hungioides_fossil",
+          "weight": 2
+        }
+      ],
+      "rolls": 1
+    }
+  ],
+  "random_sequence": "fossils:block/precambrian_fossil_ore"
+}
