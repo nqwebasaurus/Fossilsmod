@@ -162,5 +162,7 @@ public class RotatableFossilEntity extends BaseEntityBlock {
         ENDOCERAS,
         CONODONT,
         PRICYCLOPYGE,
+        VILLEBRUNASTER,
+        CALVAPILOSA,
     }
 }

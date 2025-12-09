@@ -78,6 +78,16 @@
           "type": "minecraft:item",
           "name": "fossils:pricyclopyge_fossil",
           "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:villebrunaster_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:calvapilosa_fossil",
+          "weight": 2
         }
       ],
       "rolls": 1

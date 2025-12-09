@@ -883,6 +883,8 @@ public class ClientEvents {
     public static ModelLayerLocation GONIOCERAS = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "gonioceras"), "gonioceras");
     public static ModelLayerLocation CONODONT = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "conodont"), "conodont");
     public static ModelLayerLocation PRICYCLOPYGE = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "pricyclopyge"), "pricyclopyge");
+    public static ModelLayerLocation VILLEBRUNASTER = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "villebrunaster"), "villebrunaster");
+    public static ModelLayerLocation CALVAPILOSA = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "calvapilosa"), "calvapilosa");
     public static ModelLayerLocation ENDOCERAS = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "endoceras"), "endoceras");
 	public static ModelLayerLocation EUNOTOSAURUS = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "eunotosaurus"), "eunotosaurus");
 	public static ModelLayerLocation EUNOTOSAURUS_FRAME = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "eunotosaurus_frame"), "eunotosaurus_frame");
@@ -1739,6 +1741,8 @@ public class ClientEvents {
         event.registerLayerDefinition(GONIOCERAS, GoniocerasFossilSlabModel::createBodyLayer);
         event.registerLayerDefinition(CONODONT, ConodontFossilSlabModel::createBodyLayer);
         event.registerLayerDefinition(PRICYCLOPYGE, PricyclopygeFossilSlabModel::createBodyLayer);
+        event.registerLayerDefinition(VILLEBRUNASTER, VillebrunasterFossilSlabModel::createBodyLayer);
+        event.registerLayerDefinition(CALVAPILOSA, CalvapilosaFossilSlabModel::createBodyLayer);
         event.registerLayerDefinition(ENDOCERAS, EndocerasFossilSlabModel::createBodyLayer);
 		event.registerLayerDefinition(EUNOTOSAURUS, EunotosaurusFossilModel::createBodyLayer);
 		event.registerLayerDefinition(EUNOTOSAURUS_FRAME, EunotosaurusFossilFrameModel::createBodyLayer);
