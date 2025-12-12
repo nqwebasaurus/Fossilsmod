@@ -16,22 +16,42 @@
         },
         {
           "type": "minecraft:item",
-          "name": "fossils:dickinsonia_fossil",
+          "name": "fossils:ciurcopterus_fossil",
           "weight": 2
         },
         {
           "type": "minecraft:item",
-          "name": "fossils:aphetoceras_fossil",
+          "name": "fossils:guiyu_fossil",
           "weight": 2
         },
         {
           "type": "minecraft:item",
-          "name": "fossils:hungioides_fossil",
+          "name": "fossils:bohemoharpes_fossil",
           "weight": 2
         },
         {
           "type": "minecraft:item",
-          "name": "fossils:eurypterus_fossil",
+          "name": "fossils:dunyu_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:crotalocephalus_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:polybranchiaspis_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:carcinosoma_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:furcaster_fossil",
           "weight": 2
         }
       ],

@@ -166,5 +166,13 @@ public class RotatableFossilEntity extends BaseEntityBlock {
         CALVAPILOSA,
         TREMAGLASPIS,
         EURYPTERUS,
+        CIURCOPTERUS,
+        GUIYU,
+        BOHEMOHARPES,
+        DUNYU,
+        CROTALOCEPHALUS,
+        POLYBRANCHIASPIS,
+        CARCINOSOMA,
+        FURCASTER,
     }
 }

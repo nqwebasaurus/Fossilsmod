@@ -72,6 +72,14 @@ public class FossilItems {
 	public static final RegistryObject<FossilItem> CALVAPILOSA = SLAB_REGISTER.register("calvapilosa_fossil", () -> new FossilItem(FossilBlocks.CALVAPILOSA.get(), new Item.Properties()));
 	public static final RegistryObject<FossilItem> TREMAGLASPIS = SLAB_REGISTER.register("tremaglaspis_fossil", () -> new FossilItem(FossilBlocks.TREMAGLASPIS.get(), new Item.Properties()));
 	public static final RegistryObject<FossilItem> EURYPTERUS = SLAB_REGISTER.register("eurypterus_fossil", () -> new FossilItem(FossilBlocks.EURYPTERUS.get(), new Item.Properties()));
+	public static final RegistryObject<FossilItem> CIURCOPTERUS = SLAB_REGISTER.register("ciurcopterus_fossil", () -> new FossilItem(FossilBlocks.CIURCOPTERUS.get(), new Item.Properties()));
+	public static final RegistryObject<FossilItem> GUIYU = SLAB_REGISTER.register("guiyu_fossil", () -> new FossilItem(FossilBlocks.GUIYU.get(), new Item.Properties()));
+	public static final RegistryObject<FossilItem> BOHEMOHARPES = SLAB_REGISTER.register("bohemoharpes_fossil", () -> new FossilItem(FossilBlocks.BOHEMOHARPES.get(), new Item.Properties()));
+	public static final RegistryObject<FossilItem> DUNYU = SLAB_REGISTER.register("dunyu_fossil", () -> new FossilItem(FossilBlocks.DUNYU.get(), new Item.Properties()));
+	public static final RegistryObject<FossilItem> CROTALOCEPHALUS = SLAB_REGISTER.register("crotalocephalus_fossil", () -> new FossilItem(FossilBlocks.CROTALOCEPHALUS.get(), new Item.Properties()));
+	public static final RegistryObject<FossilItem> POLYBRANCHIASPIS = SLAB_REGISTER.register("polybranchiaspis_fossil", () -> new FossilItem(FossilBlocks.POLYBRANCHIASPIS.get(), new Item.Properties()));
+	public static final RegistryObject<FossilItem> CARCINOSOMA = SLAB_REGISTER.register("carcinosoma_fossil", () -> new FossilItem(FossilBlocks.CARCINOSOMA.get(), new Item.Properties()));
+	public static final RegistryObject<FossilItem> FURCASTER = SLAB_REGISTER.register("furcaster_fossil", () -> new FossilItem(FossilBlocks.FURCASTER.get(), new Item.Properties()));
 	
 	//Five
 	public static final RegistryObject<FossilItem> EUNOTOSAURUS = SKELETON_REGISTER.register("eunotosaurus_fossil", () -> new FossilItem(FossilBlocks.EUNOTOSAURUS.get(), new Item.Properties().rarity(FossilRarities.FIVE_PIECE_FOSSIL)));

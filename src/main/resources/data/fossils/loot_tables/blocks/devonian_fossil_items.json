@@ -58,6 +58,16 @@
           "type": "minecraft:item",
           "name": "fossils:conodont_fossil",
           "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:crotalocephalus_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:furcaster_fossil",
+          "weight": 2
         }
       ],
       "rolls": 1
