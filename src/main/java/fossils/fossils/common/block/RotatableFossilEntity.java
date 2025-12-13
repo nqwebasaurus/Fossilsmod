@@ -174,5 +174,13 @@ public class RotatableFossilEntity extends BaseEntityBlock {
         POLYBRANCHIASPIS,
         CARCINOSOMA,
         FURCASTER,
+        JAMOYTIUS,
+        BIRKENIA,
+        AINIKTOZOON,
+        ARCTINURUS,
+        PLATYLOMASPIS,
+        PHRAGMOCERAS,
+        SLIMONIA,
+        MICROPHYMASPIS,
     }
 }
