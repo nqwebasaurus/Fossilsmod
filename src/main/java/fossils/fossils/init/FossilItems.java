@@ -92,6 +92,12 @@ public class FossilItems {
 	public static final RegistryObject<FossilItem> BETHESDAICHTHYS = SLAB_REGISTER.register("bethesdaichthys_fossil", () -> new FossilItem(FossilBlocks.BETHESDAICHTHYS.get(), new Item.Properties()));
 	public static final RegistryObject<FossilItem> BRAZILICHTHYS = SLAB_REGISTER.register("brazilichthys_fossil", () -> new FossilItem(FossilBlocks.BRAZILICHTHYS.get(), new Item.Properties()));
 	public static final RegistryObject<FossilItem> MAMULICHTHYS = SLAB_REGISTER.register("mamulichthys_fossil", () -> new FossilItem(FossilBlocks.MAMULICHTHYS.get(), new Item.Properties()));
+	public static final RegistryObject<FossilItem> THELODUS = SLAB_REGISTER.register("thelodus_fossil", () -> new FossilItem(FossilBlocks.THELODUS.get(), new Item.Properties()));
+	public static final RegistryObject<FossilItem> WARNETICARIS = SLAB_REGISTER.register("warneticaris_fossil", () -> new FossilItem(FossilBlocks.WARNETICARIS.get(), new Item.Properties()));
+	public static final RegistryObject<FossilItem> SCLERODUS = SLAB_REGISTER.register("sclerodus_fossil", () -> new FossilItem(FossilBlocks.SCLERODUS.get(), new Item.Properties()));
+	public static final RegistryObject<FossilItem> ROTACIURCA = SLAB_REGISTER.register("rotaciurca_fossil", () -> new FossilItem(FossilBlocks.ROTACIURCA.get(), new Item.Properties()));
+	public static final RegistryObject<FossilItem> CAMANCHIA = SLAB_REGISTER.register("camanchia_fossil", () -> new FossilItem(FossilBlocks.CAMANCHIA.get(), new Item.Properties()));
+	public static final RegistryObject<FossilItem> TRIMERUS = SLAB_REGISTER.register("trimerus_fossil", () -> new FossilItem(FossilBlocks.TRIMERUS.get(), new Item.Properties()));
 	
 	//Five
 	public static final RegistryObject<FossilItem> EUNOTOSAURUS = SKELETON_REGISTER.register("eunotosaurus_fossil", () -> new FossilItem(FossilBlocks.EUNOTOSAURUS.get(), new Item.Properties().rarity(FossilRarities.FIVE_PIECE_FOSSIL)));

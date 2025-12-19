@@ -186,5 +186,11 @@ public class RotatableFossilEntity extends BaseEntityBlock {
         BETHESDAICHTHYS,
         BRAZILICHTHYS,
         MAMULICHTHYS,
+        THELODUS,
+        WARNETICARIS,
+        SCLERODUS,
+        ROTACIURCA,
+        CAMANCHIA,
+        TRIMERUS,
     }
 }
