@@ -182,5 +182,11 @@ public class RotatableFossilEntity extends BaseEntityBlock {
         PHRAGMOCERAS,
         SLIMONIA,
         MICROPHYMASPIS,
+        THELODUS,
+        WARNETICARIS,
+        SCLERODUS,
+        ROTACIURCA,
+        CAMANCHIA,
+        TRIMERUS,
     }
 }

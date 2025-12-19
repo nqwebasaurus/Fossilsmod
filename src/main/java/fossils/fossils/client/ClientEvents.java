@@ -903,6 +903,12 @@ public class ClientEvents {
     public static ModelLayerLocation SLIMONIA = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "slimonia"), "slimonia");
     public static ModelLayerLocation MICROPHYMASPIS = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "microphymaspis"), "microphymaspis");
     public static ModelLayerLocation CALVAPILOSA = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "calvapilosa"), "calvapilosa");
+    public static ModelLayerLocation THELODUS = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "thelodus"), "thelodus");
+    public static ModelLayerLocation WARNETICARIS = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "warneticaris"), "warneticaris");
+    public static ModelLayerLocation SCLERODUS = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "sclerodus"), "sclerodus");
+    public static ModelLayerLocation ROTACIURCA = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "rotaciurca"), "rotaciurca");
+    public static ModelLayerLocation CAMANCHIA = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "camanchia"), "camanchia");
+    public static ModelLayerLocation TRIMERUS = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "trimerus"), "trimerus");
     public static ModelLayerLocation ENDOCERAS = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "endoceras"), "endoceras");
 	public static ModelLayerLocation EUNOTOSAURUS = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "eunotosaurus"), "eunotosaurus");
 	public static ModelLayerLocation EUNOTOSAURUS_FRAME = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "eunotosaurus_frame"), "eunotosaurus_frame");
@@ -1779,6 +1785,12 @@ public class ClientEvents {
         event.registerLayerDefinition(SLIMONIA, SlimoniaFossilSlabModel::createBodyLayer);
         event.registerLayerDefinition(MICROPHYMASPIS, MicrophymaspisFossilSlabModel::createBodyLayer);
         event.registerLayerDefinition(CALVAPILOSA, CalvapilosaFossilSlabModel::createBodyLayer);
+        event.registerLayerDefinition(THELODUS, ThelodusFossilSlabModel::createBodyLayer);
+        event.registerLayerDefinition(WARNETICARIS, WarneticarisFossilSlabModel::createBodyLayer);
+        event.registerLayerDefinition(SCLERODUS, SclerodusFossilSlabModel::createBodyLayer);
+        event.registerLayerDefinition(ROTACIURCA, RotaciurcaFossilSlabModel::createBodyLayer);
+        event.registerLayerDefinition(CAMANCHIA, CamanchiaFossilSlabModel::createBodyLayer);
+        event.registerLayerDefinition(TRIMERUS, TrimerusFossilSlabModel::createBodyLayer);
         event.registerLayerDefinition(ENDOCERAS, EndocerasFossilSlabModel::createBodyLayer);
 		event.registerLayerDefinition(EUNOTOSAURUS, EunotosaurusFossilModel::createBodyLayer);
 		event.registerLayerDefinition(EUNOTOSAURUS_FRAME, EunotosaurusFossilFrameModel::createBodyLayer);
