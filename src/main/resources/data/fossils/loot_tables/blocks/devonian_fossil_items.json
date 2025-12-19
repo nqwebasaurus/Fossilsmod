@@ -68,6 +68,11 @@
           "type": "minecraft:item",
           "name": "fossils:furcaster_fossil",
           "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:priscomyzon_fossil",
+          "weight": 2
         }
       ],
       "rolls": 1
