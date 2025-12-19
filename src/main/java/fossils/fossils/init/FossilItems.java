@@ -88,6 +88,10 @@ public class FossilItems {
 	public static final RegistryObject<FossilItem> PHRAGMOCERAS = SLAB_REGISTER.register("phragmoceras_fossil", () -> new FossilItem(FossilBlocks.PHRAGMOCERAS.get(), new Item.Properties()));
 	public static final RegistryObject<FossilItem> SLIMONIA = SLAB_REGISTER.register("slimonia_fossil", () -> new FossilItem(FossilBlocks.SLIMONIA.get(), new Item.Properties()));
 	public static final RegistryObject<FossilItem> MICROPHYMASPIS = SLAB_REGISTER.register("microphymaspis_fossil", () -> new FossilItem(FossilBlocks.MICROPHYMASPIS.get(), new Item.Properties()));
+	public static final RegistryObject<FossilItem> PRISCOMYZON = SLAB_REGISTER.register("priscomyzon_fossil", () -> new FossilItem(FossilBlocks.PRISCOMYZON.get(), new Item.Properties()));
+	public static final RegistryObject<FossilItem> BETHESDAICHTHYS = SLAB_REGISTER.register("bethesdaichthys_fossil", () -> new FossilItem(FossilBlocks.BETHESDAICHTHYS.get(), new Item.Properties()));
+	public static final RegistryObject<FossilItem> BRAZILICHTHYS = SLAB_REGISTER.register("brazilichthys_fossil", () -> new FossilItem(FossilBlocks.BRAZILICHTHYS.get(), new Item.Properties()));
+	public static final RegistryObject<FossilItem> MAMULICHTHYS = SLAB_REGISTER.register("mamulichthys_fossil", () -> new FossilItem(FossilBlocks.MAMULICHTHYS.get(), new Item.Properties()));
 	
 	//Five
 	public static final RegistryObject<FossilItem> EUNOTOSAURUS = SKELETON_REGISTER.register("eunotosaurus_fossil", () -> new FossilItem(FossilBlocks.EUNOTOSAURUS.get(), new Item.Properties().rarity(FossilRarities.FIVE_PIECE_FOSSIL)));

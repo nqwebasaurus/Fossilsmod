@@ -902,6 +902,10 @@ public class ClientEvents {
     public static ModelLayerLocation PHRAGMOCERAS = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "phragmoceras"), "phragmoceras");
     public static ModelLayerLocation SLIMONIA = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "slimonia"), "slimonia");
     public static ModelLayerLocation MICROPHYMASPIS = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "microphymaspis"), "microphymaspis");
+    public static ModelLayerLocation PRISCOMYZON = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "priscomyzon"), "priscomyzon");
+    public static ModelLayerLocation BETHESDAICHTHYS = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "bethesdaichthys"), "bethesdaichthys");
+    public static ModelLayerLocation BRAZILICHTHYS = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "brazilichthys"), "brazilichthys");
+    public static ModelLayerLocation MAMULICHTHYS = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "mamulichthys"), "mamulichthys");
     public static ModelLayerLocation CALVAPILOSA = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "calvapilosa"), "calvapilosa");
     public static ModelLayerLocation ENDOCERAS = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "endoceras"), "endoceras");
 	public static ModelLayerLocation EUNOTOSAURUS = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "eunotosaurus"), "eunotosaurus");
@@ -1778,6 +1782,10 @@ public class ClientEvents {
         event.registerLayerDefinition(PHRAGMOCERAS, PhragmocerasFossilSlabModel::createBodyLayer);
         event.registerLayerDefinition(SLIMONIA, SlimoniaFossilSlabModel::createBodyLayer);
         event.registerLayerDefinition(MICROPHYMASPIS, MicrophymaspisFossilSlabModel::createBodyLayer);
+        event.registerLayerDefinition(PRISCOMYZON, PriscomyzonFossilSlabModel::createBodyLayer);;
+        event.registerLayerDefinition(BETHESDAICHTHYS, BethesdaichthysFossilSlabModel::createBodyLayer);;
+        event.registerLayerDefinition(BRAZILICHTHYS, BrazilichthysFossilSlabModel::createBodyLayer);;
+        event.registerLayerDefinition(MAMULICHTHYS, MamulichthysFossilSlabModel::createBodyLayer);
         event.registerLayerDefinition(CALVAPILOSA, CalvapilosaFossilSlabModel::createBodyLayer);
         event.registerLayerDefinition(ENDOCERAS, EndocerasFossilSlabModel::createBodyLayer);
 		event.registerLayerDefinition(EUNOTOSAURUS, EunotosaurusFossilModel::createBodyLayer);

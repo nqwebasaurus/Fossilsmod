@@ -182,5 +182,9 @@ public class RotatableFossilEntity extends BaseEntityBlock {
         PHRAGMOCERAS,
         SLIMONIA,
         MICROPHYMASPIS,
+        PRISCOMYZON,
+        BETHESDAICHTHYS,
+        BRAZILICHTHYS,
+        MAMULICHTHYS,
     }
 }
