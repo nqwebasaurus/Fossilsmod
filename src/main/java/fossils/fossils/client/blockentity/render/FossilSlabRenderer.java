@@ -2183,19 +2183,19 @@ public class FossilSlabRenderer implements BlockEntityRenderer<FossilSlabBlockEn
                 }
                 case NORTH -> {
                     pose.mulPose(Axis.XP.rotationDegrees(-90));
-                    pose.translate(0F, 3.5F, 4.7F);
+                    pose.translate(0F, -0.25F, 1.2F);
                 }
                 case SOUTH -> {
                     pose.mulPose(Axis.XP.rotationDegrees(90));
-                    pose.translate(0F, 3.5F, -4.7F);
+                    pose.translate(0F, -0.25F, -1.2F);
                 }
                 case WEST -> {
                     pose.mulPose(Axis.ZP.rotationDegrees(-90));
-                    pose.translate(-4.7F, 3.5F, 0F);
+                    pose.translate(-1.2F, -0.25F, 0F);
                 }
                 case EAST -> {
                     pose.mulPose(Axis.ZP.rotationDegrees(90));
-                    pose.translate(4.7F, 3.5F, 0F);
+                    pose.translate(1.2F, -0.25F, 0F);
                 }
             }
             ;
