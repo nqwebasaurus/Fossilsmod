@@ -192,5 +192,13 @@ public class RotatableFossilEntity extends BaseEntityBlock {
         ROTACIURCA,
         CAMANCHIA,
         TRIMERUS,
+        ARCHAEOPTERYX,
+        MECOCHIRUS,
+        CAIHONG,
+        LONGISQUAMA,
+        ERYMA,
+        PHYLLOCERAS,
+        TITANITES,
+        LEEDSICHTHYS,
     }
 }

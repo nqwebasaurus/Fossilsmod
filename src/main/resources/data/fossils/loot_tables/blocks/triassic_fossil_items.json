@@ -348,6 +348,16 @@
           "type": "minecraft:item",
           "name": "fossils:conodont_fossil",
           "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:longisquama_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:phylloceras_fossil",
+          "weight": 2
         }
       ],
       "rolls": 1

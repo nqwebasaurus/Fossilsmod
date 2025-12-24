@@ -273,6 +273,21 @@
           "type": "minecraft:item",
           "name": "fossils:nanotyrannus_fossil",
           "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:mecochirus_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:eryma_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:phylloceras_fossil",
+          "weight": 2
         }
       ],
       "rolls": 1
