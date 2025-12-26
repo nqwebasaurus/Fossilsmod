@@ -113,7 +113,7 @@ public class RotatableFossilEntity extends BaseEntityBlock {
     }
 
     public interface FossilType {}
-
+//so many thingies
     public static enum Types implements FossilType {
         TROPAEUM,
         DICRANURUS,
