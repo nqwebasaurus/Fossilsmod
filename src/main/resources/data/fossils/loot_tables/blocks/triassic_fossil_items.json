@@ -358,6 +358,11 @@
           "type": "minecraft:item",
           "name": "fossils:phylloceras_fossil",
           "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:hydropessum_fossil",
+          "weight": 2
         }
       ],
       "rolls": 1
