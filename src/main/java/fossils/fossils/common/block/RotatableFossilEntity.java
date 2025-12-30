@@ -198,6 +198,10 @@ public class RotatableFossilEntity extends BaseEntityBlock {
         ERYMA,
         PHYLLOCERAS,
         TITANITES,
-        LEEDSICHTHYS
+        LEEDSICHTHYS,
+        PALAEONISCUM,
+        PARANAICHTHYS,
+        COOPEROCERAS,
+        HYDROPESSUM
     }
 }
