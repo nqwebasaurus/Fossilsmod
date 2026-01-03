@@ -238,6 +238,36 @@
           "type": "minecraft:item",
           "name": "fossils:conodont_fossil",
           "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:bethesdaichthys_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:brazilichthys_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:mamulichthys_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:palaeoniscum_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:paranaichthys_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:cooperoceras_fossil",
+          "weight": 2
         }
       ],
       "rolls": 1

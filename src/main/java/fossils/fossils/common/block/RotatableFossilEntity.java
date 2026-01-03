@@ -114,7 +114,6 @@ public class RotatableFossilEntity extends BaseEntityBlock implements SimpleWate
     }
 
     public interface FossilType {}
-
     public static enum Types implements FossilType {
         TROPAEUM,
         DICRANURUS,
@@ -167,5 +166,43 @@ public class RotatableFossilEntity extends BaseEntityBlock implements SimpleWate
         CALVAPILOSA,
         TREMAGLASPIS,
         EURYPTERUS,
+        CIURCOPTERUS,
+        GUIYU,
+        BOHEMOHARPES,
+        DUNYU,
+        CROTALOCEPHALUS,
+        POLYBRANCHIASPIS,
+        CARCINOSOMA,
+        FURCASTER,
+        JAMOYTIUS,
+        BIRKENIA,
+        AINIKTOZOON,
+        ARCTINURUS,
+        PLATYLOMASPIS,
+        PHRAGMOCERAS,
+        SLIMONIA,
+        MICROPHYMASPIS,
+        PRISCOMYZON,
+        BETHESDAICHTHYS,
+        BRAZILICHTHYS,
+        MAMULICHTHYS,
+        THELODUS,
+        WARNETICARIS,
+        SCLERODUS,
+        ROTACIURCA,
+        CAMANCHIA,
+        TRIMERUS,
+        ARCHAEOPTERYX,
+        MECOCHIRUS,
+        CAIHONG,
+        LONGISQUAMA,
+        ERYMA,
+        PHYLLOCERAS,
+        TITANITES,
+        LEEDSICHTHYS,
+        PALAEONISCUM,
+        PARANAICHTHYS,
+        COOPEROCERAS,
+        HYDROPESSUM
     }
 }
