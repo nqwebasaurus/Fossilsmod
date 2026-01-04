@@ -230,7 +230,6 @@ public class FossilSlabRenderer implements BlockEntityRenderer<FossilSlabBlockEn
     public void render(FossilSlabBlockEntity entity, float p_112535_, PoseStack stack, MultiBufferSource p_112537_, int p_112538_, int p_112539_) {
         float f = 0;
         BlockState blockstate = entity.getBlockState();
-        int rotation = blockstate.getValue(RotatableFossilEntity.ROTATION);
         Direction direction = blockstate.getValue(BlockStateProperties.FACING);
         float rotationDegrees = ((RotatableFossilEntity) blockstate.getBlock()).getRotationDegrees(blockstate);
         RotatableFossilEntity.FossilType skullblock$type = ((RotatableFossilEntity) blockstate.getBlock()).getFossilType();
