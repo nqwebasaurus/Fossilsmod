@@ -2720,11 +2720,11 @@ public class FossilSlabRenderer implements BlockEntityRenderer<FossilSlabBlockEn
             }
             ;
         } else if (fossilBlock == RotatableFossilEntity.Types.COOPEROCERAS) {
-            float scale = 0.15F;
+            float scale = 0.05F;
             pose.scale(-scale, -scale, scale);
             switch (dir) {
                 case DOWN -> {
-                    pose.translate(0F, 5.15F, 0F);
+                    pose.translate(0F, 18.5F, 0F);
                 }
                 case UP -> {
                     pose.mulPose(Axis.XP.rotationDegrees(180));
@@ -2732,19 +2732,19 @@ public class FossilSlabRenderer implements BlockEntityRenderer<FossilSlabBlockEn
                 }
                 case NORTH -> {
                     pose.mulPose(Axis.XP.rotationDegrees(-90));
-                    pose.translate(0F, 1.85F, 3.2F);
+                    pose.translate(0F, 8.46F, 9.2F);
                 }
                 case SOUTH -> {
                     pose.mulPose(Axis.XP.rotationDegrees(90));
-                    pose.translate(0F, 1.85F, -3.2F);
+                    pose.translate(0F, 8.46F, -9.2F);
                 }
                 case WEST -> {
                     pose.mulPose(Axis.ZP.rotationDegrees(-90));
-                    pose.translate(-3.2F, 1.85F, 0F);
+                    pose.translate(-8.46F, 8.5F, 0F);
                 }
                 case EAST -> {
                     pose.mulPose(Axis.ZP.rotationDegrees(90));
-                    pose.translate(3.2F, 1.85F, 0F);
+                    pose.translate(9.2F, 8.46F, 0F);
                 }
             }
             ;
