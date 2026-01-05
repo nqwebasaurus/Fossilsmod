@@ -203,6 +203,14 @@ public class RotatableFossilEntity extends BaseEntityBlock implements SimpleWate
         PALAEONISCUM,
         PARANAICHTHYS,
         COOPEROCERAS,
+        STENOPROTOME,
+        RHYNCHODERCETIS,
+        HARRANAHYNCHUS,
+        PROTOZOEA,
+        ANGUILLAVUS,
+        KAYKAY,
+        PRIONOLEPIS,
+        SIGMAPYCNODUS,
         HYDROPESSUM
     }
 }
