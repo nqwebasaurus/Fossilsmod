@@ -211,6 +211,12 @@ public class RotatableFossilEntity extends BaseEntityBlock implements SimpleWate
         KAYKAY,
         PRIONOLEPIS,
         SIGMAPYCNODUS,
+        MARALDICHTHYS,
+        HENSODON,
+        BOBASATRANIA,
+        HARPAGOFUTUTOR,
+        PARAMETEORASPIS,
+        CLADOSELACHE,
         HYDROPESSUM
     }
 }

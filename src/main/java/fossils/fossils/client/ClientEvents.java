@@ -934,6 +934,12 @@ public class ClientEvents {
     public static ModelLayerLocation KAYKAY = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "kaykay"), "kaykay");
     public static ModelLayerLocation PRIONOLEPIS = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "prionolepis"), "prionolepis");
     public static ModelLayerLocation SIGMAPYCNODUS = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "sigmapycnodus"), "sigmapycnodus");
+    public static ModelLayerLocation MARALDICHTHYS = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "maraldichthys"), "maraldichthys");
+    public static ModelLayerLocation HENSODON = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "hensodon"), "hensodon");
+    public static ModelLayerLocation BOBASATRANIA = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "bobasatrania"), "bobasatrania");
+    public static ModelLayerLocation HARPAGOFUTUTOR = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "harpagofututor"), "harpagofututor");
+    public static ModelLayerLocation PARAMETEORASPIS = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "parameteoraspis"), "parameteoraspis");
+    public static ModelLayerLocation CLADOSELACHE = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "cladoselache"), "cladoselache");
 	public static ModelLayerLocation EUNOTOSAURUS = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "eunotosaurus"), "eunotosaurus");
 	public static ModelLayerLocation EUNOTOSAURUS_FRAME = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "eunotosaurus_frame"), "eunotosaurus_frame");
 	public static ModelLayerLocation PELECANIMIMUS = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "pelecanimimus"), "pelecanimimus");
@@ -1840,6 +1846,12 @@ public class ClientEvents {
         event.registerLayerDefinition(KAYKAY, KaykayFossilSlabModel::createBodyLayer);
         event.registerLayerDefinition(PRIONOLEPIS, PrionolepisFossilSlabModel::createBodyLayer);
         event.registerLayerDefinition(SIGMAPYCNODUS, SigmapycnodusFossilSlabModel::createBodyLayer);
+        event.registerLayerDefinition(MARALDICHTHYS, MaraldichthysFossilSlabModel::createBodyLayer);
+        event.registerLayerDefinition(HENSODON, HensodonFossilSlabModel::createBodyLayer);
+        event.registerLayerDefinition(BOBASATRANIA, BobasatraniaFossilSlabModel::createBodyLayer);
+        event.registerLayerDefinition(HARPAGOFUTUTOR, HarpagofututorFossilSlabModel::createBodyLayer);
+        event.registerLayerDefinition(PARAMETEORASPIS, ParameteoraspisFossilSlabModel::createBodyLayer);
+        event.registerLayerDefinition(CLADOSELACHE, CladoselacheFossilSlabModel::createBodyLayer);
 		event.registerLayerDefinition(EUNOTOSAURUS, EunotosaurusFossilModel::createBodyLayer);
 		event.registerLayerDefinition(EUNOTOSAURUS_FRAME, EunotosaurusFossilFrameModel::createBodyLayer);
 		event.registerLayerDefinition(PELECANIMIMUS, PelecanimimusFossilModel::createBodyLayer);

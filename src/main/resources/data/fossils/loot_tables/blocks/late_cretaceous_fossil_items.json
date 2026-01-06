@@ -323,6 +323,16 @@
           "type": "minecraft:item",
           "name": "fossils:sigmapycnodus_fossil",
           "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:maraldichthys_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:hensodon_fossil",
+          "weight": 2
         }
       ],
       "rolls": 1

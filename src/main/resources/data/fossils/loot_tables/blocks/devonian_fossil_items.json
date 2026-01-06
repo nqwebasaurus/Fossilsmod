@@ -73,6 +73,16 @@
           "type": "minecraft:item",
           "name": "fossils:priscomyzon_fossil",
           "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:parameteoraspis_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:cladoselache_fossil",
+          "weight": 2
         }
       ],
       "rolls": 1
