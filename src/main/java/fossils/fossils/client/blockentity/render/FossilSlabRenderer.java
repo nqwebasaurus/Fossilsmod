@@ -252,10 +252,10 @@ public class FossilSlabRenderer implements BlockEntityRenderer<FossilSlabBlockEn
         builder.put(RotatableFossilEntity.Types.HARPAGOFUTUTOR, new HarpagofututorFossilSlabModel(model.bakeLayer(ClientEvents.HARPAGOFUTUTOR)));
         builder.put(RotatableFossilEntity.Types.PARAMETEORASPIS, new ParameteoraspisFossilSlabModel(model.bakeLayer(ClientEvents.PARAMETEORASPIS)));
         builder.put(RotatableFossilEntity.Types.CLADOSELACHE, new CladoselacheFossilSlabModel(model.bakeLayer(ClientEvents.CLADOSELACHE)));
-        builder.put(RotatableFossilEntity.Types.MIMETASTER, new CladoselacheFossilSlabModel(model.bakeLayer(ClientEvents.MIMETASTER)));
-        builder.put(RotatableFossilEntity.Types.HELIANTHASTER, new CladoselacheFossilSlabModel(model.bakeLayer(ClientEvents.HELIANTHASTER)));
-        builder.put(RotatableFossilEntity.Types.FLAGELLOPANTOPUS, new CladoselacheFossilSlabModel(model.bakeLayer(ClientEvents.FLAGELLOPANTOPUS)));
-        builder.put(RotatableFossilEntity.Types.STENSIOELLA, new CladoselacheFossilSlabModel(model.bakeLayer(ClientEvents.STENSIOELLA)));
+        builder.put(RotatableFossilEntity.Types.MIMETASTER, new MimetasterFossilSlabModel(model.bakeLayer(ClientEvents.MIMETASTER)));
+        builder.put(RotatableFossilEntity.Types.HELIANTHASTER, new HelianthasterFossilSlabModel(model.bakeLayer(ClientEvents.HELIANTHASTER)));
+        builder.put(RotatableFossilEntity.Types.FLAGELLOPANTOPUS, new FlagellopantopusFossilSlabModel(model.bakeLayer(ClientEvents.FLAGELLOPANTOPUS)));
+        builder.put(RotatableFossilEntity.Types.STENSIOELLA, new StensioellaFossilSlabModel(model.bakeLayer(ClientEvents.STENSIOELLA)));
         return builder.build();
     }
 
