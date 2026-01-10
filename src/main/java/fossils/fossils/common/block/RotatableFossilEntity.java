@@ -217,6 +217,10 @@ public class RotatableFossilEntity extends BaseEntityBlock implements SimpleWate
         HARPAGOFUTUTOR,
         PARAMETEORASPIS,
         CLADOSELACHE,
-        HYDROPESSUM
+        HYDROPESSUM,
+        MIMETASTER,
+        HELIANTHASTER,
+        FLAGELLOPANTOPUS,
+        STENSIOELLA
     }
 }

@@ -83,6 +83,26 @@
           "type": "minecraft:item",
           "name": "fossils:cladoselache_fossil",
           "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:mimetaster_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:helianthaster_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:flagellopantopus_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:stensioella_fossil",
+          "weight": 2
         }
       ],
       "rolls": 1
