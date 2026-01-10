@@ -3307,11 +3307,11 @@ public class FossilSlabRenderer implements BlockEntityRenderer<FossilSlabBlockEn
             }
             ;
         } else if (fossilBlock == RotatableFossilEntity.Types.STENSIOELLA) {
-            float scale = 0.4F;
+            float scale = 0.2F;
             pose.scale(-scale, -scale, scale);
             switch (dir) {
                 case DOWN -> {
-                    pose.translate(0F, 1F, 0F);
+                    pose.translate(0F, 3.5F, 0F);
                 }
                 case UP -> {
                     pose.mulPose(Axis.XP.rotationDegrees(180));
@@ -3319,19 +3319,19 @@ public class FossilSlabRenderer implements BlockEntityRenderer<FossilSlabBlockEn
                 }
                 case NORTH -> {
                     pose.mulPose(Axis.XP.rotationDegrees(-90));
-                    pose.translate(0F, -0.25F, 1.2F);
+                    pose.translate(0F, 1F, 2F);
                 }
                 case SOUTH -> {
                     pose.mulPose(Axis.XP.rotationDegrees(90));
-                    pose.translate(0F, -0.25F, -1.2F);
+                    pose.translate(0F, 1F, -2F);
                 }
                 case WEST -> {
                     pose.mulPose(Axis.ZP.rotationDegrees(-90));
-                    pose.translate(-1.2F, -0.25F, 0F);
+                    pose.translate(-2.5F, 1F, 0F);
                 }
                 case EAST -> {
                     pose.mulPose(Axis.ZP.rotationDegrees(90));
-                    pose.translate(1.2F, -0.25F, 0F);
+                    pose.translate(2.5F, 1F, 0F);
                 }
             }
             ;
