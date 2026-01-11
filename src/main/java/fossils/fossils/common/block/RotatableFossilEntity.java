@@ -221,6 +221,14 @@ public class RotatableFossilEntity extends BaseEntityBlock implements SimpleWate
         MIMETASTER,
         HELIANTHASTER,
         FLAGELLOPANTOPUS,
-        STENSIOELLA
+        STENSIOELLA,
+        LUNGMENSHANASPIS,
+        DORYASPIS,
+        GANTAROSTRATASPIS,
+        FURCACAUDA,
+        ANGELACANTHUS,
+        OSTEOLEPIS,
+        SEMIONOTUS,
+        BUNDENBACHIELLUS
     }
 }
