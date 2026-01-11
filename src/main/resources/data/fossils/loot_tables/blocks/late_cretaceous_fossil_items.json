@@ -151,6 +151,11 @@
         },
         {
           "type": "minecraft:item",
+          "name": "fossils:australovenator_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
           "name": "fossils:pachyrhinosauruscanadensis_fossil",
           "weight": 2
         },
