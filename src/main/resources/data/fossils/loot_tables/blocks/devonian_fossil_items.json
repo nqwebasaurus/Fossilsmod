@@ -138,6 +138,26 @@
           "type": "minecraft:item",
           "name": "fossils:bundenbachiellus_fossil",
           "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:hibbertopterus_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:eusthenopteron_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:jaekelopterus_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:praearcturus_fossil",
+          "weight": 2
         }
       ],
       "rolls": 1

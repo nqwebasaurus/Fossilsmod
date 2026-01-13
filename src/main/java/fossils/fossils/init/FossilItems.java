@@ -136,6 +136,12 @@ public class FossilItems {
 	public static final RegistryObject<FossilItem> OSTEOLEPIS = SLAB_REGISTER.register("osteolepis_fossil", () -> new FossilItem(FossilBlocks.OSTEOLEPIS.get(), new Item.Properties()));
 	public static final RegistryObject<FossilItem> SEMIONOTUS = SLAB_REGISTER.register("semionotus_fossil", () -> new FossilItem(FossilBlocks.SEMIONOTUS.get(), new Item.Properties()));
 	public static final RegistryObject<FossilItem> BUNDENBACHIELLUS = SLAB_REGISTER.register("bundenbachiellus_fossil", () -> new FossilItem(FossilBlocks.BUNDENBACHIELLUS.get(), new Item.Properties()));
+	public static final RegistryObject<FossilItem> HIBBERTOPTERUS = SLAB_REGISTER.register("hibbertopterus_fossil", () -> new FossilItem(FossilBlocks.HIBBERTOPTERUS.get(), new Item.Properties()));
+	public static final RegistryObject<FossilItem> EUSTHENOPTERON = SLAB_REGISTER.register("eusthenopteron_fossil", () -> new FossilItem(FossilBlocks.EUSTHENOPTERON.get(), new Item.Properties()));
+	public static final RegistryObject<FossilItem> JAEKELOPTERUS = SLAB_REGISTER.register("jaekelopterus_fossil", () -> new FossilItem(FossilBlocks.JAEKELOPTERUS.get(), new Item.Properties()));
+	public static final RegistryObject<FossilItem> PRAEARCTURUS = SLAB_REGISTER.register("praearcturus_fossil", () -> new FossilItem(FossilBlocks.PRAEARCTURUS.get(), new Item.Properties()));
+	public static final RegistryObject<FossilItem> XENACANTHUS = SLAB_REGISTER.register("xenacanthus_fossil", () -> new FossilItem(FossilBlocks.XENACANTHUS.get(), new Item.Properties()));
+	public static final RegistryObject<FossilItem> SANTANMANTIS = SLAB_REGISTER.register("santanmantis_fossil", () -> new FossilItem(FossilBlocks.SANTANMANTIS.get(), new Item.Properties()));
 	
 	//Five
 	public static final RegistryObject<FossilItem> EUNOTOSAURUS = SKELETON_REGISTER.register("eunotosaurus_fossil", () -> new FossilItem(FossilBlocks.EUNOTOSAURUS.get(), new Item.Properties().rarity(FossilRarities.FIVE_PIECE_FOSSIL)));

@@ -229,6 +229,12 @@ public class RotatableFossilEntity extends BaseEntityBlock implements SimpleWate
         ANGELACANTHUS,
         OSTEOLEPIS,
         SEMIONOTUS,
+        HIBBERTOPTERUS,
+        EUSTHENOPTERON,
+        JAEKELOPTERUS,
+        PRAEARCTURUS,
+        XENACANTHUS,
+        SANTANMANTIS,
         BUNDENBACHIELLUS
     }
 }

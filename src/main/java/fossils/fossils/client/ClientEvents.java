@@ -952,6 +952,12 @@ public class ClientEvents {
     public static ModelLayerLocation OSTEOLEPIS = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "osteolepis"), "osteolepis");
     public static ModelLayerLocation SEMIONOTUS = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "semionotus"), "semionotus");
     public static ModelLayerLocation BUNDENBACHIELLUS = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "bundenbachiellus"), "bundenbachiellus");
+    public static ModelLayerLocation HIBBERTOPTERUS = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "hibbertopterus"), "hibbertopterus");
+    public static ModelLayerLocation EUSTHENOPTERON = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "eusthenopteron"), "eusthenopteron");
+    public static ModelLayerLocation JAEKELOPTERUS = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "jaekelopterus"), "jaekelopterus");
+    public static ModelLayerLocation PRAEARCTURUS = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "praearcturus"), "praearcturus");
+    public static ModelLayerLocation XENACANTHUS = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "xenacanthus"), "xenacanthus");
+    public static ModelLayerLocation SANTANMANTIS = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "santanmantis"), "santanmantis");
 	public static ModelLayerLocation EUNOTOSAURUS = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "eunotosaurus"), "eunotosaurus");
 	public static ModelLayerLocation EUNOTOSAURUS_FRAME = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "eunotosaurus_frame"), "eunotosaurus_frame");
 	public static ModelLayerLocation PELECANIMIMUS = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "pelecanimimus"), "pelecanimimus");
@@ -1876,6 +1882,12 @@ public class ClientEvents {
         event.registerLayerDefinition(OSTEOLEPIS, OsteolepisFossilSlabModel::createBodyLayer);
         event.registerLayerDefinition(SEMIONOTUS, SemionotusFossilSlabModel::createBodyLayer);
         event.registerLayerDefinition(BUNDENBACHIELLUS, BundenbachiellusFossilSlabModel::createBodyLayer);
+        event.registerLayerDefinition(HIBBERTOPTERUS, HibbertopterusFossilSlabModel::createBodyLayer);
+        event.registerLayerDefinition(EUSTHENOPTERON, EusthenopteronFossilSlabModel::createBodyLayer);
+        event.registerLayerDefinition(JAEKELOPTERUS, JaekelopterusFossilSlabModel::createBodyLayer);
+        event.registerLayerDefinition(PRAEARCTURUS, PraearcturusFossilSlabModel::createBodyLayer);
+        event.registerLayerDefinition(XENACANTHUS, XenacanthusFossilSlabModel::createBodyLayer);
+        event.registerLayerDefinition(SANTANMANTIS, SantanmantisFossilSlabModel::createBodyLayer);
 		event.registerLayerDefinition(EUNOTOSAURUS, EunotosaurusFossilModel::createBodyLayer);
 		event.registerLayerDefinition(EUNOTOSAURUS_FRAME, EunotosaurusFossilFrameModel::createBodyLayer);
 		event.registerLayerDefinition(PELECANIMIMUS, PelecanimimusFossilModel::createBodyLayer);
