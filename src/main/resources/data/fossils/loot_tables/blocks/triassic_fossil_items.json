@@ -373,6 +373,26 @@
           "type": "minecraft:item",
           "name": "fossils:semionotus_fossil",
           "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:gigatitan_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:foreyia_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:gosfordia_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:dipteronotus_fossil",
+          "weight": 2
         }
       ],
       "rolls": 1

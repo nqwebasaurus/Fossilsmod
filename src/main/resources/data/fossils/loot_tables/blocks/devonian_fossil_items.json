@@ -158,6 +158,21 @@
           "type": "minecraft:item",
           "name": "fossils:praearcturus_fossil",
           "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:heliopeltis_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:psychopyge_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:attercopus_fossil",
+          "weight": 2
         }
       ],
       "rolls": 1
