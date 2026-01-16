@@ -958,6 +958,13 @@ public class ClientEvents {
     public static ModelLayerLocation PRAEARCTURUS = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "praearcturus"), "praearcturus");
     public static ModelLayerLocation XENACANTHUS = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "xenacanthus"), "xenacanthus");
     public static ModelLayerLocation SANTANMANTIS = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "santanmantis"), "santanmantis");
+    public static ModelLayerLocation HELIOPELTIS = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "heliopeltis"), "heliopeltis");
+    public static ModelLayerLocation PSYCHOPYGE = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "psychopyge"), "psychopyge");
+    public static ModelLayerLocation ATTERCOPUS = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "attercopus"), "attercopus");
+    public static ModelLayerLocation GIGATITAN = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "gigatitan"), "gigatitan");
+    public static ModelLayerLocation FOREYIA = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "foreyia"), "foreyia");
+    public static ModelLayerLocation GOSFORDIA = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "gosfordia"), "gosfordia");
+    public static ModelLayerLocation DIPTERONOTUS = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "dipteronotus"), "dipteronotus");
 	public static ModelLayerLocation EUNOTOSAURUS = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "eunotosaurus"), "eunotosaurus");
 	public static ModelLayerLocation EUNOTOSAURUS_FRAME = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "eunotosaurus_frame"), "eunotosaurus_frame");
 	public static ModelLayerLocation PELECANIMIMUS = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "pelecanimimus"), "pelecanimimus");
@@ -1888,6 +1895,13 @@ public class ClientEvents {
         event.registerLayerDefinition(PRAEARCTURUS, PraearcturusFossilSlabModel::createBodyLayer);
         event.registerLayerDefinition(XENACANTHUS, XenacanthusFossilSlabModel::createBodyLayer);
         event.registerLayerDefinition(SANTANMANTIS, SantanmantisFossilSlabModel::createBodyLayer);
+        event.registerLayerDefinition(HELIOPELTIS, HeliopeltisFossilSlabModel::createBodyLayer);
+        event.registerLayerDefinition(PSYCHOPYGE, PsychopygeFossilSlabModel::createBodyLayer);
+        event.registerLayerDefinition(ATTERCOPUS, AttercopusFossilSlabModel::createBodyLayer);
+        event.registerLayerDefinition(GIGATITAN, GigatitanFossilSlabModel::createBodyLayer);
+        event.registerLayerDefinition(FOREYIA, ForeyiaFossilSlabModel::createBodyLayer);
+        event.registerLayerDefinition(GOSFORDIA, GosfordiaFossilSlabModel::createBodyLayer);
+        event.registerLayerDefinition(DIPTERONOTUS, DipteronotusFossilSlabModel::createBodyLayer);
 		event.registerLayerDefinition(EUNOTOSAURUS, EunotosaurusFossilModel::createBodyLayer);
 		event.registerLayerDefinition(EUNOTOSAURUS_FRAME, EunotosaurusFossilFrameModel::createBodyLayer);
 		event.registerLayerDefinition(PELECANIMIMUS, PelecanimimusFossilModel::createBodyLayer);

@@ -142,6 +142,13 @@ public class FossilItems {
 	public static final RegistryObject<FossilItem> PRAEARCTURUS = SLAB_REGISTER.register("praearcturus_fossil", () -> new FossilItem(FossilBlocks.PRAEARCTURUS.get(), new Item.Properties()));
 	public static final RegistryObject<FossilItem> XENACANTHUS = SLAB_REGISTER.register("xenacanthus_fossil", () -> new FossilItem(FossilBlocks.XENACANTHUS.get(), new Item.Properties()));
 	public static final RegistryObject<FossilItem> SANTANMANTIS = SLAB_REGISTER.register("santanmantis_fossil", () -> new FossilItem(FossilBlocks.SANTANMANTIS.get(), new Item.Properties()));
+	public static final RegistryObject<FossilItem> HELIOPELTIS = SLAB_REGISTER.register("heliopeltis_fossil", () -> new FossilItem(FossilBlocks.HELIOPELTIS.get(), new Item.Properties()));
+	public static final RegistryObject<FossilItem> PSYCHOPYGE = SLAB_REGISTER.register("psychopyge_fossil", () -> new FossilItem(FossilBlocks.PSYCHOPYGE.get(), new Item.Properties()));
+	public static final RegistryObject<FossilItem> ATTERCOPUS = SLAB_REGISTER.register("attercopus_fossil", () -> new FossilItem(FossilBlocks.ATTERCOPUS.get(), new Item.Properties()));
+	public static final RegistryObject<FossilItem> GIGATITAN = SLAB_REGISTER.register("gigatitan_fossil", () -> new FossilItem(FossilBlocks.GIGATITAN.get(), new Item.Properties()));
+	public static final RegistryObject<FossilItem> FOREYIA = SLAB_REGISTER.register("foreyia_fossil", () -> new FossilItem(FossilBlocks.FOREYIA.get(), new Item.Properties()));
+	public static final RegistryObject<FossilItem> GOSFORDIA = SLAB_REGISTER.register("gosfordia_fossil", () -> new FossilItem(FossilBlocks.GOSFORDIA.get(), new Item.Properties()));
+	public static final RegistryObject<FossilItem> DIPTERONOTUS = SLAB_REGISTER.register("dipteronotus_fossil", () -> new FossilItem(FossilBlocks.DIPTERONOTUS.get(), new Item.Properties()));
 	
 	//Five
 	public static final RegistryObject<FossilItem> EUNOTOSAURUS = SKELETON_REGISTER.register("eunotosaurus_fossil", () -> new FossilItem(FossilBlocks.EUNOTOSAURUS.get(), new Item.Properties().rarity(FossilRarities.FIVE_PIECE_FOSSIL)));

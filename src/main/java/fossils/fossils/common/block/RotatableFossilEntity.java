@@ -235,6 +235,13 @@ public class RotatableFossilEntity extends BaseEntityBlock implements SimpleWate
         PRAEARCTURUS,
         XENACANTHUS,
         SANTANMANTIS,
-        BUNDENBACHIELLUS
+        BUNDENBACHIELLUS,
+        HELIOPELTIS,
+        PSYCHOPYGE,
+        ATTERCOPUS,
+        GIGATITAN,
+        FOREYIA,
+        GOSFORDIA,
+        DIPTERONOTUS,
     }
 }

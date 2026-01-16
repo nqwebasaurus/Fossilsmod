@@ -159,6 +159,13 @@ public class FossilSlabRenderer implements BlockEntityRenderer<FossilSlabBlockEn
         type.put(RotatableFossilEntity.Types.PRAEARCTURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/slabs/praearcturus.png"));
         type.put(RotatableFossilEntity.Types.XENACANTHUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/slabs/xenacanthus.png"));
         type.put(RotatableFossilEntity.Types.SANTANMANTIS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/slabs/santanmantis.png"));
+        type.put(RotatableFossilEntity.Types.HELIOPELTIS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/slabs/heliopeltis.png"));
+        type.put(RotatableFossilEntity.Types.PSYCHOPYGE, new ResourceLocation(FossilMod.MOD_ID, "textures/block/slabs/psychopyge.png"));
+        type.put(RotatableFossilEntity.Types.ATTERCOPUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/slabs/attercopus.png"));
+        type.put(RotatableFossilEntity.Types.GIGATITAN, new ResourceLocation(FossilMod.MOD_ID, "textures/block/slabs/gigatitan.png"));
+        type.put(RotatableFossilEntity.Types.FOREYIA, new ResourceLocation(FossilMod.MOD_ID, "textures/block/slabs/foreyia.png"));
+        type.put(RotatableFossilEntity.Types.GOSFORDIA, new ResourceLocation(FossilMod.MOD_ID, "textures/block/slabs/gosfordia.png"));
+        type.put(RotatableFossilEntity.Types.DIPTERONOTUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/slabs/dipteronotus.png"));
     });
 
     public static Map<RotatableFossilEntity.FossilType, SkullModelBase> createFossilRenderers(EntityModelSet model) {
@@ -284,6 +291,13 @@ public class FossilSlabRenderer implements BlockEntityRenderer<FossilSlabBlockEn
         builder.put(RotatableFossilEntity.Types.PRAEARCTURUS, new PraearcturusFossilSlabModel(model.bakeLayer(ClientEvents.PRAEARCTURUS)));
         builder.put(RotatableFossilEntity.Types.XENACANTHUS, new XenacanthusFossilSlabModel(model.bakeLayer(ClientEvents.XENACANTHUS)));
         builder.put(RotatableFossilEntity.Types.SANTANMANTIS, new SantanmantisFossilSlabModel(model.bakeLayer(ClientEvents.SANTANMANTIS)));
+        builder.put(RotatableFossilEntity.Types.HELIOPELTIS, new HeliopeltisFossilSlabModel(model.bakeLayer(ClientEvents.HELIOPELTIS)));
+        builder.put(RotatableFossilEntity.Types.PSYCHOPYGE, new PsychopygeFossilSlabModel(model.bakeLayer(ClientEvents.PSYCHOPYGE)));
+        builder.put(RotatableFossilEntity.Types.ATTERCOPUS, new AttercopusFossilSlabModel(model.bakeLayer(ClientEvents.ATTERCOPUS)));
+        builder.put(RotatableFossilEntity.Types.GIGATITAN, new GigatitanFossilSlabModel(model.bakeLayer(ClientEvents.GIGATITAN)));
+        builder.put(RotatableFossilEntity.Types.FOREYIA, new ForeyiaFossilSlabModel(model.bakeLayer(ClientEvents.FOREYIA)));
+        builder.put(RotatableFossilEntity.Types.GOSFORDIA, new GosfordiaFossilSlabModel(model.bakeLayer(ClientEvents.GOSFORDIA)));
+        builder.put(RotatableFossilEntity.Types.DIPTERONOTUS, new DipteronotusFossilSlabModel(model.bakeLayer(ClientEvents.DIPTERONOTUS)));
         return builder.build();
     }
 
@@ -348,31 +362,31 @@ public class FossilSlabRenderer implements BlockEntityRenderer<FossilSlabBlockEn
             }
             ;
         } else if (fossilBlock == RotatableFossilEntity.Types.DICRANURUS) {
-            float scale = 0.14F;
+            float scale = 0.15F;
             pose.scale(-scale, -scale, scale);
             switch (dir) {
                 case DOWN -> {
-                    pose.translate(0F, 3.50F, 0F);
+                    pose.translate(0F, 5.15F, 0F);
                 }
                 case UP -> {
                     pose.mulPose(Axis.XP.rotationDegrees(180));
-                    pose.translate(0F, -1.50F, 0F);
+                    pose.translate(0F, -1.5F, 0F);
                 }
                 case NORTH -> {
                     pose.mulPose(Axis.XP.rotationDegrees(-90));
-                    pose.translate(0F, 1F, 2.5F);
+                    pose.translate(0F, 1.85F, 3.2F);
                 }
                 case SOUTH -> {
                     pose.mulPose(Axis.XP.rotationDegrees(90));
-                    pose.translate(0F, 1F, -2.5F);
+                    pose.translate(0F, 1.85F, -3.2F);
                 }
                 case WEST -> {
                     pose.mulPose(Axis.ZP.rotationDegrees(-90));
-                    pose.translate(-2.5F, 1F, 0F);
+                    pose.translate(-3.2F, 1.85F, 0F);
                 }
                 case EAST -> {
                     pose.mulPose(Axis.ZP.rotationDegrees(90));
-                    pose.translate(2.5F, 1F, 0F);
+                    pose.translate(3.2F, 1.85F, 0F);
                 }
             }
             ;
@@ -3766,6 +3780,209 @@ public class FossilSlabRenderer implements BlockEntityRenderer<FossilSlabBlockEn
                 case EAST -> {
                     pose.mulPose(Axis.ZP.rotationDegrees(90));
                     pose.translate(3.2F, 1.85F, 0F);
+                }
+            }
+            ;
+        } else if (fossilBlock == RotatableFossilEntity.Types.HELIOPELTIS) {
+            float scale = 0.1F;
+            pose.scale(-scale, -scale, scale);
+            switch (dir) {
+                case DOWN -> {
+                    pose.translate(0F, 8.5F, 0F);
+                }
+                case UP -> {
+                    pose.mulPose(Axis.XP.rotationDegrees(180));
+                    pose.translate(0F, -1.5F, 0F);
+                }
+                case NORTH -> {
+                    pose.mulPose(Axis.XP.rotationDegrees(-90));
+                    pose.translate(0F, 3.5F, 4.7F);
+                }
+                case SOUTH -> {
+                    pose.mulPose(Axis.XP.rotationDegrees(90));
+                    pose.translate(0F, 3.5F, -4.7F);
+                }
+                case WEST -> {
+                    pose.mulPose(Axis.ZP.rotationDegrees(-90));
+                    pose.translate(-4.7F, 3.5F, 0F);
+                }
+                case EAST -> {
+                    pose.mulPose(Axis.ZP.rotationDegrees(90));
+                    pose.translate(4.7F, 3.5F, 0F);
+                }
+            }
+            ;
+        } else if (fossilBlock == RotatableFossilEntity.Types.PSYCHOPYGE) {
+            float scale = 0.15F;
+            pose.scale(-scale, -scale, scale);
+            switch (dir) {
+                case DOWN -> {
+                    pose.translate(0F, 5.15F, 0F);
+                }
+                case UP -> {
+                    pose.mulPose(Axis.XP.rotationDegrees(180));
+                    pose.translate(0F, -1.5F, 0F);
+                }
+                case NORTH -> {
+                    pose.mulPose(Axis.XP.rotationDegrees(-90));
+                    pose.translate(0F, 1.85F, 3.2F);
+                }
+                case SOUTH -> {
+                    pose.mulPose(Axis.XP.rotationDegrees(90));
+                    pose.translate(0F, 1.85F, -3.2F);
+                }
+                case WEST -> {
+                    pose.mulPose(Axis.ZP.rotationDegrees(-90));
+                    pose.translate(-3.2F, 1.85F, 0F);
+                }
+                case EAST -> {
+                    pose.mulPose(Axis.ZP.rotationDegrees(90));
+                    pose.translate(3.2F, 1.85F, 0F);
+                }
+            }
+            ;
+        } else if (fossilBlock == RotatableFossilEntity.Types.ATTERCOPUS) {
+            float scale = 0.1F;
+            pose.scale(-scale, -scale, scale);
+            switch (dir) {
+                case DOWN -> {
+                    pose.translate(0F, 8.5F, 0F);
+                }
+                case UP -> {
+                    pose.mulPose(Axis.XP.rotationDegrees(180));
+                    pose.translate(0F, -1.5F, 0F);
+                }
+                case NORTH -> {
+                    pose.mulPose(Axis.XP.rotationDegrees(-90));
+                    pose.translate(0F, 3.5F, 4.7F);
+                }
+                case SOUTH -> {
+                    pose.mulPose(Axis.XP.rotationDegrees(90));
+                    pose.translate(0F, 3.5F, -4.7F);
+                }
+                case WEST -> {
+                    pose.mulPose(Axis.ZP.rotationDegrees(-90));
+                    pose.translate(-4.7F, 3.5F, 0F);
+                }
+                case EAST -> {
+                    pose.mulPose(Axis.ZP.rotationDegrees(90));
+                    pose.translate(4.7F, 3.5F, 0F);
+                }
+            }
+            ;
+        } else if (fossilBlock == RotatableFossilEntity.Types.GIGATITAN) {
+            float scale = 0.1F;
+            pose.scale(-scale, -scale, scale);
+            switch (dir) {
+                case DOWN -> {
+                    pose.translate(0F, 8.5F, 0F);
+                }
+                case UP -> {
+                    pose.mulPose(Axis.XP.rotationDegrees(180));
+                    pose.translate(0F, -1.5F, 0F);
+                }
+                case NORTH -> {
+                    pose.mulPose(Axis.XP.rotationDegrees(-90));
+                    pose.translate(0F, 3.5F, 4.7F);
+                }
+                case SOUTH -> {
+                    pose.mulPose(Axis.XP.rotationDegrees(90));
+                    pose.translate(0F, 3.5F, -4.7F);
+                }
+                case WEST -> {
+                    pose.mulPose(Axis.ZP.rotationDegrees(-90));
+                    pose.translate(-4.7F, 3.5F, 0F);
+                }
+                case EAST -> {
+                    pose.mulPose(Axis.ZP.rotationDegrees(90));
+                    pose.translate(4.7F, 3.5F, 0F);
+                }
+            }
+            ;
+        } else if (fossilBlock == RotatableFossilEntity.Types.FOREYIA) {
+            float scale = 0.2F;
+            pose.scale(-scale, -scale, scale);
+            switch (dir) {
+                case DOWN -> {
+                    pose.translate(0F, 3.5F, 0F);
+                }
+                case UP -> {
+                    pose.mulPose(Axis.XP.rotationDegrees(180));
+                    pose.translate(0F, -1.5F, 0F);
+                }
+                case NORTH -> {
+                    pose.mulPose(Axis.XP.rotationDegrees(-90));
+                    pose.translate(0F, 1F, 2F);
+                }
+                case SOUTH -> {
+                    pose.mulPose(Axis.XP.rotationDegrees(90));
+                    pose.translate(0F, 1F, -2F);
+                }
+                case WEST -> {
+                    pose.mulPose(Axis.ZP.rotationDegrees(-90));
+                    pose.translate(-2.5F, 1F, 0F);
+                }
+                case EAST -> {
+                    pose.mulPose(Axis.ZP.rotationDegrees(90));
+                    pose.translate(2.5F, 1F, 0F);
+                }
+            }
+            ;
+        } else if (fossilBlock == RotatableFossilEntity.Types.GOSFORDIA) {
+            float scale = 0.2F;
+            pose.scale(-scale, -scale, scale);
+            switch (dir) {
+                case DOWN -> {
+                    pose.translate(0F, 3.5F, 0F);
+                }
+                case UP -> {
+                    pose.mulPose(Axis.XP.rotationDegrees(180));
+                    pose.translate(0F, -1.5F, 0F);
+                }
+                case NORTH -> {
+                    pose.mulPose(Axis.XP.rotationDegrees(-90));
+                    pose.translate(0F, 1F, 2F);
+                }
+                case SOUTH -> {
+                    pose.mulPose(Axis.XP.rotationDegrees(90));
+                    pose.translate(0F, 1F, -2F);
+                }
+                case WEST -> {
+                    pose.mulPose(Axis.ZP.rotationDegrees(-90));
+                    pose.translate(-2.5F, 1F, 0F);
+                }
+                case EAST -> {
+                    pose.mulPose(Axis.ZP.rotationDegrees(90));
+                    pose.translate(2.5F, 1F, 0F);
+                }
+            }
+            ;
+        } else if (fossilBlock == RotatableFossilEntity.Types.DIPTERONOTUS) {
+            float scale = 0.2F;
+            pose.scale(-scale, -scale, scale);
+            switch (dir) {
+                case DOWN -> {
+                    pose.translate(0F, 3.5F, 0F);
+                }
+                case UP -> {
+                    pose.mulPose(Axis.XP.rotationDegrees(180));
+                    pose.translate(0F, -1.5F, 0F);
+                }
+                case NORTH -> {
+                    pose.mulPose(Axis.XP.rotationDegrees(-90));
+                    pose.translate(0F, 1F, 2F);
+                }
+                case SOUTH -> {
+                    pose.mulPose(Axis.XP.rotationDegrees(90));
+                    pose.translate(0F, 1F, -2F);
+                }
+                case WEST -> {
+                    pose.mulPose(Axis.ZP.rotationDegrees(-90));
+                    pose.translate(-2.5F, 1F, 0F);
+                }
+                case EAST -> {
+                    pose.mulPose(Axis.ZP.rotationDegrees(90));
+                    pose.translate(2.5F, 1F, 0F);
                 }
             }
             ;
