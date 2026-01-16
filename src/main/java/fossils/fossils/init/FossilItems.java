@@ -149,6 +149,14 @@ public class FossilItems {
 	public static final RegistryObject<FossilItem> FOREYIA = SLAB_REGISTER.register("foreyia_fossil", () -> new FossilItem(FossilBlocks.FOREYIA.get(), new Item.Properties()));
 	public static final RegistryObject<FossilItem> GOSFORDIA = SLAB_REGISTER.register("gosfordia_fossil", () -> new FossilItem(FossilBlocks.GOSFORDIA.get(), new Item.Properties()));
 	public static final RegistryObject<FossilItem> DIPTERONOTUS = SLAB_REGISTER.register("dipteronotus_fossil", () -> new FossilItem(FossilBlocks.DIPTERONOTUS.get(), new Item.Properties()));
+	public static final RegistryObject<FossilItem> BELANTSEA = SLAB_REGISTER.register("belantsea_fossil", () -> new FossilItem(FossilBlocks.BELANTSEA.get(), new Item.Properties()));
+	public static final RegistryObject<FossilItem> BANDRINGA = SLAB_REGISTER.register("bandringa_fossil", () -> new FossilItem(FossilBlocks.BANDRINGA.get(), new Item.Properties()));
+	public static final RegistryObject<FossilItem> TYRANNOPHONTES = SLAB_REGISTER.register("tyrannophontes_fossil", () -> new FossilItem(FossilBlocks.TYRANNOPHONTES.get(), new Item.Properties()));
+	public static final RegistryObject<FossilItem> VESTINAUTILUS = SLAB_REGISTER.register("vestinautilus_fossil", () -> new FossilItem(FossilBlocks.VESTINAUTILUS.get(), new Item.Properties()));
+	public static final RegistryObject<FossilItem> ECHINOCHIMAERA = SLAB_REGISTER.register("echinochimaera_fossil", () -> new FossilItem(FossilBlocks.ECHINOCHIMAERA.get(), new Item.Properties()));
+	public static final RegistryObject<FossilItem> SQUATINACTIS = SLAB_REGISTER.register("squatinactis_fossil", () -> new FossilItem(FossilBlocks.SQUATINACTIS.get(), new Item.Properties()));
+	public static final RegistryObject<FossilItem> ALLENYPTERUS = SLAB_REGISTER.register("allenypterus_fossil", () -> new FossilItem(FossilBlocks.ALLENYPTERUS.get(), new Item.Properties()));
+	public static final RegistryObject<FossilItem> GROENLANDASPIS = SLAB_REGISTER.register("groenlandaspis_fossil", () -> new FossilItem(FossilBlocks.GROENLANDASPIS.get(), new Item.Properties()));
 	
 	//Five
 	public static final RegistryObject<FossilItem> EUNOTOSAURUS = SKELETON_REGISTER.register("eunotosaurus_fossil", () -> new FossilItem(FossilBlocks.EUNOTOSAURUS.get(), new Item.Properties().rarity(FossilRarities.FIVE_PIECE_FOSSIL)));

@@ -1,6 +1,6 @@
 {
     "parent": "item/generated",
     "textures": {
-        "layer0": "fossils:item/dicranurus_fossil"
+        "layer0": "fossils:item/squatinactis_fossil"
     }
 }

@@ -243,5 +243,13 @@ public class RotatableFossilEntity extends BaseEntityBlock implements SimpleWate
         FOREYIA,
         GOSFORDIA,
         DIPTERONOTUS,
+        BELANTSEA,
+        BANDRINGA,
+        TYRANNOPHONTES,
+        VESTINAUTILUS,
+        ECHINOCHIMAERA,
+        SQUATINACTIS,
+        ALLENYPTERUS,
+        GROENLANDASPIS,
     }
 }
