@@ -108,6 +108,26 @@
           "type": "minecraft:item",
           "name": "fossils:allenypterus_fossil",
           "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:hadronector_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:senekichthys_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:angustidontus_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:gregorius_fossil",
+          "weight": 2
         }
       ],
       "rolls": 1
