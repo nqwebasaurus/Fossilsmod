@@ -448,6 +448,16 @@
           "type": "minecraft:item",
           "name": "fossils:semionotus_fossil",
           "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:aeger_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:bellinympha_fossil",
+          "weight": 2
         }
       ],
       "rolls": 1

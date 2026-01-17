@@ -448,6 +448,11 @@
           "type": "minecraft:item",
           "name": "fossils:santanmantis_fossil",
           "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:aeger_fossil",
+          "weight": 2
         }
       ],
       "rolls": 1

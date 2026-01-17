@@ -18,6 +18,11 @@
           "type": "minecraft:item",
           "name": "fossils:dickinsonia_fossil",
           "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:cyclomedusa_fossil",
+          "weight": 2
         }
       ],
       "rolls": 1
