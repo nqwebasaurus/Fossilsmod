@@ -987,6 +987,7 @@ public class ClientEvents {
     public static ModelLayerLocation PAREXUS = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "parexus"), "parexus");
     public static ModelLayerLocation SCAUMENACIA = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "scaumenacia"), "scaumenacia");
     public static ModelLayerLocation DREPANASPIS = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "drepanaspis"), "drepanaspis");
+    public static ModelLayerLocation FALCATUS = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "falcatus"), "falcatus");
 	public static ModelLayerLocation EUNOTOSAURUS = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "eunotosaurus"), "eunotosaurus");
 	public static ModelLayerLocation EUNOTOSAURUS_FRAME = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "eunotosaurus_frame"), "eunotosaurus_frame");
 	public static ModelLayerLocation PELECANIMIMUS = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "pelecanimimus"), "pelecanimimus");
@@ -1946,6 +1947,7 @@ public class ClientEvents {
         event.registerLayerDefinition(PAREXUS, ParexusFossilSlabModel::createBodyLayer);
         event.registerLayerDefinition(SCAUMENACIA, ScaumenaciaFossilSlabModel::createBodyLayer);
         event.registerLayerDefinition(DREPANASPIS, DrepanaspisFossilSlabModel::createBodyLayer);
+        event.registerLayerDefinition(FALCATUS, FalcatusFossilSlabModel::createBodyLayer);
 		event.registerLayerDefinition(EUNOTOSAURUS, EunotosaurusFossilModel::createBodyLayer);
 		event.registerLayerDefinition(EUNOTOSAURUS_FRAME, EunotosaurusFossilFrameModel::createBodyLayer);
 		event.registerLayerDefinition(PELECANIMIMUS, PelecanimimusFossilModel::createBodyLayer);

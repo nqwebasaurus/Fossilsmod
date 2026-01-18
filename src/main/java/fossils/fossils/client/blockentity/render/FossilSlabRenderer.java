@@ -188,6 +188,7 @@ public class FossilSlabRenderer implements BlockEntityRenderer<FossilSlabBlockEn
         type.put(RotatableFossilEntity.Types.PAREXUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/slabs/parexus.png"));
         type.put(RotatableFossilEntity.Types.SCAUMENACIA, new ResourceLocation(FossilMod.MOD_ID, "textures/block/slabs/scaumenacia.png"));
         type.put(RotatableFossilEntity.Types.DREPANASPIS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/slabs/drepanaspis.png"));
+        type.put(RotatableFossilEntity.Types.FALCATUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/slabs/falcatus.png"));
     });
 
     public static Map<RotatableFossilEntity.FossilType, SkullModelBase> createFossilRenderers(EntityModelSet model) {
@@ -342,6 +343,7 @@ public class FossilSlabRenderer implements BlockEntityRenderer<FossilSlabBlockEn
         builder.put(RotatableFossilEntity.Types.PAREXUS, new ParexusFossilSlabModel(model.bakeLayer(ClientEvents.PAREXUS)));
         builder.put(RotatableFossilEntity.Types.SCAUMENACIA, new ScaumenaciaFossilSlabModel(model.bakeLayer(ClientEvents.SCAUMENACIA)));
         builder.put(RotatableFossilEntity.Types.DREPANASPIS, new DrepanaspisFossilSlabModel(model.bakeLayer(ClientEvents.DREPANASPIS)));
+        builder.put(RotatableFossilEntity.Types.FALCATUS, new FalcatusFossilSlabModel(model.bakeLayer(ClientEvents.FALCATUS)));
         return builder.build();
     }
 
@@ -4665,6 +4667,35 @@ public class FossilSlabRenderer implements BlockEntityRenderer<FossilSlabBlockEn
                 case EAST -> {
                     pose.mulPose(Axis.ZP.rotationDegrees(90));
                     pose.translate(2.5F, 1F, 0F);
+                }
+            }
+            ;
+        } else if (fossilBlock == RotatableFossilEntity.Types.FALCATUS) {
+            float scale = 0.15F;
+            pose.scale(-scale, -scale, scale);
+            switch (dir) {
+                case DOWN -> {
+                    pose.translate(0F, 5.15F, 0F);
+                }
+                case UP -> {
+                    pose.mulPose(Axis.XP.rotationDegrees(180));
+                    pose.translate(0F, -1.5F, 0F);
+                }
+                case NORTH -> {
+                    pose.mulPose(Axis.XP.rotationDegrees(-90));
+                    pose.translate(0F, 1.85F, 3.2F);
+                }
+                case SOUTH -> {
+                    pose.mulPose(Axis.XP.rotationDegrees(90));
+                    pose.translate(0F, 1.85F, -3.2F);
+                }
+                case WEST -> {
+                    pose.mulPose(Axis.ZP.rotationDegrees(-90));
+                    pose.translate(-3.2F, 1.85F, 0F);
+                }
+                case EAST -> {
+                    pose.mulPose(Axis.ZP.rotationDegrees(90));
+                    pose.translate(3.2F, 1.85F, 0F);
                 }
             }
             ;

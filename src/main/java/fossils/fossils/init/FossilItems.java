@@ -171,6 +171,7 @@ public class FossilItems {
 	public static final RegistryObject<FossilItem> PAREXUS = SLAB_REGISTER.register("parexus_fossil", () -> new FossilItem(FossilBlocks.PAREXUS.get(), new Item.Properties()));
 	public static final RegistryObject<FossilItem> SCAUMENACIA = SLAB_REGISTER.register("scaumenacia_fossil", () -> new FossilItem(FossilBlocks.SCAUMENACIA.get(), new Item.Properties()));
 	public static final RegistryObject<FossilItem> DREPANASPIS = SLAB_REGISTER.register("drepanaspis_fossil", () -> new FossilItem(FossilBlocks.DREPANASPIS.get(), new Item.Properties()));
+	public static final RegistryObject<FossilItem> FALCATUS = SLAB_REGISTER.register("falcatus_fossil", () -> new FossilItem(FossilBlocks.FALCATUS.get(), new Item.Properties()));
 	
 	//Five
 	public static final RegistryObject<FossilItem> EUNOTOSAURUS = SKELETON_REGISTER.register("eunotosaurus_fossil", () -> new FossilItem(FossilBlocks.EUNOTOSAURUS.get(), new Item.Properties().rarity(FossilRarities.FIVE_PIECE_FOSSIL)));
