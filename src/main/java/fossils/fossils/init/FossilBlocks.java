@@ -413,6 +413,8 @@ public class FossilBlocks {
 	public static final RegistryObject<FossilSkeletonTenPieceBlock> AUSTRALOPITHECUSAFRICANUS = REGISTER.register("australopithecusafricanus_fossil", () -> new FossilSkeletonTenPieceBlock(FossilSkeletonTenPieceBlock.Types.AUSTRALOPITHECUSAFRICANUS, Properties.of().strength(2.0F, 3.0F).sound(SoundType.BONE_BLOCK).requiresCorrectToolForDrops().noOcclusion().noCollission()));
 	public static final RegistryObject<FossilSkeletonTenPieceBlock> RUGARHYNCHOS = REGISTER.register("rugarhynchos_fossil", () -> new FossilSkeletonTenPieceBlock(FossilSkeletonTenPieceBlock.Types.RUGARHYNCHOS, Properties.of().strength(2.0F, 3.0F).sound(SoundType.BONE_BLOCK).requiresCorrectToolForDrops().noOcclusion().noCollission()));
 	public static final RegistryObject<FossilSkeletonTenPieceBlock> TANYCOLAGREUS = REGISTER.register("tanycolagreus_fossil", () -> new FossilSkeletonTenPieceBlock(FossilSkeletonTenPieceBlock.Types.TANYCOLAGREUS, Properties.of().strength(2.0F, 3.0F).sound(SoundType.BONE_BLOCK).requiresCorrectToolForDrops().noOcclusion().noCollission()));
+	public static final RegistryObject<FossilSkeletonTenPieceBlock> EORHYNCHOCHELYS = REGISTER.register("eorhynchochelys_fossil", () -> new FossilSkeletonTenPieceBlock(FossilSkeletonTenPieceBlock.Types.EORHYNCHOCHELYS, Properties.of().strength(2.0F, 3.0F).sound(SoundType.BONE_BLOCK).requiresCorrectToolForDrops().noOcclusion().noCollission()));
+	public static final RegistryObject<FossilSkeletonTenPieceBlock> MYMOORAPELTA = REGISTER.register("mymoorapelta_fossil", () -> new FossilSkeletonTenPieceBlock(FossilSkeletonTenPieceBlock.Types.MYMOORAPELTA, Properties.of().strength(2.0F, 3.0F).sound(SoundType.BONE_BLOCK).requiresCorrectToolForDrops().noOcclusion().noCollission()));
 
 
 	//Fifteen

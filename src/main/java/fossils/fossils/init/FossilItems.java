@@ -419,6 +419,8 @@ public class FossilItems {
 	public static final RegistryObject<FossilItem> AUSTRALOPITHECUSAFRICANUS = SKELETON_REGISTER.register("australopithecusafricanus_fossil", () -> new FossilItem(FossilBlocks.AUSTRALOPITHECUSAFRICANUS.get(), new Item.Properties().rarity(FossilRarities.TEN_PIECE_FOSSIL)));
 	public static final RegistryObject<FossilItem> RUGARHYNCHOS = SKELETON_REGISTER.register("rugarhynchos_fossil", () -> new FossilItem(FossilBlocks.RUGARHYNCHOS.get(), new Item.Properties().rarity(FossilRarities.TEN_PIECE_FOSSIL)));
 	public static final RegistryObject<FossilItem> TANYCOLAGREUS = SKELETON_REGISTER.register("tanycolagreus_fossil", () -> new FossilItem(FossilBlocks.TANYCOLAGREUS.get(), new Item.Properties().rarity(FossilRarities.TEN_PIECE_FOSSIL)));
+	public static final RegistryObject<FossilItem> EORHYNCHOCHELYS = SKELETON_REGISTER.register("eorhynchochelys_fossil", () -> new FossilItem(FossilBlocks.EORHYNCHOCHELYS.get(), new Item.Properties().rarity(FossilRarities.TEN_PIECE_FOSSIL)));
+	public static final RegistryObject<FossilItem> MYMOORAPELTA = SKELETON_REGISTER.register("mymoorapelta_fossil", () -> new FossilItem(FossilBlocks.MYMOORAPELTA.get(), new Item.Properties().rarity(FossilRarities.TEN_PIECE_FOSSIL)));
 
 
 	//Fifteen

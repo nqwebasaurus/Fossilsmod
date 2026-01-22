@@ -458,6 +458,11 @@
           "type": "minecraft:item",
           "name": "fossils:bellinympha_fossil",
           "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:mymoorapelta_fossil",
+          "weight": 2
         }
       ],
       "rolls": 1

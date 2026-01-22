@@ -408,6 +408,8 @@
 	"block.fossils.australopithecusafricanus_fossil": "Australopithecus africanus Fossil",
 	"block.fossils.rugarhynchos_fossil": "Rugarhynchos Fossil",
 	"block.fossils.tanycolagreus_fossil": "Tanycolagreus Fossil",
+	"block.fossils.eorhynchochelys_fossil": "Eorhynchochelys Fossil",
+	"block.fossils.mymoorapelta_fossil": "Mymoorapelta Fossil",
 	"block.fossils.poposaurus_fossil": "Poposaurus Fossil",
 	"block.fossils.nigerpeton_fossil": "Nigerpeton Fossil",
 	"block.fossils.stahleckeria_fossil": "Stahleckeria Fossil",
@@ -1887,6 +1889,10 @@
 	"advancements.fossils.rugarhynchos.description": "Complete a Rugarhynchos skeleton",
 	"advancements.fossils.tanycolagreus.title": "Long-limbed Hunter",
 	"advancements.fossils.tanycolagreus.description": "Complete a Tanycolagreus skeleton",
+	"advancements.fossils.eorhynchochelys.title": "Dawn-beaked Turtle",
+	"advancements.fossils.eorhynchochelys.description": "Complete a Eorhynchochelys skeleton",
+	"advancements.fossils.mymoorapelta.title": "Shield of Mygatt-Moore",
+	"advancements.fossils.mymoorapelta.description": "Complete a Mymoorapelta skeleton",
 	"advancements.fossils.zupaysaurus.title": "Devil Lizard",
 	"advancements.fossils.zupaysaurus.description": "Complete a Zupaysaurus skeleton"
 }

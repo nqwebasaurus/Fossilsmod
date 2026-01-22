@@ -89,6 +89,8 @@ import fossils.fossils.client.blockentity.model.einiosaurus.EiniosaurusFossilFra
 import fossils.fossils.client.blockentity.model.einiosaurus.EiniosaurusFossilModel;
 import fossils.fossils.client.blockentity.model.endothiodonbathystoma.EndothiodonbathystomaFossilFrameModel;
 import fossils.fossils.client.blockentity.model.endothiodonbathystoma.EndothiodonbathystomaFossilModel;
+import fossils.fossils.client.blockentity.model.eorhynchochelys.EorhynchochelysFossilFrameModel;
+import fossils.fossils.client.blockentity.model.eorhynchochelys.EorhynchochelysFossilModel;
 import fossils.fossils.client.blockentity.model.eryops.EryopsFossilFrameModel;
 import fossils.fossils.client.blockentity.model.eryops.EryopsFossilModel;
 import fossils.fossils.client.blockentity.model.europasaurus.EuropasaurusFossilFrameModel;
@@ -163,6 +165,8 @@ import fossils.fossils.client.blockentity.model.montanoceratops.MontanoceratopsF
 import fossils.fossils.client.blockentity.model.montanoceratops.MontanoceratopsFossilModel;
 import fossils.fossils.client.blockentity.model.moschops.MoschopsFossilFrameModel;
 import fossils.fossils.client.blockentity.model.moschops.MoschopsFossilModel;
+import fossils.fossils.client.blockentity.model.mymoorapelta.MymoorapeltaFossilFrameModel;
+import fossils.fossils.client.blockentity.model.mymoorapelta.MymoorapeltaFossilModel;
 import fossils.fossils.client.blockentity.model.nannopterygius.NannopterygiusFossilFrameModel;
 import fossils.fossils.client.blockentity.model.nannopterygius.NannopterygiusFossilModel;
 import fossils.fossils.client.blockentity.model.nasutoceratops.NasutoceratopsFossilFrameModel;
@@ -432,6 +436,8 @@ public class FossilSkeletonTenPieceRenderer implements BlockEntityRenderer<Fossi
         type.put(FossilSkeletonTenPieceBlock.Types.AUSTRALOPITHECUSAFRICANUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/australopithecusafricanus/stage_0.png"));
         type.put(FossilSkeletonTenPieceBlock.Types.RUGARHYNCHOS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/rugarhynchos/stage_0.png"));
         type.put(FossilSkeletonTenPieceBlock.Types.TANYCOLAGREUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/tanycolagreus/stage_0.png"));
+        type.put(FossilSkeletonTenPieceBlock.Types.EORHYNCHOCHELYS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/eorhynchochelys/stage_0.png"));
+        type.put(FossilSkeletonTenPieceBlock.Types.MYMOORAPELTA, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/mymoorapelta/stage_0.png"));
 
     });
     public static final Map<FossilSkeletonTenPieceBlock.Type, ResourceLocation> FRAME_BY_TYPE = Util.make(Maps.newHashMap(), (type) -> {
@@ -568,6 +574,8 @@ public class FossilSkeletonTenPieceRenderer implements BlockEntityRenderer<Fossi
         type.put(FossilSkeletonTenPieceBlock.Types.AUSTRALOPITHECUSAFRICANUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/australopithecusafricanus/frame.png"));
         type.put(FossilSkeletonTenPieceBlock.Types.RUGARHYNCHOS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/rugarhynchos/frame.png"));
         type.put(FossilSkeletonTenPieceBlock.Types.TANYCOLAGREUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/tanycolagreus/frame.png"));
+        type.put(FossilSkeletonTenPieceBlock.Types.EORHYNCHOCHELYS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/eorhynchochelys/frame.png"));
+        type.put(FossilSkeletonTenPieceBlock.Types.MYMOORAPELTA, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/mymoorapelta/frame.png"));
 
 
     });
@@ -707,6 +715,8 @@ public class FossilSkeletonTenPieceRenderer implements BlockEntityRenderer<Fossi
         builder.put(FossilSkeletonTenPieceBlock.Types.AUSTRALOPITHECUSAFRICANUS, new AustralopithecusafricanusFossilModel(p_173662_.bakeLayer(ClientEvents.AUSTRALOPITHECUSAFRICANUS)));
         builder.put(FossilSkeletonTenPieceBlock.Types.RUGARHYNCHOS, new RugarhynchosFossilModel(p_173662_.bakeLayer(ClientEvents.RUGARHYNCHOS)));
         builder.put(FossilSkeletonTenPieceBlock.Types.TANYCOLAGREUS, new TanycolagreusFossilModel(p_173662_.bakeLayer(ClientEvents.TANYCOLAGREUS)));
+        builder.put(FossilSkeletonTenPieceBlock.Types.EORHYNCHOCHELYS, new EorhynchochelysFossilModel(p_173662_.bakeLayer(ClientEvents.EORHYNCHOCHELYS)));
+        builder.put(FossilSkeletonTenPieceBlock.Types.MYMOORAPELTA, new MymoorapeltaFossilModel(p_173662_.bakeLayer(ClientEvents.MYMOORAPELTA)));
         return builder.build();
     }
 
@@ -845,6 +855,8 @@ public class FossilSkeletonTenPieceRenderer implements BlockEntityRenderer<Fossi
         builder.put(FossilSkeletonTenPieceBlock.Types.AUSTRALOPITHECUSAFRICANUS, new AustralopithecusafricanusFossilFrameModel(p_173662_.bakeLayer(ClientEvents.AUSTRALOPITHECUSAFRICANUS_FRAME)));
         builder.put(FossilSkeletonTenPieceBlock.Types.RUGARHYNCHOS, new RugarhynchosFossilFrameModel(p_173662_.bakeLayer(ClientEvents.RUGARHYNCHOS_FRAME)));
         builder.put(FossilSkeletonTenPieceBlock.Types.TANYCOLAGREUS, new TanycolagreusFossilFrameModel(p_173662_.bakeLayer(ClientEvents.TANYCOLAGREUS_FRAME)));
+        builder.put(FossilSkeletonTenPieceBlock.Types.EORHYNCHOCHELYS, new EorhynchochelysFossilFrameModel(p_173662_.bakeLayer(ClientEvents.EORHYNCHOCHELYS_FRAME)));
+        builder.put(FossilSkeletonTenPieceBlock.Types.MYMOORAPELTA, new MymoorapeltaFossilFrameModel(p_173662_.bakeLayer(ClientEvents.MYMOORAPELTA_FRAME)));
         return builder.build();
     }
 
@@ -1406,6 +1418,14 @@ public class FossilSkeletonTenPieceRenderer implements BlockEntityRenderer<Fossi
             float scale = 0.42F;
             pose.scale(-scale, -scale, scale);
             pose.translate(0F, 0.88F, 0F);
+        } else if (FossilSkeletonTenPieceBlock$type == FossilSkeletonTenPieceBlock.Types.EORHYNCHOCHELYS) {
+            float scale = 0.26F;
+            pose.scale(-scale, -scale, scale);
+            pose.translate(0F, 2.3F, 0F);
+        } else if (FossilSkeletonTenPieceBlock$type == FossilSkeletonTenPieceBlock.Types.MYMOORAPELTA) {
+            float scale = 0.56F;
+            pose.scale(-scale, -scale, scale);
+            pose.translate(0F, 0.3F, 0F);
         } else {
             float scale = 1.0F;
             pose.scale(-scale, -scale, scale);
@@ -1684,6 +1704,10 @@ public class FossilSkeletonTenPieceRenderer implements BlockEntityRenderer<Fossi
             resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/rugarhynchos/stage_" + fossilLevel + ".png");
         } else if (type == FossilSkeletonTenPieceBlock.Types.TANYCOLAGREUS) {
             resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/tanycolagreus/stage_" + fossilLevel + ".png");
+        } else if (type == FossilSkeletonTenPieceBlock.Types.EORHYNCHOCHELYS) {
+            resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/eorhynchochelys/stage_" + fossilLevel + ".png");
+        } else if (type == FossilSkeletonTenPieceBlock.Types.MYMOORAPELTA) {
+            resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/mymoorapelta/stage_" + fossilLevel + ".png");
         } else resourceLocation = SKIN_BY_TYPE.get(type);
         return RenderType.entityCutoutNoCullZOffset(resourceLocation);
     }

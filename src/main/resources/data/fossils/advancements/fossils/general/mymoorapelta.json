@@ -1,0 +1,54 @@
+{
+  "parent": "fossils:fossils/general/ankylosauria",
+  "criteria": {
+    "finish_mymoorapelta": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:mymoorapelta_fossil"
+                ],
+                "state": {
+                  "fossil_level": "9"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:mymoorapelta_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.mymoorapelta.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:mymoorapelta_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.mymoorapelta.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_mymoorapelta"
+    ]
+  ],
+  "sends_telemetry_event": true
+}
