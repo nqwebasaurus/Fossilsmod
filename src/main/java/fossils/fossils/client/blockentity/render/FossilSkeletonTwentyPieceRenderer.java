@@ -137,6 +137,8 @@ import fossils.fossils.client.blockentity.model.therizinosaurus.TherizinosaurusF
 import fossils.fossils.client.blockentity.model.therizinosaurus.TherizinosaurusFossilModel;
 import fossils.fossils.client.blockentity.model.titanichthys.TitanichthysFossilFrameModel;
 import fossils.fossils.client.blockentity.model.titanichthys.TitanichthysFossilModel;
+import fossils.fossils.client.blockentity.model.torvosaurus.TorvosaurusFossilFrameModel;
+import fossils.fossils.client.blockentity.model.torvosaurus.TorvosaurusFossilModel;
 import fossils.fossils.client.blockentity.model.triceratopshorridus.TriceratopshorridusFossilFrameModel;
 import fossils.fossils.client.blockentity.model.triceratopshorridus.TriceratopshorridusFossilModel;
 import fossils.fossils.client.blockentity.model.tyrannosaurus.TyrannosaurusFossilFrameModel;
@@ -239,6 +241,7 @@ public class FossilSkeletonTwentyPieceRenderer implements BlockEntityRenderer<Fo
         type.put(FossilSkeletonTwentyPieceBlock.Types.RUBIDGEA, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/rubidgea/stage_0.png"));
         type.put(FossilSkeletonTwentyPieceBlock.Types.MIRAGAIA, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/miragaia/stage_0.png"));
         type.put(FossilSkeletonTwentyPieceBlock.Types.TITANICHTHYS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/titanichthys/stage_0.png"));
+        type.put(FossilSkeletonTwentyPieceBlock.Types.TORVOSAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/torvosaurus/stage_0.png"));
     });
     public static final Map<FossilSkeletonTwentyPieceBlock.Type, ResourceLocation> FRAME_BY_TYPE = Util.make(Maps.newHashMap(), (type) -> {
         type.put(FossilSkeletonTwentyPieceBlock.Types.UTAHRAPTOR, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/utahraptor/frame.png"));
@@ -310,6 +313,7 @@ public class FossilSkeletonTwentyPieceRenderer implements BlockEntityRenderer<Fo
         type.put(FossilSkeletonTwentyPieceBlock.Types.RUBIDGEA, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/rubidgea/frame.png"));
         type.put(FossilSkeletonTwentyPieceBlock.Types.MIRAGAIA, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/miragaia/frame.png"));
         type.put(FossilSkeletonTwentyPieceBlock.Types.TITANICHTHYS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/titanichthys/frame.png"));
+        type.put(FossilSkeletonTwentyPieceBlock.Types.TORVOSAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/torvosaurus/frame.png"));
 
     });
 
@@ -384,6 +388,7 @@ public class FossilSkeletonTwentyPieceRenderer implements BlockEntityRenderer<Fo
         builder.put(FossilSkeletonTwentyPieceBlock.Types.RUBIDGEA, new RubidgeaFossilModel(p_173662_.bakeLayer(ClientEvents.RUBIDGEA)));
         builder.put(FossilSkeletonTwentyPieceBlock.Types.MIRAGAIA, new MiragaiaFossilModel(p_173662_.bakeLayer(ClientEvents.MIRAGAIA)));
         builder.put(FossilSkeletonTwentyPieceBlock.Types.TITANICHTHYS, new TitanichthysFossilModel(p_173662_.bakeLayer(ClientEvents.TITANICHTHYS)));
+        builder.put(FossilSkeletonTwentyPieceBlock.Types.TORVOSAURUS, new TorvosaurusFossilModel(p_173662_.bakeLayer(ClientEvents.TORVOSAURUS)));
         return builder.build();
     }
 
@@ -458,6 +463,7 @@ public class FossilSkeletonTwentyPieceRenderer implements BlockEntityRenderer<Fo
         builder.put(FossilSkeletonTwentyPieceBlock.Types.RUBIDGEA, new RubidgeaFossilFrameModel(p_173662_.bakeLayer(ClientEvents.RUBIDGEA_FRAME)));
         builder.put(FossilSkeletonTwentyPieceBlock.Types.MIRAGAIA, new MiragaiaFossilFrameModel(p_173662_.bakeLayer(ClientEvents.MIRAGAIA_FRAME)));
         builder.put(FossilSkeletonTwentyPieceBlock.Types.TITANICHTHYS, new TitanichthysFossilFrameModel(p_173662_.bakeLayer(ClientEvents.TITANICHTHYS_FRAME)));
+        builder.put(FossilSkeletonTwentyPieceBlock.Types.TORVOSAURUS, new TorvosaurusFossilFrameModel(p_173662_.bakeLayer(ClientEvents.TORVOSAURUS_FRAME)));
         return builder.build();
     }
 
@@ -763,6 +769,10 @@ public class FossilSkeletonTwentyPieceRenderer implements BlockEntityRenderer<Fo
             float scale = 0.75F;
             pose.scale(-scale, -scale, scale);
             pose.translate(0F, -0.17F, 0F);
+        } else if (FossilSkeletonTwentyPieceBlock$type == FossilSkeletonTwentyPieceBlock.Types.TORVOSAURUS) {
+            float scale = 0.83F;
+            pose.scale(-scale, -scale, scale);
+            pose.translate(0F, -0.28F, 0F);
         } else {
             float scale = 1.0F;
             pose.scale(-scale, -scale, scale);
@@ -913,6 +923,8 @@ public class FossilSkeletonTwentyPieceRenderer implements BlockEntityRenderer<Fo
             resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/miragaia/stage_" + fossilLevel + ".png");
         } else if (type == FossilSkeletonTwentyPieceBlock.Types.TITANICHTHYS) {
             resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/titanichthys/stage_" + fossilLevel + ".png");
+        } else if (type == FossilSkeletonTwentyPieceBlock.Types.TORVOSAURUS) {
+            resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/torvosaurus/stage_" + fossilLevel + ".png");
         } else resourceLocation = SKIN_BY_TYPE.get(type);
         return RenderType.entityCutoutNoCullZOffset(resourceLocation);
     }

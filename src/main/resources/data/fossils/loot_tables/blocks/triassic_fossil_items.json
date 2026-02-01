@@ -403,6 +403,11 @@
           "type": "minecraft:item",
           "name": "fossils:eorhynchochelys_fossil",
           "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:stanocephalosaurus_fossil",
+          "weight": 2
         }
       ],
       "rolls": 1

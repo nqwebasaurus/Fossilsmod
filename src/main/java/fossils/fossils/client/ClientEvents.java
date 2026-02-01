@@ -701,6 +701,8 @@ import fossils.fossils.client.blockentity.model.stagonolepis.StagonolepisFossilF
 import fossils.fossils.client.blockentity.model.stagonolepis.StagonolepisFossilModel;
 import fossils.fossils.client.blockentity.model.stahleckeria.StahleckeriaFossilFrameModel;
 import fossils.fossils.client.blockentity.model.stahleckeria.StahleckeriaFossilModel;
+import fossils.fossils.client.blockentity.model.stanocephalosaurus.StanocephalosaurusFossilFrameModel;
+import fossils.fossils.client.blockentity.model.stanocephalosaurus.StanocephalosaurusFossilModel;
 import fossils.fossils.client.blockentity.model.stegosaurus.StegosaurusFossilFrameModel;
 import fossils.fossils.client.blockentity.model.stegosaurus.StegosaurusFossilModel;
 import fossils.fossils.client.blockentity.model.stegouros.StegourosFossilFrameModel;
@@ -759,6 +761,8 @@ import fossils.fossils.client.blockentity.model.tockus.TockusFossilFrameModel;
 import fossils.fossils.client.blockentity.model.tockus.TockusFossilModel;
 import fossils.fossils.client.blockentity.model.torukjara.TorukjaraFossilFrameModel;
 import fossils.fossils.client.blockentity.model.torukjara.TorukjaraFossilModel;
+import fossils.fossils.client.blockentity.model.torvosaurus.TorvosaurusFossilFrameModel;
+import fossils.fossils.client.blockentity.model.torvosaurus.TorvosaurusFossilModel;
 import fossils.fossils.client.blockentity.model.triceratopshorridus.TriceratopshorridusFossilFrameModel;
 import fossils.fossils.client.blockentity.model.triceratopshorridus.TriceratopshorridusFossilModel;
 import fossils.fossils.client.blockentity.model.trilophosaurus.TrilophosaurusFossilFrameModel;
@@ -1462,6 +1466,8 @@ public class ClientEvents {
     public static ModelLayerLocation EORHYNCHOCHELYS_FRAME = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "eorhynchochelys_frame"), "eorhynchochelys_frame");
     public static ModelLayerLocation MYMOORAPELTA= new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "mymoorapelta"), "mymoorapelta");
     public static ModelLayerLocation MYMOORAPELTA_FRAME = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "mymoorapelta_frame"), "mymoorapelta_frame");
+    public static ModelLayerLocation STANOCEPHALOSAURUS= new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "stanocephalosaurus"), "stanocephalosaurus");
+    public static ModelLayerLocation STANOCEPHALOSAURUS_FRAME = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "stanocephalosaurus_frame"), "stanocephalosaurus_frame");
 	public static ModelLayerLocation PLACERIAS = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "placerias"), "placerias");
 	public static ModelLayerLocation PLACERIAS_FRAME = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "placerias_frame"), "placerias_frame");
 	public static ModelLayerLocation ENDOTHIODONBATHYSTOMA = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "endothiodonbathystoma"), "endothiodonbathystoma");
@@ -1802,6 +1808,8 @@ public class ClientEvents {
     public static ModelLayerLocation MIRAGAIA_FRAME = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "miragaia_frame"), "miragaia_frame");
     public static ModelLayerLocation TITANICHTHYS= new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "titanichthys"), "titanichthys");
     public static ModelLayerLocation TITANICHTHYS_FRAME = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "titanichthys_frame"), "titanichthys_frame");
+    public static ModelLayerLocation TORVOSAURUS= new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "torvosaurus"), "torvosaurus");
+    public static ModelLayerLocation TORVOSAURUS_FRAME = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "torvosaurus_frame"), "torvosaurus_frame");
 
 	@SubscribeEvent
 	public static void registerLayerDefinition(EntityRenderersEvent.RegisterLayerDefinitions event) {
@@ -2424,6 +2432,8 @@ public class ClientEvents {
         event.registerLayerDefinition(EORHYNCHOCHELYS_FRAME, EorhynchochelysFossilFrameModel::createBodyLayer);
         event.registerLayerDefinition(MYMOORAPELTA, MymoorapeltaFossilModel::createBodyLayer);
         event.registerLayerDefinition(MYMOORAPELTA_FRAME, MymoorapeltaFossilFrameModel::createBodyLayer);
+        event.registerLayerDefinition(STANOCEPHALOSAURUS, StanocephalosaurusFossilModel::createBodyLayer);
+        event.registerLayerDefinition(STANOCEPHALOSAURUS_FRAME, StanocephalosaurusFossilFrameModel::createBodyLayer);
 		event.registerLayerDefinition(LUFENGOSAURUS, LufengosaurusFossilModel::createBodyLayer);
 		event.registerLayerDefinition(LUFENGOSAURUS_FRAME, LufengosaurusFossilFrameModel::createBodyLayer);
 		event.registerLayerDefinition(PLACERIAS, PlaceriasFossilModel::createBodyLayer);
@@ -2766,6 +2776,8 @@ public class ClientEvents {
         event.registerLayerDefinition(MIRAGAIA_FRAME, MiragaiaFossilFrameModel::createBodyLayer);
         event.registerLayerDefinition(TITANICHTHYS, TitanichthysFossilModel::createBodyLayer);
         event.registerLayerDefinition(TITANICHTHYS_FRAME, TitanichthysFossilFrameModel::createBodyLayer);
+        event.registerLayerDefinition(TORVOSAURUS, TorvosaurusFossilModel::createBodyLayer);
+        event.registerLayerDefinition(TORVOSAURUS_FRAME, TorvosaurusFossilFrameModel::createBodyLayer);
 
 	}
 	

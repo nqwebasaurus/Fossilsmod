@@ -1,0 +1,54 @@
+{
+  "parent": "fossils:fossils/general/capitosauria",
+  "criteria": {
+    "finish_stanocephalosaurus": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:stanocephalosaurus_fossil"
+                ],
+                "state": {
+                  "fossil_level": "9"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:stanocephalosaurus_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.stanocephalosaurus.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:stanocephalosaurus_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.stanocephalosaurus.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_stanocephalosaurus"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

@@ -410,6 +410,7 @@
 	"block.fossils.tanycolagreus_fossil": "Tanycolagreus Fossil",
 	"block.fossils.eorhynchochelys_fossil": "Eorhynchochelys Fossil",
 	"block.fossils.mymoorapelta_fossil": "Mymoorapelta Fossil",
+	"block.fossils.stanocephalosaurus_fossil": "Stanocephalosaurus Fossil",
 	"block.fossils.poposaurus_fossil": "Poposaurus Fossil",
 	"block.fossils.nigerpeton_fossil": "Nigerpeton Fossil",
 	"block.fossils.stahleckeria_fossil": "Stahleckeria Fossil",
@@ -573,6 +574,7 @@
 	"block.fossils.rubidgea_fossil": "Rubidgea Fossil",
 	"block.fossils.miragaia_fossil": "Miragaia Fossil",
 	"block.fossils.titanichthys_fossil": "Titanichthys Fossil",
+	"block.fossils.torvosaurus_fossil": "Torvosaurus Fossil",
 	
 	"itemGroup.fossil_slab_tab": "Fossils Slabs",
 	"itemGroup.fossil_blocks_tab": "Fossils Blocks",
@@ -1894,5 +1896,9 @@
 	"advancements.fossils.mymoorapelta.title": "Shield of Mygatt-Moore",
 	"advancements.fossils.mymoorapelta.description": "Complete a Mymoorapelta skeleton",
 	"advancements.fossils.zupaysaurus.title": "Devil Lizard",
-	"advancements.fossils.zupaysaurus.description": "Complete a Zupaysaurus skeleton"
+	"advancements.fossils.zupaysaurus.description": "Complete a Zupaysaurus skeleton",
+	"advancements.fossils.stanocephalosaurus.title": "Narrow-headed Lizard",
+	"advancements.fossils.stanocephalosaurus.description": "Complete a Stanocephalosaurus skeleton",
+	"advancements.fossils.torvosaurus.title": "Savage Lizard",
+	"advancements.fossils.torvosaurus.description": "Complete a Torvosaurus skeleton"
 }
