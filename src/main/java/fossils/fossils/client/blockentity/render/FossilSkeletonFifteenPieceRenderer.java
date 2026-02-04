@@ -171,6 +171,8 @@ import fossils.fossils.client.blockentity.model.tanystropheus.TanystropheusFossi
 import fossils.fossils.client.blockentity.model.tanystropheus.TanystropheusFossilModel;
 import fossils.fossils.client.blockentity.model.tapinocaninus.TapinocaninusFossilFrameModel;
 import fossils.fossils.client.blockentity.model.tapinocaninus.TapinocaninusFossilModel;
+import fossils.fossils.client.blockentity.model.temnodontosaurus.TemnodontosaurusFossilFrameModel;
+import fossils.fossils.client.blockentity.model.temnodontosaurus.TemnodontosaurusFossilModel;
 import fossils.fossils.client.blockentity.model.tenontosaurus.TenontosaurusFossilFrameModel;
 import fossils.fossils.client.blockentity.model.tenontosaurus.TenontosaurusFossilModel;
 import fossils.fossils.client.blockentity.model.tethyshadros.TethyshadrosFossilFrameModel;
@@ -307,6 +309,7 @@ public class FossilSkeletonFifteenPieceRenderer implements BlockEntityRenderer<F
         type.put(FossilSkeletonFifteenPieceBlock.Types.SINRAPTOR, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/sinraptor/stage_0.png"));
         type.put(FossilSkeletonFifteenPieceBlock.Types.IRRITATOR, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/irritator/stage_0.png"));
         type.put(FossilSkeletonFifteenPieceBlock.Types.ZUPAYSAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/zupaysaurus/stage_0.png"));
+        type.put(FossilSkeletonFifteenPieceBlock.Types.TEMNODONTOSAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/temnodontosaurus/stage_0.png"));
     });
     public static final Map<FossilSkeletonFifteenPieceBlock.Type, ResourceLocation> FRAME_BY_TYPE = Util.make(Maps.newHashMap(), (type) -> {
         type.put(FossilSkeletonFifteenPieceBlock.Types.WUERHOSAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/wuerhosaurus/frame.png"));
@@ -400,6 +403,7 @@ public class FossilSkeletonFifteenPieceRenderer implements BlockEntityRenderer<F
         type.put(FossilSkeletonFifteenPieceBlock.Types.SINRAPTOR, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/sinraptor/frame.png"));
         type.put(FossilSkeletonFifteenPieceBlock.Types.IRRITATOR, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/irritator/frame.png"));
         type.put(FossilSkeletonFifteenPieceBlock.Types.ZUPAYSAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/zupaysaurus/frame.png"));
+        type.put(FossilSkeletonFifteenPieceBlock.Types.TEMNODONTOSAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/temnodontosaurus/frame.png"));
     });
 
     public static Map<FossilSkeletonFifteenPieceBlock.Type, SkullModelBase> createFossilRenderers(EntityModelSet p_173662_) {
@@ -495,6 +499,7 @@ public class FossilSkeletonFifteenPieceRenderer implements BlockEntityRenderer<F
         builder.put(FossilSkeletonFifteenPieceBlock.Types.SINRAPTOR, new SinraptorFossilModel(p_173662_.bakeLayer(ClientEvents.SINRAPTOR)));
         builder.put(FossilSkeletonFifteenPieceBlock.Types.IRRITATOR, new IrritatorFossilModel(p_173662_.bakeLayer(ClientEvents.IRRITATOR)));
         builder.put(FossilSkeletonFifteenPieceBlock.Types.ZUPAYSAURUS, new ZupaysaurusFossilModel(p_173662_.bakeLayer(ClientEvents.ZUPAYSAURUS)));
+        builder.put(FossilSkeletonFifteenPieceBlock.Types.TEMNODONTOSAURUS, new TemnodontosaurusFossilModel(p_173662_.bakeLayer(ClientEvents.TEMNODONTOSAURUS)));
         return builder.build();
     }
 
@@ -591,6 +596,7 @@ public class FossilSkeletonFifteenPieceRenderer implements BlockEntityRenderer<F
         builder.put(FossilSkeletonFifteenPieceBlock.Types.SINRAPTOR, new SinraptorFossilFrameModel(p_173662_.bakeLayer(ClientEvents.SINRAPTOR_FRAME)));
         builder.put(FossilSkeletonFifteenPieceBlock.Types.IRRITATOR, new IrritatorFossilFrameModel(p_173662_.bakeLayer(ClientEvents.IRRITATOR_FRAME)));
         builder.put(FossilSkeletonFifteenPieceBlock.Types.ZUPAYSAURUS, new ZupaysaurusFossilFrameModel(p_173662_.bakeLayer(ClientEvents.ZUPAYSAURUS_FRAME)));
+        builder.put(FossilSkeletonFifteenPieceBlock.Types.TEMNODONTOSAURUS, new TemnodontosaurusFossilFrameModel(p_173662_.bakeLayer(ClientEvents.TEMNODONTOSAURUS_FRAME)));
         return builder.build();
     }
 
@@ -984,6 +990,10 @@ public class FossilSkeletonFifteenPieceRenderer implements BlockEntityRenderer<F
             float scale = 0.52F;
             pose.scale(-scale, -scale, scale);
             pose.translate(0F, 0.43F, 0F);
+        } else if (FossilSkeletonFifteenPieceBlock$type == FossilSkeletonFifteenPieceBlock.Types.TEMNODONTOSAURUS) {
+            float scale = 1.09F;
+            pose.scale(-scale, -scale, scale);
+            pose.translate(0F, -1F, 0F);
         } else {
             float scale = 1.0F;
             pose.scale(-scale, -scale, scale);
@@ -1178,6 +1188,8 @@ public class FossilSkeletonFifteenPieceRenderer implements BlockEntityRenderer<F
             resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/irritator/stage_" + fossilLevel + ".png");
         } else if (type == FossilSkeletonFifteenPieceBlock.Types.ZUPAYSAURUS) {
             resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/zupaysaurus/stage_" + fossilLevel + ".png");
+        } else if (type == FossilSkeletonFifteenPieceBlock.Types.TEMNODONTOSAURUS) {
+            resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/temnodontosaurus/stage_" + fossilLevel + ".png");
         } else resourceLocation = SKIN_BY_TYPE.get(type);
         return RenderType.entityCutoutNoCullZOffset(resourceLocation);
 

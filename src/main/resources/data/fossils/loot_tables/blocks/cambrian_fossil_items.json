@@ -138,6 +138,11 @@
           "type": "minecraft:item",
           "name": "fossils:vetulicola_fossil",
           "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:anomalocaris_fossil",
+          "weight": 2
         }
       ],
       "rolls": 1

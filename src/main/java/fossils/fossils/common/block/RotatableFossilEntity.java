@@ -266,5 +266,6 @@ public class RotatableFossilEntity extends BaseEntityBlock implements SimpleWate
         SCAUMENACIA,
         DREPANASPIS,
         FALCATUS,
+        ANOMALOCARIS,
     }
 }

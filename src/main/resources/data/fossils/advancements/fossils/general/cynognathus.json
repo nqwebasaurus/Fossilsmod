@@ -1,0 +1,54 @@
+{
+  "parent": "fossils:fossils/general/eutheriodontia",
+  "criteria": {
+    "finish_cynognathus": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:cynognathus_fossil"
+                ],
+                "state": {
+                  "fossil_level": "9"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:cynognathus_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.cynognathus.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:cynognathus_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.cynognathus.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_cynognathus"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

@@ -468,6 +468,11 @@
           "type": "minecraft:item",
           "name": "fossils:torvosaurus_fossil",
           "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:temnodontosaurus_fossil",
+          "weight": 2
         }
       ],
       "rolls": 1

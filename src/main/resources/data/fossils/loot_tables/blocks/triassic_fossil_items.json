@@ -408,6 +408,11 @@
           "type": "minecraft:item",
           "name": "fossils:stanocephalosaurus_fossil",
           "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:cynognathus_fossil",
+          "weight": 2
         }
       ],
       "rolls": 1
