@@ -218,6 +218,11 @@
           "type": "minecraft:item",
           "name": "fossils:scaumenacia_fossil",
           "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:schinderhannes_fossil",
+          "weight": 2
         }
       ],
       "rolls": 1

@@ -169,6 +169,8 @@
 	"block.fossils.drepanaspis_fossil": "Drepanaspis Fossil Slab",
 	"block.fossils.falcatus_fossil": "Falcatus Fossil Slab",
 	"block.fossils.anomalocaris_fossil": "Anomalocaris Fossil Slab",
+	"block.fossils.tullimonstrum_fossil": "Tullimonstrum Fossil Slab",
+	"block.fossils.schinderhannes_fossil": "Schinderhannes Fossil Slab",
 	"block.fossils.pelecanimimus_fossil": "Pelecanimimus Fossil",
 	"block.fossils.acanthostega_fossil": "Acanthostega Fossil",
 	"block.fossils.stenokranio_fossil": "Stenokranio Fossil",
@@ -280,6 +282,7 @@
 	"block.fossils.cacops_fossil": "Cacops Fossil",
 	"block.fossils.eoraptor_fossil": "Eoraptor Fossil",
 	"block.fossils.bungartius_fossil": "Bungartius Fossil",
+	"block.fossils.proterogyrinus_fossil": "Proterogyrinus Fossil",
 	"block.fossils.kentrosaurus_fossil": "Kentrosaurus Fossil",
 	"block.fossils.endothiodonbathystoma_fossil": "Endothiodon bathystoma Fossil",
 	"block.fossils.dimetrodongrandis_fossil": "Dimetrodon grandis Fossil",
@@ -578,6 +581,7 @@
 	"block.fossils.miragaia_fossil": "Miragaia Fossil",
 	"block.fossils.titanichthys_fossil": "Titanichthys Fossil",
 	"block.fossils.torvosaurus_fossil": "Torvosaurus Fossil",
+	"block.fossils.cymbospondylus_fossil": "Cymbospondylus Fossil",
 	
 	"itemGroup.fossil_slab_tab": "Fossils Slabs",
 	"itemGroup.fossil_blocks_tab": "Fossils Blocks",
@@ -1907,5 +1911,9 @@
 	"advancements.fossils.cynognathus.title": "Dog Jaw",
 	"advancements.fossils.cynognathus.description": "Complete a Cynognathus skeleton",
 	"advancements.fossils.temnodontosaurus.title": "Cutting-tooth Lizard",
-	"advancements.fossils.temnodontosaurus.description": "Complete a Temnodontosaurus skeleton"
+	"advancements.fossils.temnodontosaurus.description": "Complete a Temnodontosaurus skeleton",
+	"advancements.fossils.proterogyrinus.title": "Earlier Tadpole",
+	"advancements.fossils.proterogyrinus.description": "Complete a Proterogyrinus skeleton",
+	"advancements.fossils.cymbospondylus.title": "Cupped Vertebrae",
+	"advancements.fossils.cymbospondylus.description": "Complete a Cymbospondylus skeleton"
 }

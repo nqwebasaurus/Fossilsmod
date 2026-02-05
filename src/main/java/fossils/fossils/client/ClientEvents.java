@@ -169,6 +169,8 @@ import fossils.fossils.client.blockentity.model.ctenospondylus.CtenospondylusFos
 import fossils.fossils.client.blockentity.model.ctenospondylus.CtenospondylusFossilModel;
 import fossils.fossils.client.blockentity.model.cyamodus.CyamodusFossilFrameModel;
 import fossils.fossils.client.blockentity.model.cyamodus.CyamodusFossilModel;
+import fossils.fossils.client.blockentity.model.cymbospondylus.CymbospondylusFossilFrameModel;
+import fossils.fossils.client.blockentity.model.cymbospondylus.CymbospondylusFossilModel;
 import fossils.fossils.client.blockentity.model.cynognathus.CynognathusFossilFrameModel;
 import fossils.fossils.client.blockentity.model.cynognathus.CynognathusFossilModel;
 import fossils.fossils.client.blockentity.model.daeodon.DaeodonFossilFrameModel;
@@ -531,6 +533,8 @@ import fossils.fossils.client.blockentity.model.proceratosaurus.ProceratosaurusF
 import fossils.fossils.client.blockentity.model.proceratosaurus.ProceratosaurusFossilModel;
 import fossils.fossils.client.blockentity.model.proganochelys.ProganochelysFossilFrameModel;
 import fossils.fossils.client.blockentity.model.proganochelys.ProganochelysFossilModel;
+import fossils.fossils.client.blockentity.model.proterogyrinus.ProterogyrinusFossilFrameModel;
+import fossils.fossils.client.blockentity.model.proterogyrinus.ProterogyrinusFossilModel;
 import fossils.fossils.client.blockentity.model.proterosuchus.ProterosuchusFossilFrameModel;
 import fossils.fossils.client.blockentity.model.proterosuchus.ProterosuchusFossilModel;
 import fossils.fossils.client.blockentity.model.psittacosauruslujiatunensis.PsittacosauruslujiatunensisFossilFrameModel;
@@ -1001,6 +1005,8 @@ public class ClientEvents {
     public static ModelLayerLocation DREPANASPIS = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "drepanaspis"), "drepanaspis");
     public static ModelLayerLocation FALCATUS = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "falcatus"), "falcatus");
     public static ModelLayerLocation ANOMALOCARIS = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "anomalocaris"), "anomalocaris");
+    public static ModelLayerLocation TULLIMONSTRUM = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "tullimonstrum"), "tullimonstrum");
+    public static ModelLayerLocation SCHINDERHANNES = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "schinderhannes"), "schinderhannes");
 	public static ModelLayerLocation EUNOTOSAURUS = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "eunotosaurus"), "eunotosaurus");
 	public static ModelLayerLocation EUNOTOSAURUS_FRAME = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "eunotosaurus_frame"), "eunotosaurus_frame");
 	public static ModelLayerLocation PELECANIMIMUS = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "pelecanimimus"), "pelecanimimus");
@@ -1221,6 +1227,8 @@ public class ClientEvents {
     public static ModelLayerLocation EORAPTOR_FRAME = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "eoraptor_frame"), "eoraptor_frame");
     public static ModelLayerLocation BUNGARTIUS = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "bungartius"), "bungartius");
     public static ModelLayerLocation BUNGARTIUS_FRAME = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "bungartius_frame"), "bungartius_frame");
+    public static ModelLayerLocation PROTEROGYRINUS = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "proterogyrinus"), "proterogyrinus");
+    public static ModelLayerLocation PROTEROGYRINUS_FRAME = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "proterogyrinus_frame"), "proterogyrinus_frame");
 	public static ModelLayerLocation KENTROSAURUS = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "kentrosaurus"), "kentrosaurus");
 	public static ModelLayerLocation KENTROSAURUS_FRAME = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "kentrosaurus_frame"), "kentrosaurus_frame");
 	public static ModelLayerLocation PIATNITZKYSAURUS = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "piatnitzkysaurus"), "piatnitzkysaurus");
@@ -1819,6 +1827,8 @@ public class ClientEvents {
     public static ModelLayerLocation TITANICHTHYS_FRAME = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "titanichthys_frame"), "titanichthys_frame");
     public static ModelLayerLocation TORVOSAURUS= new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "torvosaurus"), "torvosaurus");
     public static ModelLayerLocation TORVOSAURUS_FRAME = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "torvosaurus_frame"), "torvosaurus_frame");
+    public static ModelLayerLocation CYMBOSPONDYLUS= new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "cymbospondylus"), "cymbospondylus");
+    public static ModelLayerLocation CYMBOSPONDYLUS_FRAME = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "cymbospondylus_frame"), "cymbospondylus_frame");
 
 	@SubscribeEvent
 	public static void registerLayerDefinition(EntityRenderersEvent.RegisterLayerDefinitions event) {
@@ -1974,6 +1984,8 @@ public class ClientEvents {
         event.registerLayerDefinition(DREPANASPIS, DrepanaspisFossilSlabModel::createBodyLayer);
         event.registerLayerDefinition(FALCATUS, FalcatusFossilSlabModel::createBodyLayer);
         event.registerLayerDefinition(ANOMALOCARIS, AnomalocarisFossilSlabModel::createBodyLayer);
+        event.registerLayerDefinition(TULLIMONSTRUM, TullimonstrumFossilSlabModel::createBodyLayer);
+        event.registerLayerDefinition(SCHINDERHANNES, SchinderhannesFossilSlabModel::createBodyLayer);
 		event.registerLayerDefinition(EUNOTOSAURUS, EunotosaurusFossilModel::createBodyLayer);
 		event.registerLayerDefinition(EUNOTOSAURUS_FRAME, EunotosaurusFossilFrameModel::createBodyLayer);
 		event.registerLayerDefinition(PELECANIMIMUS, PelecanimimusFossilModel::createBodyLayer);
@@ -2194,6 +2206,8 @@ public class ClientEvents {
         event.registerLayerDefinition(EORAPTOR_FRAME, EoraptorFossilFrameModel::createBodyLayer);
         event.registerLayerDefinition(BUNGARTIUS, BungartiusFossilModel::createBodyLayer);
         event.registerLayerDefinition(BUNGARTIUS_FRAME, BungartiusFossilFrameModel::createBodyLayer);
+        event.registerLayerDefinition(PROTEROGYRINUS, ProterogyrinusFossilModel::createBodyLayer);
+        event.registerLayerDefinition(PROTEROGYRINUS_FRAME, ProterogyrinusFossilFrameModel::createBodyLayer);
 		event.registerLayerDefinition(KENTROSAURUS, KentrosaurusFossilModel::createBodyLayer);
 		event.registerLayerDefinition(KENTROSAURUS_FRAME, KentrosaurusFossilFrameModel::createBodyLayer);
 		event.registerLayerDefinition(PIATNITZKYSAURUS, PiatnitzkysaurusFossilModel::createBodyLayer);
@@ -2792,6 +2806,8 @@ public class ClientEvents {
         event.registerLayerDefinition(TITANICHTHYS_FRAME, TitanichthysFossilFrameModel::createBodyLayer);
         event.registerLayerDefinition(TORVOSAURUS, TorvosaurusFossilModel::createBodyLayer);
         event.registerLayerDefinition(TORVOSAURUS_FRAME, TorvosaurusFossilFrameModel::createBodyLayer);
+        event.registerLayerDefinition(CYMBOSPONDYLUS, CymbospondylusFossilModel::createBodyLayer);
+        event.registerLayerDefinition(CYMBOSPONDYLUS_FRAME, CymbospondylusFossilFrameModel::createBodyLayer);
 
 	}
 	
