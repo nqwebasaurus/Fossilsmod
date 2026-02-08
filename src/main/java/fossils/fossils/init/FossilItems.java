@@ -427,6 +427,7 @@ public class FossilItems {
 	public static final RegistryObject<FossilItem> MYMOORAPELTA = SKELETON_REGISTER.register("mymoorapelta_fossil", () -> new FossilItem(FossilBlocks.MYMOORAPELTA.get(), new Item.Properties().rarity(FossilRarities.TEN_PIECE_FOSSIL)));
 	public static final RegistryObject<FossilItem> STANOCEPHALOSAURUS = SKELETON_REGISTER.register("stanocephalosaurus_fossil", () -> new FossilItem(FossilBlocks.STANOCEPHALOSAURUS.get(), new Item.Properties().rarity(FossilRarities.TEN_PIECE_FOSSIL)));
 	public static final RegistryObject<FossilItem> CYNOGNATHUS = SKELETON_REGISTER.register("cynognathus_fossil", () -> new FossilItem(FossilBlocks.CYNOGNATHUS.get(), new Item.Properties().rarity(FossilRarities.TEN_PIECE_FOSSIL)));
+	public static final RegistryObject<FossilItem> THECODONTOSAURUS = SKELETON_REGISTER.register("thecodontosaurus_fossil", () -> new FossilItem(FossilBlocks.THECODONTOSAURUS.get(), new Item.Properties().rarity(FossilRarities.TEN_PIECE_FOSSIL)));
 
 
 	//Fifteen
@@ -522,6 +523,7 @@ public class FossilItems {
 	public static final RegistryObject<FossilItem> IRRITATOR = SKELETON_REGISTER.register("irritator_fossil", () -> new FossilItem(FossilBlocks.IRRITATOR.get(), new Item.Properties().rarity(FossilRarities.FIFTEEN_PIECE_FOSSIL)));
 	public static final RegistryObject<FossilItem> ZUPAYSAURUS = SKELETON_REGISTER.register("zupaysaurus_fossil", () -> new FossilItem(FossilBlocks.ZUPAYSAURUS.get(), new Item.Properties().rarity(FossilRarities.FIFTEEN_PIECE_FOSSIL)));
 	public static final RegistryObject<FossilItem> TEMNODONTOSAURUS = SKELETON_REGISTER.register("temnodontosaurus_fossil", () -> new FossilItem(FossilBlocks.TEMNODONTOSAURUS.get(), new Item.Properties().rarity(FossilRarities.FIFTEEN_PIECE_FOSSIL)));
+	public static final RegistryObject<FossilItem> URANOCENTRODON = SKELETON_REGISTER.register("uranocentrodon_fossil", () -> new FossilItem(FossilBlocks.URANOCENTRODON.get(), new Item.Properties().rarity(FossilRarities.FIFTEEN_PIECE_FOSSIL)));
 
 	//Twenty
 	public static final RegistryObject<FossilItem> UTAHRAPTOR = SKELETON_REGISTER.register("utahraptor_fossil", () -> new FossilItem(FossilBlocks.UTAHRAPTOR.get(), new Item.Properties().rarity(FossilRarities.TWENTY_PIECE_FOSSIL)));

@@ -416,6 +416,7 @@
 	"block.fossils.mymoorapelta_fossil": "Mymoorapelta Fossil",
 	"block.fossils.stanocephalosaurus_fossil": "Stanocephalosaurus Fossil",
 	"block.fossils.cynognathus_fossil": "Cynognathus Fossil",
+	"block.fossils.thecodontosaurus_fossil": "Thecodontosaurus Fossil",
 	"block.fossils.poposaurus_fossil": "Poposaurus Fossil",
 	"block.fossils.nigerpeton_fossil": "Nigerpeton Fossil",
 	"block.fossils.stahleckeria_fossil": "Stahleckeria Fossil",
@@ -513,6 +514,7 @@
 	"block.fossils.irritator_fossil": "Irritator Fossil",
 	"block.fossils.zupaysaurus_fossil": "Zupaysaurus Fossil",
 	"block.fossils.temnodontosaurus_fossil": "Temnodontosaurus Fossil",
+	"block.fossils.uranocentrodon_fossil": "Uranocentrodon Fossil",
 	"block.fossils.bisonlatifrons_fossil": "Bison latifrons Fossil",
 	"block.fossils.utahraptor_fossil": "Utahraptor Fossil",
 	"block.fossils.shonisaurus_fossil": "Shonisaurus Fossil",
@@ -1915,5 +1917,9 @@
 	"advancements.fossils.proterogyrinus.title": "Earlier Tadpole",
 	"advancements.fossils.proterogyrinus.description": "Complete a Proterogyrinus skeleton",
 	"advancements.fossils.cymbospondylus.title": "Cupped Vertebrae",
-	"advancements.fossils.cymbospondylus.description": "Complete a Cymbospondylus skeleton"
+	"advancements.fossils.cymbospondylus.description": "Complete a Cymbospondylus skeleton",
+	"advancements.fossils.thecodontosaurus.title": "Socket-toothed Lizard",
+	"advancements.fossils.thecodontosaurus.description": "Complete a Thecodontosaurus skeleton",
+	"advancements.fossils.uranocentrodon.title": "Prickle-toothed Palate",
+	"advancements.fossils.uranocentrodon.description": "Complete a Uranocentrodon skeleton"
 }

@@ -267,6 +267,8 @@ import fossils.fossils.client.blockentity.model.tanycolagreus.TanycolagreusFossi
 import fossils.fossils.client.blockentity.model.tanycolagreus.TanycolagreusFossilModel;
 import fossils.fossils.client.blockentity.model.teleocrater.TeleocraterFossilFrameModel;
 import fossils.fossils.client.blockentity.model.teleocrater.TeleocraterFossilModel;
+import fossils.fossils.client.blockentity.model.thecodontosaurus.ThecodontosaurusFossilFrameModel;
+import fossils.fossils.client.blockentity.model.thecodontosaurus.ThecodontosaurusFossilModel;
 import fossils.fossils.client.blockentity.model.theropithecus.TheropithecusFossilFrameModel;
 import fossils.fossils.client.blockentity.model.theropithecus.TheropithecusFossilModel;
 import fossils.fossils.client.blockentity.model.thylacoleo.ThylacoleoFossilFrameModel;
@@ -444,6 +446,7 @@ public class FossilSkeletonTenPieceRenderer implements BlockEntityRenderer<Fossi
         type.put(FossilSkeletonTenPieceBlock.Types.MYMOORAPELTA, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/mymoorapelta/stage_0.png"));
         type.put(FossilSkeletonTenPieceBlock.Types.STANOCEPHALOSAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/stanocephalosaurus/stage_0.png"));
         type.put(FossilSkeletonTenPieceBlock.Types.CYNOGNATHUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/cynognathus/stage_0.png"));
+        type.put(FossilSkeletonTenPieceBlock.Types.THECODONTOSAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/thecodontosaurus/stage_0.png"));
 
     });
     public static final Map<FossilSkeletonTenPieceBlock.Type, ResourceLocation> FRAME_BY_TYPE = Util.make(Maps.newHashMap(), (type) -> {
@@ -584,6 +587,7 @@ public class FossilSkeletonTenPieceRenderer implements BlockEntityRenderer<Fossi
         type.put(FossilSkeletonTenPieceBlock.Types.MYMOORAPELTA, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/mymoorapelta/frame.png"));
         type.put(FossilSkeletonTenPieceBlock.Types.STANOCEPHALOSAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/stanocephalosaurus/frame.png"));
         type.put(FossilSkeletonTenPieceBlock.Types.CYNOGNATHUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/cynognathus/frame.png"));
+        type.put(FossilSkeletonTenPieceBlock.Types.THECODONTOSAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/thecodontosaurus/frame.png"));
 
 
     });
@@ -727,6 +731,7 @@ public class FossilSkeletonTenPieceRenderer implements BlockEntityRenderer<Fossi
         builder.put(FossilSkeletonTenPieceBlock.Types.MYMOORAPELTA, new MymoorapeltaFossilModel(p_173662_.bakeLayer(ClientEvents.MYMOORAPELTA)));
         builder.put(FossilSkeletonTenPieceBlock.Types.STANOCEPHALOSAURUS, new StanocephalosaurusFossilModel(p_173662_.bakeLayer(ClientEvents.STANOCEPHALOSAURUS)));
         builder.put(FossilSkeletonTenPieceBlock.Types.CYNOGNATHUS, new CynognathusFossilModel(p_173662_.bakeLayer(ClientEvents.CYNOGNATHUS)));
+        builder.put(FossilSkeletonTenPieceBlock.Types.THECODONTOSAURUS, new ThecodontosaurusFossilModel(p_173662_.bakeLayer(ClientEvents.THECODONTOSAURUS)));
         return builder.build();
     }
 
@@ -869,6 +874,7 @@ public class FossilSkeletonTenPieceRenderer implements BlockEntityRenderer<Fossi
         builder.put(FossilSkeletonTenPieceBlock.Types.MYMOORAPELTA, new MymoorapeltaFossilFrameModel(p_173662_.bakeLayer(ClientEvents.MYMOORAPELTA_FRAME)));
         builder.put(FossilSkeletonTenPieceBlock.Types.STANOCEPHALOSAURUS, new StanocephalosaurusFossilFrameModel(p_173662_.bakeLayer(ClientEvents.STANOCEPHALOSAURUS_FRAME)));
         builder.put(FossilSkeletonTenPieceBlock.Types.CYNOGNATHUS, new CynognathusFossilFrameModel(p_173662_.bakeLayer(ClientEvents.CYNOGNATHUS_FRAME)));
+        builder.put(FossilSkeletonTenPieceBlock.Types.THECODONTOSAURUS, new ThecodontosaurusFossilFrameModel(p_173662_.bakeLayer(ClientEvents.THECODONTOSAURUS_FRAME)));
         return builder.build();
     }
 
@@ -1446,6 +1452,10 @@ public class FossilSkeletonTenPieceRenderer implements BlockEntityRenderer<Fossi
             float scale = 0.36F;
             pose.scale(-scale, -scale, scale);
             pose.translate(0F, 1.3F, 0F);
+        } else if (FossilSkeletonTenPieceBlock$type == FossilSkeletonTenPieceBlock.Types.THECODONTOSAURUS) {
+            float scale = 0.29F;
+            pose.scale(-scale, -scale, scale);
+            pose.translate(0F, 1.95F, 0F);
         } else {
             float scale = 1.0F;
             pose.scale(-scale, -scale, scale);
@@ -1732,6 +1742,8 @@ public class FossilSkeletonTenPieceRenderer implements BlockEntityRenderer<Fossi
             resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/stanocephalosaurus/stage_" + fossilLevel + ".png");
         } else if (type == FossilSkeletonTenPieceBlock.Types.CYNOGNATHUS) {
             resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/cynognathus/stage_" + fossilLevel + ".png");
+        } else if (type == FossilSkeletonTenPieceBlock.Types.THECODONTOSAURUS) {
+            resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/thecodontosaurus/stage_" + fossilLevel + ".png");
         } else resourceLocation = SKIN_BY_TYPE.get(type);
         return RenderType.entityCutoutNoCullZOffset(resourceLocation);
     }

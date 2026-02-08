@@ -273,6 +273,11 @@
           "type": "minecraft:item",
           "name": "fossils:bobasatrania_fossil",
           "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:uranocentrodon_fossil",
+          "weight": 2
         }
       ],
       "rolls": 1
