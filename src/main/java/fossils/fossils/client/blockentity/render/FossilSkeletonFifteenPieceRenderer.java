@@ -117,6 +117,8 @@ import fossils.fossils.client.blockentity.model.nothosaurus.NothosaurusFossilFra
 import fossils.fossils.client.blockentity.model.nothosaurus.NothosaurusFossilModel;
 import fossils.fossils.client.blockentity.model.odontopteryx.OdontopteryxFossilFrameModel;
 import fossils.fossils.client.blockentity.model.odontopteryx.OdontopteryxFossilModel;
+import fossils.fossils.client.blockentity.model.olorotitan.OlorotitanFossilFrameModel;
+import fossils.fossils.client.blockentity.model.olorotitan.OlorotitanFossilModel;
 import fossils.fossils.client.blockentity.model.ophthalmothule.OphthalmothuleFossilFrameModel;
 import fossils.fossils.client.blockentity.model.ophthalmothule.OphthalmothuleFossilModel;
 import fossils.fossils.client.blockentity.model.ouranosaurus.OuranosaurusFossilFrameModel;
@@ -313,6 +315,7 @@ public class FossilSkeletonFifteenPieceRenderer implements BlockEntityRenderer<F
         type.put(FossilSkeletonFifteenPieceBlock.Types.ZUPAYSAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/zupaysaurus/stage_0.png"));
         type.put(FossilSkeletonFifteenPieceBlock.Types.TEMNODONTOSAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/temnodontosaurus/stage_0.png"));
         type.put(FossilSkeletonFifteenPieceBlock.Types.URANOCENTRODON, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/uranocentrodon/stage_0.png"));
+        type.put(FossilSkeletonFifteenPieceBlock.Types.OLOROTITAN, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/olorotitan/stage_0.png"));
     });
     public static final Map<FossilSkeletonFifteenPieceBlock.Type, ResourceLocation> FRAME_BY_TYPE = Util.make(Maps.newHashMap(), (type) -> {
         type.put(FossilSkeletonFifteenPieceBlock.Types.WUERHOSAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/wuerhosaurus/frame.png"));
@@ -408,6 +411,7 @@ public class FossilSkeletonFifteenPieceRenderer implements BlockEntityRenderer<F
         type.put(FossilSkeletonFifteenPieceBlock.Types.ZUPAYSAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/zupaysaurus/frame.png"));
         type.put(FossilSkeletonFifteenPieceBlock.Types.TEMNODONTOSAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/temnodontosaurus/frame.png"));
         type.put(FossilSkeletonFifteenPieceBlock.Types.URANOCENTRODON, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/uranocentrodon/frame.png"));
+        type.put(FossilSkeletonFifteenPieceBlock.Types.OLOROTITAN, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/olorotitan/frame.png"));
     });
 
     public static Map<FossilSkeletonFifteenPieceBlock.Type, SkullModelBase> createFossilRenderers(EntityModelSet p_173662_) {
@@ -505,6 +509,7 @@ public class FossilSkeletonFifteenPieceRenderer implements BlockEntityRenderer<F
         builder.put(FossilSkeletonFifteenPieceBlock.Types.ZUPAYSAURUS, new ZupaysaurusFossilModel(p_173662_.bakeLayer(ClientEvents.ZUPAYSAURUS)));
         builder.put(FossilSkeletonFifteenPieceBlock.Types.TEMNODONTOSAURUS, new TemnodontosaurusFossilModel(p_173662_.bakeLayer(ClientEvents.TEMNODONTOSAURUS)));
         builder.put(FossilSkeletonFifteenPieceBlock.Types.URANOCENTRODON, new UranocentrodonFossilModel(p_173662_.bakeLayer(ClientEvents.URANOCENTRODON)));
+        builder.put(FossilSkeletonFifteenPieceBlock.Types.OLOROTITAN, new OlorotitanFossilModel(p_173662_.bakeLayer(ClientEvents.OLOROTITAN)));
         return builder.build();
     }
 
@@ -603,6 +608,7 @@ public class FossilSkeletonFifteenPieceRenderer implements BlockEntityRenderer<F
         builder.put(FossilSkeletonFifteenPieceBlock.Types.ZUPAYSAURUS, new ZupaysaurusFossilFrameModel(p_173662_.bakeLayer(ClientEvents.ZUPAYSAURUS_FRAME)));
         builder.put(FossilSkeletonFifteenPieceBlock.Types.TEMNODONTOSAURUS, new TemnodontosaurusFossilFrameModel(p_173662_.bakeLayer(ClientEvents.TEMNODONTOSAURUS_FRAME)));
         builder.put(FossilSkeletonFifteenPieceBlock.Types.URANOCENTRODON, new UranocentrodonFossilFrameModel(p_173662_.bakeLayer(ClientEvents.URANOCENTRODON_FRAME)));
+        builder.put(FossilSkeletonFifteenPieceBlock.Types.OLOROTITAN, new OlorotitanFossilFrameModel(p_173662_.bakeLayer(ClientEvents.OLOROTITAN_FRAME)));
         return builder.build();
     }
 
@@ -1004,6 +1010,10 @@ public class FossilSkeletonFifteenPieceRenderer implements BlockEntityRenderer<F
             float scale = 0.68F;
             pose.scale(-scale, -scale, scale);
             pose.translate(0F, -0.02F, 0F);
+        } else if (FossilSkeletonFifteenPieceBlock$type == FossilSkeletonFifteenPieceBlock.Types.OLOROTITAN) {
+            float scale = 0.87F;
+            pose.scale(-scale, -scale, scale);
+            pose.translate(0F, -0.34F, 0F);
         } else {
             float scale = 1.0F;
             pose.scale(-scale, -scale, scale);
@@ -1202,6 +1212,8 @@ public class FossilSkeletonFifteenPieceRenderer implements BlockEntityRenderer<F
             resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/temnodontosaurus/stage_" + fossilLevel + ".png");
         } else if (type == FossilSkeletonFifteenPieceBlock.Types.URANOCENTRODON) {
             resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/uranocentrodon/stage_" + fossilLevel + ".png");
+        } else if (type == FossilSkeletonFifteenPieceBlock.Types.OLOROTITAN) {
+            resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/olorotitan/stage_" + fossilLevel + ".png");
         } else resourceLocation = SKIN_BY_TYPE.get(type);
         return RenderType.entityCutoutNoCullZOffset(resourceLocation);
 

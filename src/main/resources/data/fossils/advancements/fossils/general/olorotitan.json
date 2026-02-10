@@ -1,0 +1,57 @@
+{
+  "parent": "fossils:fossils/general/lambeosaurines",
+  "criteria": {
+    "finish_olorotitan": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:olorotitan_fossil"
+                ],
+                "state": {
+                  "fossil_level": "14"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:olorotitan_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.olorotitan.description"
+    },
+    "frame": "goal",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:olorotitan_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.olorotitan.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_olorotitan"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  },
+  "sends_telemetry_event": true
+}

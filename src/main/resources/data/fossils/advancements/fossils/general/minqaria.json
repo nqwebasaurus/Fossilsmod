@@ -1,0 +1,54 @@
+{
+  "parent": "fossils:fossils/general/lambeosaurines",
+  "criteria": {
+    "finish_minqaria": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:minqaria_fossil"
+                ],
+                "state": {
+                  "fossil_level": "9"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:minqaria_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.minqaria.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:minqaria_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.minqaria.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_minqaria"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

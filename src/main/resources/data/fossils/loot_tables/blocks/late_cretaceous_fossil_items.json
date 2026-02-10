@@ -343,6 +343,16 @@
           "type": "minecraft:item",
           "name": "fossils:aeger_fossil",
           "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:minqaria_fossil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:olorotitan_fossil",
+          "weight": 2
         }
       ],
       "rolls": 1

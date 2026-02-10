@@ -417,6 +417,7 @@
 	"block.fossils.stanocephalosaurus_fossil": "Stanocephalosaurus Fossil",
 	"block.fossils.cynognathus_fossil": "Cynognathus Fossil",
 	"block.fossils.thecodontosaurus_fossil": "Thecodontosaurus Fossil",
+	"block.fossils.minqaria_fossil": "Minqaria Fossil",
 	"block.fossils.poposaurus_fossil": "Poposaurus Fossil",
 	"block.fossils.nigerpeton_fossil": "Nigerpeton Fossil",
 	"block.fossils.stahleckeria_fossil": "Stahleckeria Fossil",
@@ -515,6 +516,7 @@
 	"block.fossils.zupaysaurus_fossil": "Zupaysaurus Fossil",
 	"block.fossils.temnodontosaurus_fossil": "Temnodontosaurus Fossil",
 	"block.fossils.uranocentrodon_fossil": "Uranocentrodon Fossil",
+	"block.fossils.olorotitan_fossil": "Olorotitan Fossil",
 	"block.fossils.bisonlatifrons_fossil": "Bison latifrons Fossil",
 	"block.fossils.utahraptor_fossil": "Utahraptor Fossil",
 	"block.fossils.shonisaurus_fossil": "Shonisaurus Fossil",
@@ -1921,5 +1923,9 @@
 	"advancements.fossils.thecodontosaurus.title": "Socket-toothed Lizard",
 	"advancements.fossils.thecodontosaurus.description": "Complete a Thecodontosaurus skeleton",
 	"advancements.fossils.uranocentrodon.title": "Prickle-toothed Palate",
-	"advancements.fossils.uranocentrodon.description": "Complete a Uranocentrodon skeleton"
+	"advancements.fossils.uranocentrodon.description": "Complete a Uranocentrodon skeleton",
+	"advancements.fossils.minqaria.title": "[Duck] Beak",
+	"advancements.fossils.minqaria.description": "Complete a Minqaria skeleton",
+	"advancements.fossils.olorotitan.title": "Titanic Swan",
+	"advancements.fossils.olorotitan.description": "Complete a Olorotitan skeleton"
 }
