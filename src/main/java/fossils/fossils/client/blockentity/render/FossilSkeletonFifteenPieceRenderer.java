@@ -703,9 +703,9 @@ public class FossilSkeletonFifteenPieceRenderer implements BlockEntityRenderer<F
             pose.scale(-scale, -scale, scale);
             pose.translate(0F, -0.5F, 0F);
         } else if (FossilSkeletonFifteenPieceBlock$type == FossilSkeletonFifteenPieceBlock.Types.TETHYSHADROS) {
-            float scale = 1F;
+            float scale = 0.44F;
             pose.scale(-scale, -scale, scale);
-            pose.translate(0F, -0.5F, 0F);
+            pose.translate(0F, 0.75F, 0F);
         } else if (FossilSkeletonFifteenPieceBlock$type == FossilSkeletonFifteenPieceBlock.Types.REGALICERATOPS) {
             float scale = 1.2F;
             pose.scale(-scale, -scale, scale);

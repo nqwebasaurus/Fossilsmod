@@ -967,7 +967,7 @@ public class FossilSkeletonTenPieceRenderer implements BlockEntityRenderer<Fossi
             pose.scale(-scale, -scale, scale);
             pose.translate(0F, -0.05F, 0F);
         } else if (FossilSkeletonTenPieceBlock$type == FossilSkeletonTenPieceBlock.Types.DEARC) {
-            float scale = 0.48F;
+            float scale = 0.35F;
             pose.scale(-scale, -scale, scale);
             pose.translate(0F, -0F, 0F);
         } else if (FossilSkeletonTenPieceBlock$type == FossilSkeletonTenPieceBlock.Types.TUPANDACTYLUSNAVIGANS) {
