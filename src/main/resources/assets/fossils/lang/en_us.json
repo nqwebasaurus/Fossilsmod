@@ -283,6 +283,7 @@
 	"block.fossils.eoraptor_fossil": "Eoraptor Fossil",
 	"block.fossils.bungartius_fossil": "Bungartius Fossil",
 	"block.fossils.proterogyrinus_fossil": "Proterogyrinus Fossil",
+	"block.fossils.cycnorhamphus_fossil": "Cycnorhamphus Fossil",
 	"block.fossils.kentrosaurus_fossil": "Kentrosaurus Fossil",
 	"block.fossils.endothiodonbathystoma_fossil": "Endothiodon bathystoma Fossil",
 	"block.fossils.dimetrodongrandis_fossil": "Dimetrodon grandis Fossil",
@@ -517,6 +518,7 @@
 	"block.fossils.temnodontosaurus_fossil": "Temnodontosaurus Fossil",
 	"block.fossils.uranocentrodon_fossil": "Uranocentrodon Fossil",
 	"block.fossils.olorotitan_fossil": "Olorotitan Fossil",
+	"block.fossils.wendiceratops_fossil": "Wendiceratops Fossil",
 	"block.fossils.bisonlatifrons_fossil": "Bison latifrons Fossil",
 	"block.fossils.utahraptor_fossil": "Utahraptor Fossil",
 	"block.fossils.shonisaurus_fossil": "Shonisaurus Fossil",
@@ -1927,5 +1929,9 @@
 	"advancements.fossils.minqaria.title": "[Duck] Beak",
 	"advancements.fossils.minqaria.description": "Complete a Minqaria skeleton",
 	"advancements.fossils.olorotitan.title": "Titanic Swan",
-	"advancements.fossils.olorotitan.description": "Complete a Olorotitan skeleton"
+	"advancements.fossils.olorotitan.description": "Complete a Olorotitan skeleton",
+	"advancements.fossils.cycnorhamphus.title": "Swan Beak",
+	"advancements.fossils.cycnorhamphus.description": "Complete a Cycnorhamphus skeleton",
+	"advancements.fossils.wendiceratops.title": "Wendy Sloboda's Horned Face",
+	"advancements.fossils.wendiceratops.description": "Complete a Wendiceratops skeleton"
 }

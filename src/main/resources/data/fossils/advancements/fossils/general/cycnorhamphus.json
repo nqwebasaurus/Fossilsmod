@@ -1,0 +1,54 @@
+{
+  "parent": "fossils:fossils/general/euctenochasmatia",
+  "criteria": {
+    "finish_cycnorhamphus": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:cycnorhamphus_fossil"
+                ],
+                "state": {
+                  "fossil_level": "4"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:cycnorhamphus_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.cycnorhamphus.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:cycnorhamphus_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.cycnorhamphus.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_cycnorhamphus"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

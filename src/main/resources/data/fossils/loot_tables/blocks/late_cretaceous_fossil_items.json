@@ -353,6 +353,11 @@
           "type": "minecraft:item",
           "name": "fossils:olorotitan_fossil",
           "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:wendiceratops_fossil",
+          "weight": 2
         }
       ],
       "rolls": 1

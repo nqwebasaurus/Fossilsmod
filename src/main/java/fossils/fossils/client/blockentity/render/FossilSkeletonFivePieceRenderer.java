@@ -57,6 +57,8 @@ import fossils.fossils.client.blockentity.model.convolosaurus.ConvolosaurusFossi
 import fossils.fossils.client.blockentity.model.convolosaurus.ConvolosaurusFossilModel;
 import fossils.fossils.client.blockentity.model.cyamodus.CyamodusFossilFrameModel;
 import fossils.fossils.client.blockentity.model.cyamodus.CyamodusFossilModel;
+import fossils.fossils.client.blockentity.model.cycnorhamphus.CycnorhamphusFossilFrameModel;
+import fossils.fossils.client.blockentity.model.cycnorhamphus.CycnorhamphusFossilModel;
 import fossils.fossils.client.blockentity.model.dallasaurus.DallasaurusFossilFrameModel;
 import fossils.fossils.client.blockentity.model.dallasaurus.DallasaurusFossilModel;
 import fossils.fossils.client.blockentity.model.dasyceps.DasycepsFossilFrameModel;
@@ -364,6 +366,7 @@ public class FossilSkeletonFivePieceRenderer implements BlockEntityRenderer<Foss
 		type.put(FossilSkeletonFivePieceBlock.Types.EORAPTOR, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/eoraptor/stage_0.png"));
 		type.put(FossilSkeletonFivePieceBlock.Types.BUNGARTIUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/bungartius/stage_0.png"));
 		type.put(FossilSkeletonFivePieceBlock.Types.PROTEROGYRINUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/proterogyrinus/stage_0.png"));
+		type.put(FossilSkeletonFivePieceBlock.Types.CYCNORHAMPHUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/cycnorhamphus/stage_0.png"));
 	});
 	public static final Map<FossilSkeletonFivePieceBlock.Type, ResourceLocation> FRAME_BY_TYPE = Util.make(Maps.newHashMap(), (type) -> {
 		type.put(EUNOTOSAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/eunotosaurus/frame.png"));
@@ -477,6 +480,7 @@ public class FossilSkeletonFivePieceRenderer implements BlockEntityRenderer<Foss
 		type.put(FossilSkeletonFivePieceBlock.Types.EORAPTOR, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/eoraptor/frame.png"));
 		type.put(FossilSkeletonFivePieceBlock.Types.BUNGARTIUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/bungartius/frame.png"));
 		type.put(FossilSkeletonFivePieceBlock.Types.PROTEROGYRINUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/proterogyrinus/frame.png"));
+		type.put(CYCNORHAMPHUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/cycnorhamphus/frame.png"));
 	});
 	public static Map<FossilSkeletonFivePieceBlock.Type, SkullModelBase> createFossilRenderers(EntityModelSet p_173662_) {
 		ImmutableMap.Builder<FossilSkeletonFivePieceBlock.Type, SkullModelBase> builder = ImmutableMap.builder();
@@ -591,6 +595,7 @@ public class FossilSkeletonFivePieceRenderer implements BlockEntityRenderer<Foss
 		builder.put(FossilSkeletonFivePieceBlock.Types.EORAPTOR, new EoraptorFossilModel(p_173662_.bakeLayer(ClientEvents.EORAPTOR)));
 		builder.put(FossilSkeletonFivePieceBlock.Types.BUNGARTIUS, new BungartiusFossilModel(p_173662_.bakeLayer(ClientEvents.BUNGARTIUS)));
 		builder.put(FossilSkeletonFivePieceBlock.Types.PROTEROGYRINUS, new ProterogyrinusFossilModel(p_173662_.bakeLayer(ClientEvents.PROTEROGYRINUS)));
+		builder.put(CYCNORHAMPHUS, new CycnorhamphusFossilModel(p_173662_.bakeLayer(ClientEvents.CYCNORHAMPHUS)));
 		return builder.build();
 	}
 
@@ -707,6 +712,7 @@ public class FossilSkeletonFivePieceRenderer implements BlockEntityRenderer<Foss
 		builder.put(FossilSkeletonFivePieceBlock.Types.EORAPTOR, new EoraptorFossilFrameModel(p_173662_.bakeLayer(ClientEvents.EORAPTOR_FRAME)));
 		builder.put(FossilSkeletonFivePieceBlock.Types.BUNGARTIUS, new BungartiusFossilFrameModel(p_173662_.bakeLayer(ClientEvents.BUNGARTIUS_FRAME)));
 		builder.put(FossilSkeletonFivePieceBlock.Types.PROTEROGYRINUS, new ProterogyrinusFossilFrameModel(p_173662_.bakeLayer(ClientEvents.PROTEROGYRINUS_FRAME)));
+		builder.put(CYCNORHAMPHUS, new CycnorhamphusFossilFrameModel(p_173662_.bakeLayer(ClientEvents.CYCNORHAMPHUS_FRAME)));
 		return builder.build();
 	}
 
@@ -1294,6 +1300,12 @@ public class FossilSkeletonFivePieceRenderer implements BlockEntityRenderer<Foss
 				pose.scale(-scale, -scale, scale);
 				pose.translate(0F, 3.75F, 0F);
 			}
+
+			case CYCNORHAMPHUS -> {
+				scale = 0.11F;
+				pose.scale(-scale, -scale, scale);
+				pose.translate(0F, 7.6F, 0F);
+			}
 			default -> throw new IllegalStateException("Unexpected value: " + type);
         }
 		VertexConsumer vertexconsumer = p_173668_.getBuffer(p_173671_);
@@ -1526,6 +1538,8 @@ public class FossilSkeletonFivePieceRenderer implements BlockEntityRenderer<Foss
 			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/bungartius/stage_" + fossilLevel + ".png");
 		} else if (type == FossilSkeletonFivePieceBlock.Types.PROTEROGYRINUS) {
 			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/proterogyrinus/stage_" + fossilLevel + ".png");
+		} else if (type == CYCNORHAMPHUS) {
+			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/cycnorhamphus/stage_" + fossilLevel + ".png");
 		} else resourceLocation = SKIN_BY_TYPE.get(type);
 		return RenderType.entityCutoutNoCullZOffset(resourceLocation);
 	}

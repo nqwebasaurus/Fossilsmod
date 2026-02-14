@@ -1,0 +1,57 @@
+{
+  "parent": "fossils:fossils/general/centrosaurinae",
+  "criteria": {
+    "finish_wendiceratops": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:wendiceratops_fossil"
+                ],
+                "state": {
+                  "fossil_level": "14"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:wendiceratops_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.wendiceratops.description"
+    },
+    "frame": "goal",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:wendiceratops_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.wendiceratops.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_wendiceratops"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  },
+  "sends_telemetry_event": true
+}
