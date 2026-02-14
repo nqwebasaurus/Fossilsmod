@@ -37,6 +37,9 @@ public class FossilItem extends BlockItem {
 		if (stack.getItem() == FossilItems.RUGARHYNCHOS.get()) {
 			tooltip.add(Component.translatable("Awarded to user Defind as first prize for Guess-A-Ton Season 3, June 2025"));
 		}
+		if (stack.getItem() == FossilItems.GEMUENDINA.get()) {
+			tooltip.add(Component.translatable("Icon texture gently provided by user Aquamarine"));
+		}
 	}
 	
 }
