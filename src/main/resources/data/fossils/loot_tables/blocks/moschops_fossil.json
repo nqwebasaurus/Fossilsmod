@@ -261,6 +261,24 @@
 					"name": "fossils:moschops_fossil"
 				}
 			]
+		},
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:iron_bars"
+				}
+			],
+			"conditions": [
+				{
+					"condition": "minecraft:block_state_property",
+					"block": "fossils:moschops_fossil",
+					"properties": {
+						"frame": true
+					}
+				}
+			]
 		}
 	]
 }

@@ -66,6 +66,24 @@
 					"name": "fossils:caviramus_fossil"
 				}
 			]
+		},
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:iron_bars"
+				}
+			],
+			"conditions": [
+				{
+					"condition": "minecraft:block_state_property",
+					"block": "fossils:caviramus_fossil",
+					"properties": {
+						"frame": true
+					}
+				}
+			]
 		}
 	]
 }
