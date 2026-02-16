@@ -596,22 +596,22 @@ public class FossilBlocks {
 	public static final RegistryObject<FossilSkeletonTwentyPieceBlock> TORVOSAURUS = REGISTER.register("torvosaurus_fossil", () -> new FossilSkeletonTwentyPieceBlock(FossilSkeletonTwentyPieceBlock.Types.TORVOSAURUS, Properties.of().strength(2.0F, 3.0F).sound(SoundType.BONE_BLOCK).requiresCorrectToolForDrops().noOcclusion().noCollission()));
 	public static final RegistryObject<FossilSkeletonTwentyPieceBlock> CYMBOSPONDYLUS = REGISTER.register("cymbospondylus_fossil", () -> new FossilSkeletonTwentyPieceBlock(FossilSkeletonTwentyPieceBlock.Types.CYMBOSPONDYLUS, Properties.of().strength(2.0F, 3.0F).sound(SoundType.BONE_BLOCK).requiresCorrectToolForDrops().noOcclusion().noCollission()));
 
-	public static final RegistryObject<Block> PRECAMBRIAN_FOSSIL_ORE = REGISTER.register("precambrian_fossil_ore", () -> new Block(Properties.copy(Blocks.STONE)));
-	public static final RegistryObject<Block> CAMBRIAN_FOSSIL_ORE = REGISTER.register("cambrian_fossil_ore", () -> new Block(Properties.copy(Blocks.STONE)));
-	public static final RegistryObject<Block> ORDOVICIAN_FOSSIL_ORE = REGISTER.register("ordovician_fossil_ore", () -> new Block(Properties.copy(Blocks.STONE)));
-	public static final RegistryObject<Block> SILURIAN_FOSSIL_ORE = REGISTER.register("silurian_fossil_ore", () -> new Block(Properties.copy(Blocks.STONE)));
-	public static final RegistryObject<Block> DEVONIAN_FOSSIL_ORE = REGISTER.register("devonian_fossil_ore", () -> new Block(Properties.copy(Blocks.STONE)));
-	public static final RegistryObject<Block> CARBONIFEROUS_FOSSIL_ORE = REGISTER.register("carboniferous_fossil_ore", () -> new Block(Properties.copy(Blocks.STONE)));
-	public static final RegistryObject<Block> PERMIAN_FOSSIL_ORE = REGISTER.register("permian_fossil_ore", () -> new Block(Properties.copy(Blocks.STONE)));
-	public static final RegistryObject<Block> PERMIAN_DEEPSLATE_FOSSIL_ORE = REGISTER.register("permian_deepslate_fossil_ore", () -> new Block(Properties.copy(Blocks.STONE)));
-	public static final RegistryObject<Block> TRIASSIC_FOSSIL_ORE = REGISTER.register("triassic_fossil_ore", () -> new Block(Properties.copy(Blocks.STONE)));
-	public static final RegistryObject<Block> TRIASSIC_DEEPSLATE_FOSSIL_ORE = REGISTER.register("triassic_deepslate_fossil_ore", () -> new Block(Properties.copy(Blocks.STONE)));
-	public static final RegistryObject<Block> JURASSIC_FOSSIL_ORE = REGISTER.register("jurassic_fossil_ore", () -> new Block(Properties.copy(Blocks.STONE)));
-	public static final RegistryObject<Block> EARLY_CRETACEOUS_FOSSIL_ORE = REGISTER.register("early_cretaceous_fossil_ore", () -> new Block(Properties.copy(Blocks.STONE)));
-	public static final RegistryObject<Block> LATE_CRETACEOUS_FOSSIL_ORE = REGISTER.register("late_cretaceous_fossil_ore", () -> new Block(Properties.copy(Blocks.STONE)));
-	public static final RegistryObject<Block> PALEOGENE_FOSSIL_ORE = REGISTER.register("paleogene_fossil_ore", () -> new Block(Properties.copy(Blocks.STONE)));
-	public static final RegistryObject<Block> NEOGENE_FOSSIL_ORE = REGISTER.register("neogene_fossil_ore", () -> new Block(Properties.copy(Blocks.STONE)));
-	public static final RegistryObject<Block> QUATERNARY_FOSSIL_ORE = REGISTER.register("quaternary_fossil_ore", () -> new Block(Properties.copy(Blocks.STONE)));
+	public static final RegistryObject<Block> PRECAMBRIAN_FOSSIL_ORE = REGISTER.register("precambrian_fossil_ore", () -> new Block(Properties.copy(Blocks.DIAMOND_ORE)));
+	public static final RegistryObject<Block> CAMBRIAN_FOSSIL_ORE = REGISTER.register("cambrian_fossil_ore", () -> new Block(Properties.copy(Blocks.DIAMOND_ORE)));
+	public static final RegistryObject<Block> ORDOVICIAN_FOSSIL_ORE = REGISTER.register("ordovician_fossil_ore", () -> new Block(Properties.copy(Blocks.DIAMOND_ORE)));
+	public static final RegistryObject<Block> SILURIAN_FOSSIL_ORE = REGISTER.register("silurian_fossil_ore", () -> new Block(Properties.copy(Blocks.DIAMOND_ORE)));
+	public static final RegistryObject<Block> DEVONIAN_FOSSIL_ORE = REGISTER.register("devonian_fossil_ore", () -> new Block(Properties.copy(Blocks.DIAMOND_ORE)));
+	public static final RegistryObject<Block> CARBONIFEROUS_FOSSIL_ORE = REGISTER.register("carboniferous_fossil_ore", () -> new Block(Properties.copy(Blocks.DIAMOND_ORE)));
+	public static final RegistryObject<Block> PERMIAN_FOSSIL_ORE = REGISTER.register("permian_fossil_ore", () -> new Block(Properties.copy(Blocks.DIAMOND_ORE)));
+	public static final RegistryObject<Block> PERMIAN_DEEPSLATE_FOSSIL_ORE = REGISTER.register("permian_deepslate_fossil_ore", () -> new Block(Properties.copy(Blocks.DIAMOND_ORE)));
+	public static final RegistryObject<Block> TRIASSIC_FOSSIL_ORE = REGISTER.register("triassic_fossil_ore", () -> new Block(Properties.copy(Blocks.DIAMOND_ORE)));
+	public static final RegistryObject<Block> TRIASSIC_DEEPSLATE_FOSSIL_ORE = REGISTER.register("triassic_deepslate_fossil_ore", () -> new Block(Properties.copy(Blocks.DIAMOND_ORE)));
+	public static final RegistryObject<Block> JURASSIC_FOSSIL_ORE = REGISTER.register("jurassic_fossil_ore", () -> new Block(Properties.copy(Blocks.DIAMOND_ORE)));
+	public static final RegistryObject<Block> EARLY_CRETACEOUS_FOSSIL_ORE = REGISTER.register("early_cretaceous_fossil_ore", () -> new Block(Properties.copy(Blocks.DIAMOND_ORE)));
+	public static final RegistryObject<Block> LATE_CRETACEOUS_FOSSIL_ORE = REGISTER.register("late_cretaceous_fossil_ore", () -> new Block(Properties.copy(Blocks.DIAMOND_ORE)));
+	public static final RegistryObject<Block> PALEOGENE_FOSSIL_ORE = REGISTER.register("paleogene_fossil_ore", () -> new Block(Properties.copy(Blocks.DIAMOND_ORE)));
+	public static final RegistryObject<Block> NEOGENE_FOSSIL_ORE = REGISTER.register("neogene_fossil_ore", () -> new Block(Properties.copy(Blocks.DIAMOND_ORE)));
+	public static final RegistryObject<Block> QUATERNARY_FOSSIL_ORE = REGISTER.register("quaternary_fossil_ore", () -> new Block(Properties.copy(Blocks.DIAMOND_ORE)));
 
 	
 }
