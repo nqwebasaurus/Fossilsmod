@@ -63,7 +63,7 @@
 							"function": "minecraft:explosion_decay"
 						}
 					],
-					"name": "fossils:jakapil_fossil"
+					"name": "fossils:jianchangnathus_fossil"
 				}
 			]
 		},
@@ -78,7 +78,7 @@
 			"conditions": [
 				{
 					"condition": "minecraft:block_state_property",
-					"block": "fossils:jakapil_fossil",
+					"block": "fossils:jianchangnathus_fossil",
 					"properties": {
 						"frame": true
 					}
