@@ -1,0 +1,20 @@
+{
+	"music_disc.drift_and_fall": {
+		"subtitle": "item.fossils.music_disc_drift_and_fall.desc",
+		"sounds": [
+			{
+				"name": "fossils:drift_and_fall",
+				"stream": true
+			}
+		]
+	},
+	"music_disc.eurypterids_lament": {
+		"subtitle": "item.fossils.music_disc_eurypterids_lament.desc",
+		"sounds": [
+			{
+				"name": "fossils:eurypterids_lament",
+				"stream": true
+			}
+		]
+	}
+}

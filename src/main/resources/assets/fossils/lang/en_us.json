@@ -592,7 +592,12 @@
 	"itemGroup.fossil_slab_tab": "Fossils Slabs",
 	"itemGroup.fossil_blocks_tab": "Fossils Blocks",
 	"itemGroup.fossil_skeleton_tab": "Fossils Skeletons",
-
+	
+	"item.fossils.music_disc_drift_and_fall": "Music Disc",
+	"item.fossils.music_disc_drift_and_fall.desc": "Montanoceratops - Drift and Fall",
+	"item.fossils.music_disc_eurypterids_lament": "Music Disc",
+	"item.fossils.music_disc_eurypterids_lament.desc": "Montanoceratops - Eurypterids' Lament",
+	
 	"item.fossil.advancement_line": "Advancement Line NOT A FUNCTIONAL ITEM DON'T USE",
 
 	"advancements.fossils.root.title": "Amphibians and Fishes",

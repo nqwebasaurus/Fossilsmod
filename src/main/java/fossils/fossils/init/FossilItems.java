@@ -2,10 +2,9 @@ package fossils.fossils.init;
 
 import fossils.fossils.FossilMod;
 import fossils.fossils.common.item.FossilItem;
-import net.minecraft.core.Direction;
-import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.StandingAndWallBlockItem;
+import net.minecraft.world.item.Rarity;
+import net.minecraft.world.item.RecordItem;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
@@ -619,4 +618,6 @@ public class FossilItems {
 	public static final RegistryObject<FossilItem> NEOGENE_FOSSIL_ORE = BLOCK_REGISTER.register("neogene_fossil_ore", () -> new FossilItem(FossilBlocks.NEOGENE_FOSSIL_ORE.get(), new Item.Properties()));
 	public static final RegistryObject<FossilItem> QUATERNARY_FOSSIL_ORE = BLOCK_REGISTER.register("quaternary_fossil_ore", () -> new FossilItem(FossilBlocks.QUATERNARY_FOSSIL_ORE.get(), new Item.Properties()));
 	
+	public static final RegistryObject<Item> MUSIC_DISC_DRIFT_AND_FALL = REGISTER.register("music_disc_drift_and_fall", () -> new RecordItem(13, FossilSoundEvents.MUSIC_DISC_DRIFT_AND_FALL::get, new Item.Properties().stacksTo(1).rarity(Rarity.RARE), 3280));
+	public static final RegistryObject<Item> MUSIC_DISC_EURYPTERIDS_LAMENT = REGISTER.register("music_disc_eurypterids_lament", () -> new RecordItem(5, FossilSoundEvents.MUSIC_DISC_EURYPTERIDS_LAMENT::get, new Item.Properties().stacksTo(1).rarity(Rarity.RARE), 5300));
 }
