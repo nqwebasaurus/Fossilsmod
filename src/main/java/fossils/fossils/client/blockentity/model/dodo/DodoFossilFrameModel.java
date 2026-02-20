@@ -87,13 +87,13 @@ public class DodoFossilFrameModel extends SkullModelBase {
 		MeshDefinition meshdefinition = new MeshDefinition();
 		PartDefinition partdefinition = meshdefinition.getRoot();
 
-		PartDefinition fossil = partdefinition.addOrReplaceChild("fossil", CubeListBuilder.create().texOffs(2, 1).addBox(-0.4F, -31.0F, -9.5F, 1.0F, 31.0F, 1.0F, new CubeDeformation(-0.16F))
-				.texOffs(2, 1).addBox(-0.5F, -31.0F, -25.4F, 1.0F, 31.0F, 1.0F, new CubeDeformation(-0.16F)), PartPose.offset(0.0F, 24.0F, 18.0F));
+		PartDefinition fossil = partdefinition.addOrReplaceChild("fossil", CubeListBuilder.create().texOffs(2, 1).addBox(-0.4F, -31.0F, 8.5F, 1.0F, 31.0F, 1.0F, new CubeDeformation(-0.16F))
+				.texOffs(2, 1).addBox(-0.5F, -31.0F, -7.4F, 1.0F, 31.0F, 1.0F, new CubeDeformation(-0.16F)), PartPose.offset(0.0F, 24.0F, 0.0F));
 
 		PartDefinition cube_r1 = fossil.addOrReplaceChild("cube_r1", CubeListBuilder.create().texOffs(2, 1).addBox(6.3F, -4.5F, -0.5F, 1.0F, 8.0F, 1.0F, new CubeDeformation(-0.15F))
-				.texOffs(2, 1).addBox(6.4F, -5.0F, 15.4F, 1.0F, 9.0F, 1.0F, new CubeDeformation(-0.15F)), PartPose.offsetAndRotation(0.5F, -24.0F, -24.9F, 0.0F, 0.0F, -1.5708F));
+				.texOffs(2, 1).addBox(6.4F, -5.0F, 15.4F, 1.0F, 9.0F, 1.0F, new CubeDeformation(-0.15F)), PartPose.offsetAndRotation(0.5F, -24.0F, -6.9F, 0.0F, 0.0F, -1.5708F));
 
-		PartDefinition hips = fossil.addOrReplaceChild("hips", CubeListBuilder.create(), PartPose.offsetAndRotation(0.0F, -31.0506F, -9.3602F, 0.1309F, 0.0F, 0.0F));
+		PartDefinition hips = fossil.addOrReplaceChild("hips", CubeListBuilder.create(), PartPose.offsetAndRotation(0.0F, -31.0506F, 8.6398F, 0.1309F, 0.0F, 0.0F));
 
 		PartDefinition cube_r2 = hips.addOrReplaceChild("cube_r2", CubeListBuilder.create().texOffs(1, 60).addBox(-1.0F, -0.0973F, 0.0176F, 1.0F, 3.0F, 11.0F, new CubeDeformation(-0.15F)), PartPose.offsetAndRotation(0.5F, -1.7F, -4.1F, -0.384F, 0.0F, 0.0F));
 
@@ -154,12 +154,12 @@ public class DodoFossilFrameModel extends SkullModelBase {
 
 		PartDefinition neck5 = neck6.addOrReplaceChild("neck5", CubeListBuilder.create(), PartPose.offsetAndRotation(0.0F, -2.1759F, -4.0379F, -0.4456F, -0.1974F, 0.0934F));
 
-		PartDefinition cube_r6 = neck5.addOrReplaceChild("cube_r6", CubeListBuilder.create().texOffs(2, 38).addBox(-0.5F, -1.79F, 3.8805F, 1.0F, 2.0F, 2.0F, new CubeDeformation(-0.155F))
+		PartDefinition cube_r6 = neck5.addOrReplaceChild("cube_r6", CubeListBuilder.create().texOffs(3, 39).addBox(-0.5F, -1.79F, 3.8805F, 1.0F, 2.0F, 2.0F, new CubeDeformation(-0.155F))
 				.texOffs(0, 36).addBox(-0.5F, -1.79F, -0.1195F, 1.0F, 2.0F, 5.0F, new CubeDeformation(-0.15F)), PartPose.offsetAndRotation(0.0F, -0.4F, -5.3F, -0.4014F, 0.0F, 0.0F));
 
 		PartDefinition neck4 = neck5.addOrReplaceChild("neck4", CubeListBuilder.create(), PartPose.offsetAndRotation(0.0F, -1.5F, -4.2F, -0.1355F, -0.2595F, 0.035F));
 
-		PartDefinition cube_r7 = neck4.addOrReplaceChild("cube_r7", CubeListBuilder.create().texOffs(38, 18).addBox(-1.0F, -1.8695F, 4.2348F, 1.0F, 2.0F, 2.0F, new CubeDeformation(-0.155F))
+		PartDefinition cube_r7 = neck4.addOrReplaceChild("cube_r7", CubeListBuilder.create().texOffs(39, 19).addBox(-1.0F, -1.8695F, 4.2348F, 1.0F, 2.0F, 2.0F, new CubeDeformation(-0.155F))
 				.texOffs(36, 16).addBox(-1.0F, -1.8695F, 0.1348F, 1.0F, 2.0F, 5.0F, new CubeDeformation(-0.15F)), PartPose.offsetAndRotation(0.5F, -3.7F, -4.4F, -0.9599F, 0.0F, 0.0F));
 
 		PartDefinition neck3 = neck4.addOrReplaceChild("neck3", CubeListBuilder.create(), PartPose.offsetAndRotation(0.0F, -4.0F, -2.3F, -0.1658F, 0.0F, 0.0F));
