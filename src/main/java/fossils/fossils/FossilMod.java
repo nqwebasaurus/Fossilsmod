@@ -9,11 +9,14 @@ import fossils.fossils.init.FossilBlockEntities;
 import fossils.fossils.init.FossilBlocks;
 import fossils.fossils.init.FossilCreativeTabs;
 import fossils.fossils.init.FossilItems;
+import fossils.fossils.init.FossilSoundEvents;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
+import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.data.event.GatherDataEvent;
+import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.DistExecutor;
 import net.minecraftforge.fml.common.Mod;
@@ -28,6 +31,7 @@ public class FossilMod {
 	
 	public FossilMod() {
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
+		FossilSoundEvents.REGISTER.register(bus);
 		FossilBlocks.REGISTER.register(bus);
 		FossilItems.REGISTER.register(bus);
 		FossilItems.SLAB_REGISTER.register(bus);
@@ -39,6 +43,7 @@ public class FossilMod {
 		MinecraftForge.EVENT_BUS.register(this);
 
 		bus.addListener(this::gatherData);
+		bus.addListener(this::addCreative);
 
 		PROXY.init();
 	}
@@ -51,4 +56,11 @@ public class FossilMod {
 		dataGenerator.addProvider(server, new FossilDataGenerator(packOutput, lookupProvider));
 	}
 	
+	
+	public void addCreative(BuildCreativeModeTabContentsEvent event) {
+		if (event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
+			event.accept(FossilItems.MUSIC_DISC_DRIFT_AND_FALL::get);
+			event.accept(FossilItems.MUSIC_DISC_EURYPTERIDS_LAMENT::get);
+		}
+	}
 }
