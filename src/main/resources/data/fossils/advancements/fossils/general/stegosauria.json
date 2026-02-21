@@ -1,117 +1,8 @@
 {
   "parent": "fossils:fossils/general/thyreophora",
   "criteria": {
-    "finish_wuerhosaurus": {
-      "conditions": {
-        "location": [
-          {
-            "condition": "minecraft:location_check",
-            "predicate": {
-              "block": {
-                "blocks": [
-                  "fossils:wuerhosaurus_fossil"
-                ],
-                "state": {
-                  "fossil_level": "14"
-                }
-              }
-            }
-          },
-          {
-            "condition": "minecraft:match_tool",
-            "predicate": {
-              "items": [
-                "fossils:wuerhosaurus_fossil"
-              ]
-            }
-          }
-        ]
-      },
-      "trigger": "minecraft:item_used_on_block"
-    },
-    "finish_kentrosaurus": {
-      "conditions": {
-        "location": [
-          {
-            "condition": "minecraft:location_check",
-            "predicate": {
-              "block": {
-                "blocks": [
-                  "fossils:kentrosaurus_fossil"
-                ],
-                "state": {
-                  "fossil_level": "9"
-                }
-              }
-            }
-          },
-          {
-            "condition": "minecraft:match_tool",
-            "predicate": {
-              "items": [
-                "fossils:kentrosaurus_fossil"
-              ]
-            }
-          }
-        ]
-      },
-      "trigger": "minecraft:item_used_on_block"
-    },
-    "finish_yingshanosaurus": {
-      "conditions": {
-        "location": [
-          {
-            "condition": "minecraft:location_check",
-            "predicate": {
-              "block": {
-                "blocks": [
-                  "fossils:yingshanosaurus_fossil"
-                ],
-                "state": {
-                  "fossil_level": "14"
-                }
-              }
-            }
-          },
-          {
-            "condition": "minecraft:match_tool",
-            "predicate": {
-              "items": [
-                "fossils:yingshanosaurus_fossil"
-              ]
-            }
-          }
-        ]
-      },
-      "trigger": "minecraft:item_used_on_block"
-    },
-    "finish_stegosaurus": {
-      "conditions": {
-        "location": [
-          {
-            "condition": "minecraft:location_check",
-            "predicate": {
-              "block": {
-                "blocks": [
-                  "fossils:stegosaurus_fossil"
-                ],
-                "state": {
-                  "fossil_level": "19"
-                }
-              }
-            }
-          },
-          {
-            "condition": "minecraft:match_tool",
-            "predicate": {
-              "items": [
-                "fossils:stegosaurus_fossil"
-              ]
-            }
-          }
-        ]
-      },
-      "trigger": "minecraft:item_used_on_block"
+    "finish_stegosauria": {
+      "trigger": "minecraft:tick"
     }
   },
   "display": {
@@ -129,19 +20,5 @@
       "translate": "advancements.fossils.stegosauria.title"
     }
   },
-  "requirements": [
-    [
-      "finish_wuerhosaurus"
-    ],
-    [
-      "finish_kentrosaurus"
-    ],
-    [
-      "finish_yingshanosaurus"
-    ],
-    [
-      "finish_stegosaurus"
-    ]
-  ],
   "sends_telemetry_event": true
 }

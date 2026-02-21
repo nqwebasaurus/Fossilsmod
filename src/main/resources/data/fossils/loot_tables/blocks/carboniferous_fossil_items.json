@@ -11,11 +11,6 @@
         },
         {
           "type": "minecraft:item",
-          "name": "fossils:diplocaulusmagnicornis_fossil",
-          "weight": 10
-        },
-        {
-          "type": "minecraft:item",
           "name": "fossils:platyhystrix_fossil",
           "weight": 10
         },
@@ -148,7 +143,17 @@
 			"type": "minecraft:loot_table",
 			"name": "fossils:blocks/fossils_music_discs",
 			"weight": 1
-		}
+		},
+        {
+          "type": "minecraft:item",
+          "name": "fossils:megalocephalus_fossil",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:datheosaurus_fossil",
+          "weight": 10
+        }
       ],
       "rolls": 1
     }
