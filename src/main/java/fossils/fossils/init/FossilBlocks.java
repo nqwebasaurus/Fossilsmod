@@ -598,7 +598,7 @@ public class FossilBlocks {
 
 	public static final RegistryObject<Block> PRECAMBRIAN_FOSSIL_ORE = REGISTER.register("precambrian_fossil_ore", () -> new Block(Properties.copy(Blocks.DEEPSLATE_DIAMOND_ORE)));
 	public static final RegistryObject<Block> CAMBRIAN_FOSSIL_ORE = REGISTER.register("cambrian_fossil_ore", () -> new Block(Properties.copy(Blocks.DEEPSLATE_DIAMOND_ORE)));
-	public static final RegistryObject<Block> ORDOVICIAN_FOSSIL_ORE = REGISTER.register("ordovician_fossil_ore", () -> new Block(Properties.copy(Blocks.DEEPSLATEDIAMOND_ORE)));
+	public static final RegistryObject<Block> ORDOVICIAN_FOSSIL_ORE = REGISTER.register("ordovician_fossil_ore", () -> new Block(Properties.copy(Blocks.DEEPSLATE_DIAMOND_ORE)));
 	public static final RegistryObject<Block> SILURIAN_FOSSIL_ORE = REGISTER.register("silurian_fossil_ore", () -> new Block(Properties.copy(Blocks.DEEPSLATE_DIAMOND_ORE)));
 	public static final RegistryObject<Block> DEVONIAN_FOSSIL_ORE = REGISTER.register("devonian_fossil_ore", () -> new Block(Properties.copy(Blocks.DEEPSLATE_DIAMOND_ORE)));
 	public static final RegistryObject<Block> CARBONIFEROUS_FOSSIL_ORE = REGISTER.register("carboniferous_fossil_ore", () -> new Block(Properties.copy(Blocks.DEEPSLATE_DIAMOND_ORE)));
