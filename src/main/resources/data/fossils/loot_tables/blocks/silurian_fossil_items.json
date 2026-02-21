@@ -7,123 +7,128 @@
         {
           "type": "minecraft:item",
           "name": "fossils:cyrtoceras_fossil",
-          "weight": 2
+          "weight": 10
         },
         {
           "type": "minecraft:item",
           "name": "fossils:conodont_fossil",
-          "weight": 2
+          "weight": 10
         },
         {
           "type": "minecraft:item",
           "name": "fossils:ciurcopterus_fossil",
-          "weight": 2
+          "weight": 10
         },
         {
           "type": "minecraft:item",
           "name": "fossils:guiyu_fossil",
-          "weight": 2
+          "weight": 10
         },
         {
           "type": "minecraft:item",
           "name": "fossils:bohemoharpes_fossil",
-          "weight": 2
+          "weight": 10
         },
         {
           "type": "minecraft:item",
           "name": "fossils:dunyu_fossil",
-          "weight": 2
+          "weight": 10
         },
         {
           "type": "minecraft:item",
           "name": "fossils:crotalocephalus_fossil",
-          "weight": 2
+          "weight": 10
         },
         {
           "type": "minecraft:item",
           "name": "fossils:polybranchiaspis_fossil",
-          "weight": 2
+          "weight": 10
         },
         {
           "type": "minecraft:item",
           "name": "fossils:carcinosoma_fossil",
-          "weight": 2
+          "weight": 10
         },
         {
           "type": "minecraft:item",
           "name": "fossils:furcaster_fossil",
-          "weight": 2
+          "weight": 10
         },
         {
           "type": "minecraft:item",
           "name": "fossils:jamoytius_fossil",
-          "weight": 2
+          "weight": 10
         },
         {
           "type": "minecraft:item",
           "name": "fossils:birkenia_fossil",
-          "weight": 2
+          "weight": 10
         },
         {
           "type": "minecraft:item",
           "name": "fossils:ainiktozoon_fossil",
-          "weight": 2
+          "weight": 10
         },
         {
           "type": "minecraft:item",
           "name": "fossils:arctinurus_fossil",
-          "weight": 2
+          "weight": 10
         },
         {
           "type": "minecraft:item",
           "name": "fossils:platylomaspis_fossil",
-          "weight": 2
+          "weight": 10
         },
         {
           "type": "minecraft:item",
           "name": "fossils:phragmoceras_fossil",
-          "weight": 2
+          "weight": 10
         },
         {
           "type": "minecraft:item",
           "name": "fossils:slimonia_fossil",
-          "weight": 2
+          "weight": 10
         },
         {
           "type": "minecraft:item",
           "name": "fossils:microphymaspis_fossil",
-          "weight": 2
+          "weight": 10
         },
         {
           "type": "minecraft:item",
           "name": "fossils:thelodus_fossil",
-          "weight": 2
+          "weight": 10
         },
         {
           "type": "minecraft:item",
           "name": "fossils:warneticaris_fossil",
-          "weight": 2
+          "weight": 10
         },
         {
           "type": "minecraft:item",
           "name": "fossils:sclerodus_fossil",
-          "weight": 2
+          "weight": 10
         },
         {
           "type": "minecraft:item",
           "name": "fossils:rotaciurca_fossil",
-          "weight": 2
+          "weight": 10
         },
         {
           "type": "minecraft:item",
           "name": "fossils:camanchia_fossil",
-          "weight": 2
+          "weight": 10
         },
         {
           "type": "minecraft:item",
           "name": "fossils:trimerus_fossil",
-          "weight": 2
-        }
+          "weight": 10
+        },
+		{
+			"type": "minecraft:loot_table",
+			"name": "fossils:blocks/fossils_music_discs",
+			"weight": 1
+		}
       ],
       "rolls": 1
     }

@@ -7,93 +7,98 @@
         {
           "type": "minecraft:item",
           "name": "fossils:aegirocassis_fossil",
-          "weight": 2
+          "weight": 10
         },
         {
           "type": "minecraft:item",
           "name": "fossils:aphetoceras_fossil",
-          "weight": 2
+          "weight": 10
         },
         {
           "type": "minecraft:item",
           "name": "fossils:hungioides_fossil",
-          "weight": 2
+          "weight": 10
         },
         {
           "type": "minecraft:item",
           "name": "fossils:cyrtoceras_fossil",
-          "weight": 2
+          "weight": 10
         },
         {
           "type": "minecraft:item",
           "name": "fossils:platypeltoides_fossil",
-          "weight": 2
+          "weight": 10
         },
         {
           "type": "minecraft:item",
           "name": "fossils:lituites_fossil",
-          "weight": 2
+          "weight": 10
         },
         {
           "type": "minecraft:item",
           "name": "fossils:cothurnocystis_fossil",
-          "weight": 2
+          "weight": 10
         },
         {
           "type": "minecraft:item",
           "name": "fossils:arandaspis_fossil",
-          "weight": 2
+          "weight": 10
         },
         {
           "type": "minecraft:item",
           "name": "fossils:orthoceras_fossil",
-          "weight": 2
+          "weight": 10
         },
         {
           "type": "minecraft:item",
           "name": "fossils:sacabambaspis_fossil",
-          "weight": 2
+          "weight": 10
         },
         {
           "type": "minecraft:item",
           "name": "fossils:didymograptus_fossil",
-          "weight": 2
+          "weight": 10
         },
         {
           "type": "minecraft:item",
           "name": "fossils:gonioceras_fossil",
-          "weight": 2
+          "weight": 10
         },
         {
           "type": "minecraft:item",
           "name": "fossils:endoceras_fossil",
-          "weight": 2
+          "weight": 10
         },
         {
           "type": "minecraft:item",
           "name": "fossils:conodont_fossil",
-          "weight": 2
+          "weight": 10
         },
         {
           "type": "minecraft:item",
           "name": "fossils:pricyclopyge_fossil",
-          "weight": 2
+          "weight": 10
         },
         {
           "type": "minecraft:item",
           "name": "fossils:villebrunaster_fossil",
-          "weight": 2
+          "weight": 10
         },
         {
           "type": "minecraft:item",
           "name": "fossils:calvapilosa_fossil",
-          "weight": 2
+          "weight": 10
         },
         {
           "type": "minecraft:item",
           "name": "fossils:tremaglaspis_fossil",
-          "weight": 2
-        }
+          "weight": 10
+        },
+		{
+			"type": "minecraft:loot_table",
+			"name": "fossils:blocks/fossils_music_discs",
+			"weight": 1
+		}
       ],
       "rolls": 1
     }

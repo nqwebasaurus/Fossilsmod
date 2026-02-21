@@ -7,223 +7,228 @@
         {
           "type": "minecraft:item",
           "name": "fossils:acanthostega_fossil",
-          "weight": 2
+          "weight": 10
         },
         {
           "type": "minecraft:item",
           "name": "fossils:tiktaalik_fossil",
-          "weight": 2
+          "weight": 10
         },
         {
           "type": "minecraft:item",
           "name": "fossils:bothriolepis_fossil",
-          "weight": 2
+          "weight": 10
         },
         {
           "type": "minecraft:item",
           "name": "fossils:dicranurus_fossil",
-          "weight": 2
+          "weight": 10
         },
         {
           "type": "minecraft:item",
           "name": "fossils:dunkleosteus_fossil",
-          "weight": 2
+          "weight": 10
         },
         {
           "type": "minecraft:item",
           "name": "fossils:ichthyostega_fossil",
-          "weight": 2
+          "weight": 10
         },
         {
           "type": "minecraft:item",
           "name": "fossils:parmastega_fossil",
-          "weight": 2
+          "weight": 10
         },
         {
           "type": "minecraft:item",
           "name": "fossils:bungartius_fossil",
-          "weight": 2
+          "weight": 10
         },
         {
           "type": "minecraft:item",
           "name": "fossils:titanichthys_fossil",
-          "weight": 2
+          "weight": 10
         },
         {
           "type": "minecraft:item",
           "name": "fossils:cyrtoceras_fossil",
-          "weight": 2
+          "weight": 10
         },
         {
           "type": "minecraft:item",
           "name": "fossils:conodont_fossil",
-          "weight": 2
+          "weight": 10
         },
         {
           "type": "minecraft:item",
           "name": "fossils:crotalocephalus_fossil",
-          "weight": 2
+          "weight": 10
         },
         {
           "type": "minecraft:item",
           "name": "fossils:furcaster_fossil",
-          "weight": 2
+          "weight": 10
         },
         {
           "type": "minecraft:item",
           "name": "fossils:priscomyzon_fossil",
-          "weight": 2
+          "weight": 10
         },
         {
           "type": "minecraft:item",
           "name": "fossils:parameteoraspis_fossil",
-          "weight": 2
+          "weight": 10
         },
         {
           "type": "minecraft:item",
           "name": "fossils:cladoselache_fossil",
-          "weight": 2
+          "weight": 10
         },
         {
           "type": "minecraft:item",
           "name": "fossils:mimetaster_fossil",
-          "weight": 2
+          "weight": 10
         },
         {
           "type": "minecraft:item",
           "name": "fossils:helianthaster_fossil",
-          "weight": 2
+          "weight": 10
         },
         {
           "type": "minecraft:item",
           "name": "fossils:flagellopantopus_fossil",
-          "weight": 2
+          "weight": 10
         },
         {
           "type": "minecraft:item",
           "name": "fossils:stensioella_fossil",
-          "weight": 2
+          "weight": 10
         },
         {
           "type": "minecraft:item",
           "name": "fossils:lungmenshanaspis_fossil",
-          "weight": 2
+          "weight": 10
         },
         {
           "type": "minecraft:item",
           "name": "fossils:doryaspis_fossil",
-          "weight": 2
+          "weight": 10
         },
         {
           "type": "minecraft:item",
           "name": "fossils:gantarostrataspis_fossil",
-          "weight": 2
+          "weight": 10
         },
         {
           "type": "minecraft:item",
           "name": "fossils:furcacauda_fossil",
-          "weight": 2
+          "weight": 10
         },
         {
           "type": "minecraft:item",
           "name": "fossils:angelacanthus_fossil",
-          "weight": 2
+          "weight": 10
         },
         {
           "type": "minecraft:item",
           "name": "fossils:osteolepis_fossil",
-          "weight": 2
+          "weight": 10
         },
         {
           "type": "minecraft:item",
           "name": "fossils:bundenbachiellus_fossil",
-          "weight": 2
+          "weight": 10
         },
         {
           "type": "minecraft:item",
           "name": "fossils:hibbertopterus_fossil",
-          "weight": 2
+          "weight": 10
         },
         {
           "type": "minecraft:item",
           "name": "fossils:eusthenopteron_fossil",
-          "weight": 2
+          "weight": 10
         },
         {
           "type": "minecraft:item",
           "name": "fossils:jaekelopterus_fossil",
-          "weight": 2
+          "weight": 10
         },
         {
           "type": "minecraft:item",
           "name": "fossils:praearcturus_fossil",
-          "weight": 2
+          "weight": 10
         },
         {
           "type": "minecraft:item",
           "name": "fossils:heliopeltis_fossil",
-          "weight": 2
+          "weight": 10
         },
         {
           "type": "minecraft:item",
           "name": "fossils:psychopyge_fossil",
-          "weight": 2
+          "weight": 10
         },
         {
           "type": "minecraft:item",
           "name": "fossils:attercopus_fossil",
-          "weight": 2
+          "weight": 10
         },
         {
           "type": "minecraft:item",
           "name": "fossils:groenlandaspis_fossil",
-          "weight": 2
+          "weight": 10
         },
         {
           "type": "minecraft:item",
           "name": "fossils:angustidontus_fossil",
-          "weight": 2
+          "weight": 10
         },
         {
           "type": "minecraft:item",
           "name": "fossils:zenaspis_fossil",
-          "weight": 2
+          "weight": 10
         },
         {
           "type": "minecraft:item",
           "name": "fossils:brochoadmones_fossil",
-          "weight": 2
+          "weight": 10
         },
         {
           "type": "minecraft:item",
           "name": "fossils:rhinopteraspis_fossil",
-          "weight": 2
+          "weight": 10
         },
         {
           "type": "minecraft:item",
           "name": "fossils:gemuendina_fossil",
-          "weight": 2
+          "weight": 10
         },
         {
           "type": "minecraft:item",
           "name": "fossils:parexus_fossil",
-          "weight": 2
+          "weight": 10
         },
         {
           "type": "minecraft:item",
           "name": "fossils:groenlandaspis_fossil",
-          "weight": 2
+          "weight": 10
         },
         {
           "type": "minecraft:item",
           "name": "fossils:scaumenacia_fossil",
-          "weight": 2
+          "weight": 10
         },
         {
           "type": "minecraft:item",
           "name": "fossils:schinderhannes_fossil",
-          "weight": 2
-        }
+          "weight": 10
+        },
+		{
+			"type": "minecraft:loot_table",
+			"name": "fossils:blocks/fossils_music_discs",
+			"weight": 1
+		}
       ],
       "rolls": 1
     }

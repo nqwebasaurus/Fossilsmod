@@ -7,138 +7,143 @@
         {
           "type": "minecraft:item",
           "name": "fossils:synthetoceras_fossil",
-          "weight": 2
+          "weight": 10
         },
         {
           "type": "minecraft:item",
           "name": "fossils:protoceras_fossil",
-          "weight": 2
+          "weight": 10
         },
         {
           "type": "minecraft:item",
           "name": "fossils:thylacoleo_fossil",
-          "weight": 2
+          "weight": 10
         },
         {
           "type": "minecraft:item",
           "name": "fossils:sinclairomeryx_fossil",
-          "weight": 2
+          "weight": 10
         },
         {
           "type": "minecraft:item",
           "name": "fossils:dinocrocuta_fossil",
-          "weight": 2
+          "weight": 10
         },
         {
           "type": "minecraft:item",
           "name": "fossils:kubanochoerus_fossil",
-          "weight": 2
+          "weight": 10
         },
         {
           "type": "minecraft:item",
           "name": "fossils:decennatherium_fossil",
-          "weight": 2
+          "weight": 10
         },
         {
           "type": "minecraft:item",
           "name": "fossils:livyatan_fossil",
-          "weight": 2
+          "weight": 10
         },
         {
           "type": "minecraft:item",
           "name": "fossils:theropithecus_fossil",
-          "weight": 2
+          "weight": 10
         },
         {
           "type": "minecraft:item",
           "name": "fossils:columba_fossil",
-          "weight": 2
+          "weight": 10
         },
         {
           "type": "minecraft:item",
           "name": "fossils:deinotherium_fossil",
-          "weight": 2
+          "weight": 10
         },
         {
           "type": "minecraft:item",
           "name": "fossils:coelodonta_fossil",
-          "weight": 2
+          "weight": 10
         },
         {
           "type": "minecraft:item",
           "name": "fossils:odobenocetops_fossil",
-          "weight": 2
+          "weight": 10
         },
         {
           "type": "minecraft:item",
           "name": "fossils:sivatheriumgiganteum_fossil",
-          "weight": 2
+          "weight": 10
         },
         {
           "type": "minecraft:item",
           "name": "fossils:menoceras_fossil",
-          "weight": 2
+          "weight": 10
         },
         {
           "type": "minecraft:item",
           "name": "fossils:ceratotherium_fossil",
-          "weight": 2
+          "weight": 10
         },
         {
           "type": "minecraft:item",
           "name": "fossils:homunculus_fossil",
-          "weight": 2
+          "weight": 10
         },
         {
           "type": "minecraft:item",
           "name": "fossils:pan_fossil",
-          "weight": 2
+          "weight": 10
         },
         {
           "type": "minecraft:item",
           "name": "fossils:praemegaceroscazioti_fossil",
-          "weight": 2
+          "weight": 10
         },
         {
           "type": "minecraft:item",
           "name": "fossils:oxydactylus_fossil",
-          "weight": 2
+          "weight": 10
         },
         {
           "type": "minecraft:item",
           "name": "fossils:hippidion_fossil",
-          "weight": 2
+          "weight": 10
         },
         {
           "type": "minecraft:item",
           "name": "fossils:daeodon_fossil",
-          "weight": 2
+          "weight": 10
         },
         {
           "type": "minecraft:item",
           "name": "fossils:purussaurus_fossil",
-          "weight": 2
+          "weight": 10
         },
         {
           "type": "minecraft:item",
           "name": "fossils:obdurodon_fossil",
-          "weight": 2
+          "weight": 10
         },
         {
           "type": "minecraft:item",
           "name": "fossils:llallawavis_fossil",
-          "weight": 2
+          "weight": 10
         },
         {
           "type": "minecraft:item",
           "name": "fossils:balaena_fossil",
-          "weight": 2
+          "weight": 10
         },
         {
           "type": "minecraft:item",
           "name": "fossils:australopithecusafricanus_fossil",
-          "weight": 2
-        }
+          "weight": 10
+        },
+		{
+			"type": "minecraft:loot_table",
+			"name": "fossils:blocks/fossils_music_discs",
+			"weight": 1
+		}
       ],
       "rolls": 1
     }

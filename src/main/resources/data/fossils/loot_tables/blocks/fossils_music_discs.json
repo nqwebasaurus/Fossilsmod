@@ -1,0 +1,17 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "fossils:music_disc_drift_and_fall"
+				},
+				{
+					"type": "minecraft:item",
+					"name": "fossils:music_disc_eurypterids_lament"
+				}
+			]
+		}
+	]
+}
