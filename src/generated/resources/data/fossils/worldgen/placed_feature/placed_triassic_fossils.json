@@ -11,12 +11,15 @@
     {
       "type": "minecraft:height_range",
       "height": {
-        "type": "minecraft:uniform",
+        "type": "minecraft:trapezoid",
         "max_inclusive": {
-          "absolute": 10
+          "absolute": 18
         },
         "min_inclusive": {
-          "absolute": 1
+          "absolute": -5
+        },
+        "plateau": {
+          "absolute": 6
         }
       }
     },
