@@ -7,22 +7,32 @@
         {
           "type": "minecraft:item",
           "name": "fossils:alienum_fossil",
-          "weight": 2
+          "weight": 10
         },
         {
           "type": "minecraft:item",
           "name": "fossils:charnia_fossil",
-          "weight": 2
+          "weight": 10
         },
         {
           "type": "minecraft:item",
           "name": "fossils:dickinsonia_fossil",
-          "weight": 2
+          "weight": 10
         },
         {
           "type": "minecraft:item",
           "name": "fossils:cyclomedusa_fossil",
-          "weight": 2
+          "weight": 10
+        },
+		{
+			"type": "minecraft:loot_table",
+			"name": "fossils:blocks/fossils_music_discs",
+			"weight": 1
+		},
+        {
+          "type": "minecraft:item",
+          "name": "fossils:tremaglaspis_fossil",
+          "weight": 10
         }
       ],
       "rolls": 1
