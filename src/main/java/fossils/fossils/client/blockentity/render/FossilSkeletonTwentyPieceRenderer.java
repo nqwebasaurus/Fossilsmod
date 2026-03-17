@@ -516,9 +516,9 @@ public class FossilSkeletonTwentyPieceRenderer implements BlockEntityRenderer<Fo
             pose.scale(-scale, -scale, scale);
             pose.translate(0F, -0.3F, 0F);
         } else if (FossilSkeletonTwentyPieceBlock$type == FossilSkeletonTwentyPieceBlock.Types.IGUANODON) {
-            float scale = 1F;
+            float scale = 1.25F;
             pose.scale(-scale, -scale, scale);
-            pose.translate(0F, -0.55F, 0F);
+            pose.translate(0F, -0.7F, 0F);
         } else if (FossilSkeletonTwentyPieceBlock$type == FossilSkeletonTwentyPieceBlock.Types.AMARGASAURUS) {
             float scale = 1F;
             pose.scale(-scale, -scale, scale);
@@ -628,9 +628,9 @@ public class FossilSkeletonTwentyPieceRenderer implements BlockEntityRenderer<Fo
             pose.scale(-scale, -scale, scale);
             pose.translate(0F, -0.16F, 0F);
         } else if (FossilSkeletonTwentyPieceBlock$type == FossilSkeletonTwentyPieceBlock.Types.BARYONYX) {
-            float scale = 1F;
+            float scale = 0.92F;
             pose.scale(-scale, -scale, scale);
-            pose.translate(0F, -0.5F, 0F);
+            pose.translate(0F, -0.4F, 0F);
         } else if (FossilSkeletonTwentyPieceBlock$type == FossilSkeletonTwentyPieceBlock.Types.YANGCHUANOSAURUS) {
             float scale = 0.9F;
             pose.scale(-scale, -scale, scale);

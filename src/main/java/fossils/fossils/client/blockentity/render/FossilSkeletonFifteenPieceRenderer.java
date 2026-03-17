@@ -753,9 +753,9 @@ public class FossilSkeletonFifteenPieceRenderer implements BlockEntityRenderer<F
             pose.scale(-scale, -scale, scale);
             pose.translate(0F, 0.67F, 0F);
         } else if (FossilSkeletonFifteenPieceBlock$type == FossilSkeletonFifteenPieceBlock.Types.OURANOSAURUS) {
-            float scale = 1F;
+            float scale = 0.92F;
             pose.scale(-scale, -scale, scale);
-            pose.translate(0F, -0.48F, 0F);
+            pose.translate(0F, -0.41F, 0F);
         } else if (FossilSkeletonFifteenPieceBlock$type == FossilSkeletonFifteenPieceBlock.Types.PYROTHERIUM) {
             float scale = 1F;
             pose.scale(-scale, -scale, scale);
@@ -849,9 +849,9 @@ public class FossilSkeletonFifteenPieceRenderer implements BlockEntityRenderer<F
             pose.scale(-scale, -scale, scale);
             pose.translate(0F, -0.5F, 0F);
         } else if (FossilSkeletonFifteenPieceBlock$type == FossilSkeletonFifteenPieceBlock.Types.SUCHOMIMUS) {
-            float scale = 1F;
+            float scale = 1.05F;
             pose.scale(-scale, -scale, scale);
-            pose.translate(0F, -0.5F, 0F);
+            pose.translate(0F, -0.55F, 0F);
         } else if (FossilSkeletonFifteenPieceBlock$type == FossilSkeletonFifteenPieceBlock.Types.DAEODON) {
             float scale = 0.87F;
             pose.scale(-scale, -scale, scale);
