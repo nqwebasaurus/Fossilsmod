@@ -805,9 +805,9 @@ public class FossilSkeletonFifteenPieceRenderer implements BlockEntityRenderer<F
             pose.scale(-scale, -scale, scale);
             pose.translate(0F, -0.22F, 0F);
         } else if (FossilSkeletonFifteenPieceBlock$type == FossilSkeletonFifteenPieceBlock.Types.CONCAVENATOR) {
-            float scale = 1F;
+            float scale = 0.64F;
             pose.scale(-scale, -scale, scale);
-            pose.translate(0F, -0.51F, 0F);
+            pose.translate(0F, 0.06F, 0F);
         } else if (FossilSkeletonFifteenPieceBlock$type == FossilSkeletonFifteenPieceBlock.Types.KLAMELISAURUS) {
             float scale = 0.76F;
             pose.scale(-scale, -scale, scale);
@@ -843,7 +843,7 @@ public class FossilSkeletonFifteenPieceRenderer implements BlockEntityRenderer<F
         } else if (FossilSkeletonFifteenPieceBlock$type == FossilSkeletonFifteenPieceBlock.Types.ICHTHYOVENATOR) {
             float scale = 1F;
             pose.scale(-scale, -scale, scale);
-            pose.translate(0F, -0.35F, 0F);
+            pose.translate(0F, -0.49F, 0F);
         } else if (FossilSkeletonFifteenPieceBlock$type == FossilSkeletonFifteenPieceBlock.Types.ASFALTOVENATOR) {
             float scale = 1F;
             pose.scale(-scale, -scale, scale);
