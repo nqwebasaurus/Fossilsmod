@@ -881,9 +881,9 @@ public class FossilSkeletonFifteenPieceRenderer implements BlockEntityRenderer<F
             pose.scale(-scale, -scale, scale);
             pose.translate(0F, -0.5F, 0F);
         } else if (FossilSkeletonFifteenPieceBlock$type == FossilSkeletonFifteenPieceBlock.Types.NEOVENATOR) {
-            float scale = 1F;
+            float scale = 0.75F;
             pose.scale(-scale, -scale, scale);
-            pose.translate(0F, -0.51F, 0F);
+            pose.translate(0F, -0.17F, 0F);
         } else if (FossilSkeletonFifteenPieceBlock$type == FossilSkeletonFifteenPieceBlock.Types.TYRANNOTITAN) {
             float scale = 1F;
             pose.scale(-scale, -scale, scale);
@@ -917,9 +917,9 @@ public class FossilSkeletonFifteenPieceRenderer implements BlockEntityRenderer<F
             pose.scale(-scale, -scale, scale);
             pose.translate(0F, -0.52F, 0F);
         } else if (FossilSkeletonFifteenPieceBlock$type == FossilSkeletonFifteenPieceBlock.Types.LUSOVENATOR) {
-            float scale = 1F;
+            float scale = 0.75F;
             pose.scale(-scale, -scale, scale);
-            pose.translate(0F, -0.5F, 0F);
+            pose.translate(0F, -0.15F, 0F);
         } else if (FossilSkeletonFifteenPieceBlock$type == FossilSkeletonFifteenPieceBlock.Types.PHOLIDERPETON) {
             float scale = 0.628F;
             pose.scale(-scale, -scale, scale);
