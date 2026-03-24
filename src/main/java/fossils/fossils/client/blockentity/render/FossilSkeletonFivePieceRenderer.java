@@ -1075,9 +1075,9 @@ public class FossilSkeletonFivePieceRenderer implements BlockEntityRenderer<Foss
                 pose.translate(0F, -0.2F, 0F);
             }
             case CALLAWAYIA -> {
-                scale = 0.6F;
+                scale = 0.31F;
                 pose.scale(-scale, -scale, scale);
-                pose.translate(0F, -0.25F, 0F);
+                pose.translate(0F, -1.45F, 0F);
             }
             case TAPEJARA -> {
                 scale = 0.32F;

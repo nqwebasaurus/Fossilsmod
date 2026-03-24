@@ -1099,9 +1099,9 @@ public class FossilSkeletonTenPieceRenderer implements BlockEntityRenderer<Fossi
             pose.scale(-scale, -scale, scale);
             pose.translate(0F, -0.08F, 0F);
         } else if (FossilSkeletonTenPieceBlock$type == FossilSkeletonTenPieceBlock.Types.NANNOPTERYGIUS) {
-            float scale = 0.76F;
+            float scale = 0.51F;
             pose.scale(-scale, -scale, scale);
-            pose.translate(0F, -0.5F, 0F);
+            pose.translate(0F, -1F, 0F);
         } else if (FossilSkeletonTenPieceBlock$type == FossilSkeletonTenPieceBlock.Types.PRENOCEPHALE) {
             float scale = 0.58F;
             pose.scale(-scale, -scale, scale);
