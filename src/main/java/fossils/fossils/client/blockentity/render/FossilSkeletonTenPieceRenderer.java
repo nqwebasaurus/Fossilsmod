@@ -197,6 +197,8 @@ import fossils.fossils.client.blockentity.model.pezosiren.PezosirenFossilFrameMo
 import fossils.fossils.client.blockentity.model.pezosiren.PezosirenFossilModel;
 import fossils.fossils.client.blockentity.model.piatnitzkysaurus.PiatnitzkysaurusFossilFrameModel;
 import fossils.fossils.client.blockentity.model.piatnitzkysaurus.PiatnitzkysaurusFossilModel;
+import fossils.fossils.client.blockentity.model.piscobalaena.PiscobalaenaFossilFrameModel;
+import fossils.fossils.client.blockentity.model.piscobalaena.PiscobalaenaFossilModel;
 import fossils.fossils.client.blockentity.model.placerias.PlaceriasFossilFrameModel;
 import fossils.fossils.client.blockentity.model.placerias.PlaceriasFossilModel;
 import fossils.fossils.client.blockentity.model.placodus.PlacodusFossilFrameModel;
@@ -269,6 +271,8 @@ import fossils.fossils.client.blockentity.model.tanycolagreus.TanycolagreusFossi
 import fossils.fossils.client.blockentity.model.tanycolagreus.TanycolagreusFossilModel;
 import fossils.fossils.client.blockentity.model.teleocrater.TeleocraterFossilFrameModel;
 import fossils.fossils.client.blockentity.model.teleocrater.TeleocraterFossilModel;
+import fossils.fossils.client.blockentity.model.thalassocnus.ThalassocnusFossilFrameModel;
+import fossils.fossils.client.blockentity.model.thalassocnus.ThalassocnusFossilModel;
 import fossils.fossils.client.blockentity.model.thecodontosaurus.ThecodontosaurusFossilFrameModel;
 import fossils.fossils.client.blockentity.model.thecodontosaurus.ThecodontosaurusFossilModel;
 import fossils.fossils.client.blockentity.model.theropithecus.TheropithecusFossilFrameModel;
@@ -450,6 +454,8 @@ public class FossilSkeletonTenPieceRenderer implements BlockEntityRenderer<Fossi
         type.put(FossilSkeletonTenPieceBlock.Types.CYNOGNATHUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/cynognathus/stage_0.png"));
         type.put(FossilSkeletonTenPieceBlock.Types.THECODONTOSAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/thecodontosaurus/stage_0.png"));
         type.put(FossilSkeletonTenPieceBlock.Types.MINQARIA, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/minqaria/stage_0.png"));
+        type.put(FossilSkeletonTenPieceBlock.Types.PISCOBALAENA, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/piscobalaena/stage_0.png"));
+        type.put(FossilSkeletonTenPieceBlock.Types.THALASSOCNUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/thalassocnus/stage_0.png"));
 
     });
     public static final Map<FossilSkeletonTenPieceBlock.Type, ResourceLocation> FRAME_BY_TYPE = Util.make(Maps.newHashMap(), (type) -> {
@@ -592,6 +598,8 @@ public class FossilSkeletonTenPieceRenderer implements BlockEntityRenderer<Fossi
         type.put(FossilSkeletonTenPieceBlock.Types.CYNOGNATHUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/cynognathus/frame.png"));
         type.put(FossilSkeletonTenPieceBlock.Types.THECODONTOSAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/thecodontosaurus/frame.png"));
         type.put(FossilSkeletonTenPieceBlock.Types.MINQARIA, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/minqaria/frame.png"));
+        type.put(FossilSkeletonTenPieceBlock.Types.PISCOBALAENA, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/piscobalaena/frame.png"));
+        type.put(FossilSkeletonTenPieceBlock.Types.THALASSOCNUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/thalassocnus/frame.png"));
 
 
     });
@@ -737,6 +745,8 @@ public class FossilSkeletonTenPieceRenderer implements BlockEntityRenderer<Fossi
         builder.put(FossilSkeletonTenPieceBlock.Types.CYNOGNATHUS, new CynognathusFossilModel(p_173662_.bakeLayer(ClientEvents.CYNOGNATHUS)));
         builder.put(FossilSkeletonTenPieceBlock.Types.THECODONTOSAURUS, new ThecodontosaurusFossilModel(p_173662_.bakeLayer(ClientEvents.THECODONTOSAURUS)));
         builder.put(FossilSkeletonTenPieceBlock.Types.MINQARIA, new MinqariaFossilModel(p_173662_.bakeLayer(ClientEvents.MINQARIA)));
+        builder.put(FossilSkeletonTenPieceBlock.Types.PISCOBALAENA, new PiscobalaenaFossilModel(p_173662_.bakeLayer(ClientEvents.PISCOBALAENA)));
+        builder.put(FossilSkeletonTenPieceBlock.Types.THALASSOCNUS, new ThalassocnusFossilModel(p_173662_.bakeLayer(ClientEvents.THALASSOCNUS)));
         return builder.build();
     }
 
@@ -881,6 +891,8 @@ public class FossilSkeletonTenPieceRenderer implements BlockEntityRenderer<Fossi
         builder.put(FossilSkeletonTenPieceBlock.Types.CYNOGNATHUS, new CynognathusFossilFrameModel(p_173662_.bakeLayer(ClientEvents.CYNOGNATHUS_FRAME)));
         builder.put(FossilSkeletonTenPieceBlock.Types.THECODONTOSAURUS, new ThecodontosaurusFossilFrameModel(p_173662_.bakeLayer(ClientEvents.THECODONTOSAURUS_FRAME)));
         builder.put(FossilSkeletonTenPieceBlock.Types.MINQARIA, new MinqariaFossilFrameModel(p_173662_.bakeLayer(ClientEvents.MINQARIA_FRAME)));
+        builder.put(FossilSkeletonTenPieceBlock.Types.PISCOBALAENA, new PiscobalaenaFossilFrameModel(p_173662_.bakeLayer(ClientEvents.PISCOBALAENA_FRAME)));
+        builder.put(FossilSkeletonTenPieceBlock.Types.THALASSOCNUS, new ThalassocnusFossilFrameModel(p_173662_.bakeLayer(ClientEvents.THALASSOCNUS_FRAME)));
         return builder.build();
     }
 
@@ -1466,6 +1478,14 @@ public class FossilSkeletonTenPieceRenderer implements BlockEntityRenderer<Fossi
             float scale = 0.38F;
             pose.scale(-scale, -scale, scale);
             pose.translate(0F, 1.13F, 0F);
+        } else if (FossilSkeletonTenPieceBlock$type == FossilSkeletonTenPieceBlock.Types.PISCOBALAENA) {
+            float scale = 0.31F;
+            pose.scale(-scale, -scale, scale);
+            pose.translate(0F, 1.13F, 0F);
+        } else if (FossilSkeletonTenPieceBlock$type == FossilSkeletonTenPieceBlock.Types.THALASSOCNUS) {
+            float scale = 0.45F;
+            pose.scale(-scale, -scale, scale);
+            pose.translate(0F, 0.2F, 0F);
         } else {
             float scale = 1.0F;
             pose.scale(-scale, -scale, scale);
@@ -1756,6 +1776,10 @@ public class FossilSkeletonTenPieceRenderer implements BlockEntityRenderer<Fossi
             resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/thecodontosaurus/stage_" + fossilLevel + ".png");
         } else if (type == FossilSkeletonTenPieceBlock.Types.MINQARIA) {
             resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/minqaria/stage_" + fossilLevel + ".png");
+        } else if (type == FossilSkeletonTenPieceBlock.Types.PISCOBALAENA) {
+            resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/piscobalaena/stage_" + fossilLevel + ".png");
+        } else if (type == FossilSkeletonTenPieceBlock.Types.THALASSOCNUS) {
+            resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/thalassocnus/stage_" + fossilLevel + ".png");
         } else resourceLocation = SKIN_BY_TYPE.get(type);
         return RenderType.entityCutoutNoCullZOffset(resourceLocation);
     }

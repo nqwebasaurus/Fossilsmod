@@ -420,6 +420,8 @@
 	"block.fossils.cynognathus_fossil": "Cynognathus Fossil",
 	"block.fossils.thecodontosaurus_fossil": "Thecodontosaurus Fossil",
 	"block.fossils.minqaria_fossil": "Minqaria Fossil",
+	"block.fossils.piscobalaena_fossil": "Piscobalaena Fossil",
+	"block.fossils.thalassocnus_fossil": "Thalassocnus Fossil",
 	"block.fossils.poposaurus_fossil": "Poposaurus Fossil",
 	"block.fossils.nigerpeton_fossil": "Nigerpeton Fossil",
 	"block.fossils.stahleckeria_fossil": "Stahleckeria Fossil",
@@ -1103,6 +1105,8 @@
 	"advancements.fossils.plagiosauroidea.description": "Plagiosauroidea",
 	"advancements.fossils.aphanosauria.title": "Not A Phan",
 	"advancements.fossils.aphanosauria.description": "Aphanosauria",
+	"advancements.fossils.megatherioidea.title": "Why so sid-eous?",
+	"advancements.fossils.megatherioidea.description": "Megatherioidea",
 
 
 	"advancements.fossils.pelecanimimus.title": "Pelican Mimic",
@@ -1939,5 +1943,9 @@
 	"advancements.fossils.cycnorhamphus.title": "Swan Beak",
 	"advancements.fossils.cycnorhamphus.description": "Complete a Cycnorhamphus skeleton",
 	"advancements.fossils.wendiceratops.title": "Wendy Sloboda's Horned Face",
-	"advancements.fossils.wendiceratops.description": "Complete a Wendiceratops skeleton"
+	"advancements.fossils.wendiceratops.description": "Complete a Wendiceratops skeleton",
+	"advancements.fossils.piscobalaena.title": "Whale from Pisco",
+	"advancements.fossils.piscobalaena.description": "Complete a Piscobalaena skeleton",
+	"advancements.fossils.thalassocnus.title": "Sea Sloth",
+	"advancements.fossils.thalassocnus.description": "Complete a Thalassocnus skeleton"
 }

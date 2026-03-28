@@ -1,0 +1,24 @@
+{
+  "parent": "fossils:fossils/general/folivora",
+  "criteria": {
+    "finish_megatherioidea": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "description": {
+      "translate": "advancements.fossils.megatherioidea.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:advancement_line"
+    },
+    "show_toast": false,
+    "title": {
+      "translate": "advancements.fossils.megatherioidea.title"
+    }
+  },
+  "sends_telemetry_event": true
+}

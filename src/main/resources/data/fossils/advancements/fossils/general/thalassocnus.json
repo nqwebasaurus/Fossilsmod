@@ -1,7 +1,7 @@
 {
   "parent": "fossils:fossils/general/megatherioidea",
   "criteria": {
-    "finish_eremotherium": {
+    "finish_thalassocnus": {
       "conditions": {
         "location": [
           {
@@ -9,10 +9,10 @@
             "predicate": {
               "block": {
                 "blocks": [
-                  "fossils:eremotherium_fossil"
+                  "fossils:thalassocnus_fossil"
                 ],
                 "state": {
-                  "fossil_level": "19"
+                  "fossil_level": "9"
                 }
               }
             }
@@ -21,7 +21,7 @@
             "condition": "minecraft:match_tool",
             "predicate": {
               "items": [
-                "fossils:eremotherium_fossil"
+                "fossils:thalassocnus_fossil"
               ]
             }
           }
@@ -33,25 +33,22 @@
   "display": {
     "announce_to_chat": true,
     "description": {
-      "translate": "advancements.fossils.eremotherium.description"
+      "translate": "advancements.fossils.thalassocnus.description"
     },
-    "frame": "challenge",
+    "frame": "task",
     "hidden": false,
     "icon": {
-      "item": "fossils:eremotherium_fossil"
+      "item": "fossils:thalassocnus_fossil"
     },
     "show_toast": true,
     "title": {
-      "translate": "advancements.fossils.eremotherium.title"
+      "translate": "advancements.fossils.thalassocnus.title"
     }
   },
   "requirements": [
     [
-      "finish_eremotherium"
+      "finish_thalassocnus"
     ]
   ],
-  "rewards": {
-    "experience": 500
-  },
   "sends_telemetry_event": true
 }

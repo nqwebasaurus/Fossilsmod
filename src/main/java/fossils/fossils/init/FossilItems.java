@@ -430,6 +430,8 @@ public class FossilItems {
 	public static final RegistryObject<FossilItem> CYNOGNATHUS = SKELETON_REGISTER.register("cynognathus_fossil", () -> new FossilItem(FossilBlocks.CYNOGNATHUS.get(), new Item.Properties().rarity(FossilRarities.TEN_PIECE_FOSSIL)));
 	public static final RegistryObject<FossilItem> THECODONTOSAURUS = SKELETON_REGISTER.register("thecodontosaurus_fossil", () -> new FossilItem(FossilBlocks.THECODONTOSAURUS.get(), new Item.Properties().rarity(FossilRarities.TEN_PIECE_FOSSIL)));
 	public static final RegistryObject<FossilItem> MINQARIA = SKELETON_REGISTER.register("minqaria_fossil", () -> new FossilItem(FossilBlocks.MINQARIA.get(), new Item.Properties().rarity(FossilRarities.TEN_PIECE_FOSSIL)));
+	public static final RegistryObject<FossilItem> PISCOBALAENA = SKELETON_REGISTER.register("piscobalaena_fossil", () -> new FossilItem(FossilBlocks.PISCOBALAENA.get(), new Item.Properties().rarity(FossilRarities.TEN_PIECE_FOSSIL)));
+	public static final RegistryObject<FossilItem> THALASSOCNUS = SKELETON_REGISTER.register("thalassocnus_fossil", () -> new FossilItem(FossilBlocks.THALASSOCNUS.get(), new Item.Properties().rarity(FossilRarities.TEN_PIECE_FOSSIL)));
 
 
 	//Fifteen

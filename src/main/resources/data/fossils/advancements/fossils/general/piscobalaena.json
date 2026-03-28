@@ -1,7 +1,7 @@
 {
-  "parent": "fossils:fossils/general/megatherioidea",
+  "parent": "fossils:fossils/general/chaeomysticeti",
   "criteria": {
-    "finish_eremotherium": {
+    "finish_piscobalaena": {
       "conditions": {
         "location": [
           {
@@ -9,10 +9,10 @@
             "predicate": {
               "block": {
                 "blocks": [
-                  "fossils:eremotherium_fossil"
+                  "fossils:piscobalaena_fossil"
                 ],
                 "state": {
-                  "fossil_level": "19"
+                  "fossil_level": "9"
                 }
               }
             }
@@ -21,7 +21,7 @@
             "condition": "minecraft:match_tool",
             "predicate": {
               "items": [
-                "fossils:eremotherium_fossil"
+                "fossils:piscobalaena_fossil"
               ]
             }
           }
@@ -33,25 +33,22 @@
   "display": {
     "announce_to_chat": true,
     "description": {
-      "translate": "advancements.fossils.eremotherium.description"
+      "translate": "advancements.fossils.piscobalaena.description"
     },
-    "frame": "challenge",
+    "frame": "task",
     "hidden": false,
     "icon": {
-      "item": "fossils:eremotherium_fossil"
+      "item": "fossils:piscobalaena_fossil"
     },
     "show_toast": true,
     "title": {
-      "translate": "advancements.fossils.eremotherium.title"
+      "translate": "advancements.fossils.piscobalaena.title"
     }
   },
   "requirements": [
     [
-      "finish_eremotherium"
+      "finish_piscobalaena"
     ]
   ],
-  "rewards": {
-    "experience": 500
-  },
   "sends_telemetry_event": true
 }
