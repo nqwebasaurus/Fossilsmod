@@ -158,6 +158,11 @@
           "type": "minecraft:item",
           "name": "fossils:thalassocnus_fossil",
           "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:granastrapotherium_fossil",
+          "weight": 10
         }
       ],
       "rolls": 1

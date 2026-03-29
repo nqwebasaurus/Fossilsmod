@@ -1,0 +1,24 @@
+{
+  "parent": "fossils:fossils/general/phaethoquornithes",
+  "criteria": {
+    "finish_pelecanimorpha": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "description": {
+      "translate": "advancements.fossils.pelecanimorpha.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:advancement_line"
+    },
+    "show_toast": false,
+    "title": {
+      "translate": "advancements.fossils.pelecanimorpha.title"
+    }
+  },
+  "sends_telemetry_event": true
+}

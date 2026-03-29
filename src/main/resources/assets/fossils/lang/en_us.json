@@ -285,6 +285,7 @@
 	"block.fossils.bungartius_fossil": "Bungartius Fossil",
 	"block.fossils.proterogyrinus_fossil": "Proterogyrinus Fossil",
 	"block.fossils.cycnorhamphus_fossil": "Cycnorhamphus Fossil",
+	"block.fossils.xenicibis_fossil": "Xenicibis Fossil",
 	"block.fossils.kentrosaurus_fossil": "Kentrosaurus Fossil",
 	"block.fossils.endothiodonbathystoma_fossil": "Endothiodon bathystoma Fossil",
 	"block.fossils.dimetrodongrandis_fossil": "Dimetrodon grandis Fossil",
@@ -522,6 +523,7 @@
 	"block.fossils.uranocentrodon_fossil": "Uranocentrodon Fossil",
 	"block.fossils.olorotitan_fossil": "Olorotitan Fossil",
 	"block.fossils.wendiceratops_fossil": "Wendiceratops Fossil",
+	"block.fossils.granastrapotherium_fossil": "Granastrapotherium Fossil",
 	"block.fossils.bisonlatifrons_fossil": "Bison latifrons Fossil",
 	"block.fossils.utahraptor_fossil": "Utahraptor Fossil",
 	"block.fossils.shonisaurus_fossil": "Shonisaurus Fossil",
@@ -1107,6 +1109,14 @@
 	"advancements.fossils.aphanosauria.description": "Aphanosauria",
 	"advancements.fossils.megatherioidea.title": "Why so sid-eous?",
 	"advancements.fossils.megatherioidea.description": "Megatherioidea",
+	"advancements.fossils.phaethoquornithes.title": "Looney!",
+	"advancements.fossils.phaethoquornithes.description": "Phaethoquornithes",
+	"advancements.fossils.pelecanimorpha.title": "Peli-can't do it anymore!",
+	"advancements.fossils.pelecanimorpha.description": "Pelecanimorpha",
+	"advancements.fossils.pelecaniformes.title": "If it fits, I eats",
+	"advancements.fossils.pelecaniformes.description": "Pelecaniformes",
+	"advancements.fossils.threskiornithidae.title": "Begone, Thoth!",
+	"advancements.fossils.threskiornithidae.description": "Threskiornithidae",
 
 
 	"advancements.fossils.pelecanimimus.title": "Pelican Mimic",
@@ -1947,5 +1957,9 @@
 	"advancements.fossils.piscobalaena.title": "Whale from Pisco",
 	"advancements.fossils.piscobalaena.description": "Complete a Piscobalaena skeleton",
 	"advancements.fossils.thalassocnus.title": "Sea Sloth",
-	"advancements.fossils.thalassocnus.description": "Complete a Thalassocnus skeleton"
+	"advancements.fossils.thalassocnus.description": "Complete a Thalassocnus skeleton",
+	"advancements.fossils.xenicibis.title": "Strange Ibis",
+	"advancements.fossils.xenicibis.description": "Complete a Xenicibis skeleton",
+	"advancements.fossils.granastrapotherium.title": "Great Lightning Beast",
+	"advancements.fossils.granastrapotherium.description": "Complete a Granastrapotherium skeleton"
 }

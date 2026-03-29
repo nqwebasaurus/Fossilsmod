@@ -1,0 +1,24 @@
+{
+  "parent": "fossils:fossils/general/neoaves",
+  "criteria": {
+    "finish_phaethoquornithes": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "description": {
+      "translate": "advancements.fossils.phaethoquornithes.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:advancement_line"
+    },
+    "show_toast": false,
+    "title": {
+      "translate": "advancements.fossils.phaethoquornithes.title"
+    }
+  },
+  "sends_telemetry_event": true
+}

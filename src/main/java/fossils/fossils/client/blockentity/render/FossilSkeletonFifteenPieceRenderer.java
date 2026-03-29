@@ -75,6 +75,8 @@ import fossils.fossils.client.blockentity.model.eurhinosaurus.EurhinosaurusFossi
 import fossils.fossils.client.blockentity.model.eurhinosaurus.EurhinosaurusFossilModel;
 import fossils.fossils.client.blockentity.model.gaiasia.GaiasiaFossilFrameModel;
 import fossils.fossils.client.blockentity.model.gaiasia.GaiasiaFossilModel;
+import fossils.fossils.client.blockentity.model.granastrapotherium.GranastrapotheriumFossilFrameModel;
+import fossils.fossils.client.blockentity.model.granastrapotherium.GranastrapotheriumFossilModel;
 import fossils.fossils.client.blockentity.model.huaxiazhoulong.HuaxiazhoulongFossilFrameModel;
 import fossils.fossils.client.blockentity.model.huaxiazhoulong.HuaxiazhoulongFossilModel;
 import fossils.fossils.client.blockentity.model.ichthyovenator.IchthyovenatorFossilFrameModel;
@@ -319,6 +321,7 @@ public class FossilSkeletonFifteenPieceRenderer implements BlockEntityRenderer<F
         type.put(FossilSkeletonFifteenPieceBlock.Types.URANOCENTRODON, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/uranocentrodon/stage_0.png"));
         type.put(FossilSkeletonFifteenPieceBlock.Types.OLOROTITAN, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/olorotitan/stage_0.png"));
         type.put(FossilSkeletonFifteenPieceBlock.Types.WENDICERATOPS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/wendiceratops/stage_0.png"));
+        type.put(FossilSkeletonFifteenPieceBlock.Types.GRANASTRAPOTHERIUM, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/granastrapotherium/stage_0.png"));
     });
     public static final Map<FossilSkeletonFifteenPieceBlock.Type, ResourceLocation> FRAME_BY_TYPE = Util.make(Maps.newHashMap(), (type) -> {
         type.put(FossilSkeletonFifteenPieceBlock.Types.WUERHOSAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/wuerhosaurus/frame.png"));
@@ -416,6 +419,7 @@ public class FossilSkeletonFifteenPieceRenderer implements BlockEntityRenderer<F
         type.put(FossilSkeletonFifteenPieceBlock.Types.URANOCENTRODON, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/uranocentrodon/frame.png"));
         type.put(FossilSkeletonFifteenPieceBlock.Types.OLOROTITAN, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/olorotitan/frame.png"));
         type.put(FossilSkeletonFifteenPieceBlock.Types.WENDICERATOPS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/wendiceratops/frame.png"));
+        type.put(FossilSkeletonFifteenPieceBlock.Types.GRANASTRAPOTHERIUM, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/granastrapotherium/frame.png"));
     });
 
     public static Map<FossilSkeletonFifteenPieceBlock.Type, SkullModelBase> createFossilRenderers(EntityModelSet p_173662_) {
@@ -515,6 +519,7 @@ public class FossilSkeletonFifteenPieceRenderer implements BlockEntityRenderer<F
         builder.put(FossilSkeletonFifteenPieceBlock.Types.URANOCENTRODON, new UranocentrodonFossilModel(p_173662_.bakeLayer(ClientEvents.URANOCENTRODON)));
         builder.put(FossilSkeletonFifteenPieceBlock.Types.OLOROTITAN, new OlorotitanFossilModel(p_173662_.bakeLayer(ClientEvents.OLOROTITAN)));
         builder.put(FossilSkeletonFifteenPieceBlock.Types.WENDICERATOPS, new WendiceratopsFossilModel(p_173662_.bakeLayer(ClientEvents.WENDICERATOPS)));
+        builder.put(FossilSkeletonFifteenPieceBlock.Types.GRANASTRAPOTHERIUM, new GranastrapotheriumFossilModel(p_173662_.bakeLayer(ClientEvents.GRANASTRAPOTHERIUM)));
         return builder.build();
     }
 
@@ -615,6 +620,7 @@ public class FossilSkeletonFifteenPieceRenderer implements BlockEntityRenderer<F
         builder.put(FossilSkeletonFifteenPieceBlock.Types.URANOCENTRODON, new UranocentrodonFossilFrameModel(p_173662_.bakeLayer(ClientEvents.URANOCENTRODON_FRAME)));
         builder.put(FossilSkeletonFifteenPieceBlock.Types.OLOROTITAN, new OlorotitanFossilFrameModel(p_173662_.bakeLayer(ClientEvents.OLOROTITAN_FRAME)));
         builder.put(FossilSkeletonFifteenPieceBlock.Types.WENDICERATOPS, new WendiceratopsFossilFrameModel(p_173662_.bakeLayer(ClientEvents.WENDICERATOPS_FRAME)));
+        builder.put(FossilSkeletonFifteenPieceBlock.Types.GRANASTRAPOTHERIUM, new GranastrapotheriumFossilFrameModel(p_173662_.bakeLayer(ClientEvents.GRANASTRAPOTHERIUM_FRAME)));
         return builder.build();
     }
 
@@ -1024,6 +1030,10 @@ public class FossilSkeletonFifteenPieceRenderer implements BlockEntityRenderer<F
             float scale = 1F;
             pose.scale(-scale, -scale, scale);
             pose.translate(0F, -0.5F, 0F);
+        } else if (FossilSkeletonFifteenPieceBlock$type == FossilSkeletonFifteenPieceBlock.Types.GRANASTRAPOTHERIUM) {
+            float scale = 0.86F;
+            pose.scale(-scale, -scale, scale);
+            pose.translate(0F, -0.33F, 0F);
         } else {
             float scale = 1.0F;
             pose.scale(-scale, -scale, scale);
@@ -1226,6 +1236,8 @@ public class FossilSkeletonFifteenPieceRenderer implements BlockEntityRenderer<F
             resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/olorotitan/stage_" + fossilLevel + ".png");
         } else if (type == FossilSkeletonFifteenPieceBlock.Types.WENDICERATOPS) {
             resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/wendiceratops/stage_" + fossilLevel + ".png");
+        } else if (type == FossilSkeletonFifteenPieceBlock.Types.GRANASTRAPOTHERIUM) {
+            resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/granastrapotherium/stage_" + fossilLevel + ".png");
         } else resourceLocation = SKIN_BY_TYPE.get(type);
         return RenderType.entityCutoutNoCullZOffset(resourceLocation);
 
