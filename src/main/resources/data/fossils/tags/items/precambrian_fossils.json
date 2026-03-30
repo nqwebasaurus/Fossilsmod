@@ -1,0 +1,9 @@
+{
+	"replace": false,
+	"values": [
+		"fossils:alienum_fossil",
+		"fossils:charnia_fossil",
+		"fossils:dickinsonia_fossil",
+		"fossils:cyclomedusa_fossil"
+	]
+}
