@@ -423,6 +423,8 @@
 	"block.fossils.minqaria_fossil": "Minqaria Fossil",
 	"block.fossils.piscobalaena_fossil": "Piscobalaena Fossil",
 	"block.fossils.thalassocnus_fossil": "Thalassocnus Fossil",
+	"block.fossils.keresdrakon_fossil": "Keresdrakon Fossil",
+	"block.fossils.kostensuchus_fossil": "Kostensuchus Fossil",
 	"block.fossils.poposaurus_fossil": "Poposaurus Fossil",
 	"block.fossils.nigerpeton_fossil": "Nigerpeton Fossil",
 	"block.fossils.stahleckeria_fossil": "Stahleckeria Fossil",
@@ -1961,5 +1963,9 @@
 	"advancements.fossils.xenicibis.title": "Strange Ibis",
 	"advancements.fossils.xenicibis.description": "Complete a Xenicibis skeleton",
 	"advancements.fossils.granastrapotherium.title": "Great Lightning Beast",
-	"advancements.fossils.granastrapotherium.description": "Complete a Granastrapotherium skeleton"
+	"advancements.fossils.granastrapotherium.description": "Complete a Granastrapotherium skeleton",
+	"advancements.fossils.keresdrakon.title": "Dragon of the Violent Death (Κῆρες)",
+	"advancements.fossils.keresdrakon.description": "Complete a Keresdrakon skeleton",
+	"advancements.fossils.kostensuchus.title": "Aonikenk (Patagonian Wind) Crocodile",
+	"advancements.fossils.kostensuchus.description": "Complete a Kostensuchus skeleton"
 }

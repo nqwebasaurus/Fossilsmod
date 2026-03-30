@@ -428,6 +428,8 @@ public class FossilBlocks {
 	public static final RegistryObject<FossilSkeletonTenPieceBlock> MINQARIA = REGISTER.register("minqaria_fossil", () -> new FossilSkeletonTenPieceBlock(FossilSkeletonTenPieceBlock.Types.MINQARIA, Properties.of().strength(2.0F, 3.0F).sound(SoundType.BONE_BLOCK).requiresCorrectToolForDrops().noOcclusion().noCollission()));
 	public static final RegistryObject<FossilSkeletonTenPieceBlock> PISCOBALAENA = REGISTER.register("piscobalaena_fossil", () -> new FossilSkeletonTenPieceBlock(FossilSkeletonTenPieceBlock.Types.PISCOBALAENA, Properties.of().strength(2.0F, 3.0F).sound(SoundType.BONE_BLOCK).requiresCorrectToolForDrops().noOcclusion().noCollission()));
 	public static final RegistryObject<FossilSkeletonTenPieceBlock> THALASSOCNUS = REGISTER.register("thalassocnus_fossil", () -> new FossilSkeletonTenPieceBlock(FossilSkeletonTenPieceBlock.Types.THALASSOCNUS, Properties.of().strength(2.0F, 3.0F).sound(SoundType.BONE_BLOCK).requiresCorrectToolForDrops().noOcclusion().noCollission()));
+	public static final RegistryObject<FossilSkeletonTenPieceBlock> KERESDRAKON = REGISTER.register("keresdrakon_fossil", () -> new FossilSkeletonTenPieceBlock(FossilSkeletonTenPieceBlock.Types.KERESDRAKON, Properties.of().strength(2.0F, 3.0F).sound(SoundType.BONE_BLOCK).requiresCorrectToolForDrops().noOcclusion().noCollission()));
+	public static final RegistryObject<FossilSkeletonTenPieceBlock> KOSTENSUCHUS = REGISTER.register("kostensuchus_fossil", () -> new FossilSkeletonTenPieceBlock(FossilSkeletonTenPieceBlock.Types.KOSTENSUCHUS, Properties.of().strength(2.0F, 3.0F).sound(SoundType.BONE_BLOCK).requiresCorrectToolForDrops().noOcclusion().noCollission()));
 
 
 	//Fifteen

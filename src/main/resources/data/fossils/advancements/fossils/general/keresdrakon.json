@@ -1,0 +1,54 @@
+{
+  "parent": "fossils:fossils/general/azhdarchoidea",
+  "criteria": {
+    "finish_keresdrakon": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:keresdrakon_fossil"
+                ],
+                "state": {
+                  "fossil_level": "9"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:keresdrakon_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.keresdrakon.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:keresdrakon_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.keresdrakon.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_keresdrakon"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

@@ -463,6 +463,11 @@
           "type": "minecraft:item",
           "name": "fossils:torukjara_fossil",
           "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:keresdrakon_fossil",
+          "weight": 10
         }
       ],
       "rolls": 1

@@ -387,10 +387,14 @@ import fossils.fossils.client.blockentity.model.kayentatherium.KayentatheriumFos
 import fossils.fossils.client.blockentity.model.kayentatherium.KayentatheriumFossilModel;
 import fossils.fossils.client.blockentity.model.kentrosaurus.KentrosaurusFossilFrameModel;
 import fossils.fossils.client.blockentity.model.kentrosaurus.KentrosaurusFossilModel;
+import fossils.fossils.client.blockentity.model.keresdrakon.KeresdrakonFossilFrameModel;
+import fossils.fossils.client.blockentity.model.keresdrakon.KeresdrakonFossilModel;
 import fossils.fossils.client.blockentity.model.klamelisaurus.KlamelisaurusFossilFrameModel;
 import fossils.fossils.client.blockentity.model.klamelisaurus.KlamelisaurusFossilModel;
 import fossils.fossils.client.blockentity.model.koolasuchus.KoolasuchusFossilFrameModel;
 import fossils.fossils.client.blockentity.model.koolasuchus.KoolasuchusFossilModel;
+import fossils.fossils.client.blockentity.model.kostensuchus.KostensuchusFossilFrameModel;
+import fossils.fossils.client.blockentity.model.kostensuchus.KostensuchusFossilModel;
 import fossils.fossils.client.blockentity.model.kranosaura.KranosauraFossilFrameModel;
 import fossils.fossils.client.blockentity.model.kranosaura.KranosauraFossilModel;
 import fossils.fossils.client.blockentity.model.kubanochoerus.KubanochoerusFossilFrameModel;
@@ -1516,6 +1520,10 @@ public class ClientEvents {
     public static ModelLayerLocation PISCOBALAENA_FRAME = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "piscobalaena_frame"), "piscobalaena_frame");
     public static ModelLayerLocation THALASSOCNUS= new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "thalassocnus"), "thalassocnus");
     public static ModelLayerLocation THALASSOCNUS_FRAME = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "thalassocnus_frame"), "thalassocnus_frame");
+    public static ModelLayerLocation KERESDRAKON= new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "keresdrakon"), "keresdrakon");
+    public static ModelLayerLocation KERESDRAKON_FRAME = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "keresdrakon_frame"), "keresdrakon_frame");
+    public static ModelLayerLocation KOSTENSUCHUS= new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "kostensuchus"), "kostensuchus");
+    public static ModelLayerLocation KOSTENSUCHUS_FRAME = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "kostensuchus_frame"), "kostensuchus_frame");
 	public static ModelLayerLocation PLACERIAS = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "placerias"), "placerias");
 	public static ModelLayerLocation PLACERIAS_FRAME = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "placerias_frame"), "placerias_frame");
 	public static ModelLayerLocation ENDOTHIODONBATHYSTOMA = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "endothiodonbathystoma"), "endothiodonbathystoma");
@@ -2514,6 +2522,10 @@ public class ClientEvents {
         event.registerLayerDefinition(PISCOBALAENA_FRAME, PiscobalaenaFossilFrameModel::createBodyLayer);
         event.registerLayerDefinition(THALASSOCNUS, ThalassocnusFossilModel::createBodyLayer);
         event.registerLayerDefinition(THALASSOCNUS_FRAME, ThalassocnusFossilFrameModel::createBodyLayer);
+        event.registerLayerDefinition(KERESDRAKON, KeresdrakonFossilModel::createBodyLayer);
+        event.registerLayerDefinition(KERESDRAKON_FRAME, KeresdrakonFossilFrameModel::createBodyLayer);
+        event.registerLayerDefinition(KOSTENSUCHUS, KostensuchusFossilModel::createBodyLayer);
+        event.registerLayerDefinition(KOSTENSUCHUS_FRAME, KostensuchusFossilFrameModel::createBodyLayer);
 		event.registerLayerDefinition(LUFENGOSAURUS, LufengosaurusFossilModel::createBodyLayer);
 		event.registerLayerDefinition(LUFENGOSAURUS_FRAME, LufengosaurusFossilFrameModel::createBodyLayer);
 		event.registerLayerDefinition(PLACERIAS, PlaceriasFossilModel::createBodyLayer);

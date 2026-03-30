@@ -368,6 +368,11 @@
           "type": "minecraft:item",
           "name": "fossils:rostropycnodus_fossil",
           "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fossils:kostensuchus_fossil",
+          "weight": 10
         }
       ],
       "rolls": 1
