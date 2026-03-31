@@ -1,0 +1,33 @@
+{
+	"replace": false,
+	"values": [
+		"fossils:ottoia_fossil",
+		"fossils:opabinia_fossil",
+		"fossils:waptia_fossil",
+		"fossils:mobulavermis_fossil",
+		"fossils:hallucigenia_fossil",
+		"fossils:nectocaris_fossil",
+		"fossils:haikouichthys_fossil",
+		"fossils:pikaia_fossil",
+		"fossils:canadaspis_fossil",
+		"fossils:kerygmachela_fossil",
+		"fossils:balhuticaris_fossil",
+		"fossils:cambroraster_fossil",
+		"fossils:eoredlichia_fossil",
+		"fossils:yawunik_fossil",
+		"fossils:marrella_fossil",
+		"fossils:yohoia_fossil",
+		"fossils:sanctacaris_fossil",
+		"fossils:skeemella_fossil",
+		"fossils:phantaspis_fossil",
+		"fossils:kleptothule_fossil",
+		"fossils:isoxys_fossil",
+		"fossils:capinatator_fossil",
+		"fossils:hadranax_fossil",
+		"fossils:pambdelurion_fossil",
+		"fossils:sidneyia_fossil",
+		"fossils:tuzoia_fossil",
+		"fossils:vetulicola_fossil",
+		"fossils:anomalocaris_fossil"
+	]
+}

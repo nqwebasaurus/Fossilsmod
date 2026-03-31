@@ -1,20 +1,29 @@
 {
-  "type": "minecraft:block",
-  "pools": [
-    {
-      "rolls": 1,
-      "entries": [
-        {
-          "type": "minecraft:item",
-          "name": "fossils:junk_fossil",
-          "weight": 3
-        },
-        {
-          "type": "minecraft:loot_table",
-          "name": "fossils:blocks/devonian_fossil_items",
-          "weight": 2
-        }
-      ]
-    }
-  ]
+	"type": "minecraft:block",
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "fossils:junk_fossil",
+					"weight": 299,
+					"quality": -5
+				},
+				{
+					"type": "minecraft:tag",
+					"name": "fossils:devonian_fossils",
+					"weight": 200,
+					"expand": true,
+					"quality": 5
+				},
+				{
+					"type": "minecraft:tag",
+					"name": "fossils:fossils_music_discs",
+					"expand": true
+				}
+			]
+		}
+	],
+	"random_sequence": "fossils:block/devonian_fossil_ore"
 }

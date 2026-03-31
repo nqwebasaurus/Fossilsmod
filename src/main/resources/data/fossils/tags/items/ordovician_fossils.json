@@ -1,0 +1,23 @@
+{
+	"replace": false,
+	"values": [
+		"fossils:aegirocassis_fossil",
+		"fossils:aphetoceras_fossil",
+		"fossils:hungioides_fossil",
+		"fossils:cyrtoceras_fossil",
+		"fossils:platypeltoides_fossil",
+		"fossils:lituites_fossil",
+		"fossils:cothurnocystis_fossil",
+		"fossils:arandaspis_fossil",
+		"fossils:orthoceras_fossil",
+		"fossils:sacabambaspis_fossil",
+		"fossils:didymograptus_fossil",
+		"fossils:gonioceras_fossil",
+		"fossils:endoceras_fossil",
+		"fossils:conodont_fossil",
+		"fossils:pricyclopyge_fossil",
+		"fossils:villebrunaster_fossil",
+		"fossils:calvapilosa_fossil",
+		"fossils:tremaglaspis_fossil"
+	]
+}

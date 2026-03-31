@@ -1,0 +1,25 @@
+{
+	"replace": false,
+	"values": [
+		"fossils:protoceras_fossil",
+		"fossils:dorudon_fossil",
+		"fossils:gastornis_fossil",
+		"fossils:kutchicetus_fossil",
+		"fossils:prodinoceras_fossil",
+		"fossils:megacerops_fossil",
+		"fossils:pyrotherium_fossil",
+		"fossils:barylambda_fossil",
+		"fossils:paraceratheriumtransouralicum_fossil",
+		"fossils:menoceras_fossil",
+		"fossils:champsosaurus_fossil",
+		"fossils:oxydactylus_fossil",
+		"fossils:leptictidium_fossil",
+		"fossils:daeodon_fossil",
+		"fossils:basilosaurus_fossil",
+		"fossils:obdurodon_fossil",
+		"fossils:pezosiren_fossil",
+		"fossils:palaeotherium_fossil",
+		"fossils:odontopteryx_fossil",
+		"fossils:conflicto_fossil"
+	]
+}

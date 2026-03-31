@@ -1,0 +1,33 @@
+{
+	"replace": false,
+	"values": [
+		"fossils:synthetoceras_fossil",
+		"fossils:protoceras_fossil",
+		"fossils:thylacoleo_fossil",
+		"fossils:sinclairomeryx_fossil",
+		"fossils:dinocrocuta_fossil",
+		"fossils:kubanochoerus_fossil",
+		"fossils:decennatherium_fossil",
+		"fossils:livyatan_fossil",
+		"fossils:theropithecus_fossil",
+		"fossils:columba_fossil",
+		"fossils:deinotherium_fossil",
+		"fossils:coelodonta_fossil",
+		"fossils:odobenocetops_fossil",
+		"fossils:sivatheriumgiganteum_fossil",
+		"fossils:menoceras_fossil",
+		"fossils:ceratotherium_fossil",
+		"fossils:homunculus_fossil",
+		"fossils:pan_fossil",
+		"fossils:praemegaceroscazioti_fossil",
+		"fossils:oxydactylus_fossil",
+		"fossils:hippidion_fossil",
+		"fossils:daeodon_fossil",
+		"fossils:purussaurus_fossil",
+		"fossils:obdurodon_fossil",
+		"fossils:llallawavis_fossil",
+		"fossils:balaena_fossil",
+		"fossils:australopithecusafricanus_fossil",
+		"fossils:eremotherium_fossil"
+	]
+}
