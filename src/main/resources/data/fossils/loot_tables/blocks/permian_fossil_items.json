@@ -1,0 +1,18 @@
+{
+	"type": "minecraft:block",
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:tag",
+					"name": "fossils:permian_fossils",
+					"weight": 10,
+					"expand": true,
+					"quality": 5
+				}
+			]
+		}
+	],
+	"random_sequence": "fossils:block/permian_fossil_ore"
+}

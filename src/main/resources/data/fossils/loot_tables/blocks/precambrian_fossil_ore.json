@@ -11,15 +11,15 @@
 					"quality": -5
 				},
 				{
-					"type": "minecraft:tag",
-					"name": "fossils:precambrian_fossils",
+					"type": "minecraft:loot_table",
+					"name": "fossils:blocks/precambrian_fossil_items",
 					"weight": 200,
 					"expand": true,
 					"quality": 5
 				},
 				{
 					"type": "minecraft:tag",
-					"name": "fossils:fossils:music_discs",
+					"name": "fossils:fossils_music_discs",
 					"expand": true
 				}
 			]

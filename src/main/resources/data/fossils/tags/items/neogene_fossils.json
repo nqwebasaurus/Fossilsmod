@@ -28,6 +28,9 @@
 		"fossils:llallawavis_fossil",
 		"fossils:balaena_fossil",
 		"fossils:australopithecusafricanus_fossil",
-		"fossils:eremotherium_fossil"
+		"fossils:eremotherium_fossil",
+		"fossils:piscobalaena_fossil",
+		"fossils:thalassocnus_fossil",
+		"fossils:granastrapotherium_fossil"
 	]
 }

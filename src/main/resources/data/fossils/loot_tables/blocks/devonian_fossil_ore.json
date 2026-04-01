@@ -11,8 +11,8 @@
 					"quality": -5
 				},
 				{
-					"type": "minecraft:tag",
-					"name": "fossils:devonian_fossils",
+					"type": "minecraft:loot_table",
+					"name": "fossils:blocks/devonian_fossil_items",
 					"weight": 200,
 					"expand": true,
 					"quality": 5
