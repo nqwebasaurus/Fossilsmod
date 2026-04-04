@@ -279,6 +279,8 @@ import fossils.fossils.client.blockentity.model.thalassocnus.ThalassocnusFossilF
 import fossils.fossils.client.blockentity.model.thalassocnus.ThalassocnusFossilModel;
 import fossils.fossils.client.blockentity.model.thecodontosaurus.ThecodontosaurusFossilFrameModel;
 import fossils.fossils.client.blockentity.model.thecodontosaurus.ThecodontosaurusFossilModel;
+import fossils.fossils.client.blockentity.model.theosodon.TheosodonFossilFrameModel;
+import fossils.fossils.client.blockentity.model.theosodon.TheosodonFossilModel;
 import fossils.fossils.client.blockentity.model.theropithecus.TheropithecusFossilFrameModel;
 import fossils.fossils.client.blockentity.model.theropithecus.TheropithecusFossilModel;
 import fossils.fossils.client.blockentity.model.thylacoleo.ThylacoleoFossilFrameModel;
@@ -462,6 +464,7 @@ public class FossilSkeletonTenPieceRenderer implements BlockEntityRenderer<Fossi
         type.put(FossilSkeletonTenPieceBlock.Types.THALASSOCNUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/thalassocnus/stage_0.png"));
         type.put(FossilSkeletonTenPieceBlock.Types.KOSTENSUCHUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/kostensuchus/stage_0.png"));
         type.put(FossilSkeletonTenPieceBlock.Types.KERESDRAKON, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/keresdrakon/stage_0.png"));
+        type.put(FossilSkeletonTenPieceBlock.Types.THEOSODON, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/theosodon/stage_0.png"));
 
     });
     public static final Map<FossilSkeletonTenPieceBlock.Type, ResourceLocation> FRAME_BY_TYPE = Util.make(Maps.newHashMap(), (type) -> {
@@ -608,6 +611,7 @@ public class FossilSkeletonTenPieceRenderer implements BlockEntityRenderer<Fossi
         type.put(FossilSkeletonTenPieceBlock.Types.THALASSOCNUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/thalassocnus/frame.png"));
         type.put(FossilSkeletonTenPieceBlock.Types.KOSTENSUCHUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/kostensuchus/frame.png"));
         type.put(FossilSkeletonTenPieceBlock.Types.KERESDRAKON, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/keresdrakon/frame.png"));
+        type.put(FossilSkeletonTenPieceBlock.Types.THEOSODON, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/theosodon/frame.png"));
 
 
     });
@@ -757,6 +761,7 @@ public class FossilSkeletonTenPieceRenderer implements BlockEntityRenderer<Fossi
         builder.put(FossilSkeletonTenPieceBlock.Types.THALASSOCNUS, new ThalassocnusFossilModel(p_173662_.bakeLayer(ClientEvents.THALASSOCNUS)));
         builder.put(FossilSkeletonTenPieceBlock.Types.KOSTENSUCHUS, new KostensuchusFossilModel(p_173662_.bakeLayer(ClientEvents.KOSTENSUCHUS)));
         builder.put(FossilSkeletonTenPieceBlock.Types.KERESDRAKON, new KeresdrakonFossilModel(p_173662_.bakeLayer(ClientEvents.KERESDRAKON)));
+        builder.put(FossilSkeletonTenPieceBlock.Types.THEOSODON, new TheosodonFossilModel(p_173662_.bakeLayer(ClientEvents.THEOSODON)));
         return builder.build();
     }
 
@@ -905,6 +910,7 @@ public class FossilSkeletonTenPieceRenderer implements BlockEntityRenderer<Fossi
         builder.put(FossilSkeletonTenPieceBlock.Types.THALASSOCNUS, new ThalassocnusFossilFrameModel(p_173662_.bakeLayer(ClientEvents.THALASSOCNUS_FRAME)));
         builder.put(FossilSkeletonTenPieceBlock.Types.KOSTENSUCHUS, new KostensuchusFossilFrameModel(p_173662_.bakeLayer(ClientEvents.KOSTENSUCHUS_FRAME)));
         builder.put(FossilSkeletonTenPieceBlock.Types.KERESDRAKON, new KeresdrakonFossilFrameModel(p_173662_.bakeLayer(ClientEvents.KERESDRAKON_FRAME)));
+        builder.put(FossilSkeletonTenPieceBlock.Types.THEOSODON, new TheosodonFossilFrameModel(p_173662_.bakeLayer(ClientEvents.THEOSODON_FRAME)));
         return builder.build();
     }
 
@@ -1506,6 +1512,10 @@ public class FossilSkeletonTenPieceRenderer implements BlockEntityRenderer<Fossi
             float scale = 0.26F;
             pose.scale(-scale, -scale, scale);
             pose.translate(0F, 2.33F, 0F);
+        } else if (FossilSkeletonTenPieceBlock$type == FossilSkeletonTenPieceBlock.Types.THEOSODON) {
+            float scale = 0.39F;
+            pose.scale(-scale, -scale, scale);
+            pose.translate(0F, 1.1F, 0F);
         } else {
             float scale = 1.0F;
             pose.scale(-scale, -scale, scale);
@@ -1804,6 +1814,8 @@ public class FossilSkeletonTenPieceRenderer implements BlockEntityRenderer<Fossi
             resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/kostensuchus/stage_" + fossilLevel + ".png");
         } else if (type == FossilSkeletonTenPieceBlock.Types.KERESDRAKON) {
             resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/keresdrakon/stage_" + fossilLevel + ".png");
+        } else if (type == FossilSkeletonTenPieceBlock.Types.THEOSODON) {
+            resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/theosodon/stage_" + fossilLevel + ".png");
         } else resourceLocation = SKIN_BY_TYPE.get(type);
         return RenderType.entityCutoutNoCullZOffset(resourceLocation);
     }

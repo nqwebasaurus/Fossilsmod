@@ -425,6 +425,7 @@
 	"block.fossils.thalassocnus_fossil": "Thalassocnus Fossil",
 	"block.fossils.keresdrakon_fossil": "Keresdrakon Fossil",
 	"block.fossils.kostensuchus_fossil": "Kostensuchus Fossil",
+	"block.fossils.theosodon_fossil": "Theosodon Fossil",
 	"block.fossils.poposaurus_fossil": "Poposaurus Fossil",
 	"block.fossils.nigerpeton_fossil": "Nigerpeton Fossil",
 	"block.fossils.stahleckeria_fossil": "Stahleckeria Fossil",
@@ -526,6 +527,7 @@
 	"block.fossils.olorotitan_fossil": "Olorotitan Fossil",
 	"block.fossils.wendiceratops_fossil": "Wendiceratops Fossil",
 	"block.fossils.granastrapotherium_fossil": "Granastrapotherium Fossil",
+	"block.fossils.lavocatisaurus_fossil": "Lavocatisaurus Fossil",
 	"block.fossils.bisonlatifrons_fossil": "Bison latifrons Fossil",
 	"block.fossils.utahraptor_fossil": "Utahraptor Fossil",
 	"block.fossils.shonisaurus_fossil": "Shonisaurus Fossil",
@@ -1119,6 +1121,8 @@
 	"advancements.fossils.pelecaniformes.description": "Pelecaniformes",
 	"advancements.fossils.threskiornithidae.title": "Begone, Thoth!",
 	"advancements.fossils.threskiornithidae.description": "Threskiornithidae",
+	"advancements.fossils.litopterna.title": "We were trunked once",
+	"advancements.fossils.litopterna.description": "Litopterna",
 
 
 	"advancements.fossils.pelecanimimus.title": "Pelican Mimic",
@@ -1967,5 +1971,9 @@
 	"advancements.fossils.keresdrakon.title": "Dragon of the Violent Death (Κῆρες)",
 	"advancements.fossils.keresdrakon.description": "Complete a Keresdrakon skeleton",
 	"advancements.fossils.kostensuchus.title": "Aonikenk (Patagonian Wind) Crocodile",
-	"advancements.fossils.kostensuchus.description": "Complete a Kostensuchus skeleton"
+	"advancements.fossils.kostensuchus.description": "Complete a Kostensuchus skeleton",
+	"advancements.fossils.theosodon.title": "God Tooth",
+	"advancements.fossils.theosodon.description": "Complete a Theosodon skeleton",
+	"advancements.fossils.lavocatisaurus.title": "René Lavocat's Lizard",
+	"advancements.fossils.lavocatisaurus.description": "Complete a Lavocatisaurus skeleton"
 }
