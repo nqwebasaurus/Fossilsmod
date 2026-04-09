@@ -426,6 +426,7 @@
 	"block.fossils.keresdrakon_fossil": "Keresdrakon Fossil",
 	"block.fossils.kostensuchus_fossil": "Kostensuchus Fossil",
 	"block.fossils.theosodon_fossil": "Theosodon Fossil",
+	"block.fossils.myrmecophaga_fossil": "Myrmecophaga Fossil",
 	"block.fossils.poposaurus_fossil": "Poposaurus Fossil",
 	"block.fossils.nigerpeton_fossil": "Nigerpeton Fossil",
 	"block.fossils.stahleckeria_fossil": "Stahleckeria Fossil",
@@ -528,6 +529,7 @@
 	"block.fossils.wendiceratops_fossil": "Wendiceratops Fossil",
 	"block.fossils.granastrapotherium_fossil": "Granastrapotherium Fossil",
 	"block.fossils.lavocatisaurus_fossil": "Lavocatisaurus Fossil",
+	"block.fossils.sebecus_fossil": "Sebecus Fossil",
 	"block.fossils.bisonlatifrons_fossil": "Bison latifrons Fossil",
 	"block.fossils.utahraptor_fossil": "Utahraptor Fossil",
 	"block.fossils.shonisaurus_fossil": "Shonisaurus Fossil",
@@ -1975,5 +1977,9 @@
 	"advancements.fossils.theosodon.title": "God Tooth",
 	"advancements.fossils.theosodon.description": "Complete a Theosodon skeleton",
 	"advancements.fossils.lavocatisaurus.title": "René Lavocat's Lizard",
-	"advancements.fossils.lavocatisaurus.description": "Complete a Lavocatisaurus skeleton"
+	"advancements.fossils.lavocatisaurus.description": "Complete a Lavocatisaurus skeleton",
+	"advancements.fossils.myrmecophaga.title": "Giant Anteater",
+	"advancements.fossils.myrmecophaga.description": "Complete a Myrmecophaga skeleton",
+	"advancements.fossils.sebecus.title": "Sobek",
+	"advancements.fossils.sebecus.description": "Complete a Sebecus skeleton"
 }

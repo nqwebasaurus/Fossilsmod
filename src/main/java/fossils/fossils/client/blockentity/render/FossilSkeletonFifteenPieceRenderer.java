@@ -153,6 +153,8 @@ import fossils.fossils.client.blockentity.model.rhomaleosaurus.RhomaleosaurusFos
 import fossils.fossils.client.blockentity.model.rhomaleosaurus.RhomaleosaurusFossilModel;
 import fossils.fossils.client.blockentity.model.sauropelta.SauropeltaFossilFrameModel;
 import fossils.fossils.client.blockentity.model.sauropelta.SauropeltaFossilModel;
+import fossils.fossils.client.blockentity.model.sebecus.SebecusFossilFrameModel;
+import fossils.fossils.client.blockentity.model.sebecus.SebecusFossilModel;
 import fossils.fossils.client.blockentity.model.shunosaurus.ShunosaurusFossilFrameModel;
 import fossils.fossils.client.blockentity.model.shunosaurus.ShunosaurusFossilModel;
 import fossils.fossils.client.blockentity.model.sinoceratops.SinoceratopsFossilFrameModel;
@@ -325,6 +327,7 @@ public class FossilSkeletonFifteenPieceRenderer implements BlockEntityRenderer<F
         type.put(FossilSkeletonFifteenPieceBlock.Types.WENDICERATOPS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/wendiceratops/stage_0.png"));
         type.put(FossilSkeletonFifteenPieceBlock.Types.GRANASTRAPOTHERIUM, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/granastrapotherium/stage_0.png"));
         type.put(FossilSkeletonFifteenPieceBlock.Types.LAVOCATISAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/lavocatisaurus/stage_0.png"));
+        type.put(FossilSkeletonFifteenPieceBlock.Types.SEBECUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/sebecus/stage_0.png"));
     });
     public static final Map<FossilSkeletonFifteenPieceBlock.Type, ResourceLocation> FRAME_BY_TYPE = Util.make(Maps.newHashMap(), (type) -> {
         type.put(FossilSkeletonFifteenPieceBlock.Types.WUERHOSAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/wuerhosaurus/frame.png"));
@@ -424,6 +427,7 @@ public class FossilSkeletonFifteenPieceRenderer implements BlockEntityRenderer<F
         type.put(FossilSkeletonFifteenPieceBlock.Types.WENDICERATOPS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/wendiceratops/frame.png"));
         type.put(FossilSkeletonFifteenPieceBlock.Types.GRANASTRAPOTHERIUM, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/granastrapotherium/frame.png"));
         type.put(FossilSkeletonFifteenPieceBlock.Types.LAVOCATISAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/lavocatisaurus/frame.png"));
+        type.put(FossilSkeletonFifteenPieceBlock.Types.SEBECUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/sebecus/frame.png"));
     });
 
     public static Map<FossilSkeletonFifteenPieceBlock.Type, SkullModelBase> createFossilRenderers(EntityModelSet p_173662_) {
@@ -525,6 +529,7 @@ public class FossilSkeletonFifteenPieceRenderer implements BlockEntityRenderer<F
         builder.put(FossilSkeletonFifteenPieceBlock.Types.WENDICERATOPS, new WendiceratopsFossilModel(p_173662_.bakeLayer(ClientEvents.WENDICERATOPS)));
         builder.put(FossilSkeletonFifteenPieceBlock.Types.GRANASTRAPOTHERIUM, new GranastrapotheriumFossilModel(p_173662_.bakeLayer(ClientEvents.GRANASTRAPOTHERIUM)));
         builder.put(FossilSkeletonFifteenPieceBlock.Types.LAVOCATISAURUS, new LavocatisaurusFossilModel(p_173662_.bakeLayer(ClientEvents.LAVOCATISAURUS)));
+        builder.put(FossilSkeletonFifteenPieceBlock.Types.SEBECUS, new SebecusFossilModel(p_173662_.bakeLayer(ClientEvents.SEBECUS)));
         return builder.build();
     }
 
@@ -627,6 +632,7 @@ public class FossilSkeletonFifteenPieceRenderer implements BlockEntityRenderer<F
         builder.put(FossilSkeletonFifteenPieceBlock.Types.WENDICERATOPS, new WendiceratopsFossilFrameModel(p_173662_.bakeLayer(ClientEvents.WENDICERATOPS_FRAME)));
         builder.put(FossilSkeletonFifteenPieceBlock.Types.GRANASTRAPOTHERIUM, new GranastrapotheriumFossilFrameModel(p_173662_.bakeLayer(ClientEvents.GRANASTRAPOTHERIUM_FRAME)));
         builder.put(FossilSkeletonFifteenPieceBlock.Types.LAVOCATISAURUS, new LavocatisaurusFossilFrameModel(p_173662_.bakeLayer(ClientEvents.LAVOCATISAURUS_FRAME)));
+        builder.put(FossilSkeletonFifteenPieceBlock.Types.SEBECUS, new SebecusFossilFrameModel(p_173662_.bakeLayer(ClientEvents.SEBECUS_FRAME)));
         return builder.build();
     }
 
@@ -1044,6 +1050,10 @@ public class FossilSkeletonFifteenPieceRenderer implements BlockEntityRenderer<F
             float scale = 1.01F;
             pose.scale(-scale, -scale, scale);
             pose.translate(0F, -0.53F, 0F);
+        } else if (FossilSkeletonFifteenPieceBlock$type == FossilSkeletonFifteenPieceBlock.Types.SEBECUS) {
+            float scale = 0.55F;
+            pose.scale(-scale, -scale, scale);
+            pose.translate(0F, 0.32F, 0F);
         } else {
             float scale = 1.0F;
             pose.scale(-scale, -scale, scale);
@@ -1250,6 +1260,8 @@ public class FossilSkeletonFifteenPieceRenderer implements BlockEntityRenderer<F
             resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/granastrapotherium/stage_" + fossilLevel + ".png");
         } else if (type == FossilSkeletonFifteenPieceBlock.Types.LAVOCATISAURUS) {
             resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/lavocatisaurus/stage_" + fossilLevel + ".png");
+        } else if (type == FossilSkeletonFifteenPieceBlock.Types.SEBECUS) {
+            resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/sebecus/stage_" + fossilLevel + ".png");
         } else resourceLocation = SKIN_BY_TYPE.get(type);
         return RenderType.entityCutoutNoCullZOffset(resourceLocation);
 

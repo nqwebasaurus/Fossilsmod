@@ -1,0 +1,54 @@
+{
+  "parent": "fossils:fossils/general/pilosa",
+  "criteria": {
+    "finish_myrmecophaga": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:myrmecophaga_fossil"
+                ],
+                "state": {
+                  "fossil_level": "9"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:myrmecophaga_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.myrmecophaga.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:myrmecophaga_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.myrmecophaga.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_myrmecophaga"
+    ]
+  ],
+  "sends_telemetry_event": true
+}
