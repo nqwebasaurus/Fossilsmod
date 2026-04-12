@@ -1,5 +1,5 @@
 {
-  "parent": "fossils:fossils/general/boreoeutheria",
+  "parent": "fossils:fossils/general/panperissodactyla",
   "criteria": {
     "finish_perissodactyla": {
       "trigger": "minecraft:tick"
