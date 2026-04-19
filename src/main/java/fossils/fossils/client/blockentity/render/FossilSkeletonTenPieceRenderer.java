@@ -1223,13 +1223,13 @@ public class FossilSkeletonTenPieceRenderer implements BlockEntityRenderer<Fossi
             pose.scale(-scale, -scale, scale);
             pose.translate(0F, 0.2F, 0F);
         } else if (FossilSkeletonTenPieceBlock$type == FossilSkeletonTenPieceBlock.Types.KANNEMEYERIA) {
-            float scale = 0.51F;
+            float scale = 0.41F;
             pose.scale(-scale, -scale, scale);
-            pose.translate(0F, 0.45F, 0F);
+            pose.translate(0F, 0.95F, 0F);
         } else if (FossilSkeletonTenPieceBlock$type == FossilSkeletonTenPieceBlock.Types.RABIDOSAURUS) {
-            float scale = 0.6F;
+            float scale = 0.44F;
             pose.scale(-scale, -scale, scale);
-            pose.translate(0F, 0.18F, 0F);
+            pose.translate(0F, 0.8F, 0F);
         } else if (FossilSkeletonTenPieceBlock$type == FossilSkeletonTenPieceBlock.Types.JINZHOUSAURUS) {
             float scale = 0.79F;
             pose.scale(-scale, -scale, scale);

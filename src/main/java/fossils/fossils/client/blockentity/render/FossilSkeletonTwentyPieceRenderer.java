@@ -756,9 +756,9 @@ public class FossilSkeletonTwentyPieceRenderer implements BlockEntityRenderer<Fo
             pose.scale(-scale, -scale, scale);
             pose.translate(0F, -4.3F, 0F);
         } else if (FossilSkeletonTwentyPieceBlock$type == FossilSkeletonTwentyPieceBlock.Types.SILLOSUCHUS) {
-            float scale = 1F;
+            float scale = 0.55F;
             pose.scale(-scale, -scale, scale);
-            pose.translate(0F, -0.52F, 0F);
+            pose.translate(0F, 0.3F, 0F);
         } else if (FossilSkeletonTwentyPieceBlock$type == FossilSkeletonTwentyPieceBlock.Types.POSTOSUCHUS) {
             float scale = 1.03F;
             pose.scale(-scale, -scale, scale);
