@@ -191,6 +191,8 @@ import fossils.fossils.client.blockentity.model.tethyshadros.TethyshadrosFossilF
 import fossils.fossils.client.blockentity.model.tethyshadros.TethyshadrosFossilModel;
 import fossils.fossils.client.blockentity.model.thalattosuchus.ThalattosuchusFossilFrameModel;
 import fossils.fossils.client.blockentity.model.thalattosuchus.ThalattosuchusFossilModel;
+import fossils.fossils.client.blockentity.model.thylacosmilus.ThylacosmilusFossilFrameModel;
+import fossils.fossils.client.blockentity.model.thylacosmilus.ThylacosmilusFossilModel;
 import fossils.fossils.client.blockentity.model.tuojiangosaurus.TuojiangosaurusFossilFrameModel;
 import fossils.fossils.client.blockentity.model.tuojiangosaurus.TuojiangosaurusFossilModel;
 import fossils.fossils.client.blockentity.model.tupandactylusimperator.TupandactylusimperatorFossilFrameModel;
@@ -334,6 +336,7 @@ public class FossilSkeletonFifteenPieceRenderer implements BlockEntityRenderer<F
         type.put(FossilSkeletonFifteenPieceBlock.Types.SEBECUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/sebecus/stage_0.png"));
         type.put(FossilSkeletonFifteenPieceBlock.Types.BIARMOSUCHUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/biarmosuchus/stage_0.png"));
         type.put(FossilSkeletonFifteenPieceBlock.Types.ESTEMMENOSUCHUSURALENSIS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/estemmenosuchusuralensis/stage_0.png"));
+        type.put(FossilSkeletonFifteenPieceBlock.Types.THYLACOSMILUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/thylacosmilus/stage_0.png"));
     });
     public static final Map<FossilSkeletonFifteenPieceBlock.Type, ResourceLocation> FRAME_BY_TYPE = Util.make(Maps.newHashMap(), (type) -> {
         type.put(FossilSkeletonFifteenPieceBlock.Types.WUERHOSAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/wuerhosaurus/frame.png"));
@@ -436,6 +439,7 @@ public class FossilSkeletonFifteenPieceRenderer implements BlockEntityRenderer<F
         type.put(FossilSkeletonFifteenPieceBlock.Types.SEBECUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/sebecus/frame.png"));
         type.put(FossilSkeletonFifteenPieceBlock.Types.BIARMOSUCHUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/biarmosuchus/frame.png"));
         type.put(FossilSkeletonFifteenPieceBlock.Types.ESTEMMENOSUCHUSURALENSIS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/estemmenosuchusuralensis/frame.png"));
+        type.put(FossilSkeletonFifteenPieceBlock.Types.THYLACOSMILUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/thylacosmilus/frame.png"));
     });
 
     public static Map<FossilSkeletonFifteenPieceBlock.Type, SkullModelBase> createFossilRenderers(EntityModelSet p_173662_) {
@@ -540,6 +544,7 @@ public class FossilSkeletonFifteenPieceRenderer implements BlockEntityRenderer<F
         builder.put(FossilSkeletonFifteenPieceBlock.Types.SEBECUS, new SebecusFossilModel(p_173662_.bakeLayer(ClientEvents.SEBECUS)));
         builder.put(FossilSkeletonFifteenPieceBlock.Types.BIARMOSUCHUS, new BiarmosuchusFossilModel(p_173662_.bakeLayer(ClientEvents.BIARMOSUCHUS)));
         builder.put(FossilSkeletonFifteenPieceBlock.Types.ESTEMMENOSUCHUSURALENSIS, new EstemmenosuchusuralensisFossilModel(p_173662_.bakeLayer(ClientEvents.ESTEMMENOSUCHUSURALENSIS)));
+        builder.put(FossilSkeletonFifteenPieceBlock.Types.THYLACOSMILUS, new ThylacosmilusFossilModel(p_173662_.bakeLayer(ClientEvents.THYLACOSMILUS)));
         return builder.build();
     }
 
@@ -645,6 +650,7 @@ public class FossilSkeletonFifteenPieceRenderer implements BlockEntityRenderer<F
         builder.put(FossilSkeletonFifteenPieceBlock.Types.SEBECUS, new SebecusFossilFrameModel(p_173662_.bakeLayer(ClientEvents.SEBECUS_FRAME)));
         builder.put(FossilSkeletonFifteenPieceBlock.Types.BIARMOSUCHUS, new BiarmosuchusFossilFrameModel(p_173662_.bakeLayer(ClientEvents.BIARMOSUCHUS_FRAME)));
         builder.put(FossilSkeletonFifteenPieceBlock.Types.ESTEMMENOSUCHUSURALENSIS, new EstemmenosuchusuralensisFossilFrameModel(p_173662_.bakeLayer(ClientEvents.ESTEMMENOSUCHUSURALENSIS_FRAME)));
+        builder.put(FossilSkeletonFifteenPieceBlock.Types.THYLACOSMILUS, new ThylacosmilusFossilFrameModel(p_173662_.bakeLayer(ClientEvents.THYLACOSMILUS_FRAME)));
         return builder.build();
     }
 
@@ -1074,6 +1080,10 @@ public class FossilSkeletonFifteenPieceRenderer implements BlockEntityRenderer<F
             float scale = 0.87F;
             pose.scale(-scale, -scale, scale);
             pose.translate(0F, -0.35F, 0F);
+        } else if (FossilSkeletonFifteenPieceBlock$type == FossilSkeletonFifteenPieceBlock.Types.THYLACOSMILUS) {
+            float scale = 0.43F;
+            pose.scale(-scale, -scale, scale);
+            pose.translate(0F, 0.83F, 0F);
         } else {
             float scale = 1.0F;
             pose.scale(-scale, -scale, scale);
@@ -1286,6 +1296,8 @@ public class FossilSkeletonFifteenPieceRenderer implements BlockEntityRenderer<F
             resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/biarmosuchus/stage_" + fossilLevel + ".png");
         } else if (type == FossilSkeletonFifteenPieceBlock.Types.ESTEMMENOSUCHUSURALENSIS) {
             resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/estemmenosuchusuralensis/stage_" + fossilLevel + ".png");
+        } else if (type == FossilSkeletonFifteenPieceBlock.Types.THYLACOSMILUS) {
+            resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/thylacosmilus/stage_" + fossilLevel + ".png");
         } else resourceLocation = SKIN_BY_TYPE.get(type);
         return RenderType.entityCutoutNoCullZOffset(resourceLocation);
 

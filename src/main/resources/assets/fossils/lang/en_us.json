@@ -427,6 +427,7 @@
 	"block.fossils.kostensuchus_fossil": "Kostensuchus Fossil",
 	"block.fossils.theosodon_fossil": "Theosodon Fossil",
 	"block.fossils.myrmecophaga_fossil": "Myrmecophaga Fossil",
+	"block.fossils.dynamosuchus_fossil": "Dynamosuchus Fossil",
 	"block.fossils.poposaurus_fossil": "Poposaurus Fossil",
 	"block.fossils.nigerpeton_fossil": "Nigerpeton Fossil",
 	"block.fossils.stahleckeria_fossil": "Stahleckeria Fossil",
@@ -532,6 +533,7 @@
 	"block.fossils.lavocatisaurus_fossil": "Lavocatisaurus Fossil",
 	"block.fossils.sebecus_fossil": "Sebecus Fossil",
 	"block.fossils.biarmosuchus_fossil": "Biarmosuchus Fossil",
+	"block.fossils.thylacosmilus_fossil": "Thylacosmilus Fossil",
 	"block.fossils.bisonlatifrons_fossil": "Bison latifrons Fossil",
 	"block.fossils.utahraptor_fossil": "Utahraptor Fossil",
 	"block.fossils.shonisaurus_fossil": "Shonisaurus Fossil",
@@ -1986,5 +1988,9 @@
 	"advancements.fossils.biarmosuchus.title": "Crocodile from Bjarmia",
 	"advancements.fossils.biarmosuchus.description": "Complete a Biarmosuchus skeleton",
 	"advancements.fossils.estemmenosuchusuralensis.title": "Crowned Crocodile from the Urals",
-	"advancements.fossils.estemmenosuchusuralensis.description": "Complete an Estemmenosuchus uralensis skeleton"
+	"advancements.fossils.estemmenosuchusuralensis.description": "Complete an Estemmenosuchus uralensis skeleton",
+	"advancements.fossils.dynamosuchus.title": "Powerful Crocodile",
+	"advancements.fossils.dynamosuchus.description": "Complete a Dynamosuchus skeleton",
+	"advancements.fossils.thylacosmilus.title": "Pouched Knife",
+	"advancements.fossils.thylacosmilus.description": "Complete a Thylacosmilus skeleton"
 }
