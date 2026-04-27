@@ -16,5 +16,14 @@
 				"stream": true
 			}
 		]
+	},
+	"music_disc.duria_antiquior": {
+		"subtitle": "item.fossils.music_disc_duria_antiquior.desc",
+		"sounds": [
+			{
+				"name": "fossils:duria_antiquior",
+				"stream": true
+			}
+		]
 	}
 }

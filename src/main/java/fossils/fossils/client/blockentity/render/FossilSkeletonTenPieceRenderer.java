@@ -1005,9 +1005,9 @@ public class FossilSkeletonTenPieceRenderer implements BlockEntityRenderer<Fossi
             pose.scale(-scale, -scale, scale);
             pose.translate(0F, -0.09F, 0F);
         } else if (FossilSkeletonTenPieceBlock$type == FossilSkeletonTenPieceBlock.Types.PIATNITZKYSAURUS) {
-            float scale = 0.7F;
+            float scale = 0.43F;
             pose.scale(-scale, -scale, scale);
-            pose.translate(0F, -0.05F, 0F);
+            pose.translate(0F, 0.84F, 0F);
         } else if (FossilSkeletonTenPieceBlock$type == FossilSkeletonTenPieceBlock.Types.DEARC) {
             float scale = 0.35F;
             pose.scale(-scale, -scale, scale);

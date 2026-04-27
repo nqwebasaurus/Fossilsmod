@@ -61,6 +61,7 @@ public class FossilMod {
 		if (event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
 			event.accept(FossilItems.MUSIC_DISC_DRIFT_AND_FALL::get);
 			event.accept(FossilItems.MUSIC_DISC_EURYPTERIDS_LAMENT::get);
+			event.accept(FossilItems.MUSIC_DISC_DURIA_ANTIQUIOR::get);
 		}
 	}
 }

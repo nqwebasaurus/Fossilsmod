@@ -635,4 +635,5 @@ public class FossilItems {
 	
 	public static final RegistryObject<Item> MUSIC_DISC_DRIFT_AND_FALL = REGISTER.register("music_disc_drift_and_fall", () -> new RecordItem(13, FossilSoundEvents.MUSIC_DISC_DRIFT_AND_FALL::get, new Item.Properties().stacksTo(1).rarity(Rarity.RARE), 3280));
 	public static final RegistryObject<Item> MUSIC_DISC_EURYPTERIDS_LAMENT = REGISTER.register("music_disc_eurypterids_lament", () -> new RecordItem(5, FossilSoundEvents.MUSIC_DISC_EURYPTERIDS_LAMENT::get, new Item.Properties().stacksTo(1).rarity(Rarity.RARE), 5300));
+	public static final RegistryObject<Item> MUSIC_DISC_DURIA_ANTIQUIOR = REGISTER.register("music_disc_duria_antiquior", () -> new RecordItem(5, FossilSoundEvents.MUSIC_DISC_DURIA_ANTIQUIOR::get, new Item.Properties().stacksTo(1).rarity(Rarity.RARE), 2680));
 }

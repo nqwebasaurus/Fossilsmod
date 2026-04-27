@@ -12,4 +12,5 @@ public class FossilSoundEvents {
 	
 	public static final RegistryObject<SoundEvent> MUSIC_DISC_DRIFT_AND_FALL = REGISTER.register("music_disc_drift_and_fall", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation(FossilMod.MOD_ID, "music_disc.drift_and_fall")));
 	public static final RegistryObject<SoundEvent> MUSIC_DISC_EURYPTERIDS_LAMENT = REGISTER.register("music_disceurypterids_lament", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation(FossilMod.MOD_ID, "music_disc.eurypterids_lament")));
+	public static final RegistryObject<SoundEvent> MUSIC_DISC_DURIA_ANTIQUIOR = REGISTER.register("music_disc_duria_antiquior", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation(FossilMod.MOD_ID, "music_disc.duria_antiquior")));
 }
