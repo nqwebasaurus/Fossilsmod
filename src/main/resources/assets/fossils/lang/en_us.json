@@ -428,6 +428,7 @@
 	"block.fossils.theosodon_fossil": "Theosodon Fossil",
 	"block.fossils.myrmecophaga_fossil": "Myrmecophaga Fossil",
 	"block.fossils.dynamosuchus_fossil": "Dynamosuchus Fossil",
+	"block.fossils.nesodon_fossil": "Nesodon Fossil",
 	"block.fossils.poposaurus_fossil": "Poposaurus Fossil",
 	"block.fossils.nigerpeton_fossil": "Nigerpeton Fossil",
 	"block.fossils.stahleckeria_fossil": "Stahleckeria Fossil",
@@ -534,6 +535,7 @@
 	"block.fossils.sebecus_fossil": "Sebecus Fossil",
 	"block.fossils.biarmosuchus_fossil": "Biarmosuchus Fossil",
 	"block.fossils.thylacosmilus_fossil": "Thylacosmilus Fossil",
+	"block.fossils.panochthus_fossil": "Panochthus Fossil",
 	"block.fossils.bisonlatifrons_fossil": "Bison latifrons Fossil",
 	"block.fossils.utahraptor_fossil": "Utahraptor Fossil",
 	"block.fossils.shonisaurus_fossil": "Shonisaurus Fossil",
@@ -1131,6 +1133,10 @@
 	"advancements.fossils.threskiornithidae.description": "Threskiornithidae",
 	"advancements.fossils.litopterna.title": "We were trunked once",
 	"advancements.fossils.litopterna.description": "Litopterna",
+	"advancements.fossils.notoungulata.title": "Where artiodactyls didn't tread",
+	"advancements.fossils.notoungulata.description": "Litopterna",
+	"advancements.fossils.toxodontia.title": "South American Cattle",
+	"advancements.fossils.toxodontia.description": "Toxodontia",
 
 
 	"advancements.fossils.pelecanimimus.title": "Pelican Mimic",
@@ -1994,5 +2000,9 @@
 	"advancements.fossils.dynamosuchus.title": "Powerful Crocodile",
 	"advancements.fossils.dynamosuchus.description": "Complete a Dynamosuchus skeleton",
 	"advancements.fossils.thylacosmilus.title": "Pouched Knife",
-	"advancements.fossils.thylacosmilus.description": "Complete a Thylacosmilus skeleton"
+	"advancements.fossils.thylacosmilus.description": "Complete a Thylacosmilus skeleton",
+	"advancements.fossils.nesodon.title": "Island Tooth",
+	"advancements.fossils.nesodon.description": "Complete a Nesodon skeleton",
+	"advancements.fossils.panochthus.title": "All Ground",
+	"advancements.fossils.panochthus.description": "Complete a Panochthus skeleton"
 }
