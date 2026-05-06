@@ -100,6 +100,9 @@ public class FossilItem extends BlockItem {
 		if (stack.getItem() == FossilItems.MYRMECOPHAGA.get()) {
 			tooltip.add(Component.translatable("Giant Anteater"));
 		}
+		if (stack.getItem() == FossilItems.TAPIRUSPINCHAQUE.get()) {
+			tooltip.add(Component.translatable("Mountain Tapir"));
+		}
 	}
 	
 }

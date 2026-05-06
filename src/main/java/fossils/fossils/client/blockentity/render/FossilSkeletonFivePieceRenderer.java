@@ -167,6 +167,8 @@ import fossils.fossils.client.blockentity.model.parmastega.ParmastegaFossilFrame
 import fossils.fossils.client.blockentity.model.parmastega.ParmastegaFossilModel;
 import fossils.fossils.client.blockentity.model.proburnetia.ProburnetiaFossilFrameModel;
 import fossils.fossils.client.blockentity.model.proburnetia.ProburnetiaFossilModel;
+import fossils.fossils.client.blockentity.model.procolophon.ProcolophonFossilFrameModel;
+import fossils.fossils.client.blockentity.model.procolophon.ProcolophonFossilModel;
 import fossils.fossils.client.blockentity.model.proganochelys.ProganochelysFossilFrameModel;
 import fossils.fossils.client.blockentity.model.proganochelys.ProganochelysFossilModel;
 import fossils.fossils.client.blockentity.model.proterogyrinus.ProterogyrinusFossilFrameModel;
@@ -370,6 +372,7 @@ public class FossilSkeletonFivePieceRenderer implements BlockEntityRenderer<Foss
 		type.put(FossilSkeletonFivePieceBlock.Types.PROTEROGYRINUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/proterogyrinus/stage_0.png"));
 		type.put(FossilSkeletonFivePieceBlock.Types.CYCNORHAMPHUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/cycnorhamphus/stage_0.png"));
 		type.put(FossilSkeletonFivePieceBlock.Types.XENICIBIS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/xenicibis/stage_0.png"));
+		type.put(PROCOLOPHON, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/procolophon/stage_0.png"));
 	});
 	public static final Map<FossilSkeletonFivePieceBlock.Type, ResourceLocation> FRAME_BY_TYPE = Util.make(Maps.newHashMap(), (type) -> {
 		type.put(EUNOTOSAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/eunotosaurus/frame.png"));
@@ -485,6 +488,7 @@ public class FossilSkeletonFivePieceRenderer implements BlockEntityRenderer<Foss
 		type.put(FossilSkeletonFivePieceBlock.Types.PROTEROGYRINUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/proterogyrinus/frame.png"));
 		type.put(CYCNORHAMPHUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/cycnorhamphus/frame.png"));
 		type.put(XENICIBIS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/xenicibis/frame.png"));
+		type.put(PROCOLOPHON, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/procolophon/frame.png"));
 	});
 	public static Map<FossilSkeletonFivePieceBlock.Type, SkullModelBase> createFossilRenderers(EntityModelSet p_173662_) {
 		ImmutableMap.Builder<FossilSkeletonFivePieceBlock.Type, SkullModelBase> builder = ImmutableMap.builder();
@@ -601,6 +605,7 @@ public class FossilSkeletonFivePieceRenderer implements BlockEntityRenderer<Foss
 		builder.put(FossilSkeletonFivePieceBlock.Types.PROTEROGYRINUS, new ProterogyrinusFossilModel(p_173662_.bakeLayer(ClientEvents.PROTEROGYRINUS)));
 		builder.put(CYCNORHAMPHUS, new CycnorhamphusFossilModel(p_173662_.bakeLayer(ClientEvents.CYCNORHAMPHUS)));
 		builder.put(XENICIBIS, new XenicibisFossilModel(p_173662_.bakeLayer(ClientEvents.XENICIBIS)));
+		builder.put(PROCOLOPHON, new ProcolophonFossilModel(p_173662_.bakeLayer(ClientEvents.PROCOLOPHON)));
 		return builder.build();
 	}
 
@@ -719,6 +724,7 @@ public class FossilSkeletonFivePieceRenderer implements BlockEntityRenderer<Foss
 		builder.put(FossilSkeletonFivePieceBlock.Types.PROTEROGYRINUS, new ProterogyrinusFossilFrameModel(p_173662_.bakeLayer(ClientEvents.PROTEROGYRINUS_FRAME)));
 		builder.put(CYCNORHAMPHUS, new CycnorhamphusFossilFrameModel(p_173662_.bakeLayer(ClientEvents.CYCNORHAMPHUS_FRAME)));
 		builder.put(XENICIBIS, new XenicibisFossilFrameModel(p_173662_.bakeLayer(ClientEvents.XENICIBIS_FRAME)));
+		builder.put(PROCOLOPHON, new ProcolophonFossilFrameModel(p_173662_.bakeLayer(ClientEvents.PROCOLOPHON_FRAME)));
 		return builder.build();
 	}
 
@@ -1318,6 +1324,12 @@ public class FossilSkeletonFivePieceRenderer implements BlockEntityRenderer<Foss
 				pose.scale(-scale, -scale, scale);
 				pose.translate(0F, 3.8F, 0F);
 			}
+
+			case PROCOLOPHON -> {
+				scale = 0.1F;
+				pose.scale(-scale, -scale, scale);
+				pose.translate(0F, 8.48F, 0F);
+			}
 			default -> throw new IllegalStateException("Unexpected value: " + type);
         }
 		VertexConsumer vertexconsumer = p_173668_.getBuffer(p_173671_);
@@ -1554,6 +1566,8 @@ public class FossilSkeletonFivePieceRenderer implements BlockEntityRenderer<Foss
 			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/cycnorhamphus/stage_" + fossilLevel + ".png");
 		} else if (type == XENICIBIS) {
 			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/xenicibis/stage_" + fossilLevel + ".png");
+		} else if (type == PROCOLOPHON) {
+			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/procolophon/stage_" + fossilLevel + ".png");
 		} else resourceLocation = SKIN_BY_TYPE.get(type);
 		return RenderType.entityCutoutNoCullZOffset(resourceLocation);
 	}

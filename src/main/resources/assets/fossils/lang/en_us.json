@@ -286,6 +286,7 @@
 	"block.fossils.proterogyrinus_fossil": "Proterogyrinus Fossil",
 	"block.fossils.cycnorhamphus_fossil": "Cycnorhamphus Fossil",
 	"block.fossils.xenicibis_fossil": "Xenicibis Fossil",
+	"block.fossils.procolophon_fossil": "Procolophon Fossil",
 	"block.fossils.kentrosaurus_fossil": "Kentrosaurus Fossil",
 	"block.fossils.endothiodonbathystoma_fossil": "Endothiodon bathystoma Fossil",
 	"block.fossils.dimetrodongrandis_fossil": "Dimetrodon grandis Fossil",
@@ -429,6 +430,7 @@
 	"block.fossils.myrmecophaga_fossil": "Myrmecophaga Fossil",
 	"block.fossils.dynamosuchus_fossil": "Dynamosuchus Fossil",
 	"block.fossils.nesodon_fossil": "Nesodon Fossil",
+	"block.fossils.tapiruspinchaque_fossil": "Tapirus pinchaque Fossil",
 	"block.fossils.poposaurus_fossil": "Poposaurus Fossil",
 	"block.fossils.nigerpeton_fossil": "Nigerpeton Fossil",
 	"block.fossils.stahleckeria_fossil": "Stahleckeria Fossil",
@@ -1137,6 +1139,10 @@
 	"advancements.fossils.notoungulata.description": "Litopterna",
 	"advancements.fossils.toxodontia.title": "South American Cattle",
 	"advancements.fossils.toxodontia.description": "Toxodontia",
+	"advancements.fossils.procolophonoidea.title": "Post exinction smallification",
+	"advancements.fossils.procolophonoidea.description": "Procolophonoidea",
+	"advancements.fossils.tapiroidea.title": "Pocket Elephants",
+	"advancements.fossils.tapiroidea.description": "Tapiroidea",
 
 
 	"advancements.fossils.pelecanimimus.title": "Pelican Mimic",
@@ -2004,5 +2010,9 @@
 	"advancements.fossils.nesodon.title": "Island Tooth",
 	"advancements.fossils.nesodon.description": "Complete a Nesodon skeleton",
 	"advancements.fossils.panochthus.title": "All Ground",
-	"advancements.fossils.panochthus.description": "Complete a Panochthus skeleton"
+	"advancements.fossils.panochthus.description": "Complete a Panochthus skeleton",
+	"advancements.fossils.procolophon.title": "Before the Peak",
+	"advancements.fossils.procolophon.description": "Complete a Procolophon skeleton",
+	"advancements.fossils.tapiruspinchaque.title": "Mountain Tapir",
+	"advancements.fossils.tapiruspinchaque.description": "Complete a Tapirus pinchaque skeleton"
 }

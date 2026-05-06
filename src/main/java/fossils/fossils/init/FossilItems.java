@@ -290,6 +290,7 @@ public class FossilItems {
 	public static final RegistryObject<FossilItem> PROTEROGYRINUS = SKELETON_REGISTER.register("proterogyrinus_fossil", () -> new FossilItem(FossilBlocks.PROTEROGYRINUS.get(), new Item.Properties().rarity(FossilRarities.FIVE_PIECE_FOSSIL)));
 	public static final RegistryObject<FossilItem> CYCNORHAMPHUS = SKELETON_REGISTER.register("cycnorhamphus_fossil", () -> new FossilItem(FossilBlocks.CYCNORHAMPHUS.get(), new Item.Properties().rarity(FossilRarities.FIVE_PIECE_FOSSIL)));
 	public static final RegistryObject<FossilItem> XENICIBIS = SKELETON_REGISTER.register("xenicibis_fossil", () -> new FossilItem(FossilBlocks.XENICIBIS.get(), new Item.Properties().rarity(FossilRarities.FIVE_PIECE_FOSSIL)));
+	public static final RegistryObject<FossilItem> PROCOLOPHON = SKELETON_REGISTER.register("procolophon_fossil", () -> new FossilItem(FossilBlocks.PROCOLOPHON.get(), new Item.Properties().rarity(FossilRarities.FIVE_PIECE_FOSSIL)));
 
 	//Ten
 	public static final RegistryObject<FossilItem> KENTROSAURUS = SKELETON_REGISTER.register("kentrosaurus_fossil", () -> new FossilItem(FossilBlocks.KENTROSAURUS.get(), new Item.Properties().rarity(FossilRarities.TEN_PIECE_FOSSIL)));
@@ -439,6 +440,7 @@ public class FossilItems {
 	public static final RegistryObject<FossilItem> MYRMECOPHAGA = SKELETON_REGISTER.register("myrmecophaga_fossil", () -> new FossilItem(FossilBlocks.MYRMECOPHAGA.get(), new Item.Properties().rarity(FossilRarities.TEN_PIECE_FOSSIL)));
 	public static final RegistryObject<FossilItem> DYNAMOSUCHUS = SKELETON_REGISTER.register("dynamosuchus_fossil", () -> new FossilItem(FossilBlocks.DYNAMOSUCHUS.get(), new Item.Properties().rarity(FossilRarities.TEN_PIECE_FOSSIL)));
 	public static final RegistryObject<FossilItem> NESODON = SKELETON_REGISTER.register("nesodon_fossil", () -> new FossilItem(FossilBlocks.NESODON.get(), new Item.Properties().rarity(FossilRarities.TEN_PIECE_FOSSIL)));
+	public static final RegistryObject<FossilItem> TAPIRUSPINCHAQUE = SKELETON_REGISTER.register("tapiruspinchaque_fossil", () -> new FossilItem(FossilBlocks.TAPIRUSPINCHAQUE.get(), new Item.Properties().rarity(FossilRarities.TEN_PIECE_FOSSIL)));
 
 
 	//Fifteen
