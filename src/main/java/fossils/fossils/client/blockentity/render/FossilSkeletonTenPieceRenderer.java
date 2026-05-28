@@ -23,6 +23,8 @@ import fossils.fossils.client.blockentity.model.asiatyrannus.AsiatyrannusFossilF
 import fossils.fossils.client.blockentity.model.asiatyrannus.AsiatyrannusFossilModel;
 import fossils.fossils.client.blockentity.model.atopodentatus.AtopodentatusFossilFrameModel;
 import fossils.fossils.client.blockentity.model.atopodentatus.AtopodentatusFossilModel;
+import fossils.fossils.client.blockentity.model.attenborosaurus.AttenborosaurusFossilFrameModel;
+import fossils.fossils.client.blockentity.model.attenborosaurus.AttenborosaurusFossilModel;
 import fossils.fossils.client.blockentity.model.australopithecusafricanus.AustralopithecusafricanusFossilFrameModel;
 import fossils.fossils.client.blockentity.model.australopithecusafricanus.AustralopithecusafricanusFossilModel;
 import fossils.fossils.client.blockentity.model.australovenator.AustralovenatorFossilFrameModel;
@@ -93,6 +95,8 @@ import fossils.fossils.client.blockentity.model.einiosaurus.EiniosaurusFossilFra
 import fossils.fossils.client.blockentity.model.einiosaurus.EiniosaurusFossilModel;
 import fossils.fossils.client.blockentity.model.endothiodonbathystoma.EndothiodonbathystomaFossilFrameModel;
 import fossils.fossils.client.blockentity.model.endothiodonbathystoma.EndothiodonbathystomaFossilModel;
+import fossils.fossils.client.blockentity.model.ensidelphis.EnsidelphisFossilFrameModel;
+import fossils.fossils.client.blockentity.model.ensidelphis.EnsidelphisFossilModel;
 import fossils.fossils.client.blockentity.model.eorhynchochelys.EorhynchochelysFossilFrameModel;
 import fossils.fossils.client.blockentity.model.eorhynchochelys.EorhynchochelysFossilModel;
 import fossils.fossils.client.blockentity.model.eryops.EryopsFossilFrameModel;
@@ -277,6 +281,8 @@ import fossils.fossils.client.blockentity.model.struthiomimus.StruthiomimusFossi
 import fossils.fossils.client.blockentity.model.struthiomimus.StruthiomimusFossilModel;
 import fossils.fossils.client.blockentity.model.synthetoceras.SynthetocerasFossilFrameModel;
 import fossils.fossils.client.blockentity.model.synthetoceras.SynthetocerasFossilModel;
+import fossils.fossils.client.blockentity.model.talenkauen.TalenkauenFossilFrameModel;
+import fossils.fossils.client.blockentity.model.talenkauen.TalenkauenFossilModel;
 import fossils.fossils.client.blockentity.model.tanycolagreus.TanycolagreusFossilFrameModel;
 import fossils.fossils.client.blockentity.model.tanycolagreus.TanycolagreusFossilModel;
 import fossils.fossils.client.blockentity.model.tapiruspinchaque.TapiruspinchaqueFossilFrameModel;
@@ -477,6 +483,9 @@ public class FossilSkeletonTenPieceRenderer implements BlockEntityRenderer<Fossi
         type.put(FossilSkeletonTenPieceBlock.Types.DYNAMOSUCHUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/dynamosuchus/stage_0.png"));
         type.put(FossilSkeletonTenPieceBlock.Types.NESODON, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/nesodon/stage_0.png"));
         type.put(FossilSkeletonTenPieceBlock.Types.TAPIRUSPINCHAQUE, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/tapiruspinchaque/stage_0.png"));
+        type.put(FossilSkeletonTenPieceBlock.Types.ATTENBOROSAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/attenborosaurus/stage_0.png"));
+        type.put(FossilSkeletonTenPieceBlock.Types.ENSIDELPHIS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/ensidelphis/stage_0.png"));
+        type.put(FossilSkeletonTenPieceBlock.Types.TALENKAUEN, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/talenkauen/stage_0.png"));
 
     });
     public static final Map<FossilSkeletonTenPieceBlock.Type, ResourceLocation> FRAME_BY_TYPE = Util.make(Maps.newHashMap(), (type) -> {
@@ -628,6 +637,9 @@ public class FossilSkeletonTenPieceRenderer implements BlockEntityRenderer<Fossi
         type.put(FossilSkeletonTenPieceBlock.Types.DYNAMOSUCHUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/dynamosuchus/frame.png"));
         type.put(FossilSkeletonTenPieceBlock.Types.NESODON, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/nesodon/frame.png"));
         type.put(FossilSkeletonTenPieceBlock.Types.TAPIRUSPINCHAQUE, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/tapiruspinchaque/frame.png"));
+        type.put(FossilSkeletonTenPieceBlock.Types.ATTENBOROSAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/attenborosaurus/frame.png"));
+        type.put(FossilSkeletonTenPieceBlock.Types.ENSIDELPHIS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/ensidelphis/frame.png"));
+        type.put(FossilSkeletonTenPieceBlock.Types.TALENKAUEN, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/talenkauen/frame.png"));
 
 
     });
@@ -782,6 +794,9 @@ public class FossilSkeletonTenPieceRenderer implements BlockEntityRenderer<Fossi
         builder.put(FossilSkeletonTenPieceBlock.Types.DYNAMOSUCHUS, new DynamosuchusFossilModel(p_173662_.bakeLayer(ClientEvents.DYNAMOSUCHUS)));
         builder.put(FossilSkeletonTenPieceBlock.Types.NESODON, new NesodonFossilModel(p_173662_.bakeLayer(ClientEvents.NESODON)));
         builder.put(FossilSkeletonTenPieceBlock.Types.TAPIRUSPINCHAQUE, new TapiruspinchaqueFossilModel(p_173662_.bakeLayer(ClientEvents.TAPIRUSPINCHAQUE)));
+        builder.put(FossilSkeletonTenPieceBlock.Types.ATTENBOROSAURUS, new AttenborosaurusFossilModel(p_173662_.bakeLayer(ClientEvents.ATTENBOROSAURUS)));
+        builder.put(FossilSkeletonTenPieceBlock.Types.ENSIDELPHIS, new EnsidelphisFossilModel(p_173662_.bakeLayer(ClientEvents.ENSIDELPHIS)));
+        builder.put(FossilSkeletonTenPieceBlock.Types.TALENKAUEN, new TalenkauenFossilModel(p_173662_.bakeLayer(ClientEvents.TALENKAUEN)));
         return builder.build();
     }
 
@@ -935,6 +950,9 @@ public class FossilSkeletonTenPieceRenderer implements BlockEntityRenderer<Fossi
         builder.put(FossilSkeletonTenPieceBlock.Types.DYNAMOSUCHUS, new DynamosuchusFossilFrameModel(p_173662_.bakeLayer(ClientEvents.DYNAMOSUCHUS_FRAME)));
         builder.put(FossilSkeletonTenPieceBlock.Types.NESODON, new NesodonFossilFrameModel(p_173662_.bakeLayer(ClientEvents.NESODON_FRAME)));
         builder.put(FossilSkeletonTenPieceBlock.Types.TAPIRUSPINCHAQUE, new TapiruspinchaqueFossilFrameModel(p_173662_.bakeLayer(ClientEvents.TAPIRUSPINCHAQUE_FRAME)));
+        builder.put(FossilSkeletonTenPieceBlock.Types.ATTENBOROSAURUS, new AttenborosaurusFossilFrameModel(p_173662_.bakeLayer(ClientEvents.ATTENBOROSAURUS_FRAME)));
+        builder.put(FossilSkeletonTenPieceBlock.Types.ENSIDELPHIS, new EnsidelphisFossilFrameModel(p_173662_.bakeLayer(ClientEvents.ENSIDELPHIS_FRAME)));
+        builder.put(FossilSkeletonTenPieceBlock.Types.TALENKAUEN, new TalenkauenFossilFrameModel(p_173662_.bakeLayer(ClientEvents.TALENKAUEN_FRAME)));
         return builder.build();
     }
 
@@ -1556,6 +1574,18 @@ public class FossilSkeletonTenPieceRenderer implements BlockEntityRenderer<Fossi
             float scale = 0.42F;
             pose.scale(-scale, -scale, scale);
             pose.translate(0F, 0.88F, 0F);
+        } else if (FossilSkeletonTenPieceBlock$type == FossilSkeletonTenPieceBlock.Types.ATTENBOROSAURUS) {
+            float scale = 0.4F;
+            pose.scale(-scale, -scale, scale);
+            pose.translate(0F, 0.48F, 0F);
+        } else if (FossilSkeletonTenPieceBlock$type == FossilSkeletonTenPieceBlock.Types.ENSIDELPHIS) {
+            float scale = 0.49F;
+            pose.scale(-scale, -scale, scale);
+            pose.translate(0F, 0.48F, 0F);
+        } else if (FossilSkeletonTenPieceBlock$type == FossilSkeletonTenPieceBlock.Types.TALENKAUEN) {
+            float scale = 0.6F;
+            pose.scale(-scale, -scale, scale);
+            pose.translate(0F, 0.18F, 0F);
         } else {
             float scale = 1.0F;
             pose.scale(-scale, -scale, scale);
@@ -1864,6 +1894,12 @@ public class FossilSkeletonTenPieceRenderer implements BlockEntityRenderer<Fossi
             resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/nesodon/stage_" + fossilLevel + ".png");
         } else if (type == FossilSkeletonTenPieceBlock.Types.TAPIRUSPINCHAQUE) {
             resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/tapiruspinchaque/stage_" + fossilLevel + ".png");
+        } else if (type == FossilSkeletonTenPieceBlock.Types.ATTENBOROSAURUS) {
+            resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/attenborosaurus/stage_" + fossilLevel + ".png");
+        } else if (type == FossilSkeletonTenPieceBlock.Types.ENSIDELPHIS) {
+            resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/ensidelphis/stage_" + fossilLevel + ".png");
+        } else if (type == FossilSkeletonTenPieceBlock.Types.TALENKAUEN) {
+            resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/talenkauen/stage_" + fossilLevel + ".png");
         } else resourceLocation = SKIN_BY_TYPE.get(type);
         return RenderType.entityCutoutNoCullZOffset(resourceLocation);
     }

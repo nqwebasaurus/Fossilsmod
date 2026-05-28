@@ -1,0 +1,54 @@
+{
+  "parent": "fossils:fossils/general/lepidosauromorpha",
+  "criteria": {
+    "finish_taytalura": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:taytalura_fossil"
+                ],
+                "state": {
+                  "fossil_level": "4"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:taytalura_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.taytalura.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:taytalura_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.taytalura.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_taytalura"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

@@ -103,6 +103,13 @@ public class FossilItem extends BlockItem {
 		if (stack.getItem() == FossilItems.TAPIRUSPINCHAQUE.get()) {
 			tooltip.add(Component.translatable("Mountain Tapir"));
 		}
+		if (stack.getItem() == FossilItems.AGAPORNIS.get()) {
+			tooltip.add(Component.translatable("Lovebird (Agapornis attenboroughi)" +
+					"Made in honor of Sir David Attenborough's 100th birthday, 8 May 2026"));
+		}
+		if (stack.getItem() == FossilItems.ATTENBOROSAURUS.get()) {
+			tooltip.add(Component.translatable("Made in honor of Sir David Attenborough's 100th birthday, 8 May 2026"));
+		}
 	}
 	
 }

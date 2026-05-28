@@ -1,0 +1,54 @@
+{
+  "parent": "fossils:fossils/general/platanistoidea",
+  "criteria": {
+    "finish_ensidelphis": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:ensidelphis_fossil"
+                ],
+                "state": {
+                  "fossil_level": "9"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:ensidelphis_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.ensidelphis.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:ensidelphis_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.ensidelphis.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_ensidelphis"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

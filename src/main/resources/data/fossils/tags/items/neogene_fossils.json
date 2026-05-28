@@ -35,6 +35,9 @@
 		"fossils:myrmecophaga_fossil",
 		"fossils:theosodon_fossil",
 		"fossils:thylacosmilus_fossil",
-		"fossils:nesodon_fossil"
+		"fossils:nesodon_fossil",
+		"fossils:agapornis_fossil",
+		"fossils:necrolestes_fossil",
+		"fossils:ensidelphis_fossil"
 	]
 }

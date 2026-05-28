@@ -1,0 +1,54 @@
+{
+  "parent": "fossils:fossils/general/psittaculidae",
+  "criteria": {
+    "finish_agapornis": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:agapornis_fossil"
+                ],
+                "state": {
+                  "fossil_level": "4"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:agapornis_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.agapornis.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:agapornis_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.agapornis.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_agapornis"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

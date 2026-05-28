@@ -13,6 +13,8 @@ import fossils.fossils.client.blockentity.model.acanthostega.AcanthostegaFossilF
 import fossils.fossils.client.blockentity.model.acanthostega.AcanthostegaFossilModel;
 import fossils.fossils.client.blockentity.model.acanthostomatops.AcanthostomatopsFossilFrameModel;
 import fossils.fossils.client.blockentity.model.acanthostomatops.AcanthostomatopsFossilModel;
+import fossils.fossils.client.blockentity.model.agapornis.AgapornisFossilFrameModel;
+import fossils.fossils.client.blockentity.model.agapornis.AgapornisFossilModel;
 import fossils.fossils.client.blockentity.model.alopecognathus.AlopecognathusFossilFrameModel;
 import fossils.fossils.client.blockentity.model.alopecognathus.AlopecognathusFossilModel;
 import fossils.fossils.client.blockentity.model.anatosuchus.AnatosuchusFossilFrameModel;
@@ -163,6 +165,8 @@ import fossils.fossils.client.blockentity.model.melosaurus.MelosaurusFossilFrame
 import fossils.fossils.client.blockentity.model.melosaurus.MelosaurusFossilModel;
 import fossils.fossils.client.blockentity.model.mixosaurus.MixosaurusFossilFrameModel;
 import fossils.fossils.client.blockentity.model.mixosaurus.MixosaurusFossilModel;
+import fossils.fossils.client.blockentity.model.necrolestes.NecrolestesFossilFrameModel;
+import fossils.fossils.client.blockentity.model.necrolestes.NecrolestesFossilModel;
 import fossils.fossils.client.blockentity.model.parmastega.ParmastegaFossilFrameModel;
 import fossils.fossils.client.blockentity.model.parmastega.ParmastegaFossilModel;
 import fossils.fossils.client.blockentity.model.proburnetia.ProburnetiaFossilFrameModel;
@@ -215,6 +219,8 @@ import fossils.fossils.client.blockentity.model.tanystropheuslongobardicus.Tanys
 import fossils.fossils.client.blockentity.model.tanystropheuslongobardicus.TanystropheuslongobardicusFossilModel;
 import fossils.fossils.client.blockentity.model.tapejara.TapejaraFossilFrameModel;
 import fossils.fossils.client.blockentity.model.tapejara.TapejaraFossilModel;
+import fossils.fossils.client.blockentity.model.taytalura.TaytaluraFossilFrameModel;
+import fossils.fossils.client.blockentity.model.taytalura.TaytaluraFossilModel;
 import fossils.fossils.client.blockentity.model.teraterpeton.TeraterpetonFossilFrameModel;
 import fossils.fossils.client.blockentity.model.teraterpeton.TeraterpetonFossilModel;
 import fossils.fossils.client.blockentity.model.tetraceratops.TetraceratopsFossilFrameModel;
@@ -373,6 +379,9 @@ public class FossilSkeletonFivePieceRenderer implements BlockEntityRenderer<Foss
 		type.put(FossilSkeletonFivePieceBlock.Types.CYCNORHAMPHUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/cycnorhamphus/stage_0.png"));
 		type.put(FossilSkeletonFivePieceBlock.Types.XENICIBIS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/xenicibis/stage_0.png"));
 		type.put(PROCOLOPHON, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/procolophon/stage_0.png"));
+		type.put(AGAPORNIS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/agapornis/stage_0.png"));
+		type.put(TAYTALURA, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/taytalura/stage_0.png"));
+		type.put(NECROLESTES, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/necrolestes/stage_0.png"));
 	});
 	public static final Map<FossilSkeletonFivePieceBlock.Type, ResourceLocation> FRAME_BY_TYPE = Util.make(Maps.newHashMap(), (type) -> {
 		type.put(EUNOTOSAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/eunotosaurus/frame.png"));
@@ -489,6 +498,9 @@ public class FossilSkeletonFivePieceRenderer implements BlockEntityRenderer<Foss
 		type.put(CYCNORHAMPHUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/cycnorhamphus/frame.png"));
 		type.put(XENICIBIS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/xenicibis/frame.png"));
 		type.put(PROCOLOPHON, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/procolophon/frame.png"));
+		type.put(AGAPORNIS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/agapornis/frame.png"));
+		type.put(TAYTALURA, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/taytalura/frame.png"));
+		type.put(NECROLESTES, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/necrolestes/frame.png"));
 	});
 	public static Map<FossilSkeletonFivePieceBlock.Type, SkullModelBase> createFossilRenderers(EntityModelSet p_173662_) {
 		ImmutableMap.Builder<FossilSkeletonFivePieceBlock.Type, SkullModelBase> builder = ImmutableMap.builder();
@@ -606,6 +618,9 @@ public class FossilSkeletonFivePieceRenderer implements BlockEntityRenderer<Foss
 		builder.put(CYCNORHAMPHUS, new CycnorhamphusFossilModel(p_173662_.bakeLayer(ClientEvents.CYCNORHAMPHUS)));
 		builder.put(XENICIBIS, new XenicibisFossilModel(p_173662_.bakeLayer(ClientEvents.XENICIBIS)));
 		builder.put(PROCOLOPHON, new ProcolophonFossilModel(p_173662_.bakeLayer(ClientEvents.PROCOLOPHON)));
+		builder.put(AGAPORNIS, new AgapornisFossilModel(p_173662_.bakeLayer(ClientEvents.AGAPORNIS)));
+		builder.put(TAYTALURA, new TaytaluraFossilModel(p_173662_.bakeLayer(ClientEvents.TAYTALURA)));
+		builder.put(NECROLESTES, new NecrolestesFossilModel(p_173662_.bakeLayer(ClientEvents.NECROLESTES)));
 		return builder.build();
 	}
 
@@ -725,6 +740,9 @@ public class FossilSkeletonFivePieceRenderer implements BlockEntityRenderer<Foss
 		builder.put(CYCNORHAMPHUS, new CycnorhamphusFossilFrameModel(p_173662_.bakeLayer(ClientEvents.CYCNORHAMPHUS_FRAME)));
 		builder.put(XENICIBIS, new XenicibisFossilFrameModel(p_173662_.bakeLayer(ClientEvents.XENICIBIS_FRAME)));
 		builder.put(PROCOLOPHON, new ProcolophonFossilFrameModel(p_173662_.bakeLayer(ClientEvents.PROCOLOPHON_FRAME)));
+		builder.put(AGAPORNIS, new AgapornisFossilFrameModel(p_173662_.bakeLayer(ClientEvents.AGAPORNIS_FRAME)));
+		builder.put(TAYTALURA, new TaytaluraFossilFrameModel(p_173662_.bakeLayer(ClientEvents.TAYTALURA_FRAME)));
+		builder.put(NECROLESTES, new NecrolestesFossilFrameModel(p_173662_.bakeLayer(ClientEvents.NECROLESTES_FRAME)));
 		return builder.build();
 	}
 
@@ -1330,6 +1348,24 @@ public class FossilSkeletonFivePieceRenderer implements BlockEntityRenderer<Foss
 				pose.scale(-scale, -scale, scale);
 				pose.translate(0F, 8.48F, 0F);
 			}
+
+			case AGAPORNIS -> {
+				scale = 0.07F;
+				pose.scale(-scale, -scale, scale);
+				pose.translate(0F, 12.76F, 0F);
+			}
+
+			case TAYTALURA -> {
+				scale = 0.08F;
+				pose.scale(-scale, -scale, scale);
+				pose.translate(0F, 11F, 0F);
+			}
+
+			case NECROLESTES -> {
+				scale = 0.13F;
+				pose.scale(-scale, -scale, scale);
+				pose.translate(0F, 6.15F, 0F);
+			}
 			default -> throw new IllegalStateException("Unexpected value: " + type);
         }
 		VertexConsumer vertexconsumer = p_173668_.getBuffer(p_173671_);
@@ -1568,6 +1604,12 @@ public class FossilSkeletonFivePieceRenderer implements BlockEntityRenderer<Foss
 			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/xenicibis/stage_" + fossilLevel + ".png");
 		} else if (type == PROCOLOPHON) {
 			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/procolophon/stage_" + fossilLevel + ".png");
+		} else if (type == AGAPORNIS) {
+			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/agapornis/stage_" + fossilLevel + ".png");
+		} else if (type == TAYTALURA) {
+			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/taytalura/stage_" + fossilLevel + ".png");
+		} else if (type == NECROLESTES) {
+			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/necrolestes/stage_" + fossilLevel + ".png");
 		} else resourceLocation = SKIN_BY_TYPE.get(type);
 		return RenderType.entityCutoutNoCullZOffset(resourceLocation);
 	}

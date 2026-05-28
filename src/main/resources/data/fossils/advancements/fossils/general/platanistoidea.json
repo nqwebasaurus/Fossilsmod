@@ -1,0 +1,24 @@
+{
+  "parent": "fossils:fossils/general/odontoceti",
+  "criteria": {
+    "finish_platanistoidea": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "description": {
+      "translate": "advancements.fossils.platanistoidea.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:advancement_line"
+    },
+    "show_toast": false,
+    "title": {
+      "translate": "advancements.fossils.platanistoidea.title"
+    }
+  },
+  "sends_telemetry_event": true
+}
