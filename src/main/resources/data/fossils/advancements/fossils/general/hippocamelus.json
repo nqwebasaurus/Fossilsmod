@@ -1,0 +1,54 @@
+{
+  "parent": "fossils:fossils/general/capreolinae",
+  "criteria": {
+    "finish_hippocamelus": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:hippocamelus_fossil"
+                ],
+                "state": {
+                  "fossil_level": "9"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:hippocamelus_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.hippocamelus.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:hippocamelus_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.hippocamelus.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_hippocamelus"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

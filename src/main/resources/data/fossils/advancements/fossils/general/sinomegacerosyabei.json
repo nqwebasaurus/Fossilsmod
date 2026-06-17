@@ -1,5 +1,5 @@
 {
-  "parent": "fossils:fossils/general/cervidae",
+  "parent": "fossils:fossils/general/cervinae",
   "criteria": {
     "finish_sinomegacerosyabei": {
       "conditions": {

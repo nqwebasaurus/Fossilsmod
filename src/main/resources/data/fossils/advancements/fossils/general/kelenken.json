@@ -1,0 +1,57 @@
+{
+  "parent": "fossils:fossils/general/phorusrhacidae",
+  "criteria": {
+    "finish_kelenken": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:kelenken_fossil"
+                ],
+                "state": {
+                  "fossil_level": "19"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:kelenken_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.kelenken.description"
+    },
+    "frame": "challenge",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:kelenken_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.kelenken.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_kelenken"
+    ]
+  ],
+  "rewards": {
+    "experience": 500
+  },
+  "sends_telemetry_event": true
+}

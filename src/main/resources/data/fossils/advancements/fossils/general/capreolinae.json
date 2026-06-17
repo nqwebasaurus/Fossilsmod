@@ -1,0 +1,24 @@
+{
+  "parent": "fossils:fossils/general/cervidae",
+  "criteria": {
+    "finish_capreolinae": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "description": {
+      "translate": "advancements.fossils.capreolinae.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:advancement_line"
+    },
+    "show_toast": false,
+    "title": {
+      "translate": "advancements.fossils.capreolinae.title"
+    }
+  },
+  "sends_telemetry_event": true
+}

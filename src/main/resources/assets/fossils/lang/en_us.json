@@ -290,6 +290,7 @@
 	"block.fossils.agapornis_fossil": "Agapornis Fossil",
 	"block.fossils.taytalura_fossil": "Taytalura Fossil",
 	"block.fossils.necrolestes_fossil": "Necrolestes Fossil",
+	"block.fossils.waluchelys_fossil": "Waluchelys Fossil",
 	"block.fossils.kentrosaurus_fossil": "Kentrosaurus Fossil",
 	"block.fossils.endothiodonbathystoma_fossil": "Endothiodon bathystoma Fossil",
 	"block.fossils.dimetrodongrandis_fossil": "Dimetrodon grandis Fossil",
@@ -437,6 +438,8 @@
 	"block.fossils.attenborosaurus_fossil": "Attenborosaurus Fossil",
 	"block.fossils.ensidelphis_fossil": "Ensidelphis Fossil",
 	"block.fossils.talenkauen_fossil": "Talenkauen Fossil",
+	"block.fossils.exaeretodon_fossil": "Exaeretodon Fossil",
+	"block.fossils.hippocamelus_fossil": "Hippocamelus Fossil",
 	"block.fossils.poposaurus_fossil": "Poposaurus Fossil",
 	"block.fossils.nigerpeton_fossil": "Nigerpeton Fossil",
 	"block.fossils.stahleckeria_fossil": "Stahleckeria Fossil",
@@ -613,6 +616,7 @@
 	"block.fossils.titanichthys_fossil": "Titanichthys Fossil",
 	"block.fossils.torvosaurus_fossil": "Torvosaurus Fossil",
 	"block.fossils.cymbospondylus_fossil": "Cymbospondylus Fossil",
+	"block.fossils.kelenken_fossil": "Kelenken Fossil",
 	
 	"itemGroup.fossil_slab_tab": "Fossils Slabs",
 	"itemGroup.fossil_blocks_tab": "Fossils Blocks",
@@ -1157,6 +1161,10 @@
 	"advancements.fossils.psittaculidae.description": "Psittaculidae",
 	"advancements.fossils.platanistoidea.title": "Call me Pinocchio",
 	"advancements.fossils.platanistoidea.description": "Platanistoidea",
+	"advancements.fossils.capreolinae.title": "IT'S FUDGING ROE!!!",
+	"advancements.fossils.capreolinae.description": "Capreolinae",
+	"advancements.fossils.cervinae.title": "Fallowing my heart",
+	"advancements.fossils.cervinae.description": "Cervinae",
 
 
 	"advancements.fossils.pelecanimimus.title": "Pelican Mimic",
@@ -2040,5 +2048,13 @@
 	"advancements.fossils.ensidelphis.title": "Sword Dolphin",
 	"advancements.fossils.ensidelphis.description": "Complete an Ensidelphis skeleton",
 	"advancements.fossils.talenkauen.title": "Small Skull",
-	"advancements.fossils.talenkauen.description": "Complete a Talenkauen skeleton"
+	"advancements.fossils.talenkauen.description": "Complete a Talenkauen skeleton",
+	"advancements.fossils.waluchelys.title": "Turtle Turtle",
+	"advancements.fossils.waluchelys.description": "Complete a Waluchelys skeleton",
+	"advancements.fossils.kelenken.title": "Named After Kélenken, a mythological figure",
+	"advancements.fossils.kelenken.description": "Complete a Kelenken skeleton",
+	"advancements.fossils.exaeretodon.title": "Extraordinary Broad Tooth",
+	"advancements.fossils.exaeretodon.description": "Complete an Exaeretodon skeleton",
+	"advancements.fossils.hippocamelus.title": "Taruca",
+	"advancements.fossils.hippocamelus.description": "Complete a Hippocamelus skeleton"
 }

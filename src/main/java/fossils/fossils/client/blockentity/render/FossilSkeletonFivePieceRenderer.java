@@ -233,6 +233,8 @@ import fossils.fossils.client.blockentity.model.tockus.TockusFossilFrameModel;
 import fossils.fossils.client.blockentity.model.tockus.TockusFossilModel;
 import fossils.fossils.client.blockentity.model.torukjara.TorukjaraFossilFrameModel;
 import fossils.fossils.client.blockentity.model.torukjara.TorukjaraFossilModel;
+import fossils.fossils.client.blockentity.model.waluchelys.WaluchelysFossilFrameModel;
+import fossils.fossils.client.blockentity.model.waluchelys.WaluchelysFossilModel;
 import fossils.fossils.client.blockentity.model.xenicibis.XenicibisFossilFrameModel;
 import fossils.fossils.client.blockentity.model.xenicibis.XenicibisFossilModel;
 import fossils.fossils.client.blockentity.model.xinpusaurus.XinpusaurusFossilFrameModel;
@@ -382,6 +384,7 @@ public class FossilSkeletonFivePieceRenderer implements BlockEntityRenderer<Foss
 		type.put(AGAPORNIS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/agapornis/stage_0.png"));
 		type.put(TAYTALURA, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/taytalura/stage_0.png"));
 		type.put(NECROLESTES, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/necrolestes/stage_0.png"));
+		type.put(WALUCHELYS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/waluchelys/stage_0.png"));
 	});
 	public static final Map<FossilSkeletonFivePieceBlock.Type, ResourceLocation> FRAME_BY_TYPE = Util.make(Maps.newHashMap(), (type) -> {
 		type.put(EUNOTOSAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/eunotosaurus/frame.png"));
@@ -501,6 +504,7 @@ public class FossilSkeletonFivePieceRenderer implements BlockEntityRenderer<Foss
 		type.put(AGAPORNIS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/agapornis/frame.png"));
 		type.put(TAYTALURA, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/taytalura/frame.png"));
 		type.put(NECROLESTES, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/necrolestes/frame.png"));
+		type.put(WALUCHELYS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/waluchelys/frame.png"));
 	});
 	public static Map<FossilSkeletonFivePieceBlock.Type, SkullModelBase> createFossilRenderers(EntityModelSet p_173662_) {
 		ImmutableMap.Builder<FossilSkeletonFivePieceBlock.Type, SkullModelBase> builder = ImmutableMap.builder();
@@ -621,6 +625,7 @@ public class FossilSkeletonFivePieceRenderer implements BlockEntityRenderer<Foss
 		builder.put(AGAPORNIS, new AgapornisFossilModel(p_173662_.bakeLayer(ClientEvents.AGAPORNIS)));
 		builder.put(TAYTALURA, new TaytaluraFossilModel(p_173662_.bakeLayer(ClientEvents.TAYTALURA)));
 		builder.put(NECROLESTES, new NecrolestesFossilModel(p_173662_.bakeLayer(ClientEvents.NECROLESTES)));
+		builder.put(WALUCHELYS, new WaluchelysFossilModel(p_173662_.bakeLayer(ClientEvents.WALUCHELYS)));
 		return builder.build();
 	}
 
@@ -743,6 +748,7 @@ public class FossilSkeletonFivePieceRenderer implements BlockEntityRenderer<Foss
 		builder.put(AGAPORNIS, new AgapornisFossilFrameModel(p_173662_.bakeLayer(ClientEvents.AGAPORNIS_FRAME)));
 		builder.put(TAYTALURA, new TaytaluraFossilFrameModel(p_173662_.bakeLayer(ClientEvents.TAYTALURA_FRAME)));
 		builder.put(NECROLESTES, new NecrolestesFossilFrameModel(p_173662_.bakeLayer(ClientEvents.NECROLESTES_FRAME)));
+		builder.put(WALUCHELYS, new WaluchelysFossilFrameModel(p_173662_.bakeLayer(ClientEvents.WALUCHELYS_FRAME)));
 		return builder.build();
 	}
 
@@ -1366,6 +1372,12 @@ public class FossilSkeletonFivePieceRenderer implements BlockEntityRenderer<Foss
 				pose.scale(-scale, -scale, scale);
 				pose.translate(0F, 6.15F, 0F);
 			}
+
+			case WALUCHELYS -> {
+				scale = 0.2F;
+				pose.scale(-scale, -scale, scale);
+				pose.translate(0F, 3.5F, 0F);
+			}
 			default -> throw new IllegalStateException("Unexpected value: " + type);
         }
 		VertexConsumer vertexconsumer = p_173668_.getBuffer(p_173671_);
@@ -1610,6 +1622,8 @@ public class FossilSkeletonFivePieceRenderer implements BlockEntityRenderer<Foss
 			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/taytalura/stage_" + fossilLevel + ".png");
 		} else if (type == NECROLESTES) {
 			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/necrolestes/stage_" + fossilLevel + ".png");
+		} else if (type == WALUCHELYS) {
+			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/waluchelys/stage_" + fossilLevel + ".png");
 		} else resourceLocation = SKIN_BY_TYPE.get(type);
 		return RenderType.entityCutoutNoCullZOffset(resourceLocation);
 	}

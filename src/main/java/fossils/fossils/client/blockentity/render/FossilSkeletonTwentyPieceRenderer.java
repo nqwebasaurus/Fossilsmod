@@ -11,6 +11,8 @@ import fossils.fossils.FossilMod;
 import fossils.fossils.client.ClientEvents;
 import fossils.fossils.client.blockentity.model.Deinotherium.DeinotheriumFossilFrameModel;
 import fossils.fossils.client.blockentity.model.Deinotherium.DeinotheriumFossilModel;
+import fossils.fossils.client.blockentity.model.Kelenken.KelenkenFossilFrameModel;
+import fossils.fossils.client.blockentity.model.Kelenken.KelenkenFossilModel;
 import fossils.fossils.client.blockentity.model.acrocanthosaurus.AcrocanthosaurusFossilFrameModel;
 import fossils.fossils.client.blockentity.model.acrocanthosaurus.AcrocanthosaurusFossilModel;
 import fossils.fossils.client.blockentity.model.allosaurus.AllosaurusFossilFrameModel;
@@ -245,6 +247,7 @@ public class FossilSkeletonTwentyPieceRenderer implements BlockEntityRenderer<Fo
         type.put(FossilSkeletonTwentyPieceBlock.Types.TITANICHTHYS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/titanichthys/stage_0.png"));
         type.put(FossilSkeletonTwentyPieceBlock.Types.TORVOSAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/torvosaurus/stage_0.png"));
         type.put(FossilSkeletonTwentyPieceBlock.Types.CYMBOSPONDYLUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/cymbospondylus/stage_0.png"));
+        type.put(FossilSkeletonTwentyPieceBlock.Types.KELENKEN, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/kelenken/stage_0.png"));
     });
     public static final Map<FossilSkeletonTwentyPieceBlock.Type, ResourceLocation> FRAME_BY_TYPE = Util.make(Maps.newHashMap(), (type) -> {
         type.put(FossilSkeletonTwentyPieceBlock.Types.UTAHRAPTOR, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/utahraptor/frame.png"));
@@ -318,6 +321,7 @@ public class FossilSkeletonTwentyPieceRenderer implements BlockEntityRenderer<Fo
         type.put(FossilSkeletonTwentyPieceBlock.Types.TITANICHTHYS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/titanichthys/frame.png"));
         type.put(FossilSkeletonTwentyPieceBlock.Types.TORVOSAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/torvosaurus/frame.png"));
         type.put(FossilSkeletonTwentyPieceBlock.Types.CYMBOSPONDYLUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/cymbospondylus/frame.png"));
+        type.put(FossilSkeletonTwentyPieceBlock.Types.KELENKEN, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/kelenken/frame.png"));
 
     });
 
@@ -394,6 +398,7 @@ public class FossilSkeletonTwentyPieceRenderer implements BlockEntityRenderer<Fo
         builder.put(FossilSkeletonTwentyPieceBlock.Types.TITANICHTHYS, new TitanichthysFossilModel(p_173662_.bakeLayer(ClientEvents.TITANICHTHYS)));
         builder.put(FossilSkeletonTwentyPieceBlock.Types.TORVOSAURUS, new TorvosaurusFossilModel(p_173662_.bakeLayer(ClientEvents.TORVOSAURUS)));
         builder.put(FossilSkeletonTwentyPieceBlock.Types.CYMBOSPONDYLUS, new CymbospondylusFossilModel(p_173662_.bakeLayer(ClientEvents.CYMBOSPONDYLUS)));
+        builder.put(FossilSkeletonTwentyPieceBlock.Types.KELENKEN, new KelenkenFossilModel(p_173662_.bakeLayer(ClientEvents.KELENKEN)));
         return builder.build();
     }
 
@@ -470,6 +475,7 @@ public class FossilSkeletonTwentyPieceRenderer implements BlockEntityRenderer<Fo
         builder.put(FossilSkeletonTwentyPieceBlock.Types.TITANICHTHYS, new TitanichthysFossilFrameModel(p_173662_.bakeLayer(ClientEvents.TITANICHTHYS_FRAME)));
         builder.put(FossilSkeletonTwentyPieceBlock.Types.TORVOSAURUS, new TorvosaurusFossilFrameModel(p_173662_.bakeLayer(ClientEvents.TORVOSAURUS_FRAME)));
         builder.put(FossilSkeletonTwentyPieceBlock.Types.CYMBOSPONDYLUS, new CymbospondylusFossilFrameModel(p_173662_.bakeLayer(ClientEvents.CYMBOSPONDYLUS_FRAME)));
+        builder.put(FossilSkeletonTwentyPieceBlock.Types.KELENKEN, new KelenkenFossilFrameModel(p_173662_.bakeLayer(ClientEvents.KELENKEN_FRAME)));
         return builder.build();
     }
 
@@ -783,6 +789,10 @@ public class FossilSkeletonTwentyPieceRenderer implements BlockEntityRenderer<Fo
             float scale = 1.29F;
             pose.scale(-scale, -scale, scale);
             pose.translate(0F, -0.28F, 0F);
+        } else if (FossilSkeletonTwentyPieceBlock$type == FossilSkeletonTwentyPieceBlock.Types.KELENKEN) {
+            float scale = 1.05F;
+            pose.scale(-scale, -scale, scale);
+            pose.translate(0F, -0.55F, 0F);
         } else {
             float scale = 1.0F;
             pose.scale(-scale, -scale, scale);
@@ -937,6 +947,8 @@ public class FossilSkeletonTwentyPieceRenderer implements BlockEntityRenderer<Fo
             resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/torvosaurus/stage_" + fossilLevel + ".png");
         } else if (type == FossilSkeletonTwentyPieceBlock.Types.CYMBOSPONDYLUS) {
             resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/cymbospondylus/stage_" + fossilLevel + ".png");
+        } else if (type == FossilSkeletonTwentyPieceBlock.Types.KELENKEN) {
+            resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/kelenken/stage_" + fossilLevel + ".png");
         } else resourceLocation = SKIN_BY_TYPE.get(type);
         return RenderType.entityCutoutNoCullZOffset(resourceLocation);
     }
