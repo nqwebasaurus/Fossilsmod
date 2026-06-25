@@ -115,6 +115,8 @@ import fossils.fossils.client.blockentity.model.megaraptor.MegaraptorFossilFrame
 import fossils.fossils.client.blockentity.model.megaraptor.MegaraptorFossilModel;
 import fossils.fossils.client.blockentity.model.monolophosaurus.MonolophosaurusFossilFrameModel;
 import fossils.fossils.client.blockentity.model.monolophosaurus.MonolophosaurusFossilModel;
+import fossils.fossils.client.blockentity.model.morenelaphus.MorenelaphusFossilFrameModel;
+import fossils.fossils.client.blockentity.model.morenelaphus.MorenelaphusFossilModel;
 import fossils.fossils.client.blockentity.model.muttaburrasaurus.MuttaburrasaurusFossilFrameModel;
 import fossils.fossils.client.blockentity.model.muttaburrasaurus.MuttaburrasaurusFossilModel;
 import fossils.fossils.client.blockentity.model.nanotyrannus.NanotyrannusFossilFrameModel;
@@ -340,6 +342,7 @@ public class FossilSkeletonFifteenPieceRenderer implements BlockEntityRenderer<F
         type.put(FossilSkeletonFifteenPieceBlock.Types.ESTEMMENOSUCHUSURALENSIS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/estemmenosuchusuralensis/stage_0.png"));
         type.put(FossilSkeletonFifteenPieceBlock.Types.THYLACOSMILUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/thylacosmilus/stage_0.png"));
         type.put(FossilSkeletonFifteenPieceBlock.Types.PANOCHTHUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/panochthus/stage_0.png"));
+        type.put(FossilSkeletonFifteenPieceBlock.Types.MORENELAPHUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/morenelaphus/stage_0.png"));
     });
     public static final Map<FossilSkeletonFifteenPieceBlock.Type, ResourceLocation> FRAME_BY_TYPE = Util.make(Maps.newHashMap(), (type) -> {
         type.put(FossilSkeletonFifteenPieceBlock.Types.WUERHOSAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/wuerhosaurus/frame.png"));
@@ -444,6 +447,7 @@ public class FossilSkeletonFifteenPieceRenderer implements BlockEntityRenderer<F
         type.put(FossilSkeletonFifteenPieceBlock.Types.ESTEMMENOSUCHUSURALENSIS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/estemmenosuchusuralensis/frame.png"));
         type.put(FossilSkeletonFifteenPieceBlock.Types.THYLACOSMILUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/thylacosmilus/frame.png"));
         type.put(FossilSkeletonFifteenPieceBlock.Types.PANOCHTHUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/panochthus/frame.png"));
+        type.put(FossilSkeletonFifteenPieceBlock.Types.MORENELAPHUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/morenelaphus/frame.png"));
     });
 
     public static Map<FossilSkeletonFifteenPieceBlock.Type, SkullModelBase> createFossilRenderers(EntityModelSet p_173662_) {
@@ -550,6 +554,7 @@ public class FossilSkeletonFifteenPieceRenderer implements BlockEntityRenderer<F
         builder.put(FossilSkeletonFifteenPieceBlock.Types.ESTEMMENOSUCHUSURALENSIS, new EstemmenosuchusuralensisFossilModel(p_173662_.bakeLayer(ClientEvents.ESTEMMENOSUCHUSURALENSIS)));
         builder.put(FossilSkeletonFifteenPieceBlock.Types.THYLACOSMILUS, new ThylacosmilusFossilModel(p_173662_.bakeLayer(ClientEvents.THYLACOSMILUS)));
         builder.put(FossilSkeletonFifteenPieceBlock.Types.PANOCHTHUS, new PanochthusFossilModel(p_173662_.bakeLayer(ClientEvents.PANOCHTHUS)));
+        builder.put(FossilSkeletonFifteenPieceBlock.Types.MORENELAPHUS, new MorenelaphusFossilModel(p_173662_.bakeLayer(ClientEvents.MORENELAPHUS)));
         return builder.build();
     }
 
@@ -657,6 +662,7 @@ public class FossilSkeletonFifteenPieceRenderer implements BlockEntityRenderer<F
         builder.put(FossilSkeletonFifteenPieceBlock.Types.ESTEMMENOSUCHUSURALENSIS, new EstemmenosuchusuralensisFossilFrameModel(p_173662_.bakeLayer(ClientEvents.ESTEMMENOSUCHUSURALENSIS_FRAME)));
         builder.put(FossilSkeletonFifteenPieceBlock.Types.THYLACOSMILUS, new ThylacosmilusFossilFrameModel(p_173662_.bakeLayer(ClientEvents.THYLACOSMILUS_FRAME)));
         builder.put(FossilSkeletonFifteenPieceBlock.Types.PANOCHTHUS, new PanochthusFossilFrameModel(p_173662_.bakeLayer(ClientEvents.PANOCHTHUS_FRAME)));
+        builder.put(FossilSkeletonFifteenPieceBlock.Types.MORENELAPHUS, new MorenelaphusFossilFrameModel(p_173662_.bakeLayer(ClientEvents.MORENELAPHUS_FRAME)));
         return builder.build();
     }
 
@@ -1094,6 +1100,10 @@ public class FossilSkeletonFifteenPieceRenderer implements BlockEntityRenderer<F
             float scale = 0.77F;
             pose.scale(-scale, -scale, scale);
             pose.translate(0F, -0.2F, 0F);
+        } else if (FossilSkeletonFifteenPieceBlock$type == FossilSkeletonFifteenPieceBlock.Types.MORENELAPHUS) {
+            float scale = 0.66F;
+            pose.scale(-scale, -scale, scale);
+            pose.translate(0F, 0.02F, 0F);
         } else {
             float scale = 1.0F;
             pose.scale(-scale, -scale, scale);
@@ -1310,6 +1320,8 @@ public class FossilSkeletonFifteenPieceRenderer implements BlockEntityRenderer<F
             resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/thylacosmilus/stage_" + fossilLevel + ".png");
         } else if (type == FossilSkeletonFifteenPieceBlock.Types.PANOCHTHUS) {
             resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/panochthus/stage_" + fossilLevel + ".png");
+        } else if (type == FossilSkeletonFifteenPieceBlock.Types.MORENELAPHUS) {
+            resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/morenelaphus/stage_" + fossilLevel + ".png");
         } else resourceLocation = SKIN_BY_TYPE.get(type);
         return RenderType.entityCutoutNoCullZOffset(resourceLocation);
 

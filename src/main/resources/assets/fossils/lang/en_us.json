@@ -440,6 +440,7 @@
 	"block.fossils.talenkauen_fossil": "Talenkauen Fossil",
 	"block.fossils.exaeretodon_fossil": "Exaeretodon Fossil",
 	"block.fossils.hippocamelus_fossil": "Hippocamelus Fossil",
+	"block.fossils.desmatochelys_fossil": "Desmatochelys Fossil",
 	"block.fossils.poposaurus_fossil": "Poposaurus Fossil",
 	"block.fossils.nigerpeton_fossil": "Nigerpeton Fossil",
 	"block.fossils.stahleckeria_fossil": "Stahleckeria Fossil",
@@ -547,6 +548,7 @@
 	"block.fossils.biarmosuchus_fossil": "Biarmosuchus Fossil",
 	"block.fossils.thylacosmilus_fossil": "Thylacosmilus Fossil",
 	"block.fossils.panochthus_fossil": "Panochthus Fossil",
+	"block.fossils.morenelaphus_fossil": "Morenelaphus Fossil",
 	"block.fossils.bisonlatifrons_fossil": "Bison latifrons Fossil",
 	"block.fossils.utahraptor_fossil": "Utahraptor Fossil",
 	"block.fossils.shonisaurus_fossil": "Shonisaurus Fossil",
@@ -2056,5 +2058,9 @@
 	"advancements.fossils.exaeretodon.title": "Extraordinary Broad Tooth",
 	"advancements.fossils.exaeretodon.description": "Complete an Exaeretodon skeleton",
 	"advancements.fossils.hippocamelus.title": "Taruca",
-	"advancements.fossils.hippocamelus.description": "Complete a Hippocamelus skeleton"
+	"advancements.fossils.hippocamelus.description": "Complete a Hippocamelus skeleton",
+	"advancements.fossils.desmatochelys.title": "Link Turtle",
+	"advancements.fossils.desmatochelys.description": "Complete a Desmatochelys skeleton",
+	"advancements.fossils.morenelaphus.title": "Francisco Pascasio Moreno's Deer",
+	"advancements.fossils.morenelaphus.description": "Complete a Morenelaphus skeleton"
 }

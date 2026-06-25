@@ -67,6 +67,8 @@ import fossils.fossils.client.blockentity.model.daurlong.DaurlongFossilFrameMode
 import fossils.fossils.client.blockentity.model.daurlong.DaurlongFossilModel;
 import fossils.fossils.client.blockentity.model.dearc.DearcFossilFrameModel;
 import fossils.fossils.client.blockentity.model.dearc.DearcFossilModel;
+import fossils.fossils.client.blockentity.model.desmatochelys.DesmatochelysFossilFrameModel;
+import fossils.fossils.client.blockentity.model.desmatochelys.DesmatochelysFossilModel;
 import fossils.fossils.client.blockentity.model.deuterosaurus.DeuterosaurusFossilFrameModel;
 import fossils.fossils.client.blockentity.model.deuterosaurus.DeuterosaurusFossilModel;
 import fossils.fossils.client.blockentity.model.diabloceratops.DiabloceratopsFossilFrameModel;
@@ -492,6 +494,7 @@ public class FossilSkeletonTenPieceRenderer implements BlockEntityRenderer<Fossi
         type.put(FossilSkeletonTenPieceBlock.Types.TALENKAUEN, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/talenkauen/stage_0.png"));
         type.put(FossilSkeletonTenPieceBlock.Types.EXAERETODON, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/exaeretodon/stage_0.png"));
         type.put(FossilSkeletonTenPieceBlock.Types.HIPPOCAMELUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/hippocamelus/stage_0.png"));
+        type.put(FossilSkeletonTenPieceBlock.Types.DESMATOCHELYS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/desmatochelys/stage_0.png"));
 
     });
     public static final Map<FossilSkeletonTenPieceBlock.Type, ResourceLocation> FRAME_BY_TYPE = Util.make(Maps.newHashMap(), (type) -> {
@@ -648,6 +651,7 @@ public class FossilSkeletonTenPieceRenderer implements BlockEntityRenderer<Fossi
         type.put(FossilSkeletonTenPieceBlock.Types.TALENKAUEN, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/talenkauen/frame.png"));
         type.put(FossilSkeletonTenPieceBlock.Types.EXAERETODON, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/exaeretodon/frame.png"));
         type.put(FossilSkeletonTenPieceBlock.Types.HIPPOCAMELUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/hippocamelus/frame.png"));
+        type.put(FossilSkeletonTenPieceBlock.Types.DESMATOCHELYS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/desmatochelys/frame.png"));
 
 
     });
@@ -807,6 +811,7 @@ public class FossilSkeletonTenPieceRenderer implements BlockEntityRenderer<Fossi
         builder.put(FossilSkeletonTenPieceBlock.Types.TALENKAUEN, new TalenkauenFossilModel(p_173662_.bakeLayer(ClientEvents.TALENKAUEN)));
         builder.put(FossilSkeletonTenPieceBlock.Types.EXAERETODON, new ExaeretodonFossilModel(p_173662_.bakeLayer(ClientEvents.EXAERETODON)));
         builder.put(FossilSkeletonTenPieceBlock.Types.HIPPOCAMELUS, new HippocamelusFossilModel(p_173662_.bakeLayer(ClientEvents.HIPPOCAMELUS)));
+        builder.put(FossilSkeletonTenPieceBlock.Types.DESMATOCHELYS, new DesmatochelysFossilModel(p_173662_.bakeLayer(ClientEvents.DESMATOCHELYS)));
         return builder.build();
     }
 
@@ -965,6 +970,7 @@ public class FossilSkeletonTenPieceRenderer implements BlockEntityRenderer<Fossi
         builder.put(FossilSkeletonTenPieceBlock.Types.TALENKAUEN, new TalenkauenFossilFrameModel(p_173662_.bakeLayer(ClientEvents.TALENKAUEN_FRAME)));
         builder.put(FossilSkeletonTenPieceBlock.Types.EXAERETODON, new ExaeretodonFossilFrameModel(p_173662_.bakeLayer(ClientEvents.EXAERETODON_FRAME)));
         builder.put(FossilSkeletonTenPieceBlock.Types.HIPPOCAMELUS, new HippocamelusFossilFrameModel(p_173662_.bakeLayer(ClientEvents.HIPPOCAMELUS_FRAME)));
+        builder.put(FossilSkeletonTenPieceBlock.Types.DESMATOCHELYS, new DesmatochelysFossilFrameModel(p_173662_.bakeLayer(ClientEvents.DESMATOCHELYS_FRAME)));
         return builder.build();
     }
 
@@ -1606,6 +1612,10 @@ public class FossilSkeletonTenPieceRenderer implements BlockEntityRenderer<Fossi
             float scale = 0.47F;
             pose.scale(-scale, -scale, scale);
             pose.translate(0F, 0.63F, 0F);
+        } else if (FossilSkeletonTenPieceBlock$type == FossilSkeletonTenPieceBlock.Types.DESMATOCHELYS) {
+            float scale = 0.65F;
+            pose.scale(-scale, -scale, scale);
+            pose.translate(0F, 0.05F, 0F);
         } else {
             float scale = 1.0F;
             pose.scale(-scale, -scale, scale);
@@ -1924,6 +1934,8 @@ public class FossilSkeletonTenPieceRenderer implements BlockEntityRenderer<Fossi
             resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/exaeretodon/stage_" + fossilLevel + ".png");
         } else if (type == FossilSkeletonTenPieceBlock.Types.HIPPOCAMELUS) {
             resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/hippocamelus/stage_" + fossilLevel + ".png");
+        } else if (type == FossilSkeletonTenPieceBlock.Types.DESMATOCHELYS) {
+            resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/desmatochelys/stage_" + fossilLevel + ".png");
         } else resourceLocation = SKIN_BY_TYPE.get(type);
         return RenderType.entityCutoutNoCullZOffset(resourceLocation);
     }
