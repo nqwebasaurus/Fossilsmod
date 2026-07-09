@@ -175,6 +175,8 @@ import fossils.fossils.client.blockentity.model.ctenochasma.CtenochasmaFossilFra
 import fossils.fossils.client.blockentity.model.ctenochasma.CtenochasmaFossilModel;
 import fossils.fossils.client.blockentity.model.ctenospondylus.CtenospondylusFossilFrameModel;
 import fossils.fossils.client.blockentity.model.ctenospondylus.CtenospondylusFossilModel;
+import fossils.fossils.client.blockentity.model.cuvieronius.CuvieroniusFossilFrameModel;
+import fossils.fossils.client.blockentity.model.cuvieronius.CuvieroniusFossilModel;
 import fossils.fossils.client.blockentity.model.cyamodus.CyamodusFossilFrameModel;
 import fossils.fossils.client.blockentity.model.cyamodus.CyamodusFossilModel;
 import fossils.fossils.client.blockentity.model.cycnorhamphus.CycnorhamphusFossilFrameModel;
@@ -549,6 +551,8 @@ import fossils.fossils.client.blockentity.model.panochthus.PanochthusFossilFrame
 import fossils.fossils.client.blockentity.model.panochthus.PanochthusFossilModel;
 import fossils.fossils.client.blockentity.model.parmastega.ParmastegaFossilFrameModel;
 import fossils.fossils.client.blockentity.model.parmastega.ParmastegaFossilModel;
+import fossils.fossils.client.blockentity.model.peltephilus.PeltephilusFossilFrameModel;
+import fossils.fossils.client.blockentity.model.peltephilus.PeltephilusFossilModel;
 import fossils.fossils.client.blockentity.model.pezosiren.PezosirenFossilFrameModel;
 import fossils.fossils.client.blockentity.model.pezosiren.PezosirenFossilModel;
 import fossils.fossils.client.blockentity.model.pholiderpeton.PholiderpetonFossilFrameModel;
@@ -1316,6 +1320,8 @@ public class ClientEvents {
     public static ModelLayerLocation NECROLESTES_FRAME = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "necrolestes_frame"), "necrolestes_frame");
     public static ModelLayerLocation WALUCHELYS = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "waluchelys"), "waluchelys");
     public static ModelLayerLocation WALUCHELYS_FRAME = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "waluchelys_frame"), "waluchelys_frame");
+    public static ModelLayerLocation PELTEPHILUS = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "peltephilus"), "peltephilus");
+    public static ModelLayerLocation PELTEPHILUS_FRAME = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "peltephilus_frame"), "peltephilus_frame");
 	public static ModelLayerLocation KENTROSAURUS = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "kentrosaurus"), "kentrosaurus");
 	public static ModelLayerLocation KENTROSAURUS_FRAME = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "kentrosaurus_frame"), "kentrosaurus_frame");
 	public static ModelLayerLocation PIATNITZKYSAURUS = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "piatnitzkysaurus"), "piatnitzkysaurus");
@@ -1974,6 +1980,8 @@ public class ClientEvents {
     public static ModelLayerLocation CYMBOSPONDYLUS_FRAME = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "cymbospondylus_frame"), "cymbospondylus_frame");
     public static ModelLayerLocation KELENKEN= new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "kelenken"), "kelenken");
     public static ModelLayerLocation KELENKEN_FRAME = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "kelenken_frame"), "kelenken_frame");
+    public static ModelLayerLocation CUVIERONIUS= new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "cuvieronius"), "cuvieronius");
+    public static ModelLayerLocation CUVIERONIUS_FRAME = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "cuvieronius_frame"), "cuvieronius_frame");
 
 	@SubscribeEvent
 	public static void registerLayerDefinition(EntityRenderersEvent.RegisterLayerDefinitions event) {
@@ -2368,6 +2376,8 @@ public class ClientEvents {
         event.registerLayerDefinition(NECROLESTES_FRAME, NecrolestesFossilFrameModel::createBodyLayer);
         event.registerLayerDefinition(WALUCHELYS, WaluchelysFossilModel::createBodyLayer);
         event.registerLayerDefinition(WALUCHELYS_FRAME, WaluchelysFossilFrameModel::createBodyLayer);
+        event.registerLayerDefinition(PELTEPHILUS, PeltephilusFossilModel::createBodyLayer);
+        event.registerLayerDefinition(PELTEPHILUS_FRAME, PeltephilusFossilFrameModel::createBodyLayer);
 		event.registerLayerDefinition(KENTROSAURUS, KentrosaurusFossilModel::createBodyLayer);
 		event.registerLayerDefinition(KENTROSAURUS_FRAME, KentrosaurusFossilFrameModel::createBodyLayer);
 		event.registerLayerDefinition(PIATNITZKYSAURUS, PiatnitzkysaurusFossilModel::createBodyLayer);
@@ -3026,6 +3036,8 @@ public class ClientEvents {
         event.registerLayerDefinition(CYMBOSPONDYLUS_FRAME, CymbospondylusFossilFrameModel::createBodyLayer);
         event.registerLayerDefinition(KELENKEN, KelenkenFossilModel::createBodyLayer);
         event.registerLayerDefinition(KELENKEN_FRAME, KelenkenFossilFrameModel::createBodyLayer);
+        event.registerLayerDefinition(CUVIERONIUS, CuvieroniusFossilModel::createBodyLayer);
+        event.registerLayerDefinition(CUVIERONIUS_FRAME, CuvieroniusFossilFrameModel::createBodyLayer);
 
 	}
 	

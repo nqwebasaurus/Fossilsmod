@@ -291,6 +291,7 @@
 	"block.fossils.taytalura_fossil": "Taytalura Fossil",
 	"block.fossils.necrolestes_fossil": "Necrolestes Fossil",
 	"block.fossils.waluchelys_fossil": "Waluchelys Fossil",
+	"block.fossils.peltephilus_fossil": "Peltephilus Fossil",
 	"block.fossils.kentrosaurus_fossil": "Kentrosaurus Fossil",
 	"block.fossils.endothiodonbathystoma_fossil": "Endothiodon bathystoma Fossil",
 	"block.fossils.dimetrodongrandis_fossil": "Dimetrodon grandis Fossil",
@@ -619,6 +620,7 @@
 	"block.fossils.torvosaurus_fossil": "Torvosaurus Fossil",
 	"block.fossils.cymbospondylus_fossil": "Cymbospondylus Fossil",
 	"block.fossils.kelenken_fossil": "Kelenken Fossil",
+	"block.fossils.cuvieronius_fossil": "Cuvieronius Fossil",
 	
 	"itemGroup.fossil_slab_tab": "Fossils Slabs",
 	"itemGroup.fossil_blocks_tab": "Fossils Blocks",
@@ -2062,5 +2064,9 @@
 	"advancements.fossils.desmatochelys.title": "Link Turtle",
 	"advancements.fossils.desmatochelys.description": "Complete a Desmatochelys skeleton",
 	"advancements.fossils.morenelaphus.title": "Francisco Pascasio Moreno's Deer",
-	"advancements.fossils.morenelaphus.description": "Complete a Morenelaphus skeleton"
+	"advancements.fossils.morenelaphus.description": "Complete a Morenelaphus skeleton",
+	"advancements.fossils.peltephilus.title": "Armor Lover",
+	"advancements.fossils.peltephilus.description": "Complete a Peltephilus skeleton",
+	"advancements.fossils.cuvieronius.title": "Georges Cuvier's Gomphothere",
+	"advancements.fossils.cuvieronius.description": "Complete a Cuvieronius skeleton"
 }

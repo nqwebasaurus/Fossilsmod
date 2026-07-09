@@ -39,6 +39,8 @@
 		"fossils:agapornis_fossil",
 		"fossils:necrolestes_fossil",
 		"fossils:ensidelphis_fossil",
-		"fossils:kelenken_fossil"
+		"fossils:kelenken_fossil",
+		"fossils:cuvieronius_fossil",
+		"fossils:peltephilus_fossil"
 	]
 }

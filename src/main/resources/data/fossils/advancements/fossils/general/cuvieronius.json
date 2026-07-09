@@ -1,0 +1,57 @@
+{
+  "parent": "fossils:fossils/general/elephantimorpha",
+  "criteria": {
+    "finish_cuvieronius": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:cuvieronius_fossil"
+                ],
+                "state": {
+                  "fossil_level": "19"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:cuvieronius_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.cuvieronius.description"
+    },
+    "frame": "challenge",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:cuvieronius_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.cuvieronius.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_cuvieronius"
+    ]
+  ],
+  "rewards": {
+    "experience": 500
+  },
+  "sends_telemetry_event": true
+}

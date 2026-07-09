@@ -47,6 +47,8 @@ import fossils.fossils.client.blockentity.model.corythosauruscasuarius.Corythosa
 import fossils.fossils.client.blockentity.model.corythosauruscasuarius.CorythosauruscasuariusFossilModel;
 import fossils.fossils.client.blockentity.model.cotylorhynchus.CotylorhynchusFossilFrameModel;
 import fossils.fossils.client.blockentity.model.cotylorhynchus.CotylorhynchusFossilModel;
+import fossils.fossils.client.blockentity.model.cuvieronius.CuvieroniusFossilFrameModel;
+import fossils.fossils.client.blockentity.model.cuvieronius.CuvieroniusFossilModel;
 import fossils.fossils.client.blockentity.model.cymbospondylus.CymbospondylusFossilFrameModel;
 import fossils.fossils.client.blockentity.model.cymbospondylus.CymbospondylusFossilModel;
 import fossils.fossils.client.blockentity.model.daspletosaurus.DaspletosaurusFossilFrameModel;
@@ -248,6 +250,7 @@ public class FossilSkeletonTwentyPieceRenderer implements BlockEntityRenderer<Fo
         type.put(FossilSkeletonTwentyPieceBlock.Types.TORVOSAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/torvosaurus/stage_0.png"));
         type.put(FossilSkeletonTwentyPieceBlock.Types.CYMBOSPONDYLUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/cymbospondylus/stage_0.png"));
         type.put(FossilSkeletonTwentyPieceBlock.Types.KELENKEN, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/kelenken/stage_0.png"));
+        type.put(FossilSkeletonTwentyPieceBlock.Types.CUVIERONIUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/cuvieronius/stage_0.png"));
     });
     public static final Map<FossilSkeletonTwentyPieceBlock.Type, ResourceLocation> FRAME_BY_TYPE = Util.make(Maps.newHashMap(), (type) -> {
         type.put(FossilSkeletonTwentyPieceBlock.Types.UTAHRAPTOR, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/utahraptor/frame.png"));
@@ -322,6 +325,7 @@ public class FossilSkeletonTwentyPieceRenderer implements BlockEntityRenderer<Fo
         type.put(FossilSkeletonTwentyPieceBlock.Types.TORVOSAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/torvosaurus/frame.png"));
         type.put(FossilSkeletonTwentyPieceBlock.Types.CYMBOSPONDYLUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/cymbospondylus/frame.png"));
         type.put(FossilSkeletonTwentyPieceBlock.Types.KELENKEN, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/kelenken/frame.png"));
+        type.put(FossilSkeletonTwentyPieceBlock.Types.CUVIERONIUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/cuvieronius/frame.png"));
 
     });
 
@@ -399,6 +403,7 @@ public class FossilSkeletonTwentyPieceRenderer implements BlockEntityRenderer<Fo
         builder.put(FossilSkeletonTwentyPieceBlock.Types.TORVOSAURUS, new TorvosaurusFossilModel(p_173662_.bakeLayer(ClientEvents.TORVOSAURUS)));
         builder.put(FossilSkeletonTwentyPieceBlock.Types.CYMBOSPONDYLUS, new CymbospondylusFossilModel(p_173662_.bakeLayer(ClientEvents.CYMBOSPONDYLUS)));
         builder.put(FossilSkeletonTwentyPieceBlock.Types.KELENKEN, new KelenkenFossilModel(p_173662_.bakeLayer(ClientEvents.KELENKEN)));
+        builder.put(FossilSkeletonTwentyPieceBlock.Types.CUVIERONIUS, new CuvieroniusFossilModel(p_173662_.bakeLayer(ClientEvents.CUVIERONIUS)));
         return builder.build();
     }
 
@@ -476,6 +481,7 @@ public class FossilSkeletonTwentyPieceRenderer implements BlockEntityRenderer<Fo
         builder.put(FossilSkeletonTwentyPieceBlock.Types.TORVOSAURUS, new TorvosaurusFossilFrameModel(p_173662_.bakeLayer(ClientEvents.TORVOSAURUS_FRAME)));
         builder.put(FossilSkeletonTwentyPieceBlock.Types.CYMBOSPONDYLUS, new CymbospondylusFossilFrameModel(p_173662_.bakeLayer(ClientEvents.CYMBOSPONDYLUS_FRAME)));
         builder.put(FossilSkeletonTwentyPieceBlock.Types.KELENKEN, new KelenkenFossilFrameModel(p_173662_.bakeLayer(ClientEvents.KELENKEN_FRAME)));
+        builder.put(FossilSkeletonTwentyPieceBlock.Types.CUVIERONIUS, new CuvieroniusFossilFrameModel(p_173662_.bakeLayer(ClientEvents.CUVIERONIUS_FRAME)));
         return builder.build();
     }
 
@@ -793,6 +799,10 @@ public class FossilSkeletonTwentyPieceRenderer implements BlockEntityRenderer<Fo
             float scale = 1.05F;
             pose.scale(-scale, -scale, scale);
             pose.translate(0F, -0.55F, 0F);
+        } else if (FossilSkeletonTwentyPieceBlock$type == FossilSkeletonTwentyPieceBlock.Types.CUVIERONIUS) {
+            float scale = 0.67F;
+            pose.scale(-scale, -scale, scale);
+            pose.translate(0F, -0.0F, 0F);
         } else {
             float scale = 1.0F;
             pose.scale(-scale, -scale, scale);
@@ -949,6 +959,8 @@ public class FossilSkeletonTwentyPieceRenderer implements BlockEntityRenderer<Fo
             resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/cymbospondylus/stage_" + fossilLevel + ".png");
         } else if (type == FossilSkeletonTwentyPieceBlock.Types.KELENKEN) {
             resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/kelenken/stage_" + fossilLevel + ".png");
+        } else if (type == FossilSkeletonTwentyPieceBlock.Types.CUVIERONIUS) {
+            resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/cuvieronius/stage_" + fossilLevel + ".png");
         } else resourceLocation = SKIN_BY_TYPE.get(type);
         return RenderType.entityCutoutNoCullZOffset(resourceLocation);
     }
