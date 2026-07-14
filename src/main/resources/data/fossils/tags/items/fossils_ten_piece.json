@@ -154,6 +154,8 @@
 		"fossils:talenkauen_fossil",
 		"fossils:exaeretodon_fossil",
 		"fossils:hippocamelus_fossil",
-		"fossils:desmatochelys_fossil"
+		"fossils:desmatochelys_fossil",
+		"fossils:dinodontosaurus_fossil",
+		"fossils:megalocnus_fossil"
 	]
 }

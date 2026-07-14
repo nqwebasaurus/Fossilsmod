@@ -229,6 +229,8 @@ import fossils.fossils.client.blockentity.model.dimorphodon.DimorphodonFossilFra
 import fossils.fossils.client.blockentity.model.dimorphodon.DimorphodonFossilModel;
 import fossils.fossils.client.blockentity.model.dinocrocuta.DinocrocutaFossilFrameModel;
 import fossils.fossils.client.blockentity.model.dinocrocuta.DinocrocutaFossilModel;
+import fossils.fossils.client.blockentity.model.dinodontosaurus.DinodontosaurusFossilFrameModel;
+import fossils.fossils.client.blockentity.model.dinodontosaurus.DinodontosaurusFossilModel;
 import fossils.fossils.client.blockentity.model.diplocaulusmagnicornis.DiplocaulusmagnicornisFossilFrameModel;
 import fossils.fossils.client.blockentity.model.diplocaulusmagnicornis.DiplocaulusmagnicornisFossilModel;
 import fossils.fossils.client.blockentity.model.diplocaulusminimus.DiplocaulusminimusFossilFrameModel;
@@ -495,6 +497,8 @@ import fossils.fossils.client.blockentity.model.megalibgwilia.MegalibgwiliaFossi
 import fossils.fossils.client.blockentity.model.megalibgwilia.MegalibgwiliaFossilModel;
 import fossils.fossils.client.blockentity.model.megalocephalus.MegalocephalusFossilFrameModel;
 import fossils.fossils.client.blockentity.model.megalocephalus.MegalocephalusFossilModel;
+import fossils.fossils.client.blockentity.model.megalocnus.MegalocnusFossilFrameModel;
+import fossils.fossils.client.blockentity.model.megalocnus.MegalocnusFossilModel;
 import fossils.fossils.client.blockentity.model.megalosaurus.MegalosaurusFossilFrameModel;
 import fossils.fossils.client.blockentity.model.megalosaurus.MegalosaurusFossilModel;
 import fossils.fossils.client.blockentity.model.megaraptor.MegaraptorFossilFrameModel;
@@ -1616,6 +1620,10 @@ public class ClientEvents {
     public static ModelLayerLocation HIPPOCAMELUS_FRAME = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "hippocamelus_frame"), "hippocamelus_frame");
     public static ModelLayerLocation DESMATOCHELYS= new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "desmatochelys"), "desmatochelys");
     public static ModelLayerLocation DESMATOCHELYS_FRAME = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "desmatochelys_frame"), "desmatochelys_frame");
+    public static ModelLayerLocation DINODONTOSAURUS= new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "dinodontosaurus"), "dinodontosaurus");
+    public static ModelLayerLocation DINODONTOSAURUS_FRAME = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "dinodontosaurus_frame"), "dinodontosaurus_frame");
+    public static ModelLayerLocation MEGALOCNUS= new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "megalocnus"), "megalocnus");
+    public static ModelLayerLocation MEGALOCNUS_FRAME = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "megalocnus_frame"), "megalocnus_frame");
 	public static ModelLayerLocation PLACERIAS = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "placerias"), "placerias");
 	public static ModelLayerLocation PLACERIAS_FRAME = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "placerias_frame"), "placerias_frame");
 	public static ModelLayerLocation ENDOTHIODONBATHYSTOMA = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "endothiodonbathystoma"), "endothiodonbathystoma");
@@ -2674,6 +2682,10 @@ public class ClientEvents {
         event.registerLayerDefinition(HIPPOCAMELUS_FRAME, HippocamelusFossilFrameModel::createBodyLayer);
         event.registerLayerDefinition(DESMATOCHELYS, DesmatochelysFossilModel::createBodyLayer);
         event.registerLayerDefinition(DESMATOCHELYS_FRAME, DesmatochelysFossilFrameModel::createBodyLayer);
+        event.registerLayerDefinition(DINODONTOSAURUS, DinodontosaurusFossilModel::createBodyLayer);
+        event.registerLayerDefinition(DINODONTOSAURUS_FRAME, DinodontosaurusFossilFrameModel::createBodyLayer);
+        event.registerLayerDefinition(MEGALOCNUS, MegalocnusFossilModel::createBodyLayer);
+        event.registerLayerDefinition(MEGALOCNUS_FRAME, MegalocnusFossilFrameModel::createBodyLayer);
 		event.registerLayerDefinition(LUFENGOSAURUS, LufengosaurusFossilModel::createBodyLayer);
 		event.registerLayerDefinition(LUFENGOSAURUS_FRAME, LufengosaurusFossilFrameModel::createBodyLayer);
 		event.registerLayerDefinition(PLACERIAS, PlaceriasFossilModel::createBodyLayer);

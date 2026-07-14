@@ -443,6 +443,8 @@
 	"block.fossils.exaeretodon_fossil": "Exaeretodon Fossil",
 	"block.fossils.hippocamelus_fossil": "Hippocamelus Fossil",
 	"block.fossils.desmatochelys_fossil": "Desmatochelys Fossil",
+	"block.fossils.dinodontosaurus_fossil": "Dinodontosaurus Fossil",
+	"block.fossils.megalocnus_fossil": "Megalocnus Fossil",
 	"block.fossils.poposaurus_fossil": "Poposaurus Fossil",
 	"block.fossils.nigerpeton_fossil": "Nigerpeton Fossil",
 	"block.fossils.stahleckeria_fossil": "Stahleckeria Fossil",
@@ -2074,5 +2076,9 @@
 	"advancements.fossils.patagopteryx.title": "Patagonian Wing",
 	"advancements.fossils.patagopteryx.description": "Complete a Patagopteryx skeleton",
 	"advancements.fossils.mourasuchus.title": "Rio do Moura's Crocodile",
-	"advancements.fossils.mourasuchus.description": "Complete a Mourasuchus skeleton"
+	"advancements.fossils.mourasuchus.description": "Complete a Mourasuchus skeleton",
+	"advancements.fossils.dinodontosaurus.title": "Terrible-toothed Lizard",
+	"advancements.fossils.dinodontosaurus.description": "Complete a Dinodontosaurus skeleton",
+	"advancements.fossils.megalocnus.title": "Big Sloth",
+	"advancements.fossils.megalocnus.description": "Complete a Megalocnus skeleton"
 }

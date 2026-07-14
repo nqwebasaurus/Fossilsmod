@@ -1,0 +1,54 @@
+{
+  "parent": "fossils:fossils/general/folivora",
+  "criteria": {
+    "finish_megalocnus": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:megalocnus_fossil"
+                ],
+                "state": {
+                  "fossil_level": "9"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:megalocnus_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.megalocnus.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:megalocnus_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.megalocnus.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_megalocnus"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

@@ -79,6 +79,8 @@ import fossils.fossils.client.blockentity.model.dimetrodongrandis.DimetrodonFoss
 import fossils.fossils.client.blockentity.model.dimetrodongrandis.DimetrodonFossilModel;
 import fossils.fossils.client.blockentity.model.dinocrocuta.DinocrocutaFossilFrameModel;
 import fossils.fossils.client.blockentity.model.dinocrocuta.DinocrocutaFossilModel;
+import fossils.fossils.client.blockentity.model.dinodontosaurus.DinodontosaurusFossilFrameModel;
+import fossils.fossils.client.blockentity.model.dinodontosaurus.DinodontosaurusFossilModel;
 import fossils.fossils.client.blockentity.model.dodo.DodoFossilFrameModel;
 import fossils.fossils.client.blockentity.model.dodo.DodoFossilModel;
 import fossils.fossils.client.blockentity.model.dorudon.DorudonFossilFrameModel;
@@ -177,6 +179,8 @@ import fossils.fossils.client.blockentity.model.lystrosaurusmaccaigi.Lystrosauru
 import fossils.fossils.client.blockentity.model.lystrosaurusmaccaigi.LystrosaurusmaccaigiFossilModel;
 import fossils.fossils.client.blockentity.model.megalocephalus.MegalocephalusFossilFrameModel;
 import fossils.fossils.client.blockentity.model.megalocephalus.MegalocephalusFossilModel;
+import fossils.fossils.client.blockentity.model.megalocnus.MegalocnusFossilFrameModel;
+import fossils.fossils.client.blockentity.model.megalocnus.MegalocnusFossilModel;
 import fossils.fossils.client.blockentity.model.minqaria.MinqariaFossilFrameModel;
 import fossils.fossils.client.blockentity.model.minqaria.MinqariaFossilModel;
 import fossils.fossils.client.blockentity.model.monachus.MonachusFossilFrameModel;
@@ -495,6 +499,8 @@ public class FossilSkeletonTenPieceRenderer implements BlockEntityRenderer<Fossi
         type.put(FossilSkeletonTenPieceBlock.Types.EXAERETODON, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/exaeretodon/stage_0.png"));
         type.put(FossilSkeletonTenPieceBlock.Types.HIPPOCAMELUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/hippocamelus/stage_0.png"));
         type.put(FossilSkeletonTenPieceBlock.Types.DESMATOCHELYS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/desmatochelys/stage_0.png"));
+        type.put(FossilSkeletonTenPieceBlock.Types.DINODONTOSAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/dinodontosaurus/stage_0.png"));
+        type.put(FossilSkeletonTenPieceBlock.Types.MEGALOCNUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/megalocnus/stage_0.png"));
 
     });
     public static final Map<FossilSkeletonTenPieceBlock.Type, ResourceLocation> FRAME_BY_TYPE = Util.make(Maps.newHashMap(), (type) -> {
@@ -652,6 +658,8 @@ public class FossilSkeletonTenPieceRenderer implements BlockEntityRenderer<Fossi
         type.put(FossilSkeletonTenPieceBlock.Types.EXAERETODON, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/exaeretodon/frame.png"));
         type.put(FossilSkeletonTenPieceBlock.Types.HIPPOCAMELUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/hippocamelus/frame.png"));
         type.put(FossilSkeletonTenPieceBlock.Types.DESMATOCHELYS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/desmatochelys/frame.png"));
+        type.put(FossilSkeletonTenPieceBlock.Types.DINODONTOSAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/dinodontosaurus/frame.png"));
+        type.put(FossilSkeletonTenPieceBlock.Types.MEGALOCNUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/megalocnus/frame.png"));
 
 
     });
@@ -812,6 +820,8 @@ public class FossilSkeletonTenPieceRenderer implements BlockEntityRenderer<Fossi
         builder.put(FossilSkeletonTenPieceBlock.Types.EXAERETODON, new ExaeretodonFossilModel(p_173662_.bakeLayer(ClientEvents.EXAERETODON)));
         builder.put(FossilSkeletonTenPieceBlock.Types.HIPPOCAMELUS, new HippocamelusFossilModel(p_173662_.bakeLayer(ClientEvents.HIPPOCAMELUS)));
         builder.put(FossilSkeletonTenPieceBlock.Types.DESMATOCHELYS, new DesmatochelysFossilModel(p_173662_.bakeLayer(ClientEvents.DESMATOCHELYS)));
+        builder.put(FossilSkeletonTenPieceBlock.Types.DINODONTOSAURUS, new DinodontosaurusFossilModel(p_173662_.bakeLayer(ClientEvents.DINODONTOSAURUS)));
+        builder.put(FossilSkeletonTenPieceBlock.Types.MEGALOCNUS, new MegalocnusFossilModel(p_173662_.bakeLayer(ClientEvents.MEGALOCNUS)));
         return builder.build();
     }
 
@@ -971,6 +981,8 @@ public class FossilSkeletonTenPieceRenderer implements BlockEntityRenderer<Fossi
         builder.put(FossilSkeletonTenPieceBlock.Types.EXAERETODON, new ExaeretodonFossilFrameModel(p_173662_.bakeLayer(ClientEvents.EXAERETODON_FRAME)));
         builder.put(FossilSkeletonTenPieceBlock.Types.HIPPOCAMELUS, new HippocamelusFossilFrameModel(p_173662_.bakeLayer(ClientEvents.HIPPOCAMELUS_FRAME)));
         builder.put(FossilSkeletonTenPieceBlock.Types.DESMATOCHELYS, new DesmatochelysFossilFrameModel(p_173662_.bakeLayer(ClientEvents.DESMATOCHELYS_FRAME)));
+        builder.put(FossilSkeletonTenPieceBlock.Types.DINODONTOSAURUS, new DinodontosaurusFossilFrameModel(p_173662_.bakeLayer(ClientEvents.DINODONTOSAURUS_FRAME)));
+        builder.put(FossilSkeletonTenPieceBlock.Types.MEGALOCNUS, new MegalocnusFossilFrameModel(p_173662_.bakeLayer(ClientEvents.MEGALOCNUS_FRAME)));
         return builder.build();
     }
 
@@ -1616,6 +1628,14 @@ public class FossilSkeletonTenPieceRenderer implements BlockEntityRenderer<Fossi
             float scale = 0.65F;
             pose.scale(-scale, -scale, scale);
             pose.translate(0F, 0.05F, 0F);
+        } else if (FossilSkeletonTenPieceBlock$type == FossilSkeletonTenPieceBlock.Types.DINODONTOSAURUS) {
+            float scale = 0.69F;
+            pose.scale(-scale, -scale, scale);
+            pose.translate(0F, -0.04F, 0F);
+        } else if (FossilSkeletonTenPieceBlock$type == FossilSkeletonTenPieceBlock.Types.MEGALOCNUS) {
+            float scale = 0.4F;
+            pose.scale(-scale, -scale, scale);
+            pose.translate(0F, 1F, 0F);
         } else {
             float scale = 1.0F;
             pose.scale(-scale, -scale, scale);
@@ -1936,6 +1956,10 @@ public class FossilSkeletonTenPieceRenderer implements BlockEntityRenderer<Fossi
             resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/hippocamelus/stage_" + fossilLevel + ".png");
         } else if (type == FossilSkeletonTenPieceBlock.Types.DESMATOCHELYS) {
             resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/desmatochelys/stage_" + fossilLevel + ".png");
+        } else if (type == FossilSkeletonTenPieceBlock.Types.DINODONTOSAURUS) {
+            resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/dinodontosaurus/stage_" + fossilLevel + ".png");
+        } else if (type == FossilSkeletonTenPieceBlock.Types.MEGALOCNUS) {
+            resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/megalocnus/stage_" + fossilLevel + ".png");
         } else resourceLocation = SKIN_BY_TYPE.get(type);
         return RenderType.entityCutoutNoCullZOffset(resourceLocation);
     }
