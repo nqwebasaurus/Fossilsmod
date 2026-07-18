@@ -403,6 +403,8 @@ import fossils.fossils.client.blockentity.model.jinzhousaurus.JinzhousaurusFossi
 import fossils.fossils.client.blockentity.model.jinzhousaurus.JinzhousaurusFossilModel;
 import fossils.fossils.client.blockentity.model.jonkeria.JonkeriaFossilFrameModel;
 import fossils.fossils.client.blockentity.model.jonkeria.JonkeriaFossilModel;
+import fossils.fossils.client.blockentity.model.josephoartigasia.JosephoartigasiaFossilFrameModel;
+import fossils.fossils.client.blockentity.model.josephoartigasia.JosephoartigasiaFossilModel;
 import fossils.fossils.client.blockentity.model.kamuysaurus.KamuysaurusFossilFrameModel;
 import fossils.fossils.client.blockentity.model.kamuysaurus.KamuysaurusFossilModel;
 import fossils.fossils.client.blockentity.model.kannemeyeria.KannemeyeriaFossilFrameModel;
@@ -857,6 +859,8 @@ import fossils.fossils.client.blockentity.model.tupandactylusimperator.Tupandact
 import fossils.fossils.client.blockentity.model.tupandactylusimperator.TupandactylusimperatorFossilModel;
 import fossils.fossils.client.blockentity.model.tupandactylusnavigans.TupandactylusnavigansFossilFrameModel;
 import fossils.fossils.client.blockentity.model.tupandactylusnavigans.TupandactylusnavigansFossilModel;
+import fossils.fossils.client.blockentity.model.tupuxuara.TupuxuaraFossilFrameModel;
+import fossils.fossils.client.blockentity.model.tupuxuara.TupuxuaraFossilModel;
 import fossils.fossils.client.blockentity.model.tyrannosaurus.TyrannosaurusFossilFrameModel;
 import fossils.fossils.client.blockentity.model.tyrannosaurus.TyrannosaurusFossilModel;
 import fossils.fossils.client.blockentity.model.tyrannotitan.TyrannotitanFossilFrameModel;
@@ -1850,6 +1854,10 @@ public class ClientEvents {
     public static ModelLayerLocation PANOCHTHUS_FRAME = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "panochthus_frame"), "panochthus_frame");
     public static ModelLayerLocation MORENELAPHUS = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "morenelaphus"), "morenelaphus");
     public static ModelLayerLocation MORENELAPHUS_FRAME = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "morenelaphus_frame"), "morenelaphus_frame");
+    public static ModelLayerLocation JOSEPHOARTIGASIA = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "josephoartigasia"), "josephoartigasia");
+    public static ModelLayerLocation JOSEPHOARTIGASIA_FRAME = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "josephoartigasia_frame"), "josephoartigasia_frame");
+    public static ModelLayerLocation TUPUXUARA = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "tupuxuara"), "tupuxuara");
+    public static ModelLayerLocation TUPUXUARA_FRAME = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "tupuxuara_frame"), "tupuxuara_frame");
 	public static ModelLayerLocation UTAHRAPTOR = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "utahraptor"), "utahraptor");
 	public static ModelLayerLocation UTAHRAPTOR_FRAME = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "utahraptor_frame"), "utahraptor_frame");
 	public static ModelLayerLocation SHONISAURUS = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "shonisaurus"), "shonisaurus");
@@ -2914,6 +2922,10 @@ public class ClientEvents {
         event.registerLayerDefinition(PANOCHTHUS_FRAME, PanochthusFossilFrameModel::createBodyLayer);
         event.registerLayerDefinition(MORENELAPHUS, MorenelaphusFossilModel::createBodyLayer);
         event.registerLayerDefinition(MORENELAPHUS_FRAME, MorenelaphusFossilFrameModel::createBodyLayer);
+        event.registerLayerDefinition(JOSEPHOARTIGASIA, JosephoartigasiaFossilModel::createBodyLayer);
+        event.registerLayerDefinition(JOSEPHOARTIGASIA_FRAME, JosephoartigasiaFossilFrameModel::createBodyLayer);
+        event.registerLayerDefinition(TUPUXUARA, TupuxuaraFossilModel::createBodyLayer);
+        event.registerLayerDefinition(TUPUXUARA_FRAME, TupuxuaraFossilFrameModel::createBodyLayer);
 		event.registerLayerDefinition(UTAHRAPTOR, UtahraptorFossilModel::createBodyLayer);
 		event.registerLayerDefinition(UTAHRAPTOR_FRAME, UtahraptorFossilFrameModel::createBodyLayer);
 		event.registerLayerDefinition(SHONISAURUS, ShonisaurusFossilModel::createBodyLayer);

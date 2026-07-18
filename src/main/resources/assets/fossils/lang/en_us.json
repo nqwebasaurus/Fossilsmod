@@ -553,6 +553,8 @@
 	"block.fossils.thylacosmilus_fossil": "Thylacosmilus Fossil",
 	"block.fossils.panochthus_fossil": "Panochthus Fossil",
 	"block.fossils.morenelaphus_fossil": "Morenelaphus Fossil",
+	"block.fossils.josephoartigasia_fossil": "Josephoartigasia Fossil",
+	"block.fossils.tupuxuara_fossil": "Tupuxuara Fossil",
 	"block.fossils.bisonlatifrons_fossil": "Bison latifrons Fossil",
 	"block.fossils.utahraptor_fossil": "Utahraptor Fossil",
 	"block.fossils.shonisaurus_fossil": "Shonisaurus Fossil",
@@ -1173,6 +1175,12 @@
 	"advancements.fossils.capreolinae.description": "Capreolinae",
 	"advancements.fossils.cervinae.title": "Fallowing my heart",
 	"advancements.fossils.cervinae.description": "Cervinae",
+	"advancements.fossils.glires.title": "Our closest relatives, Vermin!",
+	"advancements.fossils.glires.description": "Glires",
+	"advancements.fossils.rodentia.title": "Rats, we're the rats",
+	"advancements.fossils.rodentia.description": "Rodentia",
+	"advancements.fossils.hystricomorpha.title": "Nature's sewing set",
+	"advancements.fossils.hystricomorpha.description": "Hystricomorpha",
 
 
 	"advancements.fossils.pelecanimimus.title": "Pelican Mimic",
@@ -2080,5 +2088,9 @@
 	"advancements.fossils.dinodontosaurus.title": "Terrible-toothed Lizard",
 	"advancements.fossils.dinodontosaurus.description": "Complete a Dinodontosaurus skeleton",
 	"advancements.fossils.megalocnus.title": "Big Sloth",
-	"advancements.fossils.megalocnus.description": "Complete a Megalocnus skeleton"
+	"advancements.fossils.megalocnus.description": "Complete a Megalocnus skeleton",
+	"advancements.fossils.josephoartigasia.title": "Named after José Artigas",
+	"advancements.fossils.josephoartigasia.description": "Complete a Josephoartigasia skeleton",
+	"advancements.fossils.tupuxuara.title": "Familiar Spirit",
+	"advancements.fossils.tupuxuara.description": "Complete a Tupuxuara skeleton"
 }
