@@ -1,0 +1,54 @@
+{
+  "parent": "fossils:fossils/general/hadrosauromorpha",
+  "criteria": {
+    "finish_gonkoken": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:gonkoken_fossil"
+                ],
+                "state": {
+                  "fossil_level": "9"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:gonkoken_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.gonkoken.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:gonkoken_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.gonkoken.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_gonkoken"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

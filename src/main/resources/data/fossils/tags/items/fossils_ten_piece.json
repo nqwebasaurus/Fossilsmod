@@ -156,6 +156,10 @@
 		"fossils:hippocamelus_fossil",
 		"fossils:desmatochelys_fossil",
 		"fossils:dinodontosaurus_fossil",
-		"fossils:megalocnus_fossil"
+		"fossils:megalocnus_fossil",
+		"fossils:messapicetus_fossil",
+		"fossils:gonkoken_fossil",
+		"fossils:armadillosuchus_fossil",
+		"fossils:niolamia_fossil"
 	]
 }

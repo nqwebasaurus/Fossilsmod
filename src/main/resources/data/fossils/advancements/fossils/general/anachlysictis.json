@@ -1,0 +1,54 @@
+{
+  "parent": "fossils:fossils/general/metatheria",
+  "criteria": {
+    "finish_anachlysictis": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:anachlysictis_fossil"
+                ],
+                "state": {
+                  "fossil_level": "4"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:anachlysictis_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.anachlysictis.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:anachlysictis_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.anachlysictis.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_anachlysictis"
+    ]
+  ],
+  "sends_telemetry_event": true
+}
