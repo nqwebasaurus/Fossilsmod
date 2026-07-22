@@ -451,6 +451,8 @@
 	"block.fossils.gonkoken_fossil": "Gonkoken Fossil",
 	"block.fossils.armadillosuchus_fossil": "Armadillosuchus Fossil",
 	"block.fossils.niolamia_fossil": "Niolamia Fossil",
+	"block.fossils.rhea_fossil": "Rhea Fossil",
+	"block.fossils.ischigualastia_fossil": "Ischigualastia Fossil",
 	"block.fossils.poposaurus_fossil": "Poposaurus Fossil",
 	"block.fossils.nigerpeton_fossil": "Nigerpeton Fossil",
 	"block.fossils.stahleckeria_fossil": "Stahleckeria Fossil",
@@ -561,6 +563,7 @@
 	"block.fossils.morenelaphus_fossil": "Morenelaphus Fossil",
 	"block.fossils.josephoartigasia_fossil": "Josephoartigasia Fossil",
 	"block.fossils.tupuxuara_fossil": "Tupuxuara Fossil",
+	"block.fossils.glyptodon_fossil": "Glyptodon Fossil",
 	"block.fossils.bisonlatifrons_fossil": "Bison latifrons Fossil",
 	"block.fossils.utahraptor_fossil": "Utahraptor Fossil",
 	"block.fossils.shonisaurus_fossil": "Shonisaurus Fossil",
@@ -633,6 +636,7 @@
 	"block.fossils.kelenken_fossil": "Kelenken Fossil",
 	"block.fossils.cuvieronius_fossil": "Cuvieronius Fossil",
 	"block.fossils.mourasuchus_fossil": "Mourasuchus Fossil",
+	"block.fossils.argentinosaurus_fossil": "Argentinosaurus Fossil",
 	
 	"itemGroup.fossil_slab_tab": "Fossils Slabs",
 	"itemGroup.fossil_blocks_tab": "Fossils Blocks",
@@ -1191,6 +1195,10 @@
 	"advancements.fossils.ziphiidae.description": "Ziphiidae",
 	"advancements.fossils.meiolaniformes.title": "A Turtletopsian!",
 	"advancements.fossils.meiolaniformes.description": "Meiolaniformes",
+	"advancements.fossils.palaeognathae.title": "Too heavy to fly",
+	"advancements.fossils.palaeognathae.description": "Palaeognathae",
+	"advancements.fossils.notopalaeognathae.title": "Isolated and Flightless",
+	"advancements.fossils.notopalaeognathae.description": "Notopalaeognathae",
 
 
 	"advancements.fossils.pelecanimimus.title": "Pelican Mimic",
@@ -2112,7 +2120,15 @@
 	"advancements.fossils.armadillosuchus.title": "Armadillo Crocodile",
 	"advancements.fossils.armadillosuchus.description": "Complete an Armadillosuchus skeleton",
 	"advancements.fossils.niolamia.title": "A misspelling of a misspelling of an Anagram",
-	"advancements.fossils.niolamia.description": "Complete an Niolamia skeleton",
+	"advancements.fossils.niolamia.description": "Complete a Niolamia skeleton",
 	"advancements.fossils.mesosaurus.title": "Intermediate Lizard",
-	"advancements.fossils.mesosaurus.description": "Complete an Mesosaurus skeleton"
+	"advancements.fossils.mesosaurus.description": "Complete a Mesosaurus skeleton",
+	"advancements.fossils.rhea.title": "Greater Rhea",
+	"advancements.fossils.rhea.description": "Complete a Rhea skeleton",
+	"advancements.fossils.glyptodon.title": "Carved Tooth",
+	"advancements.fossils.glyptodon.description": "Complete a Glyptodon skeleton",
+	"advancements.fossils.ischigualastia.title": "From Ischigualasto",
+	"advancements.fossils.ischigualastia.description": "Complete an Ischigualastia skeleton",
+	"advancements.fossils.argentinosaurus.title": "Lizard from Argentina",
+	"advancements.fossils.argentinosaurus.description": "Complete an Argentinosaurus skeleton"
 }

@@ -79,6 +79,8 @@ import fossils.fossils.client.blockentity.model.eurhinosaurus.EurhinosaurusFossi
 import fossils.fossils.client.blockentity.model.eurhinosaurus.EurhinosaurusFossilModel;
 import fossils.fossils.client.blockentity.model.gaiasia.GaiasiaFossilFrameModel;
 import fossils.fossils.client.blockentity.model.gaiasia.GaiasiaFossilModel;
+import fossils.fossils.client.blockentity.model.glyptodon.GlyptodonFossilFrameModel;
+import fossils.fossils.client.blockentity.model.glyptodon.GlyptodonFossilModel;
 import fossils.fossils.client.blockentity.model.granastrapotherium.GranastrapotheriumFossilFrameModel;
 import fossils.fossils.client.blockentity.model.granastrapotherium.GranastrapotheriumFossilModel;
 import fossils.fossils.client.blockentity.model.huaxiazhoulong.HuaxiazhoulongFossilFrameModel;
@@ -349,6 +351,7 @@ public class FossilSkeletonFifteenPieceRenderer implements BlockEntityRenderer<F
         type.put(FossilSkeletonFifteenPieceBlock.Types.MORENELAPHUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/morenelaphus/stage_0.png"));
         type.put(FossilSkeletonFifteenPieceBlock.Types.JOSEPHOARTIGASIA, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/josephoartigasia/stage_0.png"));
         type.put(FossilSkeletonFifteenPieceBlock.Types.TUPUXUARA, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/tupuxuara/stage_0.png"));
+        type.put(FossilSkeletonFifteenPieceBlock.Types.GLYPTODON, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/glyptodon/stage_0.png"));
     });
     public static final Map<FossilSkeletonFifteenPieceBlock.Type, ResourceLocation> FRAME_BY_TYPE = Util.make(Maps.newHashMap(), (type) -> {
         type.put(FossilSkeletonFifteenPieceBlock.Types.WUERHOSAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/wuerhosaurus/frame.png"));
@@ -456,6 +459,7 @@ public class FossilSkeletonFifteenPieceRenderer implements BlockEntityRenderer<F
         type.put(FossilSkeletonFifteenPieceBlock.Types.MORENELAPHUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/morenelaphus/frame.png"));
         type.put(FossilSkeletonFifteenPieceBlock.Types.JOSEPHOARTIGASIA, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/josephoartigasia/frame.png"));
         type.put(FossilSkeletonFifteenPieceBlock.Types.TUPUXUARA, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/tupuxuara/frame.png"));
+        type.put(FossilSkeletonFifteenPieceBlock.Types.GLYPTODON, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/glyptodon/frame.png"));
     });
 
     public static Map<FossilSkeletonFifteenPieceBlock.Type, SkullModelBase> createFossilRenderers(EntityModelSet p_173662_) {
@@ -565,6 +569,7 @@ public class FossilSkeletonFifteenPieceRenderer implements BlockEntityRenderer<F
         builder.put(FossilSkeletonFifteenPieceBlock.Types.MORENELAPHUS, new MorenelaphusFossilModel(p_173662_.bakeLayer(ClientEvents.MORENELAPHUS)));
         builder.put(FossilSkeletonFifteenPieceBlock.Types.JOSEPHOARTIGASIA, new JosephoartigasiaFossilModel(p_173662_.bakeLayer(ClientEvents.JOSEPHOARTIGASIA)));
         builder.put(FossilSkeletonFifteenPieceBlock.Types.TUPUXUARA, new TupuxuaraFossilModel(p_173662_.bakeLayer(ClientEvents.TUPUXUARA)));
+        builder.put(FossilSkeletonFifteenPieceBlock.Types.GLYPTODON, new GlyptodonFossilModel(p_173662_.bakeLayer(ClientEvents.GLYPTODON)));
         return builder.build();
     }
 
@@ -675,6 +680,7 @@ public class FossilSkeletonFifteenPieceRenderer implements BlockEntityRenderer<F
         builder.put(FossilSkeletonFifteenPieceBlock.Types.MORENELAPHUS, new MorenelaphusFossilFrameModel(p_173662_.bakeLayer(ClientEvents.MORENELAPHUS_FRAME)));
         builder.put(FossilSkeletonFifteenPieceBlock.Types.JOSEPHOARTIGASIA, new JosephoartigasiaFossilFrameModel(p_173662_.bakeLayer(ClientEvents.JOSEPHOARTIGASIA_FRAME)));
         builder.put(FossilSkeletonFifteenPieceBlock.Types.TUPUXUARA, new TupuxuaraFossilFrameModel(p_173662_.bakeLayer(ClientEvents.TUPUXUARA_FRAME)));
+        builder.put(FossilSkeletonFifteenPieceBlock.Types.GLYPTODON, new GlyptodonFossilFrameModel(p_173662_.bakeLayer(ClientEvents.GLYPTODON_FRAME)));
         return builder.build();
     }
 
@@ -1124,6 +1130,10 @@ public class FossilSkeletonFifteenPieceRenderer implements BlockEntityRenderer<F
             float scale = 0.39F;
             pose.scale(-scale, -scale, scale);
             pose.translate(0F, 1F, 0F);
+        } else if (FossilSkeletonFifteenPieceBlock$type == FossilSkeletonFifteenPieceBlock.Types.GLYPTODON) {
+            float scale = 1.05F;
+            pose.scale(-scale, -scale, scale);
+            pose.translate(0F, -0.55F, 0F);
         } else {
             float scale = 1.0F;
             pose.scale(-scale, -scale, scale);
@@ -1346,6 +1356,8 @@ public class FossilSkeletonFifteenPieceRenderer implements BlockEntityRenderer<F
             resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/josephoartigasia/stage_" + fossilLevel + ".png");
         } else if (type == FossilSkeletonFifteenPieceBlock.Types.TUPUXUARA) {
             resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/tupuxuara/stage_" + fossilLevel + ".png");
+        } else if (type == FossilSkeletonFifteenPieceBlock.Types.GLYPTODON) {
+            resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/glyptodon/stage_" + fossilLevel + ".png");
         } else resourceLocation = SKIN_BY_TYPE.get(type);
         return RenderType.entityCutoutNoCullZOffset(resourceLocation);
 

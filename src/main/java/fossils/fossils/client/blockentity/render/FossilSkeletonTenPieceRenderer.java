@@ -145,6 +145,8 @@ import fossils.fossils.client.blockentity.model.hypsilophodon.HypsilophodonFossi
 import fossils.fossils.client.blockentity.model.hypsilophodon.HypsilophodonFossilModel;
 import fossils.fossils.client.blockentity.model.ichthyosaurus.IchthyosaurusFossilFrameModel;
 import fossils.fossils.client.blockentity.model.ichthyosaurus.IchthyosaurusFossilModel;
+import fossils.fossils.client.blockentity.model.ischigualastia.IschigualastiaFossilFrameModel;
+import fossils.fossils.client.blockentity.model.ischigualastia.IschigualastiaFossilModel;
 import fossils.fossils.client.blockentity.model.jinyunpelta.JinyunpeltaFossilFrameModel;
 import fossils.fossils.client.blockentity.model.jinyunpelta.JinyunpeltaFossilModel;
 import fossils.fossils.client.blockentity.model.jinzhousaurus.JinzhousaurusFossilFrameModel;
@@ -267,6 +269,8 @@ import fossils.fossils.client.blockentity.model.rechnisaurus.RechnisaurusFossilF
 import fossils.fossils.client.blockentity.model.rechnisaurus.RechnisaurusFossilModel;
 import fossils.fossils.client.blockentity.model.rhamphorhynchus.RhamphorhynchusFossilFrameModel;
 import fossils.fossils.client.blockentity.model.rhamphorhynchus.RhamphorhynchusFossilModel;
+import fossils.fossils.client.blockentity.model.rhea.RheaFossilFrameModel;
+import fossils.fossils.client.blockentity.model.rhea.RheaFossilModel;
 import fossils.fossils.client.blockentity.model.rugarhynchos.RugarhynchosFossilFrameModel;
 import fossils.fossils.client.blockentity.model.rugarhynchos.RugarhynchosFossilModel;
 import fossils.fossils.client.blockentity.model.ruhuhucerberus.RuhuhucerberusFossilFrameModel;
@@ -513,6 +517,8 @@ public class FossilSkeletonTenPieceRenderer implements BlockEntityRenderer<Fossi
         type.put(FossilSkeletonTenPieceBlock.Types.GONKOKEN, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/gonkoken/stage_0.png"));
         type.put(FossilSkeletonTenPieceBlock.Types.ARMADILLOSUCHUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/armadillosuchus/stage_0.png"));
         type.put(FossilSkeletonTenPieceBlock.Types.NIOLAMIA, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/niolamia/stage_0.png"));
+        type.put(FossilSkeletonTenPieceBlock.Types.RHEA, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/rhea/stage_0.png"));
+        type.put(FossilSkeletonTenPieceBlock.Types.ISCHIGUALASTIA, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/ischigualastia/stage_0.png"));
 
     });
     public static final Map<FossilSkeletonTenPieceBlock.Type, ResourceLocation> FRAME_BY_TYPE = Util.make(Maps.newHashMap(), (type) -> {
@@ -676,6 +682,8 @@ public class FossilSkeletonTenPieceRenderer implements BlockEntityRenderer<Fossi
         type.put(FossilSkeletonTenPieceBlock.Types.GONKOKEN, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/gonkoken/frame.png"));
         type.put(FossilSkeletonTenPieceBlock.Types.ARMADILLOSUCHUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/armadillosuchus/frame.png"));
         type.put(FossilSkeletonTenPieceBlock.Types.NIOLAMIA, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/niolamia/frame.png"));
+        type.put(FossilSkeletonTenPieceBlock.Types.RHEA, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/rhea/frame.png"));
+        type.put(FossilSkeletonTenPieceBlock.Types.ISCHIGUALASTIA, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/ischigualastia/frame.png"));
 
 
     });
@@ -842,6 +850,8 @@ public class FossilSkeletonTenPieceRenderer implements BlockEntityRenderer<Fossi
         builder.put(FossilSkeletonTenPieceBlock.Types.GONKOKEN, new GonkokenFossilModel(p_173662_.bakeLayer(ClientEvents.GONKOKEN)));
         builder.put(FossilSkeletonTenPieceBlock.Types.ARMADILLOSUCHUS, new ArmadillosuchusFossilModel(p_173662_.bakeLayer(ClientEvents.ARMADILLOSUCHUS)));
         builder.put(FossilSkeletonTenPieceBlock.Types.NIOLAMIA, new NiolamiaFossilModel(p_173662_.bakeLayer(ClientEvents.NIOLAMIA)));
+        builder.put(FossilSkeletonTenPieceBlock.Types.RHEA, new RheaFossilModel(p_173662_.bakeLayer(ClientEvents.RHEA)));
+        builder.put(FossilSkeletonTenPieceBlock.Types.ISCHIGUALASTIA, new IschigualastiaFossilModel(p_173662_.bakeLayer(ClientEvents.ISCHIGUALASTIA)));
         return builder.build();
     }
 
@@ -1007,6 +1017,8 @@ public class FossilSkeletonTenPieceRenderer implements BlockEntityRenderer<Fossi
         builder.put(FossilSkeletonTenPieceBlock.Types.GONKOKEN, new GonkokenFossilFrameModel(p_173662_.bakeLayer(ClientEvents.GONKOKEN_FRAME)));
         builder.put(FossilSkeletonTenPieceBlock.Types.ARMADILLOSUCHUS, new ArmadillosuchusFossilFrameModel(p_173662_.bakeLayer(ClientEvents.ARMADILLOSUCHUS_FRAME)));
         builder.put(FossilSkeletonTenPieceBlock.Types.NIOLAMIA, new NiolamiaFossilFrameModel(p_173662_.bakeLayer(ClientEvents.NIOLAMIA_FRAME)));
+        builder.put(FossilSkeletonTenPieceBlock.Types.RHEA, new RheaFossilFrameModel(p_173662_.bakeLayer(ClientEvents.RHEA_FRAME)));
+        builder.put(FossilSkeletonTenPieceBlock.Types.ISCHIGUALASTIA, new IschigualastiaFossilFrameModel(p_173662_.bakeLayer(ClientEvents.ISCHIGUALASTIA_FRAME)));
         return builder.build();
     }
 
@@ -1676,6 +1688,14 @@ public class FossilSkeletonTenPieceRenderer implements BlockEntityRenderer<Fossi
             float scale = 0.95F;
             pose.scale(-scale, -scale, scale);
             pose.translate(0F, -0.44F, 0F);
+        } else if (FossilSkeletonTenPieceBlock$type == FossilSkeletonTenPieceBlock.Types.RHEA) {
+            float scale = 0.61F;
+            pose.scale(-scale, -scale, scale);
+            pose.translate(0F, 0.14F, 0F);
+        } else if (FossilSkeletonTenPieceBlock$type == FossilSkeletonTenPieceBlock.Types.ISCHIGUALASTIA) {
+            float scale = 1.2F;
+            pose.scale(-scale, -scale, scale);
+            pose.translate(0F, -0.65F, 0F);
         } else {
             float scale = 1.0F;
             pose.scale(-scale, -scale, scale);
@@ -2008,6 +2028,10 @@ public class FossilSkeletonTenPieceRenderer implements BlockEntityRenderer<Fossi
             resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/armadillosuchus/stage_" + fossilLevel + ".png");
         } else if (type == FossilSkeletonTenPieceBlock.Types.NIOLAMIA) {
             resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/niolamia/stage_" + fossilLevel + ".png");
+        } else if (type == FossilSkeletonTenPieceBlock.Types.RHEA) {
+            resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/rhea/stage_" + fossilLevel + ".png");
+        } else if (type == FossilSkeletonTenPieceBlock.Types.ISCHIGUALASTIA) {
+            resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/ischigualastia/stage_" + fossilLevel + ".png");
         } else resourceLocation = SKIN_BY_TYPE.get(type);
         return RenderType.entityCutoutNoCullZOffset(resourceLocation);
     }

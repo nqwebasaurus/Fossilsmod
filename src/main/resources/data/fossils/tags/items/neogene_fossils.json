@@ -45,6 +45,8 @@
 		"fossils:mourasuchus_fossil",
 		"fossils:josephoartigasia_fossil",
 		"fossils:anachlysictis_fossil",
-		"fossils:messapicetus_fossil"
+		"fossils:messapicetus_fossil",
+		"fossils:rhea_fossil",
+		"fossils:glyptodon_fossil"
 	]
 }

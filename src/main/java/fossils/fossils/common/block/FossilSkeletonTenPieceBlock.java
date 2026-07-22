@@ -1412,6 +1412,22 @@ public class FossilSkeletonTenPieceBlock extends BaseEntityBlock implements Simp
 				stack.shrink(1);
 			}
 			return InteractionResult.sidedSuccess(world.isClientSide);
+		}  else if (item == FossilItems.RHEA.get() && state.getValue(FOSSIL_LEVEL) != 9 && type == Types.RHEA) {
+			fossilLevel = state.getValue(FOSSIL_LEVEL);
+			world.setBlockAndUpdate(pos, state.setValue(FOSSIL_LEVEL, fossilLevel + 1));
+			world.playSound(player, pos, SoundEvents.BONE_BLOCK_PLACE, SoundSource.BLOCKS);
+			if (!player.isCreative()) {
+				stack.shrink(1);
+			}
+			return InteractionResult.sidedSuccess(world.isClientSide);
+		}  else if (item == FossilItems.ISCHIGUALASTIA.get() && state.getValue(FOSSIL_LEVEL) != 9 && type == Types.ISCHIGUALASTIA) {
+			fossilLevel = state.getValue(FOSSIL_LEVEL);
+			world.setBlockAndUpdate(pos, state.setValue(FOSSIL_LEVEL, fossilLevel + 1));
+			world.playSound(player, pos, SoundEvents.BONE_BLOCK_PLACE, SoundSource.BLOCKS);
+			if (!player.isCreative()) {
+				stack.shrink(1);
+			}
+			return InteractionResult.sidedSuccess(world.isClientSide);
 		} else return super.use(state, world, pos, player, hand, hit);
 	}
 
@@ -1581,6 +1597,8 @@ public class FossilSkeletonTenPieceBlock extends BaseEntityBlock implements Simp
 		GONKOKEN,
 		ARMADILLOSUCHUS,
 		NIOLAMIA,
+		RHEA,
+		ISCHIGUALASTIA,
 		NASUTOCERATOPS;
 	}
 
