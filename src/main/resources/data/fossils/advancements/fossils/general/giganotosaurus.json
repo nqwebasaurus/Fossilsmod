@@ -1,0 +1,57 @@
+{
+  "parent": "fossils:fossils/general/carcharodontosauria",
+  "criteria": {
+    "finish_giganotosaurus": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:giganotosaurus_fossil"
+                ],
+                "state": {
+                  "fossil_level": "19"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:giganotosaurus_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.giganotosaurus.description"
+    },
+    "frame": "challenge",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:giganotosaurus_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.giganotosaurus.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_giganotosaurus"
+    ]
+  ],
+  "rewards": {
+    "experience": 500
+  },
+  "sends_telemetry_event": true
+}

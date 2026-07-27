@@ -1,0 +1,54 @@
+{
+  "parent": "fossils:fossils/general/physeteroidea",
+  "criteria": {
+    "finish_acrophyseter": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:acrophyseter_fossil"
+                ],
+                "state": {
+                  "fossil_level": "9"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:acrophyseter_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.acrophyseter.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:acrophyseter_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.acrophyseter.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_acrophyseter"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

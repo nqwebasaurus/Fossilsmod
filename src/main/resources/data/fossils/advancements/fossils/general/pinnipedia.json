@@ -1,5 +1,5 @@
 {
-  "parent": "fossils:fossils/general/carnivora",
+  "parent": "fossils:fossils/general/panpinnipedia",
   "criteria": {
     "finish_pinnipedia": {
       "trigger": "minecraft:tick"

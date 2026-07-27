@@ -75,6 +75,8 @@
 		"fossils:kelenken_fossil",
 		"fossils:cuvieronius_fossil",
 		"fossils:mourasuchus_fossil",
-		"fossils:argentinosaurus_fossil"
+		"fossils:argentinosaurus_fossil",
+		"fossils:giganotosaurus_fossil",
+		"fossils:carnotaurus_fossil"
 	]
 }

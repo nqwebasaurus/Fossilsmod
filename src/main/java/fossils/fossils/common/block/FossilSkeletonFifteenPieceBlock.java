@@ -1042,6 +1042,14 @@ public class FossilSkeletonFifteenPieceBlock extends BaseEntityBlock implements 
 				stack.shrink(1);
 			}
 			return InteractionResult.sidedSuccess(world.isClientSide);
+		} else if (item == FossilItems.KELUMAPUSAURA.get() && state.getValue(FOSSIL_LEVEL) != 14 && type == Types.KELUMAPUSAURA) {
+			fossilLevel = state.getValue(FOSSIL_LEVEL);
+			world.setBlockAndUpdate(pos, state.setValue(FOSSIL_LEVEL, fossilLevel + 1));
+			world.playSound(player, pos, SoundEvents.BONE_BLOCK_PLACE, SoundSource.BLOCKS);
+			if (!player.isCreative()) {
+				stack.shrink(1);
+			}
+			return InteractionResult.sidedSuccess(world.isClientSide);
 		} else return super.use(state, world, pos, player, hand, hit);
 	}
 
@@ -1157,6 +1165,7 @@ public class FossilSkeletonFifteenPieceBlock extends BaseEntityBlock implements 
 		JOSEPHOARTIGASIA,
 		TUPUXUARA,
 		GLYPTODON,
+		KELUMAPUSAURA,
 		WUERHOSAURUS;
 	}
 

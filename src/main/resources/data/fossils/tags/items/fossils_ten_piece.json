@@ -162,6 +162,11 @@
 		"fossils:armadillosuchus_fossil",
 		"fossils:niolamia_fossil",
 		"fossils:rhea_fossil",
-		"fossils:ischigualastia_fossil"
+		"fossils:ischigualastia_fossil",
+		"fossils:trucidocynodon_fossil",
+		"fossils:acrophyseter_fossil",
+		"fossils:jacheleria_fossil",
+		"fossils:acrophoca_fossil",
+		"fossils:provelosaurus_fossil"
 	]
 }

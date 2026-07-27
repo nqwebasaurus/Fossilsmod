@@ -95,6 +95,8 @@ import fossils.fossils.client.blockentity.model.josephoartigasia.Josephoartigasi
 import fossils.fossils.client.blockentity.model.josephoartigasia.JosephoartigasiaFossilModel;
 import fossils.fossils.client.blockentity.model.kamuysaurus.KamuysaurusFossilFrameModel;
 import fossils.fossils.client.blockentity.model.kamuysaurus.KamuysaurusFossilModel;
+import fossils.fossils.client.blockentity.model.kelumapusaura.KelumapusauraFossilFrameModel;
+import fossils.fossils.client.blockentity.model.kelumapusaura.KelumapusauraFossilModel;
 import fossils.fossils.client.blockentity.model.klamelisaurus.KlamelisaurusFossilFrameModel;
 import fossils.fossils.client.blockentity.model.klamelisaurus.KlamelisaurusFossilModel;
 import fossils.fossils.client.blockentity.model.koolasuchus.KoolasuchusFossilFrameModel;
@@ -352,6 +354,7 @@ public class FossilSkeletonFifteenPieceRenderer implements BlockEntityRenderer<F
         type.put(FossilSkeletonFifteenPieceBlock.Types.JOSEPHOARTIGASIA, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/josephoartigasia/stage_0.png"));
         type.put(FossilSkeletonFifteenPieceBlock.Types.TUPUXUARA, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/tupuxuara/stage_0.png"));
         type.put(FossilSkeletonFifteenPieceBlock.Types.GLYPTODON, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/glyptodon/stage_0.png"));
+        type.put(FossilSkeletonFifteenPieceBlock.Types.KELUMAPUSAURA, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/kelumapusaura/stage_0.png"));
     });
     public static final Map<FossilSkeletonFifteenPieceBlock.Type, ResourceLocation> FRAME_BY_TYPE = Util.make(Maps.newHashMap(), (type) -> {
         type.put(FossilSkeletonFifteenPieceBlock.Types.WUERHOSAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/wuerhosaurus/frame.png"));
@@ -460,6 +463,7 @@ public class FossilSkeletonFifteenPieceRenderer implements BlockEntityRenderer<F
         type.put(FossilSkeletonFifteenPieceBlock.Types.JOSEPHOARTIGASIA, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/josephoartigasia/frame.png"));
         type.put(FossilSkeletonFifteenPieceBlock.Types.TUPUXUARA, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/tupuxuara/frame.png"));
         type.put(FossilSkeletonFifteenPieceBlock.Types.GLYPTODON, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/glyptodon/frame.png"));
+        type.put(FossilSkeletonFifteenPieceBlock.Types.KELUMAPUSAURA, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/kelumapusaura/frame.png"));
     });
 
     public static Map<FossilSkeletonFifteenPieceBlock.Type, SkullModelBase> createFossilRenderers(EntityModelSet p_173662_) {
@@ -570,6 +574,7 @@ public class FossilSkeletonFifteenPieceRenderer implements BlockEntityRenderer<F
         builder.put(FossilSkeletonFifteenPieceBlock.Types.JOSEPHOARTIGASIA, new JosephoartigasiaFossilModel(p_173662_.bakeLayer(ClientEvents.JOSEPHOARTIGASIA)));
         builder.put(FossilSkeletonFifteenPieceBlock.Types.TUPUXUARA, new TupuxuaraFossilModel(p_173662_.bakeLayer(ClientEvents.TUPUXUARA)));
         builder.put(FossilSkeletonFifteenPieceBlock.Types.GLYPTODON, new GlyptodonFossilModel(p_173662_.bakeLayer(ClientEvents.GLYPTODON)));
+        builder.put(FossilSkeletonFifteenPieceBlock.Types.KELUMAPUSAURA, new KelumapusauraFossilModel(p_173662_.bakeLayer(ClientEvents.KELUMAPUSAURA)));
         return builder.build();
     }
 
@@ -681,6 +686,7 @@ public class FossilSkeletonFifteenPieceRenderer implements BlockEntityRenderer<F
         builder.put(FossilSkeletonFifteenPieceBlock.Types.JOSEPHOARTIGASIA, new JosephoartigasiaFossilFrameModel(p_173662_.bakeLayer(ClientEvents.JOSEPHOARTIGASIA_FRAME)));
         builder.put(FossilSkeletonFifteenPieceBlock.Types.TUPUXUARA, new TupuxuaraFossilFrameModel(p_173662_.bakeLayer(ClientEvents.TUPUXUARA_FRAME)));
         builder.put(FossilSkeletonFifteenPieceBlock.Types.GLYPTODON, new GlyptodonFossilFrameModel(p_173662_.bakeLayer(ClientEvents.GLYPTODON_FRAME)));
+        builder.put(FossilSkeletonFifteenPieceBlock.Types.KELUMAPUSAURA, new KelumapusauraFossilFrameModel(p_173662_.bakeLayer(ClientEvents.KELUMAPUSAURA_FRAME)));
         return builder.build();
     }
 
@@ -1134,6 +1140,10 @@ public class FossilSkeletonFifteenPieceRenderer implements BlockEntityRenderer<F
             float scale = 1.05F;
             pose.scale(-scale, -scale, scale);
             pose.translate(0F, -0.55F, 0F);
+        } else if (FossilSkeletonFifteenPieceBlock$type == FossilSkeletonFifteenPieceBlock.Types.KELUMAPUSAURA) {
+            float scale = 0.91F;
+            pose.scale(-scale, -scale, scale);
+            pose.translate(0F, -0.4F, 0F);
         } else {
             float scale = 1.0F;
             pose.scale(-scale, -scale, scale);
@@ -1358,6 +1368,8 @@ public class FossilSkeletonFifteenPieceRenderer implements BlockEntityRenderer<F
             resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/tupuxuara/stage_" + fossilLevel + ".png");
         } else if (type == FossilSkeletonFifteenPieceBlock.Types.GLYPTODON) {
             resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/glyptodon/stage_" + fossilLevel + ".png");
+        } else if (type == FossilSkeletonFifteenPieceBlock.Types.KELUMAPUSAURA) {
+            resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/kelumapusaura/stage_" + fossilLevel + ".png");
         } else resourceLocation = SKIN_BY_TYPE.get(type);
         return RenderType.entityCutoutNoCullZOffset(resourceLocation);
 

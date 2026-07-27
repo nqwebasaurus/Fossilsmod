@@ -47,6 +47,8 @@
 		"fossils:anachlysictis_fossil",
 		"fossils:messapicetus_fossil",
 		"fossils:rhea_fossil",
-		"fossils:glyptodon_fossil"
+		"fossils:glyptodon_fossil",
+		"fossils:acrophyseter_fossil",
+		"fossils:acrophoca_fossil"
 	]
 }

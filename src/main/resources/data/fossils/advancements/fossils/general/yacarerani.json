@@ -1,0 +1,54 @@
+{
+  "parent": "fossils:fossils/general/notosuchia",
+  "criteria": {
+    "finish_yacarerani": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:yacarerani_fossil"
+                ],
+                "state": {
+                  "fossil_level": "4"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:yacarerani_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.yacarerani.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:yacarerani_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.yacarerani.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_yacarerani"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

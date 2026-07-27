@@ -1,0 +1,57 @@
+{
+  "parent": "fossils:fossils/general/abelisauria",
+  "criteria": {
+    "finish_carnotaurus": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:carnotaurus_fossil"
+                ],
+                "state": {
+                  "fossil_level": "19"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:carnotaurus_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.carnotaurus.description"
+    },
+    "frame": "challenge",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:carnotaurus_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.carnotaurus.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_carnotaurus"
+    ]
+  ],
+  "rewards": {
+    "experience": 500
+  },
+  "sends_telemetry_event": true
+}

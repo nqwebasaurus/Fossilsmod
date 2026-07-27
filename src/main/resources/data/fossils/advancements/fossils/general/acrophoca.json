@@ -1,0 +1,54 @@
+{
+  "parent": "fossils:fossils/general/pinnipedia",
+  "criteria": {
+    "finish_acrophoca": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:acrophoca_fossil"
+                ],
+                "state": {
+                  "fossil_level": "9"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:acrophoca_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.acrophoca.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:acrophoca_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.acrophoca.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_acrophoca"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

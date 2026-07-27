@@ -169,6 +169,8 @@ import fossils.fossils.client.blockentity.model.mesosaurus.MesosaurusFossilFrame
 import fossils.fossils.client.blockentity.model.mesosaurus.MesosaurusFossilModel;
 import fossils.fossils.client.blockentity.model.mixosaurus.MixosaurusFossilFrameModel;
 import fossils.fossils.client.blockentity.model.mixosaurus.MixosaurusFossilModel;
+import fossils.fossils.client.blockentity.model.navaornis.NavaornisFossilFrameModel;
+import fossils.fossils.client.blockentity.model.navaornis.NavaornisFossilModel;
 import fossils.fossils.client.blockentity.model.necrolestes.NecrolestesFossilFrameModel;
 import fossils.fossils.client.blockentity.model.necrolestes.NecrolestesFossilModel;
 import fossils.fossils.client.blockentity.model.parmastega.ParmastegaFossilFrameModel;
@@ -247,6 +249,8 @@ import fossils.fossils.client.blockentity.model.xenicibis.XenicibisFossilFrameMo
 import fossils.fossils.client.blockentity.model.xenicibis.XenicibisFossilModel;
 import fossils.fossils.client.blockentity.model.xinpusaurus.XinpusaurusFossilFrameModel;
 import fossils.fossils.client.blockentity.model.xinpusaurus.XinpusaurusFossilModel;
+import fossils.fossils.client.blockentity.model.yacarerani.YacareraniFossilFrameModel;
+import fossils.fossils.client.blockentity.model.yacarerani.YacareraniFossilModel;
 import fossils.fossils.client.blockentity.model.yi.YiFossilFrameModel;
 import fossils.fossils.client.blockentity.model.yi.YiFossilModel;
 import fossils.fossils.client.blockentity.model.yinlong.YinlongFossilFrameModel;
@@ -397,6 +401,8 @@ public class FossilSkeletonFivePieceRenderer implements BlockEntityRenderer<Foss
 		type.put(PATAGOPTERYX, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/patagopteryx/stage_0.png"));
 		type.put(ANACHLYSICTIS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/anachlysictis/stage_0.png"));
 		type.put(MESOSAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/mesosaurus/stage_0.png"));
+		type.put(NAVAORNIS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/navaornis/stage_0.png"));
+		type.put(YACARERANI, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/yacarerani/stage_0.png"));
 	});
 	public static final Map<FossilSkeletonFivePieceBlock.Type, ResourceLocation> FRAME_BY_TYPE = Util.make(Maps.newHashMap(), (type) -> {
 		type.put(EUNOTOSAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/eunotosaurus/frame.png"));
@@ -521,6 +527,8 @@ public class FossilSkeletonFivePieceRenderer implements BlockEntityRenderer<Foss
 		type.put(PATAGOPTERYX, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/patagopteryx/frame.png"));
 		type.put(ANACHLYSICTIS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/anachlysictis/frame.png"));
 		type.put(MESOSAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/mesosaurus/frame.png"));
+		type.put(NAVAORNIS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/navaornis/frame.png"));
+		type.put(YACARERANI, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/yacarerani/frame.png"));
 	});
 	public static Map<FossilSkeletonFivePieceBlock.Type, SkullModelBase> createFossilRenderers(EntityModelSet p_173662_) {
 		ImmutableMap.Builder<FossilSkeletonFivePieceBlock.Type, SkullModelBase> builder = ImmutableMap.builder();
@@ -646,6 +654,8 @@ public class FossilSkeletonFivePieceRenderer implements BlockEntityRenderer<Foss
 		builder.put(PATAGOPTERYX, new PatagopteryxFossilModel(p_173662_.bakeLayer(ClientEvents.PATAGOPTERYX)));
 		builder.put(ANACHLYSICTIS, new AnachlysictisFossilModel(p_173662_.bakeLayer(ClientEvents.ANACHLYSICTIS)));
 		builder.put(MESOSAURUS, new MesosaurusFossilModel(p_173662_.bakeLayer(ClientEvents.MESOSAURUS)));
+		builder.put(NAVAORNIS, new NavaornisFossilModel(p_173662_.bakeLayer(ClientEvents.NAVAORNIS)));
+		builder.put(YACARERANI, new YacareraniFossilModel(p_173662_.bakeLayer(ClientEvents.YACARERANI)));
 		return builder.build();
 	}
 
@@ -773,6 +783,8 @@ public class FossilSkeletonFivePieceRenderer implements BlockEntityRenderer<Foss
 		builder.put(PATAGOPTERYX, new PatagopteryxFossilFrameModel(p_173662_.bakeLayer(ClientEvents.PATAGOPTERYX_FRAME)));
 		builder.put(ANACHLYSICTIS, new AnachlysictisFossilFrameModel(p_173662_.bakeLayer(ClientEvents.ANACHLYSICTIS_FRAME)));
 		builder.put(MESOSAURUS, new MesosaurusFossilFrameModel(p_173662_.bakeLayer(ClientEvents.MESOSAURUS_FRAME)));
+		builder.put(NAVAORNIS, new NavaornisFossilFrameModel(p_173662_.bakeLayer(ClientEvents.NAVAORNIS_FRAME)));
+		builder.put(YACARERANI, new YacareraniFossilFrameModel(p_173662_.bakeLayer(ClientEvents.YACARERANI_FRAME)));
 		return builder.build();
 	}
 
@@ -1426,6 +1438,18 @@ public class FossilSkeletonFivePieceRenderer implements BlockEntityRenderer<Foss
 				pose.scale(-scale, -scale, scale);
 				pose.translate(0F, 3.27F, 0F);
 			}
+
+			case NAVAORNIS -> {
+				scale = 0.11F;
+				pose.scale(-scale, -scale, scale);
+				pose.translate(0F, 7.56F, 0F);
+			}
+
+			case YACARERANI -> {
+				scale = 0.15F;
+				pose.scale(-scale, -scale, scale);
+				pose.translate(0F, 5.18F, 0F);
+			}
 			default -> throw new IllegalStateException("Unexpected value: " + type);
         }
 		VertexConsumer vertexconsumer = p_173668_.getBuffer(p_173671_);
@@ -1680,6 +1704,10 @@ public class FossilSkeletonFivePieceRenderer implements BlockEntityRenderer<Foss
 			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/anachlysictis/stage_" + fossilLevel + ".png");
 		} else if (type == MESOSAURUS) {
 			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/mesosaurus/stage_" + fossilLevel + ".png");
+		} else if (type == NAVAORNIS) {
+			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/navaornis/stage_" + fossilLevel + ".png");
+		} else if (type == YACARERANI) {
+			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/yacarerani/stage_" + fossilLevel + ".png");
 		} else resourceLocation = SKIN_BY_TYPE.get(type);
 		return RenderType.entityCutoutNoCullZOffset(resourceLocation);
 	}

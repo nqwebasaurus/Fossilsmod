@@ -79,6 +79,11 @@
 		"fossils:patagopteryx_fossil",
 		"fossils:gonkoken_fossil",
 		"fossils:armadillosuchus_fossil",
-		"fossils:argentinosaurus_fossil"
+		"fossils:argentinosaurus_fossil",
+		"fossils:navaornis_fossil",
+		"fossils:yacarerani_fossil",
+		"fossils:kelumapusaura_fossil",
+		"fossils:giganotosaurus_fossil",
+		"fossils:carnotaurus_fossil"
 	]
 }

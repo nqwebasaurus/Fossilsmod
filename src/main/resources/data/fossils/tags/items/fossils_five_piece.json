@@ -122,6 +122,8 @@
 		"fossils:peltephilus_fossil",
 		"fossils:patagopteryx_fossil",
 		"fossils:anachlysictis_fossil",
-		"fossils:mesosaurus_fossil"
+		"fossils:mesosaurus_fossil",
+		"fossils:navaornis_fossil",
+		"fossils:yacarerani_fossil"
 	]
 }
