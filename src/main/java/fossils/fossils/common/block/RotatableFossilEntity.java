@@ -279,5 +279,7 @@ public class RotatableFossilEntity extends BaseEntityBlock implements SimpleWate
         TULLIMONSTRUM,
         SCHINDERHANNES,
         ROSTROPYCNODUS,
+        BATASPIS,
+        COCCOSTEUS,
     }
 }

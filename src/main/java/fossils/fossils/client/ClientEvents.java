@@ -1136,6 +1136,8 @@ public class ClientEvents {
     public static ModelLayerLocation TULLIMONSTRUM = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "tullimonstrum"), "tullimonstrum");
     public static ModelLayerLocation SCHINDERHANNES = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "schinderhannes"), "schinderhannes");
     public static ModelLayerLocation ROSTROPYCNODUS = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "rostropycnodus"), "rostropycnodus");
+    public static ModelLayerLocation BATASPIS = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "bataspis"), "bataspis");
+    public static ModelLayerLocation COCCOSTEUS = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "coccosteus"), "coccosteus");
 	public static ModelLayerLocation EUNOTOSAURUS = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "eunotosaurus"), "eunotosaurus");
 	public static ModelLayerLocation EUNOTOSAURUS_FRAME = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "eunotosaurus_frame"), "eunotosaurus_frame");
 	public static ModelLayerLocation PELECANIMIMUS = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "pelecanimimus"), "pelecanimimus");
@@ -2244,6 +2246,8 @@ public class ClientEvents {
         event.registerLayerDefinition(TULLIMONSTRUM, TullimonstrumFossilSlabModel::createBodyLayer);
         event.registerLayerDefinition(SCHINDERHANNES, SchinderhannesFossilSlabModel::createBodyLayer);
         event.registerLayerDefinition(ROSTROPYCNODUS, RostropycnodusFossilSlabModel::createBodyLayer);
+        event.registerLayerDefinition(BATASPIS, BataspisFossilSlabModel::createBodyLayer);
+        event.registerLayerDefinition(COCCOSTEUS, CoccosteusFossilSlabModel::createBodyLayer);
 		event.registerLayerDefinition(EUNOTOSAURUS, EunotosaurusFossilModel::createBodyLayer);
 		event.registerLayerDefinition(EUNOTOSAURUS_FRAME, EunotosaurusFossilFrameModel::createBodyLayer);
 		event.registerLayerDefinition(PELECANIMIMUS, PelecanimimusFossilModel::createBodyLayer);
