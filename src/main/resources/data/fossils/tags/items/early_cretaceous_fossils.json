@@ -95,6 +95,11 @@
 		"fossils:keresdrakon_fossil",
 		"fossils:lavocatisaurus_fossil",
 		"fossils:desmatochelys_fossil",
-		"fossils:tupuxuara_fossil"
+		"fossils:tupuxuara_fossil",
+		"fossils:skorpiovenator_fossil",
+		"fossils:argentinosaurus_fossil",
+		"fossils:giganotosaurus_fossil",
+		"fossils:jakapil_fossil",
+		"fossils:buitreraptor_fossil"
 	]
 }

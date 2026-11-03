@@ -3,7 +3,6 @@
 	"values": [
 		"fossils:nasutoceratops_fossil",
 		"fossils:shuvuuia_fossil",
-		"fossils:skorpiovenator_fossil",
 		"fossils:protoceratopsandrewsi_fossil",
 		"fossils:struthiomimus_fossil",
 		"fossils:montanoceratops_fossil",
@@ -17,7 +16,6 @@
 		"fossils:tyrannosaurus_fossil",
 		"fossils:spinosaurus_fossil",
 		"fossils:platecarpus_fossil",
-		"fossils:buitreraptor_fossil",
 		"fossils:oviraptor_fossil",
 		"fossils:therizinosaurus_fossil",
 		"fossils:rajasaurus_fossil",
@@ -27,7 +25,6 @@
 		"fossils:parasaurolophuswalkeri_fossil",
 		"fossils:archelon_fossil",
 		"fossils:diabloceratops_fossil",
-		"fossils:jakapil_fossil",
 		"fossils:stellasaurus_fossil",
 		"fossils:halszkaraptor_fossil",
 		"fossils:australovenator_fossil",
@@ -79,11 +76,9 @@
 		"fossils:patagopteryx_fossil",
 		"fossils:gonkoken_fossil",
 		"fossils:armadillosuchus_fossil",
-		"fossils:argentinosaurus_fossil",
 		"fossils:navaornis_fossil",
 		"fossils:yacarerani_fossil",
 		"fossils:kelumapusaura_fossil",
-		"fossils:giganotosaurus_fossil",
 		"fossils:carnotaurus_fossil"
 	]
 }

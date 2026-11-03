@@ -193,6 +193,8 @@ public class FossilSlabRenderer implements BlockEntityRenderer<FossilSlabBlockEn
         type.put(RotatableFossilEntity.Types.TULLIMONSTRUM, new ResourceLocation(FossilMod.MOD_ID, "textures/block/slabs/tullimonstrum.png"));
         type.put(RotatableFossilEntity.Types.SCHINDERHANNES, new ResourceLocation(FossilMod.MOD_ID, "textures/block/slabs/schinderhannes.png"));
         type.put(RotatableFossilEntity.Types.ROSTROPYCNODUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/slabs/rostropycnodus.png"));
+        type.put(RotatableFossilEntity.Types.BATASPIS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/slabs/bataspis.png"));
+        type.put(RotatableFossilEntity.Types.COCCOSTEUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/slabs/coccosteus.png"));
     });
 
     public static Map<RotatableFossilEntity.FossilType, SkullModelBase> createFossilRenderers(EntityModelSet model) {
@@ -352,6 +354,8 @@ public class FossilSlabRenderer implements BlockEntityRenderer<FossilSlabBlockEn
         builder.put(RotatableFossilEntity.Types.TULLIMONSTRUM, new TullimonstrumFossilSlabModel(model.bakeLayer(ClientEvents.TULLIMONSTRUM)));
         builder.put(RotatableFossilEntity.Types.SCHINDERHANNES, new SchinderhannesFossilSlabModel(model.bakeLayer(ClientEvents.SCHINDERHANNES)));
         builder.put(RotatableFossilEntity.Types.ROSTROPYCNODUS, new RostropycnodusFossilSlabModel(model.bakeLayer(ClientEvents.ROSTROPYCNODUS)));
+        builder.put(RotatableFossilEntity.Types.BATASPIS, new BataspisFossilSlabModel(model.bakeLayer(ClientEvents.BATASPIS)));
+        builder.put(RotatableFossilEntity.Types.COCCOSTEUS, new CoccosteusFossilSlabModel(model.bakeLayer(ClientEvents.COCCOSTEUS)));
         return builder.build();
     }
 
@@ -4795,6 +4799,64 @@ public class FossilSlabRenderer implements BlockEntityRenderer<FossilSlabBlockEn
             }
             ;
         } else if (fossilBlock == RotatableFossilEntity.Types.ROSTROPYCNODUS) {
+            float scale = 0.15F;
+            pose.scale(-scale, -scale, scale);
+            switch (dir) {
+                case DOWN -> {
+                    pose.translate(0F, 5.15F, 0F);
+                }
+                case UP -> {
+                    pose.mulPose(Axis.XP.rotationDegrees(180));
+                    pose.translate(0F, -1.5F, 0F);
+                }
+                case NORTH -> {
+                    pose.mulPose(Axis.XP.rotationDegrees(-90));
+                    pose.translate(0F, 1.85F, 3.2F);
+                }
+                case SOUTH -> {
+                    pose.mulPose(Axis.XP.rotationDegrees(90));
+                    pose.translate(0F, 1.85F, -3.2F);
+                }
+                case WEST -> {
+                    pose.mulPose(Axis.ZP.rotationDegrees(-90));
+                    pose.translate(-3.2F, 1.85F, 0F);
+                }
+                case EAST -> {
+                    pose.mulPose(Axis.ZP.rotationDegrees(90));
+                    pose.translate(3.2F, 1.85F, 0F);
+                }
+            }
+            ;
+        } else if (fossilBlock == RotatableFossilEntity.Types.BATASPIS) {
+            float scale = 0.15F;
+            pose.scale(-scale, -scale, scale);
+            switch (dir) {
+                case DOWN -> {
+                    pose.translate(0F, 5.15F, 0F);
+                }
+                case UP -> {
+                    pose.mulPose(Axis.XP.rotationDegrees(180));
+                    pose.translate(0F, -1.5F, 0F);
+                }
+                case NORTH -> {
+                    pose.mulPose(Axis.XP.rotationDegrees(-90));
+                    pose.translate(0F, 1.8F, 3.2F);
+                }
+                case SOUTH -> {
+                    pose.mulPose(Axis.XP.rotationDegrees(90));
+                    pose.translate(0F, 1.8F, -3.2F);
+                }
+                case WEST -> {
+                    pose.mulPose(Axis.ZP.rotationDegrees(-90));
+                    pose.translate(-3.2F, 1.8F, 0F);
+                }
+                case EAST -> {
+                    pose.mulPose(Axis.ZP.rotationDegrees(90));
+                    pose.translate(3.2F, 1.8F, 0F);
+                }
+            }
+            ;
+        } else if (fossilBlock == RotatableFossilEntity.Types.COCCOSTEUS) {
             float scale = 0.15F;
             pose.scale(-scale, -scale, scale);
             switch (dir) {
