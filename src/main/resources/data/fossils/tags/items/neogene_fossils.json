@@ -49,6 +49,9 @@
 		"fossils:rhea_fossil",
 		"fossils:glyptodon_fossil",
 		"fossils:acrophyseter_fossil",
-		"fossils:acrophoca_fossil"
+		"fossils:acrophoca_fossil",
+		"fossils:andalgalornis_fossil",
+		"fossils:lama_fossil",
+		"fossils:chrysocyon_fossil"
 	]
 }

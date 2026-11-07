@@ -1,0 +1,54 @@
+{
+  "parent": "fossils:fossils/general/camelidae",
+  "criteria": {
+    "finish_lama": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:lama_fossil"
+                ],
+                "state": {
+                  "fossil_level": "9"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:lama_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.lama.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:lama_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.lama.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_lama"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

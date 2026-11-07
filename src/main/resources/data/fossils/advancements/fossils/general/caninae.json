@@ -1,0 +1,24 @@
+{
+  "parent": "fossils:fossils/general/canidae",
+  "criteria": {
+    "finish_caninae": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "description": {
+      "translate": "advancements.fossils.caninae.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:advancement_line"
+    },
+    "show_toast": false,
+    "title": {
+      "translate": "advancements.fossils.caninae.title"
+    }
+  },
+  "sends_telemetry_event": true
+}

@@ -1,0 +1,54 @@
+{
+  "parent": "fossils:fossils/general/caninae",
+  "criteria": {
+    "finish_chrysocyon": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:chrysocyon_fossil"
+                ],
+                "state": {
+                  "fossil_level": "9"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:chrysocyon_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.chrysocyon.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:chrysocyon_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.chrysocyon.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_chrysocyon"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

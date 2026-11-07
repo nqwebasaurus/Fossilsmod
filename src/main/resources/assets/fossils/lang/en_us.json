@@ -462,6 +462,10 @@
 	"block.fossils.jacheleria_fossil": "Jachaleria Fossil",
 	"block.fossils.acrophoca_fossil": "Acrophoca Fossil",
 	"block.fossils.provelosaurus_fossil": "Provelosaurus Fossil",
+	"block.fossils.andalgalornis_fossil": "Andalgalornis Fossil",
+	"block.fossils.lama_fossil": "Lama Fossil",
+	"block.fossils.chrysocyon_fossil": "Chrysocyon Fossil",
+	"block.fossils.kyhytysuka_fossil": "Kyhytysuka Fossil",
 	"block.fossils.poposaurus_fossil": "Poposaurus Fossil",
 	"block.fossils.nigerpeton_fossil": "Nigerpeton Fossil",
 	"block.fossils.stahleckeria_fossil": "Stahleckeria Fossil",
@@ -1217,6 +1221,10 @@
 	"advancements.fossils.notopalaeognathae.description": "Notopalaeognathae",
 	"advancements.fossils.enantiornithes.title": "Prototype Sparrows",
 	"advancements.fossils.enantiornithes.description": "Enantiornithes",
+	"advancements.fossils.canidae.title": "The Wolf Among Us",
+	"advancements.fossils.canidae.description": "Canidae",
+	"advancements.fossils.caninae.title": "Good Boys",
+	"advancements.fossils.caninae.description": "Caninae",
 
 
 	"advancements.fossils.pelecanimimus.title": "Pelican Mimic",
@@ -2168,5 +2176,13 @@
 	"advancements.fossils.giganotosaurus.title": "Giant Southern Lizard",
 	"advancements.fossils.giganotosaurus.description": "Complete a Giganotosaurus skeleton",
 	"advancements.fossils.carnotaurus.title": "Carnivorous Bull",
-	"advancements.fossils.carnotaurus.description": "Complete a Carnotaurus skeleton"
+	"advancements.fossils.carnotaurus.description": "Complete a Carnotaurus skeleton",
+	"advancements.fossils.andalgalornis.title": "Bird of Andalgalá",
+	"advancements.fossils.andalgalornis.description": "Complete an Andalgalornis skeleton",
+	"advancements.fossils.lama.title": "Llama",
+	"advancements.fossils.lama.description": "Complete a Lama skeleton",
+	"advancements.fossils.chrysocyon.title": "Maned Wolf",
+	"advancements.fossils.chrysocyon.description": "Complete a Chrysocyon skeleton",
+	"advancements.fossils.kyhytysuka.title": "The one that cuts with something sharp",
+	"advancements.fossils.kyhytysuka.description": "Complete a Kyhytysuka skeleton"
 }

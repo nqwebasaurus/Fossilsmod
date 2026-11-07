@@ -113,6 +113,12 @@ public class FossilItem extends BlockItem {
 		if (stack.getItem() == FossilItems.HIPPOCAMELUS.get()) {
 			tooltip.add(Component.translatable("Taruca"));
 		}
+		if (stack.getItem() == FossilItems.LAMA.get()) {
+			tooltip.add(Component.translatable("Llama"));
+		}
+		if (stack.getItem() == FossilItems.CHRYSOCYON.get()) {
+			tooltip.add(Component.translatable("Maned Wolf"));
+		}
 	}
 	
 }

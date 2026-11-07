@@ -167,6 +167,10 @@
 		"fossils:acrophyseter_fossil",
 		"fossils:jacheleria_fossil",
 		"fossils:acrophoca_fossil",
-		"fossils:provelosaurus_fossil"
+		"fossils:provelosaurus_fossil",
+		"fossils:andalgalornis_fossil",
+		"fossils:lama_fossil",
+		"fossils:chrysocyon_fossil",
+		"fossils:kyhytysuka_fossil"
 	]
 }
