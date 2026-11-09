@@ -1,0 +1,57 @@
+{
+  "parent": "fossils:fossils/general/chaeomysticeti",
+  "criteria": {
+    "finish_caperea": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:caperea_fossil"
+                ],
+                "state": {
+                  "fossil_level": "14"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:caperea_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.caperea.description"
+    },
+    "frame": "goal",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:caperea_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.caperea.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_caperea"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  },
+  "sends_telemetry_event": true
+}

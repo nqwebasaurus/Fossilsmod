@@ -1,0 +1,24 @@
+{
+  "parent": "fossils:fossils/general/coraciimorphae",
+  "criteria": {
+    "finish_picodynastornithes": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "description": {
+      "translate": "advancements.fossils.picodynastornithes.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:advancement_line"
+    },
+    "show_toast": false,
+    "title": {
+      "translate": "advancements.fossils.picodynastornithes.title"
+    }
+  },
+  "sends_telemetry_event": true
+}

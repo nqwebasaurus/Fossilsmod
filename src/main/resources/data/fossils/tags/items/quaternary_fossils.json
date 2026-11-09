@@ -42,6 +42,9 @@
 		"fossils:josephoartigasia_fossil",
 		"fossils:obdurodon_fossil",
 		"fossils:lama_fossil",
-		"fossils:chrysocyon_fossil"
+		"fossils:chrysocyon_fossil",
+		"fossils:paranthropus_fossil",
+		"fossils:caperea_fossil",
+		"fossils:ramphastos_fossil"
 	]
 }

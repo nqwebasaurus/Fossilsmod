@@ -299,6 +299,7 @@
 	"block.fossils.mesosaurus_fossil": "Mesosaurus Fossil",
 	"block.fossils.navaornis_fossil": "Navaornis Fossil",
 	"block.fossils.yacarerani_fossil": "Yacarerani Fossil",
+	"block.fossils.ramphastos_fossil": "Ramphastos Fossil",
 	"block.fossils.kentrosaurus_fossil": "Kentrosaurus Fossil",
 	"block.fossils.endothiodonbathystoma_fossil": "Endothiodon bathystoma Fossil",
 	"block.fossils.dimetrodongrandis_fossil": "Dimetrodon grandis Fossil",
@@ -578,6 +579,9 @@
 	"block.fossils.tupuxuara_fossil": "Tupuxuara Fossil",
 	"block.fossils.glyptodon_fossil": "Glyptodon Fossil",
 	"block.fossils.kelumapusaura_fossil": "Kelumapusaura Fossil",
+	"block.fossils.inawentu_fossil": "Inawentu Fossil",
+	"block.fossils.caperea_fossil": "Caperea Fossil",
+	"block.fossils.paranthropus_fossil": "Paranthropus Fossil",
 	"block.fossils.bisonlatifrons_fossil": "Bison latifrons Fossil",
 	"block.fossils.utahraptor_fossil": "Utahraptor Fossil",
 	"block.fossils.shonisaurus_fossil": "Shonisaurus Fossil",
@@ -1225,6 +1229,8 @@
 	"advancements.fossils.canidae.description": "Canidae",
 	"advancements.fossils.caninae.title": "Good Boys",
 	"advancements.fossils.caninae.description": "Caninae",
+	"advancements.fossils.picodynastornithes.title": "Knock on wood",
+	"advancements.fossils.picodynastornithes.description": "Picodynastornithes",
 
 
 	"advancements.fossils.pelecanimimus.title": "Pelican Mimic",
@@ -2184,5 +2190,13 @@
 	"advancements.fossils.chrysocyon.title": "Maned Wolf",
 	"advancements.fossils.chrysocyon.description": "Complete a Chrysocyon skeleton",
 	"advancements.fossils.kyhytysuka.title": "The one that cuts with something sharp",
-	"advancements.fossils.kyhytysuka.description": "Complete a Kyhytysuka skeleton"
+	"advancements.fossils.kyhytysuka.description": "Complete a Kyhytysuka skeleton",
+	"advancements.fossils.ramphastos.title": "Toco Toucan",
+	"advancements.fossils.ramphastos.description": "Complete a Ramphastos skeleton",
+	"advancements.fossils.inawentu.title": "Mimic",
+	"advancements.fossils.inawentu.description": "Complete an Inawentu skeleton",
+	"advancements.fossils.caperea.title": "Pygmy Right Whale",
+	"advancements.fossils.caperea.description": "Complete a Caperea skeleton",
+	"advancements.fossils.paranthropus.title": "Near Man",
+	"advancements.fossils.paranthropus.description": "Complete a Paranthropus skeleton"
 }

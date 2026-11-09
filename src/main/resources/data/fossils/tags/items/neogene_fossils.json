@@ -52,6 +52,8 @@
 		"fossils:acrophoca_fossil",
 		"fossils:andalgalornis_fossil",
 		"fossils:lama_fossil",
-		"fossils:chrysocyon_fossil"
+		"fossils:chrysocyon_fossil",
+		"fossils:paranthropus_fossil",
+		"fossils:caperea_fossil"
 	]
 }

@@ -1,0 +1,57 @@
+{
+  "parent": "fossils:fossils/general/titanosauria",
+  "criteria": {
+    "finish_inawentu": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:inawentu_fossil"
+                ],
+                "state": {
+                  "fossil_level": "14"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:inawentu_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.inawentu.description"
+    },
+    "frame": "goal",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:inawentu_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.inawentu.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_inawentu"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  },
+  "sends_telemetry_event": true
+}

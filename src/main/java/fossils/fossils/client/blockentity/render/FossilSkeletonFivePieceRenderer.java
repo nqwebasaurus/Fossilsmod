@@ -191,6 +191,8 @@ import fossils.fossils.client.blockentity.model.psittacosauruslujiatunensis.Psit
 import fossils.fossils.client.blockentity.model.psittacosauruslujiatunensis.PsittacosauruslujiatunensisFossilModel;
 import fossils.fossils.client.blockentity.model.psittacosaurusmongoliensis.PsittacosaurusmongoliensisFossilFrameModel;
 import fossils.fossils.client.blockentity.model.psittacosaurusmongoliensis.PsittacosaurusmongoliensisFossilModel;
+import fossils.fossils.client.blockentity.model.ramphastos.RamphastosFossilFrameModel;
+import fossils.fossils.client.blockentity.model.ramphastos.RamphastosFossilModel;
 import fossils.fossils.client.blockentity.model.robertia.RobertiaFossilFrameModel;
 import fossils.fossils.client.blockentity.model.robertia.RobertiaFossilModel;
 import fossils.fossils.client.blockentity.model.shenzhoupterus.ShenzhoupterusFossilFrameModel;
@@ -403,6 +405,7 @@ public class FossilSkeletonFivePieceRenderer implements BlockEntityRenderer<Foss
 		type.put(MESOSAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/mesosaurus/stage_0.png"));
 		type.put(NAVAORNIS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/navaornis/stage_0.png"));
 		type.put(YACARERANI, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/yacarerani/stage_0.png"));
+		type.put(RAMPHASTOS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/ramphastos/stage_0.png"));
 	});
 	public static final Map<FossilSkeletonFivePieceBlock.Type, ResourceLocation> FRAME_BY_TYPE = Util.make(Maps.newHashMap(), (type) -> {
 		type.put(EUNOTOSAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/eunotosaurus/frame.png"));
@@ -529,6 +532,7 @@ public class FossilSkeletonFivePieceRenderer implements BlockEntityRenderer<Foss
 		type.put(MESOSAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/mesosaurus/frame.png"));
 		type.put(NAVAORNIS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/navaornis/frame.png"));
 		type.put(YACARERANI, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/yacarerani/frame.png"));
+		type.put(RAMPHASTOS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/ramphastos/frame.png"));
 	});
 	public static Map<FossilSkeletonFivePieceBlock.Type, SkullModelBase> createFossilRenderers(EntityModelSet p_173662_) {
 		ImmutableMap.Builder<FossilSkeletonFivePieceBlock.Type, SkullModelBase> builder = ImmutableMap.builder();
@@ -656,6 +660,7 @@ public class FossilSkeletonFivePieceRenderer implements BlockEntityRenderer<Foss
 		builder.put(MESOSAURUS, new MesosaurusFossilModel(p_173662_.bakeLayer(ClientEvents.MESOSAURUS)));
 		builder.put(NAVAORNIS, new NavaornisFossilModel(p_173662_.bakeLayer(ClientEvents.NAVAORNIS)));
 		builder.put(YACARERANI, new YacareraniFossilModel(p_173662_.bakeLayer(ClientEvents.YACARERANI)));
+		builder.put(RAMPHASTOS, new RamphastosFossilModel(p_173662_.bakeLayer(ClientEvents.RAMPHASTOS)));
 		return builder.build();
 	}
 
@@ -785,6 +790,7 @@ public class FossilSkeletonFivePieceRenderer implements BlockEntityRenderer<Foss
 		builder.put(MESOSAURUS, new MesosaurusFossilFrameModel(p_173662_.bakeLayer(ClientEvents.MESOSAURUS_FRAME)));
 		builder.put(NAVAORNIS, new NavaornisFossilFrameModel(p_173662_.bakeLayer(ClientEvents.NAVAORNIS_FRAME)));
 		builder.put(YACARERANI, new YacareraniFossilFrameModel(p_173662_.bakeLayer(ClientEvents.YACARERANI_FRAME)));
+		builder.put(RAMPHASTOS, new RamphastosFossilFrameModel(p_173662_.bakeLayer(ClientEvents.RAMPHASTOS_FRAME)));
 		return builder.build();
 	}
 
@@ -1450,6 +1456,12 @@ public class FossilSkeletonFivePieceRenderer implements BlockEntityRenderer<Foss
 				pose.scale(-scale, -scale, scale);
 				pose.translate(0F, 5.18F, 0F);
 			}
+
+			case RAMPHASTOS -> {
+				scale = 0.11F;
+				pose.scale(-scale, -scale, scale);
+				pose.translate(0F, 7.6F, 0F);
+			}
 			default -> throw new IllegalStateException("Unexpected value: " + type);
         }
 		VertexConsumer vertexconsumer = p_173668_.getBuffer(p_173671_);
@@ -1708,6 +1720,8 @@ public class FossilSkeletonFivePieceRenderer implements BlockEntityRenderer<Foss
 			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/navaornis/stage_" + fossilLevel + ".png");
 		} else if (type == YACARERANI) {
 			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/yacarerani/stage_" + fossilLevel + ".png");
+		} else if (type == RAMPHASTOS) {
+			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/ramphastos/stage_" + fossilLevel + ".png");
 		} else resourceLocation = SKIN_BY_TYPE.get(type);
 		return RenderType.entityCutoutNoCullZOffset(resourceLocation);
 	}

@@ -1,0 +1,57 @@
+{
+  "parent": "fossils:fossils/general/homoinoidea",
+  "criteria": {
+    "finish_paranthropus": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:paranthropus_fossil"
+                ],
+                "state": {
+                  "fossil_level": "14"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:paranthropus_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.paranthropus.description"
+    },
+    "frame": "goal",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:paranthropus_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.paranthropus.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_paranthropus"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  },
+  "sends_telemetry_event": true
+}

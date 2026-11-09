@@ -1,0 +1,54 @@
+{
+  "parent": "fossils:fossils/general/picodynastornithes",
+  "criteria": {
+    "finish_ramphastos": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:ramphastos_fossil"
+                ],
+                "state": {
+                  "fossil_level": "4"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:ramphastos_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.ramphastos.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:ramphastos_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.ramphastos.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_ramphastos"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

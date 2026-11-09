@@ -119,6 +119,18 @@ public class FossilItem extends BlockItem {
 		if (stack.getItem() == FossilItems.CHRYSOCYON.get()) {
 			tooltip.add(Component.translatable("Maned Wolf"));
 		}
+		if (stack.getItem() == FossilItems.RAMPHASTOS.get()) {
+			tooltip.add(Component.translatable("Toco Toucan"));
+		}
+		if (stack.getItem() == FossilItems.CAPEREA.get()) {
+			tooltip.add(Component.translatable("Pygmy Right Whale"));
+		}
+		if (stack.getItem() == FossilItems.CAPEREA.get()) {
+			tooltip.add(Component.translatable("Awarded to user Orca29 as first prize for Guess-A-Ton Season 4, August 2026"));
+		}
+		if (stack.getItem() == FossilItems.PARANTHROPUS.get()) {
+			tooltip.add(Component.translatable("Awarded to users basilraincandyu and ordicanthus as second prize for Guess-A-Ton Season 4, August 2026"));
+		}
 	}
 	
 }
