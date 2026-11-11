@@ -1,0 +1,54 @@
+{
+  "parent": "fossils:fossils/general/thalattosuchia",
+  "criteria": {
+    "finish_dakosaurusandiniensis": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:dakosaurusandiniensis_fossil"
+                ],
+                "state": {
+                  "fossil_level": "9"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:dakosaurusandiniensis_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.dakosaurusandiniensis.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:dakosaurusandiniensis_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.dakosaurusandiniensis.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_dakosaurusandiniensis"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

@@ -71,6 +71,8 @@ import fossils.fossils.client.blockentity.model.ctenospondylus.CtenospondylusFos
 import fossils.fossils.client.blockentity.model.ctenospondylus.CtenospondylusFossilModel;
 import fossils.fossils.client.blockentity.model.cynognathus.CynognathusFossilFrameModel;
 import fossils.fossils.client.blockentity.model.cynognathus.CynognathusFossilModel;
+import fossils.fossils.client.blockentity.model.dakosaurusandiniensis.DakosaurusandiniensisFossilFrameModel;
+import fossils.fossils.client.blockentity.model.dakosaurusandiniensis.DakosaurusandiniensisFossilModel;
 import fossils.fossils.client.blockentity.model.damadama.DamadamaFossilFrameModel;
 import fossils.fossils.client.blockentity.model.damadama.DamadamaFossilModel;
 import fossils.fossils.client.blockentity.model.daurlong.DaurlongFossilFrameModel;
@@ -546,6 +548,7 @@ public class FossilSkeletonTenPieceRenderer implements BlockEntityRenderer<Fossi
         type.put(FossilSkeletonTenPieceBlock.Types.LAMA, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/lama/stage_0.png"));
         type.put(FossilSkeletonTenPieceBlock.Types.CHRYSOCYON, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/chrysocyon/stage_0.png"));
         type.put(FossilSkeletonTenPieceBlock.Types.KYHYTYSUKA, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/kyhytysuka/stage_0.png"));
+        type.put(FossilSkeletonTenPieceBlock.Types.DAKOSAURUSANDINIENSIS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/dakosaurusandiniensis/stage_0.png"));
 
     });
     public static final Map<FossilSkeletonTenPieceBlock.Type, ResourceLocation> FRAME_BY_TYPE = Util.make(Maps.newHashMap(), (type) -> {
@@ -720,6 +723,7 @@ public class FossilSkeletonTenPieceRenderer implements BlockEntityRenderer<Fossi
         type.put(FossilSkeletonTenPieceBlock.Types.LAMA, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/lama/frame.png"));
         type.put(FossilSkeletonTenPieceBlock.Types.CHRYSOCYON, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/chrysocyon/frame.png"));
         type.put(FossilSkeletonTenPieceBlock.Types.KYHYTYSUKA, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/kyhytysuka/frame.png"));
+        type.put(FossilSkeletonTenPieceBlock.Types.DAKOSAURUSANDINIENSIS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/dakosaurusandiniensis/frame.png"));
 
 
     });
@@ -897,6 +901,7 @@ public class FossilSkeletonTenPieceRenderer implements BlockEntityRenderer<Fossi
         builder.put(FossilSkeletonTenPieceBlock.Types.LAMA, new LamaFossilModel(p_173662_.bakeLayer(ClientEvents.LAMA)));
         builder.put(FossilSkeletonTenPieceBlock.Types.CHRYSOCYON, new ChrysocyonFossilModel(p_173662_.bakeLayer(ClientEvents.CHRYSOCYON)));
         builder.put(FossilSkeletonTenPieceBlock.Types.KYHYTYSUKA, new KyhytysukaFossilModel(p_173662_.bakeLayer(ClientEvents.KYHYTYSUKA)));
+        builder.put(FossilSkeletonTenPieceBlock.Types.DAKOSAURUSANDINIENSIS, new DakosaurusandiniensisFossilModel(p_173662_.bakeLayer(ClientEvents.DAKOSAURUSANDINIENSIS)));
         return builder.build();
     }
 
@@ -1073,6 +1078,7 @@ public class FossilSkeletonTenPieceRenderer implements BlockEntityRenderer<Fossi
         builder.put(FossilSkeletonTenPieceBlock.Types.LAMA, new LamaFossilFrameModel(p_173662_.bakeLayer(ClientEvents.LAMA_FRAME)));
         builder.put(FossilSkeletonTenPieceBlock.Types.CHRYSOCYON, new ChrysocyonFossilFrameModel(p_173662_.bakeLayer(ClientEvents.CHRYSOCYON_FRAME)));
         builder.put(FossilSkeletonTenPieceBlock.Types.KYHYTYSUKA, new KyhytysukaFossilFrameModel(p_173662_.bakeLayer(ClientEvents.KYHYTYSUKA_FRAME)));
+        builder.put(FossilSkeletonTenPieceBlock.Types.DAKOSAURUSANDINIENSIS, new DakosaurusandiniensisFossilFrameModel(p_173662_.bakeLayer(ClientEvents.DAKOSAURUSANDINIENSIS_FRAME)));
         return builder.build();
     }
 
@@ -1786,6 +1792,10 @@ public class FossilSkeletonTenPieceRenderer implements BlockEntityRenderer<Fossi
             float scale = 0.7F;
             pose.scale(-scale, -scale, scale);
             pose.translate(0F, -1.8F, 0F);
+        } else if (FossilSkeletonTenPieceBlock$type == FossilSkeletonTenPieceBlock.Types.DAKOSAURUSANDINIENSIS) {
+            float scale = 0.82F;
+            pose.scale(-scale, -scale, scale);
+            pose.translate(0F, -0.1F, 0F);
         } else {
             float scale = 1.0F;
             pose.scale(-scale, -scale, scale);
@@ -2140,6 +2150,8 @@ public class FossilSkeletonTenPieceRenderer implements BlockEntityRenderer<Fossi
             resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/chrysocyon/stage_" + fossilLevel + ".png");
         } else if (type == FossilSkeletonTenPieceBlock.Types.KYHYTYSUKA) {
             resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/kyhytysuka/stage_" + fossilLevel + ".png");
+        } else if (type == FossilSkeletonTenPieceBlock.Types.DAKOSAURUSANDINIENSIS) {
+            resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/dakosaurusandiniensis/stage_" + fossilLevel + ".png");
         } else resourceLocation = SKIN_BY_TYPE.get(type);
         return RenderType.entityCutoutNoCullZOffset(resourceLocation);
     }

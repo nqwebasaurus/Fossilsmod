@@ -467,6 +467,7 @@
 	"block.fossils.lama_fossil": "Lama Fossil",
 	"block.fossils.chrysocyon_fossil": "Chrysocyon Fossil",
 	"block.fossils.kyhytysuka_fossil": "Kyhytysuka Fossil",
+	"block.fossils.dakosaurusandiniensis_fossil": "Dakosaurus andiniensis Fossil",
 	"block.fossils.poposaurus_fossil": "Poposaurus Fossil",
 	"block.fossils.nigerpeton_fossil": "Nigerpeton Fossil",
 	"block.fossils.stahleckeria_fossil": "Stahleckeria Fossil",
@@ -582,6 +583,7 @@
 	"block.fossils.inawentu_fossil": "Inawentu Fossil",
 	"block.fossils.caperea_fossil": "Caperea Fossil",
 	"block.fossils.paranthropus_fossil": "Paranthropus Fossil",
+	"block.fossils.abelisaurus_fossil": "Abelisaurus Fossil",
 	"block.fossils.bisonlatifrons_fossil": "Bison latifrons Fossil",
 	"block.fossils.utahraptor_fossil": "Utahraptor Fossil",
 	"block.fossils.shonisaurus_fossil": "Shonisaurus Fossil",
@@ -2198,5 +2200,9 @@
 	"advancements.fossils.caperea.title": "Pygmy Right Whale",
 	"advancements.fossils.caperea.description": "Complete a Caperea skeleton",
 	"advancements.fossils.paranthropus.title": "Near Man",
-	"advancements.fossils.paranthropus.description": "Complete a Paranthropus skeleton"
+	"advancements.fossils.paranthropus.description": "Complete a Paranthropus skeleton",
+	"advancements.fossils.abelisaurus.title": "Roberto Abel's Lizard",
+	"advancements.fossils.abelisaurus.description": "Complete an Abelisaurus skeleton",
+	"advancements.fossils.dakosaurusandiniensis.title": "Biter Lizard from the Andes",
+	"advancements.fossils.dakosaurusandiniensis.description": "Complete a Dakosaurus andiniensis skeleton"
 }

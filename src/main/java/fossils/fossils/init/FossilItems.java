@@ -477,6 +477,7 @@ public class FossilItems {
 	public static final RegistryObject<FossilItem> LAMA = SKELETON_REGISTER.register("lama_fossil", () -> new FossilItem(FossilBlocks.LAMA.get(), new Item.Properties().rarity(FossilRarities.TEN_PIECE_FOSSIL)));
 	public static final RegistryObject<FossilItem> CHRYSOCYON = SKELETON_REGISTER.register("chrysocyon_fossil", () -> new FossilItem(FossilBlocks.CHRYSOCYON.get(), new Item.Properties().rarity(FossilRarities.TEN_PIECE_FOSSIL)));
 	public static final RegistryObject<FossilItem> KYHYTYSUKA = SKELETON_REGISTER.register("kyhytysuka_fossil", () -> new FossilItem(FossilBlocks.KYHYTYSUKA.get(), new Item.Properties().rarity(FossilRarities.TEN_PIECE_FOSSIL)));
+	public static final RegistryObject<FossilItem> DAKOSAURUSANDINIENSIS = SKELETON_REGISTER.register("dakosaurusandiniensis_fossil", () -> new FossilItem(FossilBlocks.DAKOSAURUSANDINIENSIS.get(), new Item.Properties().rarity(FossilRarities.TEN_PIECE_FOSSIL)));
 
 
 	//Fifteen
@@ -590,6 +591,7 @@ public class FossilItems {
 	public static final RegistryObject<FossilItem> INAWENTU = SKELETON_REGISTER.register("inawentu_fossil", () -> new FossilItem(FossilBlocks.INAWENTU.get(), new Item.Properties().rarity(FossilRarities.FIFTEEN_PIECE_FOSSIL)));
 	public static final RegistryObject<FossilItem> CAPEREA = SKELETON_REGISTER.register("caperea_fossil", () -> new FossilItem(FossilBlocks.CAPEREA.get(), new Item.Properties().rarity(FossilRarities.FIFTEEN_PIECE_FOSSIL)));
 	public static final RegistryObject<FossilItem> PARANTHROPUS = SKELETON_REGISTER.register("paranthropus_fossil", () -> new FossilItem(FossilBlocks.PARANTHROPUS.get(), new Item.Properties().rarity(FossilRarities.FIFTEEN_PIECE_FOSSIL)));
+	public static final RegistryObject<FossilItem> ABELISAURUS = SKELETON_REGISTER.register("abelisaurus_fossil", () -> new FossilItem(FossilBlocks.ABELISAURUS.get(), new Item.Properties().rarity(FossilRarities.FIFTEEN_PIECE_FOSSIL)));
 
 	//Twenty
 	public static final RegistryObject<FossilItem> UTAHRAPTOR = SKELETON_REGISTER.register("utahraptor_fossil", () -> new FossilItem(FossilBlocks.UTAHRAPTOR.get(), new Item.Properties().rarity(FossilRarities.TWENTY_PIECE_FOSSIL)));
