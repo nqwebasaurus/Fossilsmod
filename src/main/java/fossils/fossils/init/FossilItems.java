@@ -478,6 +478,8 @@ public class FossilItems {
 	public static final RegistryObject<FossilItem> CHRYSOCYON = SKELETON_REGISTER.register("chrysocyon_fossil", () -> new FossilItem(FossilBlocks.CHRYSOCYON.get(), new Item.Properties().rarity(FossilRarities.TEN_PIECE_FOSSIL)));
 	public static final RegistryObject<FossilItem> KYHYTYSUKA = SKELETON_REGISTER.register("kyhytysuka_fossil", () -> new FossilItem(FossilBlocks.KYHYTYSUKA.get(), new Item.Properties().rarity(FossilRarities.TEN_PIECE_FOSSIL)));
 	public static final RegistryObject<FossilItem> DAKOSAURUSANDINIENSIS = SKELETON_REGISTER.register("dakosaurusandiniensis_fossil", () -> new FossilItem(FossilBlocks.DAKOSAURUSANDINIENSIS.get(), new Item.Properties().rarity(FossilRarities.TEN_PIECE_FOSSIL)));
+	public static final RegistryObject<FossilItem> ARDIPITHECUS = SKELETON_REGISTER.register("ardipithecus_fossil", () -> new FossilItem(FossilBlocks.ARDIPITHECUS.get(), new Item.Properties().rarity(FossilRarities.TEN_PIECE_FOSSIL)));
+	public static final RegistryObject<FossilItem> PARADOLICHOPITHECUS = SKELETON_REGISTER.register("paradolichopithecus_fossil", () -> new FossilItem(FossilBlocks.PARADOLICHOPITHECUS.get(), new Item.Properties().rarity(FossilRarities.TEN_PIECE_FOSSIL)));
 
 
 	//Fifteen

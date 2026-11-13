@@ -54,6 +54,8 @@
 		"fossils:lama_fossil",
 		"fossils:chrysocyon_fossil",
 		"fossils:paranthropus_fossil",
-		"fossils:caperea_fossil"
+		"fossils:caperea_fossil",
+		"fossils:ardipithecus_fossil",
+		"fossils:paradolichopithecus_fossil"
 	]
 }

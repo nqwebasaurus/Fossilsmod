@@ -172,6 +172,8 @@
 		"fossils:lama_fossil",
 		"fossils:chrysocyon_fossil",
 		"fossils:kyhytysuka_fossil",
-		"fossils:dakosaurusandiniensis_fossil"
+		"fossils:dakosaurusandiniensis_fossil",
+		"fossils:ardipithecus_fossil",
+		"fossils:paradolichopithecus_fossil"
 	]
 }

@@ -468,6 +468,8 @@
 	"block.fossils.chrysocyon_fossil": "Chrysocyon Fossil",
 	"block.fossils.kyhytysuka_fossil": "Kyhytysuka Fossil",
 	"block.fossils.dakosaurusandiniensis_fossil": "Dakosaurus andiniensis Fossil",
+	"block.fossils.ardipithecus_fossil": "Ardipithecus Fossil",
+	"block.fossils.paradolichopithecus_fossil": "Paradolichopithecus Fossil",
 	"block.fossils.poposaurus_fossil": "Poposaurus Fossil",
 	"block.fossils.nigerpeton_fossil": "Nigerpeton Fossil",
 	"block.fossils.stahleckeria_fossil": "Stahleckeria Fossil",
@@ -2204,5 +2206,9 @@
 	"advancements.fossils.abelisaurus.title": "Roberto Abel's Lizard",
 	"advancements.fossils.abelisaurus.description": "Complete an Abelisaurus skeleton",
 	"advancements.fossils.dakosaurusandiniensis.title": "Biter Lizard from the Andes",
-	"advancements.fossils.dakosaurusandiniensis.description": "Complete a Dakosaurus andiniensis skeleton"
+	"advancements.fossils.dakosaurusandiniensis.description": "Complete a Dakosaurus andiniensis skeleton",
+	"advancements.fossils.ardipithecus.title": "Floor Ape",
+	"advancements.fossils.ardipithecus.description": "Complete an Ardipithecus skeleton",
+	"advancements.fossils.paradolichopithecus.title": "Near the Long Monkey",
+	"advancements.fossils.paradolichopithecus.description": "Complete a Paradolichopithecus skeleton"
 }
