@@ -1,0 +1,57 @@
+{
+  "parent": "fossils:fossils/general/mylodontoidea",
+  "criteria": {
+    "finish_glossotherium": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:glossotherium_fossil"
+                ],
+                "state": {
+                  "fossil_level": "14"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:glossotherium_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.glossotherium.description"
+    },
+    "frame": "goal",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:glossotherium_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.glossotherium.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_glossotherium"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  },
+  "sends_telemetry_event": true
+}

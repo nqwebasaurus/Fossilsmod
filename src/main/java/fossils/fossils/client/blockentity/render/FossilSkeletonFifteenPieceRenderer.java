@@ -83,6 +83,8 @@ import fossils.fossils.client.blockentity.model.eurhinosaurus.EurhinosaurusFossi
 import fossils.fossils.client.blockentity.model.eurhinosaurus.EurhinosaurusFossilModel;
 import fossils.fossils.client.blockentity.model.gaiasia.GaiasiaFossilFrameModel;
 import fossils.fossils.client.blockentity.model.gaiasia.GaiasiaFossilModel;
+import fossils.fossils.client.blockentity.model.glossotherium.GlossotheriumFossilFrameModel;
+import fossils.fossils.client.blockentity.model.glossotherium.GlossotheriumFossilModel;
 import fossils.fossils.client.blockentity.model.glyptodon.GlyptodonFossilFrameModel;
 import fossils.fossils.client.blockentity.model.glyptodon.GlyptodonFossilModel;
 import fossils.fossils.client.blockentity.model.granastrapotherium.GranastrapotheriumFossilFrameModel;
@@ -367,6 +369,7 @@ public class FossilSkeletonFifteenPieceRenderer implements BlockEntityRenderer<F
         type.put(FossilSkeletonFifteenPieceBlock.Types.CAPEREA, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/caperea/stage_0.png"));
         type.put(FossilSkeletonFifteenPieceBlock.Types.PARANTHROPUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/paranthropus/stage_0.png"));
         type.put(FossilSkeletonFifteenPieceBlock.Types.ABELISAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/abelisaurus/stage_0.png"));
+        type.put(FossilSkeletonFifteenPieceBlock.Types.GLOSSOTHERIUM, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/glossotherium/stage_0.png"));
     });
     public static final Map<FossilSkeletonFifteenPieceBlock.Type, ResourceLocation> FRAME_BY_TYPE = Util.make(Maps.newHashMap(), (type) -> {
         type.put(FossilSkeletonFifteenPieceBlock.Types.WUERHOSAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/wuerhosaurus/frame.png"));
@@ -480,6 +483,7 @@ public class FossilSkeletonFifteenPieceRenderer implements BlockEntityRenderer<F
         type.put(FossilSkeletonFifteenPieceBlock.Types.CAPEREA, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/caperea/frame.png"));
         type.put(FossilSkeletonFifteenPieceBlock.Types.PARANTHROPUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/paranthropus/frame.png"));
         type.put(FossilSkeletonFifteenPieceBlock.Types.ABELISAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/abelisaurus/frame.png"));
+        type.put(FossilSkeletonFifteenPieceBlock.Types.GLOSSOTHERIUM, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/glossotherium/frame.png"));
     });
 
     public static Map<FossilSkeletonFifteenPieceBlock.Type, SkullModelBase> createFossilRenderers(EntityModelSet p_173662_) {
@@ -595,6 +599,7 @@ public class FossilSkeletonFifteenPieceRenderer implements BlockEntityRenderer<F
         builder.put(FossilSkeletonFifteenPieceBlock.Types.CAPEREA, new CapereaFossilModel(p_173662_.bakeLayer(ClientEvents.CAPEREA)));
         builder.put(FossilSkeletonFifteenPieceBlock.Types.PARANTHROPUS, new ParanthropusFossilModel(p_173662_.bakeLayer(ClientEvents.PARANTHROPUS)));
         builder.put(FossilSkeletonFifteenPieceBlock.Types.ABELISAURUS, new AbelisaurusFossilModel(p_173662_.bakeLayer(ClientEvents.ABELISAURUS)));
+        builder.put(FossilSkeletonFifteenPieceBlock.Types.GLOSSOTHERIUM, new GlossotheriumFossilModel(p_173662_.bakeLayer(ClientEvents.GLOSSOTHERIUM)));
         return builder.build();
     }
 
@@ -711,6 +716,7 @@ public class FossilSkeletonFifteenPieceRenderer implements BlockEntityRenderer<F
         builder.put(FossilSkeletonFifteenPieceBlock.Types.CAPEREA, new CapereaFossilFrameModel(p_173662_.bakeLayer(ClientEvents.CAPEREA_FRAME)));
         builder.put(FossilSkeletonFifteenPieceBlock.Types.PARANTHROPUS, new ParanthropusFossilFrameModel(p_173662_.bakeLayer(ClientEvents.PARANTHROPUS_FRAME)));
         builder.put(FossilSkeletonFifteenPieceBlock.Types.ABELISAURUS, new AbelisaurusFossilFrameModel(p_173662_.bakeLayer(ClientEvents.ABELISAURUS_FRAME)));
+        builder.put(FossilSkeletonFifteenPieceBlock.Types.GLOSSOTHERIUM, new GlossotheriumFossilFrameModel(p_173662_.bakeLayer(ClientEvents.GLOSSOTHERIUM_FRAME)));
         return builder.build();
     }
 
@@ -1184,6 +1190,10 @@ public class FossilSkeletonFifteenPieceRenderer implements BlockEntityRenderer<F
             float scale = 0.82F;
             pose.scale(-scale, -scale, scale);
             pose.translate(0F, -0.28F, 0F);
+        } else if (FossilSkeletonFifteenPieceBlock$type == FossilSkeletonFifteenPieceBlock.Types.GLOSSOTHERIUM) {
+            float scale = 0.64F;
+            pose.scale(-scale, -scale, scale);
+            pose.translate(0F, 0.05F, 0F);
         } else {
             float scale = 1.0F;
             pose.scale(-scale, -scale, scale);
@@ -1418,6 +1428,8 @@ public class FossilSkeletonFifteenPieceRenderer implements BlockEntityRenderer<F
             resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/paranthropus/stage_" + fossilLevel + ".png");
         } else if (type == FossilSkeletonFifteenPieceBlock.Types.ABELISAURUS) {
             resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/abelisaurus/stage_" + fossilLevel + ".png");
+        } else if (type == FossilSkeletonFifteenPieceBlock.Types.GLOSSOTHERIUM) {
+            resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/glossotherium/stage_" + fossilLevel + ".png");
         } else resourceLocation = SKIN_BY_TYPE.get(type);
         return RenderType.entityCutoutNoCullZOffset(resourceLocation);
 

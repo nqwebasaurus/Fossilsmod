@@ -586,6 +586,7 @@
 	"block.fossils.caperea_fossil": "Caperea Fossil",
 	"block.fossils.paranthropus_fossil": "Paranthropus Fossil",
 	"block.fossils.abelisaurus_fossil": "Abelisaurus Fossil",
+	"block.fossils.glossotherium_fossil": "Glossotherium Fossil",
 	"block.fossils.bisonlatifrons_fossil": "Bison latifrons Fossil",
 	"block.fossils.utahraptor_fossil": "Utahraptor Fossil",
 	"block.fossils.shonisaurus_fossil": "Shonisaurus Fossil",
@@ -661,6 +662,7 @@
 	"block.fossils.argentinosaurus_fossil": "Argentinosaurus Fossil",
 	"block.fossils.giganotosaurus_fossil": "Giganotosaurus Fossil",
 	"block.fossils.carnotaurus_fossil": "Carnotaurus Fossil",
+	"block.fossils.argentavis_fossil": "Argentavis Fossil",
 	
 	"itemGroup.fossil_slab_tab": "Fossils Slabs",
 	"itemGroup.fossil_blocks_tab": "Fossils Blocks",
@@ -1235,6 +1237,12 @@
 	"advancements.fossils.caninae.description": "Caninae",
 	"advancements.fossils.picodynastornithes.title": "Knock on wood",
 	"advancements.fossils.picodynastornithes.description": "Picodynastornithes",
+	"advancements.fossils.mylodontoidea.title": "Slow and steady, lose the race",
+	"advancements.fossils.mylodontoidea.description": "Mylodontoidea",
+	"advancements.fossils.hieraves.title": "Welcome to the hooters",
+	"advancements.fossils.hieraves.description": "Hieraves",
+	"advancements.fossils.accipitriiformes.title": "Yesterday's grief, Today's beef",
+	"advancements.fossils.accipitriiformes.description": "Accipitriiformes",
 
 
 	"advancements.fossils.pelecanimimus.title": "Pelican Mimic",
@@ -2210,5 +2218,9 @@
 	"advancements.fossils.ardipithecus.title": "Floor Ape",
 	"advancements.fossils.ardipithecus.description": "Complete an Ardipithecus skeleton",
 	"advancements.fossils.paradolichopithecus.title": "Near the Long Monkey",
-	"advancements.fossils.paradolichopithecus.description": "Complete a Paradolichopithecus skeleton"
+	"advancements.fossils.paradolichopithecus.description": "Complete a Paradolichopithecus skeleton",
+	"advancements.fossils.argentavis.title": "Silver Bird",
+	"advancements.fossils.argentavis.description": "Complete an Argentavis skeleton",
+	"advancements.fossils.glossotherium.title": "Tongue Beast",
+	"advancements.fossils.glossotherium.description": "Complete a Glossotherium skeleton"
 }

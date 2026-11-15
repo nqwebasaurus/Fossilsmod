@@ -1,0 +1,57 @@
+{
+  "parent": "fossils:fossils/general/accipitriiformes",
+  "criteria": {
+    "finish_argentavis": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:argentavis_fossil"
+                ],
+                "state": {
+                  "fossil_level": "19"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:argentavis_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.argentavis.description"
+    },
+    "frame": "challenge",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:argentavis_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.argentavis.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_argentavis"
+    ]
+  ],
+  "rewards": {
+    "experience": 500
+  },
+  "sends_telemetry_event": true
+}

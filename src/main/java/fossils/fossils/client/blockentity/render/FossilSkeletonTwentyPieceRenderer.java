@@ -27,6 +27,8 @@ import fossils.fossils.client.blockentity.model.apatosaurus.ApatosaurusFossilFra
 import fossils.fossils.client.blockentity.model.apatosaurus.ApatosaurusFossilModel;
 import fossils.fossils.client.blockentity.model.archelon.ArchelonFossilFrameModel;
 import fossils.fossils.client.blockentity.model.archelon.ArchelonFossilModel;
+import fossils.fossils.client.blockentity.model.argentavis.ArgentavisFossilFrameModel;
+import fossils.fossils.client.blockentity.model.argentavis.ArgentavisFossilModel;
 import fossils.fossils.client.blockentity.model.argentinosaurus.ArgentinosaurusFossilFrameModel;
 import fossils.fossils.client.blockentity.model.argentinosaurus.ArgentinosaurusFossilModel;
 import fossils.fossils.client.blockentity.model.aristonectes.AristonectesFossilFrameModel;
@@ -263,6 +265,7 @@ public class FossilSkeletonTwentyPieceRenderer implements BlockEntityRenderer<Fo
         type.put(FossilSkeletonTwentyPieceBlock.Types.ARGENTINOSAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/argentinosaurus/stage_0.png"));
         type.put(FossilSkeletonTwentyPieceBlock.Types.GIGANOTOSAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/giganotosaurus/stage_0.png"));
         type.put(FossilSkeletonTwentyPieceBlock.Types.CARNOTAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/carnotaurus/stage_0.png"));
+        type.put(FossilSkeletonTwentyPieceBlock.Types.ARGENTAVIS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/argentavis/stage_0.png"));
     });
     public static final Map<FossilSkeletonTwentyPieceBlock.Type, ResourceLocation> FRAME_BY_TYPE = Util.make(Maps.newHashMap(), (type) -> {
         type.put(FossilSkeletonTwentyPieceBlock.Types.UTAHRAPTOR, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/utahraptor/frame.png"));
@@ -342,6 +345,7 @@ public class FossilSkeletonTwentyPieceRenderer implements BlockEntityRenderer<Fo
         type.put(FossilSkeletonTwentyPieceBlock.Types.ARGENTINOSAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/argentinosaurus/frame.png"));
         type.put(FossilSkeletonTwentyPieceBlock.Types.GIGANOTOSAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/giganotosaurus/frame.png"));
         type.put(FossilSkeletonTwentyPieceBlock.Types.CARNOTAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/carnotaurus/frame.png"));
+        type.put(FossilSkeletonTwentyPieceBlock.Types.ARGENTAVIS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/argentavis/frame.png"));
 
     });
 
@@ -424,6 +428,7 @@ public class FossilSkeletonTwentyPieceRenderer implements BlockEntityRenderer<Fo
         builder.put(FossilSkeletonTwentyPieceBlock.Types.ARGENTINOSAURUS, new ArgentinosaurusFossilModel(p_173662_.bakeLayer(ClientEvents.ARGENTINOSAURUS)));
         builder.put(FossilSkeletonTwentyPieceBlock.Types.GIGANOTOSAURUS, new GiganotosaurusFossilModel(p_173662_.bakeLayer(ClientEvents.GIGANOTOSAURUS)));
         builder.put(FossilSkeletonTwentyPieceBlock.Types.CARNOTAURUS, new CarnotaurusFossilModel(p_173662_.bakeLayer(ClientEvents.CARNOTAURUS)));
+        builder.put(FossilSkeletonTwentyPieceBlock.Types.ARGENTAVIS, new ArgentavisFossilModel(p_173662_.bakeLayer(ClientEvents.ARGENTAVIS)));
         return builder.build();
     }
 
@@ -506,6 +511,7 @@ public class FossilSkeletonTwentyPieceRenderer implements BlockEntityRenderer<Fo
         builder.put(FossilSkeletonTwentyPieceBlock.Types.ARGENTINOSAURUS, new ArgentinosaurusFossilFrameModel(p_173662_.bakeLayer(ClientEvents.ARGENTINOSAURUS_FRAME)));
         builder.put(FossilSkeletonTwentyPieceBlock.Types.GIGANOTOSAURUS, new GiganotosaurusFossilFrameModel(p_173662_.bakeLayer(ClientEvents.GIGANOTOSAURUS_FRAME)));
         builder.put(FossilSkeletonTwentyPieceBlock.Types.CARNOTAURUS, new CarnotaurusFossilFrameModel(p_173662_.bakeLayer(ClientEvents.CARNOTAURUS_FRAME)));
+        builder.put(FossilSkeletonTwentyPieceBlock.Types.ARGENTAVIS, new ArgentavisFossilFrameModel(p_173662_.bakeLayer(ClientEvents.ARGENTAVIS_FRAME)));
         return builder.build();
     }
 
@@ -843,6 +849,10 @@ public class FossilSkeletonTwentyPieceRenderer implements BlockEntityRenderer<Fo
             float scale = 0.89F;
             pose.scale(-scale, -scale, scale);
             pose.translate(0F, -0.38F, 0F);
+        } else if (FossilSkeletonTwentyPieceBlock$type == FossilSkeletonTwentyPieceBlock.Types.ARGENTAVIS) {
+            float scale = 0.58F;
+            pose.scale(-scale, -scale, scale);
+            pose.translate(0F, -0.38F, 0F);
         } else {
             float scale = 1.0F;
             pose.scale(-scale, -scale, scale);
@@ -1009,6 +1019,8 @@ public class FossilSkeletonTwentyPieceRenderer implements BlockEntityRenderer<Fo
             resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/giganotosaurus/stage_" + fossilLevel + ".png");
         } else if (type == FossilSkeletonTwentyPieceBlock.Types.CARNOTAURUS) {
             resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/carnotaurus/stage_" + fossilLevel + ".png");
+        } else if (type == FossilSkeletonTwentyPieceBlock.Types.ARGENTAVIS) {
+            resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/argentavis/stage_" + fossilLevel + ".png");
         } else resourceLocation = SKIN_BY_TYPE.get(type);
         return RenderType.entityCutoutNoCullZOffset(resourceLocation);
     }

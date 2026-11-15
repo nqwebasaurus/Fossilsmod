@@ -56,6 +56,8 @@
 		"fossils:paranthropus_fossil",
 		"fossils:caperea_fossil",
 		"fossils:ardipithecus_fossil",
-		"fossils:paradolichopithecus_fossil"
+		"fossils:paradolichopithecus_fossil",
+		"fossils:glossotherium_fossil",
+		"fossils:argentavis_fossil"
 	]
 }

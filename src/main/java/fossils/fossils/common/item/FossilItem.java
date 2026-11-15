@@ -131,6 +131,9 @@ public class FossilItem extends BlockItem {
 		if (stack.getItem() == FossilItems.PARANTHROPUS.get()) {
 			tooltip.add(Component.translatable("Awarded to users basilraincandyu and ordicanthus as second prize for Guess-A-Ton Season 4, August 2026"));
 		}
+		if (stack.getItem() == FossilItems.ARGENTAVIS.get()) {
+			tooltip.add(Component.translatable("Giant Teratorn"));
+		}
 	}
 	
 }
