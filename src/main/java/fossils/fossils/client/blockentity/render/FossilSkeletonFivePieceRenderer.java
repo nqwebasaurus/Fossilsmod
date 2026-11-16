@@ -1043,9 +1043,9 @@ public class FossilSkeletonFivePieceRenderer implements BlockEntityRenderer<Foss
                 pose.translate(0F, 1.3F, 0F);
             }
             case TORUKJARA -> {
-                scale = 0.61F;
+                scale = 0.12F;
                 pose.scale(-scale, -scale, scale);
-                pose.translate(0F, 0.16F, 0F);
+                pose.translate(0F, 6.8F, 0F);
             }
             case CONVOLOSAURUS -> {
                 scale = 0.72F;
@@ -1148,9 +1148,9 @@ public class FossilSkeletonFivePieceRenderer implements BlockEntityRenderer<Foss
                 pose.translate(0F, 0.8F, 0F);
             }
             case CAIUAJARA -> {
-                scale = 0.61F;
+                scale = 0.24F;
                 pose.scale(-scale, -scale, scale);
-                pose.translate(0F, -0.2F, 0F);
+                pose.translate(0F, 1.5F, 0F);
             }
             case CALLAWAYIA -> {
                 scale = 0.31F;
@@ -1158,9 +1158,9 @@ public class FossilSkeletonFivePieceRenderer implements BlockEntityRenderer<Foss
                 pose.translate(0F, -1.45F, 0F);
             }
             case TAPEJARA -> {
-                scale = 0.32F;
+                scale = 0.14F;
                 pose.scale(-scale, -scale, scale);
-                pose.translate(0F, 1.63F, 0F);
+                pose.translate(0F, 5.63F, 0F);
             }
             case TOCKUS -> {
                 scale = 0.2F;
@@ -1173,9 +1173,9 @@ public class FossilSkeletonFivePieceRenderer implements BlockEntityRenderer<Foss
                 pose.translate(0F, 3.5F, 0F);
             }
             case EUROPEJARA -> {
-                scale = 0.32F;
+                scale = 0.29F;
                 pose.scale(-scale, -scale, scale);
-                pose.translate(0F, 0F, 0F);
+                pose.translate(0F, 1F, 0F);
             }
             case KRANOSAURA -> {
                 scale = 0.17F;
@@ -1203,9 +1203,9 @@ public class FossilSkeletonFivePieceRenderer implements BlockEntityRenderer<Foss
                 pose.translate(0F, 0.58F, 0F);
             }
             case CARTORHYNCHUS -> {
-                scale = 0.125F;
+                scale = 0.17F;
                 pose.scale(-scale, -scale, scale);
-                pose.translate(0F, 6.5F, 0F);
+                pose.translate(0F, 3F, 0F);
             }
             case HUAXIADRACO -> {
                 scale = 0.32F;

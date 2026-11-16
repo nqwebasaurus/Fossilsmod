@@ -1145,9 +1145,9 @@ public class FossilSkeletonTenPieceRenderer implements BlockEntityRenderer<Fossi
             pose.scale(-scale, -scale, scale);
             pose.translate(0F, -0.07F, 0F);
         } else if (FossilSkeletonTenPieceBlock$type == FossilSkeletonTenPieceBlock.Types.ARIZONASAURUS) {
-            float scale = 0.615F;
+            float scale = 0.41F;
             pose.scale(-scale, -scale, scale);
-            pose.translate(0F, 0.13F, 0F);
+            pose.translate(0F, 0.93F, 0F);
         } else if (FossilSkeletonTenPieceBlock$type == FossilSkeletonTenPieceBlock.Types.POPOSAURUS) {
             float scale = 0.785F;
             pose.scale(-scale, -scale, scale);
@@ -1181,9 +1181,9 @@ public class FossilSkeletonTenPieceRenderer implements BlockEntityRenderer<Fossi
             pose.scale(-scale, -scale, scale);
             pose.translate(0F, -0F, 0F);
         } else if (FossilSkeletonTenPieceBlock$type == FossilSkeletonTenPieceBlock.Types.TUPANDACTYLUSNAVIGANS) {
-            float scale = 0.42F;
+            float scale = 0.26F;
             pose.scale(-scale, -scale, scale);
-            pose.translate(0F, -0F, 0F);
+            pose.translate(0F, 0.7F, 0F);
         } else if (FossilSkeletonTenPieceBlock$type == FossilSkeletonTenPieceBlock.Types.SKORPIOVENATOR) {
             float scale = 1F;
             pose.scale(-scale, -scale, scale);
@@ -1453,9 +1453,9 @@ public class FossilSkeletonTenPieceRenderer implements BlockEntityRenderer<Fossi
             pose.scale(-scale, -scale, scale);
             pose.translate(0F, -1.84F, 0F);
         } else if (FossilSkeletonTenPieceBlock$type == FossilSkeletonTenPieceBlock.Types.QIANOSUCHUS) {
-            float scale = 0.67F;
+            float scale = 0.44F;
             pose.scale(-scale, -scale, scale);
-            pose.translate(0F, 0.0F, 0F);
+            pose.translate(0F, 0.75F, 0F);
         } else if (FossilSkeletonTenPieceBlock$type == FossilSkeletonTenPieceBlock.Types.POLACANTHUS) {
             float scale = 1F;
             pose.scale(-scale, -scale, scale);

@@ -923,9 +923,9 @@ public class FossilSkeletonFifteenPieceRenderer implements BlockEntityRenderer<F
             pose.scale(-scale, -scale, scale);
             pose.translate(0F, -0.F, 0F);
         } else if (FossilSkeletonFifteenPieceBlock$type == FossilSkeletonFifteenPieceBlock.Types.TUPANDACTYLUSIMPERATOR) {
-            float scale = 0.94F;
+            float scale = 0.22F;
             pose.scale(-scale, -scale, scale);
-            pose.translate(0F, -2F, 0F);
+            pose.translate(0F, 3.05F, 0F);
         } else if (FossilSkeletonFifteenPieceBlock$type == FossilSkeletonFifteenPieceBlock.Types.TENONTOSAURUS) {
             float scale = 1F;
             pose.scale(-scale, -scale, scale);
