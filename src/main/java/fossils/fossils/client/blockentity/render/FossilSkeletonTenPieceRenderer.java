@@ -1129,9 +1129,9 @@ public class FossilSkeletonTenPieceRenderer implements BlockEntityRenderer<Fossi
             pose.scale(-scale, -scale, scale);
             pose.translate(0F, -0.26F, 0F);
         } else if (FossilSkeletonTenPieceBlock$type == FossilSkeletonTenPieceBlock.Types.SYNTHETOCERAS) {
-            float scale = 0.64F;
+            float scale = 0.5F;
             pose.scale(-scale, -scale, scale);
-            pose.translate(0F, 0.07F, 0F);
+            pose.translate(0F, 0.51F, 0F);
         } else if (FossilSkeletonTenPieceBlock$type == FossilSkeletonTenPieceBlock.Types.ENDOTHIODONBATHYSTOMA) {
             float scale = 0.715F;
             pose.scale(-scale, -scale, scale);
@@ -1165,7 +1165,7 @@ public class FossilSkeletonTenPieceRenderer implements BlockEntityRenderer<Fossi
             pose.scale(-scale, -scale, scale);
             pose.translate(0F, -0.03F, 0F);
         } else if (FossilSkeletonTenPieceBlock$type == FossilSkeletonTenPieceBlock.Types.ICHTHYOSAURUS) {
-            float scale = 0.695F;
+            float scale = 0.48F;
             pose.scale(-scale, -scale, scale);
             pose.translate(0F, -0.5F, 0F);
         } else if (FossilSkeletonTenPieceBlock$type == FossilSkeletonTenPieceBlock.Types.SCELIDOSAURUS) {
@@ -1409,9 +1409,9 @@ public class FossilSkeletonTenPieceRenderer implements BlockEntityRenderer<Fossi
             pose.scale(-scale, -scale, scale);
             pose.translate(0F, -0.23F, 0F);
         } else if (FossilSkeletonTenPieceBlock$type == FossilSkeletonTenPieceBlock.Types.LUFENGOSAURUS) {
-            float scale = 0.7272F;
+            float scale = 0.66F;
             pose.scale(-scale, -scale, scale);
-            pose.translate(0F, -0.08F, 0F);
+            pose.translate(0F, -0.03F, 0F);
         } else if (FossilSkeletonTenPieceBlock$type == FossilSkeletonTenPieceBlock.Types.LEAELLYNASAURA) {
             float scale = 0.43F;
             pose.scale(-scale, -scale, scale);

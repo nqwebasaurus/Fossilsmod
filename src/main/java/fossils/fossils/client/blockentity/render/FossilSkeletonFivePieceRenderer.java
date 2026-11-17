@@ -843,9 +843,9 @@ public class FossilSkeletonFivePieceRenderer implements BlockEntityRenderer<Foss
                 pose.translate(0F, -0.18F, 0F);
             }
             case PROTOCERAS -> {
-                scale = 0.34F;
+                scale = 0.27F;
                 pose.scale(-scale, -scale, scale);
-                pose.translate(0F, 1.43F, 0F);
+                pose.translate(0F, 2.2F, 0F);
             }
             case DIPLOCAULUSMAGNICORNIS -> {
                 scale = 0.385F;
