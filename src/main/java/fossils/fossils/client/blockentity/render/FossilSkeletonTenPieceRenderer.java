@@ -1477,9 +1477,9 @@ public class FossilSkeletonTenPieceRenderer implements BlockEntityRenderer<Fossi
             pose.scale(-scale, -scale, scale);
             pose.translate(0F, -0.3F, 0F);
         } else if (FossilSkeletonTenPieceBlock$type == FossilSkeletonTenPieceBlock.Types.LAJASVENATOR) {
-            float scale = 1.06F;
+            float scale = 0.37F;
             pose.scale(-scale, -scale, scale);
-            pose.translate(0F, -0.55F, 0F);
+            pose.translate(0F, 1.2F, 0F);
         } else if (FossilSkeletonTenPieceBlock$type == FossilSkeletonTenPieceBlock.Types.DAMADAMA) {
             float scale = 0.52F;
             pose.scale(-scale, -scale, scale);
@@ -1501,9 +1501,9 @@ public class FossilSkeletonTenPieceRenderer implements BlockEntityRenderer<Fossi
             pose.scale(-scale, -scale, scale);
             pose.translate(0F, -0.52F, 0F);
         } else if (FossilSkeletonTenPieceBlock$type == FossilSkeletonTenPieceBlock.Types.SPECTROVENATOR) {
-            float scale = 0.66F;
+            float scale = 0.24F;
             pose.scale(-scale, -scale, scale);
-            pose.translate(0F, 0.02F, 0F);
+            pose.translate(0F, 2.64F, 0F);
         } else if (FossilSkeletonTenPieceBlock$type == FossilSkeletonTenPieceBlock.Types.PROA) {
             float scale = 1F;
             pose.scale(-scale, -scale, scale);

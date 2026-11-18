@@ -1128,9 +1128,9 @@ public class FossilSkeletonFivePieceRenderer implements BlockEntityRenderer<Foss
                 pose.translate(0F, 1.33F, 0F);
             }
             case BERTHASAURA -> {
-                scale = 0.48F;
+                scale = 0.19F;
                 pose.scale(-scale, -scale, scale);
-                pose.translate(0F, 0.6F, 0F);
+                pose.translate(0F, 3.74F, 0F);
             }
             case PSITTACOSAURUSLUJIATUNENSIS -> {
                 scale = 0.4F;
