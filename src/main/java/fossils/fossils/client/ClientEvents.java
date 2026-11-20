@@ -653,6 +653,8 @@ import fossils.fossils.client.blockentity.model.procolophon.ProcolophonFossilFra
 import fossils.fossils.client.blockentity.model.procolophon.ProcolophonFossilModel;
 import fossils.fossils.client.blockentity.model.proganochelys.ProganochelysFossilFrameModel;
 import fossils.fossils.client.blockentity.model.proganochelys.ProganochelysFossilModel;
+import fossils.fossils.client.blockentity.model.prosotherium.ProsotheriumFossilFrameModel;
+import fossils.fossils.client.blockentity.model.prosotherium.ProsotheriumFossilModel;
 import fossils.fossils.client.blockentity.model.proterogyrinus.ProterogyrinusFossilFrameModel;
 import fossils.fossils.client.blockentity.model.proterogyrinus.ProterogyrinusFossilModel;
 import fossils.fossils.client.blockentity.model.proterosuchus.ProterosuchusFossilFrameModel;
@@ -935,6 +937,8 @@ import fossils.fossils.client.blockentity.model.uranocentrodon.UranocentrodonFos
 import fossils.fossils.client.blockentity.model.uranocentrodon.UranocentrodonFossilModel;
 import fossils.fossils.client.blockentity.model.utahraptor.UtahraptorFossilFrameModel;
 import fossils.fossils.client.blockentity.model.utahraptor.UtahraptorFossilModel;
+import fossils.fossils.client.blockentity.model.vampyrum.VampyrumFossilFrameModel;
+import fossils.fossils.client.blockentity.model.vampyrum.VampyrumFossilModel;
 import fossils.fossils.client.blockentity.model.vancleavea.VancleaveaFossilFrameModel;
 import fossils.fossils.client.blockentity.model.vancleavea.VancleaveaFossilModel;
 import fossils.fossils.client.blockentity.model.varanuspriscus.VaranuspriscusFossilFrameModel;
@@ -1416,6 +1420,10 @@ public class ClientEvents {
     public static ModelLayerLocation YACARERANI_FRAME = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "yacarerani_frame"), "yacarerani_frame");
     public static ModelLayerLocation RAMPHASTOS = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "ramphastos"), "ramphastos");
     public static ModelLayerLocation RAMPHASTOS_FRAME = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "ramphastos_frame"), "ramphastos_frame");
+    public static ModelLayerLocation PROSOTHERIUM = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "prosotherium"), "prosotherium");
+    public static ModelLayerLocation PROSOTHERIUM_FRAME = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "prosotherium_frame"), "prosotherium_frame");
+    public static ModelLayerLocation VAMPYRUM = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "vampyrum"), "vampyrum");
+    public static ModelLayerLocation VAMPYRUM_FRAME = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "vampyrum_frame"), "vampyrum_frame");
 	public static ModelLayerLocation KENTROSAURUS = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "kentrosaurus"), "kentrosaurus");
 	public static ModelLayerLocation KENTROSAURUS_FRAME = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "kentrosaurus_frame"), "kentrosaurus_frame");
 	public static ModelLayerLocation PIATNITZKYSAURUS = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "piatnitzkysaurus"), "piatnitzkysaurus");
@@ -2554,6 +2562,10 @@ public class ClientEvents {
         event.registerLayerDefinition(YACARERANI_FRAME, YacareraniFossilFrameModel::createBodyLayer);
         event.registerLayerDefinition(RAMPHASTOS, RamphastosFossilModel::createBodyLayer);
         event.registerLayerDefinition(RAMPHASTOS_FRAME, RamphastosFossilFrameModel::createBodyLayer);
+        event.registerLayerDefinition(PROSOTHERIUM, ProsotheriumFossilModel::createBodyLayer);
+        event.registerLayerDefinition(PROSOTHERIUM_FRAME, ProsotheriumFossilFrameModel::createBodyLayer);
+        event.registerLayerDefinition(VAMPYRUM, VampyrumFossilModel::createBodyLayer);
+        event.registerLayerDefinition(VAMPYRUM_FRAME, VampyrumFossilFrameModel::createBodyLayer);
 		event.registerLayerDefinition(KENTROSAURUS, KentrosaurusFossilModel::createBodyLayer);
 		event.registerLayerDefinition(KENTROSAURUS_FRAME, KentrosaurusFossilFrameModel::createBodyLayer);
 		event.registerLayerDefinition(PIATNITZKYSAURUS, PiatnitzkysaurusFossilModel::createBodyLayer);

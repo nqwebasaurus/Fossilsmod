@@ -300,6 +300,8 @@
 	"block.fossils.navaornis_fossil": "Navaornis Fossil",
 	"block.fossils.yacarerani_fossil": "Yacarerani Fossil",
 	"block.fossils.ramphastos_fossil": "Ramphastos Fossil",
+	"block.fossils.prosotherium_fossil": "Prosotherium Fossil",
+	"block.fossils.vampyrum_fossil": "Vampyrum Fossil",
 	"block.fossils.kentrosaurus_fossil": "Kentrosaurus Fossil",
 	"block.fossils.endothiodonbathystoma_fossil": "Endothiodon bathystoma Fossil",
 	"block.fossils.dimetrodongrandis_fossil": "Dimetrodon grandis Fossil",
@@ -1243,6 +1245,12 @@
 	"advancements.fossils.hieraves.description": "Hieraves",
 	"advancements.fossils.accipitriiformes.title": "Yesterday's grief, Today's beef",
 	"advancements.fossils.accipitriiformes.description": "Accipitriiformes",
+	"advancements.fossils.typotheria.title": "Bunnies at home",
+	"advancements.fossils.typotheria.description": "Typotheria",
+	"advancements.fossils.chiroptera.title": "Bats man",
+	"advancements.fossils.chiroptera.description": "Chiroptera",
+	"advancements.fossils.yangochiroptera.title": "NANANANANANA",
+	"advancements.fossils.yangochiroptera.description": "Yangochiroptera",
 
 
 	"advancements.fossils.pelecanimimus.title": "Pelican Mimic",
@@ -2222,5 +2230,9 @@
 	"advancements.fossils.argentavis.title": "Silver Bird",
 	"advancements.fossils.argentavis.description": "Complete an Argentavis skeleton",
 	"advancements.fossils.glossotherium.title": "Tongue Beast",
-	"advancements.fossils.glossotherium.description": "Complete a Glossotherium skeleton"
+	"advancements.fossils.glossotherium.description": "Complete a Glossotherium skeleton",
+	"advancements.fossils.prosotherium.title": "Forward Beast",
+	"advancements.fossils.prosotherium.description": "Complete a Prosotherium skeleton",
+	"advancements.fossils.vampyrum.title": "Spectral Bat",
+	"advancements.fossils.vampyrum.description": "Complete a Vampyrum skeleton"
 }

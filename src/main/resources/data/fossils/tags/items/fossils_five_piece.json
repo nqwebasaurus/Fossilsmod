@@ -125,6 +125,8 @@
 		"fossils:mesosaurus_fossil",
 		"fossils:navaornis_fossil",
 		"fossils:yacarerani_fossil",
-		"fossils:ramphastos_fossil"
+		"fossils:ramphastos_fossil",
+		"fossils:prosotherium_fossil",
+		"fossils:vampyrum_fossil"
 	]
 }

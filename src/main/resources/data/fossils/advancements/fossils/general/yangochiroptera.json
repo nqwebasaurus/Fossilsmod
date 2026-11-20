@@ -1,0 +1,24 @@
+{
+  "parent": "fossils:fossils/general/chiroptera",
+  "criteria": {
+    "finish_yangochiroptera": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "description": {
+      "translate": "advancements.fossils.yangochiroptera.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:advancement_line"
+    },
+    "show_toast": false,
+    "title": {
+      "translate": "advancements.fossils.yangochiroptera.title"
+    }
+  },
+  "sends_telemetry_event": true
+}
