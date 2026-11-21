@@ -302,6 +302,8 @@
 	"block.fossils.ramphastos_fossil": "Ramphastos Fossil",
 	"block.fossils.prosotherium_fossil": "Prosotherium Fossil",
 	"block.fossils.vampyrum_fossil": "Vampyrum Fossil",
+	"block.fossils.borhyaena_fossil": "Borhyaena Fossil",
+	"block.fossils.eomorphippus_fossil": "Eomorphippus Fossil",
 	"block.fossils.kentrosaurus_fossil": "Kentrosaurus Fossil",
 	"block.fossils.endothiodonbathystoma_fossil": "Endothiodon bathystoma Fossil",
 	"block.fossils.dimetrodongrandis_fossil": "Dimetrodon grandis Fossil",
@@ -2234,5 +2236,9 @@
 	"advancements.fossils.prosotherium.title": "Forward Beast",
 	"advancements.fossils.prosotherium.description": "Complete a Prosotherium skeleton",
 	"advancements.fossils.vampyrum.title": "Spectral Bat",
-	"advancements.fossils.vampyrum.description": "Complete a Vampyrum skeleton"
+	"advancements.fossils.vampyrum.description": "Complete a Vampyrum skeleton",
+	"advancements.fossils.borhyaena.title": "Voracious Hyena",
+	"advancements.fossils.borhyaena.description": "Complete a Borhyaena skeleton",
+	"advancements.fossils.eomorphippus.title": "Early Horse Shape",
+	"advancements.fossils.eomorphippus.description": "Complete an Eomorphippus skeleton"
 }

@@ -127,6 +127,8 @@
 		"fossils:yacarerani_fossil",
 		"fossils:ramphastos_fossil",
 		"fossils:prosotherium_fossil",
-		"fossils:vampyrum_fossil"
+		"fossils:vampyrum_fossil",
+		"fossils:borhyaena_fossil",
+		"fossils:eomorphippus_fossil"
 	]
 }

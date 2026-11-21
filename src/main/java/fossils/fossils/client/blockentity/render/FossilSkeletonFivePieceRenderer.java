@@ -33,6 +33,8 @@ import fossils.fossils.client.blockentity.model.beelzebufo.BeelzebufoFossilFrame
 import fossils.fossils.client.blockentity.model.beelzebufo.BeelzebufoFossilModel;
 import fossils.fossils.client.blockentity.model.berthasaura.BerthasauraFossilFrameModel;
 import fossils.fossils.client.blockentity.model.berthasaura.BerthasauraFossilModel;
+import fossils.fossils.client.blockentity.model.borhyaena.BorhyaenaFossilFrameModel;
+import fossils.fossils.client.blockentity.model.borhyaena.BorhyaenaFossilModel;
 import fossils.fossils.client.blockentity.model.bothriolepis.BothriolepisFossilFrameModel;
 import fossils.fossils.client.blockentity.model.bothriolepis.BothriolepisFossilModel;
 import fossils.fossils.client.blockentity.model.buitreraptor.BuitreraptorFossilFrameModel;
@@ -89,6 +91,8 @@ import fossils.fossils.client.blockentity.model.elginia.ElginiaFossilFrameModel;
 import fossils.fossils.client.blockentity.model.elginia.ElginiaFossilModel;
 import fossils.fossils.client.blockentity.model.eocursor.EocursorFossilFrameModel;
 import fossils.fossils.client.blockentity.model.eocursor.EocursorFossilModel;
+import fossils.fossils.client.blockentity.model.eomorphippus.EomorphippusFossilFrameModel;
+import fossils.fossils.client.blockentity.model.eomorphippus.EomorphippusFossilModel;
 import fossils.fossils.client.blockentity.model.eoraptor.EoraptorFossilFrameModel;
 import fossils.fossils.client.blockentity.model.eoraptor.EoraptorFossilModel;
 import fossils.fossils.client.blockentity.model.eretmorhipis.EretmorhipisFossilFrameModel;
@@ -412,6 +416,8 @@ public class FossilSkeletonFivePieceRenderer implements BlockEntityRenderer<Foss
 		type.put(RAMPHASTOS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/ramphastos/stage_0.png"));
 		type.put(PROSOTHERIUM, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/prosotherium/stage_0.png"));
 		type.put(VAMPYRUM, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/vampyrum/stage_0.png"));
+		type.put(BORHYAENA, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/borhyaena/stage_0.png"));
+		type.put(EOMORPHIPPUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/eomorphippus/stage_0.png"));
 	});
 	public static final Map<FossilSkeletonFivePieceBlock.Type, ResourceLocation> FRAME_BY_TYPE = Util.make(Maps.newHashMap(), (type) -> {
 		type.put(EUNOTOSAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/eunotosaurus/frame.png"));
@@ -541,6 +547,8 @@ public class FossilSkeletonFivePieceRenderer implements BlockEntityRenderer<Foss
 		type.put(RAMPHASTOS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/ramphastos/frame.png"));
 		type.put(PROSOTHERIUM, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/prosotherium/frame.png"));
 		type.put(VAMPYRUM, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/vampyrum/frame.png"));
+		type.put(BORHYAENA, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/borhyaena/frame.png"));
+		type.put(EOMORPHIPPUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/eomorphippus/frame.png"));
 	});
 	public static Map<FossilSkeletonFivePieceBlock.Type, SkullModelBase> createFossilRenderers(EntityModelSet p_173662_) {
 		ImmutableMap.Builder<FossilSkeletonFivePieceBlock.Type, SkullModelBase> builder = ImmutableMap.builder();
@@ -671,6 +679,8 @@ public class FossilSkeletonFivePieceRenderer implements BlockEntityRenderer<Foss
 		builder.put(RAMPHASTOS, new RamphastosFossilModel(p_173662_.bakeLayer(ClientEvents.RAMPHASTOS)));
 		builder.put(PROSOTHERIUM, new ProsotheriumFossilModel(p_173662_.bakeLayer(ClientEvents.PROSOTHERIUM)));
 		builder.put(VAMPYRUM, new VampyrumFossilModel(p_173662_.bakeLayer(ClientEvents.VAMPYRUM)));
+		builder.put(BORHYAENA, new BorhyaenaFossilModel(p_173662_.bakeLayer(ClientEvents.BORHYAENA)));
+		builder.put(EOMORPHIPPUS, new EomorphippusFossilModel(p_173662_.bakeLayer(ClientEvents.EOMORPHIPPUS)));
 		return builder.build();
 	}
 
@@ -803,6 +813,8 @@ public class FossilSkeletonFivePieceRenderer implements BlockEntityRenderer<Foss
 		builder.put(RAMPHASTOS, new RamphastosFossilFrameModel(p_173662_.bakeLayer(ClientEvents.RAMPHASTOS_FRAME)));
 		builder.put(PROSOTHERIUM, new ProsotheriumFossilFrameModel(p_173662_.bakeLayer(ClientEvents.PROSOTHERIUM_FRAME)));
 		builder.put(VAMPYRUM, new VampyrumFossilFrameModel(p_173662_.bakeLayer(ClientEvents.VAMPYRUM_FRAME)));
+		builder.put(BORHYAENA, new BorhyaenaFossilFrameModel(p_173662_.bakeLayer(ClientEvents.BORHYAENA_FRAME)));
+		builder.put(EOMORPHIPPUS, new EomorphippusFossilFrameModel(p_173662_.bakeLayer(ClientEvents.EOMORPHIPPUS_FRAME)));
 		return builder.build();
 	}
 
@@ -1486,6 +1498,18 @@ public class FossilSkeletonFivePieceRenderer implements BlockEntityRenderer<Foss
 				pose.scale(-scale, -scale, scale);
 				pose.translate(0F, 5.6F, 0F);
 			}
+
+			case BORHYAENA -> {
+				scale = 0.3F;
+				pose.scale(-scale, -scale, scale);
+				pose.translate(0F, 1.83F, 0F);
+			}
+
+			case EOMORPHIPPUS -> {
+				scale = 0.16F;
+				pose.scale(-scale, -scale, scale);
+				pose.translate(0F, 4.73F, 0F);
+			}
 			default -> throw new IllegalStateException("Unexpected value: " + type);
         }
 		VertexConsumer vertexconsumer = p_173668_.getBuffer(p_173671_);
@@ -1750,6 +1774,10 @@ public class FossilSkeletonFivePieceRenderer implements BlockEntityRenderer<Foss
 			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/prosotherium/stage_" + fossilLevel + ".png");
 		} else if (type == VAMPYRUM) {
 			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/vampyrum/stage_" + fossilLevel + ".png");
+		} else if (type == BORHYAENA) {
+			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/borhyaena/stage_" + fossilLevel + ".png");
+		} else if (type == EOMORPHIPPUS) {
+			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/eomorphippus/stage_" + fossilLevel + ".png");
 		} else resourceLocation = SKIN_BY_TYPE.get(type);
 		return RenderType.entityCutoutNoCullZOffset(resourceLocation);
 	}
