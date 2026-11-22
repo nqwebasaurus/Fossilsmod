@@ -183,6 +183,8 @@ import fossils.fossils.client.blockentity.model.patagopteryx.PatagopteryxFossilF
 import fossils.fossils.client.blockentity.model.patagopteryx.PatagopteryxFossilModel;
 import fossils.fossils.client.blockentity.model.peltephilus.PeltephilusFossilFrameModel;
 import fossils.fossils.client.blockentity.model.peltephilus.PeltephilusFossilModel;
+import fossils.fossils.client.blockentity.model.priosphenodon.PriosphenodonFossilFrameModel;
+import fossils.fossils.client.blockentity.model.priosphenodon.PriosphenodonFossilModel;
 import fossils.fossils.client.blockentity.model.proburnetia.ProburnetiaFossilFrameModel;
 import fossils.fossils.client.blockentity.model.proburnetia.ProburnetiaFossilModel;
 import fossils.fossils.client.blockentity.model.procolophon.ProcolophonFossilFrameModel;
@@ -418,6 +420,7 @@ public class FossilSkeletonFivePieceRenderer implements BlockEntityRenderer<Foss
 		type.put(VAMPYRUM, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/vampyrum/stage_0.png"));
 		type.put(BORHYAENA, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/borhyaena/stage_0.png"));
 		type.put(EOMORPHIPPUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/eomorphippus/stage_0.png"));
+		type.put(PRIOSPHENODON, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/priosphenodon/stage_0.png"));
 	});
 	public static final Map<FossilSkeletonFivePieceBlock.Type, ResourceLocation> FRAME_BY_TYPE = Util.make(Maps.newHashMap(), (type) -> {
 		type.put(EUNOTOSAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/eunotosaurus/frame.png"));
@@ -549,6 +552,7 @@ public class FossilSkeletonFivePieceRenderer implements BlockEntityRenderer<Foss
 		type.put(VAMPYRUM, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/vampyrum/frame.png"));
 		type.put(BORHYAENA, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/borhyaena/frame.png"));
 		type.put(EOMORPHIPPUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/eomorphippus/frame.png"));
+		type.put(PRIOSPHENODON, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/priosphenodon/frame.png"));
 	});
 	public static Map<FossilSkeletonFivePieceBlock.Type, SkullModelBase> createFossilRenderers(EntityModelSet p_173662_) {
 		ImmutableMap.Builder<FossilSkeletonFivePieceBlock.Type, SkullModelBase> builder = ImmutableMap.builder();
@@ -681,6 +685,7 @@ public class FossilSkeletonFivePieceRenderer implements BlockEntityRenderer<Foss
 		builder.put(VAMPYRUM, new VampyrumFossilModel(p_173662_.bakeLayer(ClientEvents.VAMPYRUM)));
 		builder.put(BORHYAENA, new BorhyaenaFossilModel(p_173662_.bakeLayer(ClientEvents.BORHYAENA)));
 		builder.put(EOMORPHIPPUS, new EomorphippusFossilModel(p_173662_.bakeLayer(ClientEvents.EOMORPHIPPUS)));
+		builder.put(PRIOSPHENODON, new PriosphenodonFossilModel(p_173662_.bakeLayer(ClientEvents.PRIOSPHENODON)));
 		return builder.build();
 	}
 
@@ -815,6 +820,7 @@ public class FossilSkeletonFivePieceRenderer implements BlockEntityRenderer<Foss
 		builder.put(VAMPYRUM, new VampyrumFossilFrameModel(p_173662_.bakeLayer(ClientEvents.VAMPYRUM_FRAME)));
 		builder.put(BORHYAENA, new BorhyaenaFossilFrameModel(p_173662_.bakeLayer(ClientEvents.BORHYAENA_FRAME)));
 		builder.put(EOMORPHIPPUS, new EomorphippusFossilFrameModel(p_173662_.bakeLayer(ClientEvents.EOMORPHIPPUS_FRAME)));
+		builder.put(PRIOSPHENODON, new PriosphenodonFossilFrameModel(p_173662_.bakeLayer(ClientEvents.PRIOSPHENODON_FRAME)));
 		return builder.build();
 	}
 
@@ -1510,6 +1516,12 @@ public class FossilSkeletonFivePieceRenderer implements BlockEntityRenderer<Foss
 				pose.scale(-scale, -scale, scale);
 				pose.translate(0F, 4.73F, 0F);
 			}
+
+			case PRIOSPHENODON -> {
+				scale = 0.19F;
+				pose.scale(-scale, -scale, scale);
+				pose.translate(0F, 3.72F, 0F);
+			}
 			default -> throw new IllegalStateException("Unexpected value: " + type);
         }
 		VertexConsumer vertexconsumer = p_173668_.getBuffer(p_173671_);
@@ -1778,6 +1790,8 @@ public class FossilSkeletonFivePieceRenderer implements BlockEntityRenderer<Foss
 			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/borhyaena/stage_" + fossilLevel + ".png");
 		} else if (type == EOMORPHIPPUS) {
 			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/eomorphippus/stage_" + fossilLevel + ".png");
+		} else if (type == PRIOSPHENODON) {
+			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/priosphenodon/stage_" + fossilLevel + ".png");
 		} else resourceLocation = SKIN_BY_TYPE.get(type);
 		return RenderType.entityCutoutNoCullZOffset(resourceLocation);
 	}

@@ -1,0 +1,57 @@
+{
+  "parent": "fossils:fossils/general/eusuchia",
+  "criteria": {
+    "finish_piscogavialis": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:piscogavialis_fossil"
+                ],
+                "state": {
+                  "fossil_level": "14"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:piscogavialis_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.piscogavialis.description"
+    },
+    "frame": "goal",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:piscogavialis_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.piscogavialis.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_piscogavialis"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  },
+  "sends_telemetry_event": true
+}

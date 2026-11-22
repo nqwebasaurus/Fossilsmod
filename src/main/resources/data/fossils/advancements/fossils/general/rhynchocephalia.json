@@ -1,0 +1,24 @@
+{
+  "parent": "fossils:fossils/general/lepidosauromorpha",
+  "criteria": {
+    "finish_rhynchocephalia": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "description": {
+      "translate": "advancements.fossils.rhynchocephalia.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:advancement_line"
+    },
+    "show_toast": false,
+    "title": {
+      "translate": "advancements.fossils.rhynchocephalia.title"
+    }
+  },
+  "sends_telemetry_event": true
+}

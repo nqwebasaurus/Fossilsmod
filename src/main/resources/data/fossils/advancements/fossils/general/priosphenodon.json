@@ -1,0 +1,54 @@
+{
+  "parent": "fossils:fossils/general/rhynchocephalia",
+  "criteria": {
+    "finish_priosphenodon": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:priosphenodon_fossil"
+                ],
+                "state": {
+                  "fossil_level": "4"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:priosphenodon_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.priosphenodon.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:priosphenodon_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.priosphenodon.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_priosphenodon"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

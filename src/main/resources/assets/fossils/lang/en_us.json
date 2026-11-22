@@ -304,6 +304,7 @@
 	"block.fossils.vampyrum_fossil": "Vampyrum Fossil",
 	"block.fossils.borhyaena_fossil": "Borhyaena Fossil",
 	"block.fossils.eomorphippus_fossil": "Eomorphippus Fossil",
+	"block.fossils.priosphenodon_fossil": "Priosphenodon Fossil",
 	"block.fossils.kentrosaurus_fossil": "Kentrosaurus Fossil",
 	"block.fossils.endothiodonbathystoma_fossil": "Endothiodon bathystoma Fossil",
 	"block.fossils.dimetrodongrandis_fossil": "Dimetrodon grandis Fossil",
@@ -591,6 +592,7 @@
 	"block.fossils.paranthropus_fossil": "Paranthropus Fossil",
 	"block.fossils.abelisaurus_fossil": "Abelisaurus Fossil",
 	"block.fossils.glossotherium_fossil": "Glossotherium Fossil",
+	"block.fossils.piscogavialis_fossil": "Piscogavialis Fossil",
 	"block.fossils.bisonlatifrons_fossil": "Bison latifrons Fossil",
 	"block.fossils.utahraptor_fossil": "Utahraptor Fossil",
 	"block.fossils.shonisaurus_fossil": "Shonisaurus Fossil",
@@ -1253,6 +1255,8 @@
 	"advancements.fossils.chiroptera.description": "Chiroptera",
 	"advancements.fossils.yangochiroptera.title": "NANANANANANA",
 	"advancements.fossils.yangochiroptera.description": "Yangochiroptera",
+	"advancements.fossils.rhynchocephalia.title": "Tuataren't dead yet?",
+	"advancements.fossils.rhynchocephalia.description": "Rhynchocephalia",
 
 
 	"advancements.fossils.pelecanimimus.title": "Pelican Mimic",
@@ -2240,5 +2244,9 @@
 	"advancements.fossils.borhyaena.title": "Voracious Hyena",
 	"advancements.fossils.borhyaena.description": "Complete a Borhyaena skeleton",
 	"advancements.fossils.eomorphippus.title": "Early Horse Shape",
-	"advancements.fossils.eomorphippus.description": "Complete an Eomorphippus skeleton"
+	"advancements.fossils.eomorphippus.description": "Complete an Eomorphippus skeleton",
+	"advancements.fossils.priosphenodon.title": "Saw-wedge Tooth",
+	"advancements.fossils.priosphenodon.description": "Complete a Priosphenodon skeleton",
+	"advancements.fossils.piscogavialis.title": "Gharial from Pisco",
+	"advancements.fossils.piscogavialis.description": "Complete a Piscogavialis skeleton"
 }
