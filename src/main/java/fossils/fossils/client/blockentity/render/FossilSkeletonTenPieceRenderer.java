@@ -45,6 +45,8 @@ import fossils.fossils.client.blockentity.model.barylambda.BarylambdaFossilFrame
 import fossils.fossils.client.blockentity.model.barylambda.BarylambdaFossilModel;
 import fossils.fossils.client.blockentity.model.beipiaosaurus.BeipiaosaurusFossilFrameModel;
 import fossils.fossils.client.blockentity.model.beipiaosaurus.BeipiaosaurusFossilModel;
+import fossils.fossils.client.blockentity.model.bicentenaria.BicentenariaFossilFrameModel;
+import fossils.fossils.client.blockentity.model.bicentenaria.BicentenariaFossilModel;
 import fossils.fossils.client.blockentity.model.bobosaurus.BobosaurusFossilFrameModel;
 import fossils.fossils.client.blockentity.model.bobosaurus.BobosaurusFossilModel;
 import fossils.fossils.client.blockentity.model.bunostegos.BunostegosFossilFrameModel;
@@ -555,6 +557,7 @@ public class FossilSkeletonTenPieceRenderer implements BlockEntityRenderer<Fossi
         type.put(FossilSkeletonTenPieceBlock.Types.DAKOSAURUSANDINIENSIS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/dakosaurusandiniensis/stage_0.png"));
         type.put(FossilSkeletonTenPieceBlock.Types.ARDIPITHECUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/ardipithecus/stage_0.png"));
         type.put(FossilSkeletonTenPieceBlock.Types.PARADOLICHOPITHECUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/paradolichopithecus/stage_0.png"));
+        type.put(FossilSkeletonTenPieceBlock.Types.BICENTENARIA, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/bicentenaria/stage_0.png"));
 
     });
     public static final Map<FossilSkeletonTenPieceBlock.Type, ResourceLocation> FRAME_BY_TYPE = Util.make(Maps.newHashMap(), (type) -> {
@@ -732,6 +735,7 @@ public class FossilSkeletonTenPieceRenderer implements BlockEntityRenderer<Fossi
         type.put(FossilSkeletonTenPieceBlock.Types.DAKOSAURUSANDINIENSIS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/dakosaurusandiniensis/frame.png"));
         type.put(FossilSkeletonTenPieceBlock.Types.ARDIPITHECUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/ardipithecus/frame.png"));
         type.put(FossilSkeletonTenPieceBlock.Types.PARADOLICHOPITHECUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/paradolichopithecus/frame.png"));
+        type.put(FossilSkeletonTenPieceBlock.Types.BICENTENARIA, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/bicentenaria/frame.png"));
 
 
     });
@@ -912,6 +916,7 @@ public class FossilSkeletonTenPieceRenderer implements BlockEntityRenderer<Fossi
         builder.put(FossilSkeletonTenPieceBlock.Types.DAKOSAURUSANDINIENSIS, new DakosaurusandiniensisFossilModel(p_173662_.bakeLayer(ClientEvents.DAKOSAURUSANDINIENSIS)));
         builder.put(FossilSkeletonTenPieceBlock.Types.ARDIPITHECUS, new ArdipithecusFossilModel(p_173662_.bakeLayer(ClientEvents.ARDIPITHECUS)));
         builder.put(FossilSkeletonTenPieceBlock.Types.PARADOLICHOPITHECUS, new ParadolichopithecusFossilModel(p_173662_.bakeLayer(ClientEvents.PARADOLICHOPITHECUS)));
+        builder.put(FossilSkeletonTenPieceBlock.Types.BICENTENARIA, new BicentenariaFossilModel(p_173662_.bakeLayer(ClientEvents.BICENTENARIA)));
         return builder.build();
     }
 
@@ -1091,6 +1096,7 @@ public class FossilSkeletonTenPieceRenderer implements BlockEntityRenderer<Fossi
         builder.put(FossilSkeletonTenPieceBlock.Types.DAKOSAURUSANDINIENSIS, new DakosaurusandiniensisFossilFrameModel(p_173662_.bakeLayer(ClientEvents.DAKOSAURUSANDINIENSIS_FRAME)));
         builder.put(FossilSkeletonTenPieceBlock.Types.ARDIPITHECUS, new ArdipithecusFossilFrameModel(p_173662_.bakeLayer(ClientEvents.ARDIPITHECUS_FRAME)));
         builder.put(FossilSkeletonTenPieceBlock.Types.PARADOLICHOPITHECUS, new ParadolichopithecusFossilFrameModel(p_173662_.bakeLayer(ClientEvents.PARADOLICHOPITHECUS_FRAME)));
+        builder.put(FossilSkeletonTenPieceBlock.Types.BICENTENARIA, new BicentenariaFossilFrameModel(p_173662_.bakeLayer(ClientEvents.BICENTENARIA_FRAME)));
         return builder.build();
     }
 
@@ -1816,6 +1822,10 @@ public class FossilSkeletonTenPieceRenderer implements BlockEntityRenderer<Fossi
             float scale = 0.35F;
             pose.scale(-scale, -scale, scale);
             pose.translate(0F, 1.36F, 0F);
+        } else if (FossilSkeletonTenPieceBlock$type == FossilSkeletonTenPieceBlock.Types.BICENTENARIA) {
+            float scale = 0.37F;
+            pose.scale(-scale, -scale, scale);
+            pose.translate(0F, 1.19F, 0F);
         } else {
             float scale = 1.0F;
             pose.scale(-scale, -scale, scale);
@@ -2176,6 +2186,8 @@ public class FossilSkeletonTenPieceRenderer implements BlockEntityRenderer<Fossi
             resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/ardipithecus/stage_" + fossilLevel + ".png");
         } else if (type == FossilSkeletonTenPieceBlock.Types.PARADOLICHOPITHECUS) {
             resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/paradolichopithecus/stage_" + fossilLevel + ".png");
+        } else if (type == FossilSkeletonTenPieceBlock.Types.BICENTENARIA) {
+            resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/bicentenaria/stage_" + fossilLevel + ".png");
         } else resourceLocation = SKIN_BY_TYPE.get(type);
         return RenderType.entityCutoutNoCullZOffset(resourceLocation);
     }

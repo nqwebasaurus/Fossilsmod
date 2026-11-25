@@ -29,6 +29,8 @@ import fossils.fossils.client.blockentity.model.agapornis.AgapornisFossilModel;
 import fossils.fossils.client.blockentity.model.alienum.AlienumFossilSlabModel;
 import fossils.fossils.client.blockentity.model.allosaurus.AllosaurusFossilFrameModel;
 import fossils.fossils.client.blockentity.model.allosaurus.AllosaurusFossilModel;
+import fossils.fossils.client.blockentity.model.alnashetri.AlnashetriFossilFrameModel;
+import fossils.fossils.client.blockentity.model.alnashetri.AlnashetriFossilModel;
 import fossils.fossils.client.blockentity.model.alopecognathus.AlopecognathusFossilFrameModel;
 import fossils.fossils.client.blockentity.model.alopecognathus.AlopecognathusFossilModel;
 import fossils.fossils.client.blockentity.model.altirhinus.AltirhinusFossilFrameModel;
@@ -111,6 +113,8 @@ import fossils.fossils.client.blockentity.model.berthasaura.BerthasauraFossilFra
 import fossils.fossils.client.blockentity.model.berthasaura.BerthasauraFossilModel;
 import fossils.fossils.client.blockentity.model.biarmosuchus.BiarmosuchusFossilFrameModel;
 import fossils.fossils.client.blockentity.model.biarmosuchus.BiarmosuchusFossilModel;
+import fossils.fossils.client.blockentity.model.bicentenaria.BicentenariaFossilFrameModel;
+import fossils.fossils.client.blockentity.model.bicentenaria.BicentenariaFossilModel;
 import fossils.fossils.client.blockentity.model.bisonlatifrons.BisonlatifronsFossilFrameModel;
 import fossils.fossils.client.blockentity.model.bisonlatifrons.BisonlatifronsFossilModel;
 import fossils.fossils.client.blockentity.model.bobosaurus.BobosaurusFossilFrameModel;
@@ -1438,6 +1442,8 @@ public class ClientEvents {
     public static ModelLayerLocation EOMORPHIPPUS_FRAME = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "eomorphippus_frame"), "eomorphippus_frame");
     public static ModelLayerLocation PRIOSPHENODON = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "priosphenodon"), "priosphenodon");
     public static ModelLayerLocation PRIOSPHENODON_FRAME = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "priosphenodon_frame"), "priosphenodon_frame");
+    public static ModelLayerLocation ALNASHETRI = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "alnashetri"), "alnashetri");
+    public static ModelLayerLocation ALNASHETRI_FRAME = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "alnashetri_frame"), "alnashetri_frame");
 	public static ModelLayerLocation KENTROSAURUS = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "kentrosaurus"), "kentrosaurus");
 	public static ModelLayerLocation KENTROSAURUS_FRAME = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "kentrosaurus_frame"), "kentrosaurus_frame");
 	public static ModelLayerLocation PIATNITZKYSAURUS = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "piatnitzkysaurus"), "piatnitzkysaurus");
@@ -1766,6 +1772,8 @@ public class ClientEvents {
     public static ModelLayerLocation ARDIPITHECUS_FRAME = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "ardipithecus_frame"), "ardipithecus_frame");
     public static ModelLayerLocation PARADOLICHOPITHECUS = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "paradolichopithecus"), "paradolichopithecus");
     public static ModelLayerLocation PARADOLICHOPITHECUS_FRAME = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "paradolichopithecus_frame"), "paradolichopithecus_frame");
+    public static ModelLayerLocation BICENTENARIA = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "bicentenaria"), "bicentenaria");
+    public static ModelLayerLocation BICENTENARIA_FRAME = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "bicentenaria_frame"), "bicentenaria_frame");
 	public static ModelLayerLocation PLACERIAS = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "placerias"), "placerias");
 	public static ModelLayerLocation PLACERIAS_FRAME = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "placerias_frame"), "placerias_frame");
 	public static ModelLayerLocation ENDOTHIODONBATHYSTOMA = new ModelLayerLocation(new ResourceLocation(FossilMod.MOD_ID, "endothiodonbathystoma"), "endothiodonbathystoma");
@@ -2588,6 +2596,8 @@ public class ClientEvents {
         event.registerLayerDefinition(EOMORPHIPPUS_FRAME, EomorphippusFossilFrameModel::createBodyLayer);
         event.registerLayerDefinition(PRIOSPHENODON, PriosphenodonFossilModel::createBodyLayer);
         event.registerLayerDefinition(PRIOSPHENODON_FRAME, PriosphenodonFossilFrameModel::createBodyLayer);
+        event.registerLayerDefinition(ALNASHETRI, AlnashetriFossilModel::createBodyLayer);
+        event.registerLayerDefinition(ALNASHETRI_FRAME, AlnashetriFossilFrameModel::createBodyLayer);
 		event.registerLayerDefinition(KENTROSAURUS, KentrosaurusFossilModel::createBodyLayer);
 		event.registerLayerDefinition(KENTROSAURUS_FRAME, KentrosaurusFossilFrameModel::createBodyLayer);
 		event.registerLayerDefinition(PIATNITZKYSAURUS, PiatnitzkysaurusFossilModel::createBodyLayer);
@@ -2914,6 +2924,8 @@ public class ClientEvents {
         event.registerLayerDefinition(ARDIPITHECUS_FRAME, ArdipithecusFossilFrameModel::createBodyLayer);
         event.registerLayerDefinition(PARADOLICHOPITHECUS, ParadolichopithecusFossilModel::createBodyLayer);
         event.registerLayerDefinition(PARADOLICHOPITHECUS_FRAME, ParadolichopithecusFossilFrameModel::createBodyLayer);
+        event.registerLayerDefinition(BICENTENARIA, BicentenariaFossilModel::createBodyLayer);
+        event.registerLayerDefinition(BICENTENARIA_FRAME, BicentenariaFossilFrameModel::createBodyLayer);
 		event.registerLayerDefinition(LUFENGOSAURUS, LufengosaurusFossilModel::createBodyLayer);
 		event.registerLayerDefinition(LUFENGOSAURUS_FRAME, LufengosaurusFossilFrameModel::createBodyLayer);
 		event.registerLayerDefinition(PLACERIAS, PlaceriasFossilModel::createBodyLayer);

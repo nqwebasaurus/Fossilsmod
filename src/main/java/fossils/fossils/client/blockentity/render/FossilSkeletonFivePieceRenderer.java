@@ -15,6 +15,8 @@ import fossils.fossils.client.blockentity.model.acanthostomatops.Acanthostomatop
 import fossils.fossils.client.blockentity.model.acanthostomatops.AcanthostomatopsFossilModel;
 import fossils.fossils.client.blockentity.model.agapornis.AgapornisFossilFrameModel;
 import fossils.fossils.client.blockentity.model.agapornis.AgapornisFossilModel;
+import fossils.fossils.client.blockentity.model.alnashetri.AlnashetriFossilFrameModel;
+import fossils.fossils.client.blockentity.model.alnashetri.AlnashetriFossilModel;
 import fossils.fossils.client.blockentity.model.alopecognathus.AlopecognathusFossilFrameModel;
 import fossils.fossils.client.blockentity.model.alopecognathus.AlopecognathusFossilModel;
 import fossils.fossils.client.blockentity.model.anachlysictis.AnachlysictisFossilFrameModel;
@@ -421,6 +423,7 @@ public class FossilSkeletonFivePieceRenderer implements BlockEntityRenderer<Foss
 		type.put(BORHYAENA, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/borhyaena/stage_0.png"));
 		type.put(EOMORPHIPPUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/eomorphippus/stage_0.png"));
 		type.put(PRIOSPHENODON, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/priosphenodon/stage_0.png"));
+		type.put(ALNASHETRI, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/alnashetri/stage_0.png"));
 	});
 	public static final Map<FossilSkeletonFivePieceBlock.Type, ResourceLocation> FRAME_BY_TYPE = Util.make(Maps.newHashMap(), (type) -> {
 		type.put(EUNOTOSAURUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/eunotosaurus/frame.png"));
@@ -553,6 +556,7 @@ public class FossilSkeletonFivePieceRenderer implements BlockEntityRenderer<Foss
 		type.put(BORHYAENA, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/borhyaena/frame.png"));
 		type.put(EOMORPHIPPUS, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/eomorphippus/frame.png"));
 		type.put(PRIOSPHENODON, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/priosphenodon/frame.png"));
+		type.put(ALNASHETRI, new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/alnashetri/frame.png"));
 	});
 	public static Map<FossilSkeletonFivePieceBlock.Type, SkullModelBase> createFossilRenderers(EntityModelSet p_173662_) {
 		ImmutableMap.Builder<FossilSkeletonFivePieceBlock.Type, SkullModelBase> builder = ImmutableMap.builder();
@@ -686,6 +690,7 @@ public class FossilSkeletonFivePieceRenderer implements BlockEntityRenderer<Foss
 		builder.put(BORHYAENA, new BorhyaenaFossilModel(p_173662_.bakeLayer(ClientEvents.BORHYAENA)));
 		builder.put(EOMORPHIPPUS, new EomorphippusFossilModel(p_173662_.bakeLayer(ClientEvents.EOMORPHIPPUS)));
 		builder.put(PRIOSPHENODON, new PriosphenodonFossilModel(p_173662_.bakeLayer(ClientEvents.PRIOSPHENODON)));
+		builder.put(ALNASHETRI, new AlnashetriFossilModel(p_173662_.bakeLayer(ClientEvents.ALNASHETRI)));
 		return builder.build();
 	}
 
@@ -821,6 +826,7 @@ public class FossilSkeletonFivePieceRenderer implements BlockEntityRenderer<Foss
 		builder.put(BORHYAENA, new BorhyaenaFossilFrameModel(p_173662_.bakeLayer(ClientEvents.BORHYAENA_FRAME)));
 		builder.put(EOMORPHIPPUS, new EomorphippusFossilFrameModel(p_173662_.bakeLayer(ClientEvents.EOMORPHIPPUS_FRAME)));
 		builder.put(PRIOSPHENODON, new PriosphenodonFossilFrameModel(p_173662_.bakeLayer(ClientEvents.PRIOSPHENODON_FRAME)));
+		builder.put(ALNASHETRI, new AlnashetriFossilFrameModel(p_173662_.bakeLayer(ClientEvents.ALNASHETRI_FRAME)));
 		return builder.build();
 	}
 
@@ -923,9 +929,9 @@ public class FossilSkeletonFivePieceRenderer implements BlockEntityRenderer<Foss
                 pose.translate(0F, 2.35F, 0F);
             }
             case BANNYKUS -> {
-                scale = 0.627F;
+                scale = 0.28F;
                 pose.scale(-scale, -scale, scale);
-                pose.translate(0F, 0.09F, 0F);
+                pose.translate(0F, 2.09F, 0F);
             }
             case YUANYANGLONG -> {
                 scale = 0.34F;
@@ -948,9 +954,9 @@ public class FossilSkeletonFivePieceRenderer implements BlockEntityRenderer<Foss
                 pose.translate(0F, 2.1F, 0F);
             }
             case SHUVUUIA -> {
-                scale = 0.32F;
+                scale = 0.11F;
                 pose.scale(-scale, -scale, scale);
-                pose.translate(0F, 1.63F, 0F);
+                pose.translate(0F, 7.62F, 0F);
             }
             case SILESAURUS -> {
                 scale = 0.45F;
@@ -1522,6 +1528,12 @@ public class FossilSkeletonFivePieceRenderer implements BlockEntityRenderer<Foss
 				pose.scale(-scale, -scale, scale);
 				pose.translate(0F, 3.72F, 0F);
 			}
+
+			case ALNASHETRI -> {
+				scale = 0.07F;
+				pose.scale(-scale, -scale, scale);
+				pose.translate(0F, 12.77F, 0F);
+			}
 			default -> throw new IllegalStateException("Unexpected value: " + type);
         }
 		VertexConsumer vertexconsumer = p_173668_.getBuffer(p_173671_);
@@ -1792,6 +1804,8 @@ public class FossilSkeletonFivePieceRenderer implements BlockEntityRenderer<Foss
 			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/eomorphippus/stage_" + fossilLevel + ".png");
 		} else if (type == PRIOSPHENODON) {
 			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/priosphenodon/stage_" + fossilLevel + ".png");
+		} else if (type == ALNASHETRI) {
+			resourceLocation = new ResourceLocation(FossilMod.MOD_ID, "textures/block/skeletons/alnashetri/stage_" + fossilLevel + ".png");
 		} else resourceLocation = SKIN_BY_TYPE.get(type);
 		return RenderType.entityCutoutNoCullZOffset(resourceLocation);
 	}

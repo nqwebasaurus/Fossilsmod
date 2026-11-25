@@ -305,6 +305,7 @@
 	"block.fossils.borhyaena_fossil": "Borhyaena Fossil",
 	"block.fossils.eomorphippus_fossil": "Eomorphippus Fossil",
 	"block.fossils.priosphenodon_fossil": "Priosphenodon Fossil",
+	"block.fossils.alnashetri_fossil": "Alnashetri Fossil",
 	"block.fossils.kentrosaurus_fossil": "Kentrosaurus Fossil",
 	"block.fossils.endothiodonbathystoma_fossil": "Endothiodon bathystoma Fossil",
 	"block.fossils.dimetrodongrandis_fossil": "Dimetrodon grandis Fossil",
@@ -475,6 +476,7 @@
 	"block.fossils.dakosaurusandiniensis_fossil": "Dakosaurus andiniensis Fossil",
 	"block.fossils.ardipithecus_fossil": "Ardipithecus Fossil",
 	"block.fossils.paradolichopithecus_fossil": "Paradolichopithecus Fossil",
+	"block.fossils.bicentenaria_fossil": "Bicentenaria Fossil",
 	"block.fossils.poposaurus_fossil": "Poposaurus Fossil",
 	"block.fossils.nigerpeton_fossil": "Nigerpeton Fossil",
 	"block.fossils.stahleckeria_fossil": "Stahleckeria Fossil",
@@ -2248,5 +2250,9 @@
 	"advancements.fossils.priosphenodon.title": "Saw-wedge Tooth",
 	"advancements.fossils.priosphenodon.description": "Complete a Priosphenodon skeleton",
 	"advancements.fossils.piscogavialis.title": "Gharial from Pisco",
-	"advancements.fossils.piscogavialis.description": "Complete a Piscogavialis skeleton"
+	"advancements.fossils.piscogavialis.description": "Complete a Piscogavialis skeleton",
+	"advancements.fossils.bicentenaria.title": "Two hundred year Anniversary",
+	"advancements.fossils.bicentenaria.description": "Complete a Bicentenaria skeleton",
+	"advancements.fossils.alnashetri.title": "Slender Thighs",
+	"advancements.fossils.alnashetri.description": "Complete an Alnashetri skeleton"
 }

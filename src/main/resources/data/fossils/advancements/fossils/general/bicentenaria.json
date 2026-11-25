@@ -1,0 +1,54 @@
+{
+  "parent": "fossils:fossils/general/tyrannoraptora",
+  "criteria": {
+    "finish_bicentenaria": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "fossils:bicentenaria_fossil"
+                ],
+                "state": {
+                  "fossil_level": "9"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "fossils:bicentenaria_fossil"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.fossils.bicentenaria.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fossils:bicentenaria_fossil"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.fossils.bicentenaria.title"
+    }
+  },
+  "requirements": [
+    [
+      "finish_bicentenaria"
+    ]
+  ],
+  "sends_telemetry_event": true
+}
