@@ -582,9 +582,9 @@ public class FossilSkeletonTwentyPieceRenderer implements BlockEntityRenderer<Fo
             pose.scale(-scale, -scale, scale);
             pose.translate(0F, -0.5F, 0F);
         } else if (FossilSkeletonTwentyPieceBlock$type == FossilSkeletonTwentyPieceBlock.Types.CARCHARODONTOSAURUS) {
-            float scale = 1F;
+            float scale = 1.28F;
             pose.scale(-scale, -scale, scale);
-            pose.translate(0F, -0.5F, 0F);
+            pose.translate(0F, -0.73F, 0F);
         } else if (FossilSkeletonTwentyPieceBlock$type == FossilSkeletonTwentyPieceBlock.Types.EDMONTOSAURUSANNECTENS) {
             float scale = 1F;
             pose.scale(-scale, -scale, scale);
@@ -690,9 +690,9 @@ public class FossilSkeletonTwentyPieceRenderer implements BlockEntityRenderer<Fo
             pose.scale(-scale, -scale, scale);
             pose.translate(0F, -0.5F, 0F);
         } else if (FossilSkeletonTwentyPieceBlock$type == FossilSkeletonTwentyPieceBlock.Types.ACROCANTHOSAURUS) {
-            float scale = 1F;
+            float scale = 1.18F;
             pose.scale(-scale, -scale, scale);
-            pose.translate(0F, -0.53F, 0F);
+            pose.translate(0F, -0.64F, 0F);
         } else if (FossilSkeletonTwentyPieceBlock$type == FossilSkeletonTwentyPieceBlock.Types.BASILOSAURUS) {
             float scale = 1F;
             pose.scale(-scale, -scale, scale);
@@ -718,9 +718,9 @@ public class FossilSkeletonTwentyPieceRenderer implements BlockEntityRenderer<Fo
             pose.scale(-scale, -scale, scale);
             pose.translate(0F, -0.45F, 0F);
         } else if (FossilSkeletonTwentyPieceBlock$type == FossilSkeletonTwentyPieceBlock.Types.YUTYRANNUS) {
-            float scale = 1F;
+            float scale = 0.74F;
             pose.scale(-scale, -scale, scale);
-            pose.translate(0F, -0.51F, 0F);
+            pose.translate(0F, -0.13F, 0F);
         } else if (FossilSkeletonTwentyPieceBlock$type == FossilSkeletonTwentyPieceBlock.Types.MAMENCHISAURUS) {
             float scale = 1.15F;
             pose.scale(-scale, -scale, scale);

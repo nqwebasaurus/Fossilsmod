@@ -869,9 +869,9 @@ public class FossilSkeletonFifteenPieceRenderer implements BlockEntityRenderer<F
             pose.scale(-scale, -scale, scale);
             pose.translate(0F, -0.5F, 0F);
         } else if (FossilSkeletonFifteenPieceBlock$type == FossilSkeletonFifteenPieceBlock.Types.MONOLOPHOSAURUS) {
-            float scale = 0.9F;
+            float scale = 0.52F;
             pose.scale(-scale, -scale, scale);
-            pose.translate(0F, -0.37F, 0F);
+            pose.translate(0F, 0.41F, 0F);
         } else if (FossilSkeletonFifteenPieceBlock$type == FossilSkeletonFifteenPieceBlock.Types.STELLASAURUS) {
             float scale = 1F;
             pose.scale(-scale, -scale, scale);
@@ -993,9 +993,9 @@ public class FossilSkeletonFifteenPieceRenderer implements BlockEntityRenderer<F
             pose.scale(-scale, -scale, scale);
             pose.translate(0F, -0.17F, 0F);
         } else if (FossilSkeletonFifteenPieceBlock$type == FossilSkeletonFifteenPieceBlock.Types.TYRANNOTITAN) {
-            float scale = 1F;
+            float scale = 1.23F;
             pose.scale(-scale, -scale, scale);
-            pose.translate(0F, -0.51F, 0F);
+            pose.translate(0F, -0.68F, 0F);
         } else if (FossilSkeletonFifteenPieceBlock$type == FossilSkeletonFifteenPieceBlock.Types.LUSKHAN) {
             float scale = 1F;
             pose.scale(-scale, -scale, scale);
@@ -1033,9 +1033,9 @@ public class FossilSkeletonFifteenPieceRenderer implements BlockEntityRenderer<F
             pose.scale(-scale, -scale, scale);
             pose.translate(0F, -0.5F, 0F);
         } else if (FossilSkeletonFifteenPieceBlock$type == FossilSkeletonFifteenPieceBlock.Types.EOCARCHARIA) {
-            float scale = 1F;
+            float scale = 0.85F;
             pose.scale(-scale, -scale, scale);
-            pose.translate(0F, -0.5F, 0F);
+            pose.translate(0F, -0.34F, 0F);
         } else if (FossilSkeletonFifteenPieceBlock$type == FossilSkeletonFifteenPieceBlock.Types.ANGULOMASTACATOR) {
             float scale = 1F;
             pose.scale(-scale, -scale, scale);
